@@ -1,0 +1,53 @@
+{
+    "list_machinery": {
+        "sql": "SELECT name as machine_name, make, status FROM turf_machines"
+    },
+    "list_consumables": {
+        "sql": "SELECT description, ac_unit, current_balance FROM (SELECT i.id, i.description, i.ac_unit, COALESCE(SUM(CASE WHEN l.transaction_type = 'RECEIPT' THEN l.quantity ELSE 0 END), 0) - COALESCE(SUM(CASE WHEN l.transaction_type = 'ISSUE' THEN l.quantity ELSE 0 END), 0) - COALESCE((SELECT SUM(c.fuel_consumed_qty) FROM turf_consumption_log c JOIN turf_machines m ON c.machine_id = m.id WHERE m.fuel_item_id = i.id), 0) AS current_balance FROM turf_inventory_items i LEFT JOIN turf_inventory_ledger l ON i.id = l.item_id GROUP BY i.id, i.description, i.ac_unit) as balances",
+        "chart_config": {
+            "type": "pie",
+            "label_column": "description",
+            "data_column": "current_balance",
+            "title": "Current Stock Balance"
+        }
+    },
+    "list_turf_consumption_log": {
+        "sql": "SELECT tcl.log_date, tm.name as machine_name, tcl.recorded_by as operator, tcl.fuel_consumed_qty, tcl.running_hours FROM turf_consumption_log tcl JOIN turf_machines tm ON tcl.machine_id = tm.id"
+    },
+    "report_monthly_consumption": {
+        "sql": "SELECT m.name as machine_name, SUM(c.fuel_consumed_qty) as total_fuel_consumed FROM turf_consumption_log c JOIN turf_machines m ON c.machine_id = m.id",
+        "filters": {
+            "date": "AND to_char(c.log_date, 'YYYY-MM') = :date_param"
+        },
+        "group_by": " GROUP BY m.name",
+        "chart_config": {
+            "type": "bar",
+            "label_column": "machine_name",
+            "data_column": "total_fuel_consumed",
+            "title": "Monthly Fuel Consumption"
+        }
+    },
+    "report_consumption_trend": {
+        "sql": "SELECT to_char(c.log_date, 'YYYY-MM') as month, SUM(c.fuel_consumed_qty) as total_consumed FROM turf_consumption_log c JOIN turf_machines m ON c.machine_id = m.id JOIN turf_inventory_items i ON m.fuel_item_id = i.id",
+        "filters": {
+            "item": "AND lower(i.description) LIKE :item"
+        },
+        "group_by": " GROUP BY month ORDER BY month",
+        "chart_config": {
+            "type": "line",
+            "label_column": "month",
+            "data_column": "total_consumed",
+            "title": "Consumption Trend"
+        }
+    },
+    "list_with_ordering": {
+        "sql": "SELECT tcl.log_date, tm.name as machine_name, tcl.recorded_by as operator, tcl.fuel_consumed_qty, tcl.running_hours FROM turf_consumption_log tcl JOIN turf_machines tm ON tcl.machine_id = tm.id"
+    },
+    "report_historical_balance": {
+        "sql": "SELECT i.description, i.ac_unit, (COALESCE(SUM(CASE WHEN l.transaction_type = 'RECEIPT' THEN l.quantity ELSE 0 END), 0) - COALESCE(SUM(CASE WHEN l.transaction_type = 'ISSUE' THEN l.quantity ELSE 0 END), 0) - COALESCE((SELECT SUM(c.fuel_consumed_qty) FROM turf_consumption_log c JOIN turf_machines m ON c.machine_id = m.id WHERE m.fuel_item_id = i.id AND c.log_date <= :date_param), 0)) as balance_on_date FROM turf_inventory_items i LEFT JOIN turf_inventory_ledger l ON i.id = l.item_id AND l.transaction_date <= :date_param",
+        "filters": {
+            "item": "AND lower(i.description) LIKE :item"
+        },
+        "group_by": " GROUP BY i.id, i.description, i.ac_unit"
+    }
+}

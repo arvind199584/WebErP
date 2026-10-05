@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Forwarding Memo – DDA Golf Course</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #dde0e7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 20px;
+        }
+        .memo {
+            max-width: 880px;
+            width: 100%;
+            background: #ffffff;
+            padding: 30px 32px 28px 32px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            border: 1px solid #6f6f6f;
+            font-size: 15px;
+            line-height: 1.45;
+            color: #1c1c1c;
+        }
+
+        .main-title {
+            font-weight: 700;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            font-size: 18px;
+            margin-bottom: 22px;
+            letter-spacing: 0.3px;
+            text-align: center;
+        }
+
+        .section-row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 6px;
+            page-break-inside: avoid;
+        }
+
+        .item-code {
+            font-weight: 600;
+            min-width: 240px;
+            padding-right: 10px;
+        }
+
+        .item-value {
+            font-weight: 500;
+            flex: 1;
+        }
+
+        .dotted-list {
+            margin: 12px 0 10px 20px;
+            list-style-type: none;
+        }
+        .dotted-list li {
+            margin-bottom: 5px;
+            display: flex;
+        }
+        .li-label {
+            min-width: 210px;
+            font-weight: 600;
+        }
+        .li-value {
+            font-weight: 500;
+        }
+
+        .subhead {
+            font-weight: 700;
+            text-decoration: underline;
+            margin: 18px 0 8px 0;
+            font-size: 16px;
+        }
+
+        .inline-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0 15px 0;
+            border: 1px solid #222;
+            font-size: 15px;
+        }
+        .inline-table th {
+            background-color: #f1f3f6;
+            border: 1px solid #222;
+            padding: 8px 6px;
+            font-weight: 700;
+            text-align: center;
+        }
+        .inline-table td {
+            border: 1px solid #222;
+            padding: 8px 8px;
+        }
+        .inline-table td:last-child {
+            font-weight: 700;
+            text-align: right;
+            padding-right: 15px;
+        }
+
+        .signature-strip {
+            margin-top: 25px;
+            font-weight: 700;
+            font-size: 15px;
+            padding: 10px 0 5px 0;
+            border-top: 1px solid #333;
+            border-bottom: 1px solid #333;
+            text-align: center;
+        }
+
+        .office-use {
+            margin: 24px 0 10px 0;
+            font-weight: 700;
+            text-decoration: underline;
+            font-size: 16px;
+        }
+
+        .office-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px 30px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+        .office-item {
+            flex: 1 1 250px;
+            font-weight: 500;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px dashed #777;
+            margin: 16px 0;
+        }
+
+        /* underline for spans */
+        .u {
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .small-note {
+            font-size: 14px;
+            color: #2b2b2b;
+        }
+
+        .indent-block {
+            padding-left: 28px;
+            margin: 8px 0;
+        }
+
+        /* bold numbers */
+        .fw-600 {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+<div class="memo">
+    <!-- main title -->
+    <div class="main-title">BILL FORWARDING MEMO</div>
+
+    <!-- 1-5 -->
+    <div class="section-row"><span class="item-code">1. Name of work /Scheme:</span><span class="item-value"><strong>DDA Golf Course Dwarka.</strong></span></div>
+    <div class="section-row"><span class="item-code">2. SH:</span><span class="item-value"><strong>Providing various staff for office maintenance at Dwarka Golf Course.</strong></span></div>
+    <div class="section-row"><span class="item-code">3. Agency:</span><span class="item-value"><strong>M/s High Command</strong></span></div>
+    <div class="section-row"><span class="item-code">4. Budget code/item No.:</span><span class="item-value"><strong>24900312.</strong></span></div>
+    <div class="section-row"><span class="item-code">5. GSTIN NO --</span><span class="item-value"><strong>07AESPB5470P1ZV</strong>, PAN No. <strong>AESPB5470P</strong></span></div>
+
+    <!-- 6 -->
+    <div class="section-row"><span class="item-code">6. Tendered amount /amount of work done:</span><span class="item-value"><strong>Rs.1,65,66,732.00</strong> / <strong>Rs.44,69,907.00</strong></span></div>
+
+    <!-- 7 -->
+    <div class="section-row"><span class="item-code">7. Reference of AA/ES (AR& MO) in case on maintenance work</span></div>
+    <div class="indent-block">
+        <div class="section-row"><span class="item-code">a) Amount Rs.................</span></div>
+        <div class="section-row"><span class="item-code">b) No. &Date:-................</span></div>
+    </div>
+
+    <!-- 8 -->
+    <div class="section-row"><span class="item-code">8. Proportionate component available</span><span class="item-value"> To approved P.E. Separately for Civil/Elect./ Hort. Work (group wise):</span></div>
+
+    <!-- 9 -->
+    <div class="section-row"><span class="item-code">9. Progressive expenditure of the scheme against the provision indicate</span><span class="item-value"> Under col. 6 up to the previous month ............................................................................</span></div>
+
+    <!-- 10 -->
+    <div class="section-row"><span class="item-code">10. Reference to the approval of the deviation, if any</span></div>
+    <div class="indent-block">
+        <div class="section-row"><span class="item-code">i) No:</span></div>
+        <div class="section-row"><span class="item-code">ii) Amount:</span></div>
+        <div class="section-row"><span class="item-code">iii) Date:</span></div>
+    </div>
+
+    <!-- 11 -->
+    <div class="section-row"><span class="item-code">11. a) Budget provision during the year</span><span class="item-value"><strong>Rs.1,335 Lakhs.</strong></span></div>
+    <div class="section-row"><span class="item-code">b) Less department charges:</span></div>
+    <div class="section-row"><span class="item-code">c) Net Provision for the division</span><span class="item-value"> ...................................................................................................</span></div>
+
+    <!-- 12 -->
+    <div class="section-row"><span class="item-code">12. Expenditure during the year</span><span class="item-value">......................................................</span></div>
+
+    <!-- 13 -->
+    <div class="section-row"><span class="item-code">13. Reference of the Budget slip</span></div>
+    <div class="indent-block">
+        <div class="section-row"><span class="item-code">a) No. & Date...NA</span></div>
+        <div class="section-row"><span class="item-code">b) Amount.</span><span class="item-value">.................................................................</span></div>
+    </div>
+
+    <!-- 14 -->
+    <div class="section-row"><span class="item-code">14. Amount of bill chargeable to work:</span><span class="item-value"><strong>Rs.44,69,907.00</strong></span></div>
+
+    <!-- 15 -->
+    <div class="section-row"><span class="item-code">15. Net Amount payable:</span><span class="item-value"><strong>Rs.35,09,951.00</strong></span></div>
+
+    <!-- 16 -->
+    <div class="section-row"><span class="item-code">16. The maintenance estimate is approved and work is technically sanctioned.</span></div>
+
+    <!-- 17 -->
+    <div class="section-row"><span class="item-code">17. The works against which the bills have been forwarded above are actually executed at site.</span></div>
+
+    <!-- 18 -->
+    <div class="section-row"><span class="item-code">18. The expenditure on the work is within deviation limit over and above the contract amount.</span></div>
+
+    <!-- 19 -->
+    <div class="section-row"><span class="item-code">19. The expenditure including the proposed requirement of funds/bill is within 10% beyond the sanctioned amount of AA & ES proportionate value of AA& ES of 2.000 crores (2 Crores) whichever is less.</span></div>
+
+    <!-- 20 -->
+    <div class="section-row"><span class="item-code">20. Certified that budget slip has been got issued for the work which have been projected in the demand.</span></div>
+
+    <!-- 21 -->
+    <div class="section-row"><span class="item-code">21. Proposed release of payment is covered under sanctioned AA & ES/ARMO & Budget provision of the relevant year.</span></div>
+
+    <!-- 22 -->
+    <div class="section-row"><span class="item-code">22. Bill furnished by agency is also duly complaint of all orders/guidelines of GOI w.r.t GST/Income Tax and all other statutory provisions.</span></div>
+
+    <!-- 23 -->
+    <div class="section-row"><span class="item-code">23. All necessary checks as required under the provision of CPWD manual & departmental guidelines.</span></div>
+
+    <!-- 24 -->
+    <div class="section-row"><span class="item-code">24. Work has already been executed at site against which payment is being proposed for release.</span></div>
+
+    <!-- 25 -->
+    <div class="section-row"><span class="item-code">25. Payment is within the scope of the order.</span></div>
+
+    <!-- 26 -->
+    <div class="section-row"><span class="item-code">26. The Contractor has submitted the undertaking and copies of returns of last two assessment years have been submitted at DDA Golf Course Dwarka.</span></div>
+
+    <!-- 27 NEFT details + table -->
+    <div class="section-row" style="margin-top: 20px;"><span class="item-code">27. The NEFT details of the agency are as under:-</span></div>
+
+    <table class="inline-table">
+        <thead>
+            <tr>
+                <th>Name of Payee</th>
+                <th>Account No.</th>
+                <th>IFSC Code</th>
+                <th>Bank Name</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>M/s High Command</strong></td>
+                <td>90541010003984</td>
+                <td>CNRB0002455</td>
+                <td>Canara Bank</td>
+                <td><strong>Rs.35,09,951.00</strong></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- designation line (exactly as given) -->
+    <div class="signature-strip">
+        <span>Sr. A.O/CAU(Sports)/DDA &nbsp;&nbsp;&nbsp; AAO/DGCD &nbsp;&nbsp;&nbsp; Secretary (DGCD) /DDA</span>
+    </div>
+
+    <!-- FOR USE IN OFFICE section -->
+    <div class="office-use">FOR USE IN OFFICE</div>
+
+    <div class="office-grid">
+        <div class="office-item">1. Amount of AA & ES.</div>
+        <div class="office-item">2. Progressive Expenditure till date.</div>
+        <div class="office-item">3. Total Budget provision for the scheme.</div>
+        <div class="office-item">4. Total Expenditure till date (during the year).</div>
+        <div class="office-item">5. Total Expenditure of the division till date (during the year).</div>
+        <div class="office-item">6. Amount of the bill chargeable to work.</div>
+    </div>
+
+    <!-- faint bottom note (original preserved) -->
+    <hr>
+    <div style="font-size: 13px; color: #3d3d3d; text-align: right; margin-top: 5px;">[Forwarding Memo – DDA Golf Course Dwarka / M/s High Command]</div>
+
+    <!-- hidden page-break control -->
+    <div style="height:0; page-break-before: avoid;"></div>
+</div>
+</body>
+</html>

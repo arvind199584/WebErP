@@ -1,0 +1,5139 @@
+{
+  "database": "modpyphp",
+  "tables": [
+    {
+      "table_name": "aa_es",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('aa_es_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "budgetid",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "sub_head",
+          "type": "text",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "alias",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "type",
+          "type": "aa_es_type",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "boq",
+          "type": "jsonb",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "estimated_cost",
+          "type": "numeric",
+          "nullable": false,
+          "default": "0.00",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "justified_amount",
+          "type": "numeric",
+          "nullable": false,
+          "default": "0.00",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "aa_es_amount",
+          "type": "numeric",
+          "nullable": false,
+          "default": "0.00",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "status",
+          "type": "aa_es_status",
+          "nullable": false,
+          "default": "'Draft'::aa_es_status",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "approval_pdf",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "approved_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "aa_es_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "activity_logs",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('activity_logs_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "table_name",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "record_id",
+          "type": "integer",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "action",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "old_data",
+          "type": "jsonb",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "new_data",
+          "type": "jsonb",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "changed_by",
+          "type": "integer",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "changed_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "activity_logs_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "idx_logs_table_record",
+          "columns": [
+            "record_id",
+            "table_name"
+          ],
+          "unique": false
+        },
+        {
+          "index_name": "idx_logs_user",
+          "columns": [
+            "changed_by"
+          ],
+          "unique": false
+        }
+      ]
+    },
+    {
+      "table_name": "address_book",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('address_book_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "name",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "designation",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "department",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "address",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "email",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "category",
+          "type": "character varying",
+          "nullable": true,
+          "default": "'Other'::character varying",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "address_book_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "agencies",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('agencies_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "name",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "account_no",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "ifsc",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "bank_name",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "gst_no",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "pan_no",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "address",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "contact_person",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "email",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "agencies_name_key",
+          "columns": [
+            "name"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "agencies_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "agreements",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('agreements_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "agreement_no",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "agency_id",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "aa_es_id",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "service_charge_percent",
+          "type": "numeric",
+          "nullable": false,
+          "default": "0.00",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "tendered_amount",
+          "type": "numeric",
+          "nullable": false,
+          "default": "0.00",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "period",
+          "type": "daterange",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "status",
+          "type": "agreement_status",
+          "nullable": false,
+          "default": "'Active'::agreement_status",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "bill_type_esic",
+          "type": "boolean",
+          "nullable": false,
+          "default": "false",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "bill_type_epf",
+          "type": "boolean",
+          "nullable": false,
+          "default": "false",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "scope",
+          "type": "jsonb",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "predecessor_id",
+          "type": "integer",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "signatory",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "agreements_agreement_no_key",
+          "columns": [
+            "agreement_no"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "agreements_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "idx_agreements_agency_aaes",
+          "columns": [
+            "aa_es_id",
+            "agency_id"
+          ],
+          "unique": false
+        },
+        {
+          "index_name": "idx_agreements_predecessor",
+          "columns": [
+            "predecessor_id"
+          ],
+          "unique": false
+        }
+      ]
+    },
+    {
+      "table_name": "attendance_records",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('attendance_records_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "employee_id",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "attendance_date",
+          "type": "date",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "status",
+          "type": "attendance_status",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "attendance_records_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "uq_emp_date",
+          "columns": [
+            "attendance_date",
+            "employee_id"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "idx_attendance_perf",
+          "columns": [
+            "attendance_date",
+            "employee_id",
+            "status"
+          ],
+          "unique": false
+        }
+      ]
+    },
+    {
+      "table_name": "bills",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('bills_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "agency_bill_no",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "bill_date",
+          "type": "date",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "office_bill_no",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "bill_type",
+          "type": "bill_type",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "agreement_id",
+          "type": "integer",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "work_order_id",
+          "type": "integer",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "supply_order_id",
+          "type": "integer",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "budget_id",
+          "type": "integer",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "bill_items",
+          "type": "jsonb",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "deductions",
+          "type": "jsonb",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "withheld",
+          "type": "jsonb",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "gross_amount",
+          "type": "numeric",
+          "nullable": false,
+          "default": "0.00",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "total_deduction",
+          "type": "numeric",
+          "nullable": false,
+          "default": "0.00",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "net_amount",
+          "type": "numeric",
+          "nullable": false,
+          "default": "0.00",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "status",
+          "type": "bill_status",
+          "nullable": false,
+          "default": "'Draft'::bill_status",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "period_from",
+          "type": "date",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "period_to",
+          "type": "date",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "bills_office_bill_no_key",
+          "columns": [
+            "office_bill_no"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "bills_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "budget",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('budget_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "fy",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "code",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "provision",
+          "type": "numeric",
+          "nullable": false,
+          "default": "0.00",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "name_of_work",
+          "type": "text",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "budget_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "uq_code_fy",
+          "columns": [
+            "code",
+            "fy"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "idx_budget_fy_office",
+          "columns": [
+            "fy",
+            "officeid"
+          ],
+          "unique": false
+        }
+      ]
+    },
+    {
+      "table_name": "dependents",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('dependents_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "member_id",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "full_name",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "relationship",
+          "type": "relationship_type",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "dob",
+          "type": "date",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "photo",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "status",
+          "type": "character varying",
+          "nullable": true,
+          "default": "'Active'::character varying",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "dependents_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "employees",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('employees_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "agreement_id",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "full_name",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "designation",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "account_no",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "ifsc",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "bank_name",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "uan_no",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "esic_no",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "joining_date",
+          "type": "date",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "leaving_date",
+          "type": "date",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "default_rest_day",
+          "type": "day_of_week",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "is_reliever",
+          "type": "boolean",
+          "nullable": false,
+          "default": "false",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "inherited_from_id",
+          "type": "integer",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "deployed_office_id",
+          "type": "integer",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "employees_email_key",
+          "columns": [
+            "email"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "employees_pkey",
+          "columns": [
+            "id",
+            "id"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "uq_name_agreement",
+          "columns": [
+            "agreement_id",
+            "full_name"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "epf_ledger",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('epf_ledger_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "employee_id",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "transaction_date",
+          "type": "date",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "remark",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "cr_amount",
+          "type": "numeric",
+          "nullable": true,
+          "default": "0.00",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "dr_amount",
+          "type": "numeric",
+          "nullable": true,
+          "default": "0.00",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "epf_ledger_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "esic_ledger",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('esic_ledger_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "employee_id",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "transaction_date",
+          "type": "date",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "remark",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "cr_amount",
+          "type": "numeric",
+          "nullable": true,
+          "default": "0.00",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "dr_amount",
+          "type": "numeric",
+          "nullable": true,
+          "default": "0.00",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "esic_ledger_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "gc_items",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('gc_items_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "office_id",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "item_name",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "unit_of_measurement",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "gc_items_office_id_item_name_key",
+          "columns": [
+            "item_name",
+            "office_id"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "gc_items_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "gc_machinery",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('gc_machinery_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "office_id",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "machinery_name",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "machinery_id_no",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "machinery_type",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "status",
+          "type": "character varying",
+          "nullable": true,
+          "default": "'ACTIVE'::character varying",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "gc_machinery_office_id_machinery_id_no_key",
+          "columns": [
+            "machinery_id_no",
+            "office_id"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "gc_machinery_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "gc_main_stock_transactions",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('gc_main_stock_transactions_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "office_id",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "transaction_date",
+          "type": "date",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "voucher_no",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "transaction_type",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "item_id",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "quantity",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "party",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "remarks",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "gc_main_stock_transactions_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "gc_sub_ledger_consumption",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('gc_sub_ledger_consumption_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "office_id",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "consumption_date",
+          "type": "date",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "consumed_by",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "item_id",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "machinery_id",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "quantity_consumed",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "purpose",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "remarks",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "gc_sub_ledger_consumption_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "hand_receipts",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('hand_receipts_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "budgetid",
+          "type": "integer",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "category",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "description",
+          "type": "text",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "gross_amount",
+          "type": "numeric",
+          "nullable": false,
+          "default": "0.00",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "tds_amount",
+          "type": "numeric",
+          "nullable": false,
+          "default": "0.00",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "net_amount",
+          "type": "numeric",
+          "nullable": false,
+          "default": "0.00",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "budget_implication",
+          "type": "boolean",
+          "nullable": false,
+          "default": "false",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "hand_receipts_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "historical_prices",
+      "description": "",
+      "columns": [
+        {
+          "name": "symbol",
+          "type": "text",
+          "nullable": false,
+          "default": null,
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "date",
+          "type": "date",
+          "nullable": false,
+          "default": null,
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "open",
+          "type": "numeric",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "high",
+          "type": "numeric",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "low",
+          "type": "numeric",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "close",
+          "type": "numeric",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "volume",
+          "type": "numeric",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "symbol",
+        "date"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "historical_prices_pkey",
+          "columns": [
+            "date",
+            "symbol"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "internal_emails",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('internal_emails_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "sender_id",
+          "type": "integer",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "receiver_id",
+          "type": "integer",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "subject",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "sent_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "is_hidden_sender",
+          "type": "boolean",
+          "nullable": true,
+          "default": "false",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "is_hidden_receiver",
+          "type": "boolean",
+          "nullable": true,
+          "default": "false",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "parent_email_id",
+          "type": "integer",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "internal_emails_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "members",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('members_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "membership_no",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "membership_type",
+          "type": "membership_type",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "full_name",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "gender",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "dob",
+          "type": "date",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "uaidi",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "address",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "phone",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "email",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "username",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "password",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "joining_date",
+          "type": "date",
+          "nullable": false,
+          "default": "CURRENT_DATE",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "leaving_date",
+          "type": "date",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "history",
+          "type": "jsonb",
+          "nullable": true,
+          "default": "'[]'::jsonb",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "members_membership_no_key",
+          "columns": [
+            "membership_no"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "members_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "members_username_key",
+          "columns": [
+            "username"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "membership_sequences",
+      "description": "",
+      "columns": [
+        {
+          "name": "prefix",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "last_sequence",
+          "type": "integer",
+          "nullable": false,
+          "default": "0",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "prefix"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "membership_sequences_pkey",
+          "columns": [
+            "prefix"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "mf_holdings",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('mf_holdings_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "mf_id",
+          "type": "integer",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "stock_symbol",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "weight_percentage",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "holding_date",
+          "type": "date",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "mf_holdings_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "mutual_funds",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('mutual_funds_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "name",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "mutual_funds_name_key",
+          "columns": [
+            "name"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "mutual_funds_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "nlp_knowledge_base",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('nlp_knowledge_base_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "question_text",
+          "type": "text",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "sql_query",
+          "type": "text",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "embedding",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "nlp_knowledge_base_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "nlp_knowledge_base_question_text_key",
+          "columns": [
+            "question_text"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "office",
+      "description": "",
+      "columns": [
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('office_officeid_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "officename",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "officecode",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "address",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "phone",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "email",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "contactperson",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "has_finance",
+          "type": "boolean",
+          "nullable": true,
+          "default": "false",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "has_store",
+          "type": "boolean",
+          "nullable": true,
+          "default": "false",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "has_workshop",
+          "type": "boolean",
+          "nullable": true,
+          "default": "false",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "has_hr",
+          "type": "boolean",
+          "nullable": true,
+          "default": "true",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "officeid"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "office_pkey",
+          "columns": [
+            "officeid"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "opening_balances",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('opening_balances_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "agreement_id",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "items_paid",
+          "type": "numeric",
+          "nullable": false,
+          "default": "0.00",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "gst_paid",
+          "type": "numeric",
+          "nullable": false,
+          "default": "0.00",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "esic_paid",
+          "type": "numeric",
+          "nullable": false,
+          "default": "0.00",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "epf_paid",
+          "type": "numeric",
+          "nullable": false,
+          "default": "0.00",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "items_upto",
+          "type": "date",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "gst_upto",
+          "type": "date",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "esic_upto",
+          "type": "date",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "epf_upto",
+          "type": "date",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "items_gap",
+          "type": "daterange",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "gst_gap",
+          "type": "daterange",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "esic_gap",
+          "type": "daterange",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "epf_gap",
+          "type": "daterange",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "itemwise_expenditure",
+          "type": "jsonb",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "opening_balances_agreement_id_key",
+          "columns": [
+            "agreement_id"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "opening_balances_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "pending_training",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('pending_training_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "user_query",
+          "type": "text",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "asked_by",
+          "type": "integer",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "is_resolved",
+          "type": "boolean",
+          "nullable": true,
+          "default": "false",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "pending_training_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "registry_constraints",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('registry_constraints_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "table_name",
+          "type": "text",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "column_name",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "constraint_type",
+          "type": "text",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "constraint_definition",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "registry_constraints_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "registry_enums",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('registry_enums_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "enum_name",
+          "type": "text",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "enum_values",
+          "type": "ARRAY",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "registry_enums_enum_name_key",
+          "columns": [
+            "enum_name"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "registry_enums_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "registry_procedures",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('registry_procedures_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "procedure_name",
+          "type": "text",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "procedure_definition",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "registry_procedures_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "registry_procedures_procedure_name_key",
+          "columns": [
+            "procedure_name"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "registry_tables",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('registry_tables_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "table_name",
+          "type": "text",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "schema_name",
+          "type": "text",
+          "nullable": true,
+          "default": "'public'::text",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "owner",
+          "type": "text",
+          "nullable": true,
+          "default": "'postgres'::text",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "registry_tables_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "registry_tables_table_name_key",
+          "columns": [
+            "table_name"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "registry_triggers",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('registry_triggers_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "table_name",
+          "type": "text",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "trigger_name",
+          "type": "text",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "trigger_definition",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "registry_triggers_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "stock_prices",
+      "description": "",
+      "columns": [
+        {
+          "name": "stock_symbol",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "yesterday_close_price",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "today_open_price",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "stock_symbol"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "stock_prices_pkey",
+          "columns": [
+            "stock_symbol"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "supply_orders",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('supply_orders_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "aa_es_id",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "agency_id",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "supply_order_no",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "estimated_cost",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "tendered_amount",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "service_charge_percent",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "status",
+          "type": "order_status",
+          "nullable": false,
+          "default": "'Draft'::order_status",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "supply_orders_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "supply_orders_supply_order_no_key",
+          "columns": [
+            "supply_order_no"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "tenants",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('tenants_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "slug",
+          "type": "text",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "schema_name",
+          "type": "text",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "tenants_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "tenants_schema_name_key",
+          "columns": [
+            "schema_name"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "tenants_slug_key",
+          "columns": [
+            "slug"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "tm",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('tm_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "office_id",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "tm_no",
+          "type": "text",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "dob",
+          "type": "date",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "address",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "dependents",
+          "type": "jsonb",
+          "nullable": true,
+          "default": "'[]'::jsonb",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "validity",
+          "type": "daterange",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "payment_amount",
+          "type": "numeric",
+          "nullable": true,
+          "default": "0.00",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "payment_reference",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "tm_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "tm_tm_no_key",
+          "columns": [
+            "tm_no"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "tm_rates",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('tm_rates_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "office_id",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "main_member_rate",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "dependent_rate",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "effective_from",
+          "type": "date",
+          "nullable": false,
+          "default": "CURRENT_DATE",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "is_active",
+          "type": "boolean",
+          "nullable": true,
+          "default": "true",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "icard_rate",
+          "type": "numeric",
+          "nullable": true,
+          "default": "10.00",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "gst_percent",
+          "type": "numeric",
+          "nullable": true,
+          "default": "18.00",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "tm_rates_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "turf_consumption_log",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('turf_consumption_log_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "machine_id",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "log_date",
+          "type": "date",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "fuel_consumed_qty",
+          "type": "numeric",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "running_hours",
+          "type": "numeric",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "recorded_by",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "entry_type",
+          "type": "character varying",
+          "nullable": false,
+          "default": "'MANUAL'::character varying",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "turf_consumption_log_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "unique_machine_date",
+          "columns": [
+            "log_date",
+            "machine_id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "turf_inventory_categories",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('turf_inventory_categories_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "name",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "code",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "turf_inventory_categories_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "turf_inventory_categories_name_key",
+          "columns": [
+            "name"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "turf_inventory_categories_code_key",
+          "columns": [
+            "code"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "turf_inventory_items",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('turf_inventory_items_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "description",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "ac_unit",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "category_id",
+          "type": "integer",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "turf_inventory_items_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "turf_inventory_ledger",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('turf_inventory_ledger_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "item_id",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "transaction_type",
+          "type": "turf_transaction_type_enum",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "quantity",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "transaction_date",
+          "type": "date",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "voucher_no",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "party",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "remarks",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "turf_inventory_ledger_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "turf_machines",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('turf_machines_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "name",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "make",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "runduration",
+          "type": "boolean",
+          "nullable": true,
+          "default": "false",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "status",
+          "type": "turf_machine_status_enum",
+          "nullable": true,
+          "default": "'Working'::turf_machine_status_enum",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "fuel_item_id",
+          "type": "integer",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "daily_run",
+          "type": "boolean",
+          "nullable": false,
+          "default": "false",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "has_rest_day",
+          "type": "boolean",
+          "nullable": false,
+          "default": "false",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "rest_day",
+          "type": "integer",
+          "nullable": false,
+          "default": "4",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "shortname",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "turf_machines_officeid_name_key",
+          "columns": [
+            "name",
+            "officeid"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "turf_machines_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "users",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('users_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "firstname",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "lastname",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "usrname",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "password",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "phone",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "email",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "role",
+          "type": "user_role",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "users_email_key",
+          "columns": [
+            "email"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "users_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "users_usrname_key",
+          "columns": [
+            "usrname"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "idx_users_usrname",
+          "columns": [
+            "usrname"
+          ],
+          "unique": false
+        }
+      ]
+    },
+    {
+      "table_name": "wage_items",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('wage_items_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "authority",
+          "type": "wage_authority",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "item_name",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "json_key",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "unit",
+          "type": "wage_unit",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "fixed_allowance",
+          "type": "numeric",
+          "nullable": true,
+          "default": "0.00",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "wage_items_item_name_key",
+          "columns": [
+            "item_name"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "wage_items_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "wage_orders",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('wage_orders_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "authority",
+          "type": "wage_authority",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "letter_no",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "letter_date",
+          "type": "date",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "valid_from",
+          "type": "date",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "valid_to",
+          "type": "date",
+          "nullable": false,
+          "default": "'9999-12-31'::date",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "rates",
+          "type": "jsonb",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "wage_orders_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "idx_wage_orders_lookup",
+          "columns": [
+            "authority",
+            "valid_from",
+            "valid_to"
+          ],
+          "unique": false
+        }
+      ]
+    },
+    {
+      "table_name": "wages_ledger",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('wages_ledger_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "employee_id",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "transaction_date",
+          "type": "date",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "remark",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "cr_amount",
+          "type": "numeric",
+          "nullable": true,
+          "default": "0.00",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "dr_amount",
+          "type": "numeric",
+          "nullable": true,
+          "default": "0.00",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "wages_ledger_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "water_log",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('water_log_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "office_id",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "date",
+          "type": "date",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "morning_opening",
+          "type": "numeric",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "evening_opening",
+          "type": "numeric",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "deleted_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "morning_closing",
+          "type": "numeric",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "evening_closing",
+          "type": "numeric",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "water_log_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "work_orders",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('work_orders_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "aa_es_id",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "agency_id",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "work_order_no",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "estimated_cost",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "tendered_amount",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "service_charge_percent",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "status",
+          "type": "order_status",
+          "nullable": false,
+          "default": "'Draft'::order_status",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp without time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [],
+      "indexes": [
+        {
+          "index_name": "work_orders_pkey",
+          "columns": [
+            "id",
+            "id"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "work_orders_work_order_no_key",
+          "columns": [
+            "work_order_no"
+          ],
+          "unique": true
+        }
+      ]
+    }
+  ],
+  "views": [
+    {
+      "view_name": "gc_view_machinery_consumption",
+      "definition": "",
+      "columns": [
+        {
+          "name": "office_id",
+          "type": "integer"
+        },
+        {
+          "name": "machinery_id",
+          "type": "integer"
+        },
+        {
+          "name": "machinery_name",
+          "type": "character varying"
+        },
+        {
+          "name": "machinery_id_no",
+          "type": "character varying"
+        },
+        {
+          "name": "item_id",
+          "type": "integer"
+        },
+        {
+          "name": "item_name",
+          "type": "character varying"
+        },
+        {
+          "name": "unit_of_measurement",
+          "type": "character varying"
+        },
+        {
+          "name": "total_consumed",
+          "type": "numeric"
+        }
+      ]
+    },
+    {
+      "view_name": "gc_view_main_stock_balance",
+      "definition": "",
+      "columns": [
+        {
+          "name": "office_id",
+          "type": "integer"
+        },
+        {
+          "name": "item_id",
+          "type": "integer"
+        },
+        {
+          "name": "item_name",
+          "type": "character varying"
+        },
+        {
+          "name": "unit_of_measurement",
+          "type": "character varying"
+        },
+        {
+          "name": "current_balance",
+          "type": "numeric"
+        }
+      ]
+    },
+    {
+      "view_name": "gc_view_sub_ledger_balance",
+      "definition": "",
+      "columns": [
+        {
+          "name": "office_id",
+          "type": "integer"
+        },
+        {
+          "name": "consumed_by",
+          "type": "character varying"
+        },
+        {
+          "name": "item_id",
+          "type": "integer"
+        },
+        {
+          "name": "item_name",
+          "type": "character varying"
+        },
+        {
+          "name": "unit_of_measurement",
+          "type": "character varying"
+        },
+        {
+          "name": "current_balance",
+          "type": "numeric"
+        }
+      ]
+    },
+    {
+      "view_name": "view_category_mapping",
+      "definition": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer"
+        },
+        {
+          "name": "authority",
+          "type": "wage_authority"
+        },
+        {
+          "name": "item_name",
+          "type": "character varying"
+        },
+        {
+          "name": "mapped_category",
+          "type": "character varying"
+        },
+        {
+          "name": "unit",
+          "type": "wage_unit"
+        },
+        {
+          "name": "fixed_allowance",
+          "type": "numeric"
+        }
+      ]
+    },
+    {
+      "view_name": "view_current_item_rates",
+      "definition": "",
+      "columns": [
+        {
+          "name": "item_id",
+          "type": "integer"
+        },
+        {
+          "name": "item_name",
+          "type": "character varying"
+        },
+        {
+          "name": "authority",
+          "type": "wage_authority"
+        },
+        {
+          "name": "unit",
+          "type": "wage_unit"
+        },
+        {
+          "name": "letter_no",
+          "type": "character varying"
+        },
+        {
+          "name": "effective_date",
+          "type": "date"
+        },
+        {
+          "name": "base_rate",
+          "type": "numeric"
+        },
+        {
+          "name": "fixed_allowance",
+          "type": "numeric"
+        },
+        {
+          "name": "total_rate",
+          "type": "numeric"
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "function_name": "add_wage_order",
+      "arguments": "p_authority wage_authority, p_letter_no character varying, p_letter_date date, p_effective_from date, p_rates jsonb",
+      "return_type": "void",
+      "definition": "CREATE OR REPLACE FUNCTION public.add_wage_order(p_authority wage_authority, p_letter_no character varying, p_letter_date date, p_effective_from date, p_rates jsonb)\n RETURNS void\n LANGUAGE plpgsql\nAS $function$\r\nBEGIN\r\n    -- 1. Update the previous latest order for this authority\r\n    -- Set its valid_to to one day before the new effective date\r\n    UPDATE wage_orders\r\n    SET valid_to = p_effective_from - INTERVAL '1 day'\r\n    WHERE authority = p_authority\r\n      AND valid_to = '9999-12-31'; -- Only close the currently active one\r\n\r\n    -- 2. Insert the new order\r\n    INSERT INTO wage_orders (authority, letter_no, letter_date, valid_from, valid_to, rates)\r\n    VALUES (p_authority, p_letter_no, p_letter_date, p_effective_from, '9999-12-31', p_rates);\r\nEND;\r\n$function$"
+    },
+    {
+      "function_name": "binary_quantize",
+      "arguments": "vector",
+      "return_type": "bit",
+      "definition": "CREATE OR REPLACE FUNCTION public.binary_quantize(vector)\n RETURNS bit\n LANGUAGE c\n IMMUTABLE PARALLEL SAFE STRICT\nAS '$libdir/vector', $function$binary_quantize$function$"
+    },
+    {
+      "function_name": "binary_quantize",
+      "arguments": "halfvec",
+      "return_type": "bit",
+      "definition": "CREATE OR REPLACE FUNCTION public.binary_quantize(halfvec)\n RETURNS bit\n LANGUAGE c\n IMMUTABLE PARALLEL SAFE STRICT\nAS '$libdir/vector', $function$halfvec_binary_quantize$function$"
+    },
+    {
+      "function_name": "calculate_aa_es_amounts",
+      "arguments": "",
+      "return_type": "trigger",
+      "definition": "CREATE OR REPLACE FUNCTION public.calculate_aa_es_amounts()\n RETURNS trigger\n LANGUAGE plpgsql\nAS $function$\r\nDECLARE\r\n    item JSONB;\r\n    total_est DECIMAL(15, 2) := 0;\r\n    total_justified DECIMAL(15, 2) := 0;\r\n    total_aa_es DECIMAL(15, 2) := 0;\r\n    period INT;\r\n    qty DECIMAL;\r\n    effective_qty DECIMAL;\r\n    rate DECIMAL;\r\n    esic_total DECIMAL(15, 2) := 0;\r\n    epf_total DECIMAL(15, 2) := 0;\r\n    bonus_total DECIMAL(15, 2) := 0;\r\n    gst_amount DECIMAL(15, 2) := 0;\r\n    is_7_day BOOLEAN := FALSE;\r\nBEGIN\r\n    IF TG_OP = 'UPDATE' AND OLD.status = 'Approved' THEN\r\n        IF current_setting('app.current_user_role', true) <> 'superuser' THEN\r\n             RAISE EXCEPTION 'Cannot edit an Approved AA & ES. Contact Superuser.';\r\n        END IF;\r\n    END IF;\r\n\r\n    IF NEW.type = 'Market' THEN\r\n        FOR item IN SELECT * FROM jsonb_array_elements(NEW.boq)\r\n        LOOP\r\n            qty := (item->>'qty')::DECIMAL;\r\n            rate := (item->>'rate')::DECIMAL;\r\n            gst_amount := gst_amount + (qty * rate * (REPLACE(item->>'gst', '%', '')::DECIMAL / 100));\r\n            total_est := total_est + (qty * rate);\r\n        END LOOP;\r\n        NEW.estimated_cost := ROUND(total_est);\r\n        NEW.justified_amount := ROUND(total_est);\r\n        NEW.aa_es_amount := ROUND(total_est + gst_amount);\r\n\r\n    ELSIF NEW.type = 'Manpower' THEN\r\n        period := (NEW.boq->>'Period')::INT;\r\n        is_7_day := COALESCE((NEW.boq->>'is_7_day')::BOOLEAN, FALSE);\r\n\r\n        FOR item IN SELECT * FROM jsonb_array_elements(NEW.boq->'Items')\r\n        LOOP\r\n            qty := (item->>'qty')::DECIMAL;\r\n            rate := (item->>'rate')::DECIMAL;\r\n            effective_qty := CASE WHEN is_7_day THEN qty * (7.0 / 6.0) ELSE qty END;\r\n\r\n            total_est := total_est + (effective_qty * rate * period);\r\n\r\n            IF (NEW.boq->>'ESIC')::BOOLEAN THEN esic_total := esic_total + (effective_qty * period * 0.0325 * LEAST(rate, 21000)); END IF;\r\n            IF (NEW.boq->>'EPF')::BOOLEAN THEN epf_total := epf_total + (effective_qty * period * 0.13 * LEAST(rate, 15000)); END IF;\r\n            IF (NEW.boq->>'Bonus')::BOOLEAN THEN bonus_total := bonus_total + (effective_qty * period * 0.0833 * LEAST(rate, 21000)); END IF;\r\n        END LOOP;\r\n\r\n        -- 1. ROUND Estimated Cost\r\n        NEW.estimated_cost := ROUND(total_est);\r\n\r\n        -- 2. ROUND Justified Amount (EC + 15% CPOH)\r\n        NEW.justified_amount := ROUND(NEW.estimated_cost * 1.15);\r\n\r\n        -- 3. GST (18% of Justified) - NO ROUNDING\r\n        gst_amount := NEW.justified_amount * 0.18;\r\n\r\n        -- 4. ROUND Grand Total\r\n        NEW.aa_es_amount := ROUND(NEW.justified_amount + gst_amount + esic_total + epf_total + bonus_total);\r\n    END IF;\r\n    RETURN NEW;\r\nEND;\r\n$function$"
+    },
+    {
+      "function_name": "calculate_gross_wage",
+      "arguments": "p_employee_id integer, p_from_date date, p_to_date date",
+      "return_type": "numeric",
+      "definition": "CREATE OR REPLACE FUNCTION public.calculate_gross_wage(p_employee_id integer, p_from_date date, p_to_date date)\n RETURNS numeric\n LANGUAGE plpgsql\nAS $function$\r\nDECLARE\r\n    v_agreement_id INT; v_wage_unit wage_unit; v_wage_rate DECIMAL;\r\n    p_days INT; a_days INT; l_days INT; gross_wage DECIMAL := 0;\r\n    designation_count INT; is_complete_month BOOLEAN;\r\nBEGIN\r\n    SELECT e.agreement_id, wi.unit, get_effective_rate(p_from_date, wi.id) INTO v_agreement_id, v_wage_unit, v_wage_rate\r\n    FROM employees e JOIN wage_items wi ON e.designation = wi.item_name WHERE e.id = p_employee_id;\r\n    IF v_wage_rate IS NULL THEN RAISE EXCEPTION 'No valid wage rate found for employee ID % on date %.', p_employee_id, p_from_date; END IF;\r\n    SELECT COUNT(*) FILTER (WHERE status = 'P'), COUNT(*) FILTER (WHERE status = 'A'), COUNT(*) FILTER (WHERE status = 'L') INTO p_days, a_days, l_days\r\n    FROM attendance_records WHERE employee_id = p_employee_id AND attendance_date BETWEEN p_from_date AND p_to_date;\r\n    IF v_wage_unit = 'Per Person Per Day' THEN gross_wage := p_days * v_wage_rate;\r\n    ELSE\r\n        SELECT COUNT(DISTINCT designation) INTO designation_count FROM employees WHERE agreement_id = v_agreement_id;\r\n        is_complete_month := (p_from_date = date_trunc('month', p_from_date) AND p_to_date = (date_trunc('month', p_from_date) + interval '1 month - 1 day')::date);\r\n        IF designation_count = 1 OR NOT is_complete_month THEN gross_wage := p_days * v_wage_rate / 26;\r\n        ELSE\r\n            IF (p_days + l_days + a_days) > 0 THEN gross_wage := p_days * v_wage_rate / (p_days + l_days + a_days);\r\n            ELSE gross_wage := 0; END IF;\r\n        END IF;\r\n    END IF;\r\n    RETURN gross_wage;\r\nEND;\r\n$function$"
+    },
+    {
+      "function_name": "cosine_distance",
+      "arguments": "vector, vector",
+      "return_type": "float8",
+      "definition": "CREATE OR REPLACE FUNCTION public.cosine_distance(vector, vector)\n RETURNS double precision\n LANGUAGE c\n IMMUTABLE PARALLEL SAFE STRICT\nAS '$libdir/vector', $function$cosine_distance$function$"
+    },
+    {
+      "function_name": "cosine_distance",
+      "arguments": "sparsevec, sparsevec",
+      "return_type": "float8",
+      "definition": "CREATE OR REPLACE FUNCTION public.cosine_distance(sparsevec, sparsevec)\n RETURNS double precision\n LANGUAGE c\n IMMUTABLE PARALLEL SAFE STRICT\nAS '$libdir/vector', $function$sparsevec_cosine_distance$function$"
+    },
+    {
+      "function_name": "cosine_distance",
+      "arguments": "halfvec, halfvec",
+      "return_type": "float8",
+      "definition": "CREATE OR REPLACE FUNCTION public.cosine_distance(halfvec, halfvec)\n RETURNS double precision\n LANGUAGE c\n IMMUTABLE PARALLEL SAFE STRICT\nAS '$libdir/vector', $function$halfvec_cosine_distance$function$"
+    },
+    {
+      "function_name": "create_agreement_with_inheritance",
+      "arguments": "p_officeid integer, p_agreement_no character varying, p_agency_id integer, p_aa_es_id integer, p_service_charge numeric, p_tendered_amount numeric, p_period daterange, p_esic boolean, p_epf boolean, p_predecessor_id integer DEFAULT NULL::integer",
+      "return_type": "int4",
+      "definition": "CREATE OR REPLACE FUNCTION public.create_agreement_with_inheritance(p_officeid integer, p_agreement_no character varying, p_agency_id integer, p_aa_es_id integer, p_service_charge numeric, p_tendered_amount numeric, p_period daterange, p_esic boolean, p_epf boolean, p_predecessor_id integer DEFAULT NULL::integer)\n RETURNS integer\n LANGUAGE plpgsql\nAS $function$\nDECLARE\n    v_new_id INT;\n    v_next_start_date DATE;\n    v_is_bound BOOLEAN;\nBEGIN\n    -- 1. Check if AA_ES is already bound across ALL entity types\n    SELECT EXISTS (\n        SELECT 1 FROM agreements WHERE aa_es_id = p_aa_es_id\n        UNION ALL\n        SELECT 1 FROM work_orders WHERE aa_es_id = p_aa_es_id\n        UNION ALL\n        SELECT 1 FROM supply_orders WHERE aa_es_id = p_aa_es_id\n    ) INTO v_is_bound;\n\n    IF v_is_bound THEN\n        RAISE EXCEPTION 'AA_ES ID % is already bound to another Agreement, Work Order, or Supply Order.', p_aa_es_id;\n    END IF;\n\n    -- 2. Validate Continuity if predecessor exists\n    IF p_predecessor_id IS NOT NULL THEN\n        SELECT upper(period) INTO v_next_start_date FROM agreements WHERE id = p_predecessor_id;\n        \n        IF v_next_start_date IS NULL THEN\n             RAISE EXCEPTION 'Predecessor Agreement ID % not found or has invalid period.', p_predecessor_id;\n        END IF;\n\n        IF lower(p_period) != v_next_start_date THEN\n            RAISE EXCEPTION 'Continuity Error: New agreement must start on %.', v_next_start_date;\n        END IF;\n    END IF;\n\n    -- 3. Create the New Agreement\n    INSERT INTO agreements (\n        officeid, agreement_no, agency_id, aa_es_id, \n        service_charge_percent, tendered_amount, period, \n        bill_type_esic, bill_type_epf, predecessor_id, status\n    ) VALUES (\n        p_officeid, p_agreement_no, p_agency_id, p_aa_es_id,\n        p_service_charge, p_tendered_amount, p_period,\n        p_esic, p_epf, p_predecessor_id, 'Active'\n    ) RETURNING id INTO v_new_id;\n\n    -- 4. Inherit Employees\n    IF p_predecessor_id IS NOT NULL THEN\n        -- Copy Bio-data to new records\n        -- Note: Removed 'status' as it is handled by the presence of leaving_date\n        INSERT INTO employees (\n            officeid, agreement_id, full_name, designation, \n            account_no, ifsc, bank_name, uan_no, esic_no,\n            joining_date, default_rest_day, is_reliever\n        )\n        SELECT \n            p_officeid, v_new_id, full_name, designation,\n            account_no, ifsc, bank_name, uan_no, esic_no,\n            lower(p_period), default_rest_day, is_reliever\n        FROM employees\n        WHERE agreement_id = p_predecessor_id AND (leaving_date IS NULL OR leaving_date >= v_next_start_date);\n\n        -- Mark old employees as left on the day the old agreement ended\n        UPDATE employees \n        SET leaving_date = v_next_start_date - 1\n        WHERE agreement_id = p_predecessor_id AND (leaving_date IS NULL OR leaving_date >= v_next_start_date);\n    END IF;\n\n    RETURN v_new_id;\nEND;\n$function$"
+    },
+    {
+      "function_name": "execute_crud",
+      "arguments": "p_input jsonb",
+      "return_type": "jsonb",
+      "definition": "CREATE OR REPLACE FUNCTION public.execute_crud(p_input jsonb)\n RETURNS jsonb\n LANGUAGE plpgsql\nAS $function$\nDECLARE\n    v_action TEXT := upper(p_input->>'Action');\n    v_table_name TEXT := p_input->>'Table';\n    v_payload jsonb := p_input->'Payload';\n    v_real_table_name TEXT;\n    v_pk_column TEXT;\n    v_pk_type TEXT;\n    v_pk_value TEXT;\n    v_sql TEXT;\n    v_result jsonb;\n    v_col_list TEXT;\n    v_key TEXT;\n    v_val TEXT;\nBEGIN\n    -- 1. Validate Table existence via registry and get the correct case-sensitive name\n    SELECT table_name INTO v_real_table_name \n    FROM public.registry_tables \n    WHERE lower(table_name) = lower(v_table_name);\n\n    IF v_real_table_name IS NULL THEN\n        RAISE EXCEPTION 'Table % is not registered or does not exist in the schema.', v_table_name;\n    END IF;\n\n    -- 2. Identify Primary Key column and its data type for exact filtering/joining\n    SELECT a.attname, format_type(a.atttypid, a.atttypmod)\n    INTO v_pk_column, v_pk_type\n    FROM pg_index i\n    JOIN pg_attribute a ON a.attrelid = i.indrelid AND a.attnum = ANY(i.indkey)\n    WHERE i.indrelid = format('public.%I', v_real_table_name)::regclass \n    AND i.indisprimary;\n\n    -- 3. Execute Action logic\n    CASE v_action\n        WHEN 'INSERT' THEN\n            -- Inserts a new record using jsonb_populate_record to map keys to columns and handle types\n            v_sql := format('INSERT INTO public.%I SELECT * FROM jsonb_populate_record(NULL::public.%I, %L) RETURNING to_jsonb(public.%I.*)', \n                            v_real_table_name, v_real_table_name, v_payload, v_real_table_name);\n            EXECUTE v_sql INTO v_result;\n\n        WHEN 'UPDATE' THEN\n            -- Updates an existing record. Requires the primary key in the payload.\n            v_pk_value := v_payload->>v_pk_column;\n            IF v_pk_value IS NULL THEN\n                RAISE EXCEPTION 'Primary key % must be provided in the Payload for UPDATE operations.', v_pk_column;\n            END IF;\n\n            -- Retrieve all columns to perform a row-level update\n            SELECT string_agg(quote_ident(attname), ', ') INTO v_col_list\n            FROM pg_attribute \n            WHERE attrelid = format('public.%I', v_real_table_name)::regclass \n            AND attnum > 0 AND NOT attisdropped;\n\n            -- Uses jsonb_populate_record(t, payload) to merge JSON updates into the existing row t\n            v_sql := format('UPDATE public.%I t SET (%s) = (SELECT %s FROM jsonb_populate_record(t, %L)) WHERE %I = %L::%s RETURNING to_jsonb(t.*)',\n                            v_real_table_name, v_col_list, v_col_list, v_payload, v_pk_column, v_pk_value, v_pk_type);\n            EXECUTE v_sql INTO v_result;\n\n        WHEN 'DELETE' THEN\n            -- Deletes a record identified by the primary key in the payload.\n            v_pk_value := v_payload->>v_pk_column;\n            IF v_pk_value IS NULL THEN\n                RAISE EXCEPTION 'Primary key % must be provided in the Payload for DELETE operations.', v_pk_column;\n            END IF;\n\n            v_sql := format('DELETE FROM public.%I t WHERE %I = %L::%s RETURNING to_jsonb(t.*)',\n                            v_real_table_name, v_pk_column, v_pk_value, v_pk_type);\n            EXECUTE v_sql INTO v_result;\n\n        WHEN 'SELECT', 'READ' THEN\n            -- Performs a filtered selection. All keys in the payload are treated as equality filters (AND).\n            v_sql := format('SELECT jsonb_agg(to_jsonb(t.*)) FROM public.%I t WHERE TRUE', v_real_table_name);\n            IF v_payload IS NOT NULL AND v_payload != '{}'::jsonb THEN\n                FOR v_key, v_val IN SELECT * FROM jsonb_each_text(v_payload) LOOP\n                    v_sql := v_sql || format(' AND %I::text = %L', v_key, v_val);\n                END LOOP;\n            END IF;\n            EXECUTE v_sql INTO v_result;\n\n        ELSE\n            RAISE EXCEPTION 'Unsupported Action: %. Supported actions are INSERT, UPDATE, DELETE, SELECT/READ.', v_action;\n    END CASE;\n\n    RETURN v_result;\nEXCEPTION\n    WHEN OTHERS THEN\n        RETURN jsonb_build_object('error', SQLERRM, 'detail', SQLSTATE);\nEND;\n$function$"
+    },
+    {
+      "function_name": "fill_employee_attendance",
+      "arguments": "p_employee_id integer, p_office_id integer, p_start_date date, p_end_date date, p_present_days integer[], p_absent_days integer[], p_leave_days integer[], p_rest_days integer[]",
+      "return_type": "void",
+      "definition": "CREATE OR REPLACE FUNCTION public.fill_employee_attendance(p_employee_id integer, p_office_id integer, p_start_date date, p_end_date date, p_present_days integer[], p_absent_days integer[], p_leave_days integer[], p_rest_days integer[])\n RETURNS void\n LANGUAGE plpgsql\nAS $function$\nDECLARE\n    v_is_reliever BOOLEAN;\n    v_joining DATE;\n    v_leaving DATE;\n    current_day DATE;\n    day_of_month INT;\n    status_to_insert attendance_status;\nBEGIN\n    SELECT is_reliever, joining_date, leaving_date \n    INTO v_is_reliever, v_joining, v_leaving \n    FROM employees WHERE id = p_employee_id;\n\n    FOR current_day IN SELECT generate_series(p_start_date, p_end_date, '1 day'::interval)\n    LOOP\n        -- Skip if before joining or after leaving\n        IF current_day < v_joining OR (v_leaving IS NOT NULL AND current_day > v_leaving) THEN\n            CONTINUE;\n        END IF;\n\n        day_of_month := EXTRACT(DAY FROM current_day);\n        status_to_insert := NULL;\n\n        IF v_is_reliever THEN\n            IF day_of_month = ANY(p_present_days) THEN status_to_insert := 'P';\n            ELSE status_to_insert := 'L'; END IF;\n        ELSE\n            IF day_of_month = ANY(p_absent_days) THEN status_to_insert := 'A';\n            ELSIF day_of_month = ANY(p_leave_days) THEN status_to_insert := 'L';\n            ELSIF day_of_month = ANY(p_rest_days) THEN status_to_insert := 'R';\n            ELSE status_to_insert := 'P'; END IF;\n        END IF;\n\n        INSERT INTO attendance_records (officeid, employee_id, attendance_date, status)\n        VALUES (p_office_id, p_employee_id, current_day, status_to_insert)\n        ON CONFLICT (employee_id, attendance_date)\n        DO UPDATE SET status = EXCLUDED.status, updated_at = NOW();\n    END LOOP;\nEND;\n$function$"
+    },
+    {
+      "function_name": "generate_employee_wages",
+      "arguments": "p_employee_id integer, p_office_id integer, p_month_str text",
+      "return_type": "void",
+      "definition": "CREATE OR REPLACE FUNCTION public.generate_employee_wages(p_employee_id integer, p_office_id integer, p_month_str text)\n RETURNS void\n LANGUAGE plpgsql\nAS $function$\r\nDECLARE\r\n    start_date DATE := (p_month_str || '-01')::date;\r\n    end_date DATE := (start_date + interval '1 month - 1 day')::date;\r\n    gross_wage DECIMAL;\r\n    epf_deduction DECIMAL := 0;\r\n    esic_deduction DECIMAL := 0;\r\n    is_epf_applicable BOOLEAN;\r\n    is_esic_applicable BOOLEAN;\r\nBEGIN\r\n    DELETE FROM wages_ledger\r\n    WHERE employee_id = p_employee_id\r\n      AND transaction_date BETWEEN start_date AND end_date;\r\n\r\n    SELECT ag.bill_type_epf, ag.bill_type_esic\r\n    INTO is_epf_applicable, is_esic_applicable\r\n    FROM employees e JOIN agreements ag ON e.agreement_id = ag.id\r\n    WHERE e.id = p_employee_id;\r\n\r\n    gross_wage := calculate_gross_wage(p_employee_id, start_date, end_date);\r\n\r\n    IF is_epf_applicable THEN\r\n        epf_deduction := 0.12 * LEAST(gross_wage, 15000);\r\n    END IF;\r\n\r\n    IF is_esic_applicable THEN\r\n        esic_deduction := 0.0075 * gross_wage;\r\n    END IF;\r\n\r\n    INSERT INTO wages_ledger (officeid, employee_id, transaction_date, remark, cr_amount)\r\n    VALUES (p_office_id, p_employee_id, end_date, 'Gross Wage for ' || p_month_str, gross_wage);\r\n\r\n    IF epf_deduction > 0 THEN\r\n        INSERT INTO wages_ledger (officeid, employee_id, transaction_date, remark, dr_amount)\r\n        VALUES (p_office_id, p_employee_id, end_date, 'EPF Deduction', epf_deduction);\r\n    END IF;\r\n\r\n    IF esic_deduction > 0 THEN\r\n        INSERT INTO wages_ledger (officeid, employee_id, transaction_date, remark, dr_amount)\r\n        VALUES (p_office_id, p_employee_id, end_date, 'ESIC Deduction', esic_deduction);\r\n    END IF;\r\nEND;\r\n$function$"
+    },
+    {
+      "function_name": "generate_epf_contribution",
+      "arguments": "p_employee_id integer, p_office_id integer, p_month_str text",
+      "return_type": "void",
+      "definition": "CREATE OR REPLACE FUNCTION public.generate_epf_contribution(p_employee_id integer, p_office_id integer, p_month_str text)\n RETURNS void\n LANGUAGE plpgsql\nAS $function$\r\nDECLARE\r\n    v_agreement_id INT;\r\n    is_epf_applicable BOOLEAN;\r\n    gross_wage DECIMAL;\r\n    epf_contribution DECIMAL := 0;\r\n    month_start DATE := (p_month_str || '-01')::date;\r\n    month_end DATE := (month_start + interval '1 month - 1 day')::date;\r\nBEGIN\r\n    -- 1. Check if EPF is applicable for the employee's agreement\r\n    SELECT e.agreement_id, ag.bill_type_epf\r\n    INTO v_agreement_id, is_epf_applicable\r\n    FROM employees e\r\n    JOIN agreements ag ON e.agreement_id = ag.id\r\n    WHERE e.id = p_employee_id;\r\n\r\n    -- If not applicable, do nothing and exit\r\n    IF NOT is_epf_applicable THEN\r\n        RETURN;\r\n    END IF;\r\n\r\n    -- 2. Get the gross wage for the month from the wages_ledger\r\n    SELECT COALESCE(SUM(cr_amount), 0)\r\n    INTO gross_wage\r\n    FROM wages_ledger\r\n    WHERE employee_id = p_employee_id\r\n      AND transaction_date BETWEEN month_start AND month_end;\r\n\r\n    -- If no wage was generated, do nothing\r\n    IF gross_wage <= 0 THEN\r\n        RETURN;\r\n    END IF;\r\n\r\n    -- 3. Delete any existing EPF record for this period to ensure idempotency\r\n    DELETE FROM epf_ledger\r\n    WHERE employee_id = p_employee_id\r\n      AND transaction_date = month_end;\r\n\r\n    -- 4. Calculate EPF contribution\r\n    -- EPF @ 13% of min(15000, Gross Wage)\r\n    epf_contribution := 0.13 * LEAST(gross_wage, 15000);\r\n\r\n    -- 5. Insert the new record if contribution is greater than zero\r\n    IF epf_contribution > 0 THEN\r\n        INSERT INTO epf_ledger (officeid, employee_id, transaction_date, remark, cr_amount)\r\n        VALUES (p_office_id, p_employee_id, month_end, 'Employer EPF Contribution for ' || p_month_str, epf_contribution);\r\n    END IF;\r\nEND;\r\n$function$"
+    },
+    {
+      "function_name": "generate_esic_contribution",
+      "arguments": "p_employee_id integer, p_office_id integer, p_month_str text",
+      "return_type": "void",
+      "definition": "CREATE OR REPLACE FUNCTION public.generate_esic_contribution(p_employee_id integer, p_office_id integer, p_month_str text)\n RETURNS void\n LANGUAGE plpgsql\nAS $function$\r\nDECLARE\r\n    v_agreement_id INT;\r\n    is_esic_applicable BOOLEAN;\r\n    gross_wage DECIMAL;\r\n    esic_contribution DECIMAL := 0;\r\n    month_start DATE := (p_month_str || '-01')::date;\r\n    month_end DATE := (month_start + interval '1 month - 1 day')::date;\r\nBEGIN\r\n    -- 1. Check if ESIC is applicable for the employee's agreement\r\n    SELECT e.agreement_id, ag.bill_type_esic\r\n    INTO v_agreement_id, is_esic_applicable\r\n    FROM employees e\r\n    JOIN agreements ag ON e.agreement_id = ag.id\r\n    WHERE e.id = p_employee_id;\r\n\r\n    -- If not applicable, do nothing and exit\r\n    IF NOT is_esic_applicable THEN\r\n        RETURN;\r\n    END IF;\r\n\r\n    -- 2. Get the gross wage for the month from the wages_ledger\r\n    SELECT COALESCE(SUM(cr_amount), 0)\r\n    INTO gross_wage\r\n    FROM wages_ledger\r\n    WHERE employee_id = p_employee_id\r\n      AND transaction_date BETWEEN month_start AND month_end;\r\n\r\n    -- If no wage was generated, do nothing\r\n    IF gross_wage <= 0 THEN\r\n        RETURN;\r\n    END IF;\r\n\r\n    -- 3. Delete any existing ESIC record for this period to ensure idempotency\r\n    DELETE FROM esic_ledger\r\n    WHERE employee_id = p_employee_id\r\n      AND transaction_date = month_end;\r\n\r\n    -- 4. Calculate ESIC contribution\r\n    -- ESIC @ 3.25% of min(21000, Gross Wage)\r\n    esic_contribution := 0.0325 * LEAST(gross_wage, 21000);\r\n\r\n    -- 5. Insert the new record if contribution is greater than zero\r\n    IF esic_contribution > 0 THEN\r\n        INSERT INTO esic_ledger (officeid, employee_id, transaction_date, remark, cr_amount)\r\n        VALUES (p_office_id, p_employee_id, month_end, 'Employer ESIC Contribution for ' || p_month_str, esic_contribution);\r\n    END IF;\r\nEND;\r\n$function$"
+    },
+    {
+      "function_name": "generate_membership_no",
+      "arguments": "",
+      "return_type": "trigger",
+      "definition": "CREATE OR REPLACE FUNCTION public.generate_membership_no()\n RETURNS trigger\n LANGUAGE plpgsql\nAS $function$\nDECLARE\n    v_prefix VARCHAR(10);\n    v_type_code VARCHAR(5);\n    v_name_initial CHAR(1);\n    v_seq_init INT;\n    v_seq_db INT;\n    v_final_seq INT;\nBEGIN\n    -- 1. Determine Type Code\n    CASE NEW.membership_type\n        WHEN 'General' THEN v_type_code := 'GEN';\n        WHEN 'Associate' THEN v_type_code := 'AM';\n        WHEN 'Govt Servant' THEN v_type_code := 'GS';\n        WHEN 'Senior Citizen' THEN v_type_code := 'SC';\n        ELSE v_type_code := 'OTH';\n    END CASE;\n\n    -- 2. Get Name Initial\n    v_name_initial := UPPER(SUBSTRING(NEW.full_name FROM 1 FOR 1));\n\n    -- 3. Construct Prefix\n    v_prefix := v_type_code || v_name_initial;\n\n    -- 4. Get Sequence from Initializer\n    SELECT last_sequence INTO v_seq_init FROM membership_sequences WHERE prefix = v_prefix;\n    IF v_seq_init IS NULL THEN v_seq_init := 0; END IF;\n\n    -- 5. Get Max Sequence from DB\n    SELECT COALESCE(MAX(NULLIF(regexp_replace(membership_no, '\\D', '', 'g'), '')::INT), 0)\n    INTO v_seq_db\n    FROM members\n    WHERE membership_no LIKE v_prefix || '%';\n\n    -- 6. Determine Next Sequence\n    v_final_seq := GREATEST(v_seq_init, v_seq_db) + 1;\n\n    -- 7. Assign Number\n    NEW.membership_no := v_prefix || v_final_seq;\n\n    -- 8. Set Username and Default Password\n    NEW.username := NEW.membership_no;\n    -- Default password 'admin123' hashed (bcrypt)\n    NEW.password := '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi';\n\n    return NEW;\nEND;\n$function$"
+    },
+    {
+      "function_name": "generate_wages_for_period",
+      "arguments": "p_employee_id integer, p_office_id integer, p_from date, p_to date",
+      "return_type": "void",
+      "definition": "CREATE OR REPLACE FUNCTION public.generate_wages_for_period(p_employee_id integer, p_office_id integer, p_from date, p_to date)\n RETURNS void\n LANGUAGE plpgsql\nAS $function$\nDECLARE\n    v_designation VARCHAR;\n    v_unit wage_unit;\n    v_item_id INT;\n    v_current_date DATE;\n    v_status VARCHAR;\n    v_rate DECIMAL;\n    v_daily_wage DECIMAL;\n    v_monthly_total DECIMAL := 0;\n    v_last_day_of_month DATE;\n    v_days_in_month INT;\nBEGIN\n    -- Get Employee Designation and Unit\n    SELECT e.designation, wi.unit, wi.id \n    INTO v_designation, v_unit, v_item_id\n    FROM employees e\n    JOIN wage_items wi ON e.designation = wi.item_name\n    WHERE e.id = p_employee_id;\n\n    -- Loop through each day in the period\n    v_current_date := p_from;\n    WHILE v_current_date <= p_to LOOP\n        -- 1. Get Attendance Status\n        SELECT status INTO v_status FROM attendance_records\n        WHERE employee_id = p_employee_id AND attendance_date = v_current_date;\n\n        -- 2. If Present (P) or Rest Day (R), calculate daily wage\n        IF v_status IN ('P', 'R') THEN\n            v_rate := get_effective_rate(v_current_date, v_item_id);\n            \n            IF v_unit = 'Per Person Per Month' THEN\n                -- Calculate actual days in the current month\n                v_days_in_month := EXTRACT(DAY FROM (DATE_TRUNC('month', v_current_date) + INTERVAL '1 month - 1 day'))::INT;\n                v_daily_wage := v_rate / v_days_in_month::DECIMAL;\n            ELSE\n                -- Per Day rate\n                v_daily_wage := v_rate;\n            END IF;\n            \n            v_monthly_total := v_monthly_total + v_daily_wage;\n        END IF;\n\n        -- 3. If it's the last day of the month, post the total and reset\n        v_last_day_of_month := (DATE_TRUNC('month', v_current_date) + INTERVAL '1 month - 1 day')::DATE;\n\n        IF v_current_date = v_last_day_of_month OR v_current_date = p_to THEN\n            IF v_monthly_total > 0 THEN\n                INSERT INTO wages_ledger (officeid, employee_id, transaction_date, cr_amount, remark)\n                VALUES (p_office_id, p_employee_id, v_current_date, ROUND(v_monthly_total), 'Monthly Wages Generated (Unit-Aware)');\n                v_monthly_total := 0;\n            END IF;\n        END IF;\n\n        v_current_date := v_current_date + INTERVAL '1 day';\n    END LOOP;\nEND;\n$function$"
+    },
+    {
+      "function_name": "get_effective_rate",
+      "arguments": "p_check_date date, p_item_id integer",
+      "return_type": "numeric",
+      "definition": "CREATE OR REPLACE FUNCTION public.get_effective_rate(p_check_date date, p_item_id integer)\n RETURNS numeric\n LANGUAGE plpgsql\nAS $function$\r\nDECLARE\r\n    v_authority wage_authority;\r\n    v_json_key VARCHAR;\r\n    v_fixed_allowance DECIMAL;\r\n    v_base_rate DECIMAL;\r\nBEGIN\r\n    -- Get item details\r\n    SELECT authority, json_key, fixed_allowance\r\n    INTO v_authority, v_json_key, v_fixed_allowance\r\n    FROM wage_items\r\n    WHERE id = p_item_id;\r\n\r\n    IF NOT FOUND THEN\r\n        RETURN NULL;\r\n    END IF;\r\n\r\n    -- Get the base rate from the order active on p_check_date\r\n    SELECT (rates ->> v_json_key)::DECIMAL\r\n    INTO v_base_rate\r\n    FROM wage_orders\r\n    WHERE authority = v_authority\r\n      AND p_check_date BETWEEN valid_from AND valid_to;\r\n\r\n    IF v_base_rate IS NULL THEN\r\n        RETURN NULL;\r\n    END IF;\r\n\r\n    -- Return Base Rate + Fixed Allowance (if any)\r\n    RETURN v_base_rate + COALESCE(v_fixed_allowance, 0);\r\nEND;\r\n$function$"
+    },
+    {
+      "function_name": "get_employee_wage_dashboard",
+      "arguments": "p_agreement_id integer",
+      "return_type": "record",
+      "definition": "CREATE OR REPLACE FUNCTION public.get_employee_wage_dashboard(p_agreement_id integer)\n RETURNS TABLE(id integer, full_name character varying, designation character varying, first_wage_date date, last_wage_date date, pending_from date, pending_to date, current_balance numeric)\n LANGUAGE plpgsql\nAS $function$\r\nBEGIN\r\n    RETURN QUERY\r\n    SELECT\r\n        e.id,\r\n        e.full_name,\r\n        e.designation,\r\n        (SELECT MIN(transaction_date) FROM wages_ledger WHERE employee_id = e.id AND cr_amount > 0) as first_wage,\r\n        (SELECT MAX(transaction_date) FROM wages_ledger WHERE employee_id = e.id AND cr_amount > 0) as last_wage,\r\n\r\n        -- Pending From: Day after last wage, or Joining Date if no wages yet\r\n        COALESCE(\r\n            (SELECT MAX(transaction_date) + INTERVAL '1 day' FROM wages_ledger WHERE employee_id = e.id AND cr_amount > 0),\r\n            e.joining_date\r\n        )::DATE as p_from,\r\n\r\n        -- Pending To: Last day of previous month\r\n        (DATE_TRUNC('month', CURRENT_DATE) - INTERVAL '1 day')::DATE as p_to,\r\n\r\n        -- Balance: Total CR - Total DR\r\n        COALESCE((SELECT SUM(cr_amount) - SUM(dr_amount) FROM wages_ledger WHERE employee_id = e.id), 0) as balance\r\n\r\n    FROM employees e\r\n    WHERE e.agreement_id = p_agreement_id\r\n    ORDER BY e.is_reliever ASC, e.designation ASC, e.full_name ASC;\r\nEND;\r\n$function$"
+    },
+    {
+      "function_name": "get_financial_year",
+      "arguments": "input_date date",
+      "return_type": "varchar",
+      "definition": "CREATE OR REPLACE FUNCTION public.get_financial_year(input_date date)\n RETURNS character varying\n LANGUAGE plpgsql\n IMMUTABLE\nAS $function$\r\nDECLARE\r\n    year_part INT;\r\n    month_part INT;\r\n    fy_start INT;\r\n    fy_end INT;\r\nBEGIN\r\n    year_part := EXTRACT(YEAR FROM input_date);\r\n    month_part := EXTRACT(MONTH FROM input_date);\r\n\r\n    -- If month is Jan(1), Feb(2), or Mar(3), it belongs to the previous calendar year's FY start\r\n    IF month_part < 4 THEN\r\n        fy_start := year_part - 1;\r\n        fy_end := year_part;\r\n    ELSE\r\n        fy_start := year_part;\r\n        fy_end := year_part + 1;\r\n    END IF;\r\n\r\n    -- Format as YYYY-YY (taking last 2 digits of end year)\r\n    RETURN fy_start || '-' || to_char(fy_end % 100, 'fm00');\r\nEND;\r\n$function$"
+    },
+    {
+      "function_name": "get_wage_summary_report",
+      "arguments": "p_agreement_id integer, p_due_from date, p_due_to date, p_drawn_on date",
+      "return_type": "record",
+      "definition": "CREATE OR REPLACE FUNCTION public.get_wage_summary_report(p_agreement_id integer, p_due_from date, p_due_to date, p_drawn_on date)\n RETURNS TABLE(id integer, full_name character varying, due numeric, drawn numeric, balance numeric)\n LANGUAGE plpgsql\nAS $function$\r\nBEGIN\r\n    RETURN QUERY\r\n        SELECT\r\n            e.id,\r\n            e.full_name,\r\n            -- Calculate Due amount for the specified period\r\n            (SELECT COALESCE(SUM(wl.cr_amount), 0)\r\n             FROM wages_ledger wl\r\n             WHERE wl.employee_id = e.id AND wl.transaction_date BETWEEN p_due_from AND p_due_to) as due_calc,\r\n\r\n            -- Calculate Drawn amount up to the specified date\r\n            (SELECT COALESCE(SUM(wl.dr_amount), 0)\r\n             FROM wages_ledger wl\r\n             WHERE wl.employee_id = e.id AND wl.transaction_date <= p_drawn_on) as drawn_calc,\r\n\r\n            -- Calculate Balance\r\n            (SELECT COALESCE(SUM(wl.cr_amount), 0) FROM wages_ledger wl WHERE wl.employee_id = e.id AND wl.transaction_date BETWEEN p_due_from AND p_due_to) -\r\n            (SELECT COALESCE(SUM(wl.dr_amount), 0) FROM wages_ledger wl WHERE wl.employee_id = e.id AND wl.transaction_date <= p_drawn_on) as balance_calc\r\n        FROM employees e\r\n        WHERE e.agreement_id = p_agreement_id\r\n        GROUP BY e.id, e.full_name\r\n        ORDER BY e.full_name;\r\nEND;\r\n$function$"
+    },
+    {
+      "function_name": "hamming_distance",
+      "arguments": "bit, bit",
+      "return_type": "float8",
+      "definition": "CREATE OR REPLACE FUNCTION public.hamming_distance(bit, bit)\n RETURNS double precision\n LANGUAGE c\n IMMUTABLE PARALLEL SAFE STRICT\nAS '$libdir/vector', $function$hamming_distance$function$"
+    },
+    {
+      "function_name": "inner_product",
+      "arguments": "vector, vector",
+      "return_type": "float8",
+      "definition": "CREATE OR REPLACE FUNCTION public.inner_product(vector, vector)\n RETURNS double precision\n LANGUAGE c\n IMMUTABLE PARALLEL SAFE STRICT\nAS '$libdir/vector', $function$inner_product$function$"
+    },
+    {
+      "function_name": "inner_product",
+      "arguments": "sparsevec, sparsevec",
+      "return_type": "float8",
+      "definition": "CREATE OR REPLACE FUNCTION public.inner_product(sparsevec, sparsevec)\n RETURNS double precision\n LANGUAGE c\n IMMUTABLE PARALLEL SAFE STRICT\nAS '$libdir/vector', $function$sparsevec_inner_product$function$"
+    },
+    {
+      "function_name": "inner_product",
+      "arguments": "halfvec, halfvec",
+      "return_type": "float8",
+      "definition": "CREATE OR REPLACE FUNCTION public.inner_product(halfvec, halfvec)\n RETURNS double precision\n LANGUAGE c\n IMMUTABLE PARALLEL SAFE STRICT\nAS '$libdir/vector', $function$halfvec_inner_product$function$"
+    },
+    {
+      "function_name": "jaccard_distance",
+      "arguments": "bit, bit",
+      "return_type": "float8",
+      "definition": "CREATE OR REPLACE FUNCTION public.jaccard_distance(bit, bit)\n RETURNS double precision\n LANGUAGE c\n IMMUTABLE PARALLEL SAFE STRICT\nAS '$libdir/vector', $function$jaccard_distance$function$"
+    },
+    {
+      "function_name": "l1_distance",
+      "arguments": "vector, vector",
+      "return_type": "float8",
+      "definition": "CREATE OR REPLACE FUNCTION public.l1_distance(vector, vector)\n RETURNS double precision\n LANGUAGE c\n IMMUTABLE PARALLEL SAFE STRICT\nAS '$libdir/vector', $function$l1_distance$function$"
+    },
+    {
+      "function_name": "l1_distance",
+      "arguments": "halfvec, halfvec",
+      "return_type": "float8",
+      "definition": "CREATE OR REPLACE FUNCTION public.l1_distance(halfvec, halfvec)\n RETURNS double precision\n LANGUAGE c\n IMMUTABLE PARALLEL SAFE STRICT\nAS '$libdir/vector', $function$halfvec_l1_distance$function$"
+    },
+    {
+      "function_name": "l1_distance",
+      "arguments": "sparsevec, sparsevec",
+      "return_type": "float8",
+      "definition": "CREATE OR REPLACE FUNCTION public.l1_distance(sparsevec, sparsevec)\n RETURNS double precision\n LANGUAGE c\n IMMUTABLE PARALLEL SAFE STRICT\nAS '$libdir/vector', $function$sparsevec_l1_distance$function$"
+    },
+    {
+      "function_name": "l2_distance",
+      "arguments": "sparsevec, sparsevec",
+      "return_type": "float8",
+      "definition": "CREATE OR REPLACE FUNCTION public.l2_distance(sparsevec, sparsevec)\n RETURNS double precision\n LANGUAGE c\n IMMUTABLE PARALLEL SAFE STRICT\nAS '$libdir/vector', $function$sparsevec_l2_distance$function$"
+    },
+    {
+      "function_name": "l2_distance",
+      "arguments": "halfvec, halfvec",
+      "return_type": "float8",
+      "definition": "CREATE OR REPLACE FUNCTION public.l2_distance(halfvec, halfvec)\n RETURNS double precision\n LANGUAGE c\n IMMUTABLE PARALLEL SAFE STRICT\nAS '$libdir/vector', $function$halfvec_l2_distance$function$"
+    },
+    {
+      "function_name": "l2_distance",
+      "arguments": "vector, vector",
+      "return_type": "float8",
+      "definition": "CREATE OR REPLACE FUNCTION public.l2_distance(vector, vector)\n RETURNS double precision\n LANGUAGE c\n IMMUTABLE PARALLEL SAFE STRICT\nAS '$libdir/vector', $function$l2_distance$function$"
+    },
+    {
+      "function_name": "l2_norm",
+      "arguments": "sparsevec",
+      "return_type": "float8",
+      "definition": "CREATE OR REPLACE FUNCTION public.l2_norm(sparsevec)\n RETURNS double precision\n LANGUAGE c\n IMMUTABLE PARALLEL SAFE STRICT\nAS '$libdir/vector', $function$sparsevec_l2_norm$function$"
+    },
+    {
+      "function_name": "l2_norm",
+      "arguments": "halfvec",
+      "return_type": "float8",
+      "definition": "CREATE OR REPLACE FUNCTION public.l2_norm(halfvec)\n RETURNS double precision\n LANGUAGE c\n IMMUTABLE PARALLEL SAFE STRICT\nAS '$libdir/vector', $function$halfvec_l2_norm$function$"
+    },
+    {
+      "function_name": "l2_normalize",
+      "arguments": "sparsevec",
+      "return_type": "sparsevec",
+      "definition": "CREATE OR REPLACE FUNCTION public.l2_normalize(sparsevec)\n RETURNS sparsevec\n LANGUAGE c\n IMMUTABLE PARALLEL SAFE STRICT\nAS '$libdir/vector', $function$sparsevec_l2_normalize$function$"
+    },
+    {
+      "function_name": "l2_normalize",
+      "arguments": "vector",
+      "return_type": "vector",
+      "definition": "CREATE OR REPLACE FUNCTION public.l2_normalize(vector)\n RETURNS vector\n LANGUAGE c\n IMMUTABLE PARALLEL SAFE STRICT\nAS '$libdir/vector', $function$l2_normalize$function$"
+    },
+    {
+      "function_name": "l2_normalize",
+      "arguments": "halfvec",
+      "return_type": "halfvec",
+      "definition": "CREATE OR REPLACE FUNCTION public.l2_normalize(halfvec)\n RETURNS halfvec\n LANGUAGE c\n IMMUTABLE PARALLEL SAFE STRICT\nAS '$libdir/vector', $function$halfvec_l2_normalize$function$"
+    },
+    {
+      "function_name": "log_activity",
+      "arguments": "",
+      "return_type": "trigger",
+      "definition": "CREATE OR REPLACE FUNCTION public.log_activity()\n RETURNS trigger\n LANGUAGE plpgsql\nAS $function$\r\nDECLARE\r\n    v_user_id INT;\r\n    v_old_data JSONB;\r\n    v_new_data JSONB;\r\n    v_record_id INT;\r\nBEGIN\r\n    -- Get User ID\r\n    BEGIN v_user_id := current_setting('app.current_user_id', true)::INT; EXCEPTION WHEN OTHERS THEN v_user_id := NULL; END;\r\n\r\n    -- Determine Record ID based on Table Name\r\n    IF TG_TABLE_NAME = 'office' THEN\r\n        IF TG_OP = 'DELETE' THEN v_record_id := OLD.Officeid; ELSE v_record_id := NEW.Officeid; END IF;\r\n    ELSE\r\n        -- Default to 'id' for all other tables\r\n        IF TG_OP = 'DELETE' THEN v_record_id := OLD.id; ELSE v_record_id := NEW.id; END IF;\r\n    END IF;\r\n\r\n    IF (TG_OP = 'DELETE') THEN\r\n        v_old_data := to_jsonb(OLD);\r\n        INSERT INTO activity_logs (table_name, record_id, action, old_data, changed_by) VALUES (TG_TABLE_NAME, v_record_id, 'DELETE', v_old_data, v_user_id);\r\n        RETURN OLD;\r\n    ELSIF (TG_OP = 'UPDATE') THEN\r\n        v_old_data := to_jsonb(OLD);\r\n        v_new_data := to_jsonb(NEW);\r\n        IF v_old_data IS DISTINCT FROM v_new_data THEN\r\n            INSERT INTO activity_logs (table_name, record_id, action, old_data, new_data, changed_by) VALUES (TG_TABLE_NAME, v_record_id, 'UPDATE', v_old_data, v_new_data, v_user_id);\r\n        END IF;\r\n        RETURN NEW;\r\n    ELSIF (TG_OP = 'INSERT') THEN\r\n        v_new_data := to_jsonb(NEW);\r\n        INSERT INTO activity_logs (table_name, record_id, action, new_data, changed_by) VALUES (TG_TABLE_NAME, v_record_id, 'INSERT', v_new_data, v_user_id);\r\n        RETURN NEW;\r\n    END IF;\r\n    RETURN NULL;\r\nEND;\r\n$function$"
+    },
+    {
+      "function_name": "normalize_member_name",
+      "arguments": "",
+      "return_type": "trigger",
+      "definition": "CREATE OR REPLACE FUNCTION public.normalize_member_name()\n RETURNS trigger\n LANGUAGE plpgsql\nAS $function$\nBEGIN\n    NEW.full_name := initcap(TRIM(NEW.full_name));\n    RETURN NEW;\nEND;\n$function$"
+    },
+    {
+      "function_name": "prevent_log_modification",
+      "arguments": "",
+      "return_type": "trigger",
+      "definition": "CREATE OR REPLACE FUNCTION public.prevent_log_modification()\n RETURNS trigger\n LANGUAGE plpgsql\nAS $function$\r\nBEGIN\r\n    -- Allow only the 'postgres' superuser (DB owner) to bypass\r\n    IF current_user = 'postgres' THEN\r\n        RETURN OLD;\r\n    END IF;\r\n\r\n    RAISE EXCEPTION 'Activity Logs are immutable and cannot be modified or deleted by application users.';\r\nEND;\r\n$function$"
+    },
+    {
+      "function_name": "prevent_paid_modification",
+      "arguments": "",
+      "return_type": "trigger",
+      "definition": "CREATE OR REPLACE FUNCTION public.prevent_paid_modification()\n RETURNS trigger\n LANGUAGE plpgsql\nAS $function$\r\nDECLARE\r\n    v_role TEXT;\r\nBEGIN\r\n    -- Get current user role from session variable\r\n    BEGIN\r\n        v_role := current_setting('app.current_user_role', true);\r\n    EXCEPTION WHEN OTHERS THEN\r\n        v_role := 'guest';\r\n    END;\r\n\r\n    -- Allow Superuser to bypass\r\n    IF v_role = 'superuser' THEN\r\n        RETURN NEW;\r\n    END IF;\r\n\r\n    -- Check if the record was already Paid\r\n    IF OLD.status = 'Paid' THEN\r\n        RAISE EXCEPTION 'Cannot modify or delete a Paid record. Contact Superuser.';\r\n    END IF;\r\n\r\n    RETURN NEW;\r\nEND;\r\n$function$"
+    },
+    {
+      "function_name": "process_agency_data",
+      "arguments": "",
+      "return_type": "trigger",
+      "definition": "CREATE OR REPLACE FUNCTION public.process_agency_data()\n RETURNS trigger\n LANGUAGE plpgsql\nAS $function$\r\nDECLARE\r\n    formatted_name TEXT;\r\n    clean_name TEXT;\r\nBEGIN\r\n    -- 1. Format Name: Ensure \"M/s \" prefix and Title Case\r\n    formatted_name := NEW.name;\r\n\r\n    -- Remove existing prefix variations (case insensitive) to avoid double prefixing like \"M/s M/s Name\"\r\n    -- Regex removes 'M/s', 'm/s', 'M/S' followed by optional spaces at the start\r\n    clean_name := regexp_replace(formatted_name, '^(m/s|M/S|M/s)\\.?\\s*', '', 'i');\r\n\r\n    -- Apply Title Case to the name part (e.g., \"ashok kumar\" -> \"Ashok Kumar\")\r\n    clean_name := initcap(clean_name);\r\n\r\n    -- Prepend the standard \"M/s \"\r\n    NEW.name := 'M/s ' || clean_name;\r\n\r\n    -- 2. Validate PAN (if provided)\r\n    IF NEW.pan_no IS NOT NULL AND length(trim(NEW.pan_no)) > 0 THEN\r\n        NEW.pan_no := upper(trim(NEW.pan_no));\r\n        -- Regex: 5 letters, 4 digits, 1 letter\r\n        IF NEW.pan_no !~ '^[A-Z]{5}[0-9]{4}[A-Z]{1}$' THEN\r\n            RAISE EXCEPTION 'Invalid PAN format. Must be 5 letters, 4 digits, 1 letter (e.g., ABCDE1234F).';\r\n        END IF;\r\n    ELSE\r\n        NEW.pan_no := NULL; -- Ensure empty string becomes NULL\r\n    END IF;\r\n\r\n    -- 3. Validate GST (if provided)\r\n    IF NEW.gst_no IS NOT NULL AND length(trim(NEW.gst_no)) > 0 THEN\r\n        NEW.gst_no := upper(trim(NEW.gst_no));\r\n        -- Regex: 2 digits, 5 letters, 4 digits, 1 letter, 1 alphanumeric, 'Z', 1 alphanumeric\r\n        IF NEW.gst_no !~ '^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$' THEN\r\n            RAISE EXCEPTION 'Invalid GST format. Standard format is required (e.g., 07ABCDE1234F1Z5).';\r\n        END IF;\r\n\r\n        -- Check if GST contains the PAN (characters 3 to 12 of GST must match PAN)\r\n        -- If PAN is also provided, we strictly check against it.\r\n        -- If PAN is NOT provided, we could optionally extract it from GST, but let's stick to validation.\r\n        IF NEW.pan_no IS NOT NULL THEN\r\n            IF substring(NEW.gst_no from 3 for 10) <> NEW.pan_no THEN\r\n                RAISE EXCEPTION 'GST Number (%) does not match the provided PAN (%).', NEW.gst_no, NEW.pan_no;\r\n            END IF;\r\n        END IF;\r\n    ELSE\r\n        NEW.gst_no := NULL;\r\n    END IF;\r\n\r\n    RETURN NEW;\r\nEND;\r\n$function$"
+    },
+    {
+      "function_name": "process_employee_data",
+      "arguments": "",
+      "return_type": "trigger",
+      "definition": "CREATE OR REPLACE FUNCTION public.process_employee_data()\n RETURNS trigger\n LANGUAGE plpgsql\nAS $function$\r\nDECLARE\r\n    base_name TEXT;\r\n    name_count INT;\r\n    suffix TEXT;\r\n    roman_map TEXT[] := ARRAY['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X'];\r\nBEGIN\r\n    -- 1. Format Name to Title Case\r\n    base_name := initcap(trim(NEW.full_name));\r\n    NEW.full_name := base_name;\r\n\r\n    -- 2. Handle Name Conflicts\r\n    SELECT count(*) INTO name_count\r\n    FROM employees\r\n    WHERE full_name ~ ('^' || base_name || '(-\\w+)?$')\r\n      AND agreement_id = NEW.agreement_id;\r\n\r\n    IF name_count > 0 THEN\r\n        -- Append the next Roman numeral\r\n        suffix := '-' || roman_map[name_count + 1];\r\n        NEW.full_name := base_name || suffix;\r\n    END IF;\r\n\r\n    -- 3. Handle Reliever Logic\r\n    IF NEW.is_reliever = TRUE THEN\r\n        NEW.default_rest_day := NULL;\r\n    END IF;\r\n\r\n    RETURN NEW;\r\nEND;\r\n$function$"
+    },
+    {
+      "function_name": "process_office_name",
+      "arguments": "",
+      "return_type": "trigger",
+      "definition": "CREATE OR REPLACE FUNCTION public.process_office_name()\n RETURNS trigger\n LANGUAGE plpgsql\nAS $function$\r\nDECLARE\r\n    words TEXT[];\r\n    word TEXT;\r\n    code TEXT := '';\r\n    formatted_name TEXT;\r\nBEGIN\r\n    -- Part 1: Format the OfficeName\r\n    -- Apply title case to the whole name first\r\n    formatted_name := initcap(NEW.OfficeName);\r\n\r\n    -- Handle specific acronyms as per the example \"DDA\".\r\n    -- This is a simplistic approach. A more robust solution might use a dictionary table of acronyms.\r\n    formatted_name := REPLACE(formatted_name, ' Dda', ' DDA');\r\n    NEW.OfficeName := formatted_name;\r\n\r\n    -- Part 2: Generate the OfficeCode from the newly formatted name\r\n    -- Split the office name into words\r\n    words := regexp_split_to_array(formatted_name, E'\\\\s+|,\\\\s*');\r\n\r\n    -- Iterate through words and take the first letter\r\n    FOREACH word IN ARRAY words\r\n    LOOP\r\n        -- Skip empty strings that might result from multiple spaces\r\n        IF length(word) > 0 THEN\r\n            code := code || upper(substring(word from 1 for 1));\r\n        END IF;\r\n    END LOOP;\r\n\r\n    -- Assign the generated code\r\n    NEW.OfficeCode = code;\r\n    RETURN NEW;\r\nEND;\r\n$function$"
+    },
+    {
+      "function_name": "restrict_agreement_update",
+      "arguments": "",
+      "return_type": "trigger",
+      "definition": "CREATE OR REPLACE FUNCTION public.restrict_agreement_update()\n RETURNS trigger\n LANGUAGE plpgsql\nAS $function$\r\nDECLARE\r\n    v_role TEXT;\r\nBEGIN\r\n    BEGIN\r\n        v_role := current_setting('app.current_user_role', true);\r\n    EXCEPTION WHEN OTHERS THEN\r\n        v_role := 'guest';\r\n    END;\r\n\r\n    -- Superuser can edit anything\r\n    IF v_role = 'superuser' THEN\r\n        RETURN NEW;\r\n    END IF;\r\n\r\n    -- Manager can only edit specific columns\r\n    -- Columns allowed: effective_boq (Scope), tendered_amount (AES Amount), period (To Date/Duration)\r\n    IF v_role = 'manager' THEN\r\n        IF (NEW.officeid IS DISTINCT FROM OLD.officeid) OR\r\n           (NEW.aa_es_id IS DISTINCT FROM OLD.aa_es_id) OR\r\n           (NEW.agency_id IS DISTINCT FROM OLD.agency_id) OR\r\n           (NEW.agreement_no IS DISTINCT FROM OLD.agreement_no) OR\r\n           (NEW.start_date IS DISTINCT FROM OLD.start_date) OR\r\n           (NEW.status IS DISTINCT FROM OLD.status) THEN\r\n            RAISE EXCEPTION 'Managers can only edit Scope, Amount, and Period of an Agreement.';\r\n        END IF;\r\n        RETURN NEW;\r\n    END IF;\r\n\r\n    -- Staff cannot edit at all (handled by RLS/PermissionManager, but double check here)\r\n    IF v_role = 'staff' THEN\r\n        RAISE EXCEPTION 'Staff are not allowed to edit Agreements.';\r\n    END IF;\r\n\r\n    RETURN NEW;\r\nEND;\r\n$function$"
+    },
+    {
+      "function_name": "tm_dependents_validator",
+      "arguments": "dependents_data jsonb",
+      "return_type": "bool",
+      "definition": "CREATE OR REPLACE FUNCTION public.tm_dependents_validator(dependents_data jsonb)\n RETURNS boolean\n LANGUAGE plpgsql\nAS $function$\nDECLARE\n    dep RECORD;\n    age_years INTEGER;\nBEGIN\n    -- Check if it's an array\n    IF jsonb_typeof(dependents_data) != 'array' THEN\n        RETURN FALSE;\n    END IF;\n\n    FOR dep IN SELECT * FROM jsonb_to_recordset(dependents_data) AS x(name TEXT, relation TEXT, dob DATE)\n    LOOP\n        -- 1. Relation Check\n        IF dep.relation NOT IN ('Spouse', 'Son', 'Daughter') THEN\n            RAISE NOTICE 'Invalid relation: %', dep.relation;\n            RETURN FALSE;\n        END IF;\n\n        -- 2. Age Check for Children\n        IF dep.relation IN ('Son', 'Daughter') THEN\n            age_years := extract(year from age(CURRENT_DATE, dep.dob));\n            IF age_years < 5 OR age_years > 21 THEN\n                RAISE NOTICE 'Child % outside age range (5-21): %', dep.name, age_years;\n                RETURN FALSE;\n            END IF;\n        END IF;\n        \n        -- Basic name check\n        IF dep.name IS NULL OR length(dep.name) < 2 THEN\n            RETURN FALSE;\n        END IF;\n    END LOOP;\n\n    RETURN TRUE;\nEND;\n$function$"
+    },
+    {
+      "function_name": "tm_payment_calculator",
+      "arguments": "member_id integer",
+      "return_type": "numeric",
+      "definition": "CREATE OR REPLACE FUNCTION public.tm_payment_calculator(member_id integer)\n RETURNS numeric\n LANGUAGE plpgsql\nAS $function$\nBEGIN\n    -- Logic to be discussed later\n    -- Default stub: 1000.00\n    RETURN 1000.00;\nEND;\n$function$"
+    },
+    {
+      "function_name": "tm_payment_calculator",
+      "arguments": "p_office_id integer, p_dependents jsonb",
+      "return_type": "numeric",
+      "definition": "CREATE OR REPLACE FUNCTION public.tm_payment_calculator(p_office_id integer, p_dependents jsonb)\n RETURNS numeric\n LANGUAGE plpgsql\nAS $function$\nDECLARE\n    v_main_rate NUMERIC;\n    v_dep_rate NUMERIC;\n    v_icard_rate NUMERIC;\n    v_gst_percent NUMERIC;\n    v_dep_count INTEGER;\n    v_subtotal NUMERIC;\n    v_total NUMERIC;\nBEGIN\n    -- 1. Fetch active rates and settings\n    SELECT main_member_rate, dependent_rate, icard_rate, gst_percent \n    INTO v_main_rate, v_dep_rate, v_icard_rate, v_gst_percent\n    FROM public.tm_rates\n    WHERE office_id = p_office_id AND is_active = TRUE\n    ORDER BY effective_from DESC\n    LIMIT 1;\n\n    -- Fallback rates\n    IF NOT FOUND THEN\n        v_main_rate := 5000; v_dep_rate := 1500; v_icard_rate := 10; v_gst_percent := 18;\n    END IF;\n\n    -- 2. Count dependents\n    v_dep_count := jsonb_array_length(p_dependents);\n\n    -- 3. Calculate Subtotal (Base Rates + I-Cards for all)\n    -- Total members = 1 (main) + v_dep_count\n    v_subtotal := v_main_rate + (v_dep_count * v_dep_rate) + ((1 + v_dep_count) * v_icard_rate);\n\n    -- 4. Add GST\n    v_total := v_subtotal * (1 + (v_gst_percent / 100));\n\n    RETURN round(v_total, 2);\nEND;\n$function$"
+    },
+    {
+      "function_name": "tm_tmno_generator",
+      "arguments": "p_office_id integer",
+      "return_type": "text",
+      "definition": "CREATE OR REPLACE FUNCTION public.tm_tmno_generator(p_office_id integer)\n RETURNS text\n LANGUAGE plpgsql\nAS $function$\nDECLARE\n    v_serial INTEGER;\n    v_office_code TEXT;\n    v_month TEXT;\n    v_year TEXT;\nBEGIN\n    v_month := to_char(CURRENT_DATE, 'MM');\n    v_year := to_char(CURRENT_DATE, 'YYYY');\n\n    -- Get Office Code\n    SELECT officecode INTO v_office_code FROM public.office WHERE officeid = p_office_id;\n    v_office_code := COALESCE(v_office_code, 'GEN');\n\n    -- Get Serial (Resetting annually)\n    SELECT COALESCE(MAX(SUBSTRING(tm_no FROM '^(\\d+)')::INTEGER), 0) + 1 \n    INTO v_serial \n    FROM public.tm \n    WHERE tm_no LIKE '%/' || v_year;\n\n    RETURN LPAD(v_serial::TEXT, 2, '0') || '/' || v_office_code || '/' || v_month || '/' || v_year;\nEND;\n$function$"
+    },
+    {
+      "function_name": "tm_tmno_generator",
+      "arguments": "",
+      "return_type": "text",
+      "definition": "CREATE OR REPLACE FUNCTION public.tm_tmno_generator()\n RETURNS text\n LANGUAGE plpgsql\nAS $function$\nDECLARE\n    next_val INTEGER;\n    current_year TEXT;\nBEGIN\n    current_year := to_char(CURRENT_DATE, 'YYYY');\n    -- Get next sequence value (or simple count for stub)\n    SELECT COALESCE(MAX(id), 0) + 1 INTO next_val FROM public.tm;\n    RETURN 'TM/' || current_year || '/' || LPAD(next_val::TEXT, 5, '0');\nEND;\n$function$"
+    },
+    {
+      "function_name": "tm_validator",
+      "arguments": "",
+      "return_type": "trigger",
+      "definition": "CREATE OR REPLACE FUNCTION public.tm_validator()\n RETURNS trigger\n LANGUAGE plpgsql\nAS $function$\nBEGIN\n    -- 1. Auto-generate TM No if not provided\n    IF NEW.tm_no IS NULL OR NEW.tm_no = '' THEN\n        NEW.tm_no := public.tm_tmno_generator(NEW.office_id);\n    END IF;\n\n    -- 2. Calculate Validity\n    NEW.validity := public.tm_validity(CURRENT_DATE);\n\n    -- 3. Calculate Payment Amount (Base + Deps + ICards + GST)\n    NEW.payment_amount := public.tm_payment_calculator(NEW.office_id, NEW.dependents);\n\n    -- 4. Strict Dependents Validation\n    IF NOT public.tm_dependents_validator(NEW.dependents) THEN\n        RAISE EXCEPTION 'Dependent validation failed. Check relations and ages (Children must be 5-21).';\n    END IF;\n\n    RETURN NEW;\nEND;\n$function$"
+    },
+    {
+      "function_name": "tm_validity",
+      "arguments": "start_date date, duration_type text",
+      "return_type": "daterange",
+      "definition": "CREATE OR REPLACE FUNCTION public.tm_validity(start_date date, duration_type text)\n RETURNS daterange\n LANGUAGE plpgsql\nAS $function$\nBEGIN\n    RETURN daterange(start_date, (start_date + INTERVAL '1 month')::DATE);\nEND;\n$function$"
+    },
+    {
+      "function_name": "tm_validity",
+      "arguments": "p_application_date date",
+      "return_type": "daterange",
+      "definition": "CREATE OR REPLACE FUNCTION public.tm_validity(p_application_date date)\n RETURNS daterange\n LANGUAGE plpgsql\nAS $function$\nDECLARE\n    v_start_date DATE;\n    v_end_date DATE;\nBEGIN\n    -- If application is on or after 26th, start from 1st of next month\n    IF extract(day from p_application_date) >= 26 THEN\n        v_start_date := (date_trunc('month', p_application_date) + INTERVAL '1 month')::DATE;\n    ELSE\n        -- Otherwise start from 1st of current month\n        v_start_date := date_trunc('month', p_application_date)::DATE;\n    END IF;\n\n    -- Validity is for 3 calendar months\n    v_end_date := (v_start_date + INTERVAL '3 months')::DATE;\n    \n    RETURN daterange(v_start_date, v_end_date);\nEND;\n$function$"
+    },
+    {
+      "function_name": "update_modified_column",
+      "arguments": "",
+      "return_type": "trigger",
+      "definition": "CREATE OR REPLACE FUNCTION public.update_modified_column()\n RETURNS trigger\n LANGUAGE plpgsql\nAS $function$\r\nBEGIN\r\n    NEW.updated_at = NOW();\r\n    RETURN NEW;\r\nEND;\r\n$function$"
+    },
+    {
+      "function_name": "validate_and_calculate_bill",
+      "arguments": "",
+      "return_type": "trigger",
+      "definition": "CREATE OR REPLACE FUNCTION public.validate_and_calculate_bill()\n RETURNS trigger\n LANGUAGE plpgsql\nAS $function$\r\nDECLARE\r\n    link_count INT;\r\n    v_budget_id INT;\r\nBEGIN\r\n    -- 1. Validation Logic\r\n    IF NEW.bill_type = 'Compliance' THEN\r\n        IF NEW.budget_id IS NULL THEN\r\n            RAISE EXCEPTION 'Compliance bills must have a Budget ID selected by the user.';\r\n        END IF;\r\n        NEW.agreement_id := NULL;\r\n        NEW.work_order_id := NULL;\r\n        NEW.supply_order_id := NULL;\r\n    ELSE\r\n        link_count := (CASE WHEN NEW.agreement_id IS NOT NULL THEN 1 ELSE 0 END) +\r\n                      (CASE WHEN NEW.work_order_id IS NOT NULL THEN 1 ELSE 0 END) +\r\n                      (CASE WHEN NEW.supply_order_id IS NOT NULL THEN 1 ELSE 0 END);\r\n        IF link_count != 1 THEN\r\n            RAISE EXCEPTION 'A non-compliance bill must be linked to exactly one item (Agreement, Work Order, or Supply Order).';\r\n        END IF;\r\n\r\n        -- Automatically find the budget_id from the linked item's AA&ES\r\n        IF NEW.agreement_id IS NOT NULL THEN\r\n            -- CORRECTED: Use 'budgetid' instead of 'budget_id'\r\n            SELECT ae.budgetid INTO v_budget_id FROM agreements ag JOIN aa_es ae ON ag.aa_es_id = ae.id WHERE ag.id = NEW.agreement_id;\r\n        END IF;\r\n\r\n        IF v_budget_id IS NULL THEN\r\n            RAISE EXCEPTION 'Could not find a linked budget for the selected Agreement/Work Order/Supply Order. Please check the AA&ES.';\r\n        END IF;\r\n\r\n        NEW.budget_id := v_budget_id;\r\n    END IF;\r\n\r\n    RETURN NEW;\r\nEND;\r\n$function$"
+    },
+    {
+      "function_name": "validate_attendance_dates",
+      "arguments": "",
+      "return_type": "trigger",
+      "definition": "CREATE OR REPLACE FUNCTION public.validate_attendance_dates()\n RETURNS trigger\n LANGUAGE plpgsql\nAS $function$\nDECLARE\n    v_joining DATE;\n    v_leaving DATE;\nBEGIN\n    SELECT joining_date, leaving_date INTO v_joining, v_leaving\n    FROM employees WHERE id = NEW.employee_id;\n\n    IF NEW.attendance_date < v_joining THEN\n        RAISE EXCEPTION 'Attendance Error: Cannot mark attendance for % on % (Joined on %).', \n            (SELECT full_name FROM employees WHERE id = NEW.employee_id), NEW.attendance_date, v_joining;\n    END IF;\n\n    IF v_leaving IS NOT NULL AND NEW.attendance_date > v_leaving THEN\n        RAISE EXCEPTION 'Attendance Error: Cannot mark attendance for % on % (Left on %).', \n            (SELECT full_name FROM employees WHERE id = NEW.employee_id), NEW.attendance_date, v_leaving;\n    END IF;\n\n    RETURN NEW;\nEND;\n$function$"
+    },
+    {
+      "function_name": "validate_budget_availability",
+      "arguments": "",
+      "return_type": "trigger",
+      "definition": "CREATE OR REPLACE FUNCTION public.validate_budget_availability()\n RETURNS trigger\n LANGUAGE plpgsql\nAS $function$\r\n        DECLARE\r\n            budget_provision DECIMAL(15, 2);\r\n            used_amount DECIMAL(15, 2);\r\n        BEGIN\r\n            SELECT provision * 100000 INTO budget_provision FROM budget WHERE id = NEW.budgetid;\r\n            IF NOT FOUND THEN RAISE EXCEPTION 'Invalid Budget ID selected.'; END IF;\r\n\r\n            SELECT COALESCE(SUM(aa_es_amount), 0) INTO used_amount FROM aa_es WHERE budgetid = NEW.budgetid AND id IS DISTINCT FROM NEW.id;\r\n\r\n            IF (used_amount + NEW.aa_es_amount) > budget_provision THEN\r\n                RAISE EXCEPTION 'Insufficient Budget. Provision: %, Used: %, Requested: %. Total exceeds limit.', budget_provision, used_amount, NEW.aa_es_amount;\r\n            END IF;\r\n            RETURN NEW;\r\n        END;\r\n        $function$"
+    },
+    {
+      "function_name": "validate_dependent",
+      "arguments": "",
+      "return_type": "trigger",
+      "definition": "CREATE OR REPLACE FUNCTION public.validate_dependent()\n RETURNS trigger\n LANGUAGE plpgsql\nAS $function$\r\nDECLARE\r\n    v_member_type membership_type;\r\n    v_age INTERVAL;\r\n    v_years INT;\r\nBEGIN\r\n    -- 1. Check Member Type\r\n    SELECT membership_type INTO v_member_type FROM members WHERE id = NEW.member_id;\r\n\r\n    IF v_member_type = 'Associate' THEN\r\n        RAISE EXCEPTION 'Associate Members cannot have dependents.';\r\n    END IF;\r\n\r\n    -- 2. Check Spouse Limit\r\n    IF NEW.relationship = 'Spouse' THEN\r\n        IF EXISTS (SELECT 1 FROM dependents WHERE member_id = NEW.member_id AND relationship = 'Spouse' AND id IS DISTINCT FROM NEW.id AND status = 'Active') THEN\r\n            RAISE EXCEPTION 'Member already has an active spouse registered.';\r\n        END IF;\r\n    END IF;\r\n\r\n    -- 3. Check Age for Children\r\n    IF NEW.relationship IN ('Son', 'Daughter') THEN\r\n        v_age := age(CURRENT_DATE, NEW.dob);\r\n        v_years := date_part('year', v_age);\r\n\r\n        IF v_years < 5 THEN\r\n            RAISE EXCEPTION 'Child must be at least 5 years old.';\r\n        END IF;\r\n\r\n        IF v_years >= 21 THEN\r\n            RAISE EXCEPTION 'Child must be under 21 years old.';\r\n        END IF;\r\n    END IF;\r\n\r\n    RETURN NEW;\r\nEND;\r\n$function$"
+    },
+    {
+      "function_name": "validate_hand_receipt_budget",
+      "arguments": "",
+      "return_type": "trigger",
+      "definition": "CREATE OR REPLACE FUNCTION public.validate_hand_receipt_budget()\n RETURNS trigger\n LANGUAGE plpgsql\nAS $function$\r\nDECLARE\r\n    v_provision DECIMAL(15, 2);\r\n    v_used DECIMAL(15, 2);\r\nBEGIN\r\n    -- Only check if budget implication is TRUE\r\n    IF NEW.budget_implication THEN\r\n        -- Get budget provision (converted from Lacs to absolute)\r\n        SELECT provision * 100000 INTO v_provision FROM budget WHERE id = NEW.budgetid;\r\n\r\n        -- Calculate used amount (Bills + other Hand Receipts)\r\n        SELECT COALESCE(SUM(net_amount), 0) INTO v_used FROM bills WHERE budget_id = NEW.budgetid;\r\n        v_used := v_used + (SELECT COALESCE(SUM(net_amount), 0) FROM hand_receipts WHERE budgetid = NEW.budgetid AND id <> NEW.id AND budget_implication = TRUE);\r\n\r\n        IF (v_used + NEW.net_amount) > v_provision THEN\r\n            RAISE EXCEPTION 'Insufficient Budget for this Hand Receipt. Available: %, Required: %', (v_provision - v_used), NEW.net_amount;\r\n        END IF;\r\n    END IF;\r\n    RETURN NEW;\r\nEND;\r\n$function$"
+    },
+    {
+      "function_name": "validate_wage_rates_json",
+      "arguments": "",
+      "return_type": "trigger",
+      "definition": "CREATE OR REPLACE FUNCTION public.validate_wage_rates_json()\n RETURNS trigger\n LANGUAGE plpgsql\nAS $function$\nDECLARE\n    r RECORD;\nBEGIN\n    FOR r IN SELECT DISTINCT json_key FROM wage_items WHERE authority = NEW.authority\n    LOOP\n        IF NOT (NEW.rates ? r.json_key) THEN\n            RAISE EXCEPTION 'Missing required rate for category: % in authority %', r.json_key, NEW.authority;\n        END IF;\n        \n        IF (NEW.rates ->> r.json_key)::DECIMAL <= 0 THEN\n             RAISE EXCEPTION 'Rate for % must be greater than zero.', r.json_key;\n        END IF;\n    END LOOP;\n\n    RETURN NEW;\nEND;\n$function$"
+    },
+    {
+      "function_name": "validate_wages_ledger_entry",
+      "arguments": "",
+      "return_type": "trigger",
+      "definition": "CREATE OR REPLACE FUNCTION public.validate_wages_ledger_entry()\n RETURNS trigger\n LANGUAGE plpgsql\nAS $function$\r\nBEGIN\r\n    -- Rule 1: Credit entries can only be on the last day of the month.\r\n    IF NEW.cr_amount > 0 AND NEW.transaction_date != (date_trunc('month', NEW.transaction_date) + interval '1 month - 1 day')::date THEN\r\n        RAISE EXCEPTION 'Credit entries can only be posted on the last day of the month. Attempted for %', NEW.transaction_date;\r\n    END IF;\r\n    RETURN NEW;\r\nEND;\r\n$function$"
+    }
+  ],
+  "enums_and_types": [
+    {
+      "type_name": "aa_es_status",
+      "type_category": "enum",
+      "enum_values": "Draft, Approved"
+    },
+    {
+      "type_name": "aa_es_type",
+      "type_category": "enum",
+      "enum_values": "Manpower, Market"
+    },
+    {
+      "type_name": "agreement_status",
+      "type_category": "enum",
+      "enum_values": "Active, Closed, Expired, Terminated"
+    },
+    {
+      "type_name": "attendance_status",
+      "type_category": "enum",
+      "enum_values": "P, A, R, L"
+    },
+    {
+      "type_name": "bill_status",
+      "type_category": "enum",
+      "enum_values": "Draft, Processed, Paid"
+    },
+    {
+      "type_name": "bill_type",
+      "type_category": "enum",
+      "enum_values": "Item, Compliance, GST, ESIC, EPF"
+    },
+    {
+      "type_name": "day_of_week",
+      "type_category": "enum",
+      "enum_values": "Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday"
+    },
+    {
+      "type_name": "hand_receipt_category",
+      "type_category": "enum",
+      "enum_values": "Security Deposit Release, Earnest Money Release, Misc Transportation Charges, Honorarium to Consultants"
+    },
+    {
+      "type_name": "membership_type",
+      "type_category": "enum",
+      "enum_values": "General, Associate, Govt Servant, Senior Citizen"
+    },
+    {
+      "type_name": "order_status",
+      "type_category": "enum",
+      "enum_values": "Draft, Locked"
+    },
+    {
+      "type_name": "relationship_type",
+      "type_category": "enum",
+      "enum_values": "Spouse, Son, Daughter"
+    },
+    {
+      "type_name": "turf_machine_status_enum",
+      "type_category": "enum",
+      "enum_values": "Working, OffRoad, Decommissioned"
+    },
+    {
+      "type_name": "turf_transaction_type_enum",
+      "type_category": "enum",
+      "enum_values": "RECEIPT, ISSUE"
+    },
+    {
+      "type_name": "user_role",
+      "type_category": "enum",
+      "enum_values": "superuser, staff, manager"
+    },
+    {
+      "type_name": "wage_authority",
+      "type_category": "enum",
+      "enum_values": "Central Govt, Sports Wing"
+    },
+    {
+      "type_name": "wage_unit",
+      "type_category": "enum",
+      "enum_values": "Per Person Per Month, Per Person Per Day"
+    },
+    {
+      "type_name": "vector",
+      "type_category": "base",
+      "enum_values": ""
+    }
+  ]
+}

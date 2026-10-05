@@ -1,0 +1,110 @@
+{
+    "get_wages": {
+        "sql": "SELECT SUM(wl.cr_amount) as total FROM wages_ledger wl JOIN employees e ON wl.employee_id = e.id WHERE 1=1",
+        "filters": {
+            "name": "AND lower(e.full_name) LIKE :name",
+            "desig": "AND lower(e.designation) LIKE :desig",
+            "date": "AND to_char(wl.transaction_date, 'YYYY-MM') = :date_param"
+        }
+    },
+    "list_employees": {
+        "sql": "SELECT e.full_name, e.designation, o.OfficeName FROM employees e JOIN office o ON e.officeid = o.Officeid WHERE 1=1",
+        "filters": {
+            "office": "AND lower(o.OfficeName) LIKE :office",
+            "name": "AND lower(e.full_name) LIKE :name",
+            "designation": "AND lower(e.designation) LIKE :designation"
+        }
+    },
+    "list_machinery": {
+        "sql": "SELECT name as machine_name, make, status FROM turf_machines WHERE 1=1",
+        "filters": {
+            "machine": "AND lower(name) LIKE :machine"
+        }
+    },
+    "list_gc_machinery": {
+        "sql": "SELECT machinery_name, machinery_id_no, machinery_type, status FROM gc_machinery WHERE 1=1",
+        "filters": {
+            "name": "AND lower(machinery_name) LIKE :name",
+            "type": "AND lower(machinery_type) LIKE :type"
+        }
+    },
+    "create_machine": {
+        "action_type": "INSERT",
+        "target_table": "gc_machinery",
+        "entity_map": {
+            "machine_name": "machinery_name",
+            "brand": "machinery_type",
+            "office": "office_id"
+        }
+    },
+    "list_inventory": {
+        "sql": "SELECT item_name, unit_of_measurement, current_balance FROM gc_view_main_stock_balance WHERE 1=1",
+        "filters": {
+            "item": "AND lower(item_name) LIKE :item"
+        }
+    },
+    "list_activity_logs": {
+        "sql": "SELECT timestamp, user_name, action, details FROM activity_log ORDER BY timestamp DESC"
+    },
+    "list_aa_es": {
+        "sql": "SELECT sub_head, type, status, CASE WHEN type = 'Manpower' THEN (SELECT SUM((item->>'qty')::numeric * (item->>'rate')::numeric * (boq->>'Period')::numeric) FROM jsonb_array_elements(boq->'Items') AS item) WHEN type = 'Market' THEN (SELECT SUM((item->>'qty')::numeric * (item->>'rate')::numeric * (1 + RTRIM(item->>'gst', '%')::numeric / 100)) FROM jsonb_array_elements(boq) AS item) END AS aa_es_amount FROM aa_es WHERE 1=1"
+    },
+    "list_aaes": {
+        "sql": "SELECT sub_head, type, status, CASE WHEN type = 'Manpower' THEN (SELECT SUM((item->>'qty')::numeric * (item->>'rate')::numeric * (boq->>'Period')::numeric) FROM jsonb_array_elements(boq->'Items') AS item) WHEN type = 'Market' THEN (SELECT SUM((item->>'qty')::numeric * (item->>'rate')::numeric * (1 + RTRIM(item->>'gst', '%')::numeric / 100)) FROM jsonb_array_elements(boq) AS item) END AS aa_es_amount FROM aa_es WHERE 1=1"
+    },
+    "list_consumables": {
+        "sql": "SELECT item_name, unit_of_measurement, current_balance FROM gc_view_main_stock_balance WHERE 1=1",
+        "filters": {
+            "item": "AND lower(item_name) LIKE :item"
+        },
+        "chart_config": {
+            "type": "pie",
+            "label_column": "item_name",
+            "data_column": "current_balance",
+            "title": "Current Stock Balance"
+        }
+    },
+    "list_turf_consumption_log": {
+        "sql": "SELECT tcl.log_date, tm.name as machine_name, tcl.recorded_by as operator, tcl.fuel_consumed_qty, tcl.running_hours FROM turf_consumption_log tcl JOIN turf_machines tm ON tcl.machine_id = tm.id WHERE 1=1",
+        "filters": {
+            "machine": "AND lower(tm.name) LIKE :machine",
+            "date": "AND to_char(tcl.log_date, 'YYYY-MM') = :date_param"
+        }
+    },
+    "report_monthly_consumption": {
+        "sql": "SELECT m.name as machine_name, SUM(c.fuel_consumed_qty) as total_fuel_consumed FROM turf_consumption_log c JOIN turf_machines m ON c.machine_id = m.id WHERE 1=1",
+        "filters": {
+            "date": "AND to_char(c.log_date, 'YYYY-MM') = :date_param"
+        },
+        "group_by": " GROUP BY m.name",
+        "chart_config": {
+            "type": "bar",
+            "label_column": "machine_name",
+            "data_column": "total_fuel_consumed",
+            "title": "Monthly Fuel Consumption by Machine"
+        }
+    },
+    "report_consumption_trend": {
+        "sql": "SELECT to_char(c.log_date, 'YYYY-MM') as month, SUM(c.fuel_consumed_qty) as total_consumed FROM turf_consumption_log c JOIN turf_machines m ON c.machine_id = m.id JOIN turf_inventory_items i ON m.fuel_item_id = i.id WHERE 1=1",
+        "filters": {
+            "item": "AND lower(i.description) LIKE :item"
+        },
+        "group_by": " GROUP BY month ORDER BY month",
+        "chart_config": {
+            "type": "line",
+            "label_column": "month",
+            "data_column": "total_consumed",
+            "title": "Consumption Trend"
+        }
+    },
+    "list_with_ordering": {
+        "sql": "SELECT tcl.log_date, tm.name as machine_name, tcl.recorded_by as operator, tcl.fuel_consumed_qty, tcl.running_hours FROM turf_consumption_log tcl JOIN turf_machines tm ON tcl.machine_id = tm.id WHERE 1=1"
+    },
+    "report_historical_balance": {
+        "sql": "SELECT i.description, i.ac_unit, (COALESCE(SUM(CASE WHEN l.transaction_type = 'RECEIPT' THEN l.quantity ELSE 0 END), 0) - COALESCE(SUM(CASE WHEN l.transaction_type = 'ISSUE' THEN l.quantity ELSE 0 END), 0) - COALESCE((SELECT SUM(c.fuel_consumed_qty) FROM turf_consumption_log c JOIN turf_machines m ON c.machine_id = m.id WHERE m.fuel_item_id = i.id AND c.log_date <= :date_param), 0)) as balance_on_date FROM turf_inventory_items i LEFT JOIN turf_inventory_ledger l ON i.id = l.item_id AND l.transaction_date <= :date_param",
+        "filters": {
+            "item": "AND lower(i.description) LIKE :item"
+        },
+        "group_by": " GROUP BY i.id, i.description, i.ac_unit"
+    }
+}

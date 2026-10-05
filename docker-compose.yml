@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: modpyphp_app
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+      - "5000:5000"
+      - "5001:5001"
+    environment:
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_NAME=modpyphp
+      - DB_USER=postgres
+      - DB_PASS=daredevil
+      - DB_SSLMODE=disable
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - sessions_volume:/var/www/html/sessions_new
+      - ./storage:/var/www/html/storage
+
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: modpyphp_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: modpyphp
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: daredevil
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      # Optional: Uncomment if you have a local SQL dump you wish to restore on first startup
+      # - ./Setup/Database/modpyphp_dump.sql:/docker-entrypoint-initdb.d/01_dump.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d modpyphp"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  postgres_data:
+  sessions_volume:

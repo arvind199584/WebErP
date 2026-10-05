@@ -1,0 +1,2 @@
+Place your 'dda logo.png' here.
+For now, the system will look for 'dda_logo.png' in this folder.

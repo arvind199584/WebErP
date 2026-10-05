@@ -1,0 +1,10 @@
+/*
+    Common CSS for the Turf Management Module.
+    We will use Bootstrap as the primary framework,
+    but any module-specific overrides or styles can go here.
+*/
+
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}

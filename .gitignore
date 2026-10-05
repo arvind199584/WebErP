@@ -1,0 +1,63 @@
+# Environments
+/venv/
+/.venv_uv/
+.env
+
+# Server & Application Logs
+*.log
+
+# IDE & OS Metadata
+.idea/
+.vscode/
+*.DS_Store
+Thumbs.db
+
+# Dependencies
+vendor/
+node_modules/
+
+# Storage & Session Files
+storage/uploads/*
+!storage/uploads/.gitkeep
+storage/sessions/*
+!storage/sessions/.gitkeep
+storage/backups/*
+!storage/backups/.gitkeep
+sessions_new/*
+!sessions_new/.gitkeep
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Android & Gradle Build Artifacts
+.gradle/
+build/
+*/build/
+*/*/build/
+*/*/*/build/
+*.apk
+*.aab
+local.properties
+.cxx/
+captures/
+
+# Archives & Binaries
+*.zip
+*.exe
+*.tar.gz
+*.7z
+
+# Database Dumps & SQL files (NEVER commit SQL to Git)
+*.sql
+*.sql.gz
+*.sql.dump
+*.dump
+database/dumps/*
+!database/dumps/.gitkeep
+
+# Temporary Dumps & Scratch
+scratch/
+deleted/
+*.txt.dump

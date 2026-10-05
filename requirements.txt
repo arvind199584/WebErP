@@ -1,0 +1,11 @@
+Flask
+Flask-Cors
+psycopg2-binary
+pg8000
+fuzzywuzzy
+python-Levenshtein
+pgvector
+pandas
+scikit-learn
+joblib
+python-dotenv

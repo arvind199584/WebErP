@@ -1,0 +1,56 @@
+{
+    "list_consumables": {
+        "sql": "SELECT item_name, unit_of_measurement, current_balance FROM gc_view_main_stock_balance WHERE 1=1",
+        "filters": {
+            "item": "AND lower(item_name) LIKE :item"
+        },
+        "chart_config": {
+            "type": "pie",
+            "label_column": "item_name",
+            "data_column": "current_balance",
+            "title": "Current Stock Balance"
+        }
+    },
+    "list_machinery": {
+        "sql": "SELECT name as machine_name, make, status FROM turf_machines WHERE 1=1",
+        "filters": {
+            "machine": "AND lower(name) LIKE :machine"
+        }
+    },
+    "list_turf_consumption_log": {
+        "sql": "SELECT tcl.log_date, tm.name as machine_name, tcl.recorded_by as operator, tcl.fuel_consumed_qty, tcl.running_hours FROM turf_consumption_log tcl JOIN turf_machines tm ON tcl.machine_id = tm.id WHERE 1=1",
+        "filters": {
+            "machine": "AND lower(tm.name) LIKE :machine",
+            "date": "AND to_char(tcl.log_date, 'YYYY-MM') = :date_param"
+        }
+    },
+    "report_monthly_consumption": {
+        "sql": "SELECT m.name as machine_name, SUM(c.fuel_consumed_qty) as total_fuel_consumed FROM turf_consumption_log c JOIN turf_machines m ON c.machine_id = m.id WHERE 1=1",
+        "filters": {
+            "date": "AND to_char(c.log_date, 'YYYY-MM') = :date_param"
+        },
+        "group_by": " GROUP BY m.name",
+        "chart_config": {
+            "type": "bar",
+            "label_column": "machine_name",
+            "data_column": "total_fuel_consumed",
+            "title": "Monthly Fuel Consumption by Machine"
+        }
+    },
+    "report_consumption_trend": {
+        "sql": "SELECT to_char(c.log_date, 'YYYY-MM') as month, SUM(c.fuel_consumed_qty) as total_consumed FROM turf_consumption_log c JOIN turf_machines m ON c.machine_id = m.id JOIN turf_inventory_items i ON m.fuel_item_id = i.id WHERE 1=1",
+        "filters": {
+            "item": "AND lower(i.description) LIKE :item"
+        },
+        "group_by": " GROUP BY month ORDER BY month",
+        "chart_config": {
+            "type": "line",
+            "label_column": "month",
+            "data_column": "total_consumed",
+            "title": "Consumption Trend"
+        }
+    },
+    "list_with_ordering": {
+        "sql": "SELECT tcl.log_date, tm.name as machine_name, tcl.recorded_by as operator, tcl.fuel_consumed_qty, tcl.running_hours FROM turf_consumption_log tcl JOIN turf_machines tm ON tcl.machine_id = tm.id WHERE 1=1"
+    }
+}

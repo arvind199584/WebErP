@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDA Golf Course – bill + forwarding (compressed, signature fitted)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #9da8b9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 25px 15px;
+        }
+
+        .page {
+            max-width: 900px;
+            width: 100%;
+            background: #ffffff;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+            border: 1px solid #444;
+            padding: 30px 32px 28px 32px;
+            font-size: 15px;
+            line-height: 1.45;
+            color: #1e1e1e;
+            margin-bottom: 30px;
+            page-break-after: always;
+            break-after: page;
+        }
+        .page:last-child {
+            margin-bottom: 0;
+            page-break-after: auto;
+            break-after: auto;
+        }
+
+        /* colors as in word */
+        .now-line, .sh-line, .fw-700, .label-cell strong, .total-cell strong,
+        .recovery-table td, .recovery-table th, .neft-table td, .neft-table th,
+        .signature-right, .sig-left-item, .memo-label, .memo-value,
+        .sig-left, .sig-center, .sig-right, .office-item {
+            color: #1e1e1e;
+        }
+
+        /* first page */
+        .now-line { font-weight: 700; margin-bottom: 6px; }
+        .sh-line { font-weight: 700; margin-bottom: 16px; }
+        .recovery-table {
+            width: 100%; border-collapse: collapse; margin: 18px 0 12px 0; border: 1px solid #222;
+        }
+        .recovery-table td { border: 1px solid #222; padding: 6px 8px; vertical-align: top; }
+        .label-cell { font-weight: 600; width: 30%; }
+        .dot-cell { width: 5%; text-align: center; }
+        .amount-cell { width: 25%; text-align: right; padding-right: 12px; white-space: nowrap; }
+        .total-cell { width: 28%; text-align: right; padding-right: 12px; font-weight: 500; white-space: nowrap; }
+        .gross-row td, .net-row td { background-color: #f9f9f9; }
+        .indent-item { padding-left: 24px; }
+
+        .auth-note { margin: 12px 0 18px 0; }
+
+        /* signature container – ensures everything fits, with extra blank after last */
+        .signature-container {
+            position: relative;
+            width: 100%;
+            min-height: 270px;   /* increased to fit SR. A.O. with extra blank line below */
+            margin-top: 25px;
+        }
+
+        .signature-right {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .signature-left-group {
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 320px;
+        }
+
+        .sig-left-item {
+            font-weight: 700;
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        .gap-3-lines { margin-top: 4.5em; }      /* 3 blank lines */
+        .extra-blank-after {
+            margin-bottom: 4.5em;                 /* additional 3 lines of blank space */
+            display: block;
+            width: 100%;
+            height: 4.5em;
+        }
+
+        /* second page – compressed line spacing */
+        .forwarding-title {
+            font-weight: 700; text-decoration: underline; text-underline-offset: 4px;
+            font-size: 18px; margin: 5px 0 15px 0; text-align: center;
+            letter-spacing: 0.2px;
+        }
+
+        /* REDUCE vertical spacing overall for second page */
+        .page:last-child {
+            line-height: 1.3;            /* compress lines globally for forwarding */
+        }
+
+        /* memo rows with less bottom margin */
+        .memo-row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 2px;           /* reduced from 6px */
+            page-break-inside: avoid;
+        }
+        .memo-label {
+            font-weight: 600;
+            min-width: 250px;              /* slight adjustment */
+            padding-right: 8px;
+        }
+        .memo-value { font-weight: 500; flex: 1; }
+
+        .indent-block {
+            padding-left: 30px;
+            margin: 0 0 2px 0;            /* reduced */
+        }
+        .indent-block .memo-row { margin-bottom: 0; }
+
+        /* NEFT table */
+        .neft-table {
+            width: 100%; border-collapse: collapse; margin: 12px 0 15px 0; border: 1px solid #222;
+        }
+        .neft-table th { background-color: #f1f3f6; border: 1px solid #222; padding: 6px; font-weight: 700; }
+        .neft-table td { border: 1px solid #222; padding: 6px; }
+        .neft-table td:last-child { font-weight: 700; text-align: right; padding-right: 12px; }
+
+        /* signature strip (second page) */
+        .sig-strip-container {
+            width: 100%; margin: 15px 0 12px 0; border-top: 1px solid #333; border-bottom: 1px solid #333;
+            padding: 8px 0 8px 0; display: flex; flex-wrap: wrap; justify-content: space-between;
+            font-weight: 700; font-size: 15px;
+        }
+        .sig-left { text-align: left; width: 33%; white-space: nowrap; }
+        .sig-center { text-align: center; width: 33%; white-space: nowrap; }
+        .sig-right { text-align: right; width: 33%; white-space: nowrap; }
+
+        /* OFFICE USE as 6 separate lines (not grid) */
+        .office-use-title {
+            font-weight: 700; text-decoration: underline; margin: 18px 0 6px 0; font-size: 16px;
+        }
+        .office-list {
+            margin: 2px 0 8px 0;
+            padding-left: 10px;
+        }
+        .office-line {
+            display: block;
+            margin-bottom: 1px;            /* minimal gap, each on its own line */
+            font-weight: 500;
+        }
+
+        hr { border: none; border-top: 1px solid #aaa; margin: 12px 0; }
+        .placeholder-hyphen, .var-text { color: #1e1e1e; }
+    </style>
+</head>
+<body>
+
+<!-- PAGE 1 (bill + signature with extra blank after SR. A.O.) -->
+<div class="page">
+
+    <div class="now-line">NOW: Maintenance of DDA Golf Course Dwarka, Sector-24.</div>
+    <div class="sh-line">SH: Providing various staff for office maintenance at Dwarka Golf Course.</div>
+
+    <div class="bill-intro">
+        <p><span class="fw-700">4<span style="font-size:13px; vertical-align:super;">th</span> R/A bill</span> in respect of M/s High Command has been passed for <strong>₹ 8,99,455/-</strong> and payment of <strong>₹ 7,51,080/-</strong> (Rupees Seven Lakh Fifty One Thousand Eighty only).</p>
+        <p>The details are as under: - 10.2011 i.e. Two Mont</p>
+    </div>
+
+    <table class="recovery-table">
+        <tr class="gross-row"><td class="label-cell">1. <strong>Gross Amount</strong></td><td class="dot-cell"><strong>:</strong></td><td class="amount-cell"></td><td class="total-cell"><strong>₹ 8,99,455.00</strong></td></tr>
+        <tr><td class="label-cell">2. <strong>Recovery</strong></td><td class="dot-cell"></td><td class="amount-cell"></td><td class="total-cell"></td></tr>
+        <tr><td class="label-cell indent-item">a) Income Tax @ 2%</td><td class="dot-cell">:</td><td class="amount-cell">₹ 17,989.00</td><td class="total-cell" rowspan="5" style="vertical-align:middle; font-weight:700;">(-) ₹ 1,48,375.00</td></tr>
+        <tr><td class="label-cell indent-item">b) CGST @ 1%</td><td class="dot-cell">:</td><td class="amount-cell">₹ 8,995.00</td></tr>
+        <tr><td class="label-cell indent-item">c) SGST @ 1%</td><td class="dot-cell">:</td><td class="amount-cell">₹ 8,995.00</td></tr>
+        <tr><td class="label-cell indent-item">d) Security deposit @ 5%</td><td class="dot-cell">:</td><td class="amount-cell">₹ 44,973.00</td></tr>
+        <tr><td class="label-cell indent-item">e) Withheld non-payment of wages</td><td class="dot-cell">:</td><td class="amount-cell">₹ 67,423.00</td></tr>
+        <tr class="net-row"><td class="label-cell">3. <strong>Net Amount</strong></td><td class="dot-cell"><strong>:</strong></td><td class="amount-cell"></td><td class="total-cell"><strong>₹ 7,51,080.00</strong></td></tr>
+    </table>
+
+    <div class="auth-note">
+        <p>In view of the above, bill is submitted for authorization of payment for <strong>₹ 7,51,080/-</strong> (Rupees Seven Lakh Fifty One Thousand Eighty only) to M/s High Command by RTGS/NEFT (If agreed). AA & ES has been approved by the Competent Authority. (Copy Enclosed)</p>
+        <p>Submitted please.</p>
+    </div>
+
+    <!-- SIGNATURE BLOCKS with extra blank line after SR. A.O. -->
+    <div class="signature-container">
+        <!-- right edge: RE (Civil) -->
+        <div class="signature-right">RE (Civil), DGCD, DDA</div>
+
+        <!-- left group: three officers, each with 3‑line gap, and then extra blank after last -->
+        <div class="signature-left-group">
+            <div class="sig-left-item" style="margin-top: 4.5em;">AAO, DGCD, DDA</div>
+            <div class="sig-left-item gap-3-lines">Secretary, DGCD, DDA</div>
+            <div class="sig-left-item gap-3-lines">Sr. A.O. (Sports)</div>
+            <!-- extra blank line (3 lines worth) to push content safely above bottom -->
+            <div class="extra-blank-after"></div>
+        </div>
+    </div> <!-- end signature container -->
+
+    <!-- invisible spacer to ensure page break doesn't cut last line -->
+    <div style="clear:both; height:1px;"></div>
+</div> <!-- page 1 end -->
+
+
+<!-- PAGE 2 (Forwarding Memo – compressed to fit one page) -->
+<div class="page">
+
+    <div class="forwarding-title">BILL FORWARDING MEMO</div>
+
+    <!-- 1-5 -->
+    <div class="memo-row"><span class="memo-label">- Name of work /Scheme:</span><span class="memo-value"><strong>DDA Golf Course Dwarka.</strong></span></div>
+    <div class="memo-row"><span class="memo-label">- SH:</span><span class="memo-value"><strong>Providing various staff for office maintenance at Dwarka Golf Course.</strong></span></div>
+    <div class="memo-row"><span class="memo-label">- Agency:</span><span class="memo-value"><strong>M/s High Command</strong></span></div>
+    <div class="memo-row"><span class="memo-label">- Budget code/item No.:</span><span class="memo-value"><strong>24900312.</strong></span></div>
+    <div class="memo-row"><span class="memo-label">- GSTIN NO --</span><span class="memo-value"><strong>07${pan_no}1ZV</strong>, PAN No. <strong>${pan_no}</strong></span></div>
+
+    <!-- 6 -->
+    <div class="memo-row"><span class="memo-label">- Tendered amount /amount of work done:</span><span class="memo-value"><strong>Rs.1,65,66,732.00</strong> / <strong>Rs.44,69,907.00</strong></span></div>
+
+    <!-- 7 -->
+    <div class="memo-row"><span class="memo-label">- Reference of AA/ES (AR& MO) in case on maintenance work</span></div>
+    <div class="indent-block">
+        <div class="memo-row"><span class="memo-label">- Amount Rs.................</span></div>
+        <div class="memo-row"><span class="memo-label">- No. &Date:-................</span></div>
+    </div>
+
+    <!-- 8 -->
+    <div class="memo-row"><span class="memo-label">- Proportionate component available</span><span class="memo-value">To approved P.E. Separately for Civil/Elect./ Hort. Work (group wise):</span></div>
+
+    <!-- 9 -->
+    <div class="memo-row"><span class="memo-label">- Progressive expenditure of the scheme against the provision indicate</span><span class="memo-value">Under col. 6 up to the previous month ............................................................................</span></div>
+
+    <!-- 10 -->
+    <div class="memo-row"><span class="memo-label">- Reference to the approval of the deviation, if any</span></div>
+    <div class="indent-block">
+        <div class="memo-row"><span class="memo-label">- No:</span></div>
+        <div class="memo-row"><span class="memo-label">- Amount:</span></div>
+        <div class="memo-row"><span class="memo-label">- Date:</span></div>
+    </div>
+
+    <!-- 11 -->
+    <div class="memo-row"><span class="memo-label">- a) Budget provision during the year</span><span class="memo-value"><strong>Rs.1,335 Lakhs.</strong></span></div>
+    <div class="memo-row"><span class="memo-label">b) Less department charges:</span></div>
+    <div class="memo-row"><span class="memo-label">c) Net Provision for the division</span><span class="memo-value"> ...................................................................................................</span></div>
+
+    <!-- 12 -->
+    <div class="memo-row"><span class="memo-label">- Expenditure during the year</span><span class="memo-value">......................................................</span></div>
+
+    <!-- 13 -->
+    <div class="memo-row"><span class="memo-label">13. Reference of the Budget slip</span></div>
+    <div class="indent-block">
+        <div class="memo-row"><span class="memo-label">a) No. & Date...NA</span></div>
+        <div class="memo-row"><span class="memo-label">b) Amount.</span><span class="memo-value">.................................................................</span></div>
+    </div>
+
+    <!-- 14 -->
+    <div class="memo-row"><span class="memo-label">- Amount of bill chargeable to work:</span><span class="memo-value"><strong>Rs.44,69,907.00</strong></span></div>
+
+    <!-- 15 -->
+    <div class="memo-row"><span class="memo-label">- Net Amount payable:</span><span class="memo-value"><strong>Rs.35,09,951.00</strong></span></div>
+
+    <!-- 16-26 as plain statements (some numbered 1-7) -->
+    <div class="memo-row"><span class="memo-label">- The maintenance estimate is approved and work is technically sanctioned.</span></div>
+    <div class="memo-row"><span class="memo-label">- The works against which the bills have been forwarded above are actually executed at site.</span></div>
+    <div class="memo-row"><span class="memo-label">- The expenditure on the work is within deviation limit over and above the contract amount.</span></div>
+    <div class="memo-row"><span class="memo-label">- The expenditure including the proposed requirement of funds/bill is within 10% beyond the sanctioned amount of AA & ES proportionate value of AA& ES of 2.000 crores (2 Crores) whichever is less.</span></div>
+    <div class="memo-row"><span class="memo-label">1. Certified that budget slip has been got issued for the work which have been projected in the demand.</span></div>
+    <div class="memo-row"><span class="memo-label">2. Proposed release of payment is covered under sanctioned AA & ES/ARMO & Budget provision of the relevant year.</span></div>
+    <div class="memo-row"><span class="memo-label">3. Bill furnished by agency is also duly complaint of all orders/guidelines of GOI w.r.t GST/Income Tax and all other statutory provisions.</span></div>
+    <div class="memo-row"><span class="memo-label">4. All necessary checks as required under the provision of CPWD manual & departmental guidelines.</span></div>
+    <div class="memo-row"><span class="memo-label">5. Work has already been executed at site against which payment is being proposed for release.</span></div>
+    <div class="memo-row"><span class="memo-label">6. Payment is within the scope of the order.</span></div>
+    <div class="memo-row"><span class="memo-label">7. The Contractor has submitted the undertaking and copies of returns of last two assessment years have been submitted at DDA Golf Course Dwarka.</span></div>
+    <div class="memo-row" style="margin-top:6px;"><span class="memo-label">8. The NEFT details of the agency are as under:-</span></div>
+
+    <!-- NEFT table -->
+    <table class="neft-table">
+        <thead><tr><th>Name of Payee</th><th>Account No.</th><th>IFSC Code</th><th>Bank Name</th><th>Amount</th></tr></thead>
+        <tbody><tr><td><strong>M/s High Command</strong></td><td>${account_no}</td><td>${ifsc}</td><td>Canara Bank</td><td><strong>Rs.35,09,951.00</strong></td></tr></tbody>
+    </table>
+
+    <!-- signature strip (second page) -->
+    <div class="sig-strip-container">
+        <span class="sig-left">Sr. A.O/CAU(Sports)/DDA</span>
+        <span class="sig-center">AAO/DGCD</span>
+        <span class="sig-right">Secretary (DGCD) /DDA</span>
+    </div>
+
+    <!-- FOR USE IN OFFICE as six separate lines (not grid) -->
+    <div class="office-use-title">FOR USE IN OFFICE</div>
+    <div class="office-list">
+        <span class="office-line">1. Amount of AA & ES.</span>
+        <span class="office-line">2. Progressive Expenditure till date.</span>
+        <span class="office-line">3. Total Budget provision for the scheme.</span>
+        <span class="office-line">4. Total Expenditure till date (during the year).</span>
+        <span class="office-line">5. Total Expenditure of the division till date (during the year).</span>
+        <span class="office-line">6. Amount of the bill chargeable to work.</span>
+    </div>
+
+    <hr>
+    <div style="font-size:13px; color:#4b4b4b; text-align:right;">DDA Golf Course Dwarka – forwarding memo (compressed)</div>
+</div> <!-- page 2 end -->
+
+</body>
+</html>

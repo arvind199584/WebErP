@@ -1,0 +1,19 @@
+[
+    {"text": "show me the machine list", "intent": "list_machinery"},
+    {"text": "list all equipment", "intent": "list_machinery"},
+    {"text": "what machines we got", "intent": "list_machinery"},
+    {"text": "sabhi machine dikhao", "intent": "list_machinery"},
+    {"text": "what is the current stock", "intent": "list_consumables"},
+    {"text": "show inventory balance", "intent": "list_consumables"},
+    {"text": "petrol ka stock kitna hai", "intent": "list_consumables"},
+    {"text": "show me the machine logs", "intent": "list_turf_consumption_log"},
+    {"text": "consumption records dikhao", "intent": "list_turf_consumption_log"},
+    {"text": "show fuel usage for february 2026", "intent": "report_monthly_consumption"},
+    {"text": "february 2026 ka fuel istemal batao", "intent": "report_monthly_consumption"},
+    {"text": "show trend of diesel usage", "intent": "report_consumption_trend"},
+    {"text": "diesel ki khapat ka trend dikhao", "intent": "report_consumption_trend"},
+    {"text": "show me the earliest logs", "intent": "list_with_ordering"},
+    {"text": "sabse purane log dikhao", "intent": "list_with_ordering"},
+    {"text": "what was the stock of diesel on january 15 2026", "intent": "report_historical_balance"},
+    {"text": "15 jan 2026 ko diesel ka balance kya tha", "intent": "report_historical_balance"}
+]

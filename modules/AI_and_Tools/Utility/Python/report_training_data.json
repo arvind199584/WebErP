@@ -1,0 +1,30 @@
+[
+    {
+        "text": "show fuel consumption for february 2026",
+        "intent": "report_monthly_consumption"
+    },
+    {
+        "text": "what is the current stock of diesel",
+        "intent": "list_consumables"
+    },
+    {
+        "text": "list all machines",
+        "intent": "list_machinery"
+    },
+    {
+        "text": "show me the machine logs",
+        "intent": "list_turf_consumption_log"
+    },
+    {
+        "text": "show trend of diesel consumption",
+        "intent": "report_consumption_trend"
+    },
+    {
+        "text": "show me the earliest logs",
+        "intent": "list_with_ordering"
+    },
+    {
+        "text": "list the most recent machine usage",
+        "intent": "list_with_ordering"
+    }
+]

@@ -1,0 +1,15 @@
+{
+    "show": ["dikhao", "batao", "show"],
+    "list": ["list", "soochi"],
+    "consumption": ["consumption", "khapat", "istemal", "usage"],
+    "balance": ["balance", "baki"],
+    "stock": ["stock", "jama"],
+    "trend": ["trend", "pravritti"],
+    "machine": ["machine", "gadi", "yantra"],
+    "fuel": ["fuel", "indhan"],
+    "petrol": ["petrol"],
+    "diesel": ["diesel"],
+    "of": ["ka", "ki", "ke"],
+    "in": ["mein", "me"],
+    "for": ["ke liye"]
+}

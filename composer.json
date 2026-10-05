@@ -1,0 +1,13 @@
+{
+    "require": {
+        "phpoffice/phpword": "^1.4",
+        "phpoffice/phpspreadsheet": "^5.4",
+        "guzzlehttp/guzzle": "^7.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "core/",
+            "App\\Modules\\": "modules/"
+        }
+    }
+}

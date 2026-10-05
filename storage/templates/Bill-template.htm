@@ -1,0 +1,985 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Courier;
+	panose-1:2 7 4 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"\@MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;}
+p.MsoListBullet, li.MsoListBullet, div.MsoListBullet
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;}
+p.MsoListBulletCxSpFirst, li.MsoListBulletCxSpFirst, div.MsoListBulletCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;}
+p.MsoListBulletCxSpMiddle, li.MsoListBulletCxSpMiddle, div.MsoListBulletCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;}
+p.MsoListBulletCxSpLast, li.MsoListBulletCxSpLast, div.MsoListBulletCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;}
+p.MsoListNumber, li.MsoListNumber, div.MsoListNumber
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;}
+p.MsoListNumberCxSpFirst, li.MsoListNumberCxSpFirst, div.MsoListNumberCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;}
+p.MsoListNumberCxSpMiddle, li.MsoListNumberCxSpMiddle, div.MsoListNumberCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;}
+p.MsoListNumberCxSpLast, li.MsoListNumberCxSpLast, div.MsoListNumberCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;}
+p.MsoListBullet2, li.MsoListBullet2, div.MsoListBullet2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	text-indent:-18.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;}
+p.MsoListBullet2CxSpFirst, li.MsoListBullet2CxSpFirst, div.MsoListBullet2CxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	text-indent:-18.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;}
+p.MsoListBullet2CxSpMiddle, li.MsoListBullet2CxSpMiddle, div.MsoListBullet2CxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	text-indent:-18.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;}
+p.MsoListBullet2CxSpLast, li.MsoListBullet2CxSpLast, div.MsoListBullet2CxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	text-indent:-18.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;}
+p.MsoListBullet3, li.MsoListBullet3, div.MsoListBullet3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:54.0pt;
+	text-indent:-18.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;}
+p.MsoListBullet3CxSpFirst, li.MsoListBullet3CxSpFirst, div.MsoListBullet3CxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:54.0pt;
+	text-indent:-18.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;}
+p.MsoListBullet3CxSpMiddle, li.MsoListBullet3CxSpMiddle, div.MsoListBullet3CxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:54.0pt;
+	text-indent:-18.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;}
+p.MsoListBullet3CxSpLast, li.MsoListBullet3CxSpLast, div.MsoListBullet3CxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:54.0pt;
+	text-indent:-18.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;}
+p.MsoListNumber2, li.MsoListNumber2, div.MsoListNumber2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	text-indent:-18.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;}
+p.MsoListNumber2CxSpFirst, li.MsoListNumber2CxSpFirst, div.MsoListNumber2CxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	text-indent:-18.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;}
+p.MsoListNumber2CxSpMiddle, li.MsoListNumber2CxSpMiddle, div.MsoListNumber2CxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	text-indent:-18.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;}
+p.MsoListNumber2CxSpLast, li.MsoListNumber2CxSpLast, div.MsoListNumber2CxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	text-indent:-18.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{margin:0cm;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:14.2pt 72.0pt 14.2pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-IN style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNoSpacing style='line-height:115%'><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNoSpacing style='line-height:115%'><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNoSpacing style='margin-left:-14.2pt;line-height:115%'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNoSpacing style='margin-left:-14.2pt;line-height:115%'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'>NOW:
+<span style='color:red'>Maintenance of DDA Golf Course Dwarka, Sector-24. </span></span></p>
+
+<p class=MsoNoSpacing style='margin-left:-14.2pt;text-align:justify;text-justify:
+inter-ideograph;line-height:115%'><span lang=EN-US style='font-size:12.0pt;
+line-height:115%;font-family:"Times New Roman",serif'>SH:  <span
+style='color:red'>Providing various staff for office maintenance at Dwarka Golf
+Course.</span></span></p>
+
+<p class=MsoNormal style='margin-left:-14.2pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:36.0pt'><span lang=EN-US style='font-size:5.0pt;
+line-height:115%;font-family:"Times New Roman",serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:-14.2pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:36.0pt'><span lang=EN-US style='font-size:12.0pt;
+line-height:115%;font-family:"Times New Roman",serif;color:red'>4<sup>th</sup>
+R/A </span><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+font-family:"Times New Roman",serif;color:black'>bill</span><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'>
+in respect of <span style='color:red'>M/s High Command </span>has been passed
+for </span><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+font-family:"Times New Roman",serif;color:red'>&#8377; 8,99,455/-</span><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
+color:red'> </span><span lang=EN-US style='font-size:12.0pt;line-height:115%;
+font-family:"Times New Roman",serif'>and payment of </span><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
+color:red'>&#8377; 7,51,080/- </span><span lang=EN-US style='font-size:12.0pt;
+line-height:115%;font-family:"Times New Roman",serif;color:red'>(Rupees Seven
+Lakh Fifty One Thousand Eighty only).</span></p>
+
+<p class=MsoNormal style='margin-left:-14.2pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:36.0pt'><span lang=EN-US style='font-size:12.0pt;
+line-height:115%;font-family:"Times New Roman",serif'>The details are as under:
+-<span style='color:white'> 10.2011 i.e. Two Mont</span></span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=539
+ style='width:403.95pt;margin-left:26.7pt;border-collapse:collapse;border:none'>
+ <tr style='height:15.0pt'>
+  <td width=274 style='width:205.5pt;border:solid windowtext 1.0pt;padding:
+  0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
+  <p class=MsoListParagraph style='margin-bottom:0cm;text-align:justify;
+  text-justify:inter-ideograph;text-indent:-36.0pt;line-height:normal'><b><span
+  lang=EN-US style='font-family:"Times New Roman",serif;color:black'>1.<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></b><b><span lang=EN-US style='font-family:"Times New Roman",serif;
+  color:black'>Gross Amount   </span></b></p>
+  </td>
+  <td width=19 style='width:14.2pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
+  <p class=MsoNormal align=right style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:-14.2pt;text-align:right;line-height:normal'><b><span
+  lang=EN-US style='font-family:"Times New Roman",serif;color:black'>:</span></b></p>
+  </td>
+  <td width=113 style='width:3.0cm;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'></td>
+  <td width=132 style='width:99.2pt;border:solid windowtext 1.0pt;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
+  <p class=MsoNormal align=right style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:-14.2pt;text-align:right;line-height:normal'><b><span
+  lang=EN-US style='font-family:"Times New Roman",serif;color:red'>&#8377;  
+  8,99,455.00</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width=274 style='width:205.5pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
+  <p class=MsoListParagraph style='margin-bottom:0cm;text-align:justify;
+  text-justify:inter-ideograph;text-indent:-36.0pt;line-height:normal'><b><span
+  lang=EN-US style='font-family:"Times New Roman",serif;color:black'>2.<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></b><b><span lang=EN-US style='font-family:"Times New Roman",serif;
+  color:black'>Recovery</span></b></p>
+  </td>
+  <td width=19 style='width:14.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.0pt'></td>
+  <td width=113 style='width:3.0cm;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.0pt'></td>
+  <td width=132 style='width:99.2pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
+  <p class=MsoNormal align=right style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:-14.2pt;text-align:right;line-height:normal'><b><span
+  lang=EN-US style='font-family:"Times New Roman",serif;color:red'>&nbsp;</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width=274 style='width:205.5pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
+  <p class=MsoListParagraph style='margin-bottom:0cm;text-align:justify;
+  text-justify:inter-ideograph;text-indent:-20.45pt;line-height:normal'><span
+  lang=EN-US style='font-family:"Times New Roman",serif;color:black'>a)<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-US style='font-family:"Times New Roman",serif;
+  color:black'>Income Tax@ 2% </span></p>
+  </td>
+  <td width=19 style='width:14.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:-14.2pt;text-align:right;line-height:normal'><span
+  lang=EN-US style='font-family:"Times New Roman",serif;color:black'>:</span></p>
+  </td>
+  <td width=113 style='width:3.0cm;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:-14.2pt;text-align:right;line-height:normal'><span
+  lang=EN-US style='font-family:"Times New Roman",serif;color:red'>&#8377;     
+  17,989.00</span></p>
+  </td>
+  <td width=132 rowspan=5 style='width:99.2pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
+  <p class=MsoNormal align=right style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:-14.2pt;text-align:right;line-height:normal'><span
+  lang=EN-US style='font-family:"Times New Roman",serif;color:red'>(-)  &#8377;
+  1,48,375.00</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width=274 style='width:205.5pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
+  <p class=MsoListParagraph style='margin-bottom:0cm;text-align:justify;
+  text-justify:inter-ideograph;text-indent:-20.45pt;line-height:normal'><span
+  lang=EN-US style='font-family:"Times New Roman",serif;color:black'>b)<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-US style='font-family:"Times New Roman",serif;
+  color:black'>CGST@1% </span></p>
+  </td>
+  <td width=19 style='width:14.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:-14.2pt;text-align:right;line-height:normal'><span
+  lang=EN-US style='font-family:"Times New Roman",serif;color:black'>:</span></p>
+  </td>
+  <td width=113 style='width:3.0cm;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:-14.2pt;text-align:right;line-height:normal'><span
+  lang=EN-US style='font-family:"Times New Roman",serif;color:red'>&#8377;       
+  8,995.00</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width=274 style='width:205.5pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
+  <p class=MsoListParagraph style='margin-bottom:0cm;text-align:justify;
+  text-justify:inter-ideograph;text-indent:-20.45pt;line-height:normal'><span
+  lang=EN-US style='font-family:"Times New Roman",serif;color:black'>c)<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-US style='font-family:"Times New Roman",serif;
+  color:black'>SGST@1% </span></p>
+  </td>
+  <td width=19 style='width:14.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:-14.2pt;text-align:right;line-height:normal'><span
+  lang=EN-US style='font-family:"Times New Roman",serif;color:black'>:</span></p>
+  </td>
+  <td width=113 style='width:3.0cm;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:-14.2pt;text-align:right;line-height:normal'><span
+  lang=EN-US style='font-family:"Times New Roman",serif;color:red'>&#8377;       
+  8,995.00</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width=274 style='width:205.5pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
+  <p class=MsoListParagraph style='margin-bottom:0cm;text-align:justify;
+  text-justify:inter-ideograph;text-indent:-20.45pt;line-height:normal'><span
+  lang=EN-US style='font-family:"Times New Roman",serif;color:black'>d)<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-US style='font-family:"Times New Roman",serif;
+  color:black'>Security deposit @ 5% </span></p>
+  </td>
+  <td width=19 style='width:14.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:-14.2pt;text-align:right;line-height:normal'><span
+  lang=EN-US style='font-family:"Times New Roman",serif;color:black'>:</span></p>
+  </td>
+  <td width=113 style='width:3.0cm;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:-14.2pt;text-align:right;line-height:normal'><span
+  lang=EN-US style='font-family:"Times New Roman",serif;color:red'>&#8377;     
+  44,973.00</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width=274 style='width:205.5pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
+  <p class=MsoListParagraph style='margin-bottom:0cm;text-align:justify;
+  text-justify:inter-ideograph;text-indent:-20.45pt;line-height:normal'><span
+  lang=EN-US style='font-family:"Times New Roman",serif;color:black'>e)<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-US style='font-family:"Times New Roman",serif;
+  color:black'>Withheld non-payment of wages</span></p>
+  </td>
+  <td width=19 style='width:14.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:-14.2pt;text-align:right;line-height:normal'><span
+  lang=EN-US style='font-family:"Times New Roman",serif;color:black'>:</span></p>
+  </td>
+  <td width=113 style='width:3.0cm;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:-14.2pt;text-align:right;line-height:normal'><span
+  lang=EN-US style='font-family:"Times New Roman",serif;color:red'>&#8377;     
+  67,423.00</span></p>
+  </td>
+ </tr>
+ <tr style='height:15.0pt'>
+  <td width=274 style='width:205.5pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
+  <p class=MsoListParagraph style='margin-bottom:0cm;text-align:justify;
+  text-justify:inter-ideograph;text-indent:-36.0pt;line-height:normal'><b><span
+  lang=EN-US style='font-family:"Times New Roman",serif;color:black'>3.<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></b><b><span lang=EN-US style='font-family:"Times New Roman",serif;
+  color:black'>Net Amount</span></b></p>
+  </td>
+  <td width=19 style='width:14.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.0pt'>
+  <p class=MsoNormal align=right style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:-14.2pt;text-align:right;line-height:normal'><b><span
+  lang=EN-US style='font-family:"Times New Roman",serif;color:black'>:</span></b></p>
+  </td>
+  <td width=113 style='width:3.0cm;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:15.0pt'></td>
+  <td width=132 style='width:99.2pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
+  <p class=MsoNormal align=right style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:-14.2pt;text-align:right;line-height:normal'><b><span
+  lang=EN-US style='font-family:"Times New Roman",serif;color:red'>&#8377;  
+  7,51,080.00</span></b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:-14.2pt;text-align:justify;text-justify:inter-ideograph;line-height:
+150%'><span lang=EN-US style='font-size:5.0pt;line-height:150%;font-family:
+"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:-14.2pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:36.0pt'><span lang=EN-US style='font-size:12.0pt;
+line-height:115%;font-family:"Times New Roman",serif'>In view of the above,
+bill is submitted for authorization of payment for </span><span lang=EN-US
+style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif;
+color:red'>&#8377; 7,51,080/- </span><span lang=EN-US style='font-size:12.0pt;
+line-height:115%;font-family:"Times New Roman",serif;color:red'>(Rupees Seven
+Lakh Fifty One Thousand Eighty only) </span><span lang=EN-US style='font-size:
+12.0pt;line-height:115%;font-family:"Times New Roman",serif'>to <span
+style='color:red'>M/s High Command </span>by RTGS/NEFT (If agreed). AA &amp; ES
+has been approved by the Competent Authority. (Copy Enclosed)</span></p>
+
+<p class=MsoNormal style='margin-left:-14.2pt;text-indent:36.0pt'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'>Submitted
+please. </span></p>
+
+<p class=MsoNoSpacing style='margin-left:-14.2pt'><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>                                                                                   </span></p>
+
+<p class=MsoNoSpacing align=right style='margin-left:216.0pt;text-align:right;
+text-indent:50.2pt'><span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:red'>RE (Civil), DGCD, DDA</span><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman",serif'>                          </span></p>
+
+<p class=MsoNoSpacing style='margin-left:-14.2pt'><u><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>AAO, <span
+style='color:red'>DGCD, DDA</span></span></u></p>
+
+<p class=MsoNoSpacing style='margin-left:-14.2pt'><u><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNoSpacing style='margin-left:-14.2pt'><u><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNoSpacing style='margin-left:-14.2pt'><u><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNoSpacing style='margin-left:-14.2pt'><u><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNoSpacing style='margin-left:-14.2pt'><u><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>Secretary, <span
+style='color:red'>DGCD, DDA</span></span></u></p>
+
+<p class=MsoNoSpacing style='margin-left:-14.2pt'><u><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNoSpacing style='margin-left:-14.2pt'><u><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNoSpacing style='margin-left:-14.2pt'><u><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNoSpacing style='margin-left:-14.2pt'><u><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif'><span
+ style='text-decoration:none'>&nbsp;</span></span></u></p>
+
+<p class=MsoNoSpacing style='margin-left:-14.2pt'><u><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>Sr. A.O. (Sports) </span></u></p>
+
+<p class=MsoNoSpacing align=center style='margin-left:-14.2pt;text-align:center'><b><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></b></p>
+
+<p class=MsoNoSpacing align=center style='margin-left:-14.2pt;text-align:center'><b><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></b></p>
+
+<p class=MsoNoSpacing style='margin-left:-14.2pt;line-height:115%'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNoSpacing style='margin-left:-14.2pt;line-height:115%'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Calibri",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNoSpacing style='margin-left:-14.2pt;line-height:115%'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Calibri",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNoSpacing style='margin-left:-14.2pt;line-height:115%'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Calibri",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNoSpacing style='margin-left:-14.2pt;line-height:115%'><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Calibri",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Arial",sans-serif'>                                                       
+</span></p>
+
+<span lang=EN-US style='font-size:11.0pt;line-height:115%;font-family:"Arial",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Arial",sans-serif'>                  
+ </span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center'><b><u><span
+lang=EN-US style='font-size:14.0pt;line-height:115%'>BILL FORWARDING MEMO</span></u></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:18.0pt;text-indent:-18.0pt;line-height:normal'><span
+lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:10.0pt'>Name of work /Scheme: <b><span
+style='color:red'>DDA Golf Course Dwarka</span>.</b></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:18.0pt;text-indent:-18.0pt;line-height:normal'><span
+lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:10.0pt'>SH: <b><span
+style='color:red'>Providing various staff for office maintenance at Dwarka Golf
+Course</span>.</b></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt;
+line-height:normal'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:10.0pt'>Agency: <b><span
+style='color:red'>M/s High Command</span></b></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt;
+line-height:normal'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:10.0pt'>Budget code/item No.:<b><span
+style='color:red'>24900312</span>.</b></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt;
+line-height:normal'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:10.0pt'>GSTIN NO – <b><span
+style='color:red'>07${pan_no}1ZV</span></b>, PAN No. <b><span style='color:
+red'>${pan_no}</span></b></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt;
+line-height:normal'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:10.0pt'>Tendered amount /amount
+of work done: <b><span style='color:red'>Rs.1,65,66,732.00</span></b>/ <b><span
+style='color:red'>Rs.44,69,907.00</span></b></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt;
+line-height:normal'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:10.0pt'>Reference of AA/ES
+(AR&amp; MO) in case on maintenance work</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt;line-height:
+normal'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:10.0pt'>Amount Rs.…………….</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt;line-height:
+normal'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:10.0pt'>No. &amp;Date:-…………….</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt;
+line-height:normal'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:10.0pt'>Proportionate component
+available </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='line-height:normal'><span
+lang=EN-US style='font-size:10.0pt'>To approved P.E. Separately for
+Civil/Elect./ Hort. Work (group wise):</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt;
+line-height:normal'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:10.0pt'>Progressive expenditure
+of the scheme against the provision indicate </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='line-height:normal'><span
+lang=EN-US style='font-size:10.0pt'>Under col. 6 up to the previous
+month………………………………………………………………….</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt;
+line-height:normal'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:10.0pt'>Reference to the
+approval of the deviation, if any</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt;
+line-height:normal'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:10.0pt'>No:</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt;
+line-height:normal'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:10.0pt'>Amount:</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt;
+line-height:normal'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:10.0pt'>Date:</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:-18.0pt;
+line-height:normal'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:10.0pt'>a)  Budget provision
+during the year <b><span style='color:red'>Rs.1,335 Lakhs</span>.</b></span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-bottom:0cm;line-height:normal'><span
+lang=EN-US style='font-size:10.0pt'>b)  Less department charges:                                                                    </span></p>
+
+<p class=MsoNoSpacing style='margin-left:36.0pt'><span lang=EN-US
+style='font-size:10.0pt'>c)  Net Provision for the division
+………………………………………………………………………………………</span></p>
+
+<p class=MsoNoSpacing style='margin-left:18.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:10.0pt'> Expenditure during the
+year………………………………………………</span></p>
+
+<p class=MsoNoSpacing><span lang=EN-US style='font-size:10.0pt'> 13.  Reference
+of the Budget slip </span></p>
+
+<p class=MsoNoSpacing><span lang=EN-US style='font-size:10.0pt'>                a)  
+No. &amp; Date…NA</span></p>
+
+<p class=MsoNoSpacing><span lang=EN-US style='font-size:10.0pt'>                b)  
+Amount………………………………………………………..</span></p>
+
+<p class=MsoNoSpacing style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:10.0pt'> Amount of bill
+chargeable to work: <b>Rs.<span style='color:#EE0000'>44,69,907.00</span></b></span></p>
+
+<p class=MsoNoSpacing style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:10.0pt'> Net Amount payable: <b>Rs.<span
+style='color:#EE0000'>35,09,951.00</span></b></span></p>
+
+<p class=MsoNoSpacing style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:10.0pt'> The maintenance
+estimate is approved and work is technically sanctioned.</span></p>
+
+<p class=MsoNoSpacing style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:10.0pt'> The works against
+which the bills have been forwarded above are actually executed at site.</span></p>
+
+<p class=MsoNoSpacing style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:10.0pt'> The expenditure on the
+work is within deviation limit over and above the contract amount.</span></p>
+
+<p class=MsoNoSpacing style='margin-top:0cm;margin-right:40.5pt;margin-bottom:
+0cm;margin-left:72.0pt;margin-bottom:.0001pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt'><span lang=EN-US style='font-size:10.0pt;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:10.0pt'>The expenditure
+including the proposed requirement of funds/bill is within 10% beyond the
+sanctioned amount of AA &amp; ES proportionate value of AA&amp; ES of 2.000
+crores (2 Crores)   whichever is less.</span></p>
+
+<p class=MsoNoSpacing style='margin-top:0cm;margin-right:40.5pt;margin-bottom:
+0cm;margin-left:18.0pt;margin-bottom:.0001pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt'><span lang=EN-US style='font-size:10.0pt'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:10.0pt'>Certified that budget slip has been got
+issued for the work which have been projected in the demand.</span></p>
+
+<p class=MsoNoSpacing style='margin-top:0cm;margin-right:40.5pt;margin-bottom:
+0cm;margin-left:18.0pt;margin-bottom:.0001pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt'><span lang=EN-US style='font-size:10.0pt'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:10.0pt'>Proposed release of payment is covered
+under sanctioned AA &amp; ES/ARMO &amp; Budget provision of the relevant year.</span></p>
+
+<p class=MsoNoSpacing style='margin-top:0cm;margin-right:40.5pt;margin-bottom:
+0cm;margin-left:18.0pt;margin-bottom:.0001pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt'><span lang=EN-US style='font-size:10.0pt'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:10.0pt'>Bill furnished by agency is also duly
+complaint of all orders/guidelines of GOI w.r.t GST/Income Tax and all other statutory
+provisions.</span></p>
+
+<p class=MsoNoSpacing style='margin-top:0cm;margin-right:40.5pt;margin-bottom:
+0cm;margin-left:18.0pt;margin-bottom:.0001pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt'><span lang=EN-US style='font-size:10.0pt'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:10.0pt'>All necessary checks as required under the
+provision of CPWD manual &amp; departmental guidelines.</span></p>
+
+<p class=MsoNoSpacing style='margin-top:0cm;margin-right:40.5pt;margin-bottom:
+0cm;margin-left:18.0pt;margin-bottom:.0001pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt'><span lang=EN-US style='font-size:10.0pt'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:10.0pt'>Work has already been executed at site
+against which payment is being proposed for release.</span></p>
+
+<p class=MsoNoSpacing style='margin-top:0cm;margin-right:40.5pt;margin-bottom:
+0cm;margin-left:18.0pt;margin-bottom:.0001pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt'><span lang=EN-US style='font-size:10.0pt'>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:10.0pt'>Payment is within the scope of the order. </span></p>
+
+<p class=MsoNoSpacing style='margin-top:0cm;margin-right:40.5pt;margin-bottom:
+0cm;margin-left:18.0pt;margin-bottom:.0001pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt'><span lang=EN-US style='font-size:10.0pt'>7.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:10.0pt'>The Contractor has submitted the
+undertaking and copies of returns of last two assessment years have been
+submitted at DDA Golf Course Dwarka.</span></p>
+
+<p class=MsoNoSpacing style='margin-top:0cm;margin-right:40.5pt;margin-bottom:
+0cm;margin-left:18.0pt;margin-bottom:.0001pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt'><span lang=EN-US style='font-size:10.0pt'>8.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:10.0pt'> The NEFT details of the agency are as
+under:-</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=491
+ style='width:368.15pt;margin-left:40.85pt;border-collapse:collapse;border:
+ none'>
+ <tr style='height:.9pt'>
+  <td width=161 nowrap valign=bottom style='width:120.5pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:.9pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><span
+  lang=EN-US style='font-size:9.0pt'>Name of Payee</span></b></p>
+  </td>
+  <td width=95 nowrap valign=bottom style='width:70.9pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:.9pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><span
+  lang=EN-US style='font-size:9.0pt'>Account No.</span></b></p>
+  </td>
+  <td width=85 nowrap valign=bottom style='width:63.75pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:.9pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><span
+  lang=EN-US style='font-size:9.0pt'>IFSC Code</span></b></p>
+  </td>
+  <td width=75 nowrap valign=bottom style='width:56.3pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:.9pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><span
+  lang=EN-US style='font-size:9.0pt'>Bank Name</span></b></p>
+  </td>
+  <td width=76 nowrap valign=bottom style='width:2.0cm;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:.9pt'>
+  <p class=MsoNormal align=right style='margin-bottom:0cm;text-align:right;
+  line-height:normal'><b><span lang=EN-US style='font-size:9.0pt'>Amount</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:18.7pt'>
+  <td width=161 style='width:120.5pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:18.7pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US style='font-size:9.0pt;color:red'>M/s High Command</span></p>
+  </td>
+  <td width=95 nowrap style='width:70.9pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:18.7pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span lang=EN-US style='font-size:9.0pt;color:red'>${account_no}</span></p>
+  </td>
+  <td width=85 nowrap style='width:63.75pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:18.7pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
+  line-height:normal'><span lang=EN-US style='font-size:9.0pt;color:red'>${ifsc}</span></p>
+  </td>
+  <td width=75 nowrap style='width:56.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:18.7pt'>
+  <p class=MsoNormal align=center style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:-7.45pt;text-align:center;line-height:normal'><span
+  lang=EN-US style='font-size:9.0pt;color:red'>Canara Bank</span></p>
+  </td>
+  <td width=76 nowrap style='width:2.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:18.7pt'>
+  <p class=MsoNormal align=right style='margin-top:0cm;margin-right:0cm;
+  margin-bottom:0cm;margin-left:-.7pt;text-align:right;line-height:normal'><b><span
+  lang=EN-US style='font-size:9.0pt;color:#EE0000'>Rs.35,09,951.00 </span></b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNoSpacing align=right style='margin-top:0cm;margin-right:40.5pt;
+margin-bottom:0cm;margin-left:13.5pt;margin-bottom:.0001pt;text-align:right'><span
+lang=EN-US style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNoSpacing align=right style='margin-top:0cm;margin-right:40.5pt;
+margin-bottom:0cm;margin-left:13.5pt;margin-bottom:.0001pt;text-align:right'><span
+lang=EN-US style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNoSpacing align=right style='margin-top:0cm;margin-right:40.5pt;
+margin-bottom:0cm;margin-left:49.5pt;margin-bottom:.0001pt;text-align:right;
+text-indent:22.5pt'><span lang=EN-US style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNoSpacing align=right style='margin-right:23.8pt;text-align:right'><b><span
+lang=EN-US style='font-size:10.0pt'>Sr. A.O/CAU(Sports)/DDA            AAO/<span
+style='color:red'>DGCD</span>     Secretary (<span style='color:red'>DGCD</span>)
+/DDA</span></b></p>
+
+<p class=MsoNoSpacing><b><span lang=EN-US style='font-size:10.0pt'>                </span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:normal'><u><span
+lang=EN-US style='font-size:10.0pt'>FOR USE IN OFFICE</span></u></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:42.55pt;text-indent:-21.25pt;
+line-height:normal'><span lang=EN-US style='font-size:10.0pt'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:10.0pt'>Amount of AA &amp; ES.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:40.5pt;text-indent:-18.0pt;
+line-height:normal'><span lang=EN-US style='font-size:10.0pt'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:10.0pt'>Progressive Expenditure till date.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:40.5pt;text-indent:-18.0pt;
+line-height:normal'><span lang=EN-US style='font-size:10.0pt'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:10.0pt'>Total Budget provision for the scheme.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:40.5pt;text-indent:-18.0pt;
+line-height:normal'><span lang=EN-US style='font-size:10.0pt'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:10.0pt'>Total Expenditure till date (during the
+year).</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:40.5pt;text-indent:-18.0pt;
+line-height:normal'><span lang=EN-US style='font-size:10.0pt'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:10.0pt'>Total Expenditure of the division till date
+(during the year).</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:40.5pt;text-indent:-18.0pt;
+line-height:normal'><span lang=EN-US style='font-size:10.0pt'>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:10.0pt'>Amount of the bill chargeable to work.</span></p>
+
+</div>
+
+</body>
+
+</html>
