@@ -39,7 +39,12 @@ class Database
 
     private function loadEnv(): void
     {
-        $envFile = __DIR__ . '/../.env';
+        $envName = getenv('ENV_FILE') ?: '.env';
+        $envFile = __DIR__ . '/../' . $envName;
+        if (!file_exists($envFile)) {
+            $envFile = __DIR__ . '/../.env';
+        }
+
         if (file_exists($envFile)) {
             $lines = file($envFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
             foreach ($lines as $line) {

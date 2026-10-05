@@ -2,6 +2,8 @@
 /venv/
 /.venv_uv/
 .env
+.env.*
+!.env.example
 
 # Server & Application Logs
 *.log
