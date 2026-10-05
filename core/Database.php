@@ -26,6 +26,25 @@ class Database
         $password = getenv('DB_PASS')    ?: 'daredevil';
         $sslmode  = getenv('DB_SSLMODE') ?: 'disable';
 
+        // Support standard cloud DATABASE_URL (Render, Neon, Supabase, Heroku)
+        $databaseUrl = getenv('DATABASE_URL');
+        if (!empty($databaseUrl)) {
+            $parsed = parse_url($databaseUrl);
+            if ($parsed !== false) {
+                $host     = $parsed['host'] ?? $host;
+                $port     = isset($parsed['port']) ? (string)$parsed['port'] : $port;
+                $db_name  = isset($parsed['path']) ? ltrim($parsed['path'], '/') : $db_name;
+                $username = $parsed['user'] ?? $username;
+                $password = $parsed['pass'] ?? $password;
+                if (isset($parsed['query'])) {
+                    parse_str($parsed['query'], $query);
+                    if (isset($query['sslmode'])) {
+                        $sslmode = $query['sslmode'];
+                    }
+                }
+            }
+        }
+
         $dsn = "pgsql:host={$host};port={$port};dbname={$db_name};sslmode={$sslmode}";
 
         try {
