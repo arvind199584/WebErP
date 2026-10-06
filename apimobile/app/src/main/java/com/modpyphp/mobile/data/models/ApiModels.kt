@@ -135,11 +135,48 @@ data class Machine(
     val make: String?,
     @SerializedName("runduration") val runDuration: Boolean?,
     val status: String?,
+    @SerializedName("service_interval_hours") val serviceIntervalHours: Int?,
+    @SerializedName("service_due") val serviceDue: Boolean?,
     @SerializedName("office_name") val officeName: String?
 )
 
+data class MachineRunLog(
+    val id: Int,
+    @SerializedName("machine_name") val machineName: String?,
+    @SerializedName("log_date") val logDate: String?,
+    @SerializedName("fuel_consumed_qty") val fuelConsumedQty: Double?,
+    @SerializedName("running_hours") val runningHours: Double?,
+    @SerializedName("entry_type") val entryType: String?,
+    @SerializedName("recorded_by") val recordedBy: String?
+)
+
+data class MachineServiceLog(
+    val id: Int,
+    @SerializedName("machine_name") val machineName: String?,
+    @SerializedName("service_date") val serviceDate: String?,
+    @SerializedName("hours_at_service") val hoursAtService: Double?,
+    @SerializedName("next_service_due") val nextServiceDue: Double?,
+    @SerializedName("service_type") val serviceType: String?,
+    @SerializedName("serviced_by") val servicedBy: String?,
+    val cost: Double?,
+    val remarks: String?,
+    @SerializedName("job_card_no") val jobCardNo: String?
+)
+
+data class WaterLog(
+    val id: Int,
+    val date: String?,
+    @SerializedName("morning_opening") val morningOpening: Double?,
+    @SerializedName("morning_closing") val morningClosing: Double?,
+    @SerializedName("evening_opening") val eveningOpening: Double?,
+    @SerializedName("evening_closing") val eveningClosing: Double?
+)
+
 data class WorkshopData(
-    val machines: List<Machine>?
+    val machines: List<Machine>?,
+    val runLogs: List<MachineRunLog>?,
+    val serviceLogs: List<MachineServiceLog>?,
+    val waterLogs: List<WaterLog>?
 )
 
 data class WorkshopResponse(

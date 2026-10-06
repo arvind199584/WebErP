@@ -871,10 +871,19 @@ fun ErpModuleCard(
 
 /* =====================================================================
  * WORKSHOP & MACHINERY MODULE SCREEN
+ * Tabs: Fleet, Run Logs, Service Logs, Water Logs
  * ===================================================================== */
+enum class WorkshopTab(val title: String, val icon: String) {
+    FLEET("Fleet", "🚜"),
+    RUN_LOGS("Run Logs", "⏱️"),
+    SERVICES("Service Logs", "🔧"),
+    WATER_LOGS("Water Logs", "💧")
+}
+
 @Composable
 fun WorkshopModuleContent(apiService: ModPyPhpApiService) {
     var data by remember { mutableStateOf<WorkshopData?>(null) }
+    var selectedTab by remember { mutableStateOf(WorkshopTab.FLEET) }
     var searchQuery by remember { mutableStateOf("") }
     var isLoading by remember { mutableStateOf(true) }
     var errorMsg by remember { mutableStateOf<String?>(null) }
@@ -892,108 +901,420 @@ fun WorkshopModuleContent(apiService: ModPyPhpApiService) {
 
     ModuleScreenLayout(
         title = "Workshop & Machinery",
-        subtitle = "Fleet inventory, live service status & operational records",
+        subtitle = "Fleet inventory, daily run logs, servicing & water consumption",
         isLoading = isLoading,
         errorMsg = errorMsg
     ) {
-        val filteredMachines = remember(data?.machines, searchQuery) {
-            val list = data?.machines ?: emptyList()
-            if (searchQuery.isBlank()) list
-            else list.filter {
-                (it.name ?: "").contains(searchQuery, ignoreCase = true) ||
-                (it.officeName ?: "").contains(searchQuery, ignoreCase = true) ||
-                (it.status ?: "").contains(searchQuery, ignoreCase = true)
-            }
-        }
-
-        LazyColumn(verticalArrangement = Arrangement.spacedBy(10.dp)) {
-            // Search Bar
-            item {
-                OutlinedTextField(
-                    value = searchQuery,
-                    onValueChange = { searchQuery = it },
-                    placeholder = { Text("Search machine fleet...") },
-                    modifier = Modifier.fillMaxWidth(),
-                    shape = RoundedCornerShape(10.dp),
-                    singleLine = true,
-                    leadingIcon = { Text("🔍") }
-                )
-            }
-
-            item {
-                Row(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.SpaceBetween,
-                    verticalAlignment = Alignment.CenterVertically
-                ) {
-                    Text("Machine Fleet", fontSize = 16.sp, fontWeight = FontWeight.Bold, color = ErpTextMain)
-                    Text("Total: ${filteredMachines.size}", fontSize = 12.sp, color = ErpTextMuted)
+        Column(modifier = Modifier.fillMaxSize()) {
+            // Tab Selector Chips
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .horizontalScroll(rememberScrollState()),
+                horizontalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                WorkshopTab.values().forEach { tab ->
+                    val isSelected = selectedTab == tab
+                    FilterChip(
+                        selected = isSelected,
+                        onClick = { selectedTab = tab },
+                        label = { Text("${tab.icon} ${tab.title}", fontSize = 12.sp, fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Medium) },
+                        colors = FilterChipDefaults.filterChipColors(
+                            selectedContainerColor = ErpWarning.copy(alpha = 0.2f),
+                            selectedLabelColor = Color(0xFF78350F)
+                        )
+                    )
                 }
             }
 
-            items(filteredMachines) { machine ->
-                Card(
-                    shape = RoundedCornerShape(10.dp),
-                    colors = CardDefaults.cardColors(containerColor = Color.White),
-                    border = androidx.compose.foundation.BorderStroke(1.dp, ErpBorder),
-                    modifier = Modifier.fillMaxWidth()
-                ) {
+            Spacer(modifier = Modifier.height(10.dp))
+
+            // Search Bar
+            OutlinedTextField(
+                value = searchQuery,
+                onValueChange = { searchQuery = it },
+                placeholder = {
+                    Text(
+                        when (selectedTab) {
+                            WorkshopTab.FLEET -> "Search machine fleet by name or office..."
+                            WorkshopTab.RUN_LOGS -> "Search run logs by machine name..."
+                            WorkshopTab.SERVICES -> "Search service logs by machine or type..."
+                            WorkshopTab.WATER_LOGS -> "Search water logs by date..."
+                        }
+                    )
+                },
+                modifier = Modifier.fillMaxWidth(),
+                shape = RoundedCornerShape(10.dp),
+                singleLine = true,
+                leadingIcon = { Text("🔍") }
+            )
+
+            Spacer(modifier = Modifier.height(12.dp))
+
+            when (selectedTab) {
+                // 1. MACHINE FLEET TAB
+                WorkshopTab.FLEET -> {
+                    val filteredMachines = remember(data?.machines, searchQuery) {
+                        val list = data?.machines ?: emptyList()
+                        if (searchQuery.isBlank()) list
+                        else list.filter {
+                            (it.name ?: "").contains(searchQuery, ignoreCase = true) ||
+                            (it.officeName ?: "").contains(searchQuery, ignoreCase = true) ||
+                            (it.status ?: "").contains(searchQuery, ignoreCase = true)
+                        }
+                    }
+
                     Row(
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(14.dp),
-                        verticalAlignment = Alignment.CenterVertically,
-                        horizontalArrangement = Arrangement.SpaceBetween
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically
                     ) {
-                        Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.weight(1f)) {
-                            Surface(
-                                shape = CircleShape,
-                                color = ErpWarning.copy(alpha = 0.15f),
-                                modifier = Modifier.size(40.dp)
+                        Text("Machine Fleet", fontSize = 16.sp, fontWeight = FontWeight.Bold, color = ErpTextMain)
+                        Text("Total: ${filteredMachines.size}", fontSize = 12.sp, color = ErpTextMuted)
+                    }
+
+                    Spacer(modifier = Modifier.height(8.dp))
+
+                    LazyColumn(
+                        verticalArrangement = Arrangement.spacedBy(10.dp),
+                        modifier = Modifier.weight(1f)
+                    ) {
+                        items(filteredMachines) { machine ->
+                            Card(
+                                shape = RoundedCornerShape(10.dp),
+                                colors = CardDefaults.cardColors(containerColor = Color.White),
+                                border = androidx.compose.foundation.BorderStroke(1.dp, ErpBorder),
+                                modifier = Modifier.fillMaxWidth()
                             ) {
-                                Box(contentAlignment = Alignment.Center) {
-                                    Text("🚜", fontSize = 20.sp)
+                                Row(
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .padding(14.dp),
+                                    verticalAlignment = Alignment.CenterVertically,
+                                    horizontalArrangement = Arrangement.SpaceBetween
+                                ) {
+                                    Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.weight(1f)) {
+                                        Surface(
+                                            shape = CircleShape,
+                                            color = ErpWarning.copy(alpha = 0.15f),
+                                            modifier = Modifier.size(40.dp)
+                                        ) {
+                                            Box(contentAlignment = Alignment.Center) {
+                                                Text("🚜", fontSize = 20.sp)
+                                            }
+                                        }
+                                        Spacer(modifier = Modifier.width(12.dp))
+                                        Column {
+                                            Text(
+                                                text = machine.name ?: "Machine #${machine.id}",
+                                                fontWeight = FontWeight.Bold,
+                                                fontSize = 15.sp,
+                                                color = ErpTextMain
+                                            )
+                                            Text(
+                                                text = "Make: ${if (!machine.make.isNullOrBlank()) machine.make else "Standard"}",
+                                                fontSize = 12.sp,
+                                                color = ErpTextMuted
+                                            )
+                                            Text(
+                                                text = "🏢 ${machine.officeName ?: "Main Complex"}",
+                                                fontSize = 11.sp,
+                                                color = ErpTextMuted
+                                            )
+                                        }
+                                    }
+                                    Surface(
+                                        shape = RoundedCornerShape(6.dp),
+                                        color = when (machine.status?.lowercase()) {
+                                            "working", "active" -> Color(0xFFD1FAE5)
+                                            "under repair", "repair" -> Color(0xFFFEF3C7)
+                                            else -> Color(0xFFF1F5F9)
+                                        }
+                                    ) {
+                                        Text(
+                                            text = machine.status ?: "Working",
+                                            fontSize = 11.sp,
+                                            fontWeight = FontWeight.Bold,
+                                            color = when (machine.status?.lowercase()) {
+                                                "working", "active" -> Color(0xFF065F46)
+                                                "under repair", "repair" -> Color(0xFF92400E)
+                                                else -> Color(0xFF475569)
+                                            },
+                                            modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp)
+                                        )
+                                    }
                                 }
                             }
-                            Spacer(modifier = Modifier.width(12.dp))
-                            Column {
-                                Text(
-                                    text = machine.name ?: "Machine #${machine.id}",
-                                    fontWeight = FontWeight.Bold,
-                                    fontSize = 15.sp,
-                                    color = ErpTextMain
-                                )
-                                Text(
-                                    text = "Make: ${if (!machine.make.isNullOrBlank()) machine.make else "Standard"}",
-                                    fontSize = 12.sp,
-                                    color = ErpTextMuted
-                                )
-                                Text(
-                                    text = "🏢 ${machine.officeName ?: "Main Complex"}",
-                                    fontSize = 11.sp,
-                                    color = ErpTextMuted
-                                )
+                        }
+                    }
+                }
+
+                // 2. DAILY RUN LOGS TAB
+                WorkshopTab.RUN_LOGS -> {
+                    val filteredLogs = remember(data?.runLogs, searchQuery) {
+                        val list = data?.runLogs ?: emptyList()
+                        if (searchQuery.isBlank()) list
+                        else list.filter {
+                            (it.machineName ?: "").contains(searchQuery, ignoreCase = true) ||
+                            (it.logDate ?: "").contains(searchQuery, ignoreCase = true)
+                        }
+                    }
+
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Text("Daily Run & Fuel Logs", fontSize = 16.sp, fontWeight = FontWeight.Bold, color = ErpTextMain)
+                        Text("Showing: ${filteredLogs.size}", fontSize = 12.sp, color = ErpTextMuted)
+                    }
+
+                    Spacer(modifier = Modifier.height(8.dp))
+
+                    if (filteredLogs.isEmpty()) {
+                        Text("No run logs found.", fontSize = 13.sp, color = ErpTextMuted)
+                    } else {
+                        LazyColumn(
+                            verticalArrangement = Arrangement.spacedBy(10.dp),
+                            modifier = Modifier.weight(1f)
+                        ) {
+                            items(filteredLogs) { log ->
+                                Card(
+                                    shape = RoundedCornerShape(10.dp),
+                                    colors = CardDefaults.cardColors(containerColor = Color.White),
+                                    border = androidx.compose.foundation.BorderStroke(1.dp, ErpBorder),
+                                    modifier = Modifier.fillMaxWidth()
+                                ) {
+                                    Column(modifier = Modifier.padding(14.dp)) {
+                                        Row(
+                                            modifier = Modifier.fillMaxWidth(),
+                                            horizontalArrangement = Arrangement.SpaceBetween
+                                        ) {
+                                            Text(
+                                                text = log.machineName ?: "Machine Log",
+                                                fontWeight = FontWeight.Bold,
+                                                fontSize = 15.sp,
+                                                color = ErpTextMain
+                                            )
+                                            Surface(
+                                                shape = RoundedCornerShape(6.dp),
+                                                color = Color(0xFFDBEAFE)
+                                            ) {
+                                                Text(
+                                                    text = "📅 ${log.logDate ?: "Date"}",
+                                                    fontSize = 11.sp,
+                                                    fontWeight = FontWeight.SemiBold,
+                                                    color = Color(0xFF1E40AF),
+                                                    modifier = Modifier.padding(horizontal = 6.dp, vertical = 2.dp)
+                                                )
+                                            }
+                                        }
+                                        Spacer(modifier = Modifier.height(6.dp))
+                                        Row(
+                                            modifier = Modifier.fillMaxWidth(),
+                                            horizontalArrangement = Arrangement.SpaceBetween
+                                        ) {
+                                            Text(
+                                                text = "⏱️ Hours: ${log.runningHours ?: 0.0} hrs",
+                                                fontSize = 13.sp,
+                                                fontWeight = FontWeight.SemiBold,
+                                                color = Color(0xFF0F172A)
+                                            )
+                                            Text(
+                                                text = "⛽ Fuel: ${log.fuelConsumedQty ?: 0.0} L",
+                                                fontSize = 13.sp,
+                                                fontWeight = FontWeight.SemiBold,
+                                                color = Color(0xFFD97706)
+                                            )
+                                        }
+                                        if (!log.recordedBy.isNullOrBlank()) {
+                                            Spacer(modifier = Modifier.height(4.dp))
+                                            Text(
+                                                text = "Recorded by: ${log.recordedBy}",
+                                                fontSize = 11.sp,
+                                                color = ErpTextMuted
+                                            )
+                                        }
+                                    }
+                                }
                             }
                         }
-                        Surface(
-                            shape = RoundedCornerShape(6.dp),
-                            color = when (machine.status?.lowercase()) {
-                                "working", "active" -> Color(0xFFD1FAE5)
-                                "under repair", "repair" -> Color(0xFFFEF3C7)
-                                else -> Color(0xFFF1F5F9)
-                            }
+                    }
+                }
+
+                // 3. SERVICE & MAINTENANCE LOGS TAB
+                WorkshopTab.SERVICES -> {
+                    val filteredServices = remember(data?.serviceLogs, searchQuery) {
+                        val list = data?.serviceLogs ?: emptyList()
+                        if (searchQuery.isBlank()) list
+                        else list.filter {
+                            (it.machineName ?: "").contains(searchQuery, ignoreCase = true) ||
+                            (it.serviceType ?: "").contains(searchQuery, ignoreCase = true) ||
+                            (it.servicedBy ?: "").contains(searchQuery, ignoreCase = true)
+                        }
+                    }
+
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Text("Machine Servicing & Job Cards", fontSize = 16.sp, fontWeight = FontWeight.Bold, color = ErpTextMain)
+                        Text("Total: ${filteredServices.size}", fontSize = 12.sp, color = ErpTextMuted)
+                    }
+
+                    Spacer(modifier = Modifier.height(8.dp))
+
+                    if (filteredServices.isEmpty()) {
+                        Text("No service logs recorded.", fontSize = 13.sp, color = ErpTextMuted)
+                    } else {
+                        LazyColumn(
+                            verticalArrangement = Arrangement.spacedBy(10.dp),
+                            modifier = Modifier.weight(1f)
                         ) {
-                            Text(
-                                text = machine.status ?: "Working",
-                                fontSize = 11.sp,
-                                fontWeight = FontWeight.Bold,
-                                color = when (machine.status?.lowercase()) {
-                                    "working", "active" -> Color(0xFF065F46)
-                                    "under repair", "repair" -> Color(0xFF92400E)
-                                    else -> Color(0xFF475569)
-                                },
-                                modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp)
-                            )
+                            items(filteredServices) { sLog ->
+                                Card(
+                                    shape = RoundedCornerShape(10.dp),
+                                    colors = CardDefaults.cardColors(containerColor = Color.White),
+                                    border = androidx.compose.foundation.BorderStroke(1.dp, ErpBorder),
+                                    modifier = Modifier.fillMaxWidth()
+                                ) {
+                                    Column(modifier = Modifier.padding(14.dp)) {
+                                        Row(
+                                            modifier = Modifier.fillMaxWidth(),
+                                            horizontalArrangement = Arrangement.SpaceBetween
+                                        ) {
+                                            Text(
+                                                text = sLog.machineName ?: "Machine Service",
+                                                fontWeight = FontWeight.Bold,
+                                                fontSize = 15.sp,
+                                                color = ErpTextMain
+                                            )
+                                            Surface(
+                                                shape = RoundedCornerShape(6.dp),
+                                                color = Color(0xFFFEF3C7)
+                                            ) {
+                                                Text(
+                                                    text = sLog.serviceType ?: "Service",
+                                                    fontSize = 11.sp,
+                                                    fontWeight = FontWeight.Bold,
+                                                    color = Color(0xFF92400E),
+                                                    modifier = Modifier.padding(horizontal = 6.dp, vertical = 2.dp)
+                                                )
+                                            }
+                                        }
+                                        Spacer(modifier = Modifier.height(4.dp))
+                                        Text(
+                                            text = "📅 Date: ${sLog.serviceDate ?: "N/A"} • Serviced at: ${sLog.hoursAtService ?: 0.0} hrs",
+                                            fontSize = 12.sp,
+                                            color = ErpTextMuted
+                                        )
+                                        if (sLog.nextServiceDue != null && sLog.nextServiceDue > 0) {
+                                            Text(
+                                                text = "🔔 Next Service Due: ${sLog.nextServiceDue} hrs",
+                                                fontSize = 12.sp,
+                                                fontWeight = FontWeight.SemiBold,
+                                                color = Color(0xFFDC2626)
+                                            )
+                                        }
+                                        if (!sLog.jobCardNo.isNullOrBlank()) {
+                                            Text(
+                                                text = "Job Card: #${sLog.jobCardNo}",
+                                                fontSize = 11.sp,
+                                                color = ErpPrimary
+                                            )
+                                        }
+                                        if (!sLog.remarks.isNullOrBlank()) {
+                                            Spacer(modifier = Modifier.height(4.dp))
+                                            Text(
+                                                text = "Remarks: ${sLog.remarks}",
+                                                fontSize = 12.sp,
+                                                color = ErpTextMain
+                                            )
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // 4. WATER LOGS TAB
+                WorkshopTab.WATER_LOGS -> {
+                    val filteredWaterLogs = remember(data?.waterLogs, searchQuery) {
+                        val list = data?.waterLogs ?: emptyList()
+                        if (searchQuery.isBlank()) list
+                        else list.filter {
+                            (it.date ?: "").contains(searchQuery, ignoreCase = true)
+                        }
+                    }
+
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Text("Daily Water Run Logs", fontSize = 16.sp, fontWeight = FontWeight.Bold, color = ErpTextMain)
+                        Text("Total: ${filteredWaterLogs.size}", fontSize = 12.sp, color = ErpTextMuted)
+                    }
+
+                    Spacer(modifier = Modifier.height(8.dp))
+
+                    if (filteredWaterLogs.isEmpty()) {
+                        Text("No water logs recorded.", fontSize = 13.sp, color = ErpTextMuted)
+                    } else {
+                        LazyColumn(
+                            verticalArrangement = Arrangement.spacedBy(10.dp),
+                            modifier = Modifier.weight(1f)
+                        ) {
+                            items(filteredWaterLogs) { wl ->
+                                Card(
+                                    shape = RoundedCornerShape(10.dp),
+                                    colors = CardDefaults.cardColors(containerColor = Color.White),
+                                    border = androidx.compose.foundation.BorderStroke(1.dp, ErpBorder),
+                                    modifier = Modifier.fillMaxWidth()
+                                ) {
+                                    Column(modifier = Modifier.padding(14.dp)) {
+                                        Row(
+                                            modifier = Modifier.fillMaxWidth(),
+                                            horizontalArrangement = Arrangement.SpaceBetween
+                                        ) {
+                                            Text(
+                                                text = "💧 Water Log",
+                                                fontWeight = FontWeight.Bold,
+                                                fontSize = 15.sp,
+                                                color = Color(0xFF0369A1)
+                                            )
+                                            Surface(
+                                                shape = RoundedCornerShape(6.dp),
+                                                color = Color(0xFFE0F2FE)
+                                            ) {
+                                                Text(
+                                                    text = "📅 ${wl.date ?: "N/A"}",
+                                                    fontSize = 11.sp,
+                                                    fontWeight = FontWeight.SemiBold,
+                                                    color = Color(0xFF0284C7),
+                                                    modifier = Modifier.padding(horizontal = 6.dp, vertical = 2.dp)
+                                                )
+                                            }
+                                        }
+                                        Spacer(modifier = Modifier.height(8.dp))
+                                        Row(
+                                            modifier = Modifier.fillMaxWidth(),
+                                            horizontalArrangement = Arrangement.SpaceBetween
+                                        ) {
+                                            Column {
+                                                Text("🌅 Morning Meter:", fontSize = 11.sp, color = ErpTextMuted)
+                                                Text("${wl.morningOpening ?: 0.0} ➔ ${wl.morningClosing ?: 0.0}", fontSize = 13.sp, fontWeight = FontWeight.SemiBold)
+                                            }
+                                            Column(horizontalAlignment = Alignment.End) {
+                                                Text("🌆 Evening Meter:", fontSize = 11.sp, color = ErpTextMuted)
+                                                Text("${wl.eveningOpening ?: 0.0} ➔ ${wl.eveningClosing ?: 0.0}", fontSize = 13.sp, fontWeight = FontWeight.SemiBold)
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -1001,6 +1322,7 @@ fun WorkshopModuleContent(apiService: ModPyPhpApiService) {
         }
     }
 }
+
 
 /* =====================================================================
  * STORE & INVENTORY MODULE SCREEN
