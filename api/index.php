@@ -110,7 +110,7 @@ switch ($action) {
     case 'finance':
         // Budget & Bills summary
         try {
-            $budgets = $db->query("SELECT b.id, o.officename as office_name, b.head, b.sub_head, b.allocated_amount, b.financial_year FROM budget b LEFT JOIN office o ON b.officeid = o.officeid ORDER BY b.id DESC LIMIT 20")->fetchAll(PDO::FETCH_ASSOC);
+            $budgets = $db->query("SELECT b.id, o.officename as office_name, b.code as head, b.name_of_work as sub_head, b.provision as allocated_amount, b.fy as financial_year FROM budget b LEFT JOIN office o ON b.officeid = o.officeid ORDER BY b.id DESC LIMIT 20")->fetchAll(PDO::FETCH_ASSOC);
             $bills = $db->query("SELECT bi.id, o.officename as office_name, COALESCE(bi.office_bill_no, bi.agency_bill_no, CAST(bi.id AS VARCHAR)) as bill_no, bi.bill_date, bi.net_amount, bi.status FROM bills bi LEFT JOIN office o ON bi.officeid = o.officeid ORDER BY bi.id DESC LIMIT 20")->fetchAll(PDO::FETCH_ASSOC);
 
             echo json_encode([
