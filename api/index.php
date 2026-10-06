@@ -24,9 +24,8 @@ $action = $_GET['action'] ?? $_POST['action'] ?? 'dashboard';
 try {
     $db = Database::getInstance()->getConnection();
 } catch (Exception $e) {
-    error_log("API Database connection failed: " . $e->getMessage());
     http_response_code(500);
-    echo json_encode(['error' => 'Database connection error. Please contact administrator.']);
+    echo json_encode(['error' => 'Database connection failed: ' . $e->getMessage()]);
     exit;
 }
 
@@ -189,14 +188,23 @@ switch ($action) {
         break;
 
     case 'workshop':
-        // Machines fleet, run duration, status
+        // Machines fleet, run logs, service logs, repairs, water logs
         try {
-            $machines = $db->query("SELECT m.id, m.name, COALESCE(m.make, 'Standard') as make, m.runduration, COALESCE(m.status, 'Working') as status, o.officename as office_name FROM turf_machines m LEFT JOIN office o ON m.officeid = o.officeid ORDER BY m.name ASC LIMIT 50")->fetchAll(PDO::FETCH_ASSOC);
+            $machines = $db->query("SELECT m.id, m.name, COALESCE(m.make, 'Standard') as make, m.runduration, COALESCE(m.status, 'Working') as status, m.service_interval_hours, m.service_due, o.officename as office_name FROM turf_machines m LEFT JOIN office o ON m.officeid = o.officeid ORDER BY m.name ASC LIMIT 50")->fetchAll(PDO::FETCH_ASSOC);
             
+            $runLogs = $db->query("SELECT cl.id, m.name as machine_name, cl.log_date, cl.fuel_consumed_qty, cl.running_hours, cl.entry_type, cl.recorded_by FROM turf_consumption_log cl LEFT JOIN turf_machines m ON cl.machine_id = m.id ORDER BY cl.log_date DESC, cl.id DESC LIMIT 40")->fetchAll(PDO::FETCH_ASSOC);
+
+            $serviceLogs = $db->query("SELECT sl.id, m.name as machine_name, sl.service_date, sl.hours_at_service, sl.next_service_due, sl.service_type, sl.serviced_by, sl.cost, sl.remarks, sl.job_card_no FROM turf_servicing_log sl LEFT JOIN turf_machines m ON sl.machine_id = m.id ORDER BY sl.service_date DESC, sl.id DESC LIMIT 30")->fetchAll(PDO::FETCH_ASSOC);
+
+            $waterLogs = $db->query("SELECT wl.id, wl.date, wl.morning_opening, wl.morning_closing, wl.evening_opening, wl.evening_closing FROM water_log wl WHERE wl.deleted_at IS NULL ORDER BY wl.date DESC, wl.id DESC LIMIT 30")->fetchAll(PDO::FETCH_ASSOC);
+
             echo json_encode([
                 'success' => true,
                 'data' => [
-                    'machines' => $machines
+                    'machines' => $machines,
+                    'runLogs' => $runLogs,
+                    'serviceLogs' => $serviceLogs,
+                    'waterLogs' => $waterLogs
                 ]
             ]);
         } catch (Exception $e) {
