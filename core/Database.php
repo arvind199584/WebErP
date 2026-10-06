@@ -9,13 +9,17 @@ use PDOException;
 
 /**
  * Manages the database connection using the Singleton pattern.
+ * Supports transparent switching to the demo sandbox database (modpyphp_demo)
+ * when in demo guest mode.
  */
 class Database
 {
     private static ?Database $instance = null;
+    private static ?Database $demoInstance = null;
     private PDO $connection;
+    private string $currentDbName;
 
-    private function __construct()
+    private function __construct(bool $isDemo = false)
     {
         $this->loadEnv();
 
@@ -40,9 +44,14 @@ class Database
         $password = $getEnv('DB_PASS')    ?: 'daredevil';
         $sslmode  = $getEnv('DB_SSLMODE') ?: 'disable';
 
+        // Override database if running in demo sandbox mode
+        if ($isDemo) {
+            $db_name = $getEnv('DB_NAME_DEMO') ?: 'modpyphp_demo';
+        }
+
         // Support standard cloud DATABASE_URL (Render, Neon, Supabase, Heroku)
         $databaseUrl = $getEnv('DATABASE_URL');
-        if (!empty($databaseUrl)) {
+        if (!empty($databaseUrl) && !$isDemo) {
             $parsed = parse_url($databaseUrl);
             if ($parsed !== false) {
                 $host     = $parsed['host'] ?? $host;
@@ -59,6 +68,7 @@ class Database
             }
         }
 
+        $this->currentDbName = $db_name;
         $dsn = "pgsql:host={$host};port={$port};dbname={$db_name};sslmode={$sslmode}";
 
         try {
@@ -66,13 +76,13 @@ class Database
             $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->connection->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
         } catch (PDOException $e) {
-            error_log("Database connection failed: " . $e->getMessage());
+            error_log("Database connection failed ({$db_name}): " . $e->getMessage());
             $isDebug = ($getEnv('APP_DEBUG') === 'true');
             if ($isDebug) {
                 die("Database connection failed (Host: {$host}, Port: {$port}, DB: {$db_name}): " . $e->getMessage());
             } else {
                 http_response_code(500);
-                die("Database connection error. Please check server logs or verify your DATABASE_URL environment variable.");
+                die("Database connection error. Please check server logs or verify your database connection settings.");
             }
         }
     }
@@ -102,20 +112,47 @@ class Database
     }
 
     /**
-     * Gets the single instance of the Database class.
+     * Checks if current request is in guest demo mode.
+     */
+    public static function isDemoMode(): bool
+    {
+        return (session_status() === PHP_SESSION_ACTIVE && !empty($_SESSION['is_demo_guest']));
+    }
+
+    /**
+     * Gets the singleton database instance.
+     * Automatically routes to modpyphp_demo if in demo mode or forceDemo is true.
      *
+     * @param bool|null $forceDemo Optional override flag
      * @return Database
      */
-    public static function getInstance(): self
+    public static function getInstance(?bool $forceDemo = null): self
     {
+        $useDemo = ($forceDemo !== null) ? $forceDemo : self::isDemoMode();
+
+        if ($useDemo) {
+            if (self::$demoInstance === null) {
+                self::$demoInstance = new self(true);
+            } else {
+                if (self::$demoInstance->connection->inTransaction()) {
+                    try {
+                        self::$demoInstance->connection->rollBack();
+                    } catch (\Throwable $e) {
+                        // Ignore transaction reset error
+                    }
+                }
+            }
+            return self::$demoInstance;
+        }
+
         if (self::$instance === null) {
-            self::$instance = new self();
+            self::$instance = new self(false);
         } else {
             if (self::$instance->connection->inTransaction()) {
                 try {
                     self::$instance->connection->rollBack();
                 } catch (\Throwable $e) {
-                    // Ignore errors if transaction is already terminated
+                    // Ignore transaction reset error
                 }
             }
         }
@@ -130,6 +167,14 @@ class Database
     public function getConnection(): PDO
     {
         return $this->connection;
+    }
+
+    /**
+     * Returns the currently connected database name.
+     */
+    public function getCurrentDbName(): string
+    {
+        return $this->currentDbName;
     }
 
     /**

@@ -115,6 +115,7 @@ if ($hasSuperuser) {
     $menu['Superadmin'] = [
         ['name' => 'Office Management', 'url' => '/modules/Superadmin/Office/Controller/OfficeController.php?action=list', 'icon' => 'bi-buildings'],
         ['name' => 'User Security', 'url' => '/modules/Superadmin/Users/Controller/UserController.php', 'icon' => 'bi-shield-lock'],
+        ['name' => 'Noticeboard Announcements', 'url' => '/modules/Superadmin/Noticeboard/Controller/NoticeboardController.php?action=list', 'icon' => 'bi-megaphone'],
         ['name' => 'Agency Management', 'url' => '/modules/Superadmin/Agency/Controller/AgencyController.php', 'icon' => 'bi-briefcase'],
         ['name' => 'Wage Rates Master', 'url' => '/modules/Superadmin/WagesRates/Controller/WageRateController.php', 'icon' => 'bi-currency-rupee'],
         ['name' => 'Wage Items Master', 'url' => '/modules/Superadmin/WagesRates/Controller/WageItemController.php', 'icon' => 'bi-list-check'],
@@ -378,7 +379,8 @@ unset($_SESSION['message'], $_SESSION['error']);
             border-color: #38bdf8;
         }
 
-        @media (max-width: 768px) {\n            .sidebar {
+        @media (max-width: 768px) {
+            .sidebar {
                 position: fixed;
                 left: -270px;
                 z-index: 1040;
@@ -441,6 +443,24 @@ unset($_SESSION['message'], $_SESSION['error']);
             </li>
         </ul>
     </header>
+
+    <?php if (!empty($_SESSION['is_demo_guest'])): ?>
+    <!-- Demo Sandbox Alert & Quick Reset Bar -->
+    <div class="alert alert-warning py-2 px-3 m-0 d-flex flex-wrap align-items-center justify-content-between rounded-0 border-0 shadow-sm" style="background: linear-gradient(90deg, #fff3cd 0%, #fef3c7 100%); color: #856404; font-size: 0.85rem; z-index: 1029;">
+        <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-shield-shaded text-warning fs-5"></i>
+            <span><strong>DEMO SANDBOX ACTIVE (modpyphp_demo):</strong> You have full interactive CRUD privileges across all modules. Production data remains safely isolated.</span>
+        </div>
+        <div class="d-flex align-items-center gap-2 mt-1 mt-md-0">
+            <a href="/modules/Superadmin/Users/Controller/UserController.php?action=reset_demo" class="btn btn-sm btn-outline-warning text-dark py-1 px-3 fw-semibold bg-white shadow-sm" onclick="return confirm('Restore all demo records back to the pristine initial dataset?');">
+                <i class="bi bi-arrow-counterclockwise"></i> Reset Demo Data
+            </a>
+            <a href="/modules/Superadmin/Users/Controller/UserController.php?action=logout" class="btn btn-sm btn-dark py-1 px-3 shadow-sm">
+                Exit Demo
+            </a>
+        </div>
+    </div>
+    <?php endif; ?>
 
     <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -569,14 +589,12 @@ unset($_SESSION['message'], $_SESSION['error']);
             if (isset($viewPath) && file_exists($viewPath)) {
                 if (isset($data) && is_array($data)) { extract($data); }
                 include $viewPath;
-            } else {
-                include __DIR__ . '/../modules/AI_and_Tools/Utility/Views/dashboard.php';
             }
             ?>
         </main>
     </div>
 
-    <!-- Bootstrap 5.3.3 JS Bundle CDN -->
+    <!-- Bootstrap 5 JS Bundle CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
