@@ -59,10 +59,88 @@
             </div>
         </div>
 
-        <div class="mb-3">
-            <label for="create_engine_oil_qty" class="form-label fw-bold">🛢️ Mandatory Engine Oil Requirement (Liters)</label>
-            <input type="number" class="form-control" id="create_engine_oil_qty" name="engine_oil_qty" value="0.00" min="0" step="0.01" placeholder="e.g. 2.50">
-            <div class="form-text">Volume required during routine servicing (e.g. 2.50 L). Set 0 if not applicable.</div>
+        <!-- Routine Servicing Requirements / Default Service Kit -->
+        <div class="border rounded p-3 bg-light mb-3">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <h6 class="mb-0 fw-bold text-primary">⚙️ Routine Service Kit Requirements</h6>
+                <span class="badge bg-secondary" id="create_service_items_count_badge">0 Spares Configured</span>
+            </div>
+            <p class="text-muted small mb-3">
+                Configure parts and lubricants automatically required when this machine undergoes routine servicing. You can add one or more spare parts (filters, plugs, belts, etc.) in addition to mandatory engine oil.
+            </p>
+
+            <!-- Mandatory Engine Oil Requirement Field -->
+            <div class="mb-3 p-3 bg-white border rounded">
+                <label for="create_engine_oil_qty" class="form-label fw-bold text-primary mb-1">
+                    🛢️ Mandatory Engine Oil Requirement (Liters)
+                </label>
+                <div class="input-group">
+                    <input type="number" class="form-control form-control-lg fw-bold" id="create_engine_oil_qty" name="engine_oil_qty" 
+                           value="0.00" min="0" step="0.01" placeholder="e.g. 2.50">
+                    <span class="input-group-text fw-bold">Liters</span>
+                </div>
+                <div class="form-text text-dark">
+                    Engine oil volume required for routine servicing of this machine (e.g. 2.5 Liters). Set 0 if not applicable.
+                </div>
+            </div>
+
+            <!-- Additional Spares (Filters, Belts, Plugs, etc.) -->
+            <h6 class="fw-bold small text-dark mb-2">Additional Spares Required (Filters, Belts, Plugs, Blades, etc.):</h6>
+            <div class="table-responsive">
+                <table class="table table-sm table-bordered bg-white mb-2" id="create-service-items-table">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Spare Part / Consumable</th>
+                            <th style="width: 140px;">Qty Required</th>
+                            <th style="width: 80px;" class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="create-service-items-body">
+                        <!-- Populated dynamically via JS -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card p-2 bg-white border">
+                <label class="form-label small fw-bold text-dark mb-1">➕ Add Spare Part to Default Service Requirements:</label>
+                <div class="row g-2 align-items-end">
+                    <div class="col-md-7">
+                        <select id="create_add_service_part_select" class="form-select form-select-sm">
+                            <option value="">-- Choose Spare Part from Workshop Catalog --</option>
+                            <?php if (!empty($spareParts)): ?>
+                                <?php foreach ($spareParts as $sp): ?>
+                                    <?php
+                                        $displayName = ($sp['part_no'] ? $sp['part_no'] . ' - ' : '') . $sp['nomenclature'];
+                                        $suffix = ' (' . ($sp['unit'] ?? 'Pcs') . ')';
+                                        if (!empty($sp['machine_name'])) {
+                                            $suffix .= ' [' . $sp['machine_name'] . ']';
+                                        }
+                                    ?>
+                                    <option value="<?php echo $sp['id']; ?>" data-name="<?php echo htmlspecialchars($displayName); ?>" data-unit="<?php echo htmlspecialchars($sp['unit'] ?? 'Pcs'); ?>">
+                                        <?php echo htmlspecialchars($displayName . $suffix); ?>
+                                    </option>
+                                <?php endforeach; ?>
+                            <?php else: ?>
+                                <option value="" disabled>No spare parts found in inventory</option>
+                            <?php endif; ?>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="input-group input-group-sm">
+                            <input type="number" id="create_add_service_part_qty" class="form-control" value="1.0" min="0.01" step="0.01" placeholder="Qty">
+                            <span class="input-group-text" id="create_add_service_part_unit_label">Qty</span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-sm btn-success w-100 fw-bold" id="create_btn_add_service_item">
+                            ➕ Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hidden input to store JSON array of service kit items -->
+            <input type="hidden" name="default_service_items" id="create_service_items_json" value="[]">
         </div>
 
         <div class="form-check mb-3">
@@ -173,5 +251,114 @@
         }
 
         updateVisibility();
+
+        // Routine Service Kit items management for Create form
+        const sparePartsMap = <?php
+            $spMap = [];
+            if (!empty($spareParts)) {
+                foreach ($spareParts as $sp) {
+                    $spMap[$sp['id']] = [
+                        'name' => ($sp['part_no'] ? $sp['part_no'] . ' - ' : '') . $sp['nomenclature'],
+                        'unit' => $sp['unit'] ?? 'Pcs'
+                    ];
+                }
+            }
+            echo json_encode($spMap);
+        ?>;
+
+        let serviceItems = [];
+        const tableBody = document.getElementById('create-service-items-body');
+        const partSelect = document.getElementById('create_add_service_part_select');
+        const partQtyInput = document.getElementById('create_add_service_part_qty');
+        const unitLabel = document.getElementById('create_add_service_part_unit_label');
+        const countBadge = document.getElementById('create_service_items_count_badge');
+        const btnAdd = document.getElementById('create_btn_add_service_item');
+        const hiddenInput = document.getElementById('create_service_items_json');
+
+        if (partSelect && unitLabel) {
+            partSelect.addEventListener('change', function() {
+                const selectedOpt = partSelect.options[partSelect.selectedIndex];
+                const unit = selectedOpt ? selectedOpt.getAttribute('data-unit') : '';
+                unitLabel.textContent = unit || 'Qty';
+            });
+        }
+
+        function renderServiceItems() {
+            if (!tableBody) return;
+            tableBody.innerHTML = '';
+            if (!serviceItems || serviceItems.length === 0) {
+                tableBody.innerHTML = '<tr><td colspan="3" class="text-center text-muted py-2">No additional spare parts configured yet. Select a spare part below and click ➕ Add.</td></tr>';
+            } else {
+                serviceItems.forEach((item, index) => {
+                    const spInfo = sparePartsMap[item.spare_part_id] || { name: 'Part #' + item.spare_part_id, unit: 'Pcs' };
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td class="align-middle fw-semibold">${spInfo.name}</td>
+                        <td class="align-middle">
+                            <span class="badge bg-light text-dark border px-2 py-1 fs-6">${item.quantity} ${spInfo.unit}</span>
+                        </td>
+                        <td class="text-center align-middle">
+                            <button type="button" class="btn btn-outline-danger btn-sm py-0 px-2 btn-del-item" data-index="${index}" title="Remove Part">&times; Remove</button>
+                        </td>
+                    `;
+                    tableBody.appendChild(tr);
+                });
+            }
+            if (countBadge) {
+                const count = serviceItems ? serviceItems.length : 0;
+                countBadge.textContent = count + (count === 1 ? ' Spare Configured' : ' Spares Configured');
+                countBadge.className = 'badge ' + (count > 0 ? 'bg-primary' : 'bg-secondary');
+            }
+            if (hiddenInput) {
+                hiddenInput.value = JSON.stringify(serviceItems);
+            }
+        }
+
+        if (tableBody) {
+            tableBody.addEventListener('click', function(e) {
+                const delBtn = e.target.closest('.btn-del-item');
+                if (delBtn) {
+                    const idx = parseInt(delBtn.getAttribute('data-index'), 10);
+                    serviceItems.splice(idx, 1);
+                    renderServiceItems();
+                }
+            });
+        }
+
+        if (btnAdd) {
+            btnAdd.addEventListener('click', function(e) {
+                if (e) e.preventDefault();
+                const partId = parseInt(partSelect.value, 10);
+                const qty = parseFloat(partQtyInput.value);
+
+                if (!partId) {
+                    alert('Please select a spare part from the dropdown.');
+                    partSelect.focus();
+                    return;
+                }
+                if (isNaN(qty) || qty <= 0) {
+                    alert('Please enter a valid quantity greater than 0.');
+                    partQtyInput.focus();
+                    return;
+                }
+
+                const existingIdx = serviceItems.findIndex(i => parseInt(i.spare_part_id, 10) === partId);
+                if (existingIdx >= 0) {
+                    serviceItems[existingIdx].quantity = qty;
+                } else {
+                    serviceItems.push({
+                        spare_part_id: partId,
+                        quantity: qty
+                    });
+                }
+
+                partSelect.value = '';
+                if (unitLabel) unitLabel.textContent = 'Qty';
+                partQtyInput.value = '1.0';
+                renderServiceItems();
+            });
+        }
+
+        renderServiceItems();
     })();
 </script>

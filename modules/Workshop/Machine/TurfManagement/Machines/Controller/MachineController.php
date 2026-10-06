@@ -153,9 +153,13 @@ class MachineController extends BaseController {
         $inventoryItemsDTOs = $this->inventoryItemService->getFuelItems();
         $inventoryItems = array_map(fn($dto) => $dto->toArray(), $inventoryItemsDTOs);
 
+        $targetOfficeId = ($userRole === 'superuser') ? null : $userOfficeId;
+        $spareParts = $this->machineService->getAllSpareParts($targetOfficeId);
+
         $this->render(__DIR__ . '/../Views/create.php', [
             'offices' => $offices,
             'inventoryItems' => $inventoryItems,
+            'spareParts' => $spareParts,
             'userRole' => $userRole
         ], false);
     }
