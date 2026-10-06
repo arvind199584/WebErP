@@ -32,6 +32,19 @@ if "%DIRNAME%"=="" set DIRNAME=.
 set APP_BASE_NAME=%~n0
 set APP_HOME=%DIRNAME%
 
+@rem Auto-configure JDK 17 for Android builds if JAVA_HOME is not set or points to legacy JRE
+if not defined JAVA_HOME (
+    if exist "C:\Users\arvin\AppData\Local\Android\jdk-17" (
+        set "JAVA_HOME=C:\Users\arvin\AppData\Local\Android\jdk-17"
+    )
+) else (
+    if exist "%JAVA_HOME%\bin\java.exe" (
+        rem Use existing JAVA_HOME
+    ) else if exist "C:\Users\arvin\AppData\Local\Android\jdk-17" (
+        set "JAVA_HOME=C:\Users\arvin\AppData\Local\Android\jdk-17"
+    )
+)
+
 @rem Resolve any "." and ".." in APP_HOME to make it shorter.
 for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi
 
