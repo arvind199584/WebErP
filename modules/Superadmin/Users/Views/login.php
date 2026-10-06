@@ -2,6 +2,8 @@
 $error = $_SESSION['error'] ?? ($error ?? null);
 unset($_SESSION['error']);
 $notices = $notices ?? [];
+$gitApkUrl = 'https://raw.githubusercontent.com/arvind199584/WebErP/main/EnterpriseERP.apk';
+$qrCodeUrl = 'https://api.qrserver.com/v1/create-qr-code/?size=140x140&margin=6&data=' . urlencode($gitApkUrl);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -336,7 +338,7 @@ $notices = $notices ?? [];
                                 Carry the full operations dashboard in your pocket. Access machinery run logs, verify attendance muster rolls, view store inventory, and receive alerts in real time.
                             </p>
                             <div class="d-flex flex-wrap align-items-center gap-3">
-                                <a href="/apk_dist/EnterpriseERP.apk" download class="btn btn-primary d-inline-flex align-items-center gap-2 px-4 py-2 shadow-sm rounded-pill fw-semibold">
+                                <a href="<?php echo htmlspecialchars($gitApkUrl); ?>" download="EnterpriseERP.apk" target="_blank" class="btn btn-primary d-inline-flex align-items-center gap-2 px-4 py-2 shadow-sm rounded-pill fw-semibold">
                                     <i class="bi bi-download fs-5"></i>
                                     <span>Download APK (v1.0)</span>
                                 </a>
@@ -347,8 +349,8 @@ $notices = $notices ?? [];
                         </div>
                         <div class="col-md-4 text-center">
                             <div class="qr-frame">
-                                <!-- Clean QR Code pointing directly to APK download -->
-                                <img src="https://api.qrserver.com/v1/create-qr-code/?size=130x130&data=http%3A%2F%2Flocalhost%3A8000%2Fapk_dist%2FEnterpriseERP.apk" alt="Scan QR Code to Download APK" width="130" height="130" class="img-fluid rounded">
+                                <!-- Clean QR Code pointing directly to GitHub repository APK download -->
+                                <img src="<?php echo htmlspecialchars($qrCodeUrl); ?>" alt="Scan QR Code to Download APK" width="130" height="130" class="img-fluid rounded">
                             </div>
                             <small class="d-block text-white-50 mt-2" style="font-size: 0.725rem;">
                                 <i class="bi bi-camera me-1"></i> Scan with mobile camera to install directly
