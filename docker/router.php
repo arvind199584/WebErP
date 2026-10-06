@@ -19,15 +19,15 @@ if (preg_match('/(?:\/|^)\.[a-zA-Z0-9_\-]+/i', $path)) {
 }
 
 // 2. Block access to sensitive extensions
-if (preg_match('/\.(?:env|pem|key|crt|sql|dump|bak|log|ini|sh|bat|yml|yaml|md|json|lock|dist)$/i', $path)) {
+if (preg_match('/\.(?:env|pem|key|crt|sql|dump|bak|log|ini|sh|bat|yml|yaml|md|lock|dist)$/i', $path)) {
     http_response_code(403);
     header('Content-Type: text/plain');
     echo "403 Forbidden: Access denied.";
     exit;
 }
 
-// 3. Block access to sensitive project directories
-if (preg_match('/^\/(?:certificates|database|docker|schema|scripts|vendor|Setup|storage|AI|services)\b/i', $path)) {
+// 3. Block access to sensitive project directories (protect sessions and backups, allow uploads)
+if (preg_match('/^\/(?:certificates|database|docker|schema|scripts|vendor|Setup|AI|services|storage\/sessions|storage\/backups)\b/i', $path)) {
     http_response_code(403);
     header('Content-Type: text/plain');
     echo "403 Forbidden: Access denied.";
@@ -38,15 +38,9 @@ if (preg_match('/^\/(?:certificates|database|docker|schema|scripts|vendor|Setup|
 $filePath = realpath(__DIR__ . '/..' . $path);
 $docRoot  = realpath(__DIR__ . '/..');
 
-// Prevent directory traversal
+// Prevent directory traversal and serve valid files natively
 if ($filePath !== false && strpos($filePath, $docRoot) === 0 && is_file($filePath)) {
-    // If it's a PHP file, execute it
-    if (pathinfo($filePath, PATHINFO_EXTENSION) === 'php') {
-        require $filePath;
-        exit;
-    }
-    // Return false to let the built-in server serve safe static files (CSS, JS, images)
-    return false;
+    return false; // Tells PHP built-in server to handle the file natively
 }
 
 // 5. Default route to index.php
