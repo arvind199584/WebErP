@@ -37,10 +37,32 @@
             </select>
         </div>
 
+        <!-- Routine Servicing Milestones & Interval -->
+        <div class="card p-3 border mb-3 bg-light-subtle">
+            <h6 class="fw-bold text-primary mb-2">⏱️ Routine Servicing Milestones & Interval</h6>
+            <div class="row g-2">
+                <div class="col-md-4">
+                    <label for="service_interval_hours" class="form-label fw-bold small mb-1">Service Interval (Hours) <span class="text-danger">*</span></label>
+                    <input type="number" class="form-control form-control-sm fw-bold" id="service_interval_hours" name="service_interval_hours" value="100" min="1" step="1" required>
+                    <div class="form-text small">Interval between routines (e.g. 100 hrs).</div>
+                </div>
+                <div class="col-md-4">
+                    <label for="create_service_done" class="form-label fw-bold small text-success mb-1">Initial Service Done (Hours)</label>
+                    <input type="number" class="form-control form-control-sm fw-bold border-success" id="create_service_done" name="service_done" value="0" min="0" step="0.1">
+                    <div class="form-text small">Initial reading if already serviced.</div>
+                </div>
+                <div class="col-md-4">
+                    <label for="create_service_due" class="form-label fw-bold small text-primary mb-1">Next Service Due (Hours)</label>
+                    <input type="number" class="form-control form-control-sm fw-bold border-primary" id="create_service_due" name="service_due" value="100" min="0" step="0.1">
+                    <div class="form-text small">Auto-calculated: Done + Interval.</div>
+                </div>
+            </div>
+        </div>
+
         <div class="mb-3">
-            <label for="service_interval_hours" class="form-label">Service Interval (Running Hours)</label>
-            <input type="number" class="form-control" id="service_interval_hours" name="service_interval_hours" value="100" min="1" step="1" required>
-            <div class="form-text">Default interval between routine machine servicing (e.g. 100 hrs).</div>
+            <label for="create_engine_oil_qty" class="form-label fw-bold">🛢️ Mandatory Engine Oil Requirement (Liters)</label>
+            <input type="number" class="form-control" id="create_engine_oil_qty" name="engine_oil_qty" value="0.00" min="0" step="0.01" placeholder="e.g. 2.50">
+            <div class="form-text">Volume required during routine servicing (e.g. 2.50 L). Set 0 if not applicable.</div>
         </div>
 
         <div class="form-check mb-3">
@@ -106,6 +128,20 @@
         const restDayOptions = document.getElementById('create-rest-day-options');
         const hasRestDayCheck = document.getElementById('create_has_rest_day');
         const restDaySelectContainer = document.getElementById('create-rest-day-select-container');
+
+        const serviceIntervalInput = document.getElementById('service_interval_hours');
+        const serviceDoneInput = document.getElementById('create_service_done');
+        const serviceDueInput = document.getElementById('create_service_due');
+
+        const updateServiceDue = () => {
+            if (!serviceIntervalInput || !serviceDoneInput || !serviceDueInput) return;
+            const interval = parseFloat(serviceIntervalInput.value) || 100;
+            const done = parseFloat(serviceDoneInput.value) || 0;
+            serviceDueInput.value = (done + interval).toFixed(1).replace(/\.0$/, '');
+        };
+
+        if (serviceDoneInput) serviceDoneInput.addEventListener('input', updateServiceDue);
+        if (serviceIntervalInput) serviceIntervalInput.addEventListener('input', updateServiceDue);
 
         const updateVisibility = () => {
             if(rundurationCheck) backfillOptions.style.display = rundurationCheck.checked ? 'block' : 'none';

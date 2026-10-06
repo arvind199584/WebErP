@@ -178,7 +178,18 @@ class MachineController extends BaseController {
         $inventoryItemsDTOs = $this->inventoryItemService->getFuelItems();
         $inventoryItems = array_map(fn($dto) => $dto->toArray(), $inventoryItemsDTOs);
 
-        $spareParts = $this->sparePartService->getSparePartsByMachine($id, $whereOfficeId);
+        $targetOfficeId = ($userRole === 'superuser') ? (int)($machine['officeid'] ?? $userOfficeId) : $userOfficeId;
+        $spareParts = $this->sparePartService->getAllSpareParts($targetOfficeId);
+
+        // Prioritize parts assigned specifically to this machine first, then alphabetical
+        usort($spareParts, function($a, $b) use ($id) {
+            $aMatch = ($a['machine_id'] == $id) ? 0 : 1;
+            $bMatch = ($b['machine_id'] == $id) ? 0 : 1;
+            if ($aMatch !== $bMatch) {
+                return $aMatch <=> $bMatch;
+            }
+            return strcasecmp($a['nomenclature'] ?? '', $b['nomenclature'] ?? '');
+        });
 
         $this->render(__DIR__ . '/../Views/edit.php', [
             'machine' => $machine,

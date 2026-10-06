@@ -123,6 +123,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const formHtml = await response.text();
             modalBody.innerHTML = formHtml;
+
+            // Re-evaluate scripts contained in formHtml because innerHTML does not execute script tags
+            modalBody.querySelectorAll('script').forEach(oldScript => {
+                const newScript = document.createElement('script');
+                Array.from(oldScript.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value));
+                newScript.textContent = oldScript.textContent;
+                oldScript.parentNode.replaceChild(newScript, oldScript);
+            });
         } catch (error) {
             modalBody.innerHTML = `<div class="alert alert-danger">Failed to load form: ${error.message}</div>`;
         }

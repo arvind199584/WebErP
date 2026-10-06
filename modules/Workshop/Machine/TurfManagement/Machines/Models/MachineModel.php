@@ -55,17 +55,56 @@ class MachineModel extends BaseModel {
     }
 
     public function createMachine(array $data): int {
-        $data['service_interval_hours'] = $data['service_interval_hours'] ?? 100;
-        $data['engine_oil_qty'] = $data['engine_oil_qty'] ?? 0.00;
-        $sql = "INSERT INTO {$this->table} (officeid, name, make, fuel_item_id, runduration, status, daily_run, has_rest_day, rest_day, service_interval_hours, engine_oil_qty)\n                VALUES (:officeid, :name, :make, :fuel_item_id, :runduration, :status, :daily_run, :has_rest_day, :rest_day, :service_interval_hours, :engine_oil_qty)";
-        return $this->executeInsert($sql, $data);
+        $serviceInterval = (float)($data['service_interval_hours'] ?? 100);
+        $serviceDone = (float)($data['service_done'] ?? 0.00);
+        $serviceDue = isset($data['service_due']) && $data['service_due'] !== '' 
+            ? (float)$data['service_due'] 
+            : ($serviceDone + $serviceInterval);
+        $engineOilQty = (float)($data['engine_oil_qty'] ?? 0.00);
+
+        $defaultServiceItemsJson = null;
+        if (isset($data['default_service_items'])) {
+            $defaultServiceItemsJson = is_string($data['default_service_items'])
+                ? $data['default_service_items']
+                : json_encode($data['default_service_items']);
+        }
+
+        $sql = "INSERT INTO {$this->table} (officeid, name, make, fuel_item_id, runduration, status, daily_run, has_rest_day, rest_day, service_interval_hours, service_interval, service_done, service_due, engine_oil_qty"
+                . ($defaultServiceItemsJson !== null ? ", default_service_items" : "") . ")
+                VALUES (:officeid, :name, :make, :fuel_item_id, :runduration, :status, :daily_run, :has_rest_day, :rest_day, :service_interval_hours, :service_interval, :service_done, :service_due, :engine_oil_qty"
+                . ($defaultServiceItemsJson !== null ? ", :default_service_items" : "") . ")";
+
+        $stmt = $this->db->prepare($sql);
+        $stmt->bindValue(':officeid', (int)$data['officeid'], PDO::PARAM_INT);
+        $stmt->bindValue(':name', $data['name']);
+        $stmt->bindValue(':make', $data['make'] ?? null, ($data['make'] ?? null) !== null ? PDO::PARAM_STR : PDO::PARAM_NULL);
+        $stmt->bindValue(':fuel_item_id', !empty($data['fuel_item_id']) ? (int)$data['fuel_item_id'] : null, !empty($data['fuel_item_id']) ? PDO::PARAM_INT : PDO::PARAM_NULL);
+        $stmt->bindValue(':runduration', filter_var($data['runduration'] ?? false, FILTER_VALIDATE_BOOLEAN), PDO::PARAM_BOOL);
+        $stmt->bindValue(':status', $data['status'] ?? 'Working');
+        $stmt->bindValue(':daily_run', filter_var($data['daily_run'] ?? false, FILTER_VALIDATE_BOOLEAN), PDO::PARAM_BOOL);
+        $stmt->bindValue(':has_rest_day', filter_var($data['has_rest_day'] ?? false, FILTER_VALIDATE_BOOLEAN), PDO::PARAM_BOOL);
+        $stmt->bindValue(':rest_day', (int)($data['rest_day'] ?? 4), PDO::PARAM_INT);
+        $stmt->bindValue(':service_interval_hours', $serviceInterval);
+        $stmt->bindValue(':service_interval', $serviceInterval);
+        $stmt->bindValue(':service_done', $serviceDone);
+        $stmt->bindValue(':service_due', $serviceDue);
+        $stmt->bindValue(':engine_oil_qty', $engineOilQty);
+
+        if ($defaultServiceItemsJson !== null) {
+            $stmt->bindValue(':default_service_items', $defaultServiceItemsJson);
+        }
+
+        $stmt->execute();
+        return (int)$this->db->lastInsertId();
     }
 
     public function updateMachine(int $id, int $officeId, array $data): bool {
-        $data['id'] = $id;
-        $data['officeid'] = $officeId;
-        $data['service_interval_hours'] = $data['service_interval_hours'] ?? 100;
-        $data['engine_oil_qty'] = (float)($data['engine_oil_qty'] ?? 0.00);
+        $serviceInterval = (float)($data['service_interval_hours'] ?? 100);
+        $serviceDone = (float)($data['service_done'] ?? 0.00);
+        $serviceDue = isset($data['service_due']) && $data['service_due'] !== '' 
+            ? (float)$data['service_due'] 
+            : ($serviceDone + $serviceInterval);
+        $engineOilQty = (float)($data['engine_oil_qty'] ?? 0.00);
 
         $defaultServiceItemsJson = null;
         if (isset($data['default_service_items'])) {
@@ -85,31 +124,36 @@ class MachineModel extends BaseModel {
                     has_rest_day = :has_rest_day,
                     rest_day = :rest_day,
                     service_interval_hours = :service_interval_hours,
+                    service_interval = :service_interval,
+                    service_done = :service_done,
+                    service_due = :service_due,
                     engine_oil_qty = :engine_oil_qty"
                     . ($defaultServiceItemsJson !== null ? ", default_service_items = :default_service_items" : "") . ",
                     updated_at = CURRENT_TIMESTAMP
                 WHERE id = :id";
 
-        $params = [
-            'id' => $id,
-            'name' => $data['name'],
-            'make' => $data['make'] ?? null,
-            'fuel_item_id' => !empty($data['fuel_item_id']) ? (int)$data['fuel_item_id'] : null,
-            'runduration' => !empty($data['runduration']),
-            'status' => $data['status'] ?? 'Working',
-            'officeid' => $officeId,
-            'daily_run' => !empty($data['daily_run']),
-            'has_rest_day' => !empty($data['has_rest_day']),
-            'rest_day' => (int)($data['rest_day'] ?? 4),
-            'service_interval_hours' => (float)$data['service_interval_hours'],
-            'engine_oil_qty' => $data['engine_oil_qty']
-        ];
+        $stmt = $this->db->prepare($sql);
+        $stmt->bindValue(':id', $id, PDO::PARAM_INT);
+        $stmt->bindValue(':name', $data['name']);
+        $stmt->bindValue(':make', $data['make'] ?? null, ($data['make'] ?? null) !== null ? PDO::PARAM_STR : PDO::PARAM_NULL);
+        $stmt->bindValue(':fuel_item_id', !empty($data['fuel_item_id']) ? (int)$data['fuel_item_id'] : null, !empty($data['fuel_item_id']) ? PDO::PARAM_INT : PDO::PARAM_NULL);
+        $stmt->bindValue(':runduration', filter_var($data['runduration'] ?? false, FILTER_VALIDATE_BOOLEAN), PDO::PARAM_BOOL);
+        $stmt->bindValue(':status', $data['status'] ?? 'Working');
+        $stmt->bindValue(':officeid', $officeId, PDO::PARAM_INT);
+        $stmt->bindValue(':daily_run', filter_var($data['daily_run'] ?? false, FILTER_VALIDATE_BOOLEAN), PDO::PARAM_BOOL);
+        $stmt->bindValue(':has_rest_day', filter_var($data['has_rest_day'] ?? false, FILTER_VALIDATE_BOOLEAN), PDO::PARAM_BOOL);
+        $stmt->bindValue(':rest_day', (int)($data['rest_day'] ?? 4), PDO::PARAM_INT);
+        $stmt->bindValue(':service_interval_hours', $serviceInterval);
+        $stmt->bindValue(':service_interval', $serviceInterval);
+        $stmt->bindValue(':service_done', $serviceDone);
+        $stmt->bindValue(':service_due', $serviceDue);
+        $stmt->bindValue(':engine_oil_qty', $engineOilQty);
+
         if ($defaultServiceItemsJson !== null) {
-            $params['default_service_items'] = $defaultServiceItemsJson;
+            $stmt->bindValue(':default_service_items', $defaultServiceItemsJson);
         }
 
-        $stmt = $this->db->prepare($sql);
-        return $stmt->execute($params);
+        return $stmt->execute();
     }
 
     public function deleteMachine(int $id, ?int $officeId): bool {

@@ -70,6 +70,10 @@ class MachineService {
         $has_rest_day = ($daily_run === 1 && isset($data['has_rest_day']) && $data['has_rest_day'] == '1') ? 1 : 0;
         $rest_day = ($has_rest_day === 1) ? (int)($data['rest_day'] ?? 4) : 4;
 
+        $serviceInterval = !empty($data['service_interval_hours']) ? (float)$data['service_interval_hours'] : 100.0;
+        $serviceDone = isset($data['service_done']) && $data['service_done'] !== '' ? (float)$data['service_done'] : 0.0;
+        $serviceDue = isset($data['service_due']) && $data['service_due'] !== '' ? (float)$data['service_due'] : ($serviceDone + $serviceInterval);
+
         return [
             'name' => $data['name'],
             'make' => $data['make'] ?? null,
@@ -80,7 +84,9 @@ class MachineService {
             'daily_run' => $daily_run,
             'has_rest_day' => $has_rest_day,
             'rest_day' => $rest_day,
-            'service_interval_hours' => !empty($data['service_interval_hours']) ? (float)$data['service_interval_hours'] : 100,
+            'service_interval_hours' => $serviceInterval,
+            'service_done' => $serviceDone,
+            'service_due' => $serviceDue,
             'engine_oil_qty' => !empty($data['engine_oil_qty']) ? (float)$data['engine_oil_qty'] : 0.00,
         ];
     }
