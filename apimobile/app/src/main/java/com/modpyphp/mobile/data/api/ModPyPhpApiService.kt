@@ -25,6 +25,12 @@ interface ModPyPhpApiService {
     @GET("api/index.php?action=works")
     suspend fun getWorksData(): WorksResponse
 
+    @GET("api/index.php?action=workshop")
+    suspend fun getWorkshopData(): WorkshopResponse
+
+    @GET("api/index.php?action=store")
+    suspend fun getStoreData(): StoreResponse
+
     @GET("api/index.php?action=admin")
     suspend fun getAdminData(): AdminResponse
 

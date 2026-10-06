@@ -25,6 +25,8 @@ data class SystemStats(
     val bills: Int,
     val budgets: Int,
     val users: Int,
+    val machines: Int? = 0,
+    val inventory: Int? = 0,
     val recentActivity: List<ActivityLog>?
 )
 
@@ -123,6 +125,44 @@ data class WorksData(
 data class WorksResponse(
     val success: Boolean,
     val data: WorksData?,
+    val error: String?
+)
+
+// Workshop & Machinery Models
+data class Machine(
+    val id: Int,
+    val name: String?,
+    val make: String?,
+    @SerializedName("runduration") val runDuration: Boolean?,
+    val status: String?,
+    @SerializedName("office_name") val officeName: String?
+)
+
+data class WorkshopData(
+    val machines: List<Machine>?
+)
+
+data class WorkshopResponse(
+    val success: Boolean,
+    val data: WorkshopData?,
+    val error: String?
+)
+
+// Store & Inventory Models
+data class InventoryItem(
+    val id: Int,
+    val description: String?,
+    @SerializedName("ac_unit") val acUnit: String?,
+    @SerializedName("category_name") val categoryName: String?
+)
+
+data class StoreData(
+    val items: List<InventoryItem>?
+)
+
+data class StoreResponse(
+    val success: Boolean,
+    val data: StoreData?,
     val error: String?
 )
 

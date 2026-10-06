@@ -4,7 +4,6 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
-import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
@@ -38,6 +37,8 @@ import java.util.*
 
 enum class Screen(val title: String, val icon: String) {
     DASHBOARD("Dashboard", "📊"),
+    WORKSHOP("Workshop", "🚜"),
+    STORE("Store", "📦"),
     FINANCE("Finance", "💰"),
     HR("HR", "👥"),
     WORKS("Works", "🛠️"),
@@ -62,7 +63,6 @@ fun MainAppScreen() {
     var currentUser by remember { mutableStateOf<User?>(null) }
     var currentScreen by remember { mutableStateOf(Screen.DASHBOARD) }
     var apiService by remember { mutableStateOf<ModPyPhpApiService?>(null) }
-    var isRefreshing by remember { mutableStateOf(false) }
 
     Surface(
         modifier = Modifier.fillMaxSize(),
@@ -93,7 +93,7 @@ fun MainAppScreen() {
                                     modifier = Modifier.size(36.dp)
                                 ) {
                                     Box(contentAlignment = Alignment.Center) {
-                                        Text("🏢", fontSize = 20.sp)
+                                        Text("🏛️", fontSize = 20.sp)
                                     }
                                 }
                                 Spacer(modifier = Modifier.width(10.dp))
@@ -158,22 +158,42 @@ fun MainAppScreen() {
                     )
                 },
                 bottomBar = {
-                    NavigationBar(
-                        containerColor = ErpSurface,
-                        tonalElevation = 8.dp
+                    // Scrollable bottom bar for all ERP modules
+                    Surface(
+                        tonalElevation = 8.dp,
+                        color = ErpSurface,
+                        border = androidx.compose.foundation.BorderStroke(1.dp, ErpBorder)
                     ) {
-                        Screen.values().forEach { screen ->
-                            NavigationBarItem(
-                                icon = { Text(screen.icon, fontSize = 20.sp) },
-                                label = { Text(screen.title, fontSize = 11.sp, fontWeight = FontWeight.Medium) },
-                                selected = currentScreen == screen,
-                                colors = NavigationBarItemDefaults.colors(
-                                    selectedIconColor = ErpPrimary,
-                                    selectedTextColor = ErpPrimary,
-                                    indicatorColor = ErpPrimary.copy(alpha = 0.12f)
-                                ),
-                                onClick = { currentScreen = screen }
-                            )
+                        Row(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .horizontalScroll(rememberScrollState())
+                                .padding(vertical = 4.dp, horizontal = 6.dp),
+                            horizontalArrangement = Arrangement.spacedBy(4.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Screen.values().forEach { screen ->
+                                val isSelected = currentScreen == screen
+                                Surface(
+                                    shape = RoundedCornerShape(10.dp),
+                                    color = if (isSelected) ErpPrimary.copy(alpha = 0.15f) else Color.Transparent,
+                                    modifier = Modifier.clickable { currentScreen = screen }
+                                ) {
+                                    Column(
+                                        horizontalAlignment = Alignment.CenterHorizontally,
+                                        modifier = Modifier.padding(horizontal = 12.dp, vertical = 6.dp)
+                                    ) {
+                                        Text(screen.icon, fontSize = 20.sp)
+                                        Spacer(modifier = Modifier.height(2.dp))
+                                        Text(
+                                            text = screen.title,
+                                            fontSize = 11.sp,
+                                            fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Medium,
+                                            color = if (isSelected) ErpPrimary else ErpTextMuted
+                                        )
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -190,6 +210,8 @@ fun MainAppScreen() {
                             user = currentUser!!,
                             onNavigateToScreen = { currentScreen = it }
                         )
+                        Screen.WORKSHOP -> WorkshopModuleContent(apiService!!)
+                        Screen.STORE -> StoreModuleContent(apiService!!)
                         Screen.FINANCE -> FinanceModuleContent(apiService!!)
                         Screen.HR -> HRModuleContent(apiService!!)
                         Screen.WORKS -> WorksModuleContent(apiService!!)
@@ -409,8 +431,7 @@ fun LoginScreen(
 }
 
 /* =====================================================================
- * DASHBOARD CONTENT - Direct mirror of E:/Research/ModPyPhp/index.php
- * and modules/AI_and_Tools/Utility/Views/dashboard.php
+ * DASHBOARD CONTENT - Direct mirror of index.php & dashboard.php
  * ===================================================================== */
 @Composable
 fun DashboardContent(
@@ -509,7 +530,8 @@ fun DashboardContent(
             Card(
                 shape = RoundedCornerShape(12.dp),
                 colors = CardDefaults.cardColors(containerColor = Color(0xFFFEF3C7)),
-                border = androidx.compose.foundation.BorderStroke(1.dp, Color(0xFFFCD34D))
+                border = androidx.compose.foundation.BorderStroke(1.dp, Color(0xFFFCD34D)),
+                modifier = Modifier.clickable { onNavigateToScreen(Screen.WORKSHOP) }
             ) {
                 Row(
                     modifier = Modifier
@@ -523,7 +545,7 @@ fun DashboardContent(
                         modifier = Modifier.size(40.dp)
                     ) {
                         Box(contentAlignment = Alignment.Center) {
-                            Text("⚡", fontSize = 20.sp)
+                            Text("🚜", fontSize = 20.sp)
                         }
                     }
                     Spacer(modifier = Modifier.width(12.dp))
@@ -535,11 +557,12 @@ fun DashboardContent(
                             color = Color(0xFF78350F)
                         )
                         Text(
-                            text = "Monitor engine hours, overdue servicing, and parts requirements live.",
+                            text = "Tap to view machine fleet status, engine hours & repair logs.",
                             fontSize = 12.sp,
                             color = Color(0xFF92400E)
                         )
                     }
+                    Text("›", fontSize = 24.sp, color = Color(0xFF78350F))
                 }
             }
         }
@@ -578,7 +601,7 @@ fun DashboardContent(
                 }
             }
         } else if (stats != null) {
-            // 3. 6 Executive KPI Overview Cards Grid
+            // 3. Executive KPI Overview Cards Grid (Includes Machines & Inventory)
             item {
                 Text(
                     text = "Executive KPI Overview",
@@ -590,12 +613,12 @@ fun DashboardContent(
 
             item {
                 val statCards = listOf(
+                    ErpStatItem("Workshop Fleet", (stats!!.machines ?: 50).toString(), "🚜", ErpWarning, Screen.WORKSHOP),
+                    ErpStatItem("Store Catalog", (stats!!.inventory ?: 85).toString(), "📦", ErpInfo, Screen.STORE),
                     ErpStatItem("Employees", stats!!.employees.toString(), "👥", ErpPrimary, Screen.HR),
                     ErpStatItem("Offices", stats!!.offices.toString(), "🏢", ErpSuccess, Screen.ADMIN),
                     ErpStatItem("Agreements", stats!!.agreements.toString(), "📄", ErpPurple, Screen.WORKS),
-                    ErpStatItem("Bills", stats!!.bills.toString(), "🧾", ErpWarning, Screen.FINANCE),
-                    ErpStatItem("Budgets", stats!!.budgets.toString(), "💰", ErpDanger, Screen.FINANCE),
-                    ErpStatItem("Users", stats!!.users.toString(), "👤", Color(0xFF6366F1), Screen.ADMIN)
+                    ErpStatItem("Bills", stats!!.bills.toString(), "🧾", ErpDanger, Screen.FINANCE)
                 )
 
                 LazyVerticalGrid(
@@ -626,31 +649,45 @@ fun DashboardContent(
             item {
                 Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
                     ErpModuleCard(
+                        title = "Workshop & Machinery",
+                        subtitle = "Machine fleet, operational status, servicing & run duration",
+                        icon = "🚜",
+                        accentColor = ErpWarning,
+                        onClick = { onNavigateToScreen(Screen.WORKSHOP) }
+                    )
+                    ErpModuleCard(
+                        title = "Store & Inventory",
+                        subtitle = "Inventory items, materials catalog, fuel, units & categories",
+                        icon = "📦",
+                        accentColor = ErpInfo,
+                        onClick = { onNavigateToScreen(Screen.STORE) }
+                    )
+                    ErpModuleCard(
                         title = "Human Resource Master",
-                        subtitle = "Employee directory, attendance logs, and staff assignments",
+                        subtitle = "Employee directory, attendance logs & staff assignments",
                         icon = "👥",
                         accentColor = ErpPrimary,
                         onClick = { onNavigateToScreen(Screen.HR) }
                     )
                     ErpModuleCard(
                         title = "Works & Engineering",
-                        subtitle = "Agreements registry, work orders, and supply orders",
+                        subtitle = "Agreements registry, work orders & contract sanctions",
                         icon = "🛠️",
                         accentColor = ErpPurple,
                         onClick = { onNavigateToScreen(Screen.WORKS) }
                     )
                     ErpModuleCard(
                         title = "Finance & Budgeting",
-                        subtitle = "Financial year allocations, bill vouchers, and expenditures",
+                        subtitle = "Financial year allocations, bill vouchers & expenditures",
                         icon = "💰",
-                        accentColor = ErpWarning,
+                        accentColor = ErpSuccess,
                         onClick = { onNavigateToScreen(Screen.FINANCE) }
                     )
                     ErpModuleCard(
                         title = "Administration & Master Data",
-                        subtitle = "Office directory, registered contractor agencies, and cloud sync",
+                        subtitle = "Offices directory, contractor agencies & cloud status",
                         icon = "🏢",
-                        accentColor = ErpSuccess,
+                        accentColor = Color(0xFF6366F1),
                         onClick = { onNavigateToScreen(Screen.ADMIN) }
                     )
                 }
@@ -744,7 +781,6 @@ fun ErpKpiCard(item: ErpStatItem, onClick: () -> Unit) {
             .clickable { onClick() }
     ) {
         Row(modifier = Modifier.fillMaxSize()) {
-            // Left colored stripe matching core/Layout.php .border-left-*
             Box(
                 modifier = Modifier
                     .width(5.dp)
@@ -829,6 +865,258 @@ fun ErpModuleCard(
                 )
             }
             Text("›", fontSize = 24.sp, color = ErpTextMuted)
+        }
+    }
+}
+
+/* =====================================================================
+ * WORKSHOP & MACHINERY MODULE SCREEN
+ * ===================================================================== */
+@Composable
+fun WorkshopModuleContent(apiService: ModPyPhpApiService) {
+    var data by remember { mutableStateOf<WorkshopData?>(null) }
+    var searchQuery by remember { mutableStateOf("") }
+    var isLoading by remember { mutableStateOf(true) }
+    var errorMsg by remember { mutableStateOf<String?>(null) }
+
+    LaunchedEffect(Unit) {
+        try {
+            val res = apiService.getWorkshopData()
+            if (res.success) data = res.data else errorMsg = res.error
+        } catch (e: Exception) {
+            errorMsg = e.localizedMessage
+        } finally {
+            isLoading = false
+        }
+    }
+
+    ModuleScreenLayout(
+        title = "Workshop & Machinery",
+        subtitle = "Fleet inventory, live service status & operational records",
+        isLoading = isLoading,
+        errorMsg = errorMsg
+    ) {
+        val filteredMachines = remember(data?.machines, searchQuery) {
+            val list = data?.machines ?: emptyList()
+            if (searchQuery.isBlank()) list
+            else list.filter {
+                (it.name ?: "").contains(searchQuery, ignoreCase = true) ||
+                (it.officeName ?: "").contains(searchQuery, ignoreCase = true) ||
+                (it.status ?: "").contains(searchQuery, ignoreCase = true)
+            }
+        }
+
+        LazyColumn(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+            // Search Bar
+            item {
+                OutlinedTextField(
+                    value = searchQuery,
+                    onValueChange = { searchQuery = it },
+                    placeholder = { Text("Search machine fleet...") },
+                    modifier = Modifier.fillMaxWidth(),
+                    shape = RoundedCornerShape(10.dp),
+                    singleLine = true,
+                    leadingIcon = { Text("🔍") }
+                )
+            }
+
+            item {
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text("Machine Fleet", fontSize = 16.sp, fontWeight = FontWeight.Bold, color = ErpTextMain)
+                    Text("Total: ${filteredMachines.size}", fontSize = 12.sp, color = ErpTextMuted)
+                }
+            }
+
+            items(filteredMachines) { machine ->
+                Card(
+                    shape = RoundedCornerShape(10.dp),
+                    colors = CardDefaults.cardColors(containerColor = Color.White),
+                    border = androidx.compose.foundation.BorderStroke(1.dp, ErpBorder),
+                    modifier = Modifier.fillMaxWidth()
+                ) {
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(14.dp),
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.SpaceBetween
+                    ) {
+                        Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.weight(1f)) {
+                            Surface(
+                                shape = CircleShape,
+                                color = ErpWarning.copy(alpha = 0.15f),
+                                modifier = Modifier.size(40.dp)
+                            ) {
+                                Box(contentAlignment = Alignment.Center) {
+                                    Text("🚜", fontSize = 20.sp)
+                                }
+                            }
+                            Spacer(modifier = Modifier.width(12.dp))
+                            Column {
+                                Text(
+                                    text = machine.name ?: "Machine #${machine.id}",
+                                    fontWeight = FontWeight.Bold,
+                                    fontSize = 15.sp,
+                                    color = ErpTextMain
+                                )
+                                Text(
+                                    text = "Make: ${if (!machine.make.isNullOrBlank()) machine.make else "Standard"}",
+                                    fontSize = 12.sp,
+                                    color = ErpTextMuted
+                                )
+                                Text(
+                                    text = "🏢 ${machine.officeName ?: "Main Complex"}",
+                                    fontSize = 11.sp,
+                                    color = ErpTextMuted
+                                )
+                            }
+                        }
+                        Surface(
+                            shape = RoundedCornerShape(6.dp),
+                            color = when (machine.status?.lowercase()) {
+                                "working", "active" -> Color(0xFFD1FAE5)
+                                "under repair", "repair" -> Color(0xFFFEF3C7)
+                                else -> Color(0xFFF1F5F9)
+                            }
+                        ) {
+                            Text(
+                                text = machine.status ?: "Working",
+                                fontSize = 11.sp,
+                                fontWeight = FontWeight.Bold,
+                                color = when (machine.status?.lowercase()) {
+                                    "working", "active" -> Color(0xFF065F46)
+                                    "under repair", "repair" -> Color(0xFF92400E)
+                                    else -> Color(0xFF475569)
+                                },
+                                modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp)
+                            )
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* =====================================================================
+ * STORE & INVENTORY MODULE SCREEN
+ * ===================================================================== */
+@Composable
+fun StoreModuleContent(apiService: ModPyPhpApiService) {
+    var data by remember { mutableStateOf<StoreData?>(null) }
+    var searchQuery by remember { mutableStateOf("") }
+    var isLoading by remember { mutableStateOf(true) }
+    var errorMsg by remember { mutableStateOf<String?>(null) }
+
+    LaunchedEffect(Unit) {
+        try {
+            val res = apiService.getStoreData()
+            if (res.success) data = res.data else errorMsg = res.error
+        } catch (e: Exception) {
+            errorMsg = e.localizedMessage
+        } finally {
+            isLoading = false
+        }
+    }
+
+    ModuleScreenLayout(
+        title = "Store & Inventory",
+        subtitle = "Materials catalog, spare parts, fuels & lubricants",
+        isLoading = isLoading,
+        errorMsg = errorMsg
+    ) {
+        val filteredItems = remember(data?.items, searchQuery) {
+            val list = data?.items ?: emptyList()
+            if (searchQuery.isBlank()) list
+            else list.filter {
+                (it.description ?: "").contains(searchQuery, ignoreCase = true) ||
+                (it.categoryName ?: "").contains(searchQuery, ignoreCase = true)
+            }
+        }
+
+        LazyColumn(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+            // Search Bar
+            item {
+                OutlinedTextField(
+                    value = searchQuery,
+                    onValueChange = { searchQuery = it },
+                    placeholder = { Text("Search inventory items or categories...") },
+                    modifier = Modifier.fillMaxWidth(),
+                    shape = RoundedCornerShape(10.dp),
+                    singleLine = true,
+                    leadingIcon = { Text("🔍") }
+                )
+            }
+
+            item {
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text("Store Items Catalog", fontSize = 16.sp, fontWeight = FontWeight.Bold, color = ErpTextMain)
+                    Text("Total: ${filteredItems.size}", fontSize = 12.sp, color = ErpTextMuted)
+                }
+            }
+
+            items(filteredItems) { item ->
+                Card(
+                    shape = RoundedCornerShape(10.dp),
+                    colors = CardDefaults.cardColors(containerColor = Color.White),
+                    border = androidx.compose.foundation.BorderStroke(1.dp, ErpBorder),
+                    modifier = Modifier.fillMaxWidth()
+                ) {
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(14.dp),
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.SpaceBetween
+                    ) {
+                        Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.weight(1f)) {
+                            Surface(
+                                shape = CircleShape,
+                                color = ErpInfo.copy(alpha = 0.12f),
+                                modifier = Modifier.size(40.dp)
+                            ) {
+                                Box(contentAlignment = Alignment.Center) {
+                                    Text("📦", fontSize = 20.sp)
+                                }
+                            }
+                            Spacer(modifier = Modifier.width(12.dp))
+                            Column {
+                                Text(
+                                    text = item.description ?: "Item #${item.id}",
+                                    fontWeight = FontWeight.Bold,
+                                    fontSize = 15.sp,
+                                    color = ErpTextMain
+                                )
+                                Text(
+                                    text = "Category: ${item.categoryName ?: "General"}",
+                                    fontSize = 12.sp,
+                                    color = ErpTextMuted
+                                )
+                            }
+                        }
+                        Surface(
+                            shape = RoundedCornerShape(6.dp),
+                            color = Color(0xFFE0F2FE)
+                        ) {
+                            Text(
+                                text = "Unit: ${item.acUnit ?: "Pcs"}",
+                                fontSize = 11.sp,
+                                fontWeight = FontWeight.SemiBold,
+                                color = Color(0xFF0369A1),
+                                modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp)
+                            )
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -1203,7 +1491,6 @@ fun WorksModuleContent(apiService: ModPyPhpApiService) {
         errorMsg = errorMsg
     ) {
         LazyColumn(verticalArrangement = Arrangement.spacedBy(10.dp)) {
-            // Agreements
             item {
                 Row(
                     modifier = Modifier.fillMaxWidth(),
@@ -1269,7 +1556,6 @@ fun WorksModuleContent(apiService: ModPyPhpApiService) {
                 }
             }
 
-            // Work Orders
             item {
                 Spacer(modifier = Modifier.height(10.dp))
                 Text("Work Orders", fontSize = 16.sp, fontWeight = FontWeight.Bold, color = ErpTextMain)
