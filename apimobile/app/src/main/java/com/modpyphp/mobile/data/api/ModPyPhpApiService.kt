@@ -29,9 +29,10 @@ interface ModPyPhpApiService {
     suspend fun getAdminData(): AdminResponse
 
     companion object {
+        const val DEFAULT_BASE_URL = "https://modpyphp-erp.onrender.com"
         private var instance: ModPyPhpApiService? = null
 
-        fun create(baseUrl: String): ModPyPhpApiService {
+        fun create(baseUrl: String = DEFAULT_BASE_URL): ModPyPhpApiService {
             val formattedUrl = if (baseUrl.endsWith("/")) baseUrl else "$baseUrl/"
 
             val logging = HttpLoggingInterceptor().apply {
@@ -40,8 +41,9 @@ interface ModPyPhpApiService {
 
             val client = OkHttpClient.Builder()
                 .addInterceptor(logging)
-                .connectTimeout(10, TimeUnit.SECONDS)
-                .readTimeout(10, TimeUnit.SECONDS)
+                .connectTimeout(30, TimeUnit.SECONDS)
+                .readTimeout(30, TimeUnit.SECONDS)
+                .writeTimeout(30, TimeUnit.SECONDS)
                 .build()
 
             val retrofit = Retrofit.Builder()

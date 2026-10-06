@@ -4,29 +4,45 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.PasswordVisualTransformation
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.modpyphp.mobile.data.api.ModPyPhpApiService
 import com.modpyphp.mobile.data.models.*
-import com.modpyphp.mobile.ui.theme.ModPyPhpTheme
+import com.modpyphp.mobile.ui.theme.*
 import kotlinx.coroutines.launch
+import java.text.NumberFormat
+import java.text.SimpleDateFormat
+import java.util.*
 
-enum class Screen { LOGIN, DASHBOARD, FINANCE, HR, WORKS, ADMIN }
+enum class Screen(val title: String, val icon: String) {
+    DASHBOARD("Dashboard", "📊"),
+    FINANCE("Finance", "💰"),
+    HR("HR", "👥"),
+    WORKS("Works", "🛠️"),
+    ADMIN("Admin", "⚙️")
+}
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,12 +55,14 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MainAppScreen() {
-    var serverUrl by remember { mutableStateOf("http://192.168.1.3:8000") }
+    var serverUrl by remember { mutableStateOf(ModPyPhpApiService.DEFAULT_BASE_URL) }
     var currentUser by remember { mutableStateOf<User?>(null) }
-    var currentScreen by remember { mutableStateOf(Screen.LOGIN) }
+    var currentScreen by remember { mutableStateOf(Screen.DASHBOARD) }
     var apiService by remember { mutableStateOf<ModPyPhpApiService?>(null) }
+    var isRefreshing by remember { mutableStateOf(false) }
 
     Surface(
         modifier = Modifier.fillMaxSize(),
@@ -62,41 +80,120 @@ fun MainAppScreen() {
             )
         } else {
             Scaffold(
+                topBar = {
+                    TopAppBar(
+                        title = {
+                            Row(
+                                verticalAlignment = Alignment.CenterVertically,
+                                modifier = Modifier.fillMaxWidth()
+                            ) {
+                                Surface(
+                                    shape = RoundedCornerShape(8.dp),
+                                    color = Color(0xFF0D6EFD).copy(alpha = 0.2f),
+                                    modifier = Modifier.size(36.dp)
+                                ) {
+                                    Box(contentAlignment = Alignment.Center) {
+                                        Text("🏢", fontSize = 20.sp)
+                                    }
+                                }
+                                Spacer(modifier = Modifier.width(10.dp))
+                                Column {
+                                    Text(
+                                        text = "Enterprise ERP",
+                                        fontWeight = FontWeight.Bold,
+                                        fontSize = 17.sp,
+                                        color = Color.White
+                                    )
+                                    Row(verticalAlignment = Alignment.CenterVertically) {
+                                        Box(
+                                            modifier = Modifier
+                                                .size(7.dp)
+                                                .clip(CircleShape)
+                                                .background(Color(0xFF10B981))
+                                        )
+                                        Spacer(modifier = Modifier.width(4.dp))
+                                        Text(
+                                            text = "Render Cloud • Neon DB",
+                                            fontSize = 11.sp,
+                                            color = Color(0xFF94A3B8)
+                                        )
+                                    }
+                                }
+                            }
+                        },
+                        actions = {
+                            // User role chip
+                            Surface(
+                                shape = RoundedCornerShape(12.dp),
+                                color = Color(0xFF334155),
+                                modifier = Modifier.padding(end = 6.dp)
+                            ) {
+                                Row(
+                                    verticalAlignment = Alignment.CenterVertically,
+                                    modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp)
+                                ) {
+                                    Text("👤", fontSize = 12.sp)
+                                    Spacer(modifier = Modifier.width(4.dp))
+                                    Text(
+                                        text = currentUser?.username ?: "User",
+                                        fontSize = 12.sp,
+                                        fontWeight = FontWeight.SemiBold,
+                                        color = Color.White
+                                    )
+                                }
+                            }
+                            // Logout button
+                            IconButton(onClick = {
+                                currentUser = null
+                                apiService = null
+                            }) {
+                                Text("🚪", fontSize = 18.sp)
+                            }
+                        },
+                        colors = TopAppBarDefaults.topAppBarColors(
+                            containerColor = ErpDeepNavy,
+                            titleContentColor = Color.White,
+                            actionIconContentColor = Color.White
+                        )
+                    )
+                },
                 bottomBar = {
                     NavigationBar(
-                        containerColor = MaterialTheme.colorScheme.surface,
+                        containerColor = ErpSurface,
                         tonalElevation = 8.dp
                     ) {
-                        val navItems = listOf(
-                            NavOption("Dashboard", "📊", Screen.DASHBOARD),
-                            NavOption("Finance", "💰", Screen.FINANCE),
-                            NavOption("HR", "👥", Screen.HR),
-                            NavOption("Works", "🛠️", Screen.WORKS),
-                            NavOption("Admin", "⚙️", Screen.ADMIN)
-                        )
-                        navItems.forEach { item ->
+                        Screen.values().forEach { screen ->
                             NavigationBarItem(
-                                icon = { Text(item.icon, fontSize = 20.sp) },
-                                label = { Text(item.label) },
-                                selected = currentScreen == item.screen,
-                                onClick = { currentScreen = item.screen }
+                                icon = { Text(screen.icon, fontSize = 20.sp) },
+                                label = { Text(screen.title, fontSize = 11.sp, fontWeight = FontWeight.Medium) },
+                                selected = currentScreen == screen,
+                                colors = NavigationBarItemDefaults.colors(
+                                    selectedIconColor = ErpPrimary,
+                                    selectedTextColor = ErpPrimary,
+                                    indicatorColor = ErpPrimary.copy(alpha = 0.12f)
+                                ),
+                                onClick = { currentScreen = screen }
                             )
                         }
                     }
                 }
             ) { padding ->
-                Box(modifier = Modifier.padding(padding)) {
+                Box(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .padding(padding)
+                        .background(MaterialTheme.colorScheme.background)
+                ) {
                     when (currentScreen) {
-                        Screen.DASHBOARD -> DashboardContent(apiService!!, currentUser!!) {
-                            currentUser = null
-                            apiService = null
-                            currentScreen = Screen.LOGIN
-                        }
+                        Screen.DASHBOARD -> DashboardContent(
+                            apiService = apiService!!,
+                            user = currentUser!!,
+                            onNavigateToScreen = { currentScreen = it }
+                        )
                         Screen.FINANCE -> FinanceModuleContent(apiService!!)
                         Screen.HR -> HRModuleContent(apiService!!)
                         Screen.WORKS -> WorksModuleContent(apiService!!)
                         Screen.ADMIN -> AdminModuleContent(apiService!!)
-                        Screen.LOGIN -> {}
                     }
                 }
             }
@@ -104,219 +201,641 @@ fun MainAppScreen() {
     }
 }
 
-data class NavOption(val label: String, val icon: String, val screen: Screen)
-
+/* =====================================================================
+ * LOGIN SCREEN - Styled matching ModPyPhp index.php & login.php
+ * ===================================================================== */
 @Composable
 fun LoginScreen(
     defaultUrl: String,
     onLoginSuccess: (User, String, ModPyPhpApiService) -> Unit
 ) {
     var serverUrl by remember { mutableStateOf(defaultUrl) }
-    var username by remember { mutableStateOf("admin") }
+    var username by remember { mutableStateOf("daredevil") }
     var password by remember { mutableStateOf("admin123") }
     var isLoading by remember { mutableStateOf(false) }
     var errorMessage by remember { mutableStateOf<String?>(null) }
     val scope = rememberCoroutineScope()
 
-    Column(
+    Box(
         modifier = Modifier
             .fillMaxSize()
-            .padding(24.dp),
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center
+            .background(
+                Brush.verticalGradient(
+                    colors = listOf(ErpDeepNavy, Color(0xFF1E293B), ErpBackground)
+                )
+            ),
+        contentAlignment = Alignment.Center
     ) {
         Card(
             shape = RoundedCornerShape(16.dp),
-            colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer),
-            modifier = Modifier.padding(bottom = 24.dp)
+            colors = CardDefaults.cardColors(containerColor = Color.White),
+            elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
+            modifier = Modifier
+                .fillMaxWidth(0.92f)
+                .padding(vertical = 24.dp)
         ) {
-            Text(
-                text = "🏛️",
-                fontSize = 48.sp,
-                modifier = Modifier.padding(20.dp)
-            )
-        }
-
-        Text(
-            text = "ModPyPhp Office",
-            fontSize = 28.sp,
-            fontWeight = FontWeight.Bold,
-            color = MaterialTheme.colorScheme.onBackground
-        )
-        Text(
-            text = "Integrated Management System",
-            fontSize = 14.sp,
-            color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.7f),
-            modifier = Modifier.padding(bottom = 28.dp)
-        )
-
-        OutlinedTextField(
-            value = serverUrl,
-            onValueChange = { serverUrl = it },
-            label = { Text("PHP Backend Server URL") },
-            modifier = Modifier.fillMaxWidth(),
-            singleLine = true
-        )
-
-        Spacer(modifier = Modifier.height(12.dp))
-
-        OutlinedTextField(
-            value = username,
-            onValueChange = { username = it },
-            label = { Text("Username") },
-            modifier = Modifier.fillMaxWidth(),
-            singleLine = true
-        )
-
-        Spacer(modifier = Modifier.height(12.dp))
-
-        OutlinedTextField(
-            value = password,
-            onValueChange = { password = it },
-            label = { Text("Password") },
-            visualTransformation = PasswordVisualTransformation(),
-            modifier = Modifier.fillMaxWidth(),
-            singleLine = true
-        )
-
-        errorMessage?.let {
-            Spacer(modifier = Modifier.height(12.dp))
-            Text(text = it, color = MaterialTheme.colorScheme.error, fontSize = 14.sp)
-        }
-
-        Spacer(modifier = Modifier.height(24.dp))
-
-        Button(
-            onClick = {
-                scope.launch {
-                    isLoading = true
-                    errorMessage = null
-                    try {
-                        val api = ModPyPhpApiService.create(serverUrl)
-                        val res = api.login(mapOf("username" to username, "password" to password))
-                        if (res.success && res.user != null) {
-                            onLoginSuccess(res.user, serverUrl, api)
-                        } else {
-                            errorMessage = res.error ?: "Invalid credentials"
-                        }
-                    } catch (e: Exception) {
-                        errorMessage = "Connection Failed: ${e.localizedMessage}"
-                    } finally {
-                        isLoading = false
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(24.dp),
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                // Enterprise Header Brand
+                Surface(
+                    shape = RoundedCornerShape(14.dp),
+                    color = ErpPrimary.copy(alpha = 0.1f),
+                    modifier = Modifier.size(64.dp)
+                ) {
+                    Box(contentAlignment = Alignment.Center) {
+                        Text("🏛️", fontSize = 36.sp)
                     }
                 }
-            },
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(50.dp),
-            enabled = !isLoading
-        ) {
-            if (isLoading) {
-                CircularProgressIndicator(modifier = Modifier.size(24.dp), color = Color.White)
-            } else {
-                Text("Login", fontSize = 16.sp, fontWeight = FontWeight.Bold)
+
+                Spacer(modifier = Modifier.height(14.dp))
+
+                Text(
+                    text = "Enterprise ERP",
+                    fontSize = 24.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = ErpTextMain
+                )
+                Text(
+                    text = "Integrated Operations & Governance System",
+                    fontSize = 12.sp,
+                    color = ErpTextMuted
+                )
+
+                Spacer(modifier = Modifier.height(20.dp))
+
+                // Server URL input
+                OutlinedTextField(
+                    value = serverUrl,
+                    onValueChange = { serverUrl = it },
+                    label = { Text("Backend Server URL") },
+                    modifier = Modifier.fillMaxWidth(),
+                    singleLine = true,
+                    shape = RoundedCornerShape(10.dp)
+                )
+
+                Spacer(modifier = Modifier.height(12.dp))
+
+                // Username input
+                OutlinedTextField(
+                    value = username,
+                    onValueChange = { username = it },
+                    label = { Text("Username") },
+                    modifier = Modifier.fillMaxWidth(),
+                    singleLine = true,
+                    shape = RoundedCornerShape(10.dp)
+                )
+
+                Spacer(modifier = Modifier.height(12.dp))
+
+                // Password input
+                OutlinedTextField(
+                    value = password,
+                    onValueChange = { password = it },
+                    label = { Text("Password") },
+                    visualTransformation = PasswordVisualTransformation(),
+                    modifier = Modifier.fillMaxWidth(),
+                    singleLine = true,
+                    shape = RoundedCornerShape(10.dp)
+                )
+
+                Spacer(modifier = Modifier.height(14.dp))
+
+                // Quick Preset Accounts for One-Tap Testing
+                Text(
+                    text = "Quick Demo Accounts:",
+                    fontSize = 12.sp,
+                    fontWeight = FontWeight.SemiBold,
+                    color = ErpTextMuted,
+                    modifier = Modifier.align(Alignment.Start)
+                )
+                Spacer(modifier = Modifier.height(6.dp))
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .horizontalScroll(rememberScrollState()),
+                    horizontalArrangement = Arrangement.spacedBy(8.dp)
+                ) {
+                    AssistChip(
+                        onClick = {
+                            username = "daredevil"
+                            password = "admin123"
+                        },
+                        label = { Text("👑 Superuser (daredevil)", fontSize = 11.sp) }
+                    )
+                    AssistChip(
+                        onClick = {
+                            username = "hemant"
+                            password = "admin123"
+                        },
+                        label = { Text("👷 Staff (hemant)", fontSize = 11.sp) }
+                    )
+                    AssistChip(
+                        onClick = {
+                            username = "sopan"
+                            password = "admin123"
+                        },
+                        label = { Text("👔 Manager (sopan)", fontSize = 11.sp) }
+                    )
+                }
+
+                errorMessage?.let {
+                    Spacer(modifier = Modifier.height(12.dp))
+                    Surface(
+                        shape = RoundedCornerShape(8.dp),
+                        color = Color(0xFFFEE2E2),
+                        border = androidx.compose.foundation.BorderStroke(1.dp, Color(0xFFFCA5A5)),
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Text(
+                            text = it,
+                            color = Color(0xFFB91C1C),
+                            fontSize = 13.sp,
+                            modifier = Modifier.padding(10.dp)
+                        )
+                    }
+                }
+
+                Spacer(modifier = Modifier.height(20.dp))
+
+                // Login Submit Button
+                Button(
+                    onClick = {
+                        scope.launch {
+                            isLoading = true
+                            errorMessage = null
+                            try {
+                                val api = ModPyPhpApiService.create(serverUrl)
+                                val res = api.login(mapOf("username" to username.trim(), "password" to password.trim()))
+                                if (res.success && res.user != null) {
+                                    onLoginSuccess(res.user, serverUrl, api)
+                                } else {
+                                    errorMessage = res.error ?: "Invalid credentials"
+                                }
+                            } catch (e: Exception) {
+                                errorMessage = "Connection failed: ${e.localizedMessage}"
+                            } finally {
+                                isLoading = false
+                            }
+                        }
+                    },
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(48.dp),
+                    shape = RoundedCornerShape(10.dp),
+                    colors = ButtonDefaults.buttonColors(containerColor = ErpPrimary),
+                    enabled = !isLoading
+                ) {
+                    if (isLoading) {
+                        CircularProgressIndicator(modifier = Modifier.size(22.dp), color = Color.White, strokeWidth = 2.dp)
+                    } else {
+                        Text("Log In to Enterprise ERP", fontSize = 15.sp, fontWeight = FontWeight.Bold)
+                    }
+                }
+
+                Spacer(modifier = Modifier.height(10.dp))
+
+                Text(
+                    text = "Connected to Render Cloud Backend",
+                    fontSize = 11.sp,
+                    color = ErpTextMuted
+                )
+            }
+        }
+    }
+}
+
+/* =====================================================================
+ * DASHBOARD CONTENT - Direct mirror of E:/Research/ModPyPhp/index.php
+ * and modules/AI_and_Tools/Utility/Views/dashboard.php
+ * ===================================================================== */
+@Composable
+fun DashboardContent(
+    apiService: ModPyPhpApiService,
+    user: User,
+    onNavigateToScreen: (Screen) -> Unit
+) {
+    var stats by remember { mutableStateOf<SystemStats?>(null) }
+    var isLoading by remember { mutableStateOf(true) }
+    var errorMessage by remember { mutableStateOf<String?>(null) }
+    val scope = rememberCoroutineScope()
+
+    val refreshDashboard = {
+        scope.launch {
+            isLoading = true
+            errorMessage = null
+            try {
+                val res = apiService.getDashboardStats()
+                if (res.success && res.data != null) {
+                    stats = res.data
+                } else {
+                    errorMessage = res.error ?: "Failed to load dashboard data"
+                }
+            } catch (e: Exception) {
+                errorMessage = e.localizedMessage
+            } finally {
+                isLoading = false
+            }
+        }
+    }
+
+    LaunchedEffect(Unit) {
+        refreshDashboard()
+    }
+
+    LazyColumn(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(16.dp),
+        verticalArrangement = Arrangement.spacedBy(16.dp)
+    ) {
+        // 1. Welcome Banner Header (Matching dashboard.php)
+        item {
+            Card(
+                shape = RoundedCornerShape(12.dp),
+                colors = CardDefaults.cardColors(containerColor = Color.White),
+                border = androidx.compose.foundation.BorderStroke(1.dp, ErpBorder)
+            ) {
+                Column(modifier = Modifier.padding(16.dp)) {
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.Top
+                    ) {
+                        Column(modifier = Modifier.weight(1f)) {
+                            Text(
+                                text = "Enterprise ERP Dashboard",
+                                fontSize = 20.sp,
+                                fontWeight = FontWeight.Bold,
+                                color = ErpTextMain
+                            )
+                            Spacer(modifier = Modifier.height(4.dp))
+                            Text(
+                                text = "Welcome, ${user.firstName ?: user.username} • Office ID: ${user.officeId ?: 1}",
+                                fontSize = 13.sp,
+                                color = ErpTextMuted
+                            )
+                        }
+                        Surface(
+                            shape = RoundedCornerShape(8.dp),
+                            color = ErpPrimary.copy(alpha = 0.1f),
+                            border = androidx.compose.foundation.BorderStroke(1.dp, ErpPrimary.copy(alpha = 0.3f))
+                        ) {
+                            Text(
+                                text = "ROLE: ${(user.role ?: "USER").uppercase()}",
+                                fontSize = 11.sp,
+                                fontWeight = FontWeight.Bold,
+                                color = ErpPrimary,
+                                modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp)
+                            )
+                        }
+                    }
+                    Spacer(modifier = Modifier.height(6.dp))
+                    val dateStr = SimpleDateFormat("EEE, dd MMM yyyy", Locale.getDefault()).format(Date())
+                    Text(
+                        text = "📅 $dateStr • Integrated Operations & Governance System",
+                        fontSize = 12.sp,
+                        color = ErpTextMuted
+                    )
+                }
+            }
+        }
+
+        // 2. Alert / Fast Action Banner: Machine Maintenance Tracker (Matching dashboard.php)
+        item {
+            Card(
+                shape = RoundedCornerShape(12.dp),
+                colors = CardDefaults.cardColors(containerColor = Color(0xFFFEF3C7)),
+                border = androidx.compose.foundation.BorderStroke(1.dp, Color(0xFFFCD34D))
+            ) {
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(14.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Surface(
+                        shape = CircleShape,
+                        color = Color(0xFFF59E0B),
+                        modifier = Modifier.size(40.dp)
+                    ) {
+                        Box(contentAlignment = Alignment.Center) {
+                            Text("⚡", fontSize = 20.sp)
+                        }
+                    }
+                    Spacer(modifier = Modifier.width(12.dp))
+                    Column(modifier = Modifier.weight(1f)) {
+                        Text(
+                            text = "Machinery Maintenance & Service Tracker",
+                            fontWeight = FontWeight.Bold,
+                            fontSize = 14.sp,
+                            color = Color(0xFF78350F)
+                        )
+                        Text(
+                            text = "Monitor engine hours, overdue servicing, and parts requirements live.",
+                            fontSize = 12.sp,
+                            color = Color(0xFF92400E)
+                        )
+                    }
+                }
+            }
+        }
+
+        // Loading or Error State
+        if (isLoading) {
+            item {
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(200.dp),
+                    contentAlignment = Alignment.Center
+                ) {
+                    CircularProgressIndicator(color = ErpPrimary)
+                }
+            }
+        } else if (errorMessage != null) {
+            item {
+                Card(
+                    colors = CardDefaults.cardColors(containerColor = Color(0xFFFEE2E2)),
+                    border = androidx.compose.foundation.BorderStroke(1.dp, Color(0xFFFCA5A5)),
+                    modifier = Modifier.fillMaxWidth()
+                ) {
+                    Column(modifier = Modifier.padding(16.dp)) {
+                        Text("Connection Alert", fontWeight = FontWeight.Bold, color = Color(0xFFB91C1C))
+                        Spacer(modifier = Modifier.height(4.dp))
+                        Text(errorMessage ?: "", fontSize = 13.sp, color = Color(0xFF7F1D1D))
+                        Spacer(modifier = Modifier.height(8.dp))
+                        Button(
+                            onClick = { refreshDashboard() },
+                            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFDC2626))
+                        ) {
+                            Text("Retry Connection")
+                        }
+                    }
+                }
+            }
+        } else if (stats != null) {
+            // 3. 6 Executive KPI Overview Cards Grid
+            item {
+                Text(
+                    text = "Executive KPI Overview",
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = ErpTextMain
+                )
+            }
+
+            item {
+                val statCards = listOf(
+                    ErpStatItem("Employees", stats!!.employees.toString(), "👥", ErpPrimary, Screen.HR),
+                    ErpStatItem("Offices", stats!!.offices.toString(), "🏢", ErpSuccess, Screen.ADMIN),
+                    ErpStatItem("Agreements", stats!!.agreements.toString(), "📄", ErpPurple, Screen.WORKS),
+                    ErpStatItem("Bills", stats!!.bills.toString(), "🧾", ErpWarning, Screen.FINANCE),
+                    ErpStatItem("Budgets", stats!!.budgets.toString(), "💰", ErpDanger, Screen.FINANCE),
+                    ErpStatItem("Users", stats!!.users.toString(), "👤", Color(0xFF6366F1), Screen.ADMIN)
+                )
+
+                LazyVerticalGrid(
+                    columns = GridCells.Fixed(2),
+                    horizontalArrangement = Arrangement.spacedBy(12.dp),
+                    verticalArrangement = Arrangement.spacedBy(12.dp),
+                    modifier = Modifier.height(260.dp)
+                ) {
+                    items(statCards) { card ->
+                        ErpKpiCard(item = card) {
+                            onNavigateToScreen(card.targetScreen)
+                        }
+                    }
+                }
+            }
+
+            // 4. ERP Operational Hub Modules (Grid mirroring dashboard.php sections)
+            item {
+                Spacer(modifier = Modifier.height(8.dp))
+                Text(
+                    text = "Operational Modules",
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = ErpTextMain
+                )
+            }
+
+            item {
+                Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                    ErpModuleCard(
+                        title = "Human Resource Master",
+                        subtitle = "Employee directory, attendance logs, and staff assignments",
+                        icon = "👥",
+                        accentColor = ErpPrimary,
+                        onClick = { onNavigateToScreen(Screen.HR) }
+                    )
+                    ErpModuleCard(
+                        title = "Works & Engineering",
+                        subtitle = "Agreements registry, work orders, and supply orders",
+                        icon = "🛠️",
+                        accentColor = ErpPurple,
+                        onClick = { onNavigateToScreen(Screen.WORKS) }
+                    )
+                    ErpModuleCard(
+                        title = "Finance & Budgeting",
+                        subtitle = "Financial year allocations, bill vouchers, and expenditures",
+                        icon = "💰",
+                        accentColor = ErpWarning,
+                        onClick = { onNavigateToScreen(Screen.FINANCE) }
+                    )
+                    ErpModuleCard(
+                        title = "Administration & Master Data",
+                        subtitle = "Office directory, registered contractor agencies, and cloud sync",
+                        icon = "🏢",
+                        accentColor = ErpSuccess,
+                        onClick = { onNavigateToScreen(Screen.ADMIN) }
+                    )
+                }
+            }
+
+            // 5. Recent Activity Logs Timeline (from activity_logs table)
+            if (!stats!!.recentActivity.isNullOrEmpty()) {
+                item {
+                    Spacer(modifier = Modifier.height(8.dp))
+                    Text(
+                        text = "Recent System Activity",
+                        fontSize = 16.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = ErpTextMain
+                    )
+                }
+
+                items(stats!!.recentActivity!!) { log ->
+                    Card(
+                        shape = RoundedCornerShape(10.dp),
+                        colors = CardDefaults.cardColors(containerColor = Color.White),
+                        border = androidx.compose.foundation.BorderStroke(1.dp, ErpBorder),
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Row(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(12.dp),
+                            horizontalArrangement = Arrangement.SpaceBetween,
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Column(modifier = Modifier.weight(1f)) {
+                                Text(
+                                    text = "Table: ${log.tableName?.uppercase() ?: "SYSTEM"}",
+                                    fontWeight = FontWeight.SemiBold,
+                                    fontSize = 14.sp,
+                                    color = ErpTextMain
+                                )
+                                Text(
+                                    text = log.changedAt ?: "Recent",
+                                    fontSize = 11.sp,
+                                    color = ErpTextMuted
+                                )
+                            }
+                            Surface(
+                                shape = RoundedCornerShape(6.dp),
+                                color = when (log.action?.uppercase()) {
+                                    "INSERT" -> Color(0xFFD1FAE5)
+                                    "UPDATE" -> Color(0xFFFEF3C7)
+                                    "DELETE" -> Color(0xFFFEE2E2)
+                                    else -> Color(0xFFE2E8F0)
+                                }
+                            ) {
+                                Text(
+                                    text = log.action?.uppercase() ?: "ACTION",
+                                    fontSize = 11.sp,
+                                    fontWeight = FontWeight.Bold,
+                                    color = when (log.action?.uppercase()) {
+                                        "INSERT" -> Color(0xFF065F46)
+                                        "UPDATE" -> Color(0xFF92400E)
+                                        "DELETE" -> Color(0xFF991B1B)
+                                        else -> Color(0xFF475569)
+                                    },
+                                    modifier = Modifier.padding(horizontal = 8.dp, vertical = 3.dp)
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+data class ErpStatItem(
+    val title: String,
+    val value: String,
+    val icon: String,
+    val color: Color,
+    val targetScreen: Screen
+)
+
+@Composable
+fun ErpKpiCard(item: ErpStatItem, onClick: () -> Unit) {
+    Card(
+        shape = RoundedCornerShape(12.dp),
+        colors = CardDefaults.cardColors(containerColor = Color.White),
+        border = androidx.compose.foundation.BorderStroke(1.dp, ErpBorder),
+        modifier = Modifier
+            .fillMaxWidth()
+            .clickable { onClick() }
+    ) {
+        Row(modifier = Modifier.fillMaxSize()) {
+            // Left colored stripe matching core/Layout.php .border-left-*
+            Box(
+                modifier = Modifier
+                    .width(5.dp)
+                    .fillMaxHeight()
+                    .background(item.color)
+            )
+            Column(
+                modifier = Modifier
+                    .padding(14.dp)
+                    .fillMaxWidth()
+            ) {
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text(
+                        text = item.title.uppercase(),
+                        fontSize = 11.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = item.color
+                    )
+                    Text(item.icon, fontSize = 18.sp)
+                }
+                Spacer(modifier = Modifier.height(6.dp))
+                Text(
+                    text = item.value,
+                    fontSize = 24.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = ErpTextMain
+                )
             }
         }
     }
 }
 
 @Composable
-fun DashboardContent(
-    apiService: ModPyPhpApiService,
-    user: User,
-    onLogout: () -> Unit
+fun ErpModuleCard(
+    title: String,
+    subtitle: String,
+    icon: String,
+    accentColor: Color,
+    onClick: () -> Unit
 ) {
-    var stats by remember { mutableStateOf<SystemStats?>(null) }
-    var isLoading by remember { mutableStateOf(true) }
-    var errorMessage by remember { mutableStateOf<String?>(null) }
-
-    LaunchedEffect(Unit) {
-        try {
-            val res = apiService.getDashboardStats()
-            if (res.success && res.data != null) {
-                stats = res.data
-            } else {
-                errorMessage = res.error
-            }
-        } catch (e: Exception) {
-            errorMessage = e.localizedMessage
-        } finally {
-            isLoading = false
-        }
-    }
-
-    Column(
+    Card(
+        shape = RoundedCornerShape(12.dp),
+        colors = CardDefaults.cardColors(containerColor = Color.White),
+        border = androidx.compose.foundation.BorderStroke(1.dp, ErpBorder),
         modifier = Modifier
-            .fillMaxSize()
-            .padding(16.dp)
+            .fillMaxWidth()
+            .clickable { onClick() }
     ) {
         Row(
-            modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.SpaceBetween,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(14.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Column {
-                Text(
-                    text = "Welcome, ${user.firstName ?: user.username}",
-                    fontSize = 22.sp,
-                    fontWeight = FontWeight.Bold
-                )
-                Text(text = "Role: ${user.role ?: "User"}", fontSize = 14.sp, color = Color.Gray)
-            }
-            TextButton(onClick = onLogout) {
-                Text("Logout", color = MaterialTheme.colorScheme.error, fontWeight = FontWeight.Bold)
-            }
-        }
-
-        Spacer(modifier = Modifier.height(16.dp))
-
-        if (isLoading) {
-            Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                CircularProgressIndicator()
-            }
-        } else if (errorMessage != null) {
-            Text(text = "Error: $errorMessage", color = MaterialTheme.colorScheme.error)
-        } else if (stats != null) {
-            Text(text = "System Overview", fontSize = 18.sp, fontWeight = FontWeight.SemiBold)
-            Spacer(modifier = Modifier.height(12.dp))
-
-            val items = listOf(
-                StatCardItem("Employees", stats!!.employees.toString(), "👥", Color(0xFF3B82F6)),
-                StatCardItem("Offices", stats!!.offices.toString(), "🏢", Color(0xFF10B981)),
-                StatCardItem("Agreements", stats!!.agreements.toString(), "📄", Color(0xFF8B5CF6)),
-                StatCardItem("Bills", stats!!.bills.toString(), "🧾", Color(0xFFF59E0B)),
-                StatCardItem("Budgets", stats!!.budgets.toString(), "💰", Color(0xFFEC4899)),
-                StatCardItem("Users", stats!!.users.toString(), "👤", Color(0xFF6366F1))
-            )
-
-            LazyVerticalGrid(
-                columns = GridCells.Fixed(2),
-                horizontalArrangement = Arrangement.spacedBy(12.dp),
-                verticalArrangement = Arrangement.spacedBy(12.dp)
+            Surface(
+                shape = CircleShape,
+                color = accentColor.copy(alpha = 0.12f),
+                modifier = Modifier.size(44.dp)
             ) {
-                items(items) { item ->
-                    Card(
-                        shape = RoundedCornerShape(12.dp),
-                        colors = CardDefaults.cardColors(containerColor = item.color.copy(alpha = 0.15f))
-                    ) {
-                        Column(
-                            modifier = Modifier.padding(16.dp),
-                            verticalArrangement = Arrangement.Center
-                        ) {
-                            Text(item.icon, fontSize = 24.sp)
-                            Spacer(modifier = Modifier.height(8.dp))
-                            Text(text = item.value, fontSize = 24.sp, fontWeight = FontWeight.Bold, color = item.color)
-                            Text(text = item.title, fontSize = 14.sp, color = MaterialTheme.colorScheme.onBackground)
-                        }
-                    }
+                Box(contentAlignment = Alignment.Center) {
+                    Text(icon, fontSize = 22.sp)
                 }
             }
+            Spacer(modifier = Modifier.width(14.dp))
+            Column(modifier = Modifier.weight(1f)) {
+                Text(
+                    text = title,
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 15.sp,
+                    color = ErpTextMain
+                )
+                Text(
+                    text = subtitle,
+                    fontSize = 12.sp,
+                    color = ErpTextMuted,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
+                )
+            }
+            Text("›", fontSize = 24.sp, color = ErpTextMuted)
         }
     }
 }
 
-data class StatCardItem(val title: String, val value: String, val icon: String, val color: Color)
-
+/* =====================================================================
+ * FINANCE MODULE SCREEN
+ * ===================================================================== */
 @Composable
 fun FinanceModuleContent(apiService: ModPyPhpApiService) {
     var data by remember { mutableStateOf<FinanceData?>(null) }
@@ -334,34 +853,174 @@ fun FinanceModuleContent(apiService: ModPyPhpApiService) {
         }
     }
 
-    ModuleScreenLayout(title = "Finance Hub", isLoading = isLoading, errorMsg = errorMsg) {
+    ModuleScreenLayout(
+        title = "Finance & Accounts",
+        subtitle = "Budget allocations, bill vouchers & revenue tracking",
+        isLoading = isLoading,
+        errorMsg = errorMsg
+    ) {
         LazyColumn(verticalArrangement = Arrangement.spacedBy(10.dp)) {
-            item { Text("Budgets", fontSize = 18.sp, fontWeight = FontWeight.Bold) }
-            items(data?.budgets ?: emptyList()) { budget ->
-                ListItemCard(
-                    title = "${budget.head ?: "Budget"} - ${budget.subHead ?: ""}",
-                    subtitle = "Allocated: ₹${budget.allocatedAmount ?: 0.0} | FY: ${budget.financialYear ?: "N/A"}",
-                    badge = budget.officeName ?: "Office"
-                )
-            }
+            // Budgets Section
             item {
-                Spacer(modifier = Modifier.height(12.dp))
-                Text("Bills", fontSize = 18.sp, fontWeight = FontWeight.Bold)
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text("Budgets & Allocations", fontSize = 16.sp, fontWeight = FontWeight.Bold, color = ErpTextMain)
+                    Text("Total: ${data?.budgets?.size ?: 0}", fontSize = 12.sp, color = ErpTextMuted)
+                }
             }
-            items(data?.bills ?: emptyList()) { bill ->
-                ListItemCard(
-                    title = "Bill #${bill.billNo ?: bill.id}",
-                    subtitle = "Date: ${bill.billDate ?: "N/A"} | Net Amount: ₹${bill.netAmount ?: 0.0}",
-                    badge = bill.status ?: "Pending"
-                )
+
+            if (data?.budgets.isNullOrEmpty()) {
+                item {
+                    Text("No budget records found.", fontSize = 13.sp, color = ErpTextMuted)
+                }
+            } else {
+                items(data!!.budgets!!) { budget ->
+                    Card(
+                        shape = RoundedCornerShape(10.dp),
+                        colors = CardDefaults.cardColors(containerColor = Color.White),
+                        border = androidx.compose.foundation.BorderStroke(1.dp, ErpBorder),
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Column(modifier = Modifier.padding(14.dp)) {
+                            Row(
+                                modifier = Modifier.fillMaxWidth(),
+                                horizontalArrangement = Arrangement.SpaceBetween
+                            ) {
+                                Text(
+                                    text = budget.head ?: "Budget Code",
+                                    fontWeight = FontWeight.Bold,
+                                    fontSize = 15.sp,
+                                    color = ErpTextMain
+                                )
+                                Surface(
+                                    shape = RoundedCornerShape(6.dp),
+                                    color = Color(0xFFDBEAFE)
+                                ) {
+                                    Text(
+                                        text = "FY ${budget.financialYear ?: "N/A"}",
+                                        fontSize = 11.sp,
+                                        fontWeight = FontWeight.SemiBold,
+                                        color = Color(0xFF1E40AF),
+                                        modifier = Modifier.padding(horizontal = 6.dp, vertical = 2.dp)
+                                    )
+                                }
+                            }
+                            Spacer(modifier = Modifier.height(4.dp))
+                            Text(
+                                text = budget.subHead ?: "General Work",
+                                fontSize = 13.sp,
+                                color = ErpTextMuted
+                            )
+                            Spacer(modifier = Modifier.height(8.dp))
+                            Row(
+                                modifier = Modifier.fillMaxWidth(),
+                                horizontalArrangement = Arrangement.SpaceBetween
+                            ) {
+                                Text(
+                                    text = "🏢 ${budget.officeName ?: "Head Office"}",
+                                    fontSize = 12.sp,
+                                    color = ErpTextMuted
+                                )
+                                Text(
+                                    text = "₹${NumberFormat.getNumberInstance(Locale.US).format(budget.allocatedAmount ?: 0.0)}",
+                                    fontSize = 15.sp,
+                                    fontWeight = FontWeight.Bold,
+                                    color = ErpSuccess
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+
+            // Bills Section
+            item {
+                Spacer(modifier = Modifier.height(10.dp))
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text("Bills Register", fontSize = 16.sp, fontWeight = FontWeight.Bold, color = ErpTextMain)
+                    Text("Total: ${data?.bills?.size ?: 0}", fontSize = 12.sp, color = ErpTextMuted)
+                }
+            }
+
+            if (data?.bills.isNullOrEmpty()) {
+                item {
+                    Text("No bills registered.", fontSize = 13.sp, color = ErpTextMuted)
+                }
+            } else {
+                items(data!!.bills!!) { bill ->
+                    Card(
+                        shape = RoundedCornerShape(10.dp),
+                        colors = CardDefaults.cardColors(containerColor = Color.White),
+                        border = androidx.compose.foundation.BorderStroke(1.dp, ErpBorder),
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Column(modifier = Modifier.padding(14.dp)) {
+                            Row(
+                                modifier = Modifier.fillMaxWidth(),
+                                horizontalArrangement = Arrangement.SpaceBetween
+                            ) {
+                                Text(
+                                    text = "Bill #${bill.billNo ?: bill.id}",
+                                    fontWeight = FontWeight.Bold,
+                                    fontSize = 15.sp,
+                                    color = ErpTextMain
+                                )
+                                Surface(
+                                    shape = RoundedCornerShape(6.dp),
+                                    color = when (bill.status?.lowercase()) {
+                                        "paid" -> Color(0xFFD1FAE5)
+                                        "approved" -> Color(0xFFDBEAFE)
+                                        else -> Color(0xFFFEF3C7)
+                                    }
+                                ) {
+                                    Text(
+                                        text = bill.status ?: "Draft",
+                                        fontSize = 11.sp,
+                                        fontWeight = FontWeight.Bold,
+                                        color = when (bill.status?.lowercase()) {
+                                            "paid" -> Color(0xFF065F46)
+                                            "approved" -> Color(0xFF1E40AF)
+                                            else -> Color(0xFF92400E)
+                                        },
+                                        modifier = Modifier.padding(horizontal = 6.dp, vertical = 2.dp)
+                                    )
+                                }
+                            }
+                            Spacer(modifier = Modifier.height(4.dp))
+                            Text(
+                                text = "🏢 ${bill.officeName ?: "Office"} • Date: ${bill.billDate ?: "N/A"}",
+                                fontSize = 12.sp,
+                                color = ErpTextMuted
+                            )
+                            Spacer(modifier = Modifier.height(6.dp))
+                            Text(
+                                text = "Net Amount: ₹${NumberFormat.getNumberInstance(Locale.US).format(bill.netAmount ?: 0.0)}",
+                                fontSize = 14.sp,
+                                fontWeight = FontWeight.Bold,
+                                color = ErpTextMain
+                            )
+                        }
+                    }
+                }
             }
         }
     }
 }
 
+/* =====================================================================
+ * HR MODULE SCREEN
+ * ===================================================================== */
 @Composable
 fun HRModuleContent(apiService: ModPyPhpApiService) {
     var data by remember { mutableStateOf<HRData?>(null) }
+    var searchQuery by remember { mutableStateOf("") }
     var isLoading by remember { mutableStateOf(true) }
     var errorMsg by remember { mutableStateOf<String?>(null) }
 
@@ -376,33 +1035,150 @@ fun HRModuleContent(apiService: ModPyPhpApiService) {
         }
     }
 
-    ModuleScreenLayout(title = "HR & Attendance Hub", isLoading = isLoading, errorMsg = errorMsg) {
+    ModuleScreenLayout(
+        title = "Human Resource",
+        subtitle = "Employee master roster, attendance & designations",
+        isLoading = isLoading,
+        errorMsg = errorMsg
+    ) {
+        val filteredEmployees = remember(data?.employees, searchQuery) {
+            val list = data?.employees ?: emptyList()
+            if (searchQuery.isBlank()) list
+            else list.filter {
+                (it.fullName ?: "").contains(searchQuery, ignoreCase = true) ||
+                (it.designation ?: "").contains(searchQuery, ignoreCase = true) ||
+                (it.officeName ?: "").contains(searchQuery, ignoreCase = true)
+            }
+        }
+
         LazyColumn(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+            // Today Attendance Counter Banner
             item {
                 Card(
-                    colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer),
+                    shape = RoundedCornerShape(10.dp),
+                    colors = CardDefaults.cardColors(containerColor = Color(0xFFD1FAE5)),
+                    border = androidx.compose.foundation.BorderStroke(1.dp, Color(0xFFA7F3D0)),
                     modifier = Modifier.fillMaxWidth()
                 ) {
-                    Text(
-                        text = "Today Attendance Count: ${data?.todayAttendanceCount ?: 0}",
-                        modifier = Modifier.padding(16.dp),
-                        fontWeight = FontWeight.Bold
-                    )
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(14.dp),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Text("📅", fontSize = 24.sp)
+                        Spacer(modifier = Modifier.width(12.dp))
+                        Column {
+                            Text(
+                                text = "Today's Attendance Counter",
+                                fontWeight = FontWeight.Bold,
+                                fontSize = 14.sp,
+                                color = Color(0xFF065F46)
+                            )
+                            Text(
+                                text = "${data?.todayAttendanceCount ?: 0} marked present today",
+                                fontSize = 12.sp,
+                                color = Color(0xFF047857)
+                            )
+                        }
+                    }
                 }
-                Spacer(modifier = Modifier.height(12.dp))
-                Text("Employee Roster", fontSize = 18.sp, fontWeight = FontWeight.Bold)
             }
-            items(data?.employees ?: emptyList()) { emp ->
-                ListItemCard(
-                    title = emp.fullName ?: "Employee #${emp.id}",
-                    subtitle = "${emp.designation ?: "Staff"} | Mobile: ${emp.mobile ?: "N/A"}",
-                    badge = emp.officeName ?: "Office"
+
+            // Search Bar
+            item {
+                OutlinedTextField(
+                    value = searchQuery,
+                    onValueChange = { searchQuery = it },
+                    placeholder = { Text("Search employees by name or role...") },
+                    modifier = Modifier.fillMaxWidth(),
+                    shape = RoundedCornerShape(10.dp),
+                    singleLine = true,
+                    leadingIcon = { Text("🔍") }
                 )
+            }
+
+            item {
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text("Employee Roster", fontSize = 16.sp, fontWeight = FontWeight.Bold, color = ErpTextMain)
+                    Text("Showing: ${filteredEmployees.size}", fontSize = 12.sp, color = ErpTextMuted)
+                }
+            }
+
+            items(filteredEmployees) { emp ->
+                Card(
+                    shape = RoundedCornerShape(10.dp),
+                    colors = CardDefaults.cardColors(containerColor = Color.White),
+                    border = androidx.compose.foundation.BorderStroke(1.dp, ErpBorder),
+                    modifier = Modifier.fillMaxWidth()
+                ) {
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(14.dp),
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.SpaceBetween
+                    ) {
+                        Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.weight(1f)) {
+                            Surface(
+                                shape = CircleShape,
+                                color = ErpPrimary.copy(alpha = 0.12f),
+                                modifier = Modifier.size(40.dp)
+                            ) {
+                                Box(contentAlignment = Alignment.Center) {
+                                    Text(
+                                        text = (emp.fullName?.take(1) ?: "E").uppercase(),
+                                        fontWeight = FontWeight.Bold,
+                                        color = ErpPrimary
+                                    )
+                                }
+                            }
+                            Spacer(modifier = Modifier.width(12.dp))
+                            Column {
+                                Text(
+                                    text = emp.fullName ?: "Employee #${emp.id}",
+                                    fontWeight = FontWeight.Bold,
+                                    fontSize = 15.sp,
+                                    color = ErpTextMain
+                                )
+                                Text(
+                                    text = emp.designation ?: "Staff",
+                                    fontSize = 13.sp,
+                                    color = ErpPrimary
+                                )
+                                Text(
+                                    text = "🏢 ${emp.officeName ?: "Head Office"}",
+                                    fontSize = 11.sp,
+                                    color = ErpTextMuted
+                                )
+                            }
+                        }
+                        Surface(
+                            shape = RoundedCornerShape(6.dp),
+                            color = Color(0xFFD1FAE5)
+                        ) {
+                            Text(
+                                text = emp.status ?: "Active",
+                                fontSize = 11.sp,
+                                fontWeight = FontWeight.SemiBold,
+                                color = Color(0xFF065F46),
+                                modifier = Modifier.padding(horizontal = 8.dp, vertical = 3.dp)
+                            )
+                        }
+                    }
+                }
             }
         }
     }
 }
 
+/* =====================================================================
+ * WORKS MODULE SCREEN
+ * ===================================================================== */
 @Composable
 fun WorksModuleContent(apiService: ModPyPhpApiService) {
     var data by remember { mutableStateOf<WorksData?>(null) }
@@ -420,31 +1196,112 @@ fun WorksModuleContent(apiService: ModPyPhpApiService) {
         }
     }
 
-    ModuleScreenLayout(title = "Works & Engineering", isLoading = isLoading, errorMsg = errorMsg) {
+    ModuleScreenLayout(
+        title = "Works & Engineering",
+        subtitle = "Agreements registry, work orders & contract sanctions",
+        isLoading = isLoading,
+        errorMsg = errorMsg
+    ) {
         LazyColumn(verticalArrangement = Arrangement.spacedBy(10.dp)) {
-            item { Text("Agreements", fontSize = 18.sp, fontWeight = FontWeight.Bold) }
-            items(data?.agreements ?: emptyList()) { agr ->
-                ListItemCard(
-                    title = "Agreement #${agr.agreementNo ?: agr.id}",
-                    subtitle = "Agency: ${agr.agencyName ?: "N/A"} | Tendered: ₹${agr.tenderedAmount ?: 0.0}",
-                    badge = agr.status ?: "Active"
-                )
-            }
+            // Agreements
             item {
-                Spacer(modifier = Modifier.height(12.dp))
-                Text("Work Orders", fontSize = 18.sp, fontWeight = FontWeight.Bold)
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text("Agreements Registry", fontSize = 16.sp, fontWeight = FontWeight.Bold, color = ErpTextMain)
+                    Text("Total: ${data?.agreements?.size ?: 0}", fontSize = 12.sp, color = ErpTextMuted)
+                }
             }
-            items(data?.workOrders ?: emptyList()) { wo ->
-                ListItemCard(
-                    title = "Work Order #${wo.workOrderNo ?: wo.id}",
-                    subtitle = "Issued: ${wo.issueDate ?: "N/A"} | Amount: ₹${wo.amount ?: 0.0}",
-                    badge = wo.status ?: "Issued"
-                )
+
+            if (data?.agreements.isNullOrEmpty()) {
+                item {
+                    Text("No agreements recorded.", fontSize = 13.sp, color = ErpTextMuted)
+                }
+            } else {
+                items(data!!.agreements!!) { agr ->
+                    Card(
+                        shape = RoundedCornerShape(10.dp),
+                        colors = CardDefaults.cardColors(containerColor = Color.White),
+                        border = androidx.compose.foundation.BorderStroke(1.dp, ErpBorder),
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Column(modifier = Modifier.padding(14.dp)) {
+                            Row(
+                                modifier = Modifier.fillMaxWidth(),
+                                horizontalArrangement = Arrangement.SpaceBetween
+                            ) {
+                                Text(
+                                    text = agr.agreementNo ?: "Agr #${agr.id}",
+                                    fontWeight = FontWeight.Bold,
+                                    fontSize = 15.sp,
+                                    color = ErpTextMain
+                                )
+                                Surface(
+                                    shape = RoundedCornerShape(6.dp),
+                                    color = Color(0xFFD1FAE5)
+                                ) {
+                                    Text(
+                                        text = agr.status ?: "Active",
+                                        fontSize = 11.sp,
+                                        fontWeight = FontWeight.Bold,
+                                        color = Color(0xFF065F46),
+                                        modifier = Modifier.padding(horizontal = 6.dp, vertical = 2.dp)
+                                    )
+                                }
+                            }
+                            Spacer(modifier = Modifier.height(4.dp))
+                            Text(
+                                text = "Agency: ${agr.agencyName ?: "Contractor"}",
+                                fontSize = 13.sp,
+                                color = ErpTextMuted
+                            )
+                            Spacer(modifier = Modifier.height(6.dp))
+                            Text(
+                                text = "Tendered: ₹${NumberFormat.getNumberInstance(Locale.US).format(agr.tenderedAmount ?: 0.0)}",
+                                fontSize = 14.sp,
+                                fontWeight = FontWeight.Bold,
+                                color = ErpPrimary
+                            )
+                        }
+                    }
+                }
+            }
+
+            // Work Orders
+            item {
+                Spacer(modifier = Modifier.height(10.dp))
+                Text("Work Orders", fontSize = 16.sp, fontWeight = FontWeight.Bold, color = ErpTextMain)
+            }
+
+            if (data?.workOrders.isNullOrEmpty()) {
+                item {
+                    Text("No work orders pending.", fontSize = 13.sp, color = ErpTextMuted)
+                }
+            } else {
+                items(data!!.workOrders!!) { wo ->
+                    Card(
+                        shape = RoundedCornerShape(10.dp),
+                        colors = CardDefaults.cardColors(containerColor = Color.White),
+                        border = androidx.compose.foundation.BorderStroke(1.dp, ErpBorder),
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Column(modifier = Modifier.padding(14.dp)) {
+                            Text(text = "WO #${wo.workOrderNo ?: wo.id}", fontWeight = FontWeight.Bold, fontSize = 15.sp)
+                            Text(text = "Date: ${wo.issueDate ?: "N/A"}", fontSize = 12.sp, color = ErpTextMuted)
+                            Text(text = "Amount: ₹${wo.amount ?: 0.0}", fontWeight = FontWeight.SemiBold, color = ErpSuccess)
+                        }
+                    }
+                }
             }
         }
     }
 }
 
+/* =====================================================================
+ * ADMIN MODULE SCREEN
+ * ===================================================================== */
 @Composable
 fun AdminModuleContent(apiService: ModPyPhpApiService) {
     var data by remember { mutableStateOf<AdminData?>(null) }
@@ -462,34 +1319,140 @@ fun AdminModuleContent(apiService: ModPyPhpApiService) {
         }
     }
 
-    ModuleScreenLayout(title = "System Administration", isLoading = isLoading, errorMsg = errorMsg) {
+    ModuleScreenLayout(
+        title = "Administration & Master Data",
+        subtitle = "Offices directory, agencies master & cloud database connectivity",
+        isLoading = isLoading,
+        errorMsg = errorMsg
+    ) {
         LazyColumn(verticalArrangement = Arrangement.spacedBy(10.dp)) {
-            item { Text("Offices", fontSize = 18.sp, fontWeight = FontWeight.Bold) }
-            items(data?.offices ?: emptyList()) { office ->
-                ListItemCard(
-                    title = office.name ?: "Office #${office.id}",
-                    subtitle = "Location: ${office.location ?: "N/A"}",
-                    badge = office.code ?: "CODE"
-                )
-            }
+            // Cloud Database Status Card
             item {
-                Spacer(modifier = Modifier.height(12.dp))
-                Text("Agencies", fontSize = 18.sp, fontWeight = FontWeight.Bold)
+                Card(
+                    shape = RoundedCornerShape(10.dp),
+                    colors = CardDefaults.cardColors(containerColor = ErpDeepNavy),
+                    modifier = Modifier.fillMaxWidth()
+                ) {
+                    Column(modifier = Modifier.padding(14.dp)) {
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Box(
+                                modifier = Modifier
+                                    .size(8.dp)
+                                    .clip(CircleShape)
+                                    .background(Color(0xFF10B981))
+                            )
+                            Spacer(modifier = Modifier.width(6.dp))
+                            Text("Render Cloud API Live", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 14.sp)
+                        }
+                        Spacer(modifier = Modifier.height(4.dp))
+                        Text(
+                            text = "Backend: https://modpyphp-erp.onrender.com\nDatabase: Neon Cloud PostgreSQL (us-east-2)",
+                            color = Color(0xFF94A3B8),
+                            fontSize = 11.sp
+                        )
+                    }
+                }
             }
+
+            // Offices Section
+            item {
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text("Offices Master", fontSize = 16.sp, fontWeight = FontWeight.Bold, color = ErpTextMain)
+                    Text("Total: ${data?.offices?.size ?: 0}", fontSize = 12.sp, color = ErpTextMuted)
+                }
+            }
+
+            items(data?.offices ?: emptyList()) { office ->
+                Card(
+                    shape = RoundedCornerShape(10.dp),
+                    colors = CardDefaults.cardColors(containerColor = Color.White),
+                    border = androidx.compose.foundation.BorderStroke(1.dp, ErpBorder),
+                    modifier = Modifier.fillMaxWidth()
+                ) {
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(14.dp),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Column(modifier = Modifier.weight(1f)) {
+                            Text(
+                                text = office.name ?: "Office #${office.id}",
+                                fontWeight = FontWeight.Bold,
+                                fontSize = 15.sp,
+                                color = ErpTextMain
+                            )
+                            Text(
+                                text = if (!office.location.isNullOrBlank()) office.location!! else "Main Complex",
+                                fontSize = 12.sp,
+                                color = ErpTextMuted
+                            )
+                        }
+                        Surface(
+                            shape = RoundedCornerShape(6.dp),
+                            color = Color(0xFFE0E7FF)
+                        ) {
+                            Text(
+                                text = office.code ?: "CODE",
+                                fontSize = 11.sp,
+                                fontWeight = FontWeight.Bold,
+                                color = Color(0xFF3730A3),
+                                modifier = Modifier.padding(horizontal = 8.dp, vertical = 3.dp)
+                            )
+                        }
+                    }
+                }
+            }
+
+            // Agencies Section
+            item {
+                Spacer(modifier = Modifier.height(10.dp))
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text("Agencies & Contractors", fontSize = 16.sp, fontWeight = FontWeight.Bold, color = ErpTextMain)
+                    Text("Total: ${data?.agencies?.size ?: 0}", fontSize = 12.sp, color = ErpTextMuted)
+                }
+            }
+
             items(data?.agencies ?: emptyList()) { agency ->
-                ListItemCard(
-                    title = agency.name ?: "Agency #${agency.id}",
-                    subtitle = "Contact: ${agency.contactPerson ?: "N/A"} | Email: ${agency.email ?: "N/A"}",
-                    badge = agency.gstNo ?: "GST"
-                )
+                Card(
+                    shape = RoundedCornerShape(10.dp),
+                    colors = CardDefaults.cardColors(containerColor = Color.White),
+                    border = androidx.compose.foundation.BorderStroke(1.dp, ErpBorder),
+                    modifier = Modifier.fillMaxWidth()
+                ) {
+                    Column(modifier = Modifier.padding(14.dp)) {
+                        Text(
+                            text = agency.name ?: "Agency #${agency.id}",
+                            fontWeight = FontWeight.Bold,
+                            fontSize = 15.sp,
+                            color = ErpTextMain
+                        )
+                        if (!agency.gstNo.isNullOrBlank()) {
+                            Text(text = "GST: ${agency.gstNo}", fontSize = 12.sp, color = ErpTextMuted)
+                        }
+                    }
+                }
             }
         }
     }
 }
 
+/* =====================================================================
+ * COMMON MODULE SCREEN LAYOUT
+ * ===================================================================== */
 @Composable
 fun ModuleScreenLayout(
     title: String,
+    subtitle: String,
     isLoading: Boolean,
     errorMsg: String?,
     content: @Composable () -> Unit
@@ -499,53 +1462,28 @@ fun ModuleScreenLayout(
             .fillMaxSize()
             .padding(16.dp)
     ) {
-        Text(text = title, fontSize = 22.sp, fontWeight = FontWeight.Bold)
-        Spacer(modifier = Modifier.height(12.dp))
+        Text(text = title, fontSize = 20.sp, fontWeight = FontWeight.Bold, color = ErpTextMain)
+        Text(text = subtitle, fontSize = 12.sp, color = ErpTextMuted)
+        Spacer(modifier = Modifier.height(14.dp))
 
         if (isLoading) {
             Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                CircularProgressIndicator()
+                CircularProgressIndicator(color = ErpPrimary)
             }
         } else if (errorMsg != null) {
-            Text(text = "Error: $errorMsg", color = MaterialTheme.colorScheme.error)
+            Card(
+                colors = CardDefaults.cardColors(containerColor = Color(0xFFFEE2E2)),
+                border = androidx.compose.foundation.BorderStroke(1.dp, Color(0xFFFCA5A5)),
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Column(modifier = Modifier.padding(16.dp)) {
+                    Text("Failed to load module data", fontWeight = FontWeight.Bold, color = Color(0xFFB91C1C))
+                    Spacer(modifier = Modifier.height(4.dp))
+                    Text(errorMsg, fontSize = 13.sp, color = Color(0xFF7F1D1D))
+                }
+            }
         } else {
             content()
-        }
-    }
-}
-
-@Composable
-fun ListItemCard(title: String, subtitle: String, badge: String) {
-    Card(
-        modifier = Modifier.fillMaxWidth(),
-        shape = RoundedCornerShape(10.dp),
-        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant)
-    ) {
-        Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(14.dp),
-            horizontalArrangement = Arrangement.SpaceBetween,
-            verticalAlignment = Alignment.CenterVertically
-        ) {
-            Column(modifier = Modifier.weight(1f)) {
-                Text(text = title, fontWeight = FontWeight.Bold, fontSize = 16.sp)
-                Spacer(modifier = Modifier.height(4.dp))
-                Text(text = subtitle, fontSize = 13.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
-            }
-            Spacer(modifier = Modifier.width(8.dp))
-            Surface(
-                shape = RoundedCornerShape(6.dp),
-                color = MaterialTheme.colorScheme.primaryContainer
-            ) {
-                Text(
-                    text = badge,
-                    modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp),
-                    fontSize = 12.sp,
-                    fontWeight = FontWeight.SemiBold,
-                    color = MaterialTheme.colorScheme.onPrimaryContainer
-                )
-            }
         }
     }
 }

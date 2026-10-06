@@ -7,7 +7,7 @@
 
     <application
         android:allowBackup="true"
-        android:label="ModPyPhp Office"
+        android:label="Enterprise ERP"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Material.NoActionBar"
         android:usesCleartextTraffic="true">
