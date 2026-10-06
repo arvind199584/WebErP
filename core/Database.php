@@ -19,23 +19,37 @@ class Database
     {
         $this->loadEnv();
 
-        $host     = getenv('DB_HOST')    ?: 'localhost';
-        $port     = getenv('DB_PORT')    ?: '5432';
-        $db_name  = getenv('DB_NAME')    ?: 'modpyphp';
-        $username = getenv('DB_USER')    ?: 'postgres';
-        $password = getenv('DB_PASS')    ?: 'daredevil';
-        $sslmode  = getenv('DB_SSLMODE') ?: 'disable';
+        $getEnv = function(string $key): ?string {
+            $val = getenv($key);
+            if ($val !== false && trim((string)$val) !== '') {
+                return trim((string)$val);
+            }
+            if (isset($_ENV[$key]) && trim((string)$_ENV[$key]) !== '') {
+                return trim((string)$_ENV[$key]);
+            }
+            if (isset($_SERVER[$key]) && trim((string)$_SERVER[$key]) !== '') {
+                return trim((string)$_SERVER[$key]);
+            }
+            return null;
+        };
+
+        $host     = $getEnv('DB_HOST')    ?: 'localhost';
+        $port     = $getEnv('DB_PORT')    ?: '5432';
+        $db_name  = $getEnv('DB_NAME')    ?: 'modpyphp';
+        $username = $getEnv('DB_USER')    ?: 'postgres';
+        $password = $getEnv('DB_PASS')    ?: 'daredevil';
+        $sslmode  = $getEnv('DB_SSLMODE') ?: 'disable';
 
         // Support standard cloud DATABASE_URL (Render, Neon, Supabase, Heroku)
-        $databaseUrl = getenv('DATABASE_URL');
+        $databaseUrl = $getEnv('DATABASE_URL');
         if (!empty($databaseUrl)) {
             $parsed = parse_url($databaseUrl);
             if ($parsed !== false) {
                 $host     = $parsed['host'] ?? $host;
                 $port     = isset($parsed['port']) ? (string)$parsed['port'] : $port;
                 $db_name  = isset($parsed['path']) ? ltrim($parsed['path'], '/') : $db_name;
-                $username = $parsed['user'] ?? $username;
-                $password = $parsed['pass'] ?? $password;
+                $username = isset($parsed['user']) ? urldecode($parsed['user']) : $username;
+                $password = isset($parsed['pass']) ? urldecode($parsed['pass']) : $password;
                 if (isset($parsed['query'])) {
                     parse_str($parsed['query'], $query);
                     if (isset($query['sslmode'])) {
@@ -52,7 +66,7 @@ class Database
             $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->connection->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
         } catch (PDOException $e) {
-            die("Database connection failed: " . $e->getMessage());
+            die("Database connection failed (Host: {$host}, Port: {$port}, DB: {$db_name}): " . $e->getMessage());
         }
     }
 
