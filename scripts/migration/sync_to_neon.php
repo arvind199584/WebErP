@@ -14,7 +14,20 @@ try {
     @$localPdo->exec("DEALLOCATE ALL");
 
     // 2. Connect to Neon Cloud DB
-    $neonPdo = new PDO("pgsql:host=ep-withered-wave-axase6mw-pooler.c-4.us-east-2.aws.neon.tech;port=5432;dbname=neondb;sslmode=require", 'neondb_owner', 'npg_YoD4CLZ2TQpw');
+    $neonUrl = getenv('NEON_DATABASE_URL') ?: getenv('DATABASE_URL');
+    if ($neonUrl) {
+        $p = parse_url($neonUrl);
+        $neonHost = $p['host'] ?? 'localhost';
+        $neonDb = isset($p['path']) ? ltrim($p['path'], '/') : 'neondb';
+        $neonUser = $p['user'] ?? 'neondb_owner';
+        $neonPass = $p['pass'] ?? '';
+    } else {
+        $neonHost = getenv('NEON_HOST') ?: 'ep-withered-wave-axase6mw-pooler.c-4.us-east-2.aws.neon.tech';
+        $neonDb = getenv('NEON_DB') ?: 'neondb';
+        $neonUser = getenv('NEON_USER') ?: 'neondb_owner';
+        $neonPass = getenv('NEON_PASS') ?: '';
+    }
+    $neonPdo = new PDO("pgsql:host={$neonHost};port=5432;dbname={$neonDb};sslmode=require", $neonUser, $neonPass);
     $neonPdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     @$neonPdo->exec("DEALLOCATE ALL");
 

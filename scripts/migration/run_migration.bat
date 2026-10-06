@@ -1,6 +1,9 @@
 @echo off
-set PGPASSWORD=npg_YoD4CLZ2TQpw
-set CONN=postgresql://neondb_owner:npg_YoD4CLZ2TQpw@ep-withered-wave-axase6mw-pooler.c-4.us-east-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+if "%DATABASE_URL%"=="" (
+    echo Please set DATABASE_URL or NEON_DATABASE_URL environment variable before running.
+    exit /b 1
+)
+set CONN=%DATABASE_URL%
 
 echo Step 1: Truncating all tables...
 "C:\Program Files\PostgreSQL\18\bin\psql.exe" "%CONN%" -c "DO $$ DECLARE r RECORD; BEGIN FOR r IN SELECT tablename FROM pg_tables WHERE schemaname = 'public' LOOP EXECUTE 'TRUNCATE TABLE public.' || quote_ident(r.tablename) || ' CASCADE'; END LOOP; END $$;" > "F:\Research\ModPyPhp\psql_final2.log" 2>&1

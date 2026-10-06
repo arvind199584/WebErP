@@ -8,12 +8,12 @@ import psycopg2
 import io
 import sys
 
+import os
+
 # ── Connection strings ──────────────────────────────────────────────────────
-LOCAL_DSN = "host=localhost port=5432 dbname=modpyphp user=postgres password=daredevil"
-NEON_DSN  = (
-    "postgresql://neondb_owner:npg_YoD4CLZ2TQpw"
-    "@ep-withered-wave-axase6mw-pooler.c-4.us-east-2.aws.neon.tech"
-    "/neondb?sslmode=require&channel_binding=require"
+LOCAL_DSN = os.getenv("LOCAL_DATABASE_URL", "host=localhost port=5432 dbname=modpyphp user=postgres password=daredevil")
+NEON_DSN  = os.getenv("NEON_DATABASE_URL") or os.getenv("DATABASE_URL") or (
+    "postgresql://neondb_owner@ep-withered-wave-axase6mw-pooler.c-4.us-east-2.aws.neon.tech/neondb?sslmode=require"
 )
 
 # ── Table population order (user-specified + full dependency chain) ──────────

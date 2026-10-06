@@ -41,6 +41,7 @@ build/
 */*/*/build/
 *.apk
 *.aab
+apk_dist/
 local.properties
 .cxx/
 captures/

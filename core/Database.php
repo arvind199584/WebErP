@@ -66,7 +66,14 @@ class Database
             $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->connection->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
         } catch (PDOException $e) {
-            die("Database connection failed (Host: {$host}, Port: {$port}, DB: {$db_name}): " . $e->getMessage());
+            error_log("Database connection failed: " . $e->getMessage());
+            $isDebug = ($getEnv('APP_DEBUG') === 'true');
+            if ($isDebug) {
+                die("Database connection failed (Host: {$host}, Port: {$port}, DB: {$db_name}): " . $e->getMessage());
+            } else {
+                http_response_code(500);
+                die("Database connection error. Please check server logs or verify your DATABASE_URL environment variable.");
+            }
         }
     }
 

@@ -24,8 +24,9 @@ $action = $_GET['action'] ?? $_POST['action'] ?? 'dashboard';
 try {
     $db = Database::getInstance()->getConnection();
 } catch (Exception $e) {
+    error_log("API Database connection failed: " . $e->getMessage());
     http_response_code(500);
-    echo json_encode(['error' => 'Database connection failed: ' . $e->getMessage()]);
+    echo json_encode(['error' => 'Database connection error. Please contact administrator.']);
     exit;
 }
 

@@ -15,9 +15,9 @@ use Exception;
 class CloudSyncDiffService
 {
     private PDO $localDb;
-    private string $neonDsn = "pgsql:host=ep-withered-wave-axase6mw-pooler.c-4.us-east-2.aws.neon.tech;port=5432;dbname=neondb;sslmode=require";
-    private string $neonUser = "neondb_owner";
-    private string $neonPass = "npg_YoD4CLZ2TQpw";
+    private string $neonDsn = "";
+    private string $neonUser = "";
+    private string $neonPass = "";
 
     private array $tablesToAudit = [
         'attendance_records', 'turf_consumption_log', 'water_log', 'bills',
@@ -27,6 +27,31 @@ class CloudSyncDiffService
     public function __construct()
     {
         $this->localDb = Database::getInstance()->getConnection();
+
+        $neonUrl = getenv('NEON_DATABASE_URL') ?: getenv('DATABASE_URL');
+        if (!empty($neonUrl)) {
+            $parsed = parse_url($neonUrl);
+            $host = $parsed['host'] ?? 'ep-withered-wave-axase6mw-pooler.c-4.us-east-2.aws.neon.tech';
+            $port = $parsed['port'] ?? '5432';
+            $dbname = isset($parsed['path']) ? ltrim($parsed['path'], '/') : 'neondb';
+            $user = $parsed['user'] ?? 'neondb_owner';
+            $pass = $parsed['pass'] ?? '';
+            $sslmode = 'require';
+            if (isset($parsed['query'])) {
+                parse_str($parsed['query'], $q);
+                if (isset($q['sslmode'])) $sslmode = $q['sslmode'];
+            }
+            $this->neonDsn = "pgsql:host={$host};port={$port};dbname={$dbname};sslmode={$sslmode}";
+            $this->neonUser = $user;
+            $this->neonPass = $pass;
+        } else {
+            $neonHost = getenv('NEON_HOST') ?: 'ep-withered-wave-axase6mw-pooler.c-4.us-east-2.aws.neon.tech';
+            $neonPort = getenv('NEON_PORT') ?: '5432';
+            $neonDb   = getenv('NEON_DB') ?: 'neondb';
+            $this->neonDsn = "pgsql:host={$neonHost};port={$neonPort};dbname={$neonDb};sslmode=require";
+            $this->neonUser = getenv('NEON_USER') ?: 'neondb_owner';
+            $this->neonPass = getenv('NEON_PASS') ?: '';
+        }
     }
 
     private function getNeonConnection(): PDO
