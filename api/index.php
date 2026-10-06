@@ -96,6 +96,22 @@ switch ($action) {
             $stmt = $db->query("SELECT COUNT(*) FROM users");
             $stats['users'] = (int)$stmt->fetchColumn();
 
+            // Workshop machines count
+            try {
+                $stmt = $db->query("SELECT COUNT(*) FROM turf_machines");
+                $stats['machines'] = (int)$stmt->fetchColumn();
+            } catch (Exception $ex) {
+                $stats['machines'] = 0;
+            }
+
+            // Store inventory items count
+            try {
+                $stmt = $db->query("SELECT COUNT(*) FROM turf_inventory_items");
+                $stats['inventory'] = (int)$stmt->fetchColumn();
+            } catch (Exception $ex) {
+                $stats['inventory'] = 0;
+            }
+
             // Recent activity log
             $stmt = $db->query("SELECT id, table_name, action, changed_at FROM activity_logs ORDER BY changed_at DESC LIMIT 5");
             $stats['recentActivity'] = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -163,6 +179,40 @@ switch ($action) {
                     'agreements' => $agreements,
                     'workOrders' => $workOrders,
                     'supplyOrders' => $supplyOrders
+                ]
+            ]);
+        } catch (Exception $e) {
+            http_response_code(500);
+            echo json_encode(['error' => $e->getMessage()]);
+        }
+        break;
+
+    case 'workshop':
+        // Machines fleet, run duration, status
+        try {
+            $machines = $db->query("SELECT m.id, m.name, COALESCE(m.make, 'Standard') as make, m.runduration, COALESCE(m.status, 'Working') as status, o.officename as office_name FROM turf_machines m LEFT JOIN office o ON m.officeid = o.officeid ORDER BY m.name ASC LIMIT 50")->fetchAll(PDO::FETCH_ASSOC);
+            
+            echo json_encode([
+                'success' => true,
+                'data' => [
+                    'machines' => $machines
+                ]
+            ]);
+        } catch (Exception $e) {
+            http_response_code(500);
+            echo json_encode(['error' => $e->getMessage()]);
+        }
+        break;
+
+    case 'store':
+        // Store Inventory catalog & categories
+        try {
+            $items = $db->query("SELECT i.id, i.description, COALESCE(i.ac_unit, 'Unit') as ac_unit, COALESCE(c.name, 'General') as category_name FROM turf_inventory_items i LEFT JOIN turf_inventory_categories c ON i.category_id = c.id ORDER BY i.description ASC LIMIT 60")->fetchAll(PDO::FETCH_ASSOC);
+            
+            echo json_encode([
+                'success' => true,
+                'data' => [
+                    'items' => $items
                 ]
             ]);
         } catch (Exception $e) {
