@@ -46,25 +46,30 @@ switch ($action) {
             exit;
         }
 
-        $userService = new UserService();
-        $user = $userService->authenticate($username, $password);
+        try {
+            $userService = new UserService();
+            $user = $userService->authenticate($username, $password);
 
-        if ($user) {
-            echo json_encode([
-                'success' => true,
-                'user' => [
-                    'id' => $user->getId(),
-                    'username' => $user->getUsrname(),
-                    'firstName' => $user->getFirstname(),
-                    'lastName' => $user->getLastname(),
-                    'email' => $user->getEmail(),
-                    'role' => $user->getRole(),
-                    'officeId' => $user->getOfficeid()
-                ]
-            ]);
-        } else {
-            http_response_code(401);
-            echo json_encode(['error' => 'Invalid username or password']);
+            if ($user) {
+                echo json_encode([
+                    'success' => true,
+                    'user' => [
+                        'id' => $user->id,
+                        'username' => $user->usrname,
+                        'firstName' => $user->firstname,
+                        'lastName' => $user->lastname,
+                        'email' => $user->email,
+                        'role' => $user->role,
+                        'officeId' => $user->officeid
+                    ]
+                ]);
+            } else {
+                http_response_code(401);
+                echo json_encode(['error' => 'Invalid username or password']);
+            }
+        } catch (Throwable $e) {
+            http_response_code(500);
+            echo json_encode(['error' => 'Authentication error: ' . $e->getMessage()]);
         }
         break;
 
