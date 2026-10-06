@@ -25,7 +25,7 @@ try {
     $db = Database::getInstance()->getConnection();
 } catch (Exception $e) {
     http_response_code(500);
-    echo json_encode(['error' => 'Database connection failed: ' . $e.getMessage()]);
+    echo json_encode(['error' => 'Database connection failed: ' . $e->getMessage()]);
     exit;
 }
 
@@ -105,8 +105,8 @@ switch ($action) {
     case 'finance':
         // Budget & Bills summary
         try {
-            $budgets = $db->query("SELECT b.id, o.name as office_name, b.head, b.sub_head, b.allocated_amount, b.financial_year FROM budget b LEFT JOIN office o ON b.officeid = o.id ORDER BY b.id DESC LIMIT 20")->fetchAll(PDO::FETCH_ASSOC);
-            $bills = $db->query("SELECT bi.id, o.name as office_name, bi.bill_no, bi.bill_date, bi.net_amount, bi.status FROM bills bi LEFT JOIN office o ON bi.officeid = o.id ORDER BY bi.id DESC LIMIT 20")->fetchAll(PDO::FETCH_ASSOC);
+            $budgets = $db->query("SELECT b.id, o.officename as office_name, b.head, b.sub_head, b.allocated_amount, b.financial_year FROM budget b LEFT JOIN office o ON b.officeid = o.officeid ORDER BY b.id DESC LIMIT 20")->fetchAll(PDO::FETCH_ASSOC);
+            $bills = $db->query("SELECT bi.id, o.officename as office_name, COALESCE(bi.office_bill_no, bi.agency_bill_no, CAST(bi.id AS VARCHAR)) as bill_no, bi.bill_date, bi.net_amount, bi.status FROM bills bi LEFT JOIN office o ON bi.officeid = o.officeid ORDER BY bi.id DESC LIMIT 20")->fetchAll(PDO::FETCH_ASSOC);
 
             echo json_encode([
                 'success' => true,
@@ -124,14 +124,19 @@ switch ($action) {
     case 'hr':
         // Employees & Attendance summary
         try {
-            $employees = $db->query("SELECT e.id, o.name as office_name, e.full_name, e.designation, e.mobile, e.status FROM employees e LEFT JOIN office o ON e.officeid = o.id ORDER BY e.full_name ASC LIMIT 30")->fetchAll(PDO::FETCH_ASSOC);
-            $attendanceCount = $db->query("SELECT COUNT(*) FROM attendance_records WHERE attendance_date = CURRENT_DATE")->fetchColumn();
+            $employees = $db->query("SELECT e.id, o.officename as office_name, e.full_name, e.designation, 'Active' as status FROM employees e LEFT JOIN office o ON e.officeid = o.officeid ORDER BY e.full_name ASC LIMIT 30")->fetchAll(PDO::FETCH_ASSOC);
+            $attendanceCount = 0;
+            try {
+                $attendanceCount = (int)$db->query("SELECT COUNT(*) FROM attendance_records WHERE attendance_date = CURRENT_DATE")->fetchColumn();
+            } catch (Exception $ex) {
+                $attendanceCount = 0;
+            }
             
             echo json_encode([
                 'success' => true,
                 'data' => [
                     'employees' => $employees,
-                    'todayAttendanceCount' => (int)$attendanceCount
+                    'todayAttendanceCount' => $attendanceCount
                 ]
             ]);
         } catch (Exception $e) {
@@ -144,8 +149,8 @@ switch ($action) {
         // Agreements, Work Orders, Supply Orders
         try {
             $agreements = $db->query("SELECT a.id, a.agreement_no, ag.name as agency_name, a.tendered_amount, a.status FROM agreements a LEFT JOIN agencies ag ON a.agency_id = ag.id ORDER BY a.id DESC LIMIT 20")->fetchAll(PDO::FETCH_ASSOC);
-            $workOrders = $db->query("SELECT wo.id, wo.work_order_no, wo.amount, wo.issue_date, wo.status FROM work_orders wo ORDER BY wo.id DESC LIMIT 20")->fetchAll(PDO::FETCH_ASSOC);
-            $supplyOrders = $db->query("SELECT so.id, so.order_no, so.total_amount, so.issue_date, so.status FROM supply_orders so ORDER BY so.id DESC LIMIT 20")->fetchAll(PDO::FETCH_ASSOC);
+            $workOrders = $db->query("SELECT wo.id, wo.work_order_no, wo.tendered_amount as amount, wo.created_at as issue_date, 'Active' as status FROM work_orders wo ORDER BY wo.id DESC LIMIT 20")->fetchAll(PDO::FETCH_ASSOC);
+            $supplyOrders = $db->query("SELECT so.id, so.supply_order_no as order_no, so.tendered_amount as total_amount, so.created_at as issue_date, 'Active' as status FROM supply_orders so ORDER BY so.id DESC LIMIT 20")->fetchAll(PDO::FETCH_ASSOC);
 
             echo json_encode([
                 'success' => true,
@@ -164,8 +169,8 @@ switch ($action) {
     case 'admin':
         // Offices & Agencies
         try {
-            $offices = $db->query("SELECT id, name, location, code FROM office ORDER BY name ASC")->fetchAll(PDO::FETCH_ASSOC);
-            $agencies = $db->query("SELECT id, name, contact_person, email, gst_no FROM agencies ORDER BY name ASC LIMIT 20")->fetchAll(PDO::FETCH_ASSOC);
+            $offices = $db->query("SELECT officeid as id, officename as name, address as location, officecode as code FROM office ORDER BY officename ASC")->fetchAll(PDO::FETCH_ASSOC);
+            $agencies = $db->query("SELECT id, name, pan_no as contact_person, gst_no FROM agencies ORDER BY name ASC LIMIT 20")->fetchAll(PDO::FETCH_ASSOC);
 
             echo json_encode([
                 'success' => true,
