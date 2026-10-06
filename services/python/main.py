@@ -15,15 +15,39 @@ import pandas as pd
 # Load shared .env from project root
 load_dotenv(os.path.join(os.path.dirname(__file__), '../../.env'))
 
-# --- Database Configuration (reads from .env) ---
+import urllib.parse
+
+# --- Database Configuration (reads from .env or DATABASE_URL) ---
 DB_CONFIG = {
-    "host":     os.getenv("DB_HOST",    "ep-withered-wave-axase6mw-pooler.c-4.us-east-2.aws.neon.tech"),
+    "host":     os.getenv("DB_HOST",    "localhost"),
     "port":     int(os.getenv("DB_PORT", 5432)),
-    "user":     os.getenv("DB_USER",    "neondb_owner"),
-    "password": os.getenv("DB_PASS",    "npg_YoD4CLZ2TQpw"),
-    "dbname":   os.getenv("DB_NAME",    "neondb"),
-    "sslmode":  os.getenv("DB_SSLMODE", "require"),
+    "user":     os.getenv("DB_USER",    "postgres"),
+    "password": os.getenv("DB_PASS",    "daredevil"),
+    "dbname":   os.getenv("DB_NAME",    "modpyphp"),
+    "sslmode":  os.getenv("DB_SSLMODE", "disable"),
 }
+
+# Support standard cloud DATABASE_URL (Render, Neon, Supabase)
+db_url = os.getenv("DATABASE_URL")
+if db_url:
+    try:
+        parsed_url = urllib.parse.urlparse(db_url)
+        if parsed_url.hostname:
+            DB_CONFIG["host"] = parsed_url.hostname
+        if parsed_url.port:
+            DB_CONFIG["port"] = int(parsed_url.port)
+        if parsed_url.username:
+            DB_CONFIG["user"] = parsed_url.username
+        if parsed_url.password:
+            DB_CONFIG["password"] = parsed_url.password
+        if parsed_url.path and parsed_url.path.strip('/'):
+            DB_CONFIG["dbname"] = parsed_url.path.strip('/')
+        if parsed_url.query:
+            q = urllib.parse.parse_qs(parsed_url.query)
+            if 'sslmode' in q:
+                DB_CONFIG["sslmode"] = q['sslmode'][0]
+    except Exception as e:
+        print(f"[warning] Failed to parse DATABASE_URL in main.py: {e}")
 
 app = Flask(__name__)
 
@@ -143,7 +167,7 @@ def get_attendance_grid():
         conn.close()
 
 if __name__ == '__main__':
-    # Run on a different port than PHP
+    # Run on an internal microservice port (default 5001)
     host = os.getenv('FLASK_HOST', '0.0.0.0')
-    port = int(os.getenv('PORT', 5001))
+    port = int(os.getenv('PYTHON_ATTENDANCE_PORT', 5001))
     app.run(host=host, port=port, debug=False)

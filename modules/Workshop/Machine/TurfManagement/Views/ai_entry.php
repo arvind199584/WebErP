@@ -106,8 +106,8 @@ document.addEventListener('DOMContentLoaded', function() {
         loader.style.display = 'block';
 
         try {
-            // Step 1: Send command to AI to get structured action object
-            const nlpResponse = await fetch('https://localhost:5000/nlp-action', { // New endpoint
+            // Step 1: Send command to AI to get structured action object (via PHP API proxy)
+            const nlpResponse = await fetch('/api/index.php?action=nlp-action', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({

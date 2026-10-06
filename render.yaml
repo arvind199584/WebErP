@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: modpyphp-erp
+    runtime: docker
+    plan: free # Change to starter/standard based on your workload needs
+    region: oregon # Available: oregon, frankfurt, ohio, singapore
+    branch: main
+    autoDeploy: true
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: DB_SSLMODE
+        value: require
+      - key: DATABASE_URL
+        sync: false # Enter your external PostgreSQL connection string (e.g. from Neon, Supabase)

@@ -95,6 +95,29 @@ DB_CONFIG = {
     "sslmode":  os.getenv("DB_SSLMODE", "disable"),
 }
 
+# Support standard cloud DATABASE_URL (Render, Neon, Supabase)
+db_url = os.getenv("DATABASE_URL")
+if db_url:
+    try:
+        from urllib.parse import urlparse, parse_qs
+        parsed_url = urlparse(db_url)
+        if parsed_url.hostname:
+            DB_CONFIG["host"] = parsed_url.hostname
+        if parsed_url.port:
+            DB_CONFIG["port"] = str(parsed_url.port)
+        if parsed_url.username:
+            DB_CONFIG["user"] = parsed_url.username
+        if parsed_url.password:
+            DB_CONFIG["password"] = parsed_url.password
+        if parsed_url.path and parsed_url.path.strip('/'):
+            DB_CONFIG["dbname"] = parsed_url.path.strip('/')
+        if parsed_url.query:
+            q = parse_qs(parsed_url.query)
+            if 'sslmode' in q:
+                DB_CONFIG["sslmode"] = q['sslmode'][0]
+    except Exception as e:
+        print(f"[warning] Failed to parse DATABASE_URL in core_nlp.py: {e}")
+
 # Tables the LLM must never query (enforced in safety check)
 SENSITIVE_TABLES = {
     'USERS', 'PENDING_TRAINING', 'NLP_KNOWLEDGE_BASE',

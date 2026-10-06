@@ -85,7 +85,7 @@ EXPOSE 8000 10000 5000 5001
 
 # Healthcheck to verify PHP web server is responding (supports dynamic $PORT)
 HEALTHCHECK --interval=30s --timeout=5s --start-period=15s --retries=3 \
-    CMD sh -c "curl -f http://localhost:\${PORT:-8000}/ || exit 1"
+    CMD sh -c "curl -fL http://localhost:\${PORT:-8000}/ || exit 1"
 
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 CMD ["supervisord"]

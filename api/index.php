@@ -11,6 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit;
 }
 
+require_once __DIR__ . '/../vendor/autoload.php';
 require_once __DIR__ . '/../core/Database.php';
 require_once __DIR__ . '/../modules/Superadmin/Users/Services/UserService.php';
 
@@ -176,6 +177,23 @@ switch ($action) {
         } catch (Exception $e) {
             http_response_code(500);
             echo json_encode(['error' => $e->getMessage()]);
+        }
+        break;
+
+    case 'nlp-action':
+        try {
+            $client = new \GuzzleHttp\Client(['verify' => false]);
+            $rawBody = file_get_contents('php://input');
+            $response = $client->post('https://127.0.0.1:5000/nlp-action', [
+                'body' => $rawBody,
+                'headers' => ['Content-Type' => 'application/json'],
+                'timeout' => 45.0
+            ]);
+            http_response_code($response->getStatusCode());
+            echo $response->getBody()->getContents();
+        } catch (Exception $e) {
+            http_response_code(500);
+            echo json_encode(['error' => 'AI Brain Proxy Error: ' . $e->getMessage()]);
         }
         break;
 
