@@ -124,11 +124,7 @@ class LogService {
 
         $this->logModel->beginTransaction();
         try {
-            $createdCount = 0;
-            foreach ($sanitizedLogs as $cleanData) {
-                $this->logModel->createLog($cleanData);
-                $createdCount++;
-            }
+            $createdCount = $this->logModel->createBulkLogs($sanitizedLogs);
             $this->logModel->commit();
             return $createdCount;
         } catch (PDOException $e) {

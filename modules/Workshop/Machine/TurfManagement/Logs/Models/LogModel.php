@@ -133,6 +133,28 @@ class LogModel extends BaseModel {
         return $this->executeInsert($sql, $data);
     }
 
+    public function createBulkLogs(array $logs): int {
+        if (empty($logs)) {
+            return 0;
+        }
+        $sql = "INSERT INTO {$this->table} (officeid, machine_id, log_date, fuel_consumed_qty, running_hours, recorded_by)
+                VALUES (:officeid, :machine_id, :log_date, :fuel_consumed_qty, :running_hours, :operator)";
+        $stmt = $this->db->prepare($sql);
+        $count = 0;
+        foreach ($logs as $data) {
+            $stmt->execute([
+                'officeid'          => $data['officeid'],
+                'machine_id'        => $data['machine_id'],
+                'log_date'          => $data['log_date'],
+                'fuel_consumed_qty' => $data['fuel_consumed_qty'],
+                'running_hours'     => $data['running_hours'],
+                'operator'          => $data['operator']
+            ]);
+            $count++;
+        }
+        return $count;
+    }
+
     public function updateLogQuick(int $id, ?int $officeId, array $data): bool {
         $sql = "UPDATE {$this->table} SET
                     machine_id = :machine_id,

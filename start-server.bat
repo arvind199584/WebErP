@@ -1,5 +1,6 @@
 @echo off
 setlocal
+cd /d "%~dp0"
 
 echo ========================================================
 echo Starting ModPyPhp Application Server
@@ -87,6 +88,11 @@ goto pg_done
 echo [OK] PostgreSQL started successfully and is accepting connections on port 5432.
 
 :pg_done
+rem Ensure PostgreSQL bin directory is in PATH for PHP pgsql/pdo_pgsql extensions
+if exist "C:\Program Files\PostgreSQL\18\bin" set "PATH=%PATH%;C:\Program Files\PostgreSQL\18\bin"
+if exist "C:\Program Files\PostgreSQL\16\bin" set "PATH=%PATH%;C:\Program Files\PostgreSQL\16\bin"
+if exist "C:\Program Files\PostgreSQL\15\bin" set "PATH=%PATH%;C:\Program Files\PostgreSQL\15\bin"
+if exist "C:\PostgreSQL\bin" set "PATH=%PATH%;C:\PostgreSQL\bin"
 
 rem --- 3. Check for PHP installation ---
 where php >nul 2>nul
@@ -228,7 +234,7 @@ echo Starting all servers...
 echo ========================================================
 
 echo Starting PHP Web Server on http://0.0.0.0:8000 (Logs: php_server.log)...
-start "PHP Web Server" /B php -c php.ini -S 0.0.0.0:8000 > php_server.log 2>nul
+start "PHP Web Server" /B php -c php.ini -S 0.0.0.0:8000 > php_server.log 2>&1
 
 echo Starting Python AI Brain on http://localhost:5000 (Logs: python_server.log)...
 start "Python AI Brain" /B .venv_uv\Scripts\python.exe modules/AI_and_Tools/AIML/Python/brain.py > python_server.log 2>nul

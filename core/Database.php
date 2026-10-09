@@ -72,9 +72,14 @@ class Database
         $dsn = "pgsql:host={$host};port={$port};dbname={$db_name};sslmode={$sslmode}";
 
         try {
-            $this->connection = new PDO($dsn, $username, $password);
-            $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $this->connection->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+            $options = [
+                PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+                // Required for cloud PostgreSQL connection poolers (Neon, Supabase, PgBouncer)
+                // in transaction pooling mode to prevent prepared statement DEALLOCATE errors
+                PDO::ATTR_EMULATE_PREPARES   => true,
+            ];
+            $this->connection = new PDO($dsn, $username, $password, $options);
         } catch (PDOException $e) {
             error_log("Database connection failed ({$db_name}): " . $e->getMessage());
             $isDebug = ($getEnv('APP_DEBUG') === 'true');
