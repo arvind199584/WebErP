@@ -15,7 +15,7 @@ class ServicingController extends BaseController {
     private $machineService;
 
     public function __construct() {
-        parent::__construct('TurfManagement');
+        parent::__construct('Workshop/Machine/TurfManagement');
         $this->servicingService = new ServicingService();
         $this->machineService = new MachineService();
     }

@@ -21,7 +21,7 @@ class MachineController extends BaseController {
     protected $officeService;
 
     public function __construct() {
-        parent::__construct('TurfManagement');
+        parent::__construct('Workshop/Machine/TurfManagement');
         $this->machineService = new MachineService();
         $this->inventoryItemService = new InventoryItemService();
         $this->sparePartService = new SparePartService();

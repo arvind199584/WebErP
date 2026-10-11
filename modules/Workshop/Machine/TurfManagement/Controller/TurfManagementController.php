@@ -8,7 +8,7 @@ use App\Core\BaseController;
 class TurfManagementController extends BaseController {
 
     public function __construct() {
-        parent::__construct('TurfManagement');
+        parent::__construct('Workshop/Machine/TurfManagement');
     }
 
     public function handleRequest(): void {

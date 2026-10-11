@@ -16,13 +16,18 @@ class PermissionManager
         return [
             // --- Universal Actions ---
             'list' => $read_only,
+            'index' => $read_only,
             'status' => $read_only,
             'showCreateForm' => $user_plus,
             'showEditForm' => $user_plus,
+            'edit' => $user_plus,
             'create' => $user_plus,
             'createLogs' => $user_plus,
             'validateStagedLog' => $user_plus,
             'createBulkReceipt' => $user_plus,
+            'createBulkIndent' => $user_plus,
+            'import' => $user_plus,
+            'exportTemplate' => $read_only,
             'update' => $manager_plus,
             'delete' => $superuser_only,
             'editByDate' => $manager_plus,

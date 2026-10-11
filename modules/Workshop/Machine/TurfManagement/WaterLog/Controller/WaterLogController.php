@@ -23,7 +23,7 @@ class WaterLogController extends BaseController
 
     public function __construct()
     {
-        parent::__construct('TurfManagement');
+        parent::__construct('Workshop/Machine/TurfManagement');
         $this->waterLogService = new WaterLogService();
     }
 
@@ -68,21 +68,47 @@ class WaterLogController extends BaseController
 
     private function list(): void
     {
-        $logs = $this->waterLogService->getAll((int)$this->currentUser['officeid']);
-        $this->render(__DIR__ . '/../Views/index.php', ['logs' => $logs]);
+        $userRole = strtolower($this->currentUser['role'] ?? 'user');
+        $officeId = ($userRole === 'superuser') ? null : (int)$this->currentUser['officeid'];
+        $logs = $this->waterLogService->getAll($officeId);
+        $this->render(__DIR__ . '/../Views/index.php', [
+            'logs' => $logs,
+            'currentUser' => $this->currentUser
+        ]);
     }
 
     private function create(): void
     {
+        $userRole = strtolower($this->currentUser['role'] ?? 'user');
+        $userOfficeId = (int)$this->currentUser['officeid'];
+
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $dto = WaterLogDTO::fromRequest($_POST, (int)$this->currentUser['officeid']);
+            $submissionOfficeId = ($userRole === 'superuser') ? (int)($_POST['office_id'] ?? 0) : $userOfficeId;
+            if (empty($submissionOfficeId)) {
+                throw new Exception("Office ID is required.");
+            }
+            $dto = WaterLogDTO::fromRequest($_POST, $submissionOfficeId);
             $dto->validate();
             $this->waterLogService->create($dto);
             $_SESSION['message'] = 'Log created successfully!';
             header('Location: ?action=list');
             exit;
         }
-        $this->render(__DIR__ . '/../Views/create.php');
+
+        $offices = [];
+        if ($userRole === 'superuser') {
+            require_once __DIR__ . '/../../../../../../modules/Superadmin/Office/Services/OfficeService.php';
+            $officeService = new \App\Modules\Superadmin\Office\Services\OfficeService();
+            $officeDTOs = $officeService->getAllOffices();
+            foreach ($officeDTOs as $dto) {
+                $offices[] = ['officeid' => $dto->Officeid, 'officename' => $dto->OfficeName];
+            }
+        }
+
+        $this->render(__DIR__ . '/../Views/create.php', [
+            'offices' => $offices,
+            'userRole' => $userRole
+        ]);
     }
 
     private function edit(): void

@@ -112,7 +112,9 @@ class RepairController extends BaseController {
     private function createRepair(string $userRole, int $userOfficeId): void {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $data = $_POST;
-            $officeId = ($userRole === 'superuser') ? (int)($data['office_id'] ?? $userOfficeId) : $userOfficeId;
+            $machineId = (int)($data['machine_id'] ?? 0);
+            $machine = $this->machineService->getMachineById($machineId, ($userRole === 'superuser') ? null : $userOfficeId);
+            $officeId = ($userRole === 'superuser') ? (int)($data['office_id'] ?? ($machine['officeid'] ?? $userOfficeId)) : $userOfficeId;
 
             $items = [];
             if (!empty($data['items_json'])) {

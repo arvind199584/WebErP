@@ -10,6 +10,23 @@
     <!-- Manual Entry Form -->
     <form action="?action=create" method="POST">
         <?php echo \App\Core\CSRFManager::getTokenInput(); ?>
+        <?php if (!empty($userRole) && $userRole === 'superuser'): ?>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="office_id" class="form-label"><strong>Office</strong> <span class="text-danger">*</span></label>
+                    <select id="office_id" name="office_id" class="form-select" required>
+                        <option value="">-- Select Office --</option>
+                        <?php if (!empty($offices)): ?>
+                            <?php foreach ($offices as $office): ?>
+                                <option value="<?php echo htmlspecialchars((string)$office['officeid']); ?>">
+                                    <?php echo htmlspecialchars($office['officename']); ?>
+                                </option>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                    </select>
+                </div>
+            </div>
+        <?php endif; ?>
         <div class="row">
             <div class="col-md-4">
                 <div class="mb-3">

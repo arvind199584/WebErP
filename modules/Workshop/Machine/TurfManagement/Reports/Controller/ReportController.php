@@ -18,7 +18,7 @@ class ReportController extends BaseController {
     protected $machineService;
 
     public function __construct() {
-        parent::__construct('TurfManagement');
+        parent::__construct('Workshop/Machine/TurfManagement');
         $this->reportService = new ReportService();
         $this->officeService = new OfficeService();
         $this->machineService = new MachineService();

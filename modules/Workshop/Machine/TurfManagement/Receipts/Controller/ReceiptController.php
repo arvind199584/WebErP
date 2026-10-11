@@ -26,7 +26,7 @@ class ReceiptController extends BaseController {
     private $officeService;
 
     public function __construct() {
-        parent::__construct('TurfManagement');
+        parent::__construct('Workshop/Machine/TurfManagement');
         $this->receiptService = new ReceiptService();
         $this->inventoryItemService = new InventoryItemService();
         $this->sparePartService = new SparePartService();

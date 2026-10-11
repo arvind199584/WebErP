@@ -19,7 +19,7 @@ class IndentController extends BaseController {
     private $officeService;
 
     public function __construct() {
-        parent::__construct('TurfManagement');
+        parent::__construct('Workshop/Machine/TurfManagement');
         $this->indentService = new IndentService();
         $this->inventoryItemService = new InventoryItemService();
         $this->officeService = new OfficeService();
