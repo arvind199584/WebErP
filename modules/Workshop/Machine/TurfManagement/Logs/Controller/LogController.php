@@ -96,15 +96,7 @@ class LogController extends BaseController {
                     throw new Exception("Unknown action requested: " . htmlspecialchars($action));
             }
         } catch (Exception $e) {
-            if ($this->isAjaxRequest()) {
-                http_response_code(500);
-                header('Content-Type: application/json');
-                echo json_encode(['error' => $e->getMessage()]);
-            } else {
-                $_SESSION['error'] = $e->getMessage();
-                header('Location: ?action=list');
-            }
-            exit;
+            $this->handleException($e, $action, 'list');
         }
     }
 

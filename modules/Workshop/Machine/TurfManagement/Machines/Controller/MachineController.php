@@ -70,14 +70,7 @@ class MachineController extends BaseController {
                     throw new Exception("Unknown action requested: " . htmlspecialchars($action));
             }
         } catch (Exception $e) {
-            if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) === 'xmlhttprequest') {
-                http_response_code(500);
-                echo "Error: " . htmlspecialchars($e->getMessage());
-            } else {
-                $_SESSION['error'] = $e->getMessage();
-                header('Location: ?action=list');
-            }
-            exit;
+            $this->handleException($e, $action, 'list');
         }
     }
 

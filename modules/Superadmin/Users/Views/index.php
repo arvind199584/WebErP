@@ -86,11 +86,15 @@
                         <td><?= htmlspecialchars($user['officename']) ?></td>
                         <td><?= htmlspecialchars($user['role']) ?></td>
                         <td class="actions">
-                            <a href="?action=showEditForm&id=<?= $user['id'] ?>" class="btn btn-edit">Edit</a>
-                            <form action="?action=delete&id=<?= $user['id'] ?>" method="POST" onsubmit="return confirm('Are you sure?');">
-                                <?= \App\Core\CSRFManager::getTokenInput() ?>
-                                <button type="submit" class="btn btn-delete">Delete</button>
-                            </form>
+                            <?php if ((int)$user['id'] === (int)($currentUser['id'] ?? 0)): ?>
+                                <span class="badge bg-secondary text-white py-1 px-2" style="font-size: 0.8rem; border-radius: 4px;">You (Logged In)</span>
+                            <?php else: ?>
+                                <a href="?action=showEditForm&id=<?= $user['id'] ?>" class="btn btn-edit">Edit</a>
+                                <form action="?action=delete&id=<?= $user['id'] ?>" method="POST" onsubmit="return confirm('Are you sure you want to delete user: <?= htmlspecialchars($user['usrname']) ?>?');">
+                                    <?= \App\Core\CSRFManager::getTokenInput() ?>
+                                    <button type="submit" class="btn btn-delete">Delete</button>
+                                </form>
+                            <?php endif; ?>
                         </td>
                     </tr>
                 <?php endforeach; ?>

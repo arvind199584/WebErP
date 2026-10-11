@@ -59,9 +59,7 @@ class ServicingController extends BaseController {
                     throw new Exception("Unknown action requested: " . htmlspecialchars($action));
             }
         } catch (Exception $e) {
-            $_SESSION['error'] = $e->getMessage();
-            header('Location: ?action=list');
-            exit;
+            $this->handleException($e, $action, 'list');
         }
     }
 

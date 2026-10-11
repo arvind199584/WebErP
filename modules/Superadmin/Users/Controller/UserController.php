@@ -29,7 +29,7 @@ class UserController extends BaseController
 
     public function handleRequest(): void
     {
-        $action = $_GET['action'] ?? 'login';
+        $action = $_GET['action'] ?? ($this->currentUser ? 'list' : 'login');
 
         try {
             // Only check permissions for actions OTHER than login, logout, guest_login, reset_demo
@@ -56,7 +56,6 @@ class UserController extends BaseController
                     throw new Exception("Unknown action requested.");
             }
         } catch (Exception $e) {
-            $_SESSION['error'] = $e->getMessage();
             if ($action === 'login') {
                 $noticeModel = new NoticeboardModel();
                 $activeNotices = [];
@@ -70,9 +69,7 @@ class UserController extends BaseController
                 ], false);
                 exit;
             }
-            $redirectAction = $this->currentUser ? 'list' : 'login';
-            header("Location: ?action=$redirectAction");
-            exit;
+            $this->handleException($e, $action, 'login');
         }
     }
 
@@ -200,7 +197,8 @@ class UserController extends BaseController
         $this->render(__DIR__ . '/../Views/index.php', [
             'users' => $users,
             'message' => $message,
-            'error' => $error
+            'error' => $error,
+            'currentUser' => $this->currentUser
         ]);
     }
 
@@ -226,6 +224,10 @@ class UserController extends BaseController
     private function showEditForm(): void
     {
         $id = (int)($_GET['id'] ?? 0);
+        if ($id === (int)($this->currentUser['id'] ?? 0)) {
+            throw new Exception("Action not permitted: Superusers cannot edit their own account from User Management.");
+        }
+
         $user = $this->userService->getUserById($id);
         if (!$user) throw new Exception("User not found.");
 
@@ -242,6 +244,9 @@ class UserController extends BaseController
     {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $userDTO = UserDTO::fromRequest($_POST);
+            if ((int)$userDTO->id === (int)($this->currentUser['id'] ?? 0)) {
+                throw new Exception("Action not permitted: Superusers cannot modify their own account from User Management.");
+            }
             $this->userService->updateUser($userDTO);
             $_SESSION['message'] = 'User updated successfully!';
             header('Location: ?action=list');
@@ -252,6 +257,9 @@ class UserController extends BaseController
     private function delete(): void
     {
         $id = (int)($_GET['id'] ?? 0);
+        if ($id === (int)($this->currentUser['id'] ?? 0)) {
+            throw new Exception("Action not permitted: Superusers cannot delete their own account.");
+        }
         $this->userService->deleteUser($id);
         $_SESSION['message'] = 'User deleted successfully!';
         header('Location: ?action=list');

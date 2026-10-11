@@ -64,3 +64,4 @@ database/dumps/*
 scratch/
 deleted/
 *.txt.dump
+*.bak

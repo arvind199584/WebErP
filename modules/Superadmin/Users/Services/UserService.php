@@ -162,6 +162,10 @@ class UserService
         if (!self::isSuperuser()) {
             throw new Exception("You do not have permission to update users.");
         }
+        $currentUser = self::getCurrentUser();
+        if ($currentUser && (int)$currentUser['id'] === (int)$dto->id) {
+            throw new Exception("Action not permitted: Superusers cannot modify their own account from User Management.");
+        }
         if (!empty($dto->password)) {
             if (strlen($dto->password) < 8) {
                 throw new Exception("Password must be at least 8 characters long.");
@@ -180,8 +184,8 @@ class UserService
         }
         // Add a check to prevent superuser from deleting themselves
         $currentUser = self::getCurrentUser();
-        if ($currentUser['id'] === $id) {
-            throw new Exception("You cannot delete your own account.");
+        if ($currentUser && (int)$currentUser['id'] === (int)$id) {
+            throw new Exception("Action not permitted: Superusers cannot delete their own account.");
         }
         return $this->userModel->delete($id);
     }

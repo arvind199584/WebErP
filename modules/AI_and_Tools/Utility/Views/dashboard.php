@@ -293,7 +293,7 @@ $officeId = $currentUser['officeid'] ?? 1;
                         <a href="/modules/Superadmin/Office/Controller/OfficeController.php?action=list" class="btn btn-sm btn-dark">
                             <i class="bi bi-buildings me-1"></i> Offices
                         </a>
-                        <a href="/modules/Superadmin/Users/Controller/UserController.php" class="btn btn-sm btn-outline-dark">
+                        <a href="/modules/Superadmin/Users/Controller/UserController.php?action=list" class="btn btn-sm btn-outline-dark">
                             <i class="bi bi-people me-1"></i> Users & Security
                         </a>
                         <a href="/modules/Superadmin/Agency/Controller/AgencyController.php" class="btn btn-sm btn-light border">

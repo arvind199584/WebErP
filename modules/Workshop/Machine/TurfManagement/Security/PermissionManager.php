@@ -9,24 +9,24 @@ class PermissionManager
     public static function getPermissions(): array
     {
         $superuser_only = ['superuser'];
-        $manager_plus = ['superuser', 'manager'];
-        $user_plus = ['superuser', 'manager', 'user'];
-        $read_only = ['superuser', 'admin', 'manager', 'user'];
+        $manager_plus   = ['superuser', 'manager'];
+        $staff_plus     = ['superuser', 'manager', 'staff'];
+        $read_only      = ['superuser', 'admin', 'manager', 'staff', 'supervisor'];
 
         return [
             // --- Universal Actions ---
             'list' => $read_only,
             'index' => $read_only,
             'status' => $read_only,
-            'showCreateForm' => $user_plus,
-            'showEditForm' => $user_plus,
-            'edit' => $user_plus,
-            'create' => $user_plus,
-            'createLogs' => $user_plus,
-            'validateStagedLog' => $user_plus,
-            'createBulkReceipt' => $user_plus,
-            'createBulkIndent' => $user_plus,
-            'import' => $user_plus,
+            'showCreateForm' => $staff_plus,
+            'showEditForm' => $staff_plus,
+            'edit' => $staff_plus,
+            'create' => $staff_plus,
+            'createLogs' => $staff_plus,
+            'validateStagedLog' => $staff_plus,
+            'createBulkReceipt' => $staff_plus,
+            'createBulkIndent' => $staff_plus,
+            'import' => $staff_plus,
             'exportTemplate' => $read_only,
             'update' => $manager_plus,
             'delete' => $superuser_only,
@@ -50,7 +50,7 @@ class PermissionManager
             'getMonthwiseMachineStats' => $read_only,
             'getSpareParts' => $read_only,
             'getMachineDetails' => $read_only,
-            'addCustomServiceType' => $user_plus,
+            'addCustomServiceType' => $staff_plus,
         ];
     }
 }

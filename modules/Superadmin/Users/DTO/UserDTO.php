@@ -17,7 +17,7 @@ class UserDTO
     public ?string $password; // Password can be null when fetching data (we don't want to expose it)
     public ?string $phone;
     public string $email;
-    public string $role; // 'superuser', 'staff', 'manager'
+    public string $role; // 'superuser', 'staff', 'manager', 'supervisor'
 
     public function __construct(
         int $officeid,

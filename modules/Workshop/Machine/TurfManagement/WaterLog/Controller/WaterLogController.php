@@ -60,15 +60,13 @@ class WaterLogController extends BaseController
                     throw new Exception("Unknown action requested.");
             }
         } catch (Exception $e) {
-            $_SESSION['error'] = $e->getMessage();
-            header("Location: ?action=list");
-            exit;
+            $this->handleException($e, $action, 'list');
         }
     }
 
     private function list(): void
     {
-        $userRole = strtolower($this->currentUser['role'] ?? 'user');
+        $userRole = strtolower($this->currentUser['role'] ?? 'staff');
         $officeId = ($userRole === 'superuser') ? null : (int)$this->currentUser['officeid'];
         $logs = $this->waterLogService->getAll($officeId);
         $this->render(__DIR__ . '/../Views/index.php', [
@@ -79,7 +77,7 @@ class WaterLogController extends BaseController
 
     private function create(): void
     {
-        $userRole = strtolower($this->currentUser['role'] ?? 'user');
+        $userRole = strtolower($this->currentUser['role'] ?? 'staff');
         $userOfficeId = (int)$this->currentUser['officeid'];
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {

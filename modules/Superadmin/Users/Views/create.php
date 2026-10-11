@@ -65,6 +65,7 @@
             <label for="role">Role</label>
             <select id="role" name="role" required>
                 <option value="staff">Staff</option>
+                <option value="supervisor">Supervisor (Read-only)</option>
                 <option value="manager">Manager</option>
                 <option value="superuser">Superuser (Office ID must be 1)</option>
             </select>

@@ -71,6 +71,7 @@
             <label for="role">Role</label>
             <select id="role" name="role" required>
                 <option value="staff" <?= ($user->role == 'staff') ? 'selected' : '' ?>>Staff</option>
+                <option value="supervisor" <?= ($user->role == 'supervisor') ? 'selected' : '' ?>>Supervisor (Read-only)</option>
                 <option value="manager" <?= ($user->role == 'manager') ? 'selected' : '' ?>>Manager</option>
                 <option value="superuser" <?= ($user->role == 'superuser') ? 'selected' : '' ?>>Superuser (Office ID must be 1)</option>
             </select>

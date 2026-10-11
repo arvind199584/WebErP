@@ -20,7 +20,7 @@ if (!function_exists('hasAccess')) {
             return true;
         }
         // General staff and users have operational access to standard workflows
-        if (in_array($role, ['staff', 'user', 'operator'])) {
+        if (in_array($role, ['staff', 'supervisor', 'operator'])) {
             return in_array($systemName, ['HumanResource', 'Employee', 'Store', 'TurfManagement', 'Workshop', 'Finance', 'AI_and_Tools', 'Admin']);
         }
         return false;
@@ -114,7 +114,7 @@ if ($hasTools) {
 if ($hasSuperuser) {
     $menu['Superadmin'] = [
         ['name' => 'Office Management', 'url' => '/modules/Superadmin/Office/Controller/OfficeController.php?action=list', 'icon' => 'bi-buildings'],
-        ['name' => 'User Security', 'url' => '/modules/Superadmin/Users/Controller/UserController.php', 'icon' => 'bi-shield-lock'],
+        ['name' => 'User Security', 'url' => '/modules/Superadmin/Users/Controller/UserController.php?action=list', 'icon' => 'bi-shield-lock'],
         ['name' => 'Noticeboard Announcements', 'url' => '/modules/Superadmin/Noticeboard/Controller/NoticeboardController.php?action=list', 'icon' => 'bi-megaphone'],
         ['name' => 'Agency Management', 'url' => '/modules/Superadmin/Agency/Controller/AgencyController.php', 'icon' => 'bi-briefcase'],
         ['name' => 'Wage Rates Master', 'url' => '/modules/Superadmin/WagesRates/Controller/WageRateController.php', 'icon' => 'bi-currency-rupee'],
