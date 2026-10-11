@@ -36,6 +36,10 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.viewinterop.AndroidView
+import androidx.compose.ui.platform.LocalContext
+import com.modpyphp.mobile.updater.AppUpdateManager
+import com.modpyphp.mobile.updater.UpdateInfo
+import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
 
@@ -172,13 +176,28 @@ fun HybridAppScreen(
 ) {
     var serverUrl by remember { mutableStateOf(initialServerUrl) }
     var webViewRef by remember { mutableStateOf<WebView?>(null) }
-    var pageTitle by remember { mutableStateOf("Enterprise ERP") }
+    var pageTitle by remember { mutableStateOf("Daredevil") }
     var isLoading by remember { mutableStateOf(true) }
     var loadProgress by remember { mutableIntStateOf(0) }
     var canGoBack by remember { mutableStateOf(false) }
     var hasError by remember { mutableStateOf(false) }
     var errorMessage by remember { mutableStateOf("") }
     var showServerDialog by remember { mutableStateOf(false) }
+
+    // Over-The-Air Update State
+    var availableUpdate by remember { mutableStateOf<UpdateInfo?>(null) }
+    var isUpdating by remember { mutableStateOf(false) }
+    var updateStatusMessage by remember { mutableStateOf("") }
+
+    // Automatic OTA Update Check on Startup / Server Connection
+    LaunchedEffect(serverUrl) {
+        try {
+            val update = AppUpdateManager.checkUpdate(serverUrl)
+            if (update != null) {
+                availableUpdate = update
+            }
+        } catch (_: Exception) {}
+    }
 
     val isCloudBackend = serverUrl.contains("onrender.com", ignoreCase = true)
 
@@ -202,13 +221,13 @@ fun HybridAppScreen(
                                 modifier = Modifier.size(34.dp)
                             ) {
                                 Box(contentAlignment = Alignment.Center) {
-                                    Text("🏛️", fontSize = 18.sp)
+                                    Text("⚡", fontSize = 18.sp)
                                 }
                             }
                             Spacer(modifier = Modifier.width(10.dp))
                             Column(modifier = Modifier.weight(1f)) {
                                 Text(
-                                    text = pageTitle.ifEmpty { "Enterprise ERP" },
+                                    text = pageTitle.ifEmpty { "Daredevil" },
                                     fontSize = 15.sp,
                                     fontWeight = FontWeight.Bold,
                                     maxLines = 1,
@@ -548,6 +567,26 @@ fun HybridAppScreen(
                         singleLine = true,
                         modifier = Modifier.fillMaxWidth()
                     )
+
+                    val coroutineScope = rememberCoroutineScope()
+                    val context = LocalContext.current
+                    OutlinedButton(
+                        onClick = {
+                            coroutineScope.launch {
+                                Toast.makeText(context, "Checking for updates...", Toast.LENGTH_SHORT).show()
+                                val update = AppUpdateManager.checkUpdate(inputUrl)
+                                if (update != null) {
+                                    availableUpdate = update
+                                    showServerDialog = false
+                                } else {
+                                    Toast.makeText(context, "Daredevil is up to date (v${BuildConfig.VERSION_NAME})", Toast.LENGTH_SHORT).show()
+                                }
+                            }
+                        },
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Text("🔄 Check for Updates (v${BuildConfig.VERSION_NAME})", fontSize = 12.sp)
+                    }
                 }
             },
             confirmButton = {
@@ -570,6 +609,81 @@ fun HybridAppScreen(
             dismissButton = {
                 TextButton(onClick = { showServerDialog = false }) {
                     Text("Cancel")
+                }
+            }
+        )
+    }
+
+    // Over-The-Air Update Available Dialog
+    if (availableUpdate != null) {
+        val update = availableUpdate!!
+        val context = LocalContext.current
+        AlertDialog(
+            onDismissRequest = {
+                if (!isUpdating) availableUpdate = null
+            },
+            title = {
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Text("🚀 Update Available", fontWeight = FontWeight.Bold, fontSize = 18.sp)
+                }
+            },
+            text = {
+                Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                    Text(
+                        text = "A new build of Daredevil is available for download.",
+                        fontSize = 14.sp
+                    )
+                    Text(
+                        text = "Current: v${BuildConfig.VERSION_NAME} (Build ${BuildConfig.VERSION_CODE}) → New: v${update.versionName} (Build ${update.versionCode})",
+                        fontSize = 12.sp,
+                        fontWeight = FontWeight.SemiBold,
+                        color = Color(0xFF0D6EFD)
+                    )
+                    if (!update.releaseNotes.isNullOrBlank()) {
+                        Surface(
+                            shape = RoundedCornerShape(8.dp),
+                            color = Color(0xFFF1F5F9),
+                            modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp)
+                        ) {
+                            Text(
+                                text = update.releaseNotes,
+                                fontSize = 12.sp,
+                                color = Color(0xFF334155),
+                                modifier = Modifier.padding(10.dp)
+                            )
+                        }
+                    }
+                    if (isUpdating) {
+                        Spacer(modifier = Modifier.height(6.dp))
+                        LinearProgressIndicator(modifier = Modifier.fillMaxWidth())
+                        Text(
+                            text = updateStatusMessage.ifEmpty { "Downloading update..." },
+                            fontSize = 12.sp,
+                            color = Color(0xFF0D6EFD)
+                        )
+                    }
+                }
+            },
+            confirmButton = {
+                if (!isUpdating) {
+                    Button(
+                        onClick = {
+                            isUpdating = true
+                            AppUpdateManager.startDownloadAndInstall(context, update) { status ->
+                                updateStatusMessage = status
+                            }
+                        },
+                        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF0D6EFD))
+                    ) {
+                        Text("Update Now", fontWeight = FontWeight.Bold)
+                    }
+                }
+            },
+            dismissButton = {
+                if (!isUpdating) {
+                    TextButton(onClick = { availableUpdate = null }) {
+                        Text("Later")
+                    }
                 }
             }
         )
