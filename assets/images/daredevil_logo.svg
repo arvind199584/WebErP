@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Light Pink Background Gradient -->
+    <radialGradient id="pinkBgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff5f7" />
+      <stop offset="65%" stop-color="#fce7f3" />
+      <stop offset="100%" stop-color="#fbcfe8" />
+    </radialGradient>
+
+    <!-- Light Green Gradient for Boundaries & Rings -->
+    <linearGradient id="lightGreenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#86efac" />
+      <stop offset="40%" stop-color="#4ade80" />
+      <stop offset="100%" stop-color="#22c55e" />
+    </linearGradient>
+
+    <!-- Emerald / Mint Accent Gradient -->
+    <linearGradient id="mintBorderGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="50%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <!-- Deep Forest Green Gradient for Text & Monogram (High contrast on pink) -->
+    <linearGradient id="deepGreenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#065f46" />
+      <stop offset="50%" stop-color="#047857" />
+      <stop offset="100%" stop-color="#064e3b" />
+    </linearGradient>
+
+    <!-- Deep Rose / Wine Gradient for 2nd D (Rich complementary contrast) -->
+    <linearGradient id="roseAccentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#be185d" />
+      <stop offset="60%" stop-color="#9d174d" />
+      <stop offset="100%" stop-color="#831843" />
+    </linearGradient>
+
+    <!-- Soft Drop Shadow Filter for Letters -->
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="#831843" flood-opacity="0.15" />
+    </filter>
+
+    <!-- Outer Glow for Green Borders -->
+    <filter id="greenGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#22c55e" flood-opacity="0.35" />
+    </filter>
+
+    <!-- Text Track Arcs -->
+    <!-- Top Arc: for DAREDEVIL (Left to Right across top) -->
+    <path id="topTextArc" d="M 68,250 A 182,182 0 0,1 432,250" fill="none" />
+    <!-- Bottom Arc: for AN AUTARCHIC MAVERICK (Left to Right across bottom, upright) -->
+    <path id="bottomTextArc" d="M 74,250 A 176,176 0 0,0 426,250" fill="none" />
+  </defs>
+
+  <!-- 1. Outer Medallion Base (Light Pink Filled) -->
+  <circle cx="250" cy="250" r="236" fill="url(#pinkBgGrad)" />
+
+  <!-- 2. Outer Boundary Ring (Light Green) -->
+  <circle cx="250" cy="250" r="234" fill="none" stroke="url(#lightGreenGrad)" stroke-width="7" filter="url(#greenGlow)" />
+
+  <!-- 3. Decorative Beaded / Dotted Ring (Light Green) -->
+  <circle cx="250" cy="250" r="222" fill="none" stroke="url(#mintBorderGrad)" stroke-width="2.5" stroke-dasharray="4,6" opacity="0.9" />
+
+  <!-- 4. Inner Ring Track (Separating Perimeter Text from Center Monogram) -->
+  <circle cx="250" cy="250" r="148" fill="#fff0f5" stroke="url(#lightGreenGrad)" stroke-width="4" filter="url(#greenGlow)" />
+  <circle cx="250" cy="250" r="142" fill="none" stroke="url(#mintBorderGrad)" stroke-width="1.5" stroke-dasharray="3,5" opacity="0.8" />
+
+  <!-- 5. Flanking Star Emblems at 9 o'clock and 3 o'clock (Light Green) -->
+  <g fill="url(#lightGreenGrad)">
+    <!-- Left Star (9 o'clock) -->
+    <path d="M 68,250 L 73,243 L 80,244 L 75,250 L 79,256 L 72,255 L 68,261 L 65,254 L 58,252 L 64,247 Z" />
+    <!-- Right Star (3 o'clock) -->
+    <path d="M 432,250 L 427,243 L 420,244 L 425,250 L 421,256 L 428,255 L 432,261 L 435,254 L 442,252 L 436,247 Z" />
+  </g>
+
+  <!-- 6. Perimeter Circular Text (Bold Deep Forest Green on Light Pink Background) -->
+  <!-- Top: DAREDEVIL -->
+  <text font-family="'Inter', 'Montserrat', 'Arial Black', sans-serif" font-weight="900" font-size="28" letter-spacing="9" fill="url(#deepGreenGrad)">
+    <textPath href="#topTextArc" startOffset="50%" text-anchor="middle">
+      DAREDEVIL
+    </textPath>
+  </text>
+
+  <!-- Bottom: AN AUTARCHIC MAVERICK -->
+  <text font-family="'Inter', 'Montserrat', 'Arial', sans-serif" font-weight="800" font-size="16.5" letter-spacing="4" fill="url(#deepGreenGrad)">
+    <textPath href="#bottomTextArc" startOffset="50%" text-anchor="middle">
+      AN AUTARCHIC MAVERICK
+    </textPath>
+  </text>
+
+  <!-- 7. Center Medallion Inner Background -->
+  <!-- Soft Inner Blush Radial Highlight -->
+  <circle cx="250" cy="250" r="140" fill="url(#pinkBgGrad)" />
+
+  <!-- Subtle Light Green Background Geometry / Radiance -->
+  <g opacity="0.15" stroke="url(#lightGreenGrad)" stroke-width="1.5">
+    <circle cx="250" cy="250" r="105" fill="none" />
+    <circle cx="250" cy="250" r="70" fill="none" stroke-dasharray="4,4" />
+  </g>
+
+  <!-- 8. Authentic Handwritten Script Double "DD" Monogram -->
+  <!-- Both letters are unequivocally capital 'D's: single upright stem + ONE grand sweeping rightward belly arc (NO middle pinch / NO 'B' shape!) -->
+  
+  <!-- FIRST 'D' (Left, Deep Forest / Emerald Green with calligraphic flow) -->
+  <g id="firstD" filter="url(#softShadow)">
+    <!-- 1st D: Elegant Calligraphic Left Stem (slight graceful italic curve) -->
+    <path d="M 188,168 
+             C 178,174 165,188 160,202 
+             C 158,206 163,208 166,204 
+             C 172,194 180,185 186,180 
+             L 174,312 
+             C 172,328 165,338 152,340 
+             C 146,341 148,348 156,348 
+             C 172,347 186,334 190,314 
+             L 202,174 
+             C 202,168 194,164 188,168 Z" 
+          fill="url(#deepGreenGrad)" />
+
+    <!-- 1st D: The Grand Single-Arc Belly of Capital 'D' (Smooth, expansive, NO waist!) -->
+    <path d="M 185,170 
+             C 215,152 265,158 282,195 
+             C 296,226 294,268 274,302 
+             C 255,334 218,348 178,346 
+             C 170,346 170,354 178,354 
+             C 224,356 268,340 288,304 
+             C 310,265 310,218 294,185 
+             C 274,145 220,138 182,158 
+             C 175,162 178,174 185,170 Z" 
+          fill="url(#deepGreenGrad)" />
+
+    <!-- 1st D: Calligraphic Flourish Swash through the bottom loop -->
+    <path d="M 152,340 
+             C 175,342 205,336 230,328 
+             C 235,326 232,320 227,322 
+             C 204,329 176,334 154,332 
+             Z" 
+          fill="url(#deepGreenGrad)" opacity="0.85" />
+  </g>
+
+  <!-- SECOND 'D' (Right, Vibrant Rose-Plum / Wine for layered depth and gorgeous contrast) -->
+  <g id="secondD" filter="url(#softShadow)">
+    <!-- 2nd D: Calligraphic Left Stem -->
+    <path d="M 238,168 
+             C 228,174 215,188 210,202 
+             C 208,206 213,208 216,204 
+             C 222,194 230,185 236,180 
+             L 224,312 
+             C 222,328 215,338 202,340 
+             C 196,341 198,348 206,348 
+             C 222,347 236,334 240,314 
+             L 252,174 
+             C 252,168 244,164 238,168 Z" 
+          fill="url(#roseAccentGrad)" />
+
+    <!-- 2nd D: Grand Single-Arc Belly of Capital 'D' (Expansive, clean, sweeping rightwards to x=348) -->
+    <path d="M 235,170 
+             C 265,152 315,158 332,195 
+             C 346,226 344,268 324,302 
+             C 305,334 268,348 228,346 
+             C 220,346 220,354 228,354 
+             C 274,356 318,340 338,304 
+             C 360,265 360,218 344,185 
+             C 324,145 270,138 232,158 
+             C 225,162 228,174 235,170 Z" 
+          fill="url(#roseAccentGrad)" />
+
+    <!-- 2nd D: Graceful Exit Flourish Swash at top of 2nd D -->
+    <path d="M 235,170 
+             C 250,158 275,152 298,154 
+             C 303,155 304,147 298,146 
+             C 272,144 245,152 230,164 
+             Z" 
+          fill="url(#roseAccentGrad)" opacity="0.9" />
+  </g>
+
+  <!-- 9. Delicate Decorative Accent Dots (Light Green) -->
+  <circle cx="342" cy="188" r="4.5" fill="url(#lightGreenGrad)" filter="url(#greenGlow)" />
+  <circle cx="150" cy="336" r="3.5" fill="url(#lightGreenGrad)" filter="url(#greenGlow)" />
+</svg>

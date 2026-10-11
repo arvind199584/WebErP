@@ -149,7 +149,11 @@ unset($_SESSION['message'], $_SESSION['error']);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enterprise ERP - ModPyPhp</title>
+    <?php
+    $pageDisplayTitle = $pageTitle ?? ($title ?? '');
+    ?>
+    <title><?= !empty($pageDisplayTitle) ? htmlspecialchars($pageDisplayTitle) . ' | Daredevil — an Autarchic Maverick' : 'Daredevil — an Autarchic Maverick' ?></title>
+    <link rel="icon" type="image/svg+xml" href="/assets/images/daredevil_logo.svg">
 
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -403,8 +407,11 @@ unset($_SESSION['message'], $_SESSION['error']);
                 <i class="bi bi-list fs-5"></i>
             </button>
             <a class="navbar-brand me-4" href="/">
-                <img src="/assets/images/dda_logo.png" alt="DDA Logo" height="34" onerror="this.style.display='none'">
-                <span>Enterprise ERP</span>
+                <img src="/assets/images/daredevil_logo.svg" alt="Daredevil Logo" height="38" class="rounded-circle me-2 shadow-sm" onerror="this.style.display='none'">
+                <div class="d-flex flex-column lh-1">
+                    <span class="fw-bold text-white fs-5" style="letter-spacing: -0.02em;">Daredevil</span>
+                    <span class="text-white-50 text-uppercase fw-semibold" style="font-size: 0.65rem; letter-spacing: 0.08em;">An Autarchic Maverick</span>
+                </div>
             </a>
         </div>
 

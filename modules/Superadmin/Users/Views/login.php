@@ -10,7 +10,8 @@ $qrCodeUrl = 'https://api.qrserver.com/v1/create-qr-code/?size=140x140&margin=6&
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enterprise ERP - Official Portal & Download Hub</title>
+    <title>Daredevil — an Autarchic Maverick</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/images/daredevil_logo.svg">
 
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -189,8 +190,11 @@ $qrCodeUrl = 'https://api.qrserver.com/v1/create-qr-code/?size=140x140&margin=6&
     <header class="portal-topbar d-flex justify-content-between align-items-center">
         <div class="d-flex align-items-center gap-3">
             <a href="/" class="portal-brand">
-                <i class="bi bi-buildings-fill text-primary fs-4"></i>
-                <span>Enterprise ERP</span>
+                <img src="/assets/images/daredevil_logo.svg" alt="Daredevil Logo" height="38" class="rounded-circle shadow-sm">
+                <div class="d-flex flex-column lh-1">
+                    <span>Daredevil</span>
+                    <small class="text-info text-uppercase fw-semibold" style="font-size: 0.65rem; letter-spacing: 0.05em;">An Autarchic Maverick</small>
+                </div>
             </a>
             <span class="portal-brand-badge d-none d-sm-inline-block">Operations & Asset Portal</span>
         </div>
@@ -217,11 +221,11 @@ $qrCodeUrl = 'https://api.qrserver.com/v1/create-qr-code/?size=140x140&margin=6&
                 <!-- Hero & About Section -->
                 <div class="hero-section mb-4">
                     <div class="d-flex align-items-center gap-2 mb-2">
-                        <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-2 py-1">Enterprise Management Platform</span>
+                        <span class="badge bg-danger-subtle text-danger border border-danger-subtle px-2 py-1">Daredevil ERP Platform</span>
                         <span class="badge bg-success-subtle text-success border border-success-subtle px-2 py-1">Cloud & Local Synchronized</span>
                     </div>
                     <h1 class="display-6 fw-bold text-navy-900 mb-3" style="letter-spacing: -0.03em;">
-                        Integrated Operations & Field Resource ERP
+                        Daredevil &mdash; an Autarchic Maverick
                     </h1>
                     <p class="text-secondary lead fs-6 mb-4">
                         A unified digital backbone connecting <strong>Administrative Approvals & Finance</strong>, <strong>Human Resource Attendance & Wages</strong>, <strong>Heavy Machinery Workshop & Job Cards</strong>, and <strong>Central Store Inventory</strong>.

@@ -28,10 +28,10 @@ $officeId = $currentUser['officeid'] ?? 1;
     <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3 pb-3 border-bottom">
         <div>
             <h1 class="h3 mb-1 text-gray-800 fw-bold">
-                <i class="bi bi-grid-1x2-fill text-primary me-2"></i>Enterprise ERP Dashboard
+                <img src="/assets/images/daredevil_logo.svg" alt="Daredevil Logo" height="34" class="rounded-circle me-2 align-middle shadow-sm">Daredevil Dashboard
             </h1>
             <p class="text-muted mb-0 small">
-                Welcome, <strong><?= htmlspecialchars($userName) ?></strong> &bull; Office ID: <strong><?= (int)$officeId ?></strong> &bull; Integrated Operations & Governance System
+                Welcome, <strong><?= htmlspecialchars($userName) ?></strong> &bull; Office ID: <strong><?= (int)$officeId ?></strong> &bull; Daredevil &mdash; an Autarchic Maverick
             </p>
         </div>
         <div class="d-flex gap-2 align-items-center flex-wrap">
