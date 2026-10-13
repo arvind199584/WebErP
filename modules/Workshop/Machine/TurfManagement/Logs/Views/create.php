@@ -204,6 +204,40 @@ document.addEventListener('DOMContentLoaded', function() {
         return shortcut;
     }
 
+    // Helper to check if a machine is eligible to be logged:
+    // 1. Belongs to the selected office
+    // 2. Is functional (status === 'Working', excludes 'OffRoad', 'Condemned', etc.)
+    // 3. Not already logged in DB for the selected date
+    // 4. Not already staged in the current session for the selected date
+    function isMachineEligible(machine, selectedDate, selectedOfficeId) {
+        if (!machine) return false;
+        if (selectedOfficeId && String(machine.officeid) !== String(selectedOfficeId)) return false;
+
+        // Functional check: machine must be 'Working'
+        const status = (machine.status || 'working').toLowerCase().trim();
+        if (status !== 'working') {
+            return false;
+        }
+
+        if (selectedDate) {
+            // Check if already saved in database for this date
+            const dbKey = machine.id + '_' + selectedDate;
+            if (existingLogsMap && existingLogsMap[dbKey]) {
+                return false;
+            }
+
+            // Check if already staged in current session for this date
+            const isStaged = stagedLogs.some(log => 
+                String(log.machine_id) === String(machine.id) && log.log_date === selectedDate
+            );
+            if (isStaged) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
     // Function to render dropdown items based on search query
     function updateMachineDropdown() {
         const query = machineSearchInput.value.toLowerCase().trim();
@@ -220,13 +254,16 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
+        const selectedDate = dateInput ? dateInput.value : '';
+
         machineDropdownList.innerHTML = '';
         
-        // Filter machines by office AND search query
-        const filtered = allMachines.filter(machine => {
-            if (String(machine.officeid) !== String(selectedOfficeId)) return false;
-            
-            const name = machine.name.toLowerCase();
+        // Filter machines: Office + Functional/Working + Not yet logged/staged for selectedDate
+        const eligibleMachines = allMachines.filter(machine => isMachineEligible(machine, selectedDate, selectedOfficeId));
+
+        // Further filter by search query (name or shortcut)
+        const filtered = eligibleMachines.filter(machine => {
+            const name = (machine.name || '').toLowerCase();
             const shortcut = getMachineShortcut(machine);
             
             return name.includes(query) || shortcut.includes(query);
@@ -235,7 +272,11 @@ document.addEventListener('DOMContentLoaded', function() {
         if (filtered.length === 0) {
             const noMatch = document.createElement('div');
             noMatch.className = 'dropdown-item text-muted disabled';
-            noMatch.textContent = 'No matching machines';
+            if (eligibleMachines.length === 0) {
+                noMatch.textContent = 'All functional machines already logged for this date';
+            } else {
+                noMatch.textContent = 'No matching machines';
+            }
             machineDropdownList.appendChild(noMatch);
         } else {
             filtered.forEach(machine => {
@@ -290,10 +331,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (!selectedOfficeId) return;
 
-        // Find matches (exact)
+        const selectedDate = dateInput ? dateInput.value : '';
+
+        // Find matches (exact) among eligible machines
         const matches = allMachines.filter(machine => {
-            if (String(machine.officeid) !== String(selectedOfficeId)) return false;
-            const name = machine.name.toLowerCase();
+            if (!isMachineEligible(machine, selectedDate, selectedOfficeId)) return false;
+            const name = (machine.name || '').toLowerCase();
             const shortcut = getMachineShortcut(machine);
             return name === query || shortcut === query;
         });
@@ -301,10 +344,10 @@ document.addEventListener('DOMContentLoaded', function() {
         if (matches.length > 0) {
             selectMachine(matches[0]);
         } else {
-            // Partial matches
+            // Partial matches among eligible machines
             const partialMatches = allMachines.filter(machine => {
-                if (String(machine.officeid) !== String(selectedOfficeId)) return false;
-                const name = machine.name.toLowerCase();
+                if (!isMachineEligible(machine, selectedDate, selectedOfficeId)) return false;
+                const name = (machine.name || '').toLowerCase();
                 const shortcut = getMachineShortcut(machine);
                 return name.includes(query) || shortcut.includes(query);
             });
@@ -367,6 +410,8 @@ document.addEventListener('DOMContentLoaded', function() {
             selectedOfficeId = currentUserOfficeId;
         }
 
+        const selectedDate = dateInput ? dateInput.value : '';
+
         machineSelect.innerHTML = '';
         let placeholderText = selectedOfficeId ? '-- Select Machine --' : '-- Select Office First --';
         machineSelect.add(new Option(placeholderText, ''));
@@ -385,7 +430,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (selectedOfficeId) {
             allMachines.forEach(machine => {
-                if (String(machine.officeid) === String(selectedOfficeId)) {
+                if (isMachineEligible(machine, selectedDate, selectedOfficeId)) {
                     let option = new Option(machine.name, machine.id);
                     option.dataset.runduration = machine.runduration ? '1' : '0';
                     option.dataset.fuel = machine.fuel_type_name || '';
@@ -423,6 +468,20 @@ document.addEventListener('DOMContentLoaded', function() {
     if (userRole === 'superuser' && officeSelect) {
         officeSelect.addEventListener('change', filterMachines);
     }
+
+    if (dateInput) {
+        dateInput.addEventListener('change', () => {
+            filterMachines();
+            const currentMachineId = machineSelect.value;
+            const selectedDate = dateInput.value;
+            let selectedOfficeId = (userRole === 'superuser') ? (officeSelect ? officeSelect.value : null) : currentUserOfficeId;
+            const currentMachine = allMachines.find(m => String(m.id) === String(currentMachineId));
+            if (currentMachine && !isMachineEligible(currentMachine, selectedDate, selectedOfficeId)) {
+                resetMachineFields();
+            }
+        });
+    }
+
     filterMachines();
 
     const calculateTotals = () => {
@@ -640,6 +699,7 @@ document.addEventListener('DOMContentLoaded', function() {
         stagedLogs.push(log);
         renderStagedLogs();
         resetMachineFields();
+        filterMachines();
     });
 
     // Delegation for Edit and Delete buttons in the table
@@ -649,6 +709,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const index = target.getAttribute('data-index');
             stagedLogs.splice(index, 1);
             renderStagedLogs();
+            filterMachines();
         } else if (target.classList.contains('edit-staged-btn')) {
             const index = target.getAttribute('data-index');
             const log = stagedLogs[index];
@@ -744,6 +805,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Re-render and hide modal
         renderStagedLogs();
         editModal.hide();
+        filterMachines();
     });
 
     insertAllBtn.addEventListener('click', async () => {
