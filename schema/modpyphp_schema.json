@@ -2,6 +2,1655 @@
   "database": "modpyphp",
   "tables": [
     {
+      "table_name": "StoreChemicalsAndFertilizers",
+      "description": "",
+      "columns": [
+        {
+          "name": "Id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "StoreLocationId",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "ItemCode",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "ItemName",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "ChemicalType",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "UnitOfMeasure",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "CurrentStock",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "MinStockLevel",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "UnitPrice",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "NPKRatioOrComposition",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "BatchNumber",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "ExpiryDate",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "LastRVNumber",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "IsActive",
+          "type": "boolean",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "CreatedAt",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": true,
+          "default": "1",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "Id"
+      ],
+      "foreign_keys": [],
+      "constraints": [
+        {
+          "constraint_name": "StoreChemicalsAndFertilizers_ChemicalType_not_null",
+          "check_clause": "ChemicalType IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreChemicalsAndFertilizers_CreatedAt_not_null",
+          "check_clause": "CreatedAt IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreChemicalsAndFertilizers_CurrentStock_not_null",
+          "check_clause": "CurrentStock IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreChemicalsAndFertilizers_Id_not_null",
+          "check_clause": "Id IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreChemicalsAndFertilizers_IsActive_not_null",
+          "check_clause": "IsActive IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreChemicalsAndFertilizers_ItemCode_not_null",
+          "check_clause": "ItemCode IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreChemicalsAndFertilizers_ItemName_not_null",
+          "check_clause": "ItemName IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreChemicalsAndFertilizers_MinStockLevel_not_null",
+          "check_clause": "MinStockLevel IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreChemicalsAndFertilizers_StoreLocationId_not_null",
+          "check_clause": "StoreLocationId IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreChemicalsAndFertilizers_UnitOfMeasure_not_null",
+          "check_clause": "UnitOfMeasure IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreChemicalsAndFertilizers_UnitPrice_not_null",
+          "check_clause": "UnitPrice IS NOT NULL"
+        }
+      ],
+      "indexes": [
+        {
+          "index_name": "StoreChemicalsAndFertilizers_pkey",
+          "columns": [
+            "Id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "StoreFuelAndLubricants",
+      "description": "",
+      "columns": [
+        {
+          "name": "Id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "StoreLocationId",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "ItemCode",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "ItemName",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "FuelType",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "UnitOfMeasure",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "CurrentStock",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "MinStockLevel",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "UnitPrice",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "DensityOrGrade",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "StorageTankOrDrumNo",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "LastRVNumber",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "IsActive",
+          "type": "boolean",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "CreatedAt",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": true,
+          "default": "1",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "Id"
+      ],
+      "foreign_keys": [],
+      "constraints": [
+        {
+          "constraint_name": "StoreFuelAndLubricants_CreatedAt_not_null",
+          "check_clause": "CreatedAt IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreFuelAndLubricants_CurrentStock_not_null",
+          "check_clause": "CurrentStock IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreFuelAndLubricants_FuelType_not_null",
+          "check_clause": "FuelType IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreFuelAndLubricants_Id_not_null",
+          "check_clause": "Id IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreFuelAndLubricants_IsActive_not_null",
+          "check_clause": "IsActive IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreFuelAndLubricants_ItemCode_not_null",
+          "check_clause": "ItemCode IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreFuelAndLubricants_ItemName_not_null",
+          "check_clause": "ItemName IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreFuelAndLubricants_MinStockLevel_not_null",
+          "check_clause": "MinStockLevel IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreFuelAndLubricants_StoreLocationId_not_null",
+          "check_clause": "StoreLocationId IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreFuelAndLubricants_UnitOfMeasure_not_null",
+          "check_clause": "UnitOfMeasure IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreFuelAndLubricants_UnitPrice_not_null",
+          "check_clause": "UnitPrice IS NOT NULL"
+        }
+      ],
+      "indexes": [
+        {
+          "index_name": "StoreFuelAndLubricants_pkey",
+          "columns": [
+            "Id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "StoreHorticultureConsumables",
+      "description": "",
+      "columns": [
+        {
+          "name": "Id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "StoreLocationId",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "ItemCode",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "ItemName",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "MaterialType",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "UnitOfMeasure",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "CurrentStock",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "MinStockLevel",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "StandardUnitCost",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "YardStackLocation",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "LastRVNumber",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "IsActive",
+          "type": "boolean",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "CreatedAt",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": true,
+          "default": "1",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "Id"
+      ],
+      "foreign_keys": [],
+      "constraints": [
+        {
+          "constraint_name": "StoreHorticultureConsumables_CreatedAt_not_null",
+          "check_clause": "CreatedAt IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreHorticultureConsumables_CurrentStock_not_null",
+          "check_clause": "CurrentStock IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreHorticultureConsumables_Id_not_null",
+          "check_clause": "Id IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreHorticultureConsumables_IsActive_not_null",
+          "check_clause": "IsActive IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreHorticultureConsumables_ItemCode_not_null",
+          "check_clause": "ItemCode IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreHorticultureConsumables_ItemName_not_null",
+          "check_clause": "ItemName IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreHorticultureConsumables_MaterialType_not_null",
+          "check_clause": "MaterialType IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreHorticultureConsumables_MinStockLevel_not_null",
+          "check_clause": "MinStockLevel IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreHorticultureConsumables_StandardUnitCost_not_null",
+          "check_clause": "StandardUnitCost IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreHorticultureConsumables_StoreLocationId_not_null",
+          "check_clause": "StoreLocationId IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreHorticultureConsumables_UnitOfMeasure_not_null",
+          "check_clause": "UnitOfMeasure IS NOT NULL"
+        }
+      ],
+      "indexes": [
+        {
+          "index_name": "StoreHorticultureConsumables_pkey",
+          "columns": [
+            "Id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "StoreLocations",
+      "description": "",
+      "columns": [
+        {
+          "name": "Id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "StoreCode",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "StoreName",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "StoreType",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "PhysicalLocation",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "AssignedKeeperUserId",
+          "type": "uuid",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "AssignedKeeperName",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "KeeperContactPhone",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "IsActive",
+          "type": "boolean",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "CreatedAt",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": true,
+          "default": "1",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "Id"
+      ],
+      "foreign_keys": [],
+      "constraints": [
+        {
+          "constraint_name": "StoreLocations_CreatedAt_not_null",
+          "check_clause": "CreatedAt IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreLocations_Id_not_null",
+          "check_clause": "Id IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreLocations_IsActive_not_null",
+          "check_clause": "IsActive IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreLocations_StoreCode_not_null",
+          "check_clause": "StoreCode IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreLocations_StoreName_not_null",
+          "check_clause": "StoreName IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreLocations_StoreType_not_null",
+          "check_clause": "StoreType IS NOT NULL"
+        }
+      ],
+      "indexes": [
+        {
+          "index_name": "StoreLocations_pkey",
+          "columns": [
+            "Id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "StoreMachineSpareParts",
+      "description": "",
+      "columns": [
+        {
+          "name": "Id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "StoreLocationId",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "ItemCode",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "ItemName",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "PartNumber",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "PartType",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "CompatibleMachineType",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "CompatibleModels",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "UnitOfMeasure",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "CurrentStock",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "MinStockLevel",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "UnitPrice",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "BinLocation",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "LastRVNumber",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "IsActive",
+          "type": "boolean",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "CreatedAt",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": true,
+          "default": "1",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "Id"
+      ],
+      "foreign_keys": [],
+      "constraints": [
+        {
+          "constraint_name": "StoreMachineSpareParts_CompatibleMachineType_not_null",
+          "check_clause": "CompatibleMachineType IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreMachineSpareParts_CompatibleModels_not_null",
+          "check_clause": "CompatibleModels IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreMachineSpareParts_CreatedAt_not_null",
+          "check_clause": "CreatedAt IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreMachineSpareParts_CurrentStock_not_null",
+          "check_clause": "CurrentStock IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreMachineSpareParts_Id_not_null",
+          "check_clause": "Id IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreMachineSpareParts_IsActive_not_null",
+          "check_clause": "IsActive IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreMachineSpareParts_ItemCode_not_null",
+          "check_clause": "ItemCode IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreMachineSpareParts_ItemName_not_null",
+          "check_clause": "ItemName IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreMachineSpareParts_MinStockLevel_not_null",
+          "check_clause": "MinStockLevel IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreMachineSpareParts_PartType_not_null",
+          "check_clause": "PartType IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreMachineSpareParts_StoreLocationId_not_null",
+          "check_clause": "StoreLocationId IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreMachineSpareParts_UnitOfMeasure_not_null",
+          "check_clause": "UnitOfMeasure IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreMachineSpareParts_UnitPrice_not_null",
+          "check_clause": "UnitPrice IS NOT NULL"
+        }
+      ],
+      "indexes": [
+        {
+          "index_name": "StoreMachineSpareParts_pkey",
+          "columns": [
+            "Id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "StoreSanitationItems",
+      "description": "",
+      "columns": [
+        {
+          "name": "Id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "StoreLocationId",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "ItemCode",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "ItemName",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "SanitationType",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "UnitOfMeasure",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "CurrentStock",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "MinStockLevel",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "UnitPrice",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "ShelfLocation",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "LastRVNumber",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "IsActive",
+          "type": "boolean",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "CreatedAt",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": true,
+          "default": "1",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "Id"
+      ],
+      "foreign_keys": [],
+      "constraints": [
+        {
+          "constraint_name": "StoreSanitationItems_CreatedAt_not_null",
+          "check_clause": "CreatedAt IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreSanitationItems_CurrentStock_not_null",
+          "check_clause": "CurrentStock IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreSanitationItems_Id_not_null",
+          "check_clause": "Id IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreSanitationItems_IsActive_not_null",
+          "check_clause": "IsActive IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreSanitationItems_ItemCode_not_null",
+          "check_clause": "ItemCode IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreSanitationItems_ItemName_not_null",
+          "check_clause": "ItemName IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreSanitationItems_MinStockLevel_not_null",
+          "check_clause": "MinStockLevel IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreSanitationItems_SanitationType_not_null",
+          "check_clause": "SanitationType IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreSanitationItems_StoreLocationId_not_null",
+          "check_clause": "StoreLocationId IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreSanitationItems_UnitOfMeasure_not_null",
+          "check_clause": "UnitOfMeasure IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreSanitationItems_UnitPrice_not_null",
+          "check_clause": "UnitPrice IS NOT NULL"
+        }
+      ],
+      "indexes": [
+        {
+          "index_name": "StoreSanitationItems_pkey",
+          "columns": [
+            "Id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "StoreStationeryItems",
+      "description": "",
+      "columns": [
+        {
+          "name": "Id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "StoreLocationId",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "ItemCode",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "ItemName",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "StationeryType",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "UnitOfMeasure",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "CurrentStock",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "MinStockLevel",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "UnitPrice",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "RackOrCupboardNo",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "LastRVNumber",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "IsActive",
+          "type": "boolean",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "CreatedAt",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": true,
+          "default": "1",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "Id"
+      ],
+      "foreign_keys": [],
+      "constraints": [
+        {
+          "constraint_name": "StoreStationeryItems_CreatedAt_not_null",
+          "check_clause": "CreatedAt IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreStationeryItems_CurrentStock_not_null",
+          "check_clause": "CurrentStock IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreStationeryItems_Id_not_null",
+          "check_clause": "Id IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreStationeryItems_IsActive_not_null",
+          "check_clause": "IsActive IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreStationeryItems_ItemCode_not_null",
+          "check_clause": "ItemCode IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreStationeryItems_ItemName_not_null",
+          "check_clause": "ItemName IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreStationeryItems_MinStockLevel_not_null",
+          "check_clause": "MinStockLevel IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreStationeryItems_StationeryType_not_null",
+          "check_clause": "StationeryType IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreStationeryItems_StoreLocationId_not_null",
+          "check_clause": "StoreLocationId IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreStationeryItems_UnitOfMeasure_not_null",
+          "check_clause": "UnitOfMeasure IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreStationeryItems_UnitPrice_not_null",
+          "check_clause": "UnitPrice IS NOT NULL"
+        }
+      ],
+      "indexes": [
+        {
+          "index_name": "StoreStationeryItems_pkey",
+          "columns": [
+            "Id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "StoreVoucherDetails",
+      "description": "",
+      "columns": [
+        {
+          "name": "Id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "VoucherId",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "ItemId",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "ItemCode",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "ItemName",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "Quantity",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "UnitOfMeasure",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "UnitRate",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "LineTotal",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "Remarks",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": true,
+          "default": "1",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "Id"
+      ],
+      "foreign_keys": [],
+      "constraints": [
+        {
+          "constraint_name": "StoreVoucherDetails_Id_not_null",
+          "check_clause": "Id IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreVoucherDetails_ItemCode_not_null",
+          "check_clause": "ItemCode IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreVoucherDetails_ItemId_not_null",
+          "check_clause": "ItemId IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreVoucherDetails_ItemName_not_null",
+          "check_clause": "ItemName IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreVoucherDetails_LineTotal_not_null",
+          "check_clause": "LineTotal IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreVoucherDetails_Quantity_not_null",
+          "check_clause": "Quantity IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreVoucherDetails_UnitRate_not_null",
+          "check_clause": "UnitRate IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreVoucherDetails_VoucherId_not_null",
+          "check_clause": "VoucherId IS NOT NULL"
+        }
+      ],
+      "indexes": [
+        {
+          "index_name": "StoreVoucherDetails_pkey",
+          "columns": [
+            "Id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "StoreVouchers",
+      "description": "",
+      "columns": [
+        {
+          "name": "Id",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "VoucherNumber",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "VoucherType",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "StoreLocationId",
+          "type": "uuid",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "TargetCategory",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "VoucherDate",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "SupplyOrderNo",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "BillOrInvoiceNo",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "ChallanNo",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "VendorAgencyId",
+          "type": "uuid",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "VendorName",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "DepletionChannel",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "TargetMachineId",
+          "type": "uuid",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "WorkshopJobCardNo",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "HorticultureIndentNo",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "IssuedToPerson",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "IssuedToDepartment",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "TotalAmount",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "Remarks",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "StoreKeeperUserId",
+          "type": "uuid",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "StoreKeeperName",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "SourceDeviceId",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "StagedBatchId",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "CreatedAt",
+          "type": "timestamp with time zone",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": true,
+          "default": "1",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "Id"
+      ],
+      "foreign_keys": [],
+      "constraints": [
+        {
+          "constraint_name": "StoreVouchers_CreatedAt_not_null",
+          "check_clause": "CreatedAt IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreVouchers_Id_not_null",
+          "check_clause": "Id IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreVouchers_StoreKeeperName_not_null",
+          "check_clause": "StoreKeeperName IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreVouchers_StoreLocationId_not_null",
+          "check_clause": "StoreLocationId IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreVouchers_TargetCategory_not_null",
+          "check_clause": "TargetCategory IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreVouchers_TotalAmount_not_null",
+          "check_clause": "TotalAmount IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreVouchers_VoucherDate_not_null",
+          "check_clause": "VoucherDate IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreVouchers_VoucherNumber_not_null",
+          "check_clause": "VoucherNumber IS NOT NULL"
+        },
+        {
+          "constraint_name": "StoreVouchers_VoucherType_not_null",
+          "check_clause": "VoucherType IS NOT NULL"
+        }
+      ],
+      "indexes": [
+        {
+          "index_name": "StoreVouchers_pkey",
+          "columns": [
+            "Id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
       "table_name": "aa_es",
       "description": "",
       "columns": [
@@ -121,8 +1770,62 @@
       "primary_key": [
         "id"
       ],
-      "foreign_keys": [],
-      "constraints": [],
+      "foreign_keys": [
+        {
+          "source_column": "budgetid",
+          "target_table": "budget",
+          "target_column": "id",
+          "constraint_name": "fk_aa_es_budget"
+        },
+        {
+          "source_column": "officeid",
+          "target_table": "office",
+          "target_column": "officeid",
+          "constraint_name": "fk_aa_es_office"
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_name": "aa_es_aa_es_amount_not_null",
+          "check_clause": "aa_es_amount IS NOT NULL"
+        },
+        {
+          "constraint_name": "aa_es_boq_not_null",
+          "check_clause": "boq IS NOT NULL"
+        },
+        {
+          "constraint_name": "aa_es_budgetid_not_null",
+          "check_clause": "budgetid IS NOT NULL"
+        },
+        {
+          "constraint_name": "aa_es_estimated_cost_not_null",
+          "check_clause": "estimated_cost IS NOT NULL"
+        },
+        {
+          "constraint_name": "aa_es_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "aa_es_justified_amount_not_null",
+          "check_clause": "justified_amount IS NOT NULL"
+        },
+        {
+          "constraint_name": "aa_es_officeid_not_null",
+          "check_clause": "officeid IS NOT NULL"
+        },
+        {
+          "constraint_name": "aa_es_status_not_null",
+          "check_clause": "status IS NOT NULL"
+        },
+        {
+          "constraint_name": "aa_es_sub_head_not_null",
+          "check_clause": "sub_head IS NOT NULL"
+        },
+        {
+          "constraint_name": "aa_es_type_not_null",
+          "check_clause": "type IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "aa_es_pkey",
@@ -206,7 +1909,20 @@
         "id"
       ],
       "foreign_keys": [],
-      "constraints": [],
+      "constraints": [
+        {
+          "constraint_name": "activity_logs_action_not_null",
+          "check_clause": "action IS NOT NULL"
+        },
+        {
+          "constraint_name": "activity_logs_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "activity_logs_table_name_not_null",
+          "check_clause": "table_name IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "activity_logs_pkey",
@@ -312,8 +2028,28 @@
       "primary_key": [
         "id"
       ],
-      "foreign_keys": [],
-      "constraints": [],
+      "foreign_keys": [
+        {
+          "source_column": "officeid",
+          "target_table": "office",
+          "target_column": "officeid",
+          "constraint_name": "fk_address_office"
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_name": "address_book_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "address_book_name_not_null",
+          "check_clause": "name IS NOT NULL"
+        },
+        {
+          "constraint_name": "address_book_officeid_not_null",
+          "check_clause": "officeid IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "address_book_pkey",
@@ -413,7 +2149,16 @@
         "id"
       ],
       "foreign_keys": [],
-      "constraints": [],
+      "constraints": [
+        {
+          "constraint_name": "agencies_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "agencies_name_not_null",
+          "check_clause": "name IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "agencies_name_key",
@@ -559,8 +2304,82 @@
       "primary_key": [
         "id"
       ],
-      "foreign_keys": [],
-      "constraints": [],
+      "foreign_keys": [
+        {
+          "source_column": "predecessor_id",
+          "target_table": "agreements",
+          "target_column": "id",
+          "constraint_name": "agreements_predecessor_id_fkey"
+        },
+        {
+          "source_column": "aa_es_id",
+          "target_table": "aa_es",
+          "target_column": "id",
+          "constraint_name": "fk_agreement_aa_es"
+        },
+        {
+          "source_column": "agency_id",
+          "target_table": "agencies",
+          "target_column": "id",
+          "constraint_name": "fk_agreement_agency"
+        },
+        {
+          "source_column": "officeid",
+          "target_table": "office",
+          "target_column": "officeid",
+          "constraint_name": "fk_agreement_office"
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_name": "agreements_aa_es_id_not_null",
+          "check_clause": "aa_es_id IS NOT NULL"
+        },
+        {
+          "constraint_name": "agreements_agency_id_not_null",
+          "check_clause": "agency_id IS NOT NULL"
+        },
+        {
+          "constraint_name": "agreements_agreement_no_not_null",
+          "check_clause": "agreement_no IS NOT NULL"
+        },
+        {
+          "constraint_name": "agreements_bill_type_epf_not_null",
+          "check_clause": "bill_type_epf IS NOT NULL"
+        },
+        {
+          "constraint_name": "agreements_bill_type_esic_not_null",
+          "check_clause": "bill_type_esic IS NOT NULL"
+        },
+        {
+          "constraint_name": "agreements_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "agreements_officeid_not_null",
+          "check_clause": "officeid IS NOT NULL"
+        },
+        {
+          "constraint_name": "agreements_period_not_null",
+          "check_clause": "period IS NOT NULL"
+        },
+        {
+          "constraint_name": "agreements_service_charge_percent_not_null",
+          "check_clause": "service_charge_percent IS NOT NULL"
+        },
+        {
+          "constraint_name": "agreements_status_not_null",
+          "check_clause": "status IS NOT NULL"
+        },
+        {
+          "constraint_name": "agreements_tendered_amount_not_null",
+          "check_clause": "tendered_amount IS NOT NULL"
+        },
+        {
+          "constraint_name": "chk_period_not_empty",
+          "check_clause": "(NOT isempty(period))"
+        }
+      ],
       "indexes": [
         {
           "index_name": "agreements_agreement_no_key",
@@ -657,8 +2476,42 @@
       "primary_key": [
         "id"
       ],
-      "foreign_keys": [],
-      "constraints": [],
+      "foreign_keys": [
+        {
+          "source_column": "employee_id",
+          "target_table": "employees",
+          "target_column": "id",
+          "constraint_name": "fk_att_employee"
+        },
+        {
+          "source_column": "officeid",
+          "target_table": "office",
+          "target_column": "officeid",
+          "constraint_name": "fk_att_office"
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_name": "attendance_records_attendance_date_not_null",
+          "check_clause": "attendance_date IS NOT NULL"
+        },
+        {
+          "constraint_name": "attendance_records_employee_id_not_null",
+          "check_clause": "employee_id IS NOT NULL"
+        },
+        {
+          "constraint_name": "attendance_records_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "attendance_records_officeid_not_null",
+          "check_clause": "officeid IS NOT NULL"
+        },
+        {
+          "constraint_name": "attendance_records_status_not_null",
+          "check_clause": "status IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "attendance_records_pkey",
@@ -854,8 +2707,76 @@
       "primary_key": [
         "id"
       ],
-      "foreign_keys": [],
-      "constraints": [],
+      "foreign_keys": [
+        {
+          "source_column": "agreement_id",
+          "target_table": "agreements",
+          "target_column": "id",
+          "constraint_name": "fk_bill_agreement"
+        },
+        {
+          "source_column": "budget_id",
+          "target_table": "budget",
+          "target_column": "id",
+          "constraint_name": "fk_bill_budget"
+        },
+        {
+          "source_column": "officeid",
+          "target_table": "office",
+          "target_column": "officeid",
+          "constraint_name": "fk_bill_office"
+        },
+        {
+          "source_column": "supply_order_id",
+          "target_table": "supply_orders",
+          "target_column": "id",
+          "constraint_name": "fk_bill_supply_order"
+        },
+        {
+          "source_column": "work_order_id",
+          "target_table": "work_orders",
+          "target_column": "id",
+          "constraint_name": "fk_bill_work_order"
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_name": "bills_bill_date_not_null",
+          "check_clause": "bill_date IS NOT NULL"
+        },
+        {
+          "constraint_name": "bills_bill_type_not_null",
+          "check_clause": "bill_type IS NOT NULL"
+        },
+        {
+          "constraint_name": "bills_gross_amount_not_null",
+          "check_clause": "gross_amount IS NOT NULL"
+        },
+        {
+          "constraint_name": "bills_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "bills_net_amount_not_null",
+          "check_clause": "net_amount IS NOT NULL"
+        },
+        {
+          "constraint_name": "bills_officeid_not_null",
+          "check_clause": "officeid IS NOT NULL"
+        },
+        {
+          "constraint_name": "bills_status_not_null",
+          "check_clause": "status IS NOT NULL"
+        },
+        {
+          "constraint_name": "bills_total_deduction_not_null",
+          "check_clause": "total_deduction IS NOT NULL"
+        },
+        {
+          "constraint_name": "chk_bill_linkage",
+          "check_clause": "(COALESCE(agreement_id, work_order_id, supply_order_id, budget_id) IS NOT NULL)"
+        }
+      ],
       "indexes": [
         {
           "index_name": "bills_office_bill_no_key",
@@ -937,8 +2858,44 @@
       "primary_key": [
         "id"
       ],
-      "foreign_keys": [],
-      "constraints": [],
+      "foreign_keys": [
+        {
+          "source_column": "officeid",
+          "target_table": "office",
+          "target_column": "officeid",
+          "constraint_name": "fk_budget_office"
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_name": "budget_code_not_null",
+          "check_clause": "code IS NOT NULL"
+        },
+        {
+          "constraint_name": "budget_fy_not_null",
+          "check_clause": "fy IS NOT NULL"
+        },
+        {
+          "constraint_name": "budget_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "budget_name_of_work_not_null",
+          "check_clause": "name_of_work IS NOT NULL"
+        },
+        {
+          "constraint_name": "budget_officeid_not_null",
+          "check_clause": "officeid IS NOT NULL"
+        },
+        {
+          "constraint_name": "budget_provision_not_null",
+          "check_clause": "provision IS NOT NULL"
+        },
+        {
+          "constraint_name": "chk_fy_format",
+          "check_clause": "((fy)::text ~ '^\\d{4}-\\d{2}$'::text)"
+        }
+      ],
       "indexes": [
         {
           "index_name": "budget_pkey",
@@ -962,90 +2919,6 @@
             "officeid"
           ],
           "unique": false
-        }
-      ]
-    },
-    {
-      "table_name": "dependents",
-      "description": "",
-      "columns": [
-        {
-          "name": "id",
-          "type": "integer",
-          "nullable": false,
-          "default": "nextval('dependents_id_seq'::regclass)",
-          "is_primary": true,
-          "description": ""
-        },
-        {
-          "name": "member_id",
-          "type": "integer",
-          "nullable": false,
-          "default": null,
-          "is_primary": false,
-          "description": ""
-        },
-        {
-          "name": "full_name",
-          "type": "character varying",
-          "nullable": false,
-          "default": null,
-          "is_primary": false,
-          "description": ""
-        },
-        {
-          "name": "relationship",
-          "type": "relationship_type",
-          "nullable": false,
-          "default": null,
-          "is_primary": false,
-          "description": ""
-        },
-        {
-          "name": "dob",
-          "type": "date",
-          "nullable": false,
-          "default": null,
-          "is_primary": false,
-          "description": ""
-        },
-        {
-          "name": "photo",
-          "type": "character varying",
-          "nullable": true,
-          "default": null,
-          "is_primary": false,
-          "description": ""
-        },
-        {
-          "name": "status",
-          "type": "character varying",
-          "nullable": true,
-          "default": "'Active'::character varying",
-          "is_primary": false,
-          "description": ""
-        },
-        {
-          "name": "created_at",
-          "type": "timestamp without time zone",
-          "nullable": true,
-          "default": "CURRENT_TIMESTAMP",
-          "is_primary": false,
-          "description": ""
-        }
-      ],
-      "primary_key": [
-        "id"
-      ],
-      "foreign_keys": [],
-      "constraints": [],
-      "indexes": [
-        {
-          "index_name": "dependents_pkey",
-          "columns": [
-            "id"
-          ],
-          "unique": true
         }
       ]
     },
@@ -1193,16 +3066,67 @@
       "primary_key": [
         "id"
       ],
-      "foreign_keys": [],
-      "constraints": [],
-      "indexes": [
+      "foreign_keys": [
         {
-          "index_name": "employees_email_key",
-          "columns": [
-            "email"
-          ],
-          "unique": true
+          "source_column": "inherited_from_id",
+          "target_table": "employees",
+          "target_column": "id",
+          "constraint_name": "employees_inherited_from_id_fkey"
         },
+        {
+          "source_column": "agreement_id",
+          "target_table": "agreements",
+          "target_column": "id",
+          "constraint_name": "fk_emp_agreement"
+        },
+        {
+          "source_column": "deployed_office_id",
+          "target_table": "office",
+          "target_column": "officeid",
+          "constraint_name": "fk_emp_deployed_office"
+        },
+        {
+          "source_column": "officeid",
+          "target_table": "office",
+          "target_column": "officeid",
+          "constraint_name": "fk_emp_office"
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_name": "employees_agreement_id_not_null",
+          "check_clause": "agreement_id IS NOT NULL"
+        },
+        {
+          "constraint_name": "employees_designation_not_null",
+          "check_clause": "designation IS NOT NULL"
+        },
+        {
+          "constraint_name": "employees_full_name_not_null",
+          "check_clause": "full_name IS NOT NULL"
+        },
+        {
+          "constraint_name": "employees_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "employees_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "employees_is_reliever_not_null",
+          "check_clause": "is_reliever IS NOT NULL"
+        },
+        {
+          "constraint_name": "employees_joining_date_not_null",
+          "check_clause": "joining_date IS NOT NULL"
+        },
+        {
+          "constraint_name": "employees_officeid_not_null",
+          "check_clause": "officeid IS NOT NULL"
+        }
+      ],
+      "indexes": [
         {
           "index_name": "employees_pkey",
           "columns": [
@@ -1216,6 +3140,13 @@
           "columns": [
             "agreement_id",
             "full_name"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "employees_email_key",
+          "columns": [
+            "email"
           ],
           "unique": true
         }
@@ -1285,8 +3216,38 @@
       "primary_key": [
         "id"
       ],
-      "foreign_keys": [],
-      "constraints": [],
+      "foreign_keys": [
+        {
+          "source_column": "employee_id",
+          "target_table": "employees",
+          "target_column": "id",
+          "constraint_name": "fk_epf_employee"
+        },
+        {
+          "source_column": "officeid",
+          "target_table": "office",
+          "target_column": "officeid",
+          "constraint_name": "fk_epf_office"
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_name": "epf_ledger_employee_id_not_null",
+          "check_clause": "employee_id IS NOT NULL"
+        },
+        {
+          "constraint_name": "epf_ledger_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "epf_ledger_officeid_not_null",
+          "check_clause": "officeid IS NOT NULL"
+        },
+        {
+          "constraint_name": "epf_ledger_transaction_date_not_null",
+          "check_clause": "transaction_date IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "epf_ledger_pkey",
@@ -1361,8 +3322,38 @@
       "primary_key": [
         "id"
       ],
-      "foreign_keys": [],
-      "constraints": [],
+      "foreign_keys": [
+        {
+          "source_column": "employee_id",
+          "target_table": "employees",
+          "target_column": "id",
+          "constraint_name": "fk_esic_employee"
+        },
+        {
+          "source_column": "officeid",
+          "target_table": "office",
+          "target_column": "officeid",
+          "constraint_name": "fk_esic_office"
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_name": "esic_ledger_employee_id_not_null",
+          "check_clause": "employee_id IS NOT NULL"
+        },
+        {
+          "constraint_name": "esic_ledger_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "esic_ledger_officeid_not_null",
+          "check_clause": "officeid IS NOT NULL"
+        },
+        {
+          "constraint_name": "esic_ledger_transaction_date_not_null",
+          "check_clause": "transaction_date IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "esic_ledger_pkey",
@@ -1430,7 +3421,24 @@
         "id"
       ],
       "foreign_keys": [],
-      "constraints": [],
+      "constraints": [
+        {
+          "constraint_name": "gc_items_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "gc_items_item_name_not_null",
+          "check_clause": "item_name IS NOT NULL"
+        },
+        {
+          "constraint_name": "gc_items_office_id_not_null",
+          "check_clause": "office_id IS NOT NULL"
+        },
+        {
+          "constraint_name": "gc_items_unit_of_measurement_not_null",
+          "check_clause": "unit_of_measurement IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "gc_items_office_id_item_name_key",
@@ -1522,7 +3530,20 @@
         "id"
       ],
       "foreign_keys": [],
-      "constraints": [],
+      "constraints": [
+        {
+          "constraint_name": "gc_machinery_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "gc_machinery_machinery_name_not_null",
+          "check_clause": "machinery_name IS NOT NULL"
+        },
+        {
+          "constraint_name": "gc_machinery_office_id_not_null",
+          "check_clause": "office_id IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "gc_machinery_office_id_machinery_id_no_key",
@@ -1637,8 +3658,48 @@
       "primary_key": [
         "id"
       ],
-      "foreign_keys": [],
-      "constraints": [],
+      "foreign_keys": [
+        {
+          "source_column": "item_id",
+          "target_table": "gc_items",
+          "target_column": "id",
+          "constraint_name": "gc_main_stock_transactions_item_id_fkey"
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_name": "gc_main_stock_transactions_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "gc_main_stock_transactions_item_id_not_null",
+          "check_clause": "item_id IS NOT NULL"
+        },
+        {
+          "constraint_name": "gc_main_stock_transactions_office_id_not_null",
+          "check_clause": "office_id IS NOT NULL"
+        },
+        {
+          "constraint_name": "gc_main_stock_transactions_quantity_not_null",
+          "check_clause": "quantity IS NOT NULL"
+        },
+        {
+          "constraint_name": "gc_main_stock_transactions_transaction_date_not_null",
+          "check_clause": "transaction_date IS NOT NULL"
+        },
+        {
+          "constraint_name": "gc_main_stock_transactions_transaction_type_check",
+          "check_clause": "((transaction_type)::text = ANY (ARRAY[('RECEIPT'::character varying)::text, ('ISSUE'::character varying)::text]))"
+        },
+        {
+          "constraint_name": "gc_main_stock_transactions_transaction_type_not_null",
+          "check_clause": "transaction_type IS NOT NULL"
+        },
+        {
+          "constraint_name": "gc_main_stock_transactions_voucher_no_not_null",
+          "check_clause": "voucher_no IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "gc_main_stock_transactions_pkey",
@@ -1745,8 +3806,50 @@
       "primary_key": [
         "id"
       ],
-      "foreign_keys": [],
-      "constraints": [],
+      "foreign_keys": [
+        {
+          "source_column": "item_id",
+          "target_table": "gc_items",
+          "target_column": "id",
+          "constraint_name": "gc_sub_ledger_consumption_item_id_fkey"
+        },
+        {
+          "source_column": "machinery_id",
+          "target_table": "gc_machinery",
+          "target_column": "id",
+          "constraint_name": "gc_sub_ledger_consumption_machinery_id_fkey"
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_name": "gc_sub_ledger_consumption_consumed_by_not_null",
+          "check_clause": "consumed_by IS NOT NULL"
+        },
+        {
+          "constraint_name": "gc_sub_ledger_consumption_consumption_date_not_null",
+          "check_clause": "consumption_date IS NOT NULL"
+        },
+        {
+          "constraint_name": "gc_sub_ledger_consumption_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "gc_sub_ledger_consumption_item_id_not_null",
+          "check_clause": "item_id IS NOT NULL"
+        },
+        {
+          "constraint_name": "gc_sub_ledger_consumption_machinery_id_not_null",
+          "check_clause": "machinery_id IS NOT NULL"
+        },
+        {
+          "constraint_name": "gc_sub_ledger_consumption_office_id_not_null",
+          "check_clause": "office_id IS NOT NULL"
+        },
+        {
+          "constraint_name": "gc_sub_ledger_consumption_quantity_consumed_not_null",
+          "check_clause": "quantity_consumed IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "gc_sub_ledger_consumption_pkey",
@@ -1845,8 +3948,54 @@
       "primary_key": [
         "id"
       ],
-      "foreign_keys": [],
-      "constraints": [],
+      "foreign_keys": [
+        {
+          "source_column": "budgetid",
+          "target_table": "budget",
+          "target_column": "id",
+          "constraint_name": "fk_hr_budget"
+        },
+        {
+          "source_column": "officeid",
+          "target_table": "office",
+          "target_column": "officeid",
+          "constraint_name": "fk_hr_office"
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_name": "hand_receipts_budget_implication_not_null",
+          "check_clause": "budget_implication IS NOT NULL"
+        },
+        {
+          "constraint_name": "hand_receipts_category_not_null",
+          "check_clause": "category IS NOT NULL"
+        },
+        {
+          "constraint_name": "hand_receipts_description_not_null",
+          "check_clause": "description IS NOT NULL"
+        },
+        {
+          "constraint_name": "hand_receipts_gross_amount_not_null",
+          "check_clause": "gross_amount IS NOT NULL"
+        },
+        {
+          "constraint_name": "hand_receipts_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "hand_receipts_net_amount_not_null",
+          "check_clause": "net_amount IS NOT NULL"
+        },
+        {
+          "constraint_name": "hand_receipts_officeid_not_null",
+          "check_clause": "officeid IS NOT NULL"
+        },
+        {
+          "constraint_name": "hand_receipts_tds_amount_not_null",
+          "check_clause": "tds_amount IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "hand_receipts_pkey",
@@ -1923,7 +4072,16 @@
         "date"
       ],
       "foreign_keys": [],
-      "constraints": [],
+      "constraints": [
+        {
+          "constraint_name": "historical_prices_date_not_null",
+          "check_clause": "date IS NOT NULL"
+        },
+        {
+          "constraint_name": "historical_prices_symbol_not_null",
+          "check_clause": "symbol IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "historical_prices_pkey",
@@ -2015,219 +4173,45 @@
       "primary_key": [
         "id"
       ],
-      "foreign_keys": [],
-      "constraints": [],
+      "foreign_keys": [
+        {
+          "source_column": "parent_email_id",
+          "target_table": "internal_emails",
+          "target_column": "id",
+          "constraint_name": "internal_emails_parent_email_id_fkey"
+        },
+        {
+          "source_column": "receiver_id",
+          "target_table": "users",
+          "target_column": "id",
+          "constraint_name": "internal_emails_receiver_id_fkey"
+        },
+        {
+          "source_column": "sender_id",
+          "target_table": "users",
+          "target_column": "id",
+          "constraint_name": "internal_emails_sender_id_fkey"
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_name": "internal_emails_body_not_null",
+          "check_clause": "body IS NOT NULL"
+        },
+        {
+          "constraint_name": "internal_emails_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "internal_emails_subject_not_null",
+          "check_clause": "subject IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "internal_emails_pkey",
           "columns": [
             "id"
-          ],
-          "unique": true
-        }
-      ]
-    },
-    {
-      "table_name": "members",
-      "description": "",
-      "columns": [
-        {
-          "name": "id",
-          "type": "integer",
-          "nullable": false,
-          "default": "nextval('members_id_seq'::regclass)",
-          "is_primary": true,
-          "description": ""
-        },
-        {
-          "name": "officeid",
-          "type": "integer",
-          "nullable": false,
-          "default": null,
-          "is_primary": false,
-          "description": ""
-        },
-        {
-          "name": "membership_no",
-          "type": "character varying",
-          "nullable": true,
-          "default": null,
-          "is_primary": false,
-          "description": ""
-        },
-        {
-          "name": "membership_type",
-          "type": "membership_type",
-          "nullable": false,
-          "default": null,
-          "is_primary": false,
-          "description": ""
-        },
-        {
-          "name": "full_name",
-          "type": "character varying",
-          "nullable": false,
-          "default": null,
-          "is_primary": false,
-          "description": ""
-        },
-        {
-          "name": "gender",
-          "type": "character varying",
-          "nullable": true,
-          "default": null,
-          "is_primary": false,
-          "description": ""
-        },
-        {
-          "name": "dob",
-          "type": "date",
-          "nullable": true,
-          "default": null,
-          "is_primary": false,
-          "description": ""
-        },
-        {
-          "name": "uaidi",
-          "type": "character varying",
-          "nullable": true,
-          "default": null,
-          "is_primary": false,
-          "description": ""
-        },
-        {
-          "name": "address",
-          "type": "text",
-          "nullable": true,
-          "default": null,
-          "is_primary": false,
-          "description": ""
-        },
-        {
-          "name": "phone",
-          "type": "character varying",
-          "nullable": true,
-          "default": null,
-          "is_primary": false,
-          "description": ""
-        },
-        {
-          "name": "email",
-          "type": "character varying",
-          "nullable": true,
-          "default": null,
-          "is_primary": false,
-          "description": ""
-        },
-        {
-          "name": "username",
-          "type": "character varying",
-          "nullable": true,
-          "default": null,
-          "is_primary": false,
-          "description": ""
-        },
-        {
-          "name": "password",
-          "type": "character varying",
-          "nullable": true,
-          "default": null,
-          "is_primary": false,
-          "description": ""
-        },
-        {
-          "name": "joining_date",
-          "type": "date",
-          "nullable": false,
-          "default": "CURRENT_DATE",
-          "is_primary": false,
-          "description": ""
-        },
-        {
-          "name": "leaving_date",
-          "type": "date",
-          "nullable": true,
-          "default": null,
-          "is_primary": false,
-          "description": ""
-        },
-        {
-          "name": "history",
-          "type": "jsonb",
-          "nullable": true,
-          "default": "'[]'::jsonb",
-          "is_primary": false,
-          "description": ""
-        },
-        {
-          "name": "created_at",
-          "type": "timestamp without time zone",
-          "nullable": true,
-          "default": "CURRENT_TIMESTAMP",
-          "is_primary": false,
-          "description": ""
-        }
-      ],
-      "primary_key": [
-        "id"
-      ],
-      "foreign_keys": [],
-      "constraints": [],
-      "indexes": [
-        {
-          "index_name": "members_membership_no_key",
-          "columns": [
-            "membership_no"
-          ],
-          "unique": true
-        },
-        {
-          "index_name": "members_pkey",
-          "columns": [
-            "id"
-          ],
-          "unique": true
-        },
-        {
-          "index_name": "members_username_key",
-          "columns": [
-            "username"
-          ],
-          "unique": true
-        }
-      ]
-    },
-    {
-      "table_name": "membership_sequences",
-      "description": "",
-      "columns": [
-        {
-          "name": "prefix",
-          "type": "character varying",
-          "nullable": false,
-          "default": null,
-          "is_primary": true,
-          "description": ""
-        },
-        {
-          "name": "last_sequence",
-          "type": "integer",
-          "nullable": false,
-          "default": "0",
-          "is_primary": false,
-          "description": ""
-        }
-      ],
-      "primary_key": [
-        "prefix"
-      ],
-      "foreign_keys": [],
-      "constraints": [],
-      "indexes": [
-        {
-          "index_name": "membership_sequences_pkey",
-          "columns": [
-            "prefix"
           ],
           "unique": true
         }
@@ -2281,8 +4265,28 @@
       "primary_key": [
         "id"
       ],
-      "foreign_keys": [],
-      "constraints": [],
+      "foreign_keys": [
+        {
+          "source_column": "mf_id",
+          "target_table": "mutual_funds",
+          "target_column": "id",
+          "constraint_name": "mf_holdings_mf_id_fkey"
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_name": "mf_holdings_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "mf_holdings_stock_symbol_not_null",
+          "check_clause": "stock_symbol IS NOT NULL"
+        },
+        {
+          "constraint_name": "mf_holdings_weight_percentage_not_null",
+          "check_clause": "weight_percentage IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "mf_holdings_pkey",
@@ -2318,7 +4322,16 @@
         "id"
       ],
       "foreign_keys": [],
-      "constraints": [],
+      "constraints": [
+        {
+          "constraint_name": "mutual_funds_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "mutual_funds_name_not_null",
+          "check_clause": "name IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "mutual_funds_name_key",
@@ -2385,7 +4398,20 @@
         "id"
       ],
       "foreign_keys": [],
-      "constraints": [],
+      "constraints": [
+        {
+          "constraint_name": "nlp_knowledge_base_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "nlp_knowledge_base_question_text_not_null",
+          "check_clause": "question_text IS NOT NULL"
+        },
+        {
+          "constraint_name": "nlp_knowledge_base_sql_query_not_null",
+          "check_clause": "sql_query IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "nlp_knowledge_base_pkey",
@@ -2398,6 +4424,111 @@
           "index_name": "nlp_knowledge_base_question_text_key",
           "columns": [
             "question_text"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "noticeboard",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('noticeboard_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "title",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "content",
+          "type": "text",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "badge_type",
+          "type": "character varying",
+          "nullable": true,
+          "default": "'Announcement'::character varying",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "priority",
+          "type": "integer",
+          "nullable": true,
+          "default": "1",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "is_active",
+          "type": "boolean",
+          "nullable": true,
+          "default": "true",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_by",
+          "type": "integer",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [
+        {
+          "constraint_name": "noticeboard_content_not_null",
+          "check_clause": "content IS NOT NULL"
+        },
+        {
+          "constraint_name": "noticeboard_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "noticeboard_title_not_null",
+          "check_clause": "title IS NOT NULL"
+        }
+      ],
+      "indexes": [
+        {
+          "index_name": "noticeboard_pkey",
+          "columns": [
+            "id"
           ],
           "unique": true
         }
@@ -2500,7 +4631,16 @@
         "officeid"
       ],
       "foreign_keys": [],
-      "constraints": [],
+      "constraints": [
+        {
+          "constraint_name": "office_officeid_not_null",
+          "check_clause": "officeid IS NOT NULL"
+        },
+        {
+          "constraint_name": "office_officename_not_null",
+          "check_clause": "officename IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "office_pkey",
@@ -2663,8 +4803,50 @@
       "primary_key": [
         "id"
       ],
-      "foreign_keys": [],
-      "constraints": [],
+      "foreign_keys": [
+        {
+          "source_column": "agreement_id",
+          "target_table": "agreements",
+          "target_column": "id",
+          "constraint_name": "fk_ob_agreement"
+        },
+        {
+          "source_column": "officeid",
+          "target_table": "office",
+          "target_column": "officeid",
+          "constraint_name": "fk_ob_office"
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_name": "opening_balances_agreement_id_not_null",
+          "check_clause": "agreement_id IS NOT NULL"
+        },
+        {
+          "constraint_name": "opening_balances_epf_paid_not_null",
+          "check_clause": "epf_paid IS NOT NULL"
+        },
+        {
+          "constraint_name": "opening_balances_esic_paid_not_null",
+          "check_clause": "esic_paid IS NOT NULL"
+        },
+        {
+          "constraint_name": "opening_balances_gst_paid_not_null",
+          "check_clause": "gst_paid IS NOT NULL"
+        },
+        {
+          "constraint_name": "opening_balances_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "opening_balances_items_paid_not_null",
+          "check_clause": "items_paid IS NOT NULL"
+        },
+        {
+          "constraint_name": "opening_balances_officeid_not_null",
+          "check_clause": "officeid IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "opening_balances_agreement_id_key",
@@ -2731,7 +4913,16 @@
         "id"
       ],
       "foreign_keys": [],
-      "constraints": [],
+      "constraints": [
+        {
+          "constraint_name": "pending_training_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "pending_training_user_query_not_null",
+          "check_clause": "user_query IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "pending_training_pkey",
@@ -2799,7 +4990,20 @@
         "id"
       ],
       "foreign_keys": [],
-      "constraints": [],
+      "constraints": [
+        {
+          "constraint_name": "registry_constraints_constraint_type_not_null",
+          "check_clause": "constraint_type IS NOT NULL"
+        },
+        {
+          "constraint_name": "registry_constraints_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "registry_constraints_table_name_not_null",
+          "check_clause": "table_name IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "registry_constraints_pkey",
@@ -2851,7 +5055,16 @@
         "id"
       ],
       "foreign_keys": [],
-      "constraints": [],
+      "constraints": [
+        {
+          "constraint_name": "registry_enums_enum_name_not_null",
+          "check_clause": "enum_name IS NOT NULL"
+        },
+        {
+          "constraint_name": "registry_enums_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "registry_enums_enum_name_key",
@@ -2910,7 +5123,16 @@
         "id"
       ],
       "foreign_keys": [],
-      "constraints": [],
+      "constraints": [
+        {
+          "constraint_name": "registry_procedures_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "registry_procedures_procedure_name_not_null",
+          "check_clause": "procedure_name IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "registry_procedures_pkey",
@@ -2977,7 +5199,16 @@
         "id"
       ],
       "foreign_keys": [],
-      "constraints": [],
+      "constraints": [
+        {
+          "constraint_name": "registry_tables_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "registry_tables_table_name_not_null",
+          "check_clause": "table_name IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "registry_tables_pkey",
@@ -3044,7 +5275,20 @@
         "id"
       ],
       "foreign_keys": [],
-      "constraints": [],
+      "constraints": [
+        {
+          "constraint_name": "registry_triggers_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "registry_triggers_table_name_not_null",
+          "check_clause": "table_name IS NOT NULL"
+        },
+        {
+          "constraint_name": "registry_triggers_trigger_name_not_null",
+          "check_clause": "trigger_name IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "registry_triggers_pkey",
@@ -3088,7 +5332,20 @@
         "stock_symbol"
       ],
       "foreign_keys": [],
-      "constraints": [],
+      "constraints": [
+        {
+          "constraint_name": "stock_prices_stock_symbol_not_null",
+          "check_clause": "stock_symbol IS NOT NULL"
+        },
+        {
+          "constraint_name": "stock_prices_today_open_price_not_null",
+          "check_clause": "today_open_price IS NOT NULL"
+        },
+        {
+          "constraint_name": "stock_prices_yesterday_close_price_not_null",
+          "check_clause": "yesterday_close_price IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "stock_prices_pkey",
@@ -3187,8 +5444,64 @@
       "primary_key": [
         "id"
       ],
-      "foreign_keys": [],
-      "constraints": [],
+      "foreign_keys": [
+        {
+          "source_column": "aa_es_id",
+          "target_table": "aa_es",
+          "target_column": "id",
+          "constraint_name": "fk_so_aa_es"
+        },
+        {
+          "source_column": "agency_id",
+          "target_table": "agencies",
+          "target_column": "id",
+          "constraint_name": "fk_so_agency"
+        },
+        {
+          "source_column": "officeid",
+          "target_table": "office",
+          "target_column": "officeid",
+          "constraint_name": "fk_so_office"
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_name": "supply_orders_aa_es_id_not_null",
+          "check_clause": "aa_es_id IS NOT NULL"
+        },
+        {
+          "constraint_name": "supply_orders_agency_id_not_null",
+          "check_clause": "agency_id IS NOT NULL"
+        },
+        {
+          "constraint_name": "supply_orders_estimated_cost_not_null",
+          "check_clause": "estimated_cost IS NOT NULL"
+        },
+        {
+          "constraint_name": "supply_orders_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "supply_orders_officeid_not_null",
+          "check_clause": "officeid IS NOT NULL"
+        },
+        {
+          "constraint_name": "supply_orders_service_charge_percent_not_null",
+          "check_clause": "service_charge_percent IS NOT NULL"
+        },
+        {
+          "constraint_name": "supply_orders_status_not_null",
+          "check_clause": "status IS NOT NULL"
+        },
+        {
+          "constraint_name": "supply_orders_supply_order_no_not_null",
+          "check_clause": "supply_order_no IS NOT NULL"
+        },
+        {
+          "constraint_name": "supply_orders_tendered_amount_not_null",
+          "check_clause": "tendered_amount IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "supply_orders_pkey",
@@ -3201,80 +5514,6 @@
           "index_name": "supply_orders_supply_order_no_key",
           "columns": [
             "supply_order_no"
-          ],
-          "unique": true
-        }
-      ]
-    },
-    {
-      "table_name": "tenants",
-      "description": "",
-      "columns": [
-        {
-          "name": "id",
-          "type": "integer",
-          "nullable": false,
-          "default": "nextval('tenants_id_seq'::regclass)",
-          "is_primary": true,
-          "description": ""
-        },
-        {
-          "name": "name",
-          "type": "text",
-          "nullable": false,
-          "default": null,
-          "is_primary": false,
-          "description": ""
-        },
-        {
-          "name": "slug",
-          "type": "text",
-          "nullable": false,
-          "default": null,
-          "is_primary": false,
-          "description": ""
-        },
-        {
-          "name": "schema_name",
-          "type": "text",
-          "nullable": false,
-          "default": null,
-          "is_primary": false,
-          "description": ""
-        },
-        {
-          "name": "created_at",
-          "type": "timestamp without time zone",
-          "nullable": true,
-          "default": "CURRENT_TIMESTAMP",
-          "is_primary": false,
-          "description": ""
-        }
-      ],
-      "primary_key": [
-        "id"
-      ],
-      "foreign_keys": [],
-      "constraints": [],
-      "indexes": [
-        {
-          "index_name": "tenants_pkey",
-          "columns": [
-            "id"
-          ],
-          "unique": true
-        },
-        {
-          "index_name": "tenants_schema_name_key",
-          "columns": [
-            "schema_name"
-          ],
-          "unique": true
-        },
-        {
-          "index_name": "tenants_slug_key",
-          "columns": [
-            "slug"
           ],
           "unique": true
         }
@@ -3384,8 +5623,32 @@
       "primary_key": [
         "id"
       ],
-      "foreign_keys": [],
-      "constraints": [],
+      "foreign_keys": [
+        {
+          "source_column": "office_id",
+          "target_table": "office",
+          "target_column": "officeid",
+          "constraint_name": "tm_office_id_fkey"
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_name": "tm_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "tm_name_not_null",
+          "check_clause": "name IS NOT NULL"
+        },
+        {
+          "constraint_name": "tm_office_id_not_null",
+          "check_clause": "office_id IS NOT NULL"
+        },
+        {
+          "constraint_name": "tm_tm_no_not_null",
+          "check_clause": "tm_no IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "tm_pkey",
@@ -3483,8 +5746,36 @@
       "primary_key": [
         "id"
       ],
-      "foreign_keys": [],
-      "constraints": [],
+      "foreign_keys": [
+        {
+          "source_column": "office_id",
+          "target_table": "office",
+          "target_column": "officeid",
+          "constraint_name": "tm_rates_office_id_fkey"
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_name": "tm_rates_dependent_rate_not_null",
+          "check_clause": "dependent_rate IS NOT NULL"
+        },
+        {
+          "constraint_name": "tm_rates_effective_from_not_null",
+          "check_clause": "effective_from IS NOT NULL"
+        },
+        {
+          "constraint_name": "tm_rates_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "tm_rates_main_member_rate_not_null",
+          "check_clause": "main_member_rate IS NOT NULL"
+        },
+        {
+          "constraint_name": "tm_rates_office_id_not_null",
+          "check_clause": "office_id IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "tm_rates_pkey",
@@ -3583,8 +5874,36 @@
       "primary_key": [
         "id"
       ],
-      "foreign_keys": [],
-      "constraints": [],
+      "foreign_keys": [
+        {
+          "source_column": "machine_id",
+          "target_table": "turf_machines",
+          "target_column": "id",
+          "constraint_name": "turf_consumption_log_machine_id_fkey"
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_name": "turf_consumption_log_entry_type_not_null",
+          "check_clause": "entry_type IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_consumption_log_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_consumption_log_log_date_not_null",
+          "check_clause": "log_date IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_consumption_log_machine_id_not_null",
+          "check_clause": "machine_id IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_consumption_log_officeid_not_null",
+          "check_clause": "officeid IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "turf_consumption_log_pkey",
@@ -3636,12 +5955,25 @@
         "id"
       ],
       "foreign_keys": [],
-      "constraints": [],
+      "constraints": [
+        {
+          "constraint_name": "turf_inventory_categories_code_not_null",
+          "check_clause": "code IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_inventory_categories_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_inventory_categories_name_not_null",
+          "check_clause": "name IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
-          "index_name": "turf_inventory_categories_pkey",
+          "index_name": "turf_inventory_categories_code_key",
           "columns": [
-            "id"
+            "code"
           ],
           "unique": true
         },
@@ -3653,9 +5985,9 @@
           "unique": true
         },
         {
-          "index_name": "turf_inventory_categories_code_key",
+          "index_name": "turf_inventory_categories_pkey",
           "columns": [
-            "code"
+            "id"
           ],
           "unique": true
         }
@@ -3717,8 +6049,28 @@
       "primary_key": [
         "id"
       ],
-      "foreign_keys": [],
-      "constraints": [],
+      "foreign_keys": [
+        {
+          "source_column": "category_id",
+          "target_table": "turf_inventory_categories",
+          "target_column": "id",
+          "constraint_name": "turf_inventory_items_category_id_fkey"
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_name": "turf_inventory_items_ac_unit_not_null",
+          "check_clause": "ac_unit IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_inventory_items_description_not_null",
+          "check_clause": "description IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_inventory_items_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "turf_inventory_items_pkey",
@@ -3820,16 +6172,544 @@
           "default": "CURRENT_TIMESTAMP",
           "is_primary": false,
           "description": ""
+        },
+        {
+          "name": "rv_id",
+          "type": "integer",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [
+        {
+          "source_column": "item_id",
+          "target_table": "turf_inventory_items",
+          "target_column": "id",
+          "constraint_name": "turf_inventory_ledger_item_id_fkey"
+        },
+        {
+          "source_column": "rv_id",
+          "target_table": "turf_receipt_vouchers",
+          "target_column": "id",
+          "constraint_name": "turf_inventory_ledger_rv_id_fkey"
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_name": "turf_inventory_ledger_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_inventory_ledger_item_id_not_null",
+          "check_clause": "item_id IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_inventory_ledger_officeid_not_null",
+          "check_clause": "officeid IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_inventory_ledger_quantity_not_null",
+          "check_clause": "quantity IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_inventory_ledger_transaction_date_not_null",
+          "check_clause": "transaction_date IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_inventory_ledger_transaction_type_not_null",
+          "check_clause": "transaction_type IS NOT NULL"
+        }
+      ],
+      "indexes": [
+        {
+          "index_name": "idx_turf_ledger_rv_id",
+          "columns": [
+            "rv_id"
+          ],
+          "unique": false
+        },
+        {
+          "index_name": "turf_inventory_ledger_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "turf_item_machine_compatibility",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('turf_item_machine_compatibility_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "item_id",
+          "type": "integer",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "machine_id",
+          "type": "integer",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
         }
       ],
       "primary_key": [
         "id"
       ],
       "foreign_keys": [],
-      "constraints": [],
+      "constraints": [
+        {
+          "constraint_name": "turf_item_machine_compatibility_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
-          "index_name": "turf_inventory_ledger_pkey",
+          "index_name": "turf_item_machine_compatibility_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "turf_machine_repair_items",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('turf_machine_repair_items_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "repair_id",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "spare_part_id",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "quantity",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [
+        {
+          "source_column": "repair_id",
+          "target_table": "turf_machine_repairs",
+          "target_column": "id",
+          "constraint_name": "turf_machine_repair_items_repair_id_fkey"
+        },
+        {
+          "source_column": "spare_part_id",
+          "target_table": "turf_machine_spare_parts",
+          "target_column": "id",
+          "constraint_name": "turf_machine_repair_items_spare_part_id_fkey"
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_name": "turf_machine_repair_items_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_machine_repair_items_quantity_not_null",
+          "check_clause": "quantity IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_machine_repair_items_repair_id_not_null",
+          "check_clause": "repair_id IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_machine_repair_items_spare_part_id_not_null",
+          "check_clause": "spare_part_id IS NOT NULL"
+        }
+      ],
+      "indexes": [
+        {
+          "index_name": "turf_machine_repair_items_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "turf_machine_repairs",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('turf_machine_repairs_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "machine_id",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "repair_date",
+          "type": "date",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "running_hours",
+          "type": "numeric",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "work_done",
+          "type": "text",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "spare_parts_used",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "cost",
+          "type": "numeric",
+          "nullable": true,
+          "default": "0.00",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "repaired_by",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "status",
+          "type": "character varying",
+          "nullable": true,
+          "default": "'Completed'::character varying",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "remarks",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "job_card_no",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "work_type",
+          "type": "character varying",
+          "nullable": true,
+          "default": "'repair'::character varying",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [
+        {
+          "source_column": "machine_id",
+          "target_table": "turf_machines",
+          "target_column": "id",
+          "constraint_name": "turf_machine_repairs_machine_id_fkey"
+        },
+        {
+          "source_column": "officeid",
+          "target_table": "office",
+          "target_column": "officeid",
+          "constraint_name": "turf_machine_repairs_officeid_fkey"
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_name": "turf_machine_repairs_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_machine_repairs_machine_id_not_null",
+          "check_clause": "machine_id IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_machine_repairs_officeid_not_null",
+          "check_clause": "officeid IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_machine_repairs_repair_date_not_null",
+          "check_clause": "repair_date IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_machine_repairs_work_done_not_null",
+          "check_clause": "work_done IS NOT NULL"
+        }
+      ],
+      "indexes": [
+        {
+          "index_name": "turf_machine_repairs_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "turf_machine_spare_parts",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('turf_machine_spare_parts_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "machine_id",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "part_no",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "nomenclature",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "received_qty",
+          "type": "numeric",
+          "nullable": true,
+          "default": "0.00",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "issued_qty",
+          "type": "numeric",
+          "nullable": true,
+          "default": "0.00",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "current_stock",
+          "type": "numeric",
+          "nullable": true,
+          "default": "0.00",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "unit",
+          "type": "character varying",
+          "nullable": true,
+          "default": "'Pcs'::character varying",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "compatible_machine_ids",
+          "type": "jsonb",
+          "nullable": true,
+          "default": "'[]'::jsonb",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "group_name",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [
+        {
+          "source_column": "machine_id",
+          "target_table": "turf_machines",
+          "target_column": "id",
+          "constraint_name": "turf_machine_spare_parts_machine_id_fkey"
+        },
+        {
+          "source_column": "officeid",
+          "target_table": "office",
+          "target_column": "officeid",
+          "constraint_name": "turf_machine_spare_parts_officeid_fkey"
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_name": "turf_machine_spare_parts_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_machine_spare_parts_machine_id_not_null",
+          "check_clause": "machine_id IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_machine_spare_parts_nomenclature_not_null",
+          "check_clause": "nomenclature IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_machine_spare_parts_officeid_not_null",
+          "check_clause": "officeid IS NOT NULL"
+        }
+      ],
+      "indexes": [
+        {
+          "index_name": "turf_machine_spare_parts_pkey",
           "columns": [
             "id"
           ],
@@ -3944,13 +6824,109 @@
           "default": null,
           "is_primary": false,
           "description": ""
+        },
+        {
+          "name": "service_interval_hours",
+          "type": "numeric",
+          "nullable": true,
+          "default": "100",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "service_due",
+          "type": "numeric",
+          "nullable": true,
+          "default": "100",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "service_done",
+          "type": "numeric",
+          "nullable": true,
+          "default": "0",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "service_interval",
+          "type": "numeric",
+          "nullable": true,
+          "default": "100",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "custom_service_types",
+          "type": "jsonb",
+          "nullable": true,
+          "default": "'[]'::jsonb",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "custom_work_types",
+          "type": "jsonb",
+          "nullable": true,
+          "default": "'[]'::jsonb",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "default_service_items",
+          "type": "jsonb",
+          "nullable": true,
+          "default": "'[]'::jsonb",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "engine_oil_qty",
+          "type": "numeric",
+          "nullable": true,
+          "default": "0.00",
+          "is_primary": false,
+          "description": ""
         }
       ],
       "primary_key": [
         "id"
       ],
-      "foreign_keys": [],
-      "constraints": [],
+      "foreign_keys": [
+        {
+          "source_column": "fuel_item_id",
+          "target_table": "turf_inventory_items",
+          "target_column": "id",
+          "constraint_name": "turf_machines_fuel_item_id_fkey"
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_name": "turf_machines_daily_run_not_null",
+          "check_clause": "daily_run IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_machines_has_rest_day_not_null",
+          "check_clause": "has_rest_day IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_machines_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_machines_name_not_null",
+          "check_clause": "name IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_machines_officeid_not_null",
+          "check_clause": "officeid IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_machines_rest_day_not_null",
+          "check_clause": "rest_day IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "turf_machines_officeid_name_key",
@@ -3962,6 +6938,345 @@
         },
         {
           "index_name": "turf_machines_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        }
+      ]
+    },
+    {
+      "table_name": "turf_receipt_vouchers",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('turf_receipt_vouchers_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "voucher_no",
+          "type": "character varying",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "voucher_date",
+          "type": "date",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "party",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "agency_id",
+          "type": "integer",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "source_type",
+          "type": "character varying",
+          "nullable": true,
+          "default": "'MANUAL'::character varying",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "source_id",
+          "type": "integer",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "source_ref_no",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "store_category",
+          "type": "character varying",
+          "nullable": true,
+          "default": "'general'::character varying",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "items",
+          "type": "jsonb",
+          "nullable": false,
+          "default": "'[]'::jsonb",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "supply_status",
+          "type": "character varying",
+          "nullable": true,
+          "default": "'COMPLETE'::character varying",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "remarks",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": "CURRENT_TIMESTAMP",
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [
+        {
+          "source_column": "agency_id",
+          "target_table": "agencies",
+          "target_column": "id",
+          "constraint_name": "turf_receipt_vouchers_agency_id_fkey"
+        },
+        {
+          "source_column": "officeid",
+          "target_table": "office",
+          "target_column": "officeid",
+          "constraint_name": "turf_receipt_vouchers_officeid_fkey"
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_name": "turf_receipt_vouchers_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_receipt_vouchers_items_not_null",
+          "check_clause": "items IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_receipt_vouchers_officeid_not_null",
+          "check_clause": "officeid IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_receipt_vouchers_voucher_date_not_null",
+          "check_clause": "voucher_date IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_receipt_vouchers_voucher_no_not_null",
+          "check_clause": "voucher_no IS NOT NULL"
+        }
+      ],
+      "indexes": [
+        {
+          "index_name": "turf_receipt_vouchers_pkey",
+          "columns": [
+            "id"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "uq_office_voucher_no",
+          "columns": [
+            "officeid",
+            "voucher_no"
+          ],
+          "unique": true
+        },
+        {
+          "index_name": "idx_turf_rv_office_date",
+          "columns": [
+            "officeid",
+            "voucher_date"
+          ],
+          "unique": false
+        },
+        {
+          "index_name": "idx_turf_rv_source",
+          "columns": [
+            "source_id",
+            "source_type"
+          ],
+          "unique": false
+        }
+      ]
+    },
+    {
+      "table_name": "turf_servicing_log",
+      "description": "",
+      "columns": [
+        {
+          "name": "id",
+          "type": "integer",
+          "nullable": false,
+          "default": "nextval('turf_servicing_log_id_seq'::regclass)",
+          "is_primary": true,
+          "description": ""
+        },
+        {
+          "name": "officeid",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "machine_id",
+          "type": "integer",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "service_date",
+          "type": "date",
+          "nullable": false,
+          "default": "CURRENT_DATE",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "hours_at_service",
+          "type": "numeric",
+          "nullable": false,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "next_service_due",
+          "type": "numeric",
+          "nullable": false,
+          "default": "100",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "service_type",
+          "type": "character varying",
+          "nullable": true,
+          "default": "'Routine Maintenance'::character varying",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "serviced_by",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "cost",
+          "type": "numeric",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "remarks",
+          "type": "text",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "nullable": true,
+          "default": "now()",
+          "is_primary": false,
+          "description": ""
+        },
+        {
+          "name": "job_card_no",
+          "type": "character varying",
+          "nullable": true,
+          "default": null,
+          "is_primary": false,
+          "description": ""
+        }
+      ],
+      "primary_key": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": [
+        {
+          "constraint_name": "turf_servicing_log_hours_at_service_not_null",
+          "check_clause": "hours_at_service IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_servicing_log_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_servicing_log_machine_id_not_null",
+          "check_clause": "machine_id IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_servicing_log_next_service_due_not_null",
+          "check_clause": "next_service_due IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_servicing_log_officeid_not_null",
+          "check_clause": "officeid IS NOT NULL"
+        },
+        {
+          "constraint_name": "turf_servicing_log_service_date_not_null",
+          "check_clause": "service_date IS NOT NULL"
+        }
+      ],
+      "indexes": [
+        {
+          "index_name": "turf_servicing_log_pkey",
           "columns": [
             "id"
           ],
@@ -4049,8 +7364,66 @@
       "primary_key": [
         "id"
       ],
-      "foreign_keys": [],
-      "constraints": [],
+      "foreign_keys": [
+        {
+          "source_column": "officeid",
+          "target_table": "office",
+          "target_column": "officeid",
+          "constraint_name": "fk_office"
+        },
+        {
+          "source_column": "officeid",
+          "target_table": "office",
+          "target_column": "officeid",
+          "constraint_name": "fk_office"
+        },
+        {
+          "source_column": "office_id",
+          "target_table": "office",
+          "target_column": "officeid",
+          "constraint_name": "fk_office"
+        },
+        {
+          "source_column": "office_id",
+          "target_table": "office",
+          "target_column": "officeid",
+          "constraint_name": "fk_office"
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_name": "chk_superuser_office",
+          "check_clause": "(((role = 'superuser'::user_role) AND (officeid = 1)) OR (role = ANY (ARRAY['staff'::user_role, 'manager'::user_role])))"
+        },
+        {
+          "constraint_name": "users_email_not_null",
+          "check_clause": "email IS NOT NULL"
+        },
+        {
+          "constraint_name": "users_firstname_not_null",
+          "check_clause": "firstname IS NOT NULL"
+        },
+        {
+          "constraint_name": "users_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "users_officeid_not_null",
+          "check_clause": "officeid IS NOT NULL"
+        },
+        {
+          "constraint_name": "users_password_not_null",
+          "check_clause": "password IS NOT NULL"
+        },
+        {
+          "constraint_name": "users_role_not_null",
+          "check_clause": "role IS NOT NULL"
+        },
+        {
+          "constraint_name": "users_usrname_not_null",
+          "check_clause": "usrname IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "users_email_key",
@@ -4139,7 +7512,28 @@
         "id"
       ],
       "foreign_keys": [],
-      "constraints": [],
+      "constraints": [
+        {
+          "constraint_name": "wage_items_authority_not_null",
+          "check_clause": "authority IS NOT NULL"
+        },
+        {
+          "constraint_name": "wage_items_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "wage_items_item_name_not_null",
+          "check_clause": "item_name IS NOT NULL"
+        },
+        {
+          "constraint_name": "wage_items_json_key_not_null",
+          "check_clause": "json_key IS NOT NULL"
+        },
+        {
+          "constraint_name": "wage_items_unit_not_null",
+          "check_clause": "unit IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "wage_items_item_name_key",
@@ -4230,7 +7624,40 @@
         "id"
       ],
       "foreign_keys": [],
-      "constraints": [],
+      "constraints": [
+        {
+          "constraint_name": "chk_validity",
+          "check_clause": "(valid_from <= valid_to)"
+        },
+        {
+          "constraint_name": "wage_orders_authority_not_null",
+          "check_clause": "authority IS NOT NULL"
+        },
+        {
+          "constraint_name": "wage_orders_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "wage_orders_letter_date_not_null",
+          "check_clause": "letter_date IS NOT NULL"
+        },
+        {
+          "constraint_name": "wage_orders_letter_no_not_null",
+          "check_clause": "letter_no IS NOT NULL"
+        },
+        {
+          "constraint_name": "wage_orders_rates_not_null",
+          "check_clause": "rates IS NOT NULL"
+        },
+        {
+          "constraint_name": "wage_orders_valid_from_not_null",
+          "check_clause": "valid_from IS NOT NULL"
+        },
+        {
+          "constraint_name": "wage_orders_valid_to_not_null",
+          "check_clause": "valid_to IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "wage_orders_pkey",
@@ -4314,8 +7741,38 @@
       "primary_key": [
         "id"
       ],
-      "foreign_keys": [],
-      "constraints": [],
+      "foreign_keys": [
+        {
+          "source_column": "employee_id",
+          "target_table": "employees",
+          "target_column": "id",
+          "constraint_name": "fk_wages_employee"
+        },
+        {
+          "source_column": "officeid",
+          "target_table": "office",
+          "target_column": "officeid",
+          "constraint_name": "fk_wages_office"
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_name": "wages_ledger_employee_id_not_null",
+          "check_clause": "employee_id IS NOT NULL"
+        },
+        {
+          "constraint_name": "wages_ledger_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "wages_ledger_officeid_not_null",
+          "check_clause": "officeid IS NOT NULL"
+        },
+        {
+          "constraint_name": "wages_ledger_transaction_date_not_null",
+          "check_clause": "transaction_date IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "wages_ledger_pkey",
@@ -4398,8 +7855,46 @@
       "primary_key": [
         "id"
       ],
-      "foreign_keys": [],
-      "constraints": [],
+      "foreign_keys": [
+        {
+          "source_column": "officeid",
+          "target_table": "office",
+          "target_column": "officeid",
+          "constraint_name": "fk_office"
+        },
+        {
+          "source_column": "officeid",
+          "target_table": "office",
+          "target_column": "officeid",
+          "constraint_name": "fk_office"
+        },
+        {
+          "source_column": "office_id",
+          "target_table": "office",
+          "target_column": "officeid",
+          "constraint_name": "fk_office"
+        },
+        {
+          "source_column": "office_id",
+          "target_table": "office",
+          "target_column": "officeid",
+          "constraint_name": "fk_office"
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_name": "water_log_date_not_null",
+          "check_clause": "date IS NOT NULL"
+        },
+        {
+          "constraint_name": "water_log_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "water_log_office_id_not_null",
+          "check_clause": "office_id IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "water_log_pkey",
@@ -4498,8 +7993,68 @@
       "primary_key": [
         "id"
       ],
-      "foreign_keys": [],
-      "constraints": [],
+      "foreign_keys": [
+        {
+          "source_column": "aa_es_id",
+          "target_table": "aa_es",
+          "target_column": "id",
+          "constraint_name": "fk_wo_aa_es"
+        },
+        {
+          "source_column": "agency_id",
+          "target_table": "agencies",
+          "target_column": "id",
+          "constraint_name": "fk_wo_agency"
+        },
+        {
+          "source_column": "officeid",
+          "target_table": "office",
+          "target_column": "officeid",
+          "constraint_name": "fk_wo_office"
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_name": "work_orders_aa_es_id_not_null",
+          "check_clause": "aa_es_id IS NOT NULL"
+        },
+        {
+          "constraint_name": "work_orders_agency_id_not_null",
+          "check_clause": "agency_id IS NOT NULL"
+        },
+        {
+          "constraint_name": "work_orders_estimated_cost_not_null",
+          "check_clause": "estimated_cost IS NOT NULL"
+        },
+        {
+          "constraint_name": "work_orders_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "work_orders_id_not_null",
+          "check_clause": "id IS NOT NULL"
+        },
+        {
+          "constraint_name": "work_orders_officeid_not_null",
+          "check_clause": "officeid IS NOT NULL"
+        },
+        {
+          "constraint_name": "work_orders_service_charge_percent_not_null",
+          "check_clause": "service_charge_percent IS NOT NULL"
+        },
+        {
+          "constraint_name": "work_orders_status_not_null",
+          "check_clause": "status IS NOT NULL"
+        },
+        {
+          "constraint_name": "work_orders_tendered_amount_not_null",
+          "check_clause": "tendered_amount IS NOT NULL"
+        },
+        {
+          "constraint_name": "work_orders_work_order_no_not_null",
+          "check_clause": "work_order_no IS NOT NULL"
+        }
+      ],
       "indexes": [
         {
           "index_name": "work_orders_pkey",
@@ -4522,7 +8077,7 @@
   "views": [
     {
       "view_name": "gc_view_machinery_consumption",
-      "definition": "",
+      "definition": "SELECT c.office_id,\n    m.id AS machinery_id,\n    m.machinery_name,\n    m.machinery_id_no,\n    i.id AS item_id,\n    i.item_name,\n    i.unit_of_measurement,\n    sum(c.quantity_consumed) AS total_consumed\n   FROM ((gc_sub_ledger_consumption c\n     JOIN gc_machinery m ON ((c.machinery_id = m.id)))\n     JOIN gc_items i ON ((c.item_id = i.id)))\n  GROUP BY c.office_id, m.id, m.machinery_name, m.machinery_id_no, i.id, i.item_name, i.unit_of_measurement;",
       "columns": [
         {
           "name": "office_id",
@@ -4560,7 +8115,7 @@
     },
     {
       "view_name": "gc_view_main_stock_balance",
-      "definition": "",
+      "definition": "SELECT i.office_id,\n    i.id AS item_id,\n    i.item_name,\n    i.unit_of_measurement,\n    (COALESCE(sum(\n        CASE\n            WHEN ((t.transaction_type)::text = 'RECEIPT'::text) THEN t.quantity\n            ELSE (0)::numeric\n        END), (0)::numeric) - COALESCE(sum(\n        CASE\n            WHEN ((t.transaction_type)::text = 'ISSUE'::text) THEN t.quantity\n            ELSE (0)::numeric\n        END), (0)::numeric)) AS current_balance\n   FROM (gc_items i\n     LEFT JOIN gc_main_stock_transactions t ON ((i.id = t.item_id)))\n  GROUP BY i.office_id, i.id, i.item_name, i.unit_of_measurement;",
       "columns": [
         {
           "name": "office_id",
@@ -4586,7 +8141,7 @@
     },
     {
       "view_name": "gc_view_sub_ledger_balance",
-      "definition": "",
+      "definition": "SELECT issue.office_id,\n    issue.party AS consumed_by,\n    i.id AS item_id,\n    i.item_name,\n    i.unit_of_measurement,\n    (COALESCE(issue.total_issued, (0)::numeric) - COALESCE(cons.total_consumed, (0)::numeric)) AS current_balance\n   FROM ((( SELECT gc_main_stock_transactions.office_id,\n            gc_main_stock_transactions.party,\n            gc_main_stock_transactions.item_id,\n            sum(gc_main_stock_transactions.quantity) AS total_issued\n           FROM gc_main_stock_transactions\n          WHERE ((gc_main_stock_transactions.transaction_type)::text = 'ISSUE'::text)\n          GROUP BY gc_main_stock_transactions.office_id, gc_main_stock_transactions.party, gc_main_stock_transactions.item_id) issue\n     JOIN gc_items i ON ((issue.item_id = i.id)))\n     LEFT JOIN ( SELECT gc_sub_ledger_consumption.office_id,\n            gc_sub_ledger_consumption.consumed_by,\n            gc_sub_ledger_consumption.item_id,\n            sum(gc_sub_ledger_consumption.quantity_consumed) AS total_consumed\n           FROM gc_sub_ledger_consumption\n          GROUP BY gc_sub_ledger_consumption.office_id, gc_sub_ledger_consumption.consumed_by, gc_sub_ledger_consumption.item_id) cons ON (((issue.office_id = cons.office_id) AND ((issue.party)::text = (cons.consumed_by)::text) AND (issue.item_id = cons.item_id))));",
       "columns": [
         {
           "name": "office_id",
@@ -4616,7 +8171,7 @@
     },
     {
       "view_name": "view_category_mapping",
-      "definition": "",
+      "definition": "SELECT id,\n    authority,\n    item_name,\n    json_key AS mapped_category,\n    unit,\n    fixed_allowance\n   FROM wage_items;",
       "columns": [
         {
           "name": "id",
@@ -4646,7 +8201,7 @@
     },
     {
       "view_name": "view_current_item_rates",
-      "definition": "",
+      "definition": "SELECT i.id AS item_id,\n    i.item_name,\n    i.authority,\n    i.unit,\n    o.letter_no,\n    o.valid_from AS effective_date,\n    ((o.rates ->> (i.json_key)::text))::numeric AS base_rate,\n    i.fixed_allowance,\n    (((o.rates ->> (i.json_key)::text))::numeric + COALESCE(i.fixed_allowance, (0)::numeric)) AS total_rate\n   FROM (wage_items i\n     JOIN wage_orders o ON ((i.authority = o.authority)))\n  WHERE ((CURRENT_DATE >= o.valid_from) AND (CURRENT_DATE <= o.valid_to));",
       "columns": [
         {
           "name": "item_id",
@@ -4696,15 +8251,15 @@
     },
     {
       "function_name": "binary_quantize",
-      "arguments": "vector",
-      "return_type": "bit",
-      "definition": "CREATE OR REPLACE FUNCTION public.binary_quantize(vector)\n RETURNS bit\n LANGUAGE c\n IMMUTABLE PARALLEL SAFE STRICT\nAS '$libdir/vector', $function$binary_quantize$function$"
-    },
-    {
-      "function_name": "binary_quantize",
       "arguments": "halfvec",
       "return_type": "bit",
       "definition": "CREATE OR REPLACE FUNCTION public.binary_quantize(halfvec)\n RETURNS bit\n LANGUAGE c\n IMMUTABLE PARALLEL SAFE STRICT\nAS '$libdir/vector', $function$halfvec_binary_quantize$function$"
+    },
+    {
+      "function_name": "binary_quantize",
+      "arguments": "vector",
+      "return_type": "bit",
+      "definition": "CREATE OR REPLACE FUNCTION public.binary_quantize(vector)\n RETURNS bit\n LANGUAGE c\n IMMUTABLE PARALLEL SAFE STRICT\nAS '$libdir/vector', $function$binary_quantize$function$"
     },
     {
       "function_name": "calculate_aa_es_amounts",
@@ -4858,15 +8413,15 @@
     },
     {
       "function_name": "l2_distance",
-      "arguments": "sparsevec, sparsevec",
-      "return_type": "float8",
-      "definition": "CREATE OR REPLACE FUNCTION public.l2_distance(sparsevec, sparsevec)\n RETURNS double precision\n LANGUAGE c\n IMMUTABLE PARALLEL SAFE STRICT\nAS '$libdir/vector', $function$sparsevec_l2_distance$function$"
-    },
-    {
-      "function_name": "l2_distance",
       "arguments": "halfvec, halfvec",
       "return_type": "float8",
       "definition": "CREATE OR REPLACE FUNCTION public.l2_distance(halfvec, halfvec)\n RETURNS double precision\n LANGUAGE c\n IMMUTABLE PARALLEL SAFE STRICT\nAS '$libdir/vector', $function$halfvec_l2_distance$function$"
+    },
+    {
+      "function_name": "l2_distance",
+      "arguments": "sparsevec, sparsevec",
+      "return_type": "float8",
+      "definition": "CREATE OR REPLACE FUNCTION public.l2_distance(sparsevec, sparsevec)\n RETURNS double precision\n LANGUAGE c\n IMMUTABLE PARALLEL SAFE STRICT\nAS '$libdir/vector', $function$sparsevec_l2_distance$function$"
     },
     {
       "function_name": "l2_distance",
@@ -4888,15 +8443,15 @@
     },
     {
       "function_name": "l2_normalize",
-      "arguments": "sparsevec",
-      "return_type": "sparsevec",
-      "definition": "CREATE OR REPLACE FUNCTION public.l2_normalize(sparsevec)\n RETURNS sparsevec\n LANGUAGE c\n IMMUTABLE PARALLEL SAFE STRICT\nAS '$libdir/vector', $function$sparsevec_l2_normalize$function$"
-    },
-    {
-      "function_name": "l2_normalize",
       "arguments": "vector",
       "return_type": "vector",
       "definition": "CREATE OR REPLACE FUNCTION public.l2_normalize(vector)\n RETURNS vector\n LANGUAGE c\n IMMUTABLE PARALLEL SAFE STRICT\nAS '$libdir/vector', $function$l2_normalize$function$"
+    },
+    {
+      "function_name": "l2_normalize",
+      "arguments": "sparsevec",
+      "return_type": "sparsevec",
+      "definition": "CREATE OR REPLACE FUNCTION public.l2_normalize(sparsevec)\n RETURNS sparsevec\n LANGUAGE c\n IMMUTABLE PARALLEL SAFE STRICT\nAS '$libdir/vector', $function$sparsevec_l2_normalize$function$"
     },
     {
       "function_name": "l2_normalize",
@@ -4960,27 +8515,27 @@
     },
     {
       "function_name": "tm_payment_calculator",
-      "arguments": "member_id integer",
-      "return_type": "numeric",
-      "definition": "CREATE OR REPLACE FUNCTION public.tm_payment_calculator(member_id integer)\n RETURNS numeric\n LANGUAGE plpgsql\nAS $function$\nBEGIN\n    -- Logic to be discussed later\n    -- Default stub: 1000.00\n    RETURN 1000.00;\nEND;\n$function$"
-    },
-    {
-      "function_name": "tm_payment_calculator",
       "arguments": "p_office_id integer, p_dependents jsonb",
       "return_type": "numeric",
       "definition": "CREATE OR REPLACE FUNCTION public.tm_payment_calculator(p_office_id integer, p_dependents jsonb)\n RETURNS numeric\n LANGUAGE plpgsql\nAS $function$\nDECLARE\n    v_main_rate NUMERIC;\n    v_dep_rate NUMERIC;\n    v_icard_rate NUMERIC;\n    v_gst_percent NUMERIC;\n    v_dep_count INTEGER;\n    v_subtotal NUMERIC;\n    v_total NUMERIC;\nBEGIN\n    -- 1. Fetch active rates and settings\n    SELECT main_member_rate, dependent_rate, icard_rate, gst_percent \n    INTO v_main_rate, v_dep_rate, v_icard_rate, v_gst_percent\n    FROM public.tm_rates\n    WHERE office_id = p_office_id AND is_active = TRUE\n    ORDER BY effective_from DESC\n    LIMIT 1;\n\n    -- Fallback rates\n    IF NOT FOUND THEN\n        v_main_rate := 5000; v_dep_rate := 1500; v_icard_rate := 10; v_gst_percent := 18;\n    END IF;\n\n    -- 2. Count dependents\n    v_dep_count := jsonb_array_length(p_dependents);\n\n    -- 3. Calculate Subtotal (Base Rates + I-Cards for all)\n    -- Total members = 1 (main) + v_dep_count\n    v_subtotal := v_main_rate + (v_dep_count * v_dep_rate) + ((1 + v_dep_count) * v_icard_rate);\n\n    -- 4. Add GST\n    v_total := v_subtotal * (1 + (v_gst_percent / 100));\n\n    RETURN round(v_total, 2);\nEND;\n$function$"
     },
     {
-      "function_name": "tm_tmno_generator",
-      "arguments": "p_office_id integer",
-      "return_type": "text",
-      "definition": "CREATE OR REPLACE FUNCTION public.tm_tmno_generator(p_office_id integer)\n RETURNS text\n LANGUAGE plpgsql\nAS $function$\nDECLARE\n    v_serial INTEGER;\n    v_office_code TEXT;\n    v_month TEXT;\n    v_year TEXT;\nBEGIN\n    v_month := to_char(CURRENT_DATE, 'MM');\n    v_year := to_char(CURRENT_DATE, 'YYYY');\n\n    -- Get Office Code\n    SELECT officecode INTO v_office_code FROM public.office WHERE officeid = p_office_id;\n    v_office_code := COALESCE(v_office_code, 'GEN');\n\n    -- Get Serial (Resetting annually)\n    SELECT COALESCE(MAX(SUBSTRING(tm_no FROM '^(\\d+)')::INTEGER), 0) + 1 \n    INTO v_serial \n    FROM public.tm \n    WHERE tm_no LIKE '%/' || v_year;\n\n    RETURN LPAD(v_serial::TEXT, 2, '0') || '/' || v_office_code || '/' || v_month || '/' || v_year;\nEND;\n$function$"
+      "function_name": "tm_payment_calculator",
+      "arguments": "member_id integer",
+      "return_type": "numeric",
+      "definition": "CREATE OR REPLACE FUNCTION public.tm_payment_calculator(member_id integer)\n RETURNS numeric\n LANGUAGE plpgsql\nAS $function$\nBEGIN\n    -- Logic to be discussed later\n    -- Default stub: 1000.00\n    RETURN 1000.00;\nEND;\n$function$"
     },
     {
       "function_name": "tm_tmno_generator",
       "arguments": "",
       "return_type": "text",
       "definition": "CREATE OR REPLACE FUNCTION public.tm_tmno_generator()\n RETURNS text\n LANGUAGE plpgsql\nAS $function$\nDECLARE\n    next_val INTEGER;\n    current_year TEXT;\nBEGIN\n    current_year := to_char(CURRENT_DATE, 'YYYY');\n    -- Get next sequence value (or simple count for stub)\n    SELECT COALESCE(MAX(id), 0) + 1 INTO next_val FROM public.tm;\n    RETURN 'TM/' || current_year || '/' || LPAD(next_val::TEXT, 5, '0');\nEND;\n$function$"
+    },
+    {
+      "function_name": "tm_tmno_generator",
+      "arguments": "p_office_id integer",
+      "return_type": "text",
+      "definition": "CREATE OR REPLACE FUNCTION public.tm_tmno_generator(p_office_id integer)\n RETURNS text\n LANGUAGE plpgsql\nAS $function$\nDECLARE\n    v_serial INTEGER;\n    v_office_code TEXT;\n    v_month TEXT;\n    v_year TEXT;\nBEGIN\n    v_month := to_char(CURRENT_DATE, 'MM');\n    v_year := to_char(CURRENT_DATE, 'YYYY');\n\n    -- Get Office Code\n    SELECT officecode INTO v_office_code FROM public.office WHERE officeid = p_office_id;\n    v_office_code := COALESCE(v_office_code, 'GEN');\n\n    -- Get Serial (Resetting annually)\n    SELECT COALESCE(MAX(SUBSTRING(tm_no FROM '^(\\d+)')::INTEGER), 0) + 1 \n    INTO v_serial \n    FROM public.tm \n    WHERE tm_no LIKE '%/' || v_year;\n\n    RETURN LPAD(v_serial::TEXT, 2, '0') || '/' || v_office_code || '/' || v_month || '/' || v_year;\nEND;\n$function$"
     },
     {
       "function_name": "tm_validator",
@@ -4990,15 +8545,15 @@
     },
     {
       "function_name": "tm_validity",
-      "arguments": "start_date date, duration_type text",
-      "return_type": "daterange",
-      "definition": "CREATE OR REPLACE FUNCTION public.tm_validity(start_date date, duration_type text)\n RETURNS daterange\n LANGUAGE plpgsql\nAS $function$\nBEGIN\n    RETURN daterange(start_date, (start_date + INTERVAL '1 month')::DATE);\nEND;\n$function$"
-    },
-    {
-      "function_name": "tm_validity",
       "arguments": "p_application_date date",
       "return_type": "daterange",
       "definition": "CREATE OR REPLACE FUNCTION public.tm_validity(p_application_date date)\n RETURNS daterange\n LANGUAGE plpgsql\nAS $function$\nDECLARE\n    v_start_date DATE;\n    v_end_date DATE;\nBEGIN\n    -- If application is on or after 26th, start from 1st of next month\n    IF extract(day from p_application_date) >= 26 THEN\n        v_start_date := (date_trunc('month', p_application_date) + INTERVAL '1 month')::DATE;\n    ELSE\n        -- Otherwise start from 1st of current month\n        v_start_date := date_trunc('month', p_application_date)::DATE;\n    END IF;\n\n    -- Validity is for 3 calendar months\n    v_end_date := (v_start_date + INTERVAL '3 months')::DATE;\n    \n    RETURN daterange(v_start_date, v_end_date);\nEND;\n$function$"
+    },
+    {
+      "function_name": "tm_validity",
+      "arguments": "start_date date, duration_type text",
+      "return_type": "daterange",
+      "definition": "CREATE OR REPLACE FUNCTION public.tm_validity(start_date date, duration_type text)\n RETURNS daterange\n LANGUAGE plpgsql\nAS $function$\nBEGIN\n    RETURN daterange(start_date, (start_date + INTERVAL '1 month')::DATE);\nEND;\n$function$"
     },
     {
       "function_name": "update_modified_column",
@@ -5050,6 +8605,11 @@
     }
   ],
   "enums_and_types": [
+    {
+      "type_name": "vector",
+      "type_category": "base",
+      "enum_values": ""
+    },
     {
       "type_name": "aa_es_status",
       "type_category": "enum",
@@ -5129,11 +8689,6 @@
       "type_name": "wage_unit",
       "type_category": "enum",
       "enum_values": "Per Person Per Month, Per Person Per Day"
-    },
-    {
-      "type_name": "vector",
-      "type_category": "base",
-      "enum_values": ""
     }
   ]
 }

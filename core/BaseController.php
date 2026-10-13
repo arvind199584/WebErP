@@ -58,7 +58,14 @@ abstract class BaseController
             if (isset($_POST['csrf_token'])) {
                 $token = $_POST['csrf_token'];
             } 
-            // 2. Check JSON/Raw Payload (for AJAX)
+            // 2. Check HTTP Header (X-CSRF-Token or X-XSRF-Token)
+            elseif (!empty($_SERVER['HTTP_X_CSRF_TOKEN'])) {
+                $token = $_SERVER['HTTP_X_CSRF_TOKEN'];
+            }
+            elseif (!empty($_SERVER['HTTP_X_XSRF_TOKEN'])) {
+                $token = $_SERVER['HTTP_X_XSRF_TOKEN'];
+            }
+            // 3. Check JSON/Raw Payload (for AJAX)
             else {
                 $rawInput = json_decode(file_get_contents('php://input'), true);
                 if (isset($rawInput['csrf_token'])) {
