@@ -19,6 +19,25 @@ class TMController extends BaseController {
     }
 
     public function handleRequest(): void {
+        $isAjax = (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) === 'xmlhttprequest') ||
+                  (isset($_SERVER['HTTP_ACCEPT']) && str_contains(strtolower($_SERVER['HTTP_ACCEPT']), 'application/json'));
+
+        if ($isAjax) {
+            http_response_code(503);
+            header('Content-Type: application/json');
+            echo json_encode([
+                'status' => 'error',
+                'message' => 'The Temporary Members module and API are temporarily disabled.'
+            ]);
+            exit;
+        }
+
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
+        $_SESSION['error'] = 'The Temporary Members module is temporarily disabled and under active development.';
+        header('Location: /index.php');
+        exit;
         $action = $_GET['action'] ?? 'index';
         try {
             $this->checkPermission($action);

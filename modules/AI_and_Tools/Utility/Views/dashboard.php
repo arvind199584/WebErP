@@ -229,15 +229,6 @@ $officeId = $currentUser['officeid'] ?? 1;
                         <a href="/modules/Finance/Expenditure/OpeningBalance/Controller/OpeningBalanceController.php" class="btn btn-sm btn-danger">
                             <i class="bi bi-cash-stack me-1"></i> Opening Balance
                         </a>
-                        <a href="/modules/Finance/Revenue/Revenue/TemporaryMember/Controller/TMController.php?action=list" class="btn btn-sm btn-light border">
-                            <i class="bi bi-person-badge me-1"></i> Temp Members
-                        </a>
-                        <a href="/modules/Finance/Revenue/Income/Membership/Controller/MembershipController.php" class="btn btn-sm btn-light border">
-                            <i class="bi bi-person-check me-1"></i> Membership
-                        </a>
-                        <a href="/modules/Finance/Revenue/Income/GroundBooking/Controller/GroundBookingController.php" class="btn btn-sm btn-light border">
-                            <i class="bi bi-calendar-event me-1"></i> Booking
-                        </a>
                     </div>
                 </div>
             </div>
@@ -258,17 +249,11 @@ $officeId = $currentUser['officeid'] ?? 1;
                     <h5 class="fw-bold text-gray-800 mb-1">AI & Master Utilities</h5>
                     <p class="text-muted small mb-3">AI assistance & automated data queries, official government letter generation, master report printing, and SQL analytics.</p>
                     <div class="d-flex gap-2 flex-wrap">
-                        <a href="/modules/AI_and_Tools/AIML/Controller/AIMLController.php" class="btn btn-sm btn-outline-secondary">
-                            <i class="bi bi-robot me-1"></i> AI Assistant
-                        </a>
-                        <a href="/modules/AI_and_Tools/AIDrafter/Controller/AIDrafterController.php" class="btn btn-sm btn-secondary">
-                            <i class="bi bi-file-earmark-text me-1"></i> AI Letter Drafter
-                        </a>
-                        <a href="/modules/AI_and_Tools/ReportPrinting/Controller/ReportPrintingController.php" class="btn btn-sm btn-light border">
+                        <a href="/modules/AI_and_Tools/ReportPrinting/Controller/ReportPrintingController.php" class="btn btn-sm btn-secondary">
                             <i class="bi bi-printer me-1"></i> Report Printing
                         </a>
-                        <a href="/modules/AI_and_Tools/Utility/Controller/SQLRunnerController.php" class="btn btn-sm btn-light border">
-                            <i class="bi bi-terminal me-1"></i> SQL Runner
+                        <a href="/modules/AI_and_Tools/Utility/Controller/UtilityController.php?action=budget_tracking" class="btn btn-sm btn-outline-secondary">
+                            <i class="bi bi-graph-up me-1"></i> Budget Analytics
                         </a>
                     </div>
                 </div>
@@ -385,17 +370,7 @@ $officeId = $currentUser['officeid'] ?? 1;
                             <span class="badge bg-warning text-dark">&rarr;</span>
                         </a>
 
-                        <!-- AI Assistant -->
-                        <a href="/modules/AI_and_Tools/AIML/Controller/AIMLController.php" class="btn btn-outline-primary d-flex justify-content-between align-items-center py-2 px-3">
-                            <span class="fw-semibold"><i class="bi bi-robot text-primary me-2 fs-5"></i> AI Natural Language Query</span>
-                            <span>&rarr;</span>
-                        </a>
 
-                        <!-- AI Letter Drafter -->
-                        <a href="/modules/AI_and_Tools/AIDrafter/Controller/AIDrafterController.php" class="btn btn-outline-primary d-flex justify-content-between align-items-center py-2 px-3">
-                            <span class="fw-semibold"><i class="bi bi-file-earmark-text text-primary me-2 fs-5"></i> AI Official Letter Drafter</span>
-                            <span>&rarr;</span>
-                        </a>
 
                         <!-- Agreement Opening Balance -->
                         <a href="/modules/Finance/Expenditure/OpeningBalance/Controller/OpeningBalanceController.php" class="btn btn-outline-danger d-flex justify-content-between align-items-center py-2 px-3">

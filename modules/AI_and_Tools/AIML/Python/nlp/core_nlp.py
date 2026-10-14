@@ -45,6 +45,11 @@ from .sql_generator import generate_sql_from_intent
 
 app = Flask(__name__)
 CORS(app)
+@app.before_request
+def check_aiml_enabled():
+    if request.path in ['/nlp', '/nlp-report', '/nlp-action', '/normalize-sql']:
+        return jsonify({"status": "error", "message": "The AI Assistant and ML services are temporarily disabled."}), 503
+
 
 # ---------------------------------------------------------------------------
 # Configuration

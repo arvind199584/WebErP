@@ -84,28 +84,18 @@ if ($hasStore) {
     ];
 }
 
-// 5. Finance & Accounts
+// 5. Finance & Accounts (Operational modules: Budget Management & Expenditure)
 if ($hasFinance) {
     $menu['Finance'] = [
         ['name' => 'Budget Management', 'url' => '/modules/Finance/Budget/Controller/BudgetController.php?action=list', 'icon' => 'bi-pie-chart'],
         ['name' => 'Expenditure & Opening Balance', 'url' => '/modules/Finance/Expenditure/OpeningBalance/Controller/OpeningBalanceController.php', 'icon' => 'bi-cash-stack'],
-        ['name' => 'Temporary Members', 'url' => '/modules/Finance/Revenue/Revenue/TemporaryMember/Controller/TMController.php?action=list', 'icon' => 'bi-person-badge'],
-        ['name' => 'Membership Revenue', 'url' => '/modules/Finance/Revenue/Income/Membership/Controller/MembershipController.php', 'icon' => 'bi-person-check'],
-        ['name' => 'Ground Booking', 'url' => '/modules/Finance/Revenue/Income/GroundBooking/Controller/GroundBookingController.php', 'icon' => 'bi-calendar-event'],
-        ['name' => 'Pay & Play', 'url' => '/modules/Finance/Revenue/Income/PaynPlay/Controller/PaynPlayController.php', 'icon' => 'bi-controller'],
-        ['name' => 'Swimming Pool', 'url' => '/modules/Finance/Revenue/Income/SwimmingPool/Controller/SwimmingPoolController.php', 'icon' => 'bi-water'],
-        ['name' => 'Coaching Revenue', 'url' => '/modules/Finance/Revenue/Income/Coaching/Controller/CoachingController.php', 'icon' => 'bi-mortarboard'],
-        ['name' => 'Daily Visitors', 'url' => '/modules/Finance/Revenue/Income/Visitor/Controller/VisitorController.php', 'icon' => 'bi-ticket-perforated'],
     ];
 }
 
-// 6. AI & Productivity Tools
+// 6. AI & Productivity Tools (Active: Report Printing & Budget Analytics)
 if ($hasTools) {
     $menu['AI & Tools'] = [
-        ['name' => 'AI Assistant & ML', 'url' => '/modules/AI_and_Tools/AIML/Controller/AIMLController.php', 'icon' => 'bi-robot'],
-        ['name' => 'AI Letter Drafter', 'url' => '/modules/AI_and_Tools/AIDrafter/Controller/AIDrafterController.php', 'icon' => 'bi-file-earmark-text'],
         ['name' => 'Report Printing Center', 'url' => '/modules/AI_and_Tools/ReportPrinting/Controller/ReportPrintingController.php', 'icon' => 'bi-printer'],
-        ['name' => 'SQL Runner & Query', 'url' => '/modules/AI_and_Tools/Utility/Controller/SQLRunnerController.php', 'icon' => 'bi-terminal'],
         ['name' => 'Budget Analytics', 'url' => '/modules/AI_and_Tools/Utility/Controller/UtilityController.php?action=budget_tracking', 'icon' => 'bi-graph-up'],
     ];
 }

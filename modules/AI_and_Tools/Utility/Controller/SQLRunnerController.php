@@ -16,6 +16,25 @@ class SQLRunnerController extends BaseController {
     }
 
     public function handleRequest(): void {
+        $isAjax = (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) === 'xmlhttprequest') ||
+                  (isset($_SERVER['HTTP_ACCEPT']) && str_contains(strtolower($_SERVER['HTTP_ACCEPT']), 'application/json'));
+
+        if ($isAjax) {
+            http_response_code(503);
+            header('Content-Type: application/json');
+            echo json_encode([
+                'status' => 'error',
+                'message' => 'The SQL Runner & Query module and API are temporarily disabled.'
+            ]);
+            exit;
+        }
+
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
+        $_SESSION['error'] = 'The SQL Runner & Query module is temporarily disabled and under active development.';
+        header('Location: /index.php');
+        exit;
         try {
             if (session_status() === PHP_SESSION_NONE) {
                 session_start();
