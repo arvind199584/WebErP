@@ -44,7 +44,7 @@
 
         .watermark {
             position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;
-            pointer-events: none; opacity: 0.1; background-image: url('/assets/images/dda_logo.png');
+            pointer-events: none; opacity: 0.1; background-image: url('/assets/images/daredevil_logo.svg');
             background-repeat: repeat; background-size: 150px 150px; background-position: center;
             transform: rotate(-30deg) scale(1.5);
         }

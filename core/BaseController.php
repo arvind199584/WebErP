@@ -264,9 +264,27 @@ abstract class BaseController
         .error-body { padding: 30px; background: #fff; }
         .debug-box { background: #212529; color: #f8f9fa; border-radius: 8px; padding: 15px; font-family: Consolas, monospace; font-size: 0.85rem; max-height: 250px; overflow-y: auto; }
         .badge-role { font-size: 0.85rem; padding: 6px 12px; }
+
+        .daredevil-watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: min(520px, 65vmin);
+            height: min(520px, 65vmin);
+            background-image: url('/assets/images/daredevil_logo.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            opacity: 0.045;
+            pointer-events: none;
+            user-select: none;
+            z-index: 9999;
+        }
     </style>
 </head>
 <body>
+    <div class="daredevil-watermark" aria-hidden="true"></div>
     <div class="container">
         <div class="card error-card">
             <div class="error-header {$headerBg}">

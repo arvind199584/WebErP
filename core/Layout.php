@@ -195,7 +195,7 @@ unset($_SESSION['message'], $_SESSION['error']);
             background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
             border-bottom: 1px solid rgba(255, 255, 255, 0.08);
             box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
-            z-index: 1030;
+            z-index: 1050;
         }
 
         .navbar-brand {
@@ -397,9 +397,54 @@ unset($_SESSION['message'], $_SESSION['error']);
                 padding: 1rem;
             }
         }
+
+        /* Daredevil Watermark Overlay */
+        .daredevil-watermark {
+            position: fixed;
+            top: calc(50% + (var(--navbar-height) / 2));
+            left: calc(50% + (var(--sidebar-width) / 2));
+            transform: translate(-50%, -50%);
+            width: min(550px, 65vmin);
+            height: min(550px, 65vmin);
+            background-image: url('/assets/images/daredevil_logo.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            opacity: 0.055;
+            pointer-events: none;
+            user-select: none;
+            z-index: 1035;
+            transition: left 0.3s ease, opacity 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .daredevil-watermark {
+                left: 50%;
+                width: min(340px, 75vmin);
+                height: min(340px, 75vmin);
+            }
+        }
+
+        @media print {
+            .daredevil-watermark {
+                position: fixed !important;
+                top: 50% !important;
+                left: 50% !important;
+                transform: translate(-50%, -50%) !important;
+                width: 480px !important;
+                height: 480px !important;
+                opacity: 0.07 !important;
+                z-index: 9999 !important;
+                display: block !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+        }
     </style>
 </head>
 <body>
+    <!-- Daredevil Watermark Overlay -->
+    <div class="daredevil-watermark" aria-hidden="true"></div>
     <!-- Top Navbar -->
     <header class="navbar navbar-main sticky-top px-3 py-2">
         <div class="d-flex align-items-center">

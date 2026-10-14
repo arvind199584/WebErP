@@ -182,9 +182,45 @@ $qrCodeUrl = 'https://api.qrserver.com/v1/create-qr-code/?size=140x140&margin=6&
             display: inline-block;
             box-shadow: 0 2px 8px rgba(0,0,0,0.15);
         }
+
+        /* Daredevil Watermark Overlay */
+        .daredevil-watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: min(560px, 70vmin);
+            height: min(560px, 70vmin);
+            background-image: url('/assets/images/daredevil_logo.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            opacity: 0.045;
+            pointer-events: none;
+            user-select: none;
+            z-index: 9999;
+        }
+
+        @media print {
+            .daredevil-watermark {
+                position: fixed !important;
+                top: 50% !important;
+                left: 50% !important;
+                transform: translate(-50%, -50%) !important;
+                width: 480px !important;
+                height: 480px !important;
+                opacity: 0.07 !important;
+                z-index: 9999 !important;
+                display: block !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+        }
     </style>
 </head>
 <body>
+    <!-- Daredevil Watermark Overlay -->
+    <div class="daredevil-watermark" aria-hidden="true"></div>
 
     <!-- Top Navigation Bar -->
     <header class="portal-topbar d-flex justify-content-between align-items-center">
