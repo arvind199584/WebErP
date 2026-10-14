@@ -260,12 +260,13 @@ def build_golden_seed_sql():
         (13, "Fuel Filter Spin-On Element", "Nos", 5),
         (14, "Spark Plug NGK BPR6ES", "Nos", 5),
         (15, "Safety Helmets & Visors", "Nos", 6),
-        (16, "Nitrile Heavy Duty Work Gloves", "Pairs", 6)
+        (16, "Nitrile Heavy Duty Work Gloves", "Pairs", 6),
+        (17, "2T Oil", "Litre", 1)
     ]
     sql.append("INSERT INTO public.turf_inventory_items (id, description, ac_unit, category_id) VALUES")
     si_rows = [f"({si[0]}, '{si[1]}', '{si[2]}', {si[3]})" for si in store_items]
     sql.append(",\n".join(si_rows) + ";")
-    sql.append("SELECT setval('turf_inventory_items_id_seq', 16, true);")
+    sql.append("SELECT setval('turf_inventory_items_id_seq', 17, true);")
     sql.append("")
 
     # Store Inventory Ledger (RECEIPT / ISSUE)

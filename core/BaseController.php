@@ -75,6 +75,18 @@ abstract class BaseController
 
             if (!CSRFManager::validateToken($token)) {
                 http_response_code(403);
+                $isAjax = (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) === 'xmlhttprequest') ||
+                          (isset($_SERVER['HTTP_ACCEPT']) && str_contains(strtolower($_SERVER['HTTP_ACCEPT']), 'application/json')) ||
+                          (isset($_SERVER['CONTENT_TYPE']) && str_contains(strtolower($_SERVER['CONTENT_TYPE']), 'application/json'));
+
+                if ($isAjax) {
+                    header('Content-Type: application/json');
+                    echo json_encode([
+                        'status' => 'error',
+                        'error' => 'Security Error: CSRF token validation failed. Please refresh the page and try again.'
+                    ]);
+                    exit;
+                }
                 die("Security Error: CSRF token validation failed.");
             }
         }

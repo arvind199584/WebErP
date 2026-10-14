@@ -6,15 +6,34 @@ namespace App\Core;
 
 class CSRFManager
 {
+    private static function initSession(): void
+    {
+        if (session_status() === PHP_SESSION_NONE) {
+            $sessionPath = __DIR__ . '/../sessions_new';
+            if (!is_dir($sessionPath)) {
+                mkdir($sessionPath, 0777, true);
+            }
+            session_save_path($sessionPath);
+
+            session_set_cookie_params([
+                'lifetime' => 0,
+                'path' => '/',
+                'domain' => '',
+                'secure' => false,
+                'httponly' => true,
+                'samesite' => 'Lax'
+            ]);
+            session_start();
+        }
+    }
+
     /**
      * Generates a CSRF token and stores it in the session.
      * @return string
      */
     public static function generateToken(): string
     {
-        if (session_status() === PHP_SESSION_NONE) {
-            session_start();
-        }
+        self::initSession();
 
         if (empty($_SESSION['csrf_token'])) {
             $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
@@ -30,9 +49,7 @@ class CSRFManager
      */
     public static function validateToken(?string $token): bool
     {
-        if (session_status() === PHP_SESSION_NONE) {
-            session_start();
-        }
+        self::initSession();
 
         if (empty($_SESSION['csrf_token']) || empty($token)) {
             return false;

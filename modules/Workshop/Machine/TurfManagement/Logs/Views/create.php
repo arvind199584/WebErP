@@ -825,14 +825,19 @@ document.addEventListener('DOMContentLoaded', function() {
         insertAllBtn.disabled = true;
 
         try {
+            const csrfToken = "<?php echo \App\Core\CSRFManager::generateToken(); ?>";
             const response = await fetch('?action=createLogs', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'X-Requested-With': 'XMLHttpRequest'
+                    'X-Requested-With': 'XMLHttpRequest',
+                    'X-CSRF-Token': csrfToken
                 },
                 body: JSON.stringify({
-                    csrf_token: "<?php echo \App\Core\CSRFManager::generateToken(); ?>", logs: stagedLogs, office_id: officeId })
+                    csrf_token: csrfToken,
+                    logs: stagedLogs,
+                    office_id: officeId
+                })
             });
 
             const result = await response.json();
