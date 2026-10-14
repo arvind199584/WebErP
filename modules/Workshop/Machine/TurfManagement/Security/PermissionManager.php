@@ -17,6 +17,7 @@ class PermissionManager
             // --- Universal Actions ---
             'list' => $read_only,
             'index' => $read_only,
+            'dashboard' => $read_only,
             'status' => $read_only,
             'showCreateForm' => $staff_plus,
             'showEditForm' => $staff_plus,
@@ -56,6 +57,7 @@ class PermissionManager
             'fetchSourceDetails' => $read_only,
             'getVoucherDetails' => $read_only,
             'printVoucher' => $read_only,
+            'getBalanceData' => $read_only,
         ];
     }
 }

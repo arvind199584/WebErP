@@ -1,3 +1,9 @@
+<?php
+if (isset($fleet)) {
+    require __DIR__ . '/dashboard.php';
+    return;
+}
+?>
 <!-- Main Workshop & Store Management View -->
 <div style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); max-width: 800px; margin: auto; text-align: center;">
     <h1 style="color: #0056b3;">Workshop & Store Management</h1>

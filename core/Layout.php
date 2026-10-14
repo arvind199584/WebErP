@@ -64,8 +64,9 @@ if ($hasHr) {
 // 3. Workshop & Machinery
 if ($hasWorkshop) {
     $menu['Workshop'] = [
+        ['name' => 'Workshop Dashboard', 'url' => '/modules/Workshop/Machine/TurfManagement/Controller/TurfManagementController.php?action=dashboard', 'icon' => 'bi-speedometer2'],
         ['name' => 'Machine Fleet', 'url' => '/modules/Workshop/Machine/TurfManagement/Machines/Controller/MachineController.php?action=list', 'icon' => 'bi-truck'],
-        ['name' => 'Machine Status', 'url' => '/modules/Workshop/Machine/TurfManagement/Machines/Controller/MachineController.php?action=status', 'icon' => 'bi-speedometer2'],
+        ['name' => 'Machine Status', 'url' => '/modules/Workshop/Machine/TurfManagement/Machines/Controller/MachineController.php?action=status', 'icon' => 'bi-activity'],
         ['name' => 'Daily Run Logs', 'url' => '/modules/Workshop/Machine/TurfManagement/Logs/Controller/LogController.php?action=list', 'icon' => 'bi-journal-text'],
         ['name' => 'Machine Service Logs', 'url' => '/modules/Workshop/Machine/TurfManagement/Servicing/Controller/ServicingController.php?action=list', 'icon' => 'bi-wrench-adjustable'],
         ['name' => 'Machine Repair Work', 'url' => '/modules/Workshop/Machine/TurfManagement/Repairs/Controller/RepairController.php?action=list', 'icon' => 'bi-tools'],
