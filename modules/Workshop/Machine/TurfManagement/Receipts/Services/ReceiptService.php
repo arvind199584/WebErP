@@ -164,7 +164,7 @@ class ReceiptService {
                     $sparePartId = !empty($item['spare_part_id']) ? (int)$item['spare_part_id'] : null;
 
                     // Handle on-the-fly new items if not already assigned an itemId
-                    if ($isNewItem && empty($itemId) && empty($sparePartId)) {
+                    if (empty($itemId) && empty($sparePartId)) {
                         if ($isSparePart && !empty($item['machine_id'])) {
                             $spData = [
                                 'officeid'     => $officeId,
@@ -300,5 +300,184 @@ class ReceiptService {
             $stagedItems[] = $merged;
         }
         $this->processMultiRvReceipt($masterData, $stagedItems);
+    }
+
+    /**
+     * Update an existing Receipt Voucher and synchronize with central inventory ledger & spare parts stock.
+     */
+    public function updateReceiptVoucher(int $id, array $masterData, array $items, ?int $officeId = null): array {
+        if (empty($items)) {
+            throw new Exception("Voucher must contain at least one line item.");
+        }
+
+        $existingVoucher = $this->receiptModel->getVoucherById($id, $officeId);
+        if (!$existingVoucher) {
+            throw new Exception("Receipt Voucher #{$id} not found.");
+        }
+
+        $vOfficeId = (int)$existingVoucher['officeid'];
+        $vNo = trim((string)($masterData['voucher_no'] ?? $existingVoucher['voucher_no'] ?? ''));
+        if ($vNo === '') {
+            throw new Exception("Voucher Number is required.");
+        }
+
+        if ($this->receiptModel->voucherNumberExists($vNo, $vOfficeId, $id)) {
+            throw new Exception("Voucher Number '{$vNo}' already exists for this office. Please specify a unique voucher number.");
+        }
+
+        $vDate = !empty($masterData['voucher_date']) ? $masterData['voucher_date'] : $existingVoucher['voucher_date'];
+        $party = trim((string)($masterData['party'] ?? $existingVoucher['party'] ?? ''));
+        $agencyId = !empty($masterData['agency_id']) ? (int)$masterData['agency_id'] : (!empty($existingVoucher['agency_id']) ? (int)$existingVoucher['agency_id'] : null);
+        $sourceType = strtoupper(trim((string)($masterData['source_type'] ?? $existingVoucher['source_type'] ?? 'MANUAL')));
+        $sourceId = !empty($masterData['source_id']) ? (int)$masterData['source_id'] : (!empty($existingVoucher['source_id']) ? (int)$existingVoucher['source_id'] : null);
+        $sourceRefNo = trim((string)($masterData['source_ref_no'] ?? $existingVoucher['source_ref_no'] ?? ''));
+        $storeCategory = $masterData['store_category'] ?? $masterData['category_code'] ?? $existingVoucher['store_category'] ?? 'general';
+        $supplyStatus = $masterData['supply_status'] ?? $existingVoucher['supply_status'] ?? 'COMPLETE';
+        $remarks = $masterData['remarks'] ?? $existingVoucher['remarks'] ?? null;
+
+        $db = Database::getInstance()->getConnection();
+        $this->receiptModel->beginTransaction();
+
+        try {
+            // 1. Revert previous spare parts stock for old items in this voucher
+            if (!empty($existingVoucher['items']) && is_array($existingVoucher['items'])) {
+                foreach ($existingVoucher['items'] as $oldItem) {
+                    if (!empty($oldItem['is_spare_part']) && !empty($oldItem['spare_part_id'])) {
+                        $oldQty = (float)($oldItem['quantity'] ?? 0);
+                        if ($oldQty > 0) {
+                            $spStmt = $db->prepare("UPDATE public.turf_machine_spare_parts 
+                                                    SET received_qty = GREATEST(0, received_qty - :qty), 
+                                                        current_stock = GREATEST(0, current_stock - :qty),
+                                                        updated_at = CURRENT_TIMESTAMP 
+                                                    WHERE id = :spid");
+                            $spStmt->execute(['qty' => $oldQty, 'spid' => (int)$oldItem['spare_part_id']]);
+                        }
+                    }
+                }
+            }
+
+            // 2. Remove all existing ledger items for this voucher
+            $this->receiptModel->deleteLedgerItemsForVoucher($id, $vOfficeId, (string)$existingVoucher['voucher_no']);
+
+            // 3. Process new line items
+            $jsonbItems = [];
+            $processedItemsForLedger = [];
+
+            foreach ($items as $idx => $item) {
+                $qty = (float)($item['quantity'] ?? 0);
+                if ($qty <= 0) {
+                    throw new Exception("Item #" . ($idx + 1) . " ('" . ($item['description'] ?? 'Item') . "') must have a quantity greater than zero.");
+                }
+
+                $desc = trim((string)($item['description'] ?? ''));
+                if ($desc === '') {
+                    throw new Exception("Item #" . ($idx + 1) . " requires a description/name.");
+                }
+
+                $unit = trim((string)($item['unit'] ?? 'Pcs'));
+                $rate = (float)($item['rate'] ?? 0);
+                $amount = (float)($item['amount'] ?? ($qty * $rate));
+                $itemRemarks = trim((string)($item['remarks'] ?? ''));
+
+                $itemId = !empty($item['item_id']) ? (int)$item['item_id'] : null;
+                $isSparePart = !empty($item['is_spare_part']);
+                $sparePartId = !empty($item['spare_part_id']) ? (int)$item['spare_part_id'] : null;
+
+                // If not a spare part and itemId is missing, attempt to find or create in turf_inventory_items
+                if (!$isSparePart && empty($itemId)) {
+                    $existStmt = $db->prepare("SELECT id FROM turf_inventory_items WHERE LOWER(TRIM(description)) = LOWER(TRIM(:desc)) LIMIT 1");
+                    $existStmt->execute(['desc' => $desc]);
+                    $existingId = $existStmt->fetchColumn();
+
+                    if ($existingId) {
+                        $itemId = (int)$existingId;
+                    } else {
+                        $catCode = $storeCategory;
+                        $catIdStmt = $db->prepare("SELECT id FROM turf_inventory_categories WHERE code = :code OR LOWER(name) LIKE :likeCode LIMIT 1");
+                        $catIdStmt->execute(['code' => $catCode, 'likeCode' => "%{$catCode}%"]);
+                        $catId = $catIdStmt->fetchColumn();
+
+                        $invModel = new InventoryItemModel();
+                        $itemId = $invModel->createItem([
+                            'description' => $desc,
+                            'ac_unit'     => $unit,
+                            'category_id' => $catId ? (int)$catId : null
+                        ]);
+                    }
+                }
+
+                // If spare part, update received_qty and current_stock in turf_machine_spare_parts
+                if ($isSparePart && $sparePartId) {
+                    $upStmt = $db->prepare("UPDATE public.turf_machine_spare_parts 
+                                            SET received_qty = received_qty + :qty, 
+                                                current_stock = current_stock + :qty,
+                                                updated_at = CURRENT_TIMESTAMP 
+                                            WHERE id = :spid");
+                    $upStmt->execute(['qty' => $qty, 'spid' => $sparePartId]);
+                }
+
+                $lineItem = [
+                    'item_id'       => $itemId,
+                    'spare_part_id' => $sparePartId,
+                    'is_spare_part' => $isSparePart,
+                    'description'   => $desc,
+                    'quantity'      => $qty,
+                    'unit'          => $unit,
+                    'rate'          => $rate,
+                    'amount'        => $amount,
+                    'remarks'       => $itemRemarks
+                ];
+                $jsonbItems[] = $lineItem;
+
+                if (!empty($itemId)) {
+                    $processedItemsForLedger[] = [
+                        'officeid'         => $vOfficeId,
+                        'item_id'          => $itemId,
+                        'quantity'         => $qty,
+                        'transaction_date' => $vDate,
+                        'voucher_no'       => $vNo,
+                        'party'            => $party,
+                        'remarks'          => $itemRemarks ?: $remarks,
+                        'rv_id'            => $id
+                    ];
+                }
+            }
+
+            // 4. Update Header in turf_receipt_vouchers
+            $headerData = [
+                'voucher_no'     => $vNo,
+                'voucher_date'   => $vDate,
+                'party'          => $party,
+                'agency_id'      => $agencyId,
+                'source_type'    => $sourceType,
+                'source_id'      => $sourceId,
+                'source_ref_no'  => $sourceRefNo,
+                'store_category' => $storeCategory,
+                'items'          => $jsonbItems,
+                'supply_status'  => $supplyStatus,
+                'remarks'        => $remarks
+            ];
+            $this->receiptModel->updateReceiptVoucherHeader($id, $headerData);
+
+            // 5. Insert new ledger rows
+            foreach ($processedItemsForLedger as $lData) {
+                $this->receiptModel->createReceiptLedgerItem($lData);
+            }
+
+            $this->receiptModel->commit();
+
+            return [
+                'status'     => 'success',
+                'voucher_id' => $id,
+                'voucher_no' => $vNo,
+                'message'    => "Receipt Voucher '{$vNo}' updated successfully!"
+            ];
+
+        } catch (Exception $e) {
+            if ($this->receiptModel->inTransaction()) {
+                $this->receiptModel->rollBack();
+            }
+            throw $e;
+        }
     }
 }

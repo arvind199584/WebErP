@@ -52,6 +52,13 @@ class ReceiptController extends BaseController {
                 case 'showCreateForm':
                     $this->showCreateForm($userRole, $userOfficeId);
                     break;
+                case 'showEditForm':
+                case 'edit':
+                    $this->showEditForm($userRole, $userOfficeId);
+                    break;
+                case 'update':
+                    $this->updateReceipt($userRole, $userOfficeId);
+                    break;
                 case 'fetchSourceOptions':
                     $this->fetchSourceOptions($userRole, $userOfficeId);
                     break;
@@ -318,6 +325,99 @@ class ReceiptController extends BaseController {
         exit;
     }
 
+    private function showEditForm(string $userRole, int $userOfficeId): void {
+        $id = (int)($_GET['id'] ?? 0);
+        if ($id <= 0) {
+            throw new Exception("Voucher ID is required.");
+        }
+
+        $officeId = ($userRole === 'superuser') ? null : $userOfficeId;
+        $voucher = $this->receiptService->getVoucherById($id, $officeId);
+        if (!$voucher) {
+            throw new Exception("Receipt Voucher #{$id} not found.");
+        }
+
+        $itemsDTOs = $this->inventoryItemService->getAllItems();
+        $inventoryItems = [];
+        foreach ($itemsDTOs as $dto) {
+            $inventoryItems[] = $dto->toArray();
+        }
+
+        $spareParts = $this->sparePartService->getAllSpareParts((int)$voucher['officeid']);
+        $machines = $this->machineService->getAllMachines((int)$voucher['officeid']);
+        $categories = $this->inventoryItemService->getAllCategories();
+        $sourceOptions = $this->receiptService->getSourceOptions((int)$voucher['officeid']);
+
+        $this->render(__DIR__ . '/../Views/edit.php', [
+            'voucher'        => $voucher,
+            'inventoryItems' => $inventoryItems,
+            'spareParts'     => $spareParts,
+            'machines'       => $machines,
+            'categories'     => $categories,
+            'sourceOptions'  => $sourceOptions,
+            'userRole'       => $userRole,
+            'currentUser'    => $this->currentUser
+        ]);
+    }
+
+    private function updateReceipt(string $userRole, int $userOfficeId): void {
+        if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+            throw new Exception("Invalid request method. Expected POST.");
+        }
+
+        $id = (int)($_GET['id'] ?? 0);
+
+        $payload = json_decode(file_get_contents('php://input'), true);
+        if ($payload) {
+            if ($id <= 0 && !empty($payload['id'])) {
+                $id = (int)$payload['id'];
+            }
+            $masterData = $payload['masterData'] ?? $payload;
+            $items = $payload['items'] ?? [];
+        } else {
+            if ($id <= 0 && !empty($_POST['id'])) {
+                $id = (int)$_POST['id'];
+            }
+            $masterData = [
+                'voucher_no'     => trim((string)($_POST['voucher_no'] ?? '')),
+                'voucher_date'   => trim((string)($_POST['voucher_date'] ?? '')),
+                'party'          => trim((string)($_POST['party'] ?? '')),
+                'agency_id'      => !empty($_POST['agency_id']) ? (int)$_POST['agency_id'] : null,
+                'source_type'    => trim((string)($_POST['source_type'] ?? 'MANUAL')),
+                'source_id'      => !empty($_POST['source_id']) ? (int)$_POST['source_id'] : null,
+                'source_ref_no'  => trim((string)($_POST['source_ref_no'] ?? '')),
+                'store_category' => trim((string)($_POST['store_category'] ?? 'general')),
+                'supply_status'  => trim((string)($_POST['supply_status'] ?? 'COMPLETE')),
+                'remarks'        => trim((string)($_POST['remarks'] ?? ''))
+            ];
+
+            $items = [];
+            if (isset($_POST['items_json'])) {
+                $items = json_decode($_POST['items_json'], true) ?: [];
+            } elseif (isset($_POST['items']) && is_array($_POST['items'])) {
+                $items = $_POST['items'];
+            }
+        }
+
+        if ($id <= 0) {
+            throw new Exception("Voucher ID is required.");
+        }
+
+        $whereOfficeId = ($userRole === 'superuser') ? null : $userOfficeId;
+
+        $result = $this->receiptService->updateReceiptVoucher($id, $masterData, $items, $whereOfficeId);
+
+        if ($this->isAjaxRequest()) {
+            header('Content-Type: application/json');
+            echo json_encode($result);
+            exit;
+        }
+
+        $_SESSION['message'] = "Receipt Voucher {$result['voucher_no']} updated successfully!";
+        header('Location: ?action=list');
+        exit;
+    }
+
     private function deleteReceipt(string $userRole, int $userOfficeId): void {
         $id = (int)($_GET['id'] ?? 0);
         if ($id <= 0) throw new Exception("Voucher ID is required for deletion.");
@@ -325,6 +425,12 @@ class ReceiptController extends BaseController {
         $whereOfficeId = ($userRole === 'superuser') ? null : $userOfficeId;
 
         $this->receiptService->deleteReceiptEntry($id, $whereOfficeId);
+
+        if ($this->isAjaxRequest()) {
+            header('Content-Type: application/json');
+            echo json_encode(['status' => 'success', 'message' => 'Receipt Voucher and associated ledger entries deleted successfully!']);
+            exit;
+        }
 
         $_SESSION['message'] = 'Receipt Voucher and associated ledger entries deleted successfully!';
         header('Location: ?action=list');

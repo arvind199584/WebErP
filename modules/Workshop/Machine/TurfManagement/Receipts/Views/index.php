@@ -132,7 +132,11 @@
                                                target="_blank" class="btn btn-outline-secondary" title="Print Official Voucher">
                                                 <i class="bi bi-printer"></i>
                                             </a>
-                                            <?php if (strtolower($currentUser['role'] ?? '') === 'superuser'): ?>
+                                            <?php if (strtolower($currentUser['role'] ?? '') !== 'supervisor'): ?>
+                                                <a href="?action=showEditForm&id=<?php echo urlencode($voucher['id']); ?>"
+                                                   class="btn btn-outline-warning text-dark fw-semibold" title="Edit Voucher">
+                                                    <i class="bi bi-pencil-square"></i> Edit
+                                                </a>
                                                 <a href="?action=delete&id=<?php echo urlencode($voucher['id']); ?>"
                                                    class="btn btn-outline-danger" title="Delete Voucher"
                                                    onclick="return confirm('Are you sure you want to delete Voucher <?php echo htmlspecialchars($voucher['voucher_no']); ?> and roll back all inventory ledger entries?');">
@@ -227,6 +231,11 @@
             </div>
             <div class="modal-footer bg-light">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <?php if (strtolower($currentUser['role'] ?? '') !== 'supervisor'): ?>
+                    <a href="#" id="modal-edit-btn" class="btn btn-warning text-dark fw-semibold">
+                        <i class="bi bi-pencil-square me-1"></i> Edit Voucher
+                    </a>
+                <?php endif; ?>
                 <a href="#" id="modal-print-btn" target="_blank" class="btn btn-primary">
                     <i class="bi bi-printer me-1"></i> Print Voucher
                 </a>
@@ -262,6 +271,10 @@
                     document.getElementById('modal-vsource').textContent = srcText;
 
                     document.getElementById('modal-print-btn').href = `?action=printVoucher&id=${v.id}`;
+                    const editBtn = document.getElementById('modal-edit-btn');
+                    if (editBtn) {
+                        editBtn.href = `?action=showEditForm&id=${v.id}`;
+                    }
 
                     // Items table
                     const tbody = document.getElementById('modal-items-tbody');

@@ -107,10 +107,15 @@ class ReceiptModel extends BaseModel {
     /**
      * Check if a voucher number already exists in office.
      */
-    public function voucherNumberExists(string $voucherNo, int $officeId): bool {
+    public function voucherNumberExists(string $voucherNo, int $officeId, ?int $excludeId = null): bool {
         $sql = "SELECT COUNT(*) FROM {$this->voucherTable} WHERE voucher_no = :vno AND officeid = :officeid";
+        $params = ['vno' => $voucherNo, 'officeid' => $officeId];
+        if ($excludeId !== null) {
+            $sql .= " AND id != :excludeId";
+            $params['excludeId'] = $excludeId;
+        }
         $stmt = $this->db->prepare($sql);
-        $stmt->execute(['vno' => $voucherNo, 'officeid' => $officeId]);
+        $stmt->execute($params);
         return (int)$stmt->fetchColumn() > 0;
     }
 
@@ -144,6 +149,46 @@ class ReceiptModel extends BaseModel {
     }
 
     /**
+     * Update an existing Receipt Voucher header record with JSONB items.
+     */
+    public function updateReceiptVoucherHeader(int $id, array $data): bool {
+        $sql = "UPDATE {$this->voucherTable}
+                SET voucher_no     = :voucher_no,
+                    voucher_date   = :voucher_date,
+                    party          = :party,
+                    agency_id      = :agency_id,
+                    source_type    = :source_type,
+                    source_id      = :source_id,
+                    source_ref_no  = :source_ref_no,
+                    store_category = :store_category,
+                    items          = :items::jsonb,
+                    supply_status  = :supply_status,
+                    remarks        = :remarks,
+                    updated_at     = CURRENT_TIMESTAMP
+                WHERE id = :id";
+
+        $itemsJson = is_array($data['items']) ? json_encode($data['items']) : $data['items'];
+
+        $params = [
+            'id'             => $id,
+            'voucher_no'     => $data['voucher_no'],
+            'voucher_date'   => $data['voucher_date'],
+            'party'          => $data['party'] ?? null,
+            'agency_id'      => !empty($data['agency_id']) ? (int)$data['agency_id'] : null,
+            'source_type'    => $data['source_type'] ?? 'MANUAL',
+            'source_id'      => !empty($data['source_id']) ? (int)$data['source_id'] : null,
+            'source_ref_no'  => $data['source_ref_no'] ?? null,
+            'store_category' => $data['store_category'] ?? 'general',
+            'items'          => $itemsJson,
+            'supply_status'  => $data['supply_status'] ?? 'COMPLETE',
+            'remarks'        => $data['remarks'] ?? null
+        ];
+
+        $stmt = $this->db->prepare($sql);
+        return $stmt->execute($params);
+    }
+
+    /**
      * Create a line entry in the central inventory ledger linked to rv_id.
      */
     public function createReceiptLedgerItem(array $data): int {
@@ -165,6 +210,19 @@ class ReceiptModel extends BaseModel {
     }
 
     /**
+     * Delete ledger items referencing a voucher.
+     */
+    public function deleteLedgerItemsForVoucher(int $rvId, int $officeId, string $voucherNo): void {
+        $sqlLedger = "DELETE FROM {$this->table} WHERE (rv_id = :rv_id) OR (officeid = :officeid AND voucher_no = :vno AND transaction_type = 'RECEIPT')";
+        $stmt = $this->db->prepare($sqlLedger);
+        $stmt->execute([
+            'rv_id'    => $rvId,
+            'officeid' => $officeId,
+            'vno'      => $voucherNo
+        ]);
+    }
+
+    /**
      * Delete a receipt voucher and all its associated inventory ledger items.
      */
     public function deleteReceiptVoucher(int $id, ?int $officeId): bool {
@@ -174,14 +232,25 @@ class ReceiptModel extends BaseModel {
 
         $this->beginTransaction();
         try {
+            // Revert spare parts stock if any items were spare parts
+            if (!empty($v['items']) && is_array($v['items'])) {
+                foreach ($v['items'] as $item) {
+                    if (!empty($item['is_spare_part']) && !empty($item['spare_part_id'])) {
+                        $qty = (float)($item['quantity'] ?? 0);
+                        if ($qty > 0) {
+                            $spStmt = $this->db->prepare("UPDATE public.turf_machine_spare_parts 
+                                                          SET received_qty = GREATEST(0, received_qty - :qty), 
+                                                              current_stock = GREATEST(0, current_stock - :qty),
+                                                              updated_at = CURRENT_TIMESTAMP 
+                                                          WHERE id = :spid");
+                            $spStmt->execute(['qty' => $qty, 'spid' => (int)$item['spare_part_id']]);
+                        }
+                    }
+                }
+            }
+
             // Delete ledger items referencing this voucher (or matching office and voucher_no)
-            $sqlLedger = "DELETE FROM {$this->table} WHERE (rv_id = :rv_id) OR (officeid = :officeid AND voucher_no = :vno AND transaction_type = 'RECEIPT')";
-            $stmt = $this->db->prepare($sqlLedger);
-            $stmt->execute([
-                'rv_id' => $id,
-                'officeid' => $v['officeid'],
-                'vno' => $v['voucher_no']
-            ]);
+            $this->deleteLedgerItemsForVoucher($id, (int)$v['officeid'], (string)$v['voucher_no']);
 
             // Delete voucher header
             $sqlVoucher = "DELETE FROM {$this->voucherTable} WHERE id = :id";
