@@ -140,7 +140,7 @@ abstract class BaseController
                 'delete', 'deleteall', 'import', 'upload', 'process_batch', 
                 'applyauditfixes', 'updatescope', 'save', 'store', 'destroy',
                 'createlogs', 'validatestagedlog', 'createbulkreceipt', 'createbulkindent',
-                'addcustomservicetype'
+                'addcustomservicetype', 'addcustomconsumableitem'
             ];
             $actionLower = strtolower($action);
             if (in_array($actionLower, $writeActions) || (($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'POST' && !str_starts_with($actionLower, 'get'))) {

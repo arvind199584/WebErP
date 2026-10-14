@@ -247,25 +247,62 @@
 
                     <!-- Item Fields -->
                     <div class="row g-3 align-items-end">
-                        <div class="col-md-7">
-                            <label for="item_select" class="form-label fw-bold small">Select Catalog Item</label>
-                            <select id="item_select" class="form-select fw-bold">
+                        <div class="col-md-12">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <label for="item_select" class="form-label fw-bold small mb-0">
+                                    Select Catalog Item <span class="text-danger">*</span>
+                                </label>
+                                <span class="text-muted small" style="font-size: 11px;">
+                                    Can't find an item? Select <strong class="text-primary">"---> Add Custom Item"</strong> at bottom of list
+                                </span>
+                            </div>
+                            <select id="item_select" class="form-select fw-bold border-2">
                                 <option value="">-- Choose Item from Division --</option>
                             </select>
                         </div>
-                        <div class="col-md-5">
-                            <div class="form-check mb-2">
-                                <input class="form-check-input" type="checkbox" id="check_custom_item">
-                                <label class="form-check-label small fw-bold" for="check_custom_item">
-                                    Manual Custom Item / New Part
-                                </label>
-                            </div>
-                        </div>
 
-                        <!-- Manual Custom Item Name (if checked) -->
+                        <!-- Manual Custom Item Panel (Opens when '---> Add Custom Item' is selected) -->
                         <div class="col-md-12" id="custom-item-name-row" style="display: none;">
-                            <label for="custom_item_name" class="form-label fw-bold small">Item Description / Part Nomenclature</label>
-                            <input type="text" id="custom_item_name" class="form-control form-control-sm" placeholder="Enter full item description">
+                            <div class="p-3 bg-light rounded border border-primary border-2 shadow-sm">
+                                <div class="d-flex justify-content-between align-items-center mb-2 pb-1 border-bottom">
+                                    <span class="fw-bold text-primary small">
+                                        <i class="bi bi-plus-circle-fill me-1"></i> Add New Consumable Item to Division
+                                    </span>
+                                    <span class="badge bg-primary-subtle text-primary border" id="custom_cat_badge">Category</span>
+                                </div>
+                                <div class="row g-2 align-items-end">
+                                    <div class="col-md-6">
+                                        <label for="custom_item_name" class="form-label fw-bold small text-dark mb-1">
+                                            New Item Name / Nomenclature <span class="text-danger">*</span>
+                                        </label>
+                                        <input type="text" id="custom_item_name" class="form-control form-control-sm fw-bold border-primary" placeholder="Enter full item name (e.g. Bermuda Grass Seed, Weedicide Pro)">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="custom_item_unit" class="form-label fw-bold small text-dark mb-1">Unit of Measure (UOM)</label>
+                                        <input type="text" id="custom_item_unit" class="form-control form-control-sm" placeholder="e.g. Litre, Kg, Pcs, Bag" value="Pcs">
+                                    </div>
+                                    <div class="col-md-3" id="custom_item_subcat_col">
+                                        <label for="custom_item_cat_id" class="form-label fw-bold small text-dark mb-1">Specific Category</label>
+                                        <select id="custom_item_cat_id" class="form-select form-select-sm">
+                                            <!-- Dynamic based on selected store division -->
+                                        </select>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-between align-items-center mt-2 pt-1 border-top">
+                                        <small class="text-muted" style="font-size: 11px;">
+                                            <i class="bi bi-shield-check text-success"></i> Will be permanently added to the list of consumable items in this category.
+                                        </small>
+                                        <div class="d-flex gap-2">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary" id="btn-cancel-custom-item">
+                                                Cancel
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-primary fw-bold shadow-sm" id="btn-save-custom-item">
+                                                <i class="bi bi-save me-1"></i> Save Item to Consumables
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="custom-item-feedback" class="small mt-2" style="display: none;"></div>
+                            </div>
                         </div>
 
                         <div class="col-md-4">
@@ -347,6 +384,7 @@
     const allInventoryItems = <?php echo json_encode($inventoryItems); ?>;
     const allSpareParts = <?php echo json_encode($spareParts); ?>;
     const initialSourceOptions = <?php echo json_encode($sourceOptions); ?>;
+    const allCategories = <?php echo json_encode($categories ?? []); ?>;
 
     // State Variables
     let currentSourceType = 'MANUAL';
@@ -361,7 +399,7 @@
     document.addEventListener('DOMContentLoaded', function() {
         initSourceSelector();
         initCategoryFilter();
-        initCustomItemToggle();
+        initCustomItemHandler();
         initStagingLogic();
         initCommitLogic();
         populateItemsForCategory('fuel');
@@ -730,6 +768,21 @@
                 opt.textContent = opt.dataset.desc;
                 itemSelect.appendChild(opt);
             });
+            // Also include consumable spare parts from inventory items
+            allInventoryItems.forEach(item => {
+                const cat = (item.category_name || '').toLowerCase();
+                const code = (item.category_code || '').toLowerCase();
+                if (cat.includes('spare') || code.includes('spare') || item.category_id == 9) {
+                    const opt = document.createElement('option');
+                    opt.value = 'item_' + item.id;
+                    opt.dataset.type = 'general';
+                    opt.dataset.id = item.id;
+                    opt.dataset.unit = item.ac_unit || 'Pcs';
+                    opt.dataset.desc = item.description;
+                    opt.textContent = item.description;
+                    itemSelect.appendChild(opt);
+                }
+            });
         } else {
             allInventoryItems.forEach(item => {
                 const cat = (item.category_name || '').toLowerCase();
@@ -753,27 +806,238 @@
             });
         }
 
-        itemSelect.addEventListener('change', function() {
-            const selectedOpt = this.options[this.selectedIndex];
-            if (selectedOpt && selectedOpt.dataset.unit) {
-                document.getElementById('item_unit_display').textContent = selectedOpt.dataset.unit;
-            }
-        });
+        // Add ---> Add Custom Item at the very end / last of the dropdown
+        const customOpt = document.createElement('option');
+        customOpt.value = '__ADD_CUSTOM__';
+        customOpt.textContent = '---> Add Custom Item';
+        customOpt.className = 'fw-bold text-primary';
+        itemSelect.appendChild(customOpt);
+
+        hideCustomItemBox();
     }
 
-    function initCustomItemToggle() {
-        const check = document.getElementById('check_custom_item');
-        const row = document.getElementById('custom-item-name-row');
-        check.addEventListener('change', function() {
-            row.style.display = this.checked ? 'block' : 'none';
+    function initCustomItemHandler() {
+        const itemSelect = document.getElementById('item_select');
+        const cancelBtn = document.getElementById('btn-cancel-custom-item');
+        const saveBtn = document.getElementById('btn-save-custom-item');
+        const nameInput = document.getElementById('custom_item_name');
+
+        itemSelect.addEventListener('change', function() {
+            if (this.value === '__ADD_CUSTOM__') {
+                showCustomItemBox();
+            } else {
+                hideCustomItemBox();
+                const selectedOpt = this.options[this.selectedIndex];
+                if (selectedOpt && selectedOpt.dataset.unit) {
+                    document.getElementById('item_unit_display').textContent = selectedOpt.dataset.unit;
+                }
+            }
         });
+
+        if (cancelBtn) {
+            cancelBtn.addEventListener('click', function() {
+                itemSelect.value = '';
+                hideCustomItemBox();
+            });
+        }
+
+        if (saveBtn) {
+            saveBtn.addEventListener('click', async function() {
+                await saveCustomItemDirectly();
+            });
+        }
+
+        if (nameInput) {
+            nameInput.addEventListener('keydown', async function(e) {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    await saveCustomItemDirectly();
+                }
+            });
+        }
+    }
+
+    function showCustomItemBox() {
+        const customRow = document.getElementById('custom-item-name-row');
+        if (!customRow) return;
+        customRow.style.display = 'block';
+
+        const storeCategory = document.getElementById('store_category_select').value;
+        const badge = document.getElementById('custom_cat_badge');
+        const subCatSelect = document.getElementById('custom_item_cat_id');
+        const unitInput = document.getElementById('custom_item_unit');
+        const nameInput = document.getElementById('custom_item_name');
+
+        const catLabels = {
+            'fuel': 'Fuel & Lubricants Store',
+            'agronomy': 'Agronomy (Fertilizers & Chemicals)',
+            'workshop': 'Workshop Spares Store',
+            'housekeeping': 'Housekeeping & Sanitary',
+            'stationery': 'Stationery Store'
+        };
+        if (badge) badge.textContent = catLabels[storeCategory] || storeCategory.toUpperCase();
+
+        // Populate sub-categories based on selected store division
+        subCatSelect.innerHTML = '';
+        let relevantCats = [];
+        let defaultUnit = 'Pcs';
+
+        if (storeCategory === 'fuel') {
+            defaultUnit = 'Litre';
+            relevantCats = allCategories.filter(c => c.code === 'fuel' || c.code === 'lubricants' || (c.name || '').toLowerCase().includes('fuel') || (c.name || '').toLowerCase().includes('lubricant'));
+        } else if (storeCategory === 'agronomy') {
+            defaultUnit = 'Kg';
+            relevantCats = allCategories.filter(c => !['fuel', 'lubricants', 'spare_parts', 'stationary', 'sanitary_item'].includes(c.code));
+        } else if (storeCategory === 'workshop') {
+            defaultUnit = 'Nos';
+            relevantCats = allCategories.filter(c => c.code === 'spare_parts' || (c.name || '').toLowerCase().includes('spare'));
+        } else if (storeCategory === 'housekeeping') {
+            defaultUnit = 'Nos';
+            relevantCats = allCategories.filter(c => c.code === 'sanitary_item' || (c.name || '').toLowerCase().includes('sanitary'));
+        } else if (storeCategory === 'stationery') {
+            defaultUnit = 'Pcs';
+            relevantCats = allCategories.filter(c => c.code === 'stationary' || (c.name || '').toLowerCase().includes('station'));
+        }
+
+        if (relevantCats.length === 0) {
+            relevantCats = allCategories;
+        }
+
+        relevantCats.forEach(c => {
+            const opt = document.createElement('option');
+            opt.value = c.id;
+            opt.textContent = c.name;
+            subCatSelect.appendChild(opt);
+        });
+
+        unitInput.value = defaultUnit;
+        document.getElementById('item_unit_display').textContent = defaultUnit;
+        nameInput.value = '';
+        setTimeout(() => nameInput.focus(), 50);
+    }
+
+    function hideCustomItemBox() {
+        const customRow = document.getElementById('custom-item-name-row');
+        if (customRow) customRow.style.display = 'none';
+        const feedback = document.getElementById('custom-item-feedback');
+        if (feedback) feedback.style.display = 'none';
+    }
+
+    async function saveCustomItemDirectly() {
+        const nameInput = document.getElementById('custom_item_name');
+        const unitInput = document.getElementById('custom_item_unit');
+        const catSelect = document.getElementById('custom_item_cat_id');
+        const storeCategory = document.getElementById('store_category_select').value;
+        const saveBtn = document.getElementById('btn-save-custom-item');
+
+        const itemName = nameInput.value.trim();
+        if (!itemName) {
+            alert('Please enter a name for the new item.');
+            nameInput.focus();
+            return null;
+        }
+
+        const itemUnit = unitInput.value.trim() || 'Pcs';
+        const categoryId = catSelect.value;
+
+        if (saveBtn) {
+            saveBtn.disabled = true;
+            saveBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-1"></span>Saving...';
+        }
+
+        try {
+            const payload = {
+                description: itemName,
+                ac_unit: itemUnit,
+                category_id: categoryId,
+                store_category: storeCategory
+            };
+
+            const response = await fetch('?action=addCustomConsumableItem', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                    'X-Requested-With': 'XMLHttpRequest',
+                    'X-CSRF-Token': csrfToken
+                },
+                body: JSON.stringify(payload)
+            });
+
+            const result = await response.json();
+            if (result.status === 'success' && result.item) {
+                const newItem = result.item;
+
+                // Push into allInventoryItems if not existing
+                const exists = allInventoryItems.some(it => it.id === newItem.id);
+                if (!exists) {
+                    allInventoryItems.push({
+                        id: newItem.id,
+                        description: newItem.description,
+                        ac_unit: newItem.ac_unit,
+                        category_id: newItem.category_id,
+                        category_name: newItem.category_name,
+                        category_code: newItem.category_code
+                    });
+                }
+
+                // Repopulate item_select for current category and select this new item
+                populateItemsForCategory(storeCategory);
+                const itemSelect = document.getElementById('item_select');
+                itemSelect.value = 'item_' + newItem.id;
+                document.getElementById('item_unit_display').textContent = newItem.ac_unit;
+
+                hideCustomItemBox();
+
+                showTemporaryToast(result.message || `Item "${newItem.description}" saved to catalog!`);
+                document.getElementById('item_quantity').focus();
+                return newItem;
+            } else {
+                alert('Error saving custom item: ' + (result.message || 'Unknown error'));
+                return null;
+            }
+        } catch (err) {
+            console.error('Error saving custom item:', err);
+            alert('Server error saving item: ' + err.message);
+            return null;
+        } finally {
+            if (saveBtn) {
+                saveBtn.disabled = false;
+                saveBtn.innerHTML = '<i class="bi bi-save me-1"></i> Save Item to Consumables';
+            }
+        }
+    }
+
+    function showTemporaryToast(message, type = 'success') {
+        let container = document.getElementById('toast-container');
+        if (!container) {
+            container = document.createElement('div');
+            container.id = 'toast-container';
+            container.className = 'position-fixed bottom-0 end-0 p-3';
+            container.style.zIndex = '1090';
+            document.body.appendChild(container);
+        }
+        const toast = document.createElement('div');
+        toast.className = `toast align-items-center text-bg-${type} border-0 show shadow mb-2`;
+        toast.setAttribute('role', 'alert');
+        toast.innerHTML = `
+            <div class="d-flex">
+                <div class="toast-body fw-bold">${message}</div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+            </div>
+        `;
+        container.appendChild(toast);
+        setTimeout(() => {
+            toast.classList.remove('show');
+            setTimeout(() => toast.remove(), 400);
+        }, 4000);
     }
 
     // 4. Manual Staging Logic
     function initStagingLogic() {
         const btnAdd = document.getElementById('btn-add-to-staging');
 
-        btnAdd.addEventListener('click', function() {
+        btnAdd.addEventListener('click', async function() {
             const voucherNo = document.getElementById('master_voucher_no').value.trim();
             const voucherDate = document.getElementById('master_voucher_date').value;
             const party = document.getElementById('master_party').value.trim();
@@ -783,8 +1047,20 @@
             const remarks = document.getElementById('item_remarks').value.trim();
             const supplyStatus = document.getElementById('master_supply_status').value;
 
-            const isCustom = document.getElementById('check_custom_item').checked;
             const itemSelect = document.getElementById('item_select');
+
+            // If user selected ---> Add Custom Item, save it directly first
+            if (itemSelect.value === '__ADD_CUSTOM__') {
+                const customName = document.getElementById('custom_item_name').value.trim();
+                if (!customName) {
+                    alert('Please write the name of the new item.');
+                    document.getElementById('custom_item_name').focus();
+                    return;
+                }
+                const saved = await saveCustomItemDirectly();
+                if (!saved) return;
+            }
+
             const selectedOpt = itemSelect.options[itemSelect.selectedIndex];
 
             if (!voucherNo) {
@@ -806,35 +1082,23 @@
                 document.getElementById('item_quantity').focus();
                 return;
             }
+            if (!itemSelect.value || itemSelect.value === '__ADD_CUSTOM__') {
+                alert('Please choose an item from the catalog or write a custom item name.');
+                return;
+            }
 
             let itemId = null;
             let sparePartId = null;
-            let isSparePart = (storeCategory === 'workshop');
+            let isSparePart = false;
             let isNewItem = false;
-            let description = '';
-            let unit = document.getElementById('item_unit_display').textContent || 'Units';
+            let description = selectedOpt.dataset.desc || selectedOpt.textContent;
+            let unit = selectedOpt.dataset.unit || document.getElementById('item_unit_display').textContent || 'Units';
 
-            if (isCustom) {
-                description = document.getElementById('custom_item_name').value.trim();
-                if (!description) {
-                    alert('Please enter the custom item description.');
-                    document.getElementById('custom_item_name').focus();
-                    return;
-                }
-                isNewItem = true;
+            if (selectedOpt.dataset.type === 'spare') {
+                sparePartId = parseInt(selectedOpt.dataset.id);
+                isSparePart = true;
             } else {
-                if (!itemSelect.value) {
-                    alert('Please choose an item from the catalog or check "Manual Custom Item".');
-                    return;
-                }
-                description = selectedOpt.dataset.desc;
-                unit = selectedOpt.dataset.unit || 'Units';
-                if (selectedOpt.dataset.type === 'spare') {
-                    sparePartId = parseInt(selectedOpt.dataset.id);
-                    isSparePart = true;
-                } else {
-                    itemId = parseInt(selectedOpt.dataset.id);
-                }
+                itemId = parseInt(selectedOpt.dataset.id);
             }
 
             // STATUTORY DUPLICATE CHECK:
@@ -888,8 +1152,7 @@
             document.getElementById('item_rate').value = '';
             document.getElementById('item_remarks').value = '';
             document.getElementById('custom_item_name').value = '';
-            document.getElementById('check_custom_item').checked = false;
-            document.getElementById('custom-item-name-row').style.display = 'none';
+            hideCustomItemBox();
             itemSelect.value = '';
         });
     }
@@ -1088,5 +1351,6 @@
         return text.toString().replace(/[&<>"']/g, m => map[m]);
     }
 </script>
+<div id="toast-container" class="position-fixed bottom-0 end-0 p-3" style="z-index: 1090;"></div>
 </body>
 </html>

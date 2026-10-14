@@ -67,6 +67,9 @@ class ReceiptController extends BaseController {
                 case 'createBulkReceipt':
                     $this->createBulkReceipt($userRole, $userOfficeId);
                     break;
+                case 'addCustomConsumableItem':
+                    $this->addCustomConsumableItem($userRole, $userOfficeId);
+                    break;
                 case 'delete':
                     $this->deleteReceipt($userRole, $userOfficeId);
                     break;
@@ -217,6 +220,101 @@ class ReceiptController extends BaseController {
 
         header('Content-Type: application/json');
         echo json_encode($result);
+        exit;
+    }
+
+    private function addCustomConsumableItem(string $userRole, int $userOfficeId): void {
+        if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+            throw new Exception("Invalid request method. Expected POST.");
+        }
+
+        $input = json_decode(file_get_contents('php://input'), true);
+        if (!$input) {
+            $input = $_POST;
+        }
+
+        $description = trim((string)($input['description'] ?? ''));
+        $acUnit = trim((string)($input['ac_unit'] ?? $input['unit'] ?? 'Pcs'));
+        $categoryId = !empty($input['category_id']) ? (int)$input['category_id'] : null;
+        $categoryCode = trim((string)($input['category_code'] ?? $input['store_category'] ?? ''));
+
+        if ($description === '') {
+            throw new Exception("Item description is required.");
+        }
+        if ($acUnit === '') {
+            $acUnit = 'Pcs';
+        }
+
+        $db = \App\Core\Database::getInstance()->getConnection();
+
+        // If categoryId is not provided, resolve from categoryCode
+        if (empty($categoryId) && !empty($categoryCode)) {
+            $catStmt = $db->prepare("SELECT id FROM turf_inventory_categories WHERE code = :code OR LOWER(name) LIKE :likeCode LIMIT 1");
+            $catStmt->execute(['code' => $categoryCode, 'likeCode' => "%{$categoryCode}%"]);
+            $resolvedCat = $catStmt->fetchColumn();
+            if ($resolvedCat) {
+                $categoryId = (int)$resolvedCat;
+            }
+        }
+
+        // Check if an item with the same description already exists (case-insensitive)
+        $checkStmt = $db->prepare("SELECT i.id, i.description, i.ac_unit, i.category_id, c.name as category_name, c.code as category_code 
+                                  FROM turf_inventory_items i 
+                                  LEFT JOIN turf_inventory_categories c ON i.category_id = c.id 
+                                  WHERE LOWER(TRIM(i.description)) = LOWER(TRIM(:desc)) LIMIT 1");
+        $checkStmt->execute(['desc' => $description]);
+        $existing = $checkStmt->fetch(\PDO::FETCH_ASSOC);
+
+        if ($existing) {
+            header('Content-Type: application/json');
+            echo json_encode([
+                'status'          => 'success',
+                'message'         => "Item '{$existing['description']}' already exists in catalog and has been selected.",
+                'item'            => $existing,
+                'already_existed' => true
+            ]);
+            exit;
+        }
+
+        // Insert new consumable item into turf_inventory_items
+        $insertSql = "INSERT INTO turf_inventory_items (description, ac_unit, category_id, created_at, updated_at) 
+                      VALUES (:desc, :unit, :cat_id, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP) 
+                      RETURNING id";
+        $stmt = $db->prepare($insertSql);
+        $stmt->execute([
+            'desc'   => $description,
+            'unit'   => $acUnit,
+            'cat_id' => $categoryId
+        ]);
+        $newId = (int)$stmt->fetchColumn();
+
+        $catName = '';
+        $catCode = '';
+        if ($categoryId) {
+            $catDetailsStmt = $db->prepare("SELECT name, code FROM turf_inventory_categories WHERE id = :id");
+            $catDetailsStmt->execute(['id' => $categoryId]);
+            $catRow = $catDetailsStmt->fetch(\PDO::FETCH_ASSOC);
+            if ($catRow) {
+                $catName = $catRow['name'];
+                $catCode = $catRow['code'];
+            }
+        }
+
+        $newItem = [
+            'id'            => $newId,
+            'description'   => $description,
+            'ac_unit'       => $acUnit,
+            'category_id'   => $categoryId,
+            'category_name' => $catName,
+            'category_code' => $catCode
+        ];
+
+        header('Content-Type: application/json');
+        echo json_encode([
+            'status'  => 'success',
+            'message' => "Item '{$description}' added to " . ($catName ? "'{$catName}'" : "consumables") . " successfully!",
+            'item'    => $newItem
+        ]);
         exit;
     }
 

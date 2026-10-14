@@ -51,6 +51,7 @@ class PermissionManager
             'getSpareParts' => $read_only,
             'getMachineDetails' => $read_only,
             'addCustomServiceType' => $staff_plus,
+            'addCustomConsumableItem' => $staff_plus,
             'fetchSourceOptions' => $read_only,
             'fetchSourceDetails' => $read_only,
             'getVoucherDetails' => $read_only,

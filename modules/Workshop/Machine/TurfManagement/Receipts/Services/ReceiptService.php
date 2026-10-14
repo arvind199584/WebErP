@@ -163,9 +163,9 @@ class ReceiptService {
                     $isSparePart = !empty($item['is_spare_part']);
                     $sparePartId = !empty($item['spare_part_id']) ? (int)$item['spare_part_id'] : null;
 
-                    // Handle on-the-fly new items
-                    if ($isNewItem) {
-                        if ($isSparePart) {
+                    // Handle on-the-fly new items if not already assigned an itemId
+                    if ($isNewItem && empty($itemId) && empty($sparePartId)) {
+                        if ($isSparePart && !empty($item['machine_id'])) {
                             $spData = [
                                 'officeid'     => $officeId,
                                 'machine_id'   => (int)($item['machine_id'] ?? 0),
@@ -175,27 +175,35 @@ class ReceiptService {
                                 'issued_qty'   => 0,
                                 'unit'         => trim((string)($item['unit'] ?? 'Pcs'))
                             ];
-                            if (empty($spData['machine_id']) || empty($spData['nomenclature'])) {
-                                throw new Exception("Machine and Spare Part Name are required for new spare parts.");
-                            }
                             $sparePartModel = new SparePartModel();
                             $sparePartId = $sparePartModel->createSparePart($spData);
                         } else {
-                            $catCode = $item['category_code'] ?? $vData['store_category'] ?? 'agronomy';
-                            $catIdStmt = $db->prepare("SELECT id FROM turf_inventory_categories WHERE code = :code OR LOWER(name) LIKE :likeCode LIMIT 1");
-                            $catIdStmt->execute(['code' => $catCode, 'likeCode' => "%{$catCode}%"]);
-                            $catId = $catIdStmt->fetchColumn();
-
-                            $invData = [
-                                'description' => trim((string)($item['description'] ?? '')),
-                                'ac_unit'     => trim((string)($item['unit'] ?? 'Pcs')),
-                                'category_id' => $catId ? (int)$catId : null
-                            ];
-                            if (empty($invData['description'])) {
+                            $desc = trim((string)($item['description'] ?? ''));
+                            if (empty($desc)) {
                                 throw new Exception("Description is required for new store items.");
                             }
-                            $invModel = new InventoryItemModel();
-                            $itemId = $invModel->createItem($invData);
+
+                            // Check if item already exists in catalog
+                            $existStmt = $db->prepare("SELECT id FROM turf_inventory_items WHERE LOWER(TRIM(description)) = LOWER(TRIM(:desc)) LIMIT 1");
+                            $existStmt->execute(['desc' => $desc]);
+                            $existingId = $existStmt->fetchColumn();
+
+                            if ($existingId) {
+                                $itemId = (int)$existingId;
+                            } else {
+                                $catCode = $item['category_code'] ?? $vData['store_category'] ?? 'agronomy';
+                                $catIdStmt = $db->prepare("SELECT id FROM turf_inventory_categories WHERE code = :code OR LOWER(name) LIKE :likeCode LIMIT 1");
+                                $catIdStmt->execute(['code' => $catCode, 'likeCode' => "%{$catCode}%"]);
+                                $catId = $catIdStmt->fetchColumn();
+
+                                $invData = [
+                                    'description' => $desc,
+                                    'ac_unit'     => trim((string)($item['unit'] ?? 'Pcs')),
+                                    'category_id' => $catId ? (int)$catId : null
+                                ];
+                                $invModel = new InventoryItemModel();
+                                $itemId = $invModel->createItem($invData);
+                            }
                         }
                     } elseif ($isSparePart && $sparePartId) {
                         // Existing spare part: update received_qty and current_stock in turf_machine_spare_parts
