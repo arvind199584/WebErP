@@ -199,22 +199,29 @@ class RepairModel extends BaseModel {
                 }
             }
 
-            // 3. If Service Done: Update machine's service milestones & add to turf_servicing_log
+            // 3. Update machine fleet table (turf_machines) directly in addition to recording into repair table
+            $machineStatus = !empty($data['machine_status']) ? trim($data['machine_status']) : null;
+            $nextDueInput = !empty($data['next_service_due']) ? (float)$data['next_service_due'] : 0.0;
+
             if ($workType === 'service_done' && $runningHours !== null && $runningHours > 0) {
                 // Get machine's interval
                 $mStmt = $this->db->prepare("SELECT service_interval_hours FROM turf_machines WHERE id = :id");
                 $mStmt->execute(['id' => $data['machine_id']]);
                 $interval = (float)($mStmt->fetchColumn() ?: 100);
-                $nextDue = $runningHours + $interval;
+                
+                $nextDue = ($nextDueInput > $runningHours) ? $nextDueInput : ($runningHours + ($nextDueInput ?: $interval));
+                $statusToSet = $machineStatus ?: 'Working';
 
                 $updMachineSql = "UPDATE turf_machines 
                                   SET service_done = :service_done, 
                                       service_due = :service_due, 
+                                      status = :status,
                                       updated_at = CURRENT_TIMESTAMP 
                                   WHERE id = :id";
                 $this->db->prepare($updMachineSql)->execute([
                     'service_done' => $runningHours,
                     'service_due'  => $nextDue,
+                    'status'       => $statusToSet,
                     'id'           => $data['machine_id']
                 ]);
 
@@ -238,6 +245,19 @@ class RepairModel extends BaseModel {
                     'job_card_no'      => $jobCardNo,
                     'remarks'          => $data['work_done'] . (!empty($data['remarks']) ? ' - ' . $data['remarks'] : '')
                 ]);
+            } else {
+                // General repair: directly update machine fleet status if provided or default to Working
+                $statusToSet = $machineStatus ?: 'Working';
+                $updFields = ["status = :status", "updated_at = CURRENT_TIMESTAMP"];
+                $updParams = ['status' => $statusToSet, 'id' => $data['machine_id']];
+
+                if ($nextDueInput > 0) {
+                    $updFields[] = "service_due = :service_due";
+                    $updParams['service_due'] = $nextDueInput;
+                }
+
+                $updMachineSql = "UPDATE turf_machines SET " . implode(", ", $updFields) . " WHERE id = :id";
+                $this->db->prepare($updMachineSql)->execute($updParams);
             }
 
             // 4. If save as default service kit is checked
@@ -313,7 +333,52 @@ class RepairModel extends BaseModel {
         }
 
         $stmt = $this->db->prepare($sql);
-        return $stmt->execute($params);
+        $res = $stmt->execute($params);
+
+        if ($res) {
+            $machineId = (int)$data['machine_id'];
+            $runningHours = !empty($data['running_hours']) ? (float)$data['running_hours'] : null;
+            $workType = $data['work_type'] ?? 'repair';
+            $machineStatus = !empty($data['machine_status']) ? trim($data['machine_status']) : null;
+            $nextDueInput = !empty($data['next_service_due']) ? (float)$data['next_service_due'] : 0.0;
+
+            if ($workType === 'service_done' && $runningHours !== null && $runningHours > 0) {
+                $mStmt = $this->db->prepare("SELECT service_interval_hours FROM turf_machines WHERE id = :id");
+                $mStmt->execute(['id' => $machineId]);
+                $interval = (float)($mStmt->fetchColumn() ?: 100);
+                $nextDue = ($nextDueInput > $runningHours) ? $nextDueInput : ($runningHours + ($nextDueInput ?: $interval));
+                $statusToSet = $machineStatus ?: 'Working';
+
+                $updSql = "UPDATE turf_machines 
+                           SET service_done = :service_done, 
+                               service_due = :service_due, 
+                               status = :status,
+                               updated_at = CURRENT_TIMESTAMP 
+                           WHERE id = :id";
+                $this->db->prepare($updSql)->execute([
+                    'service_done' => $runningHours,
+                    'service_due'  => $nextDue,
+                    'status'       => $statusToSet,
+                    'id'           => $machineId
+                ]);
+            } elseif ($machineStatus !== null || $nextDueInput > 0) {
+                $updFields = ["updated_at = CURRENT_TIMESTAMP"];
+                $updParams = ['id' => $machineId];
+
+                if ($machineStatus !== null) {
+                    $updFields[] = "status = :status";
+                    $updParams['status'] = $machineStatus;
+                }
+                if ($nextDueInput > 0) {
+                    $updFields[] = "service_due = :service_due";
+                    $updParams['service_due'] = $nextDueInput;
+                }
+
+                $this->db->prepare("UPDATE turf_machines SET " . implode(", ", $updFields) . " WHERE id = :id")->execute($updParams);
+            }
+        }
+
+        return $res;
     }
 
     public function deleteRepair(int $id, ?int $officeId): bool {

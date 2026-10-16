@@ -311,9 +311,9 @@
                                                 <?php endif; ?>
                                             </td>
                                             <td class="text-center">
-                                                <a href="/modules/Workshop/Machine/TurfManagement/Servicing/Controller/ServicingController.php?action=showCreateForm&machine_id=<?php echo urlencode($sm['id']); ?>" 
-                                                   class="btn btn-sm btn-outline-warning text-dark fw-bold" title="Log Service">
-                                                    <i class="bi bi-wrench"></i>
+                                                <a href="/modules/Workshop/Machine/TurfManagement/Repairs/Controller/RepairController.php?action=showCreateForm&machine_id=<?php echo urlencode($sm['id']); ?>" 
+                                                   class="btn btn-sm btn-outline-warning text-dark fw-bold" title="Log Service / Job Card in Repair Module">
+                                                    <i class="bi bi-wrench-adjustable"></i>
                                                 </a>
                                             </td>
                                         </tr>

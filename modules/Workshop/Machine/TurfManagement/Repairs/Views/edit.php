@@ -57,9 +57,25 @@
                         <input type="date" name="repair_date" id="repair_date" class="form-control" value="<?php echo htmlspecialchars((string)$repair['repair_date']); ?>" required>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label for="running_hours" class="form-label fw-bold">Meter Reading (Running Hours)</label>
                         <input type="number" step="0.1" name="running_hours" id="running_hours" class="form-control" value="<?php echo htmlspecialchars((string)($repair['running_hours'] ?? '')); ?>">
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="next_service_due" class="form-label fw-bold text-primary">Next Service Due (Meter Hours)</label>
+                        <input type="number" step="0.1" name="next_service_due" id="next_service_due" class="form-control fw-bold border-primary" placeholder="Leave blank to keep unchanged">
+                        <div class="form-text">Directly updates machine fleet table schedule.</div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="machine_status" class="form-label fw-bold">Machine Fleet Status</label>
+                        <select name="machine_status" id="machine_status" class="form-select">
+                            <option value="Working" selected>✅ Working (Operational)</option>
+                            <option value="OffRoad">🔴 Off-Road / Breakdown</option>
+                            <option value="Idle">⏸️ Idle</option>
+                        </select>
+                        <div class="form-text">Updates status in machine fleet table.</div>
                     </div>
 
                     <div class="col-md-6">

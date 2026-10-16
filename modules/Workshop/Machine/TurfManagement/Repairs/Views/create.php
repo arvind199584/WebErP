@@ -135,16 +135,36 @@
                     </div>
 
                     <!-- Meter Reading (Running Hours) -->
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label for="running_hours" class="form-label fw-bold">
                             Meter Reading (Running Hours) <span class="text-danger" id="hours_required_asterisk">*</span>
                         </label>
-                        <input type="number" step="0.1" min="0" name="running_hours" id="running_hours" class="form-control" placeholder="e.g. 250.5" required>
+                        <input type="number" step="0.1" min="0" name="running_hours" id="running_hours" class="form-control" placeholder="e.g. 250.5" required oninput="onRunningHoursChange()">
                         <div class="form-text">Current hour meter reading of the machine.</div>
                     </div>
 
+                    <!-- Next Service Due (Meter Hours) -->
+                    <div class="col-md-4" id="next-service-due-col">
+                        <label for="next_service_due" class="form-label fw-bold text-primary">
+                            Next Service Due (Meter Hours)
+                        </label>
+                        <input type="number" step="0.1" min="0" name="next_service_due" id="next_service_due" class="form-control fw-bold border-primary" placeholder="e.g. 500.0">
+                        <div class="form-text">Directly updates machine fleet table schedule.</div>
+                    </div>
+
+                    <!-- Machine Status After Work -->
+                    <div class="col-md-4">
+                        <label for="machine_status" class="form-label fw-bold">Fleet Machine Status</label>
+                        <select name="machine_status" id="machine_status" class="form-select">
+                            <option value="Working" selected>✅ Working (Operational)</option>
+                            <option value="OffRoad">🔴 Off-Road / Breakdown</option>
+                            <option value="Idle">⏸️ Idle</option>
+                        </select>
+                        <div class="form-text">Updates status in machine fleet table.</div>
+                    </div>
+
                     <!-- Total Cost -->
-                    <div class="col-md-6">
+                    <div class="col-md-6 mt-2">
                         <label for="cost" class="form-label fw-bold">Total Work Cost (₹)</label>
                         <input type="number" step="0.01" min="0" name="cost" id="cost" class="form-control" placeholder="0.00" value="0.00">
                     </div>
@@ -357,6 +377,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     repairRequiresPartsCheck.addEventListener('change', updateRepairPartsVisibility);
 
+    window.onRunningHoursChange = function() {
+        const nextDueInput = document.getElementById('next_service_due');
+        if (!nextDueInput || !currentMachineData) return;
+        const curMeter = parseFloat(document.getElementById('running_hours').value || 0);
+        const interval = parseFloat(currentMachineData.service_interval_hours || 100);
+        if (curMeter > 0) {
+            nextDueInput.value = (curMeter + interval).toFixed(1);
+        }
+    };
+
     function loadMachineData() {
         const machineId = machineSelect.value;
         if (!machineId) {
@@ -390,6 +420,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Prefill running hours if available from consumption log
                 if (data.machine.current_meter && !runningHoursInput.value) {
                     runningHoursInput.value = data.machine.current_meter;
+                }
+
+                // Prefill next service due directly for machine fleet table
+                const nextServiceDueInput = document.getElementById('next_service_due');
+                if (nextServiceDueInput) {
+                    const meterVal = parseFloat(runningHoursInput.value || data.machine.current_meter || 0);
+                    const intervalVal = parseFloat(data.machine.service_interval_hours || 100);
+                    if (meterVal > 0) {
+                        nextServiceDueInput.value = (meterVal + intervalVal).toFixed(1);
+                    } else if (data.machine.service_due) {
+                        nextServiceDueInput.value = parseFloat(data.machine.service_due).toFixed(1);
+                    }
                 }
 
                 const currentHours = parseFloat(runningHoursInput.value || data.machine.current_meter || 0);

@@ -41,24 +41,19 @@ class DashboardModel extends BaseModel {
         $offRoadMachines = $this->fetchAll($offRoadSql, $params);
 
         // 3. Service Due machines
-        // Machines tracking hours where cumulative meter reading is within 20 hours of service interval or overdue
+        // Machines tracking hours: reads service_due and service_done directly from turf_machines fleet table
         $serviceSql = "SELECT 
                            tm.id, 
                            tm.name, 
                            tm.make, 
                            tm.status, 
                            COALESCE(tm.service_interval_hours, 100) AS service_interval_hours,
-                           latest_serv.hours_at_service AS last_service_hours,
-                           COALESCE(latest_serv.next_service_due, tm.service_interval_hours, 100) AS next_service_due_interval,
+                           tm.service_done,
+                           tm.service_due,
                            COALESCE(latest_log.max_hours, 0) AS current_meter_hours,
                            o.OfficeName AS office_name
                        FROM turf_machines tm
                        JOIN office o ON tm.officeid = o.Officeid
-                       LEFT JOIN (
-                           SELECT DISTINCT ON (machine_id) machine_id, service_date, hours_at_service, next_service_due
-                           FROM turf_servicing_log
-                           ORDER BY machine_id, service_date DESC, id DESC
-                       ) latest_serv ON tm.id = latest_serv.machine_id
                        LEFT JOIN (
                            SELECT machine_id, MAX(running_hours) AS max_hours
                            FROM turf_consumption_log
@@ -72,17 +67,19 @@ class DashboardModel extends BaseModel {
         $serviceDueMachines = [];
 
         foreach ($allHourMachines as $m) {
-            $interval = (float)($m['next_service_due_interval'] ?: $m['service_interval_hours'] ?: 100);
-            $lastServiceHours = $m['last_service_hours'] !== null ? (float)$m['last_service_hours'] : 0.0;
+            $interval = (float)($m['service_interval_hours'] ?: 100);
+            $serviceDone = $m['service_done'] !== null ? (float)$m['service_done'] : 0.0;
+            $serviceDue = $m['service_due'] !== null ? (float)$m['service_due'] : 0.0;
             $currentHours = (float)($m['current_meter_hours'] ?? 0.0);
 
-            // Target meter reading when service is due: last service meter + interval
-            $dueAtMeter = $lastServiceHours + $interval;
+            // Target meter reading when service is due: directly from machine fleet table
+            $dueAtMeter = ($serviceDue > 0) ? $serviceDue : ($serviceDone + $interval);
             $remaining = $dueAtMeter - $currentHours;
 
             // Flag as service due if remaining <= 20 hours (or overdue) and meter has active readings
             if ($currentHours > 0 && $remaining <= 20.0) {
                 $m['total_hours_run']  = $currentHours;
+                $m['service_done']     = $serviceDone;
                 $m['service_due']      = $dueAtMeter;
                 $m['hours_to_service'] = round($remaining, 1);
                 $serviceDueMachines[]  = $m;

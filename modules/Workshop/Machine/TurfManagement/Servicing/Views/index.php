@@ -66,13 +66,16 @@
 
         foreach ($dueStatuses as $status) {
             $interval = (float)($status['service_interval_hours'] ?: 100);
-            $lastServiceHours = $status['last_service_hours'] !== null ? (float)$status['last_service_hours'] : 0;
-            $currentHours = $status['current_running_hours'] !== null ? (float)$status['current_running_hours'] : 0;
-            $dueHours = $lastServiceHours + $interval;
+            $serviceDone = $status['service_done'] !== null ? (float)$status['service_done'] : ((float)($status['last_service_hours'] ?? 0));
+            $serviceDue = $status['service_due'] !== null ? (float)$status['service_due'] : 0.0;
+            $currentHours = $status['current_running_hours'] !== null ? (float)$status['current_running_hours'] : 0.0;
+
+            // Service due meter target directly from machine fleet table
+            $dueHours = ($serviceDue > 0) ? $serviceDue : ($serviceDone + $interval);
             $remaining = $dueHours - $currentHours;
 
             $status['calc_interval'] = $interval;
-            $status['calc_last_service_hours'] = $lastServiceHours;
+            $status['calc_last_service_hours'] = $serviceDone;
             $status['calc_current_hours'] = $currentHours;
             $status['calc_due_hours'] = $dueHours;
             $status['calc_remaining'] = $remaining;

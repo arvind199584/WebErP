@@ -79,7 +79,7 @@ class ServicingModel extends BaseModel {
                     :next_service_due, :service_type, :serviced_by, :cost, :job_card_no, :remarks
                 )";
 
-        return $this->executeInsert($sql, [
+        $insertId = $this->executeInsert($sql, [
             'officeid'         => $data['officeid'],
             'machine_id'       => $data['machine_id'],
             'service_date'     => $data['service_date'],
@@ -91,6 +91,26 @@ class ServicingModel extends BaseModel {
             'job_card_no'      => $data['job_card_no'] ?? null,
             'remarks'          => $data['remarks'] ?? null
         ]);
+
+        // Directly sync and update machine fleet table (turf_machines)
+        $machineId = (int)$data['machine_id'];
+        $hours = (float)$data['hours_at_service'];
+        $nextDueInput = (float)($data['next_service_due'] ?? 0);
+        $dueAt = ($nextDueInput > $hours) ? $nextDueInput : ($hours + ($nextDueInput ?: 100));
+
+        $this->db->prepare("UPDATE turf_machines 
+                            SET service_done = :service_done, 
+                                service_due = :service_due, 
+                                status = 'Working',
+                                updated_at = CURRENT_TIMESTAMP 
+                            WHERE id = :id")
+                 ->execute([
+                     'service_done' => $hours,
+                     'service_due'  => $dueAt,
+                     'id'           => $machineId
+                 ]);
+
+        return $insertId;
     }
 
     public function updateServicing(int $id, ?int $officeId, array $data): bool {
@@ -125,7 +145,28 @@ class ServicingModel extends BaseModel {
         }
 
         $stmt = $this->db->prepare($sql);
-        return $stmt->execute($params);
+        $res = $stmt->execute($params);
+
+        if ($res) {
+            $machineId = (int)$data['machine_id'];
+            $hours = (float)$data['hours_at_service'];
+            $nextDueInput = (float)($data['next_service_due'] ?? 0);
+            $dueAt = ($nextDueInput > $hours) ? $nextDueInput : ($hours + ($nextDueInput ?: 100));
+
+            $this->db->prepare("UPDATE turf_machines 
+                                SET service_done = :service_done, 
+                                    service_due = :service_due, 
+                                    status = 'Working',
+                                    updated_at = CURRENT_TIMESTAMP 
+                                WHERE id = :id")
+                     ->execute([
+                         'service_done' => $hours,
+                         'service_due'  => $dueAt,
+                         'id'           => $machineId
+                     ]);
+        }
+
+        return $res;
     }
 
     public function deleteServicing(int $id, ?int $officeId): bool {
@@ -142,27 +183,29 @@ class ServicingModel extends BaseModel {
     }
 
     /**
-     * Gets machines with service status (latest service vs current running hours)
+     * Gets machines with service status (reads service_due and service_done directly from turf_machines)
      */
     public function getMachineServiceDueStatus(?int $officeId): array {
         $sql = "SELECT 
                     tm.id AS machine_id,
                     tm.name AS machine_name,
                     COALESCE(tm.service_interval_hours, 100) AS service_interval_hours,
+                    tm.service_done,
+                    tm.service_due,
                     latest_serv.service_date AS last_service_date,
                     latest_serv.hours_at_service AS last_service_hours,
-                    COALESCE(latest_serv.next_service_due, tm.service_interval_hours, 100) AS next_service_due,
                     latest_log.max_hours AS current_running_hours,
                     latest_log.last_meter_date AS current_meter_date
                 FROM turf_machines tm
                 LEFT JOIN (
-                    SELECT DISTINCT ON (machine_id) machine_id, service_date, hours_at_service, next_service_due
+                    SELECT DISTINCT ON (machine_id) machine_id, service_date, hours_at_service
                     FROM {$this->table}
                     ORDER BY machine_id, service_date DESC, id DESC
                 ) latest_serv ON tm.id = latest_serv.machine_id
                 LEFT JOIN (
                     SELECT machine_id, MAX(running_hours) AS max_hours, MAX(log_date) AS last_meter_date
                     FROM turf_consumption_log
+                    WHERE running_hours > 0
                     GROUP BY machine_id
                 ) latest_log ON tm.id = latest_log.machine_id";
 
