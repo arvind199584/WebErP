@@ -64,6 +64,18 @@
 
         <!-- As-of-Date Datepicker & Quick Presets -->
         <div class="d-flex flex-wrap align-items-center gap-2 bg-white p-2 rounded-3 shadow-sm border">
+            <?php if (($userRole ?? '') === 'superuser' && !empty($offices)): ?>
+                <span class="small fw-bold text-muted ps-2"><i class="bi bi-buildings text-primary me-1"></i> Office:</span>
+                <select id="office_id_picker" class="form-select form-select-sm border-primary fw-bold" style="width: 220px;" onchange="onOfficeFilterChange(this.value)">
+                    <option value="" <?php echo empty($selectedOffice) ? 'selected' : ''; ?>>All Complexes / Units</option>
+                    <?php foreach ($offices as $off): ?>
+                        <option value="<?php echo (int)$off['officeid']; ?>" <?php echo ((int)($selectedOffice ?? 0) === (int)$off['officeid']) ? 'selected' : ''; ?>>
+                            <?php echo htmlspecialchars($off['officename']); ?>
+                        </option>
+                    <?php endforeach; ?>
+                </select>
+            <?php endif; ?>
+
             <span class="small fw-bold text-muted ps-2"><i class="bi bi-calendar-check text-primary me-1"></i> As-of Date:</span>
             <input type="date" id="as_of_date_picker" class="form-control form-control-sm border-primary fw-bold" style="width: 145px;" value="<?php echo htmlspecialchars($as_of_date); ?>">
             <div class="btn-group btn-group-sm">
@@ -427,12 +439,27 @@
         loadBalanceData(currentCategory, currentAsOfDate);
     }
 
+    function onOfficeFilterChange(officeId) {
+        const newDate = document.getElementById('as_of_date_picker')?.value || currentAsOfDate;
+        let url = `?action=dashboard&as_of_date=${encodeURIComponent(newDate)}`;
+        if (officeId) {
+            url += `&office_id=${encodeURIComponent(officeId)}`;
+        }
+        window.location.href = url;
+    }
+
     function loadBalanceData(cat, asOfDate) {
         const tbody = document.getElementById('balances-tbody');
         tbody.innerHTML = `<tr><td colspan="7" class="text-center py-4"><span class="spinner-border spinner-border-sm me-2 text-primary"></span>Loading ${cat.toUpperCase()} balances as of ${asOfDate}...</td></tr>`;
         document.getElementById('items-count-label').textContent = 'Loading...';
 
-        fetch(`?action=getBalanceData&category=${encodeURIComponent(cat)}&as_of_date=${encodeURIComponent(asOfDate)}`)
+        const officePicker = document.getElementById('office_id_picker');
+        let officeParam = '';
+        if (officePicker && officePicker.value) {
+            officeParam = `&office_id=${encodeURIComponent(officePicker.value)}`;
+        }
+
+        fetch(`?action=getBalanceData&category=${encodeURIComponent(cat)}&as_of_date=${encodeURIComponent(asOfDate)}${officeParam}`)
             .then(res => res.json())
             .then(res => {
                 if (res.status === 'success') {

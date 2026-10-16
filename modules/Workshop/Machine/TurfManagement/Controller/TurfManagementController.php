@@ -59,21 +59,42 @@ class TurfManagementController extends BaseController {
     }
 
     private function showDashboard(string $userRole, int $userOfficeId): void {
-        $requestedOffice = isset($_GET['office_id']) ? (int)$_GET['office_id'] : $userOfficeId;
-        $officeId = ($userRole === 'superuser' && $requestedOffice > 0) ? $requestedOffice : (($userRole === 'superuser') ? null : $userOfficeId);
+        $officeId = null;
+        if ($userRole === 'superuser') {
+            $officeId = (isset($_GET['office_id']) && $_GET['office_id'] !== '' && (int)$_GET['office_id'] > 0) ? (int)$_GET['office_id'] : null;
+        } else {
+            $officeId = $userOfficeId;
+        }
         $asOfDate = !empty($_GET['as_of_date']) ? trim($_GET['as_of_date']) : date('Y-m-d');
 
         $data = $this->dashboardService->getDashboardInitData($officeId, $asOfDate);
 
+        $offices = [];
+        if ($userRole === 'superuser') {
+            try {
+                $db = \App\Core\Database::getInstance()->getConnection();
+                $stmt = $db->query("SELECT Officeid, OfficeName FROM office ORDER BY OfficeName ASC");
+                $offices = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+            } catch (\Exception $e) {
+                $offices = [];
+            }
+        }
+
         $this->render(__DIR__ . '/../Views/dashboard.php', array_merge($data, [
-            'currentUser' => $this->currentUser,
-            'userRole'    => $userRole
+            'currentUser'    => $this->currentUser,
+            'userRole'       => $userRole,
+            'selectedOffice' => $officeId,
+            'offices'        => $offices
         ]));
     }
 
     private function getBalanceData(string $userRole, int $userOfficeId): void {
-        $requestedOffice = isset($_GET['office_id']) ? (int)$_GET['office_id'] : $userOfficeId;
-        $officeId = ($userRole === 'superuser' && $requestedOffice > 0) ? $requestedOffice : (($userRole === 'superuser') ? null : $userOfficeId);
+        $officeId = null;
+        if ($userRole === 'superuser') {
+            $officeId = (isset($_GET['office_id']) && $_GET['office_id'] !== '' && (int)$_GET['office_id'] > 0) ? (int)$_GET['office_id'] : null;
+        } else {
+            $officeId = $userOfficeId;
+        }
         $category = trim((string)($_GET['category'] ?? 'fuel'));
         $asOfDate = !empty($_GET['as_of_date']) ? trim((string)$_GET['as_of_date']) : date('Y-m-d');
 
