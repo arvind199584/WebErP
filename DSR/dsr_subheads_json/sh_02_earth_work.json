@@ -1,0 +1,4388 @@
+{
+  "sub_head_no": 2,
+  "sub_head_name": "Earth Work",
+  "volume": 1,
+  "page_range": [
+    100,
+    148
+  ],
+  "total_items": 168,
+  "analyzed_items_with_breakup": 70,
+  "items": [
+    {
+      "item_code": "2.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Earth work in surface excavation not exceeding 30 cm in depth but exceeding 1.5 m in width as well as 10 sqm on plan including getting out and disposal of excavated earth upto 50 m and lift upto 1.5 m, as directed by Engineer-in- Charge:",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 102
+    },
+    {
+      "item_code": "2.1.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Earth work in surface excavation not exceeding 30 cm in depth but exceeding 1.5 m in width - All kinds of soil",
+      "cost_basis": {
+        "quantity": 100.0,
+        "unit": "Sqm"
+      },
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 6.8,
+          "rate": 736.0,
+          "amount": 5004.8
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 5.6,
+          "rate": 736.0,
+          "amount": 4121.6
+        }
+      ],
+      "calculations": {
+        "total_w": 9126.4,
+        "total_x": 9217.66,
+        "total_y": 11178.26,
+        "total_z": 12855.0
+      },
+      "say_rate": 129.85,
+      "page": 102
+    },
+    {
+      "item_code": "2.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Earth work by mechinical / manual means in rough excavation, banking excavated earth in layers not exceeding 20cm in depth, breaking clods, watering, rolling each layer with ½ tonne roller or wooden or steel rammers, and rolling every 3rd and top-most layer with power roller of minimum 8 tonnes and dressing up in embankments for roads, flood banks, marginal banks and guide banks or filling up ground depressions, lead upto 50 m and for all lift  :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 102
+    },
+    {
+      "item_code": "2.2.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Earth work by mechinical / manual means in rough excavation, banking excavated earth in - All kinds of soil",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "0049",
+          "category": "MACHINERY",
+          "description": "Dozer 80 HP for spreading",
+          "unit": "hour",
+          "quantity": 0.374,
+          "rate": 1700.0,
+          "amount": 635.8
+        },
+        {
+          "resource_code": "0050",
+          "category": "MACHINERY",
+          "description": "Motor grader for grading",
+          "unit": "hour",
+          "quantity": 0.167,
+          "rate": 2700.0,
+          "amount": 450.9
+        },
+        {
+          "resource_code": "0054",
+          "category": "MACHINERY",
+          "description": "Vibratory roller 8-10 tonne",
+          "unit": "hour",
+          "quantity": 0.167,
+          "rate": 700.0,
+          "amount": 116.9
+        },
+        {
+          "resource_code": "0057",
+          "category": "MACHINERY",
+          "description": "Water tanker 6 KL capacity",
+          "unit": "hour",
+          "quantity": 0.4,
+          "rate": 250.0,
+          "amount": 100.0
+        },
+        {
+          "resource_code": "0128",
+          "category": "LABOUR",
+          "description": "Mate",
+          "unit": "day",
+          "quantity": 0.004,
+          "rate": 816.0,
+          "amount": 3.26
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.1,
+          "rate": 736.0,
+          "amount": 73.6
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries (i.e. watch and ward, minor T&P etc.)",
+          "unit": "L.S.",
+          "quantity": 6.18,
+          "rate": 2.27,
+          "amount": 14.03
+        }
+      ],
+      "calculations": {
+        "total_w": 2778.69,
+        "total_x": 2806.48,
+        "total_y": 3403.42,
+        "total_z": 3913.93
+      },
+      "say_rate": 395.3,
+      "page": 102
+    },
+    {
+      "item_code": "2.3",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Banking excavated earth by mechanical / manual means in layers not exceeding 20 cm in depth, breaking clods, watering, rolling each layer with ½ tonne roller, or wooden or steel rammers, and rolling every 3rd and top-most layer with power roller of minimum 8 tonnes and dressing up, in embankments for roads, flood banks, marginal banks, and guide banks etc., lead upto 50 m and for all lift :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 103
+    },
+    {
+      "item_code": "2.3.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Banking excavated earth by mechanical / manual means in layers not exceeding 20 cm in - All kinds of soil",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "0049",
+          "category": "MACHINERY",
+          "description": "Dozer 80 HP for spreading",
+          "unit": "hour",
+          "quantity": 0.374,
+          "rate": 1700.0,
+          "amount": 635.8
+        },
+        {
+          "resource_code": "0050",
+          "category": "MACHINERY",
+          "description": "Motor grader for grading",
+          "unit": "hour",
+          "quantity": 0.167,
+          "rate": 2700.0,
+          "amount": 450.9
+        },
+        {
+          "resource_code": "0054",
+          "category": "MACHINERY",
+          "description": "Vibrator roller 8-10 tonne",
+          "unit": "hour",
+          "quantity": 0.167,
+          "rate": 700.0,
+          "amount": 116.9
+        },
+        {
+          "resource_code": "0057",
+          "category": "MACHINERY",
+          "description": "Water tanker 6 KL capacity",
+          "unit": "hour",
+          "quantity": 0.4,
+          "rate": 250.0,
+          "amount": 100.0
+        },
+        {
+          "resource_code": "0128",
+          "category": "LABOUR",
+          "description": "Mate",
+          "unit": "day",
+          "quantity": 0.004,
+          "rate": 816.0,
+          "amount": 3.26
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.1,
+          "rate": 736.0,
+          "amount": 73.6
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries (i.e. watch and ward, minor T&P etc.)",
+          "unit": "L.S.",
+          "quantity": 4.61,
+          "rate": 2.27,
+          "amount": 10.46
+        }
+      ],
+      "calculations": {
+        "total_w": 1390.92,
+        "total_x": 1404.83,
+        "total_y": 1703.64,
+        "total_z": 1959.19
+      },
+      "say_rate": 197.9,
+      "page": 103
+    },
+    {
+      "item_code": "2.4",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Deduct for not rolling with power roller of minimum 8 tonnes for banking excavated earth in layers not  exceeding 20 cm in depth.",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "0113",
+          "category": "LABOUR",
+          "description": "Chowkidar",
+          "unit": "day",
+          "quantity": 0.008,
+          "rate": 736.0,
+          "amount": 5.89
+        },
+        {
+          "resource_code": "0003",
+          "category": "LABOUR",
+          "description": "Hire charges of Diesel Road Roller - 8 to 10 tonne",
+          "unit": "day",
+          "quantity": 0.008,
+          "rate": 3350.0,
+          "amount": 26.8
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 1.82,
+          "rate": 2.27,
+          "amount": 4.13
+        }
+      ],
+      "calculations": {
+        "total_w": 36.82,
+        "total_x": 37.19,
+        "total_y": 45.1,
+        "total_z": 51.87
+      },
+      "say_rate": 5.25,
+      "page": 103
+    },
+    {
+      "item_code": "2.5",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Deduct for not watering the excavated earth for banking",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "0057",
+          "category": "MACHINERY",
+          "description": "Water tanker 6 KL capacity",
+          "unit": "hour",
+          "quantity": 0.4,
+          "rate": 250.0,
+          "amount": 100.0
+        }
+      ],
+      "calculations": {
+        "total_w": 100.0,
+        "total_x": 101.0,
+        "total_y": 122.48,
+        "total_z": 140.85
+      },
+      "say_rate": 14.25,
+      "page": 104
+    },
+    {
+      "item_code": "2.6",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Earth work in excavation by mechanical means (Hydraulic excavator)/manual means over areas (exceeding 30 cm in depth, 1.5 m in width as well as 10 sqm on plan) including getting out and disposal of excavated earth lead upto 50 m and for all lift, as directed by Engineer- in-charge.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 104
+    },
+    {
+      "item_code": "2.6.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Earth work in excavation by mechanical means (Hydraulic excavator)/manual means over - All kinds of soil",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "0020",
+          "category": "MACHINERY",
+          "description": "Hydraulic Excavator (3D) with driver and fuel.",
+          "unit": "day",
+          "quantity": 0.08,
+          "rate": 7850.0,
+          "amount": 628.0
+        },
+        {
+          "resource_code": "0018",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of loader.",
+          "unit": "day",
+          "quantity": 0.08,
+          "rate": 6700.0,
+          "amount": 536.0
+        },
+        {
+          "resource_code": "0128",
+          "category": "LABOUR",
+          "description": "Mate",
+          "unit": "day",
+          "quantity": 0.04,
+          "rate": 816.0,
+          "amount": 32.64
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 736.0,
+          "amount": 44.16
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries (i.e. watch and ward, minor T&P etc.)",
+          "unit": "day",
+          "quantity": 3.1,
+          "rate": 2.27,
+          "amount": 7.04
+        }
+      ],
+      "calculations": {
+        "total_w": 1247.84,
+        "total_x": 1260.32,
+        "total_y": 1528.39,
+        "total_z": 1757.65
+      },
+      "say_rate": 177.5,
+      "page": 104
+    },
+    {
+      "item_code": "2.7",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Earth work in excavation by mechanical means (Hydraulic excavator)/manual means over areas (exceeding 30 cm in depth, 1.5 m in width as well as 10 sqm on plan) including getting out and disposal of excavated earth lead upto 50 m and lift upto 1.5 m, as directed by Engineer-in-charge.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 104
+    },
+    {
+      "item_code": "2.7.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Earth work in excavation by mechanical means (Hydraulic excavator)/manual means over - Ordinary rock",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "0020",
+          "category": "MACHINERY",
+          "description": "Hydraulic Excavator (3D) with driver and fuel.",
+          "unit": "day",
+          "quantity": 0.063,
+          "rate": 7850.0,
+          "amount": 494.55
+        },
+        {
+          "resource_code": "0017",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of tipper",
+          "unit": "day",
+          "quantity": 0.063,
+          "rate": 4200.0,
+          "amount": 264.6
+        },
+        {
+          "resource_code": "0132",
+          "category": "LABOUR",
+          "description": "Rock Excavator",
+          "unit": "day",
+          "quantity": 0.705,
+          "rate": 736.0,
+          "amount": 518.88
+        },
+        {
+          "resource_code": "0133",
+          "category": "LABOUR",
+          "description": "Rock Breaker",
+          "unit": "day",
+          "quantity": 1.59,
+          "rate": 736.0,
+          "amount": 1170.24
+        },
+        {
+          "resource_code": "0134",
+          "category": "LABOUR",
+          "description": "Rock Hole Driller",
+          "unit": "day",
+          "quantity": 0.355,
+          "rate": 736.0,
+          "amount": 261.28
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.55,
+          "rate": 736.0,
+          "amount": 404.8
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 10.79,
+          "rate": 2.27,
+          "amount": 24.49
+        }
+      ],
+      "calculations": {
+        "total_w": 3506.84,
+        "total_x": 3541.91,
+        "total_y": 4295.27,
+        "total_z": 4939.56
+      },
+      "say_rate": 498.9,
+      "page": 105
+    },
+    {
+      "item_code": "2.7.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Earth work in excavation by mechanical means (Hydraulic excavator)/manual means over - Hard rock (requiring blasting)",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "0020",
+          "category": "MACHINERY",
+          "description": "Hydraulic Excavator (3D) with driver and fuel.",
+          "unit": "day",
+          "quantity": 0.125,
+          "rate": 7850.0,
+          "amount": 981.25
+        },
+        {
+          "resource_code": "0017",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of tipper",
+          "unit": "day",
+          "quantity": 0.125,
+          "rate": 4200.0,
+          "amount": 525.0
+        },
+        {
+          "resource_code": "0132",
+          "category": "LABOUR",
+          "description": "Rock Excavator",
+          "unit": "day",
+          "quantity": 1.06,
+          "rate": 736.0,
+          "amount": 780.16
+        },
+        {
+          "resource_code": "0133",
+          "category": "LABOUR",
+          "description": "Rock Breaker",
+          "unit": "day",
+          "quantity": 2.825,
+          "rate": 736.0,
+          "amount": 2079.2
+        },
+        {
+          "resource_code": "0134",
+          "category": "LABOUR",
+          "description": "Rock Hole Driller",
+          "unit": "day",
+          "quantity": 0.885,
+          "rate": 736.0,
+          "amount": 651.36
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.45,
+          "rate": 736.0,
+          "amount": 331.2
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.55,
+          "rate": 736.0,
+          "amount": 404.8
+        },
+        {
+          "resource_code": "0325",
+          "category": "LABOUR",
+          "description": "Blasting powder",
+          "unit": "kilogram",
+          "quantity": 3.93,
+          "rate": 44.0,
+          "amount": 172.92
+        },
+        {
+          "resource_code": "0326",
+          "category": "LABOUR",
+          "description": "Blasting fuse (fuse wire)",
+          "unit": "each",
+          "quantity": 4.0,
+          "rate": 46.0,
+          "amount": 184.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 16.12,
+          "rate": 2.27,
+          "amount": 36.59
+        }
+      ],
+      "calculations": {
+        "total_w": 6146.48,
+        "total_x": 6207.94,
+        "total_y": 7528.37,
+        "total_z": 8657.63
+      },
+      "say_rate": 874.4,
+      "page": 105
+    },
+    {
+      "item_code": "2.7.3",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Earth work in excavation by mechanical means (Hydraulic excavator)/manual means over - Hard rock (blasting prohibited)",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "0020",
+          "category": "MACHINERY",
+          "description": "Hydraulic Excavator (3D) with driver and fuel.",
+          "unit": "day",
+          "quantity": 0.125,
+          "rate": 7850.0,
+          "amount": 981.25
+        },
+        {
+          "resource_code": "0017",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of tipper",
+          "unit": "day",
+          "quantity": 0.125,
+          "rate": 4200.0,
+          "amount": 525.0
+        },
+        {
+          "resource_code": "0132",
+          "category": "LABOUR",
+          "description": "Rock Excavator",
+          "unit": "day",
+          "quantity": 2.47,
+          "rate": 736.0,
+          "amount": 1817.92
+        },
+        {
+          "resource_code": "0133",
+          "category": "LABOUR",
+          "description": "Rock Breaker",
+          "unit": "day",
+          "quantity": 6.0,
+          "rate": 736.0,
+          "amount": 4416.0
+        },
+        {
+          "resource_code": "0135",
+          "category": "LABOUR",
+          "description": "Stone Chiseller",
+          "unit": "day",
+          "quantity": 1.06,
+          "rate": 816.0,
+          "amount": 864.96
+        },
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 0.175,
+          "rate": 816.0,
+          "amount": 142.8
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.75,
+          "rate": 736.0,
+          "amount": 552.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 16.12,
+          "rate": 2.27,
+          "amount": 36.59
+        }
+      ],
+      "calculations": {
+        "total_w": 10072.52,
+        "total_x": 10173.25,
+        "total_y": 12337.1,
+        "total_z": 14187.67
+      },
+      "say_rate": 1432.95,
+      "page": 106
+    },
+    {
+      "item_code": "2.8",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Earth work in excavation by mechanical means (Hydraulic excavator) / manual means in foundation trenches or drains (not exceeding 1.5 m in width or 10 sqm on plan), including dressing of sides and ramming of bottoms, for all lift, including getting out the excavated soil and disposal of surplus excavated soil as directed, within a lead of 50 m.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 106
+    },
+    {
+      "item_code": "2.8.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Earth work in excavation by mechanical means (Hydraulic excavator) / manual means in - All kinds of soil.",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "0020",
+          "category": "MACHINERY",
+          "description": "Hydraulic Excavator (3D) with driver and fuel.",
+          "unit": "day",
+          "quantity": 0.12,
+          "rate": 7850.0,
+          "amount": 942.0
+        },
+        {
+          "resource_code": "0018",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of loader.",
+          "unit": "day",
+          "quantity": 0.12,
+          "rate": 6700.0,
+          "amount": 804.0
+        },
+        {
+          "resource_code": "0128",
+          "category": "LABOUR",
+          "description": "Mate",
+          "unit": "day",
+          "quantity": 0.04,
+          "rate": 816.0,
+          "amount": 32.64
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 736.0,
+          "amount": 44.16
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries (i.e. watch and ward, minor T&P etc.)",
+          "unit": "day",
+          "quantity": 3.1,
+          "rate": 2.27,
+          "amount": 7.04
+        }
+      ],
+      "calculations": {
+        "total_w": 1829.84,
+        "total_x": 1848.14,
+        "total_y": 2241.24,
+        "total_z": 2577.43
+      },
+      "say_rate": 260.3,
+      "page": 106
+    },
+    {
+      "item_code": "2.9",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Excavation work by mechanical means (Hydraulic excavator)/ manual means in foundation trenches or drains (not exceeding 1.5m in width or 10 sqm on plan), including dressing of sides and ramming of bottoms, lift upto 1.5 m, including getting out the excavated soil and disposal of surplus excavated soils as directed, within a lead of 50 m.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 107
+    },
+    {
+      "item_code": "2.9.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Excavation work by mechanical means (Hydraulic excavator)/ manual means in foundation - Ordinary rock",
+      "cost_basis": {
+        "quantity": 100.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "0020",
+          "category": "MACHINERY",
+          "description": "Hydraulic Excavator (3D) with driver and fuel.",
+          "unit": "day",
+          "quantity": 0.625,
+          "rate": 7850.0,
+          "amount": 4906.25
+        },
+        {
+          "resource_code": "0017",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of tipper",
+          "unit": "day",
+          "quantity": 0.625,
+          "rate": 4200.0,
+          "amount": 2625.0
+        },
+        {
+          "resource_code": "0132",
+          "category": "LABOUR",
+          "description": "Rock Excavator",
+          "unit": "day",
+          "quantity": 8.85,
+          "rate": 736.0,
+          "amount": 6513.6
+        },
+        {
+          "resource_code": "0133",
+          "category": "LABOUR",
+          "description": "Rock Breaker",
+          "unit": "day",
+          "quantity": 17.65,
+          "rate": 736.0,
+          "amount": 12990.4
+        },
+        {
+          "resource_code": "0134",
+          "category": "LABOUR",
+          "description": "Rock Hole Driller",
+          "unit": "day",
+          "quantity": 5.3,
+          "rate": 736.0,
+          "amount": 3900.8
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 5.0,
+          "rate": 736.0,
+          "amount": 3680.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 13.0,
+          "rate": 736.0,
+          "amount": 9568.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 135.2,
+          "rate": 2.27,
+          "amount": 306.9
+        }
+      ],
+      "calculations": {
+        "total_w": 44490.95,
+        "total_x": 44935.86,
+        "total_y": 54493.72,
+        "total_z": 62667.78
+      },
+      "say_rate": 632.95,
+      "page": 107
+    },
+    {
+      "item_code": "2.9.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Excavation work by mechanical means (Hydraulic excavator)/ manual means in foundation - Hard rock (requiring blasting)",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "0020",
+          "category": "MACHINERY",
+          "description": "Hydraulic Excavator (3D) with driver and fuel.",
+          "unit": "day",
+          "quantity": 0.125,
+          "rate": 7850.0,
+          "amount": 981.25
+        },
+        {
+          "resource_code": "0017",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of tipper",
+          "unit": "day",
+          "quantity": 0.125,
+          "rate": 4200.0,
+          "amount": 525.0
+        },
+        {
+          "resource_code": "0132",
+          "category": "LABOUR",
+          "description": "Rock Excavator",
+          "unit": "day",
+          "quantity": 1.24,
+          "rate": 736.0,
+          "amount": 912.64
+        },
+        {
+          "resource_code": "0133",
+          "category": "LABOUR",
+          "description": "Rock Breaker",
+          "unit": "day",
+          "quantity": 3.0,
+          "rate": 736.0,
+          "amount": 2208.0
+        },
+        {
+          "resource_code": "0134",
+          "category": "LABOUR",
+          "description": "Rock Hole Driller",
+          "unit": "day",
+          "quantity": 1.06,
+          "rate": 736.0,
+          "amount": 780.16
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.3,
+          "rate": 736.0,
+          "amount": 956.8
+        },
+        {
+          "resource_code": "0325",
+          "category": "LABOUR",
+          "description": "Blasting powder",
+          "unit": "kilogram",
+          "quantity": 6.42,
+          "rate": 44.0,
+          "amount": 282.48
+        },
+        {
+          "resource_code": "0326",
+          "category": "LABOUR",
+          "description": "Blasting fuse (fuse wire)",
+          "unit": "each",
+          "quantity": 7.0,
+          "rate": 46.0,
+          "amount": 322.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 18.85,
+          "rate": 2.27,
+          "amount": 42.79
+        }
+      ],
+      "calculations": {
+        "total_w": 7379.12,
+        "total_x": 7452.91,
+        "total_y": 9038.14,
+        "total_z": 10393.86
+      },
+      "say_rate": 1049.8,
+      "page": 107
+    },
+    {
+      "item_code": "2.9.3",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Excavation work by mechanical means (Hydraulic excavator)/ manual means in foundation - Hard rock (blasting prohibited)",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "0020",
+          "category": "MACHINERY",
+          "description": "Hydraulic Excavator (3D) with driver and fuel.",
+          "unit": "day",
+          "quantity": 0.125,
+          "rate": 7850.0,
+          "amount": 981.25
+        },
+        {
+          "resource_code": "0017",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of tipper",
+          "unit": "day",
+          "quantity": 0.125,
+          "rate": 4200.0,
+          "amount": 525.0
+        },
+        {
+          "resource_code": "0132",
+          "category": "LABOUR",
+          "description": "Rock Excavator",
+          "unit": "day",
+          "quantity": 2.65,
+          "rate": 736.0,
+          "amount": 1950.4
+        },
+        {
+          "resource_code": "0133",
+          "category": "LABOUR",
+          "description": "Rock Breaker",
+          "unit": "day",
+          "quantity": 6.175,
+          "rate": 736.0,
+          "amount": 4544.8
+        },
+        {
+          "resource_code": "0135",
+          "category": "LABOUR",
+          "description": "Stone Chiseller",
+          "unit": "day",
+          "quantity": 1.06,
+          "rate": 816.0,
+          "amount": 864.96
+        },
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 0.175,
+          "rate": 816.0,
+          "amount": 142.8
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.75,
+          "rate": 736.0,
+          "amount": 552.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.5,
+          "rate": 736.0,
+          "amount": 1104.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 17.94,
+          "rate": 2.27,
+          "amount": 40.72
+        }
+      ],
+      "calculations": {
+        "total_w": 10705.93,
+        "total_x": 10812.99,
+        "total_y": 13112.91,
+        "total_z": 15079.85
+      },
+      "say_rate": 1523.05,
+      "page": 108
+    },
+    {
+      "item_code": "2.10",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Excavating trenches by mechinical / manual means of required width for pipes, cables, etc including excavation for sockets, and dressing of sides, ramming of bottoms , for all depth, including getting out the excavated soil, and then returning the soil as required, in layers not exceeding 20 cm in depth, including consolidating each deposited layer by ramming, watering, etc. and disposing of surplus excavated soil as directed, within a lead of 50 m :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 108
+    },
+    {
+      "item_code": "2.10.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Excavating trenches by mechinical / manual means of required width for pipes, cables, etc - All kinds of soil",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 108
+    },
+    {
+      "item_code": "2.10.1.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Excavating trenches by mechinical / manual means of required width for pipes, cables, etc - Pipes, cables etc, not exceeding 80 mm dia. an average dia. say 40mm. Slope assumed 1 in 200. Earth work and filling- Minimum depth of trench 60cm. Average depth = (0.6+1.5)/2 = 1.05, Width for this depth 0.45 cm, 180x0.45x1.05 = 85.05 cum",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 108
+    },
+    {
+      "item_code": "2.8.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Excavating trenches by mechinical / manual means of required width for pipes, cables, etc - Rate as per item No. 2.8.1 of SH: Earth work cum 85.05 260.30 22138.52 A",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 108
+    },
+    {
+      "item_code": "2.25",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per Item No. 2.25 of SH: Earth Work cum 85.05 196.00 16669.80 A TOTAL  38808.32 Cost of 180m length of pipes  38808.32 Cost for 1m. length of pipe  215.60 Say    215.60",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": 215.6,
+      "page": 108
+    },
+    {
+      "item_code": "2.10.1.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per Item No. 2.25 of - Pipes, cables etc. exceeding 80 mm dia. but not exceeding 300 mm dia average dia. say 200mm. Slope assumed 1 in 200. Earth work and filling- Minimum depth of trench = 0.75+0.20 = 0.95m, Average depth = (1.50+0.95)/2 = 1.225m,  Width = 0.40 + 0.20 = 0.60 m, 110x0.60x1.225 = 80.85 cum, 5% for collars =  4.04 cum, Total = 84.89 cum",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 109
+    },
+    {
+      "item_code": "2.8.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per Item No. 2.25 of - Rate as per item No. 2.8.1 of SH: Earth work cum 84.89 260.30 22096.87 A",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 109
+    },
+    {
+      "item_code": "2.25",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per Item No. 2.25 of SH: Earth Work cum 84.89 196.00 16638.44 A TOTAL  38735.31 Cost of 110m length of pipe  38735.31 Cost for 1m length of pipe  352.14 Say    352.15",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": 352.15,
+      "page": 109
+    },
+    {
+      "item_code": "2.10.1.3",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per Item No. 2.25 of SH: Earth Work cum 84.89 196.00 16638.44 A - Pipes, cables etc. exceeding 300 mm dia but not exceeding 600 mm average dia. say 450mm. Slope assumed 1 in 200. Earth work and filling- Minimum depth of trench 0.75+0.45= 1.20m, Average depth = (1.50+1.20)/2 = 1.35, Width = 0.40 + 0.45 = 0.85 m, 60x0.85x1.35 = 68.85 cum, 5% for collars = 3.44 cum, Total = 72.29 cum",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 109
+    },
+    {
+      "item_code": "2.8.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per Item No. 2.25 of SH: Earth Work cum 84.89 196.00 16638.44 A - Rate as per item No. 2.8.1 of SH: Earth work cum 72.29 260.30 18817.09 A",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 109
+    },
+    {
+      "item_code": "2.25",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per Item No. 2.25 of SH: Earth Work cum 72.29 196.00 14168.84 A TOTAL  32985.93 Cost of 60m length of pipe  32985.93 Cost for 1m length of pipe  549.77 Say    549.75",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": 549.75,
+      "page": 109
+    },
+    {
+      "item_code": "2.13",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Excavating trenches of required width for pipes, cables, etc, including excavation for sockets, depth upto 1.5 m, including getting out the excavated materials, returning the soil as required in layers not exceeding 20 cm in depth, including consolidating each deposited layers by ramming, watering etc., stacking serviceable material for measurements and disposal of unserviceable material as directed, within a lead of 50 m :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 109
+    },
+    {
+      "item_code": "2.13.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Excavating trenches of required width for pipes, cables, etc, including excavation for sockets, - Ordinary rock :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 109
+    },
+    {
+      "item_code": "2.13.1.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Excavating trenches of required width for pipes, cables, etc, including excavation for sockets, - Pipes, cables etc. not exceeding 80 mm dia",
+      "cost_basis": {
+        "quantity": 180.0,
+        "unit": "m length of a pipe of"
+      },
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 109
+    },
+    {
+      "item_code": "2.9.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Excavating trenches of required width for pipes, cables, etc, including excavation for sockets, - Rate as per Item No. 2.9.1 of SH: Earth Work cum 85.05 632.95 53832.40 A Refilling, ramming and watering",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 110
+    },
+    {
+      "item_code": "2.25",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 85.05 196.00 16669.80 A Extra labour for ramming of rock",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 736.0,
+          "amount": 1472.0
+        }
+      ],
+      "calculations": {
+        "total_w": 71974.2,
+        "total_x": 71988.92,
+        "total_y": 72305.15,
+        "total_z": 72575.59
+      },
+      "say_rate": 403.3,
+      "page": 110
+    },
+    {
+      "item_code": "2.13.1.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 85.05 196.00 16669.80 A - Pipes, cables etc. exceeding 80 mm dia but not exceeding 300 mm dia",
+      "cost_basis": {
+        "quantity": 80.0,
+        "unit": "m length of pipe of an"
+      },
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 110
+    },
+    {
+      "item_code": "2.9.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 85.05 196.00 16669.80 A - Rate as per item No. 2.9.1 of SH: Earth Work cum 93.60 632.95 59244.12 A Refilling, ramming and watering",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 110
+    },
+    {
+      "item_code": "2.25",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 93.60 196.00 18345.60 A Extra labour for ramming of rock",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.2,
+          "rate": 736.0,
+          "amount": 1619.2
+        }
+      ],
+      "calculations": {
+        "total_w": 79208.92,
+        "total_x": 79225.11,
+        "total_y": 79572.96,
+        "total_z": 79870.45
+      },
+      "say_rate": 998.65,
+      "page": 110
+    },
+    {
+      "item_code": "2.13.1.3",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 93.60 196.00 18345.60 A - Pipes, cables exceeding 300 mm dia but not exceeding 600 mm dia",
+      "cost_basis": {
+        "quantity": 30.0,
+        "unit": "m. length of a pipe of"
+      },
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 111
+    },
+    {
+      "item_code": "2.9.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 93.60 196.00 18345.60 A - Rate as per item No. 2.9.1 of SH: Earth Work cum 40.399 632.95 25570.55 A",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 111
+    },
+    {
+      "item_code": "2.25",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 40.399 196.00 7918.20 A",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.94,
+          "rate": 736.0,
+          "amount": 691.84
+        }
+      ],
+      "calculations": {
+        "total_w": 34180.59,
+        "total_x": 34187.51,
+        "total_y": 34336.14,
+        "total_z": 34463.25
+      },
+      "say_rate": 1149.1,
+      "page": 111
+    },
+    {
+      "item_code": "2.13.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 40.399 196.00 7918.20 A - Hard rock (requiring blasting)",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 111
+    },
+    {
+      "item_code": "2.13.2.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 40.399 196.00 7918.20 A - Pipes, cables etc. not exceeding 80 mm dia",
+      "cost_basis": {
+        "quantity": 180.0,
+        "unit": "m length of a pipe of a"
+      },
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 111
+    },
+    {
+      "item_code": "2.9.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 40.399 196.00 7918.20 A - Rate as per item no. 2.9.2 of SH: Earth Work cum 85.05 1049.80 89285.49 A Refilling, ramming and watering",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 111
+    },
+    {
+      "item_code": "2.25",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 85.05 196.00 16669.80 A Extra labour for ramming of rock",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.5,
+          "rate": 736.0,
+          "amount": 1840.0
+        }
+      ],
+      "calculations": {
+        "total_w": 107795.29,
+        "total_x": 107813.69,
+        "total_y": 108208.97,
+        "total_z": 108547.02
+      },
+      "say_rate": 603.2,
+      "page": 111
+    },
+    {
+      "item_code": "2.13.2.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 85.05 196.00 16669.80 A - Pipes, cables etc. exceeding 80 mm dia but not exceeding 300 mm dia",
+      "cost_basis": {
+        "quantity": 80.0,
+        "unit": "m length of a pipe of an"
+      },
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 112
+    },
+    {
+      "item_code": "2.9.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 85.05 196.00 16669.80 A - Rate as per item No. 2.9.2 of SH: Earth Work cum 93.60 1049.80 98261.28 A Refilling, ramming and watering",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 112
+    },
+    {
+      "item_code": "2.25",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 93.60 196.00 18345.60 A Extra labour for ramming of rock",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.75,
+          "rate": 736.0,
+          "amount": 2024.0
+        }
+      ],
+      "calculations": {
+        "total_w": 118630.88,
+        "total_x": 118651.12,
+        "total_y": 119085.93,
+        "total_z": 119457.79
+      },
+      "say_rate": 1493.6,
+      "page": 112
+    },
+    {
+      "item_code": "2.13.2.3",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 93.60 196.00 18345.60 A - Pipes, cables etc. exceeding 300 mm dia but not exceeding 600 mm dia",
+      "cost_basis": {
+        "quantity": 30.0,
+        "unit": "m length of a pipe of an"
+      },
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 112
+    },
+    {
+      "item_code": "2.9.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 93.60 196.00 18345.60 A - Rate as per item No. 2.9.2 of SH: Earth Work cum 40.399 1049.80 42410.87 A Refilling, ramming and watering",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 112
+    },
+    {
+      "item_code": "2.25",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 40.399 196.00 7918.20 A Extra labour for ramming of rock",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.17,
+          "rate": 736.0,
+          "amount": 861.12
+        }
+      ],
+      "calculations": {
+        "total_w": 51190.19,
+        "total_x": 51198.8,
+        "total_y": 51383.79,
+        "total_z": 51542.0
+      },
+      "say_rate": 1718.45,
+      "page": 112
+    },
+    {
+      "item_code": "2.13.3",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 40.399 196.00 7918.20 A - Hard rock (blasting prohibited)",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 113
+    },
+    {
+      "item_code": "2.13.3.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 40.399 196.00 7918.20 A - Pipes, cables etc. not exceeding 80 mm dia",
+      "cost_basis": {
+        "quantity": 180.0,
+        "unit": "m length of a pipe of a"
+      },
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 113
+    },
+    {
+      "item_code": "2.9.3",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 40.399 196.00 7918.20 A - Rate of item No 2.9.3 of SH: Earth Work cum 85.05 1523.05 129535.40 A Refilling, ramming and watering",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 113
+    },
+    {
+      "item_code": "2.25",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 85.05 196.00 16669.80 A Extra labour for ramming of rock",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.5,
+          "rate": 736.0,
+          "amount": 1840.0
+        }
+      ],
+      "calculations": {
+        "total_w": 148045.2,
+        "total_x": 148063.6,
+        "total_y": 148458.88,
+        "total_z": 148796.93
+      },
+      "say_rate": 826.8,
+      "page": 113
+    },
+    {
+      "item_code": "2.13.3.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 85.05 196.00 16669.80 A - Pipes, cables etc. exceeding 80 mm dia but not exceeding 300 mm dia",
+      "cost_basis": {
+        "quantity": 80.0,
+        "unit": "m length of a pipe of an"
+      },
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 113
+    },
+    {
+      "item_code": "2.9.3",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 85.05 196.00 16669.80 A - Rate as per item No. 2.9.3 of SH: Earth Work cum 93.60 1523.05 142557.48 A Refilling, ramming and watering",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 113
+    },
+    {
+      "item_code": "2.25",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 93.60 196.00 18345.60 A Extra labour for ramming of rock",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.75,
+          "rate": 736.0,
+          "amount": 2024.0
+        }
+      ],
+      "calculations": {
+        "total_w": 162927.08,
+        "total_x": 162947.32,
+        "total_y": 163382.13,
+        "total_z": 163753.99
+      },
+      "say_rate": 2047.3,
+      "page": 113
+    },
+    {
+      "item_code": "2.13.3.3",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 93.60 196.00 18345.60 A - Pipes, cables etc. exceeding 300 mm dia but not exceeding 600 mm dia",
+      "cost_basis": {
+        "quantity": 30.0,
+        "unit": "m length of a pipe of an"
+      },
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 114
+    },
+    {
+      "item_code": "2.9.3",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 93.60 196.00 18345.60 A - Rate as per item No. 2.9.3 of SH: Earth Work cum 40.399 1523.05 61529.70 A Refilling, ramming and watering",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 114
+    },
+    {
+      "item_code": "2.25",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 40.399 196.00 7918.20 A Extra labour for ramming of rock",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.17,
+          "rate": 736.0,
+          "amount": 861.12
+        }
+      ],
+      "calculations": {
+        "total_w": 70309.02,
+        "total_x": 70317.63,
+        "total_y": 70502.62,
+        "total_z": 70660.83
+      },
+      "say_rate": 2355.75,
+      "page": 114
+    },
+    {
+      "item_code": "2.14",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Extra for excavating trenches for pipes, cables, etc. in ordinary/hard rock exceeding 1.5 m in depth but not exceeding 3 m. (Rate is over corresponding basic item for depth upto 1.5 metre)",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 114
+    },
+    {
+      "item_code": "2.14.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Extra for excavating trenches for pipes, cables, etc. in ordinary/hard rock exceeding 1.5 m - Ordinary rock :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 114
+    },
+    {
+      "item_code": "2.14.1.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Extra for excavating trenches for pipes, cables, etc. in ordinary/hard rock exceeding 1.5 m - Pipes, cables etc. exceeding 80 mm dia but not exceeding 300 mm dia an average dia. say 200mm. Slope assumed 1 in 200. Excavation- 100x0.90x1.75 = 157.50 cum. 200x0.90x(2.00 +3.00)/2= 450 cum. Total = 607.50 cum.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 114
+    },
+    {
+      "item_code": "2.9.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Extra for excavating trenches for pipes, cables, etc. in ordinary/hard rock exceeding 1.5 m - Rate as per item No. 2.9.1 of SH: Earth Work cum 607.500 632.95 384517.13 A Refilling, ramming and watering = 607.50 cum",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 114
+    },
+    {
+      "item_code": "2.25",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 607.500 196.00 119070.00 A Extra labour for ramming of rock=(2.20 * 607.5/93.60 = 14.28)(Based on Item No 2.13.1.2)",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 14.28,
+          "rate": 736.0,
+          "amount": 10510.08
+        }
+      ],
+      "calculations": {},
+      "say_rate": null,
+      "page": 114
+    },
+    {
+      "item_code": "2.13.1.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 607.500 196.00 119070.00 A - Less excavation for depth upto 1.50 m Rate as per Item No.2.13.1.2 of SH: Earth Work metre -300.000 998.65 -299595.00 A TOTAL    214502.21 W Add 1 % Water charges on “W-A”    105.10 TOTAL    214607.31 X Add GST on “X-A” (multiplying factor 0.2127)    2257.85 TOTAL    216865.16 Y Add 15% CPOH on “Y-A”    1930.95 TOTAL    218796.11 Z Add Cess @ 1% on “Z-A”    148.04 Cost for 300m length of pipe    218944.15 Extra cost for one metre length    729.81 Say    729.80",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {
+        "total_w": 214502.21,
+        "total_x": 214607.31,
+        "total_y": 216865.16,
+        "total_z": 218796.11
+      },
+      "say_rate": 729.8,
+      "page": 114
+    },
+    {
+      "item_code": "2.14.1.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 607.500 196.00 119070.00 A - Pipes, cables exceeding 300 mm dia but not exceeding 600 mm dia an average dia. say 450mm. Slope assumed 1 in 200. Excavation- 100x1.05x1.75 = 183.75 cum. 200x1.05x(2.00 +3.00)/2= 525.00 cum. Total = 708.75 cum.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 115
+    },
+    {
+      "item_code": "2.9.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 607.500 196.00 119070.00 A - Rate as per item No. 2.9.1 of SH: Earth Work cum 708.750 632.95 448603.31 A Refilling, ramming and watering = 708.75 cum",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 115
+    },
+    {
+      "item_code": "2.25",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 708.750 196.00 138915.00 A Extra labour for ramming of rock=(2.20 * 708.75/93.60 = 19.04)(Based on Item No 2.13.1.2)",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 16.66,
+          "rate": 736.0,
+          "amount": 12261.76
+        }
+      ],
+      "calculations": {},
+      "say_rate": null,
+      "page": 115
+    },
+    {
+      "item_code": "2.13.1.3",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 708.750 196.00 138915.00 A - Less excavation for depth upto 1.50 m Rate as per Item No.2.13.1.3 of SH: Earth Work metre -300.000 1149.10 -344730.00 A TOTAL    255050.07 W Add 1 % Water charges on “W-A”    122.62 TOTAL    255172.69 X Add GST on “X-A” (multiplying factor 0.2127)    2634.16 TOTAL    257806.85 Y Add 15% CPOH on “Y-A”    2252.78 TOTAL    260059.63 Z Add Cess @ 1% on “Z-A”    172.71 Cost for 300m length of pipe    260232.34 Extra cost for one metre length    867.44 Say    867.45",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {
+        "total_w": 255050.07,
+        "total_x": 255172.69,
+        "total_y": 257806.85,
+        "total_z": 260059.63
+      },
+      "say_rate": 867.45,
+      "page": 115
+    },
+    {
+      "item_code": "2.14.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 708.750 196.00 138915.00 A - Hard rock (requiring blasting)",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 115
+    },
+    {
+      "item_code": "2.14.2.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 708.750 196.00 138915.00 A - Pipes, cables etc. exceeding 80 mm dia but not exceeding 300 mm dia Slope assumed 1 in 200. Excavation- 100x0.90x1.75 = 157.50 cum. 200x0.90x(2.00 +3.00)/2= 450 cum. Total = 607.50 cum.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 115
+    },
+    {
+      "item_code": "2.9.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 708.750 196.00 138915.00 A - Rate as per item No. 2.9.2 of SH: Earth Work cum 607.500 1049.80 637753.50 A Refilling, ramming and watering = 607.50 cum",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 116
+    },
+    {
+      "item_code": "2.25",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 607.500 196.00 119070.00 A Extra labour for ramming of rock=(2.75 * 607.5/93.60 = 17.85)(Based on Item No 2.13.2.2)",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 17.85,
+          "rate": 736.0,
+          "amount": 13137.6
+        }
+      ],
+      "calculations": {},
+      "say_rate": null,
+      "page": 116
+    },
+    {
+      "item_code": "2.13.2.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 607.500 196.00 119070.00 A - Less excavation for depth upto 1.50 m Rate as per Item No.2.13.2.2 of SH: Earth Work metre -300.000 1493.60 -448080.00 A TOTAL    321881.10 W Add 1 % Water charges on “W-A”    131.38 TOTAL    322012.48 X Add GST on “X-A” (multiplying factor 0.2127)    2822.31 TOTAL    324834.79 Y Add 15% CPOH on “Y-A”    2413.69 TOTAL    327248.48 Z Add Cess @ 1% on “Z-A”    185.05 Cost for 300m length of pipe    327433.53 Extra cost for one metre length    1091.45 Say    1091.45",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {
+        "total_w": 321881.1,
+        "total_x": 322012.48,
+        "total_y": 324834.79,
+        "total_z": 327248.48
+      },
+      "say_rate": 1091.45,
+      "page": 116
+    },
+    {
+      "item_code": "2.14.2.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 607.500 196.00 119070.00 A - Pipes, cables exceeding 300 mm dia but not exceeding 600 mm dia an average dia. say 450mm. Slope assumed 1 in 200. Excavation- 100x1.05x1.75 = 183.75 cum. 200x1.05x(2.00 +3.00)/2= 525.00 cum. Total = 708.75 cum.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 116
+    },
+    {
+      "item_code": "2.9.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 607.500 196.00 119070.00 A - Rate as per item No. 2.9.2 of SH: Earth Work cum 708.750 1049.80 744045.75 A Refilling, ramming and watering = 708.75 cum",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 116
+    },
+    {
+      "item_code": "2.25",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 708.750 196.00 138915.00 A Extra labour for ramming of rock=(2.75 * 708.75/93.60 = 20.82)(Based on Item No 2.13.2.2)",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 20.82,
+          "rate": 736.0,
+          "amount": 15323.52
+        }
+      ],
+      "calculations": {},
+      "say_rate": null,
+      "page": 116
+    },
+    {
+      "item_code": "2.13.2.3",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 708.750 196.00 138915.00 A - Less excavation for depth upto 1.50 m Rate as per Item No.2.13.2.3 of SH: Earth Work metre -300.000 1718.45 -515535.00 A TOTAL    382749.27 W Add 1 % Water charges on “W-A”    153.24 TOTAL    382902.51 X Add GST on “X-A” (multiplying factor 0.2127)    3291.91 TOTAL    386194.42 Y Add 15% CPOH on “Y-A”    2815.30 TOTAL    389009.72 Z Add Cess @ 1% on “Z-A”    215.84 Cost for 300m length of pipe    389225.56 Extra cost for one metre length    1297.42 Say    1297.40",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {
+        "total_w": 382749.27,
+        "total_x": 382902.51,
+        "total_y": 386194.42,
+        "total_z": 389009.72
+      },
+      "say_rate": 1297.4,
+      "page": 116
+    },
+    {
+      "item_code": "2.14.3",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 708.750 196.00 138915.00 A - Hard rock (blasting prohibited)",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 117
+    },
+    {
+      "item_code": "2.14.3.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 708.750 196.00 138915.00 A - Pipes, cables etc. exceeding 80 mm dia but not exceeding 300 mm dia an average dia. say 200mm. Slope assumed 1 in 200. Excavation- 100x0.90x1.75 = 157.50 cum. 200x0.90x(2.00 +3.00)/2= 450 cum. Total = 607.50 cum.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 117
+    },
+    {
+      "item_code": "2.9.3",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 708.750 196.00 138915.00 A - Rate as per item No. 2.9.3 of SH: Earth Work cum 607.500 1523.05 925252.88 A Refilling, ramming and watering = 607.50 cum",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 117
+    },
+    {
+      "item_code": "2.25",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 607.500 196.00 119070.00 A Extra labour for ramming of rock=(2.75 * 607.5/93.60 = 17.85)(Based on Item No 2.13.3.2)",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 17.85,
+          "rate": 736.0,
+          "amount": 13137.6
+        }
+      ],
+      "calculations": {},
+      "say_rate": null,
+      "page": 117
+    },
+    {
+      "item_code": "2.13.3.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 607.500 196.00 119070.00 A - Less excavation for depth upto 1.50 m Rate as per Item No.2.13.3.2 of SH: Earth Work metre -300.000 2047.30 -614190.00 A TOTAL    443270.48 W Add 1 % Water charges on “W-A”    131.38 TOTAL    443401.86 X Add GST on “X-A” (multiplying factor 0.2127)    2822.31 TOTAL    446224.17 Y Add 15% CPOH on “Y-A”    2413.69 TOTAL    448637.86 Z Add Cess @ 1% on “Z-A”    185.05 Cost for 300m length of pipe    448822.91 Extra cost for one metre length    1496.08 Say    1496.10",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {
+        "total_w": 443270.48,
+        "total_x": 443401.86,
+        "total_y": 446224.17,
+        "total_z": 448637.86
+      },
+      "say_rate": 1496.1,
+      "page": 117
+    },
+    {
+      "item_code": "2.14.3.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 607.500 196.00 119070.00 A - Pipes, cables exceeding 300 mm dia but not exceeding 600 mm dia an average dia. say 450mm. Slope assumed 1 in 200. Excavation- 100x1.05x1.75 = 183.75 cum. 200x1.05x(2.00 +3.00)/2= 525.00 cum. Total = 708.75 cum.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 117
+    },
+    {
+      "item_code": "2.9.3",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 607.500 196.00 119070.00 A - Rate as per item No. 2.9.3 of SH: Earth Work cum 708.750 1523.05 1079461.69 A Refilling, ramming and watering = 708.35 cum",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 117
+    },
+    {
+      "item_code": "2.25",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 708.750 196.00 138915.00 A Extra labour for ramming of rock=(2.75 * 708.85/93.60 = 20.82)(Based on Item No 2.13.3.2)",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 20.82,
+          "rate": 736.0,
+          "amount": 15323.52
+        }
+      ],
+      "calculations": {},
+      "say_rate": null,
+      "page": 117
+    },
+    {
+      "item_code": "2.13.3.3",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 708.750 196.00 138915.00 A - Less for depth upto 1.50 m Rate as per Item No.2.13.3.3 of SH: Earth Work metre -300.000 2355.75 -706725.00 A TOTAL    526975.21 W Add 1 % Water charges on “W-A”    153.24 TOTAL    527128.45 X Add GST on “X-A” (multiplying factor 0.2127)    3291.91 TOTAL    530420.36 Y Add 15% CPOH on “Y-A”    2815.30 TOTAL    533235.66 Z Add Cess @ 1% on “Z-A”    215.84 Cost for 300m length of pipe    533451.50 Extra cost for one metre length    1778.17 Say    1778.15",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {
+        "total_w": 526975.21,
+        "total_x": 527128.45,
+        "total_y": 530420.36,
+        "total_z": 533235.66
+      },
+      "say_rate": 1778.15,
+      "page": 118
+    },
+    {
+      "item_code": "2.15",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Extra for excavating trenches for pipes, cables, etc. in ordinary/hard rock exceeding 3m in depth but not exceeding 4.5 m. (Rate is over corresponding basic item for depth upto 1.5 metre)",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 118
+    },
+    {
+      "item_code": "2.15.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Extra for excavating trenches for pipes, cables, etc. in ordinary/hard rock exceeding 3m in - Ordinary rock :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 118
+    },
+    {
+      "item_code": "2.15.1.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Extra for excavating trenches for pipes, cables, etc. in ordinary/hard rock exceeding 3m in - Pipes, cables exceeding 300 mm dia but not exceeding 600 mm dia an average dia. say 450 mm. Slope assumed 1 in 200. Max depth assumed 3.5m Excavation- 100x1.05x2 = 210 cum.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 118
+    },
+    {
+      "item_code": "2.9.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Extra for excavating trenches for pipes, cables, etc. in ordinary/hard rock exceeding 3m in - Rate as per item No. 2.9.1 of SH: Earth Work cum 210.000 632.95 132919.50 A 100x1.90x1.25 = 237.5 cum",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 118
+    },
+    {
+      "item_code": "2.7.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Extra for excavating trenches for pipes, cables, etc. in ordinary/hard rock exceeding 3m in - Rate as per item No. 2.7.1 of SH: Earth Work cum 237.500 498.90 118488.75 A Refilling, ramming and watering 210+237.50 = 447.50 cum.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 118
+    },
+    {
+      "item_code": "2.25",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 447.500 196.00 87710.00 A Extra labour for ramming of rock=(2.20 * 447.50/93.60 =10.52 )(Based on Item No 2.13.1.2)",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 118
+    },
+    {
+      "item_code": "2.13.1.3",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Rate as per item No.2.25 of SH: Earth Work cum 447.500 196.00 87710.00 A - Rate as per item No 2.13.1.3 of SH: Earth Work metre -100.000 1149.10 -114910.00 A TOTAL    231950.97 W Add 1 % Water charges on “W-A”    77.43 TOTAL    232028.40 X Add GST on “X-A” (multiplying factor 0.2127)    1663.35 TOTAL    233691.75 Y Add 15% CPOH on “Y-A”    1422.53 TOTAL    235114.28 Z Add Cess @ 1% on “Z-A”    109.06 Cost for 100m length of pipe    235223.34 Extra cost for one metre length    2352.23 Say    2352.25",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {
+        "total_w": 231950.97,
+        "total_x": 232028.4,
+        "total_y": 233691.75,
+        "total_z": 235114.28
+      },
+      "say_rate": 2352.25,
+      "page": 118
+    },
+    {
+      "item_code": "2.16",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Close timbering in trenches including strutting, shoring and packing cavities (wherever required) complete. (Measurements to be taken of the face area timbered).",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 119
+    },
+    {
+      "item_code": "2.16.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Close timbering in trenches including strutting, shoring and packing cavities (wherever - Depth not exceeding 1.5 m",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "trench"
+      },
+      "breakup": [
+        {
+          "resource_code": "0112",
+          "category": "MATERIAL",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 5.0,
+          "rate": 816.0,
+          "amount": 4080.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 10.0,
+          "rate": 736.0,
+          "amount": 7360.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 269.1,
+          "rate": 2.27,
+          "amount": 610.86
+        }
+      ],
+      "calculations": {
+        "total_w": 88528.36,
+        "total_x": 89413.64,
+        "total_y": 108431.92,
+        "total_z": 124696.71
+      },
+      "say_rate": 139.95,
+      "page": 119
+    },
+    {
+      "item_code": "2.16.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Close timbering in trenches including strutting, shoring and packing cavities (wherever - Depth exceeding 1.5 m but not exceeding 3 m",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "trench"
+      },
+      "breakup": [
+        {
+          "resource_code": "0112",
+          "category": "MATERIAL",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 7.5,
+          "rate": 816.0,
+          "amount": 6120.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 20.0,
+          "rate": 736.0,
+          "amount": 14720.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 404.3,
+          "rate": 2.27,
+          "amount": 917.76
+        }
+      ],
+      "calculations": {
+        "total_w": 98235.26,
+        "total_x": 99217.61,
+        "total_y": 120321.2,
+        "total_z": 138369.38
+      },
+      "say_rate": 155.3,
+      "page": 119
+    },
+    {
+      "item_code": "2.16.3",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Close timbering in trenches including strutting, shoring and packing cavities (wherever - Depth exceeding 3 m but not exceeding 4.5 m",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "trench"
+      },
+      "breakup": [
+        {
+          "resource_code": "0112",
+          "category": "MATERIAL",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 15.0,
+          "rate": 816.0,
+          "amount": 12240.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 40.0,
+          "rate": 736.0,
+          "amount": 29440.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 807.3,
+          "rate": 2.27,
+          "amount": 1832.57
+        }
+      ],
+      "calculations": {
+        "total_w": 119990.07,
+        "total_y": 146967.08,
+        "total_z": 169012.14
+      },
+      "say_rate": 189.65,
+      "page": 120
+    },
+    {
+      "item_code": "2.17",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Close timbering in case of shafts, wells, cesspits, manholes and the like including strutting, shoring and packing cavities (wherever required) etc. complete. (Measurements to be taken of the face area timbered).",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 121
+    },
+    {
+      "item_code": "2.17.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Close timbering in case of shafts, wells, cesspits, manholes and the like including strutting, - Depth not exceeding 1.5 m",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "manholes"
+      },
+      "breakup": [
+        {
+          "resource_code": "0112",
+          "category": "MATERIAL",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 0.6,
+          "rate": 816.0,
+          "amount": 489.6
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.2,
+          "rate": 736.0,
+          "amount": 883.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 27.3,
+          "rate": 2.27,
+          "amount": 61.97
+        }
+      ],
+      "calculations": {
+        "total_w": 7027.43,
+        "total_x": 7097.7,
+        "total_y": 8607.38,
+        "total_z": 9898.49
+      },
+      "say_rate": 151.5,
+      "page": 121
+    },
+    {
+      "item_code": "2.17.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Close timbering in case of shafts, wells, cesspits, manholes and the like including strutting, - Depth exceeding 1.5 m but not exceeding 3 m",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "manholes"
+      },
+      "breakup": [
+        {
+          "resource_code": "0302",
+          "category": "MATERIAL",
+          "description": "Safeda ballies 125 mm diameter and 1.5m long",
+          "unit": "metre",
+          "quantity": 4.12,
+          "rate": 44.0,
+          "amount": 181.28
+        },
+        {
+          "resource_code": "0112",
+          "category": "MATERIAL",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 1.2,
+          "rate": 816.0,
+          "amount": 979.2
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.5,
+          "rate": 736.0,
+          "amount": 1840.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 54.6,
+          "rate": 2.27,
+          "amount": 123.94
+        }
+      ],
+      "calculations": {
+        "total_w": 8535.8,
+        "total_x": 8621.16,
+        "total_y": 10454.88,
+        "total_z": 12023.11
+      },
+      "say_rate": 184.0,
+      "page": 122
+    },
+    {
+      "item_code": "2.17.3",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Close timbering in case of shafts, wells, cesspits, manholes and the like including strutting, - Depth exceeding 3 m but not exceeding 4.5 m",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "manholes"
+      },
+      "breakup": [
+        {
+          "resource_code": "0302",
+          "category": "MATERIAL",
+          "description": "Safeda ballies 125 mm diameter and 1.50m long",
+          "unit": "metre",
+          "quantity": 4.12,
+          "rate": 44.0,
+          "amount": 181.28
+        },
+        {
+          "resource_code": "0112",
+          "category": "MATERIAL",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 1.9,
+          "rate": 816.0,
+          "amount": 1550.4
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 3.8,
+          "rate": 736.0,
+          "amount": 2796.8
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 80.6,
+          "rate": 2.27,
+          "amount": 182.96
+        }
+      ],
+      "calculations": {
+        "total_w": 10122.82,
+        "total_x": 10224.05,
+        "total_y": 12398.71,
+        "total_z": 14258.52
+      },
+      "say_rate": 218.2,
+      "page": 123
+    },
+    {
+      "item_code": "2.18",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Close timbering over areas including strutting, shoring and packing cavities (wherever required) etc. complete. (Measurements to be taken of the face area timbered):",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 124
+    },
+    {
+      "item_code": "2.18.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Close timbering over areas including strutting, shoring and packing cavities (wherever - Depth not exceeding 1.5 m",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "area"
+      },
+      "breakup": [
+        {
+          "resource_code": "0112",
+          "category": "MATERIAL",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 2.5,
+          "rate": 816.0,
+          "amount": 2040.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 5.0,
+          "rate": 736.0,
+          "amount": 3680.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 314.6,
+          "rate": 2.27,
+          "amount": 714.14
+        }
+      ],
+      "calculations": {
+        "total_w": 39796.24,
+        "total_x": 40194.2,
+        "total_y": 48743.51,
+        "total_z": 56055.04
+      },
+      "say_rate": 125.8,
+      "page": 124
+    },
+    {
+      "item_code": "2.18.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Close timbering over areas including strutting, shoring and packing cavities (wherever - Depth exceeding 1.5 m but not exceeding 3 m",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "area"
+      },
+      "breakup": [
+        {
+          "resource_code": "0112",
+          "category": "MATERIAL",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 5.0,
+          "rate": 816.0,
+          "amount": 4080.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 10.0,
+          "rate": 736.0,
+          "amount": 7360.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 340.6,
+          "rate": 2.27,
+          "amount": 773.16
+        }
+      ],
+      "calculations": {
+        "total_w": 45575.26,
+        "total_x": 46031.01,
+        "total_y": 55821.81,
+        "total_z": 64195.08
+      },
+      "say_rate": 144.1,
+      "page": 125
+    },
+    {
+      "item_code": "2.18.3",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Close timbering over areas including strutting, shoring and packing cavities (wherever - Depth exceeding 3 m but not exceeding 4.5 m",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "area"
+      },
+      "breakup": [
+        {
+          "resource_code": "0112",
+          "category": "MATERIAL",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 7.5,
+          "rate": 816.0,
+          "amount": 6120.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 15.0,
+          "rate": 736.0,
+          "amount": 11040.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 475.8,
+          "rate": 2.27,
+          "amount": 1080.07
+        }
+      ],
+      "calculations": {
+        "total_w": 51602.17,
+        "total_x": 52118.19,
+        "total_y": 63203.73,
+        "total_z": 72684.29
+      },
+      "say_rate": 163.15,
+      "page": 126
+    },
+    {
+      "item_code": "2.19",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Extra for planking, strutting and packing materials for cavities (in close timbering) if required to be left permanently in position. (Face area of timber permanently left to be measured). 1.5m deep area 2x30x1.5=90 sqm- Poling boards of TOTAL 107068.72 W Add 1 % Water charges on \"W\" 1070.69 TOTAL 108139.41 X Add GST on \"X\" (multiplying factor 0.2127) 23001.25 TOTAL 131140.66 Y Add 15% CPOH on \"Y\" 19671.10 TOTAL 150811.76 Z Add Cess @ 1% on \"Z\" 1508.12 Cost of 90 Sqm. 152319.88 Cost per sqm. 1692.44 Say 1692.45",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {
+        "total_w": 107068.72,
+        "total_x": 108139.41,
+        "total_y": 131140.66,
+        "total_z": 150811.76
+      },
+      "say_rate": 1692.45,
+      "page": 126
+    },
+    {
+      "item_code": "2.20",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Open timbering in trenches including strutting and shoring complete (measurements to be taken of the face area timbered):",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 127
+    },
+    {
+      "item_code": "2.20.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Open timbering in trenches including strutting and shoring complete (measurements to be - Depth not exceeding 1.5 m 1.50m deep surface area - 2x30x1.5 = 90 sqm. The Material can be used four times on the same work and after use of material credit is given @ 75% of cost Poling board of Qty taken for cost of using once after deducting for credit = 1140x¼x¼ = 71.25 cudm Qty taken for cost of using once after deducting for credit = 1200x¼x¼ = 75 dm³ Struts of Qty taken for cost of using once after deducting for credit = 51x¼x¼ = 3.18 m",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0112",
+          "category": "MATERIAL",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 0.25,
+          "rate": 816.0,
+          "amount": 204.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 19.76,
+          "rate": 2.27,
+          "amount": 44.86
+        }
+      ],
+      "calculations": {
+        "total_w": 4559.28,
+        "total_x": 4604.87,
+        "total_y": 5584.33,
+        "total_z": 6421.98
+      },
+      "say_rate": 72.05,
+      "page": 127
+    },
+    {
+      "item_code": "2.20.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Open timbering in trenches including strutting and shoring complete (measurements to be - Depth exceeding 1.5 m but not exceeding 3 m 1.5m deep surface area - 2x30x1.5 = 90 sqm. The Material can be used four times on the same work and after use of material credit is given @ 75% of cost Poling boards of Qty taken for cost of using once after deducting for credit = 1140x¼x¼ = 71.25 dm³ Wallings of Qty taken for cost of using once after deducting for credit = 1200x¼x¼ = 75 dm³ Struts of Qty taken for cost of using once after deducting for credit = 51x¼x¼ = 3.18 m",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0112",
+          "category": "MATERIAL",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 816.0,
+          "amount": 408.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 33.15,
+          "rate": 2.27,
+          "amount": 75.25
+        }
+      ],
+      "calculations": {
+        "total_w": 5161.67,
+        "total_x": 5213.29,
+        "total_y": 6322.16,
+        "total_z": 7270.48
+      },
+      "say_rate": 81.6,
+      "page": 128
+    },
+    {
+      "item_code": "2.20.3",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Open timbering in trenches including strutting and shoring complete (measurements to be - Depth exceeding 3 m but not exceeding 4.5 m 1.5m deep surface area - 2x30x1.5 = 90 sqm. The Material can be used four times on the same work and after use of material credit is given @ 75% of cost Poling boards of Qty taken for cost of using once after deducting for credit = 1140x¼x¼ = 71.25 dm³ Wallings of Qty taken for cost of using once after deducting for credit = 1200x¼x¼ = 75 dm³ Struts of Qty taken for cost of using once after deducting for credit = 51x¼x¼ = 3.18 m",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0112",
+          "category": "MATERIAL",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 816.0,
+          "amount": 816.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.75,
+          "rate": 736.0,
+          "amount": 1288.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 46.67,
+          "rate": 2.27,
+          "amount": 105.94
+        }
+      ],
+      "calculations": {
+        "total_w": 6152.36,
+        "total_x": 6213.88,
+        "total_y": 7535.57,
+        "total_z": 8665.91
+      },
+      "say_rate": 97.25,
+      "page": 129
+    },
+    {
+      "item_code": "2.21",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Open timbering in case of shafts, wells, cesspits, manholes and the like including strutting and shoring complete (Measurements to be taken of the face area timbered):",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 130
+    },
+    {
+      "item_code": "2.21.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Open timbering in case of shafts, wells, cesspits, manholes and the like including strutting - Depth not exceeding 1.5 m",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "manholes"
+      },
+      "breakup": [
+        {
+          "resource_code": "0112",
+          "category": "MATERIAL",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 0.3,
+          "rate": 816.0,
+          "amount": 244.8
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.6,
+          "rate": 736.0,
+          "amount": 441.6
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 18.2,
+          "rate": 2.27,
+          "amount": 41.31
+        }
+      ],
+      "calculations": {
+        "total_w": 3081.21,
+        "total_x": 3112.02,
+        "total_y": 3773.95,
+        "total_z": 4340.04
+      },
+      "say_rate": 66.4,
+      "page": 130
+    },
+    {
+      "item_code": "2.21.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Open timbering in case of shafts, wells, cesspits, manholes and the like including strutting - Depth exceeding 1.5 m but not exceeding 3 m",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "manholes"
+      },
+      "breakup": [
+        {
+          "resource_code": "0112",
+          "category": "MATERIAL",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 0.6,
+          "rate": 816.0,
+          "amount": 489.6
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.2,
+          "rate": 736.0,
+          "amount": 883.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 27.3,
+          "rate": 2.27,
+          "amount": 61.97
+        }
+      ],
+      "calculations": {
+        "total_w": 3788.27,
+        "total_x": 3826.15,
+        "total_y": 4639.97,
+        "total_z": 5335.97
+      },
+      "say_rate": 81.65,
+      "page": 131
+    },
+    {
+      "item_code": "2.21.3",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Open timbering in case of shafts, wells, cesspits, manholes and the like including strutting - Depth exceeding 3 m but not exceeding 4.5 m",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "manholes"
+      },
+      "breakup": [
+        {
+          "resource_code": "0112",
+          "category": "MATERIAL",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 816.0,
+          "amount": 816.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 736.0,
+          "amount": 1472.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 36.4,
+          "rate": 2.27,
+          "amount": 82.63
+        }
+      ],
+      "calculations": {
+        "total_w": 4724.13,
+        "total_x": 4771.37,
+        "total_y": 5786.24,
+        "total_z": 6654.18
+      },
+      "say_rate": 101.85,
+      "page": 131
+    },
+    {
+      "item_code": "2.22",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Open timbering over areas including strutting, shoring etc. complete. (Measurements to be taken of the face area timbered):",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 132
+    },
+    {
+      "item_code": "2.22.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Open timbering over areas including strutting, shoring etc. complete. (Measurements to - Depth not exceeding 1.5 m",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "area"
+      },
+      "breakup": [
+        {
+          "resource_code": "0112",
+          "category": "MATERIAL",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 1.2,
+          "rate": 816.0,
+          "amount": 979.2
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.5,
+          "rate": 736.0,
+          "amount": 1840.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 197.6,
+          "rate": 2.27,
+          "amount": 448.55
+        }
+      ],
+      "calculations": {
+        "total_w": 14180.25,
+        "total_x": 14322.05,
+        "total_y": 17368.35,
+        "total_z": 19973.6
+      },
+      "say_rate": 44.85,
+      "page": 132
+    },
+    {
+      "item_code": "2.22.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Open timbering over areas including strutting, shoring etc. complete. (Measurements to - Depth exceeding 1.5 m but not exceeding 3 m",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "area"
+      },
+      "breakup": [
+        {
+          "resource_code": "0112",
+          "category": "MATERIAL",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 2.5,
+          "rate": 816.0,
+          "amount": 2040.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 5.0,
+          "rate": 736.0,
+          "amount": 3680.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 331.5,
+          "rate": 2.27,
+          "amount": 752.51
+        }
+      ],
+      "calculations": {
+        "total_w": 17385.01,
+        "total_x": 17558.86,
+        "total_y": 21293.63,
+        "total_z": 24487.67
+      },
+      "say_rate": 54.95,
+      "page": 133
+    },
+    {
+      "item_code": "2.22.3",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Open timbering over areas including strutting, shoring etc. complete. (Measurements to - Depth exceeding 3 m but not exceeding 4.5 m",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "area"
+      },
+      "breakup": [
+        {
+          "resource_code": "0112",
+          "category": "MATERIAL",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 5.0,
+          "rate": 816.0,
+          "amount": 4080.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 8.8,
+          "rate": 736.0,
+          "amount": 6476.8
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 475.8,
+          "rate": 2.27,
+          "amount": 1080.07
+        }
+      ],
+      "calculations": {
+        "total_w": 22549.37,
+        "total_x": 22774.86,
+        "total_y": 27619.07,
+        "total_z": 31761.93
+      },
+      "say_rate": 71.3,
+      "page": 134
+    },
+    {
+      "item_code": "2.23",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Extra for planking and strutting in open timbering if required to be left permanently in position. (Face area of the timber permanently left to be measured). and 1.5m deep surface area - 2x30x1.5 = 90 sqm. Poling boards of TOTAL 55198.72 W Add 1 % Water charges on \"W\" 551.99 TOTAL 55750.71 X Add GST on \"X\" (multiplying factor 0.2127) 11858.18 TOTAL 67608.89 Y Add 15% CPOH on \"Y\" 10141.33 TOTAL 77750.22 Z Add Cess @ 1% on \"Z\" 777.50 Cost of 90 sqm. 78527.72 Cost per sqm. 872.53 Say 872.55",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {
+        "total_w": 55198.72,
+        "total_x": 55750.71,
+        "total_y": 67608.89,
+        "total_z": 77750.22
+      },
+      "say_rate": 872.55,
+      "page": 134
+    },
+    {
+      "item_code": "2.24",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Extra rates for quantities of works, executed:",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 135
+    },
+    {
+      "item_code": "2.24.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Extra rates for quantities of works, executed: - In or under water and/or liquid mud, including pumping out water as required Extra due to slow progress and dewatering: 20% of the rate of the item Cost of 1 metre depth Say metre depth (20% of the rate of the item. The extra percentage in rate is applicable in respect of each item but limited to quantities of work executed in difficult condition.) 20.00% 20.00%",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 135
+    },
+    {
+      "item_code": "2.24.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Extra rates for quantities of works, executed: - In or under foul position, including pumping out water as required Extra due to slow progress and dewatering: 25% of the rate of the item metre depth (25% of the rate of the item. This pertains to only such. Pumping of water as is envis- aged at the time of tendering and don’t include those that covered under contractual risk) Cost of 1 metre depth 25.00% Say  25.00% Note for item no. 2.24:- The extra percentage rate is applicable in respect of each item but limited to quantities of work executed in these difficult conditions. The unit, namely, metre depth, to be considered for payment, shall be the depth measured from the sub soil water level up to the centre of gravity of the qty executed in difficult conditions. The depth shall be reckoned correct to 0.10 m, (0.05 m or more shall be taken as 0.10 m and less than 0.05 m ignored.)",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": 25.0,
+      "page": 136
+    },
+    {
+      "item_code": "2.25",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Filling available excavated earth (excluding rock) in trenches, plinth, sides of foundations etc. in layers not exceeding 20cm in depth, consolidating each deposited layer by ramming and watering, lead up to 50 and for all lift.",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cum"
+      },
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.45,
+          "rate": 736.0,
+          "amount": 331.2
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.208,
+          "rate": 736.0,
+          "amount": 889.09
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.18,
+          "rate": 816.0,
+          "amount": 146.88
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries (Minor T&P)",
+          "unit": "L.S.",
+          "quantity": 4.61,
+          "rate": 2.27,
+          "amount": 10.46
+        },
+        {
+          "resource_code": "0020",
+          "category": "LABOUR",
+          "description": "Hydraulic Excavator (3D) with driver and fuel. (Cofficient from item No 2.6.1)",
+          "unit": "day",
+          "quantity": 0.08,
+          "rate": 7850.0,
+          "amount": 628.0
+        },
+        {
+          "resource_code": "0128",
+          "category": "LABOUR",
+          "description": "Mate",
+          "unit": "day",
+          "quantity": 0.04,
+          "rate": 816.0,
+          "amount": 32.64
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar (1/2x0.89=0.45 day)",
+          "unit": "day",
+          "quantity": 0.45,
+          "rate": 736.0,
+          "amount": 331.2
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.208,
+          "rate": 736.0,
+          "amount": 889.09
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti day 0.18 816.00 146.88 Carriage of materials upto 5 km 1.1.2 Rate as per item No 1.1.2 of SH:1 carriage of materials including loading, unloading and stacking",
+          "unit": "cum",
+          "quantity": 10.0,
+          "rate": 326.68,
+          "amount": 3266.8
+        },
+        {
+          "resource_code": "0979",
+          "category": "LABOUR",
+          "description": "Royalty for good earth",
+          "unit": "cum",
+          "quantity": 10.0,
+          "rate": 60.0,
+          "amount": 600.0
+        }
+      ],
+      "calculations": {
+        "total_w": 5894.61,
+        "total_x": 5920.89,
+        "total_y": 6485.41,
+        "total_z": 6968.2
+      },
+      "say_rate": 700.5,
+      "page": 136
+    },
+    {
+      "item_code": "2.26",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Extra for every additional lift of 1.5 m or part thereof in excavation / banking excavated or stacked materials.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 137
+    },
+    {
+      "item_code": "2.26.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Extra for every additional lift of 1.5 m or part thereof in excavation / banking excavated or - All kinds of soil",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "0128",
+          "category": "LABOUR",
+          "description": "Mate",
+          "unit": "day",
+          "quantity": 0.1,
+          "rate": 816.0,
+          "amount": 81.6
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.1,
+          "rate": 736.0,
+          "amount": 809.6
+        }
+      ],
+      "calculations": {
+        "total_w": 891.2,
+        "total_x": 900.11,
+        "total_y": 1091.56,
+        "total_z": 1255.29
+      },
+      "say_rate": 126.8,
+      "page": 137
+    },
+    {
+      "item_code": "2.26.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Extra for every additional lift of 1.5 m or part thereof in excavation / banking excavated or - Ordinary or hard rock",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "0128",
+          "category": "LABOUR",
+          "description": "Mate",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 816.0,
+          "amount": 163.2
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.95,
+          "rate": 736.0,
+          "amount": 1435.2
+        }
+      ],
+      "calculations": {
+        "total_w": 1598.4,
+        "total_x": 1614.38,
+        "total_y": 1957.76,
+        "total_z": 2251.42
+      },
+      "say_rate": 227.4,
+      "page": 137
+    },
+    {
+      "item_code": "2.27",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Supplying and filling in plinth with  sand under floors, including watering, ramming, consolidating and dressing complete.",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "6501",
+          "category": "MATERIAL",
+          "description": "Sand zone V (Jamuna)",
+          "unit": "cum",
+          "quantity": 10.0,
+          "rate": 1320.0,
+          "amount": 13200.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.89,
+          "rate": 736.0,
+          "amount": 655.04
+        },
+        {
+          "resource_code": "0115",
+          "category": "MATERIAL",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.07,
+          "rate": 736.0,
+          "amount": 787.52
+        },
+        {
+          "resource_code": "0101",
+          "category": "MATERIAL",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.35,
+          "rate": 816.0,
+          "amount": 285.6
+        }
+      ],
+      "calculations": {
+        "total_w": 14928.16,
+        "total_x": 15077.44,
+        "total_y": 18284.41,
+        "total_z": 21027.07
+      },
+      "say_rate": 2123.75,
+      "page": 138
+    },
+    {
+      "item_code": "2.28",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Surface dressing of the ground including removing vegetation and in-equalities not exceeding 15 cm deep and disposal of rubbish, lead up to 50 m and lift up to 1.5 m.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 138
+    },
+    {
+      "item_code": "2.28.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Surface dressing of the ground including removing vegetation and in-equalities not exceeding - All kinds of soil",
+      "cost_basis": {
+        "quantity": 100.0,
+        "unit": "sqm."
+      },
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.97,
+          "rate": 736.0,
+          "amount": 1449.92
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.29,
+          "rate": 736.0,
+          "amount": 949.44
+        }
+      ],
+      "calculations": {
+        "total_w": 2399.36,
+        "total_x": 2423.35,
+        "total_y": 2938.8,
+        "total_z": 3379.62
+      },
+      "say_rate": 34.15,
+      "page": 138
+    },
+    {
+      "item_code": "2.29",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Ploughing the existing ground to a depth of 15 cm to 25 cm and watering the same.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 139
+    },
+    {
+      "item_code": "2.29.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Ploughing the existing ground to a depth of 15 cm to 25 cm and watering the same. - All kinds of soil",
+      "cost_basis": {
+        "quantity": 100.0,
+        "unit": "sqm."
+      },
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.75,
+          "rate": 736.0,
+          "amount": 2024.0
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 816.0,
+          "amount": 408.0
+        }
+      ],
+      "calculations": {
+        "total_w": 2432.0,
+        "total_x": 2456.32,
+        "total_y": 2978.78,
+        "total_z": 3425.6
+      },
+      "say_rate": 34.6,
+      "page": 139
+    },
+    {
+      "item_code": "2.30",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Excavating holes more than 0.10 cum & upto 0.5 cum including getting out the excavated soil, then returning the soil as required in layers not exceeding 20cm in depth, including consolidating each deposited layer by ramming, watering etc, disposing of surplus excavated soil, as directed within a lead of 50 m and lift upto 1.5 m.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 139
+    },
+    {
+      "item_code": "2.30.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Excavating holes more than 0.10 cum & upto 0.5 cum including getting out the excavated - All kinds of soil",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "holes"
+      },
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 139
+    },
+    {
+      "item_code": "2.8.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Excavating holes more than 0.10 cum & upto 0.5 cum including getting out the excavated - Rate as per item no. 2.8.1 of SH: Earth work cum 3.00 260.30 780.90 A Extra labour for filling and ramming",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 13.52,
+          "rate": 2.27,
+          "amount": 30.69
+        }
+      ],
+      "calculations": {
+        "total_w": 811.59,
+        "total_x": 811.9,
+        "total_y": 818.49,
+        "total_z": 824.13
+      },
+      "say_rate": 82.45,
+      "page": 139
+    },
+    {
+      "item_code": "2.30.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Excavating holes more than 0.10 cum & upto 0.5 cum including getting out the excavated - Ordinary rock",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "holes"
+      },
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 139
+    },
+    {
+      "item_code": "2.9.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Excavating holes more than 0.10 cum & upto 0.5 cum including getting out the excavated - Rate as per Item Number 2.9.1 of SH: Earth Work cum 3.00 632.95 1898.85 A Extra labour for filling and ramming",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 13.52,
+          "rate": 2.27,
+          "amount": 30.69
+        }
+      ],
+      "calculations": {
+        "total_w": 1929.54,
+        "total_x": 1929.85,
+        "total_y": 1936.44,
+        "total_z": 1942.08
+      },
+      "say_rate": 194.25,
+      "page": 139
+    },
+    {
+      "item_code": "2.30.3",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Excavating holes more than 0.10 cum & upto 0.5 cum including getting out the excavated - Hard rock (requiring blasting)",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "holes"
+      },
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 140
+    },
+    {
+      "item_code": "2.9.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Excavating holes more than 0.10 cum & upto 0.5 cum including getting out the excavated - Rate as per Item Number 2.9.2 of SH: Earth Work cum 3.00 1049.80 3149.40 A Extra labour for filling and ramming",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 13.52,
+          "rate": 2.27,
+          "amount": 30.69
+        }
+      ],
+      "calculations": {
+        "total_w": 3180.09,
+        "total_x": 3180.4,
+        "total_y": 3186.99,
+        "total_z": 3192.63
+      },
+      "say_rate": 319.3,
+      "page": 140
+    },
+    {
+      "item_code": "2.30.4",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Excavating holes more than 0.10 cum & upto 0.5 cum including getting out the excavated - Hard rock (blasting prohibited)",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "holes"
+      },
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 140
+    },
+    {
+      "item_code": "2.9.3",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Excavating holes more than 0.10 cum & upto 0.5 cum including getting out the excavated - Rate as per Item Number 2.9.3 of SH: Earth Work cum 3.00 1523.05 4569.15 A Extra labour for filling and ramming",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 13.52,
+          "rate": 2.27,
+          "amount": 30.69
+        }
+      ],
+      "calculations": {
+        "total_w": 4599.84,
+        "total_x": 4600.15,
+        "total_y": 4606.74,
+        "total_z": 4612.38
+      },
+      "say_rate": 461.3,
+      "page": 140
+    },
+    {
+      "item_code": "2.31",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Clearing jungle including uprooting of rank vegetation, grass, brush wood, trees and saplings of girth up to 30 cm measured at a height of 1 m above ground level and removal of rubbish up to a distance of 50 m outside the periphery of the area cleared.",
+      "cost_basis": {
+        "quantity": 100.0,
+        "unit": "sqm."
+      },
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.08,
+          "rate": 736.0,
+          "amount": 794.88
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.6,
+          "rate": 736.0,
+          "amount": 441.6
+        }
+      ],
+      "calculations": {
+        "total_w": 1236.48,
+        "total_x": 1248.84,
+        "total_y": 1514.47,
+        "total_z": 1741.64
+      },
+      "say_rate": 17.6,
+      "page": 141
+    },
+    {
+      "item_code": "2.32",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Clearing grass and removal of the rubbish up to a distance of 50 m outside the periphery of the area cleared.",
+      "cost_basis": {
+        "quantity": 100.0,
+        "unit": "sqm."
+      },
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.6,
+          "rate": 736.0,
+          "amount": 441.6
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.25,
+          "rate": 736.0,
+          "amount": 184.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 1.82,
+          "rate": 2.27,
+          "amount": 4.13
+        }
+      ],
+      "calculations": {
+        "total_w": 629.73,
+        "total_x": 636.03,
+        "total_y": 771.31,
+        "total_z": 887.01
+      },
+      "say_rate": 8.95,
+      "page": 141
+    },
+    {
+      "item_code": "2.33",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Felling trees of the girth (measured at a height of 1 m above ground level), including cutting of trunks and branches, removing the roots and stacking of serviceable material and disposal of unserviceable material.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 141
+    },
+    {
+      "item_code": "2.33.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Felling trees of the girth (measured at a height of 1 m above ground level), including cutting - Beyond 30 cm girth upto and including 60 cm girth average height 3m quantity of wood- 3.14/4x0.15x0.15x3 = 0.053 cum. Add 20% for branches = 0.011 cum. Total = 0.064 cum. roots from the soil and then filling in Pit and depresions.",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.33,
+          "rate": 736.0,
+          "amount": 242.88
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.17,
+          "rate": 736.0,
+          "amount": 125.12
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        }
+      ],
+      "calculations": {
+        "total_w": 374.2,
+        "total_x": 377.94,
+        "total_y": 458.33,
+        "total_z": 527.08
+      },
+      "say_rate": 532.35,
+      "page": 141
+    },
+    {
+      "item_code": "2.33.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Felling trees of the girth (measured at a height of 1 m above ground level), including cutting - Beyond 60 cm girth upto and including 120 cm girth 90cm, average dia. 0.3m and length 5m quantity of wood- (22x0.30x0.30x5)/7x4 = 0.35 cum + 20% branches = 0.07 cum. Total = 0.42 cum the soil and filling in pit & depressions:",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.5,
+          "rate": 736.0,
+          "amount": 1104.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.75,
+          "rate": 736.0,
+          "amount": 552.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 5.46,
+          "rate": 2.27,
+          "amount": 12.39
+        }
+      ],
+      "calculations": {
+        "total_w": 1668.39,
+        "total_x": 1685.07,
+        "total_y": 2043.48,
+        "total_z": 2350.0
+      },
+      "say_rate": 2373.5,
+      "page": 142
+    },
+    {
+      "item_code": "2.33.3",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Felling trees of the girth (measured at a height of 1 m above ground level), including cutting - Beyond 120 cm girth upto and including 240 cm girth 180cm, average dia. 0.6m and length 7m quantity of wood- (22x06x0.60x7)/7x4 = 1.98 cum.+ 20% branches = 0.40 cum. Total =",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 142
+    },
+    {
+      "item_code": "2.38",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "cum. the soil and filling in pit & depressions:",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 7.0,
+          "rate": 736.0,
+          "amount": 5152.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "MATERIAL",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 3.5,
+          "rate": 736.0,
+          "amount": 2576.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 8.06,
+          "rate": 2.27,
+          "amount": 18.3
+        }
+      ],
+      "calculations": {
+        "total_w": 7746.3,
+        "total_x": 7823.76,
+        "total_y": 9487.87,
+        "total_z": 10911.05
+      },
+      "say_rate": 11020.15,
+      "page": 142
+    },
+    {
+      "item_code": "2.33.4",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "cum. - Above 240 cm girth 300cm, average dia. 1m and length 10m quantity of wood- (22 x 1 x 1 x 10)/7x4 = 7.86 cum + 20% Branches = 1.57 cum. Total = 9.43 cum. the soil and filling in pit & depressions:",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 14.0,
+          "rate": 736.0,
+          "amount": 10304.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 7.0,
+          "rate": 736.0,
+          "amount": 5152.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 26.91,
+          "rate": 2.27,
+          "amount": 61.09
+        }
+      ],
+      "calculations": {
+        "total_w": 15517.09,
+        "total_x": 15672.26,
+        "total_y": 19005.75,
+        "total_z": 21856.61
+      },
+      "say_rate": 22075.2,
+      "page": 143
+    },
+    {
+      "item_code": "2.34",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Supplying chemical emulsion in sealed containers including delivery as specified.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 143
+    },
+    {
+      "item_code": "2.34.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Supplying chemical emulsion in sealed containers including delivery as specified. - Chlorpyriphos/ Lindane emulsifiable concentrate of 20%",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "7022",
+          "category": "MATERIAL",
+          "description": "Chlorpyriphos 20% E.C. / Lindane 20% E.C.",
+          "unit": "litre",
+          "quantity": 100.0,
+          "rate": 165.0,
+          "amount": 16500.0
+        }
+      ],
+      "calculations": {
+        "total_w": 16500.0,
+        "total_x": 16665.0,
+        "total_y": 20209.65,
+        "total_z": 23241.1
+      },
+      "say_rate": 234.75,
+      "page": 143
+    },
+    {
+      "item_code": "2.35",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Diluting and injecting chemical emulsion for POST-CONSTRUCTIONAL anti-termite treatment (excluding the cost of chemical emulsion) :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 144
+    },
+    {
+      "item_code": "2.35.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Diluting and injecting chemical emulsion for POST-CONSTRUCTIONAL anti-termite - Along external wall where the apron is not provided using chemical emulsion @ 7.5 litres / sqm of the vertical surface of the substructure to a depth of 300mm including excavation channel along the wall & rodding etc. complete:",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 144
+    },
+    {
+      "item_code": "2.35.1.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Diluting and injecting chemical emulsion for POST-CONSTRUCTIONAL anti-termite - With Chlorpyriphos/ Lindane E.C. 20% with 1% concentration",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "metres"
+      },
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries, rent of sprayer etc.",
+          "unit": "L.S.",
+          "quantity": 13.52,
+          "rate": 2.27,
+          "amount": 30.69
+        }
+      ],
+      "calculations": {
+        "total_w": 273.57,
+        "total_x": 276.31,
+        "total_y": 335.08,
+        "total_z": 385.34
+      },
+      "say_rate": 38.9,
+      "page": 144
+    },
+    {
+      "item_code": "2.35.2",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Diluting and injecting chemical emulsion for POST-CONSTRUCTIONAL anti-termite - Along the external wall below concrete or masonry apron using chemical emulsion @",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 144
+    },
+    {
+      "item_code": "2.25",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "litres per linear metre including drilling and plugging holes etc.:",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 144
+    },
+    {
+      "item_code": "2.35.2.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "litres per linear metre including drilling and plugging holes etc.: - With Chlorpyriphos/ Lindane E.C. 20% with 1% concentration",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "metres"
+      },
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries and rent of a sprayer and mortar and making good the holes",
+          "unit": "L.S.",
+          "quantity": 35.88,
+          "rate": 2.27,
+          "amount": 81.45
+        }
+      ],
+      "calculations": {
+        "total_w": 375.85,
+        "total_x": 379.61,
+        "total_y": 460.35,
+        "total_z": 529.4
+      },
+      "say_rate": 53.45,
+      "page": 144
+    },
+    {
+      "item_code": "2.35.3",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "litres per linear metre including drilling and plugging holes etc.:",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 145
+    },
+    {
+      "item_code": "2.35.3.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "litres per linear metre including drilling and plugging holes etc.: Treatment of soil under existing floors using chemical emulsion @ one litre per hole, 300 mm apart including drilling 12 mm diameter holes and plugging with cement mortar 1 :2 (1 cement : 2 Coarse sand) to match the existing floor: With Chlorpyriphos/Lindane E.C. 20% with 1% concentration",
+      "cost_basis": {
+        "quantity": 9.0,
+        "unit": "sqm."
+      },
+      "breakup": [
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 816.0,
+          "amount": 408.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries, rent of sprayer and mortar",
+          "unit": "L.S.",
+          "quantity": 35.88,
+          "rate": 2.27,
+          "amount": 81.45
+        }
+      ],
+      "calculations": {
+        "total_w": 1961.45,
+        "total_x": 1981.06,
+        "total_y": 2402.43,
+        "total_z": 2762.79
+      },
+      "say_rate": 310.05,
+      "page": 145
+    },
+    {
+      "item_code": "2.35.4",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "litres per linear metre including drilling and plugging holes etc.: - Treatment of existing masonry using chemical emulsion @ one litre per hole at 300 mm interval including drilling holes at 45 degree and plugging them with cement mortar 1:2 (1 cement : 2 coarse sand) to the full depth of the hole :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 145
+    },
+    {
+      "item_code": "2.35.4.1",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "litres per linear metre including drilling and plugging holes etc.: - With Chlorpyriphos/Lindane E.C. 20% with 1% concentration",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "metres"
+      },
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.3,
+          "rate": 736.0,
+          "amount": 220.8
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.05,
+          "rate": 816.0,
+          "amount": 40.8
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries, rent of pump etc.",
+          "unit": "L.S.",
+          "quantity": 17.94,
+          "rate": 2.27,
+          "amount": 40.72
+        }
+      ],
+      "calculations": {
+        "total_w": 302.32,
+        "total_x": 305.34,
+        "total_y": 370.29,
+        "total_z": 425.83
+      },
+      "say_rate": 43.0,
+      "page": 145
+    },
+    {
+      "item_code": "2.35.5",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "litres per linear metre including drilling and plugging holes etc.: - Treatment at points of contact of wood work by chemical emulsion Chlorpyriphos/ Lindane (in oil or kerosene based solution) @ 0.5 litres per hole by drilling 6 mm dia holes at downward angle of 45 degree at 150 mm centre to centre and sealing the same.",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "metres"
+      },
+      "breakup": [
+        {
+          "resource_code": "0771",
+          "category": "MATERIAL",
+          "description": "Kerosene oil",
+          "unit": "litre",
+          "quantity": 32.3,
+          "rate": 50.0,
+          "amount": 1615.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 17.94,
+          "rate": 2.27,
+          "amount": 40.72
+        }
+      ],
+      "calculations": {
+        "total_w": 1966.12,
+        "total_x": 1985.78,
+        "total_y": 2408.16,
+        "total_z": 2769.38
+      },
+      "say_rate": 279.7,
+      "page": 146
+    },
+    {
+      "item_code": "2.36",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Extra for levelling & neatly dressing of disposed soil completely as directed by Engineer- in-charge.",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "0128",
+          "category": "LABOUR",
+          "description": "Mate",
+          "unit": "day",
+          "quantity": 0.08,
+          "rate": 816.0,
+          "amount": 65.28
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Beldar/ Coolie",
+          "unit": "day",
+          "quantity": 0.8,
+          "rate": 736.0,
+          "amount": 588.8
+        }
+      ],
+      "calculations": {
+        "total_w": 654.08,
+        "total_x": 660.62,
+        "total_y": 801.13,
+        "total_z": 921.3
+      },
+      "say_rate": 93.05,
+      "page": 147
+    },
+    {
+      "item_code": "2.37",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Supply and stacking of Fly ash conforming to IRC- 58 at site, including carriage, loading , unloading & stacking up to any lead (measured stacks will be reduced by 20% for payment).",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [],
+      "calculations": {
+        "total_w": 197.55,
+        "total_x": 199.53,
+        "total_y": 241.97,
+        "total_z": 278.27
+      },
+      "say_rate": 281.05,
+      "page": 147
+    },
+    {
+      "item_code": "2.38",
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "description": "Filling with available fly ash and earth (excluding rock) in trenches or embankment in layers (each layer should not exceed 15 cm), with intermediate layer of compacted earth (Soil density of 98%) after every four layers of compacted depth of fly ash, sides & top layer of filling shall be done with earth having total minimum compacted thickness 30 cm or as decided by Engineer -in-charge, including compacting each layer by rolling/ ramming and watering, all complete as per drawing and direction of Engineer -in - charge.",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "0128",
+          "category": "LABOUR",
+          "description": "Mate",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 816.0,
+          "amount": 163.2
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 2.5,
+          "rate": 736.0,
+          "amount": 1840.0
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 816.0,
+          "amount": 163.2
+        }
+      ],
+      "calculations": {
+        "total_w": 2166.4,
+        "total_x": 2188.06,
+        "total_y": 2653.46,
+        "total_z": 3051.48
+      },
+      "say_rate": 308.2,
+      "page": 148
+    }
+  ]
+}

@@ -62,6 +62,7 @@
         <div class="form-group">
             <label for="type">Type</label>
             <select id="type" name="type" onchange="toggleWageOrder(this.value)" required>
+                <option value="DSR" <?= (isset($data['type']) && $data['type'] === 'DSR') ? 'selected' : '' ?>>DSR (Civil Works - Schedule of Rates)</option>
                 <option value="Manpower" <?= (isset($data['type']) && $data['type'] === 'Manpower') ? 'selected' : '' ?>>Manpower</option>
                 <option value="Market" <?= (isset($data['type']) && $data['type'] === 'Market') ? 'selected' : '' ?>>Market</option>
             </select>

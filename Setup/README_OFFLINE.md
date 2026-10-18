@@ -33,7 +33,7 @@ Setup/
    - **[2/6] Python Runtime:** Installs **Python 3.11** if missing.
    - **[3/6] PHP Runtime:** Extracts pre-configured **PHP 8.x** to `C:\php` if missing.
    - **[4/6] Python Virtual Environment:** Creates `.venv_uv` virtual environment using offline `wheels/`.
-   - **[5/6] Database Restoration:** Launches **PostgreSQL 18** installer if missing, creates database `modpyphp`, and restores `Setup/Database/modpyphp_dump.sql`. *(Set password to `daredevil` when prompted by PostgreSQL)*.
+   - **[5/6] Database Restoration:** Launches **PostgreSQL 18** installer if missing, creates database `modpyphp`, and restores `Setup/Database/modpyphp_dump.sql`. *(Enter your chosen PostgreSQL superuser password when prompted)*.
    - **[6/6] Configuration:** Generates `.env` database connection file.
 4. Once completed, start the server anytime by running:
    ```cmd

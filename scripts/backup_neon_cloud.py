@@ -5,20 +5,32 @@ import datetime
 import psycopg2
 from psycopg2.extras import RealDictCursor
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+def _load_env_file(filepath):
+    """Load key-value pairs from an env file into os.environ if not already set."""
+    if os.path.exists(filepath):
+        with open(filepath, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    key, val = line.split("=", 1)
+                    key = key.strip()
+                    val = val.strip().strip('"').strip("'")
+                    if key not in os.environ:
+                        os.environ[key] = val
+
+_load_env_file(os.path.join(BASE_DIR, ".env"))
+_load_env_file(os.path.join(BASE_DIR, ".env.neon"))
+
 NEON_DSN = os.getenv("NEON_DATABASE_URL") or os.getenv("DATABASE_URL")
 if not NEON_DSN:
-    env_neon_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), ".env.neon")
-    if os.path.exists(env_neon_path):
-        with open(env_neon_path, "r", encoding="utf-8") as f:
-            for line in f:
-                if line.startswith("DATABASE_URL="):
-                    NEON_DSN = line.strip().split("=", 1)[1]
-                    break
-if not NEON_DSN:
-    NEON_DSN = "postgresql://neondb_owner:npg_YoD4CLZ2TQpw@ep-withered-wave-axase6mw-pooler.c-4.us-east-2.aws.neon.tech/neondb?sslmode=require"
+    print("[-] ERROR: NEON_DATABASE_URL or DATABASE_URL is not set.")
+    print("[-] Please specify your connection string in .env or .env.neon.")
+    sys.exit(1)
 
 timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-dumps_dir = r"E:\Research\ModPyPhp\database\dumps"
+dumps_dir = os.path.join(BASE_DIR, "database", "dumps")
 os.makedirs(dumps_dir, exist_ok=True)
 
 sql_filename = f"neon_cloud_backup_{timestamp}.sql"

@@ -1,0 +1,473 @@
+{
+  "sub_head_no": 24,
+  "sub_head_name": "Conservation of Heritage Buildings",
+  "volume": 2,
+  "page_range": [
+    946,
+    953
+  ],
+  "total_items": 8,
+  "analyzed_items_with_breakup": 8,
+  "items": [
+    {
+      "item_code": "24.1",
+      "sub_head_no": 24,
+      "sub_head_name": "Conservation of Heritage Buildings",
+      "description": "Raking out joints of stone masonry surface to the required width and depth, with due care and precaution, by mechanical / manual means, including preparing and cleaning the surface for re- pointing/ refilling of joints, including disposal of rubbish to the dumping ground within 50 metre lead. Detail of cost for 10 sqm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.53,
+          "rate": 736.0,
+          "amount": 390.08
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.08,
+          "rate": 736.0,
+          "amount": 58.88
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.07,
+          "rate": 816.0,
+          "amount": 57.12
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 1.43,
+          "rate": 2.27,
+          "amount": 3.25
+        }
+      ],
+      "calculations": {
+        "total_w": 509.33,
+        "total_x": 514.42,
+        "total_y": 623.84,
+        "total_z": 717.42
+      },
+      "say_rate": 72.45,
+      "page": 948
+    },
+    {
+      "item_code": "24.2",
+      "sub_head_no": 24,
+      "sub_head_name": "Conservation of Heritage Buildings",
+      "description": "Providing and fixing double scaffolding system (cup lock type) on the exterior side of building/ structure, upto  25 metre height, above ground level, including additional rows of scaffolding in stepped manner as per requirement of site, made with 40mm dia M.S. tube, placed 1.5 metre centre to centre, horizontal & vertical tubes joint with cup & lock system with M.S. Tubes, M.S. tube challis, M.S. clamps and staircase system in the scaffolding for working platform etc. and maintaining it in a serviceable condition for execution of work of cleaning and/ or pointing and/ or applying chemical and removing it thereafter. The scaffolding system shall be stiffened with bracings, runners, connecting with the building etc, wherever required, if feasible, for inspection of work at required locations with essential safety features for the workmen etc., complete as per directions and approval of Engineer-in-charge. The payment will be made once only for execution of all items for such works. Assuming shuttering material will  become unser- viceable after use of 40 times Adding for mainte- nance @ 10% of cost Taking slvage value after full use of material @ 25% of cost",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "7397",
+          "category": "MATERIAL",
+          "description": "Base jack",
+          "unit": "each",
+          "quantity": 0.3,
+          "rate": 155.0,
+          "amount": 46.5
+        },
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 15.5,
+          "rate": 897.0,
+          "amount": 13903.5
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 31.0,
+          "rate": 736.0,
+          "amount": 22816.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 1035.0,
+          "rate": 2.27,
+          "amount": 2349.45
+        }
+      ],
+      "calculations": {
+        "total_w": 48148.1,
+        "total_x": 48629.58,
+        "total_y": 58973.09,
+        "total_z": 67819.05
+      },
+      "say_rate": 338.25,
+      "page": 948
+    },
+    {
+      "item_code": "24.3",
+      "sub_head_no": 24,
+      "sub_head_name": "Conservation of Heritage Buildings",
+      "description": "Cleaning the sand stone surface and removing dirt, dust, bird dropping, grease, oil, algae, fungus, monkey beats, vegetable growth etc., including providing, applying and washing the surface with liquid Ammonia Chemical of 5% solution and other chemical cleaning agent as approved by Archaeological Survey of India/ Engineer-in-charge, of approved brand and manufacturer, with the help of required scrubbers and also cleaning with machine operated water jet mixed with desired quantity of fine silica where ever required, without causing any scratching/ damage to the stone surface and finally washing the surface with clean water with the help of pressure jet machine, complete in all respect, including taking all precautions to safeguard ventilators, windows, doors etc. by suitable covering so as to avoid any damage to the building/structure, all as per direction of Engineer-in-charge (The rate is inclusive of all materials & labours involved except scaffolding). Detail of cost for 10 sqm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0103",
+          "category": "MATERIAL",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 816.0,
+          "amount": 163.2
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 736.0,
+          "amount": 147.2
+        },
+        {
+          "resource_code": "0128",
+          "category": "MATERIAL",
+          "description": "Mate",
+          "unit": "day",
+          "quantity": 0.1,
+          "rate": 816.0,
+          "amount": 81.6
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Cleaning T & P & its manitinance cost (Jet Pump, electrice cable, horse pipe, waler pipe, Nozel safe- ty belt Rope & mantance cost and safety machine for window etc.)",
+          "unit": "L.S.",
+          "quantity": 1.0,
+          "rate": 2.27,
+          "amount": 2.27
+        },
+        {
+          "resource_code": "0131",
+          "category": "MATERIAL",
+          "description": "Painter",
+          "unit": "day",
+          "quantity": 0.4,
+          "rate": 816.0,
+          "amount": 326.4
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.8,
+          "rate": 736.0,
+          "amount": 588.8
+        },
+        {
+          "resource_code": "0128",
+          "category": "MATERIAL",
+          "description": "Mate",
+          "unit": "day",
+          "quantity": 0.1,
+          "rate": 816.0,
+          "amount": 81.6
+        }
+      ],
+      "calculations": {
+        "total_w": 1483.53,
+        "total_x": 1498.37,
+        "total_y": 1817.07,
+        "total_z": 2089.63
+      },
+      "say_rate": 211.05,
+      "page": 950
+    },
+    {
+      "item_code": "24.4",
+      "sub_head_no": 24,
+      "sub_head_name": "Conservation of Heritage Buildings",
+      "description": "Providing and applying antifungal wash treatment using 3% solution of sodium pentachlorophenate, of reputed brand and manufacturer, on cleaned sand stone surface at desired locations as per direction of Engineer-in-charge (The rate is inclusive of all materials & Detail of cost for 10 sqm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "7775",
+          "category": "MATERIAL",
+          "description": "Sodium pentachlorophenate",
+          "unit": "Kg",
+          "quantity": 0.1,
+          "rate": 575.0,
+          "amount": 57.5
+        },
+        {
+          "resource_code": "0131",
+          "category": "LABOUR",
+          "description": "Painter",
+          "unit": "day",
+          "quantity": 0.25,
+          "rate": 816.0,
+          "amount": 204.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.25,
+          "rate": 736.0,
+          "amount": 184.0
+        },
+        {
+          "resource_code": "0128",
+          "category": "LABOUR",
+          "description": "Mate",
+          "unit": "day",
+          "quantity": 0.125,
+          "rate": 816.0,
+          "amount": 102.0
+        }
+      ],
+      "calculations": {
+        "total_w": 547.5,
+        "total_x": 552.98,
+        "total_y": 670.6,
+        "total_z": 771.19
+      },
+      "say_rate": 77.9,
+      "page": 951
+    },
+    {
+      "item_code": "24.5",
+      "sub_head_no": 24,
+      "sub_head_name": "Conservation of Heritage Buildings",
+      "description": "Ruled / Flush pointing on Red sand stone masonry surface with lime, surkhi and marble dust mortar in the ratio of 1:1.5:1/2 {One lime: 1.5 surkhi (50% red and 50% light yellow surkhi ) : 1/2 marble dust}. (The rate is inclusive of all materials & labours involved except scaffolding). Detail of cost for 10 sqm 3.19 Rate as per Item No.3.19 of SH: Marble dust mor- tar 1:1.5:1/2 cum 0.023 2880.67 66.26",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0155",
+          "category": "LABOUR",
+          "description": "Mason (average)",
+          "unit": "day",
+          "quantity": 0.92,
+          "rate": 857.0,
+          "amount": 788.44
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.37,
+          "rate": 736.0,
+          "amount": 1008.32
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.93,
+          "rate": 816.0,
+          "amount": 758.88
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 4.03,
+          "rate": 2.27,
+          "amount": 9.15
+        }
+      ],
+      "calculations": {
+        "total_w": 2631.05,
+        "total_x": 2657.36,
+        "total_y": 3222.58,
+        "total_z": 3705.97
+      },
+      "say_rate": 374.3,
+      "page": 951
+    },
+    {
+      "item_code": "24.6",
+      "sub_head_no": 24,
+      "sub_head_name": "Conservation of Heritage Buildings",
+      "description": "Ruled/ Flush pointing on White sand stone masonry surface with lime, surkhi and marble dust mortar in the ratio of 1:1.5:1/2 {One lime : 1.5 surkhi (15% dark red and 85% light yellow surkhi) : 1/2 marble dust}. (The rate is inclusive of all materials & labours involved except scaffolding). Detail of cost for 10 sqm 3.19 Rate as per Item No.3.19 of SH:Marble dust mor- tar 1:1.5:1/2 cum 0.023 2880.67 66.26",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0155",
+          "category": "LABOUR",
+          "description": "Mason (average)",
+          "unit": "day",
+          "quantity": 0.92,
+          "rate": 857.0,
+          "amount": 788.44
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.37,
+          "rate": 736.0,
+          "amount": 1008.32
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.93,
+          "rate": 816.0,
+          "amount": 758.88
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 4.03,
+          "rate": 2.27,
+          "amount": 9.15
+        }
+      ],
+      "calculations": {
+        "total_w": 2631.05,
+        "total_x": 2657.36,
+        "total_y": 3222.58,
+        "total_z": 3705.97
+      },
+      "say_rate": 374.3,
+      "page": 952
+    },
+    {
+      "item_code": "24.7",
+      "sub_head_no": 24,
+      "sub_head_name": "Conservation of Heritage Buildings",
+      "description": "Applying two or more coat of Ethyl Silicate chemical as approved by Archaeological Survey of India/ Engineer-in-charge, of approved brand and manufacturer, with brush or spray on the existing stone masonry surface till there is no further absorption of chemical by stone surface, including protecting the applied surface from direct sunlight by suitable means during application, all complete as per direction of the Engineer-in-Charge (The rate is inclusive of all Detail of cost for 5 sqm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "7769",
+          "category": "MATERIAL",
+          "description": "Stone surface strengthening chemical approved by ASI",
+          "unit": "litre",
+          "quantity": 1.0,
+          "rate": 910.0,
+          "amount": 910.0
+        },
+        {
+          "resource_code": "0131",
+          "category": "LABOUR",
+          "description": "Painter",
+          "unit": "day",
+          "quantity": 0.15,
+          "rate": 816.0,
+          "amount": 122.4
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.15,
+          "rate": 736.0,
+          "amount": 110.4
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 6.0,
+          "rate": 2.27,
+          "amount": 13.62
+        }
+      ],
+      "calculations": {
+        "total_w": 1156.42,
+        "total_x": 1167.98,
+        "total_y": 1416.41,
+        "total_z": 1628.87
+      },
+      "say_rate": 329.05,
+      "page": 952
+    },
+    {
+      "item_code": "24.8",
+      "sub_head_no": 24,
+      "sub_head_name": "Conservation of Heritage Buildings",
+      "description": "Applying breathable, non-reactive, antifungal, and water repellant Silane/Siloxane chemical as approved by Archaeological Survey of India/ Engineer-in-charge, of approved brand and manufacture, diluted with solvent mineral Turpentine oil in the ratio of 1:12 (One part of approved chemical :12 Part of Turpentine oil), on the existing sand stone masonry surface with two or more coats to give uniform application of chemical on the surface, all complete as per direction of Engineer-In-charge (The rate is inclusive of all materials & labours involved except scaffolding). Detail of cost for 45 sqm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "7768",
+          "category": "MATERIAL",
+          "description": "Water repallent chemical approved by ASI",
+          "unit": "litre",
+          "quantity": 1.0,
+          "rate": 1190.0,
+          "amount": 1190.0
+        },
+        {
+          "resource_code": "7770",
+          "category": "MATERIAL",
+          "description": "Turpentine oil",
+          "unit": "litre",
+          "quantity": 12.0,
+          "rate": 60.0,
+          "amount": 720.0
+        },
+        {
+          "resource_code": "0131",
+          "category": "LABOUR",
+          "description": "Painter",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 816.0,
+          "amount": 816.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Handling / Transportation charges",
+          "unit": "L.S.",
+          "quantity": 6.0,
+          "rate": 2.27,
+          "amount": 13.62
+        }
+      ],
+      "calculations": {
+        "total_w": 3475.62,
+        "total_x": 3510.38,
+        "total_y": 4257.04,
+        "total_z": 4895.6
+      },
+      "say_rate": 109.9,
+      "page": 953
+    }
+  ]
+}

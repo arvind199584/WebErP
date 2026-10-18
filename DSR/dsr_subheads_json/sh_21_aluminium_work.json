@@ -1,0 +1,3041 @@
+{
+  "sub_head_no": 21,
+  "sub_head_name": "Aluminium Work",
+  "volume": 2,
+  "page_range": [
+    872,
+    900
+  ],
+  "total_items": 57,
+  "analyzed_items_with_breakup": 43,
+  "items": [
+    {
+      "item_code": "21.1",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing aluminium work for doors, windows, ventilators and partitions with extruded built up standard tubular sections/ appropriate Z sections and other sections of approved make conforming to IS: 733 and IS: 1285, fixing with dash fasteners of required dia and size, including necessary filling up the gaps at junctions, i.e. at top, bottom and sides with required EPDM rubber/ neoprene gasket etc. Aluminium sections shall be smooth, rust free, straight, mitred and jointed mechanically wherever required including cleat angle, Aluminium snap beading for glazing / paneling, C.P. brass / stainless steel screws, all complete as per architectural drawings and the directions of Engineer-in-charge. (Glazing, paneling and dash fasteners  to be paid for separately) :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 874
+    },
+    {
+      "item_code": "21.1.1",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing aluminium work for doors, windows, ventilators and partitions with - For fixed portion",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 874
+    },
+    {
+      "item_code": "21.1.1.1",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing aluminium work for doors, windows, ventilators and partitions with - Anodised aluminium (anodised transparent or dyed to required shade according to IS: 1868, Minimum anodic coating of grade AC 15)",
+      "cost_basis": {
+        "quantity": 40.02,
+        "unit": "kg"
+      },
+      "breakup": [
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of material",
+          "unit": "L.S.",
+          "quantity": 52.0,
+          "rate": 2.27,
+          "amount": 118.04
+        },
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 897.0,
+          "amount": 1794.0
+        },
+        {
+          "resource_code": "0139",
+          "category": "LABOUR",
+          "description": "Skilled Beldar (for floor rubbing etc.)",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 816.0,
+          "amount": 816.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.05,
+          "rate": 816.0,
+          "amount": 40.8
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Labour for drilling holes, hire charges of drill, electricity charges, carriage of dash hold fast- ners and sundries",
+          "unit": "L.S.",
+          "quantity": 100.0,
+          "rate": 2.27,
+          "amount": 227.0
+        }
+      ],
+      "calculations": {
+        "total_w": 13926.08,
+        "total_x": 14065.34,
+        "total_y": 17057.04,
+        "total_z": 19615.6
+      },
+      "say_rate": 495.05,
+      "page": 874
+    },
+    {
+      "item_code": "21.1.1.2",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing aluminium work for doors, windows, ventilators and partitions with - Powder coated aluminium (minimum thickness of powder coating 50 micron)",
+      "cost_basis": {
+        "quantity": 40.02,
+        "unit": "kg"
+      },
+      "breakup": [
+        {
+          "resource_code": "7392",
+          "category": "MATERIAL",
+          "description": "Powder coating 50 microns on aluminium sec- tions",
+          "unit": "kilogram",
+          "quantity": 42.02,
+          "rate": 66.0,
+          "amount": 2773.32
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of material",
+          "unit": "L.S.",
+          "quantity": 52.0,
+          "rate": 2.27,
+          "amount": 118.04
+        },
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 897.0,
+          "amount": 1794.0
+        },
+        {
+          "resource_code": "0139",
+          "category": "LABOUR",
+          "description": "Skilled Beldar (for floor rubbing etc.)",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 816.0,
+          "amount": 816.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.05,
+          "rate": 816.0,
+          "amount": 40.8
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Labour for drilling holes, hire charges of drill, electricity charges, carriage of dash hold fast- ners and sundries",
+          "unit": "L.S.",
+          "quantity": 100.0,
+          "rate": 2.27,
+          "amount": 227.0
+        }
+      ],
+      "calculations": {
+        "total_w": 14934.56,
+        "total_x": 15083.91,
+        "total_y": 18292.26,
+        "total_z": 21036.1
+      },
+      "say_rate": 530.9,
+      "page": 875
+    },
+    {
+      "item_code": "21.1.1.3",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing aluminium work for doors, windows, ventilators and partitions with - Polyester powder coated aluminium (minimum thickness of polyester powder coating 50 micron)",
+      "cost_basis": {
+        "quantity": 40.02,
+        "unit": "kg"
+      },
+      "breakup": [
+        {
+          "resource_code": "7393",
+          "category": "MATERIAL",
+          "description": "Polyester powder coating 50 microns on alumin- ium sections",
+          "unit": "kilogram",
+          "quantity": 42.02,
+          "rate": 72.0,
+          "amount": 3025.44
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of material",
+          "unit": "L.S.",
+          "quantity": 52.0,
+          "rate": 2.27,
+          "amount": 118.04
+        },
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 897.0,
+          "amount": 1794.0
+        },
+        {
+          "resource_code": "0139",
+          "category": "LABOUR",
+          "description": "Skilled Beldar (for floor rubbing etc.)",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 816.0,
+          "amount": 816.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.05,
+          "rate": 816.0,
+          "amount": 40.8
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Labour for drilling holes, hire charges of drill, electricity charges, carriage of dash hold fast- ners and sundries",
+          "unit": "L.S.",
+          "quantity": 100.0,
+          "rate": 2.27,
+          "amount": 227.0
+        }
+      ],
+      "calculations": {
+        "total_w": 15186.68,
+        "total_x": 15338.55,
+        "total_y": 18601.06,
+        "total_z": 21391.22
+      },
+      "say_rate": 539.85,
+      "page": 876
+    },
+    {
+      "item_code": "21.1.2",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing aluminium work for doors, windows, ventilators and partitions with - For shutters of doors, windows & ventilators including providing and fixing hinges/ pivots and making provision for fixing of fittings wherever required including the cost of EPDM rubber / neoprene gasket required (Fittings shall be paid for separately)",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 877
+    },
+    {
+      "item_code": "21.1.2.1",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing aluminium work for doors, windows, ventilators and partitions with - Anodised aluminium (anodised transparent or dyed to required shade according to IS: 1868, Minimum anodic coating of grade AC 15)",
+      "cost_basis": {
+        "quantity": 20.62,
+        "unit": "kg"
+      },
+      "breakup": [
+        {
+          "resource_code": "7390",
+          "category": "MATERIAL",
+          "description": "Neoprene/EPDM rubber gasket",
+          "unit": "metre",
+          "quantity": 2.35,
+          "rate": 16.0,
+          "amount": 37.6
+        },
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 897.0,
+          "amount": 897.0
+        },
+        {
+          "resource_code": "0139",
+          "category": "LABOUR",
+          "description": "Skilled Beldar (for floor rubbing etc.)",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 816.0,
+          "amount": 816.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "0111",
+          "category": "LABOUR",
+          "description": "Carpenter 1st class",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 897.0,
+          "amount": 179.4
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Labour for making provision for fittings and car- riage of screws etc. including sundries",
+          "unit": "L.S.",
+          "quantity": 50.0,
+          "rate": 2.27,
+          "amount": 113.5
+        }
+      ],
+      "calculations": {
+        "total_w": 8676.56,
+        "total_x": 8763.33,
+        "total_y": 10627.29,
+        "total_z": 12221.38
+      },
+      "say_rate": 598.6,
+      "page": 877
+    },
+    {
+      "item_code": "21.1.2.2",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing aluminium work for doors, windows, ventilators and partitions with - Powder coated aluminium (minimum thickness of powder coating 50 micron)",
+      "cost_basis": {
+        "quantity": 20.62,
+        "unit": "kg"
+      },
+      "breakup": [
+        {
+          "resource_code": "7392",
+          "category": "MATERIAL",
+          "description": "Powder coating 50 microns on aluminium sec- tions",
+          "unit": "kilogram",
+          "quantity": 21.65,
+          "rate": 66.0,
+          "amount": 1428.9
+        },
+        {
+          "resource_code": "7390",
+          "category": "MATERIAL",
+          "description": "Neoprene/EPDM rubber gasket",
+          "unit": "metre",
+          "quantity": 2.35,
+          "rate": 16.0,
+          "amount": 37.6
+        },
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 897.0,
+          "amount": 897.0
+        },
+        {
+          "resource_code": "0139",
+          "category": "LABOUR",
+          "description": "Skilled Beldar (for floor rubbing etc.)",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 816.0,
+          "amount": 816.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "0111",
+          "category": "LABOUR",
+          "description": "Carpenter 1st class",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 897.0,
+          "amount": 179.4
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Labour for making provision for fittings and car- riage of screws etc. including sundries",
+          "unit": "L.S.",
+          "quantity": 50.0,
+          "rate": 2.27,
+          "amount": 113.5
+        }
+      ],
+      "calculations": {
+        "total_w": 9196.16,
+        "total_x": 9288.12,
+        "total_y": 11263.7,
+        "total_z": 12953.26
+      },
+      "say_rate": 634.45,
+      "page": 878
+    },
+    {
+      "item_code": "21.1.2.3",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing aluminium work for doors, windows, ventilators and partitions with - Polyester powder coated aluminium (minimum thickness of polyester powder coating 50 micron)",
+      "cost_basis": {
+        "quantity": 20.62,
+        "unit": "kg"
+      },
+      "breakup": [
+        {
+          "resource_code": "7393",
+          "category": "MATERIAL",
+          "description": "Polyester powder coating 50 microns on alumin- ium sections",
+          "unit": "kilogram",
+          "quantity": 21.65,
+          "rate": 72.0,
+          "amount": 1558.8
+        },
+        {
+          "resource_code": "7390",
+          "category": "MATERIAL",
+          "description": "Neoprene/EPDM rubber gasket",
+          "unit": "metre",
+          "quantity": 2.35,
+          "rate": 16.0,
+          "amount": 37.6
+        },
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 897.0,
+          "amount": 897.0
+        },
+        {
+          "resource_code": "0139",
+          "category": "LABOUR",
+          "description": "Skilled Beldar (for floor rubbing etc.)",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 816.0,
+          "amount": 816.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "0111",
+          "category": "LABOUR",
+          "description": "Carpenter 1st class day 0.20 897.00 179.40 114 Beldar",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Labour for making provision for fittings and car- riage of screws etc. including sundries",
+          "unit": "L.S.",
+          "quantity": 50.0,
+          "rate": 2.27,
+          "amount": 113.5
+        }
+      ],
+      "calculations": {
+        "total_w": 9326.06,
+        "total_x": 9419.32,
+        "total_y": 11422.81,
+        "total_z": 13136.23
+      },
+      "say_rate": 643.45,
+      "page": 879
+    },
+    {
+      "item_code": "21.2",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing 12 mm thick prelaminated particle board flat pressed three layer or graded wood particle board conforming to IS: 12823 Grade l Type ll, in panelling fixed in aluminum doors, windows shutters and partition frames with C.P. brass / stainless steel screws etc. complete as per architectural drawings and directions of engineer-in-charge.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 881
+    },
+    {
+      "item_code": "21.2.1",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing 12 mm thick prelaminated particle board flat pressed three layer or graded - Pre-laminated particle board with decorative lamination on one side and balancing lamination on other side",
+      "cost_basis": {
+        "quantity": 7.0,
+        "unit": "sqm"
+      },
+      "breakup": [
+        {
+          "resource_code": "7477",
+          "category": "MATERIAL",
+          "description": "Prelaminated particle board with one side decorative and other side balancing lamination, flat pressed 3 layer & graded (medium density) Grade I, Type II conforming to IS : 12823 (exte- rior grade) 12 mm thick",
+          "unit": "sqm",
+          "quantity": 7.35,
+          "rate": 550.0,
+          "amount": 4042.5
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of particle board",
+          "unit": "L.S.",
+          "quantity": 13.65,
+          "rate": 2.27,
+          "amount": 30.99
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries & screws etc.",
+          "unit": "L.S.",
+          "quantity": 27.3,
+          "rate": 2.27,
+          "amount": 61.97
+        },
+        {
+          "resource_code": "0112",
+          "category": "LABOUR",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 0.9,
+          "rate": 816.0,
+          "amount": 734.4
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        }
+      ],
+      "calculations": {
+        "total_w": 5605.86,
+        "total_x": 5661.92,
+        "total_y": 6866.21,
+        "total_z": 7896.14
+      },
+      "say_rate": 1139.3,
+      "page": 881
+    },
+    {
+      "item_code": "21.2.2",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing 12 mm thick prelaminated particle board flat pressed three layer or graded - Pre-laminated particle board with decorative lamination on both sides",
+      "cost_basis": {
+        "quantity": 7.0,
+        "unit": "sqm"
+      },
+      "breakup": [
+        {
+          "resource_code": "7480",
+          "category": "MATERIAL",
+          "description": "Prelaminated particle board with both sides dec- orative lamination, flat pressed 3 layer & graded (medium density) Grade I, Type II conforming to IS : 12823 (exterior grade) 12 mm thick",
+          "unit": "sqm",
+          "quantity": 7.35,
+          "rate": 534.0,
+          "amount": 3924.9
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of particle board",
+          "unit": "L.S.",
+          "quantity": 13.65,
+          "rate": 2.27,
+          "amount": 30.99
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries & screws etc.",
+          "unit": "L.S.",
+          "quantity": 27.3,
+          "rate": 2.27,
+          "amount": 61.97
+        },
+        {
+          "resource_code": "0112",
+          "category": "LABOUR",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 0.9,
+          "rate": 816.0,
+          "amount": 734.4
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        }
+      ],
+      "calculations": {
+        "total_w": 5488.26,
+        "total_x": 5543.14,
+        "total_y": 6722.17,
+        "total_z": 7730.5
+      },
+      "say_rate": 1115.4,
+      "page": 881
+    },
+    {
+      "item_code": "21.3",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing glazing in aluminium door, window, ventilator shutters and partitions etc. with EPDM rubber / neoprene gasket etc. complete as per the architectural drawings and the directions of engineer-in-charge . (Cost of aluminium snap beading shall be paid in basic item):",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 882
+    },
+    {
+      "item_code": "21.3.1",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing glazing in aluminium door, window, ventilator shutters and partitions - With float glass panes of 4.0 mm thickness (weight not less than 10kg/sqm)",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "sqm"
+      },
+      "breakup": [
+        {
+          "resource_code": "2406",
+          "category": "MATERIAL",
+          "description": "Float glass sheet of nominal thickness 4 mm (weight not less than 10kg/sqm).",
+          "unit": "sqm",
+          "quantity": 1.1,
+          "rate": 321.0,
+          "amount": 353.1
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of glass",
+          "unit": "L.S.",
+          "quantity": 2.42,
+          "rate": 2.27,
+          "amount": 5.49
+        },
+        {
+          "resource_code": "7390",
+          "category": "MATERIAL",
+          "description": "Neoprene/EPDM rubber gasket",
+          "unit": "metre",
+          "quantity": 6.0,
+          "rate": 16.0,
+          "amount": 96.0
+        },
+        {
+          "resource_code": "0112",
+          "category": "LABOUR",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 0.23,
+          "rate": 816.0,
+          "amount": 187.68
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.23,
+          "rate": 736.0,
+          "amount": 169.28
+        },
+        {
+          "resource_code": "9988",
+          "category": "LABOUR",
+          "description": "Sundries and carriage of gasket",
+          "unit": "L.S.",
+          "quantity": 6.89,
+          "rate": 2.27,
+          "amount": 15.64
+        }
+      ],
+      "calculations": {
+        "total_w": 827.19,
+        "total_x": 835.46,
+        "total_y": 1013.16,
+        "total_z": 1165.13
+      },
+      "say_rate": 1176.8,
+      "page": 882
+    },
+    {
+      "item_code": "21.3.2",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing glazing in aluminium door, window, ventilator shutters and partitions - With float glass panes of 5 mm thickness (weight not less than 12.50 kg/sqm)",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "sqm"
+      },
+      "breakup": [
+        {
+          "resource_code": "2407",
+          "category": "MATERIAL",
+          "description": "Float glass sheet of nominal thickness 5 mm (weight not less than 12.50 kg/sqm)",
+          "unit": "sqm",
+          "quantity": 1.1,
+          "rate": 529.0,
+          "amount": 581.9
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of glass",
+          "unit": "L.S.",
+          "quantity": 3.33,
+          "rate": 2.27,
+          "amount": 7.56
+        },
+        {
+          "resource_code": "7390",
+          "category": "MATERIAL",
+          "description": "Neoprene/EPDM rubber gasket",
+          "unit": "metre",
+          "quantity": 6.0,
+          "rate": 16.0,
+          "amount": 96.0
+        },
+        {
+          "resource_code": "0112",
+          "category": "LABOUR",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 0.23,
+          "rate": 816.0,
+          "amount": 187.68
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.23,
+          "rate": 736.0,
+          "amount": 169.28
+        },
+        {
+          "resource_code": "9988",
+          "category": "LABOUR",
+          "description": "Sundries and carriage of gasket",
+          "unit": "L.S.",
+          "quantity": 6.89,
+          "rate": 2.27,
+          "amount": 15.64
+        }
+      ],
+      "calculations": {
+        "total_w": 1058.06,
+        "total_x": 1068.64,
+        "total_y": 1295.94,
+        "total_z": 1490.33
+      },
+      "say_rate": 1505.25,
+      "page": 882
+    },
+    {
+      "item_code": "21.3.3",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing glazing in aluminium door, window, ventilator shutters and partitions - With float glass panes of 8 mm thickness (weight not less than 20 kg/sqm)",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "sqm"
+      },
+      "breakup": [
+        {
+          "resource_code": "2408",
+          "category": "MATERIAL",
+          "description": "Float glass sheet of nominal thickness 8 mm.(- weight not less than 20.00 kg/sqm).",
+          "unit": "sqm",
+          "quantity": 1.1,
+          "rate": 641.0,
+          "amount": 705.1
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of glass",
+          "unit": "L.S.",
+          "quantity": 4.84,
+          "rate": 2.27,
+          "amount": 10.99
+        },
+        {
+          "resource_code": "7390",
+          "category": "MATERIAL",
+          "description": "Neoprene/EPDM rubber gasket",
+          "unit": "metre",
+          "quantity": 6.0,
+          "rate": 16.0,
+          "amount": 96.0
+        },
+        {
+          "resource_code": "0112",
+          "category": "LABOUR",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 0.23,
+          "rate": 816.0,
+          "amount": 187.68
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.23,
+          "rate": 736.0,
+          "amount": 169.28
+        },
+        {
+          "resource_code": "9988",
+          "category": "LABOUR",
+          "description": "Sundries and carriage of gasket",
+          "unit": "L.S.",
+          "quantity": 6.89,
+          "rate": 2.27,
+          "amount": 15.64
+        }
+      ],
+      "calculations": {
+        "total_w": 1184.69,
+        "total_x": 1196.54,
+        "total_y": 1451.04,
+        "total_z": 1668.7
+      },
+      "say_rate": 1685.4,
+      "page": 883
+    },
+    {
+      "item_code": "21.4",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing double action hydraulic floor spring of approved brand and manufacture conforming to IS : 6315, having brand logo embossed on the body / plate with double spring mechanism and door weight upto 125 kg, for doors, including cost of cutting floors, embedding in floors as required and making good the same matching to the existing floor finishing and cover plates with brass pivot and single piece M.S. sheet outer box with slide plate etc. complete as per the direction of Engineer-in-charge.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 884
+    },
+    {
+      "item_code": "21.4.1",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing double action hydraulic floor spring of approved brand and manufacture - With stainless steel cover plate minimum 1.25 mm thickness",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "7394",
+          "category": "MATERIAL",
+          "description": "Double action hydraulic floor spring with stain- less steel cover plate",
+          "unit": "each",
+          "quantity": 1.0,
+          "rate": 1615.0,
+          "amount": 1615.0
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "CARRIAGE",
+          "unit": "L.S.",
+          "quantity": 13.0,
+          "rate": 2.27,
+          "amount": 29.51
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries and screws L.S. 26.00 2.27 59.02 Cement concrete 1:2:4 4.1.3 Rate as per item no. 4.1.3 of SH : concrete work",
+          "unit": "cum",
+          "quantity": 0.002,
+          "rate": 7878.5,
+          "amount": 15.76
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.08,
+          "rate": 897.0,
+          "amount": 71.76
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.08,
+          "rate": 816.0,
+          "amount": 65.28
+        },
+        {
+          "resource_code": "0112",
+          "category": "LABOUR",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 0.01,
+          "rate": 816.0,
+          "amount": 8.16
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.17,
+          "rate": 736.0,
+          "amount": 125.12
+        }
+      ],
+      "calculations": {
+        "total_w": 1989.61,
+        "total_x": 2009.35,
+        "total_y": 2433.39,
+        "total_z": 2796.03
+      },
+      "say_rate": 2823.85,
+      "page": 884
+    },
+    {
+      "item_code": "21.4.2",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing double action hydraulic floor spring of approved brand and manufacture - With brass cover plate minimum 1.25 mm thickness",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "7396",
+          "category": "MATERIAL",
+          "description": "Double action hydraulic floor spring with brass cover plate",
+          "unit": "each",
+          "quantity": 1.0,
+          "rate": 1715.0,
+          "amount": 1715.0
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "CARRIAGE",
+          "unit": "L.S.",
+          "quantity": 13.0,
+          "rate": 2.27,
+          "amount": 29.51
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries and screws L.S. 26.00 2.27 59.02 Cement concrete 1:2:4 4.1.3 Rate as per item no. 4.1.3 of SH : concrete work",
+          "unit": "cum",
+          "quantity": 0.002,
+          "rate": 7878.5,
+          "amount": 15.76
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.08,
+          "rate": 897.0,
+          "amount": 71.76
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.08,
+          "rate": 816.0,
+          "amount": 65.28
+        },
+        {
+          "resource_code": "0112",
+          "category": "LABOUR",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 0.01,
+          "rate": 816.0,
+          "amount": 8.16
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.17,
+          "rate": 736.0,
+          "amount": 125.12
+        }
+      ],
+      "calculations": {
+        "total_w": 2089.61,
+        "total_x": 2110.35,
+        "total_y": 2555.87,
+        "total_z": 2936.89
+      },
+      "say_rate": 2966.1,
+      "page": 884
+    },
+    {
+      "item_code": "21.5",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing powder coated aluminium work (minimum thickness of powder coating 50 micron) consisting of tee/ angle sections, of approved make conforming to IS : 733 in frames of false ceiling including aluminium angle cleats with necessary C.P. brass/ stainless steel sunk screws, aluminium perimeter angles fixed to wall with stainless steel rawl plugs @ 450 mm centre to centre and fixing the frame work to G.I. level adjusting hangers 6 mm dia. with necessary cadmium plated machine screws all complete as per approved architectural drawings and direction of the Engineer-in-charge (level adjusting hangers, ceiling cleats and expansion hold fasteners to be paid for separately).",
+      "cost_basis": {
+        "quantity": 6.35,
+        "unit": "kg"
+      },
+      "breakup": [
+        {
+          "resource_code": "7392",
+          "category": "MATERIAL",
+          "description": "Powder coating 50 microns on aluminium sec- tions",
+          "unit": "kilogram",
+          "quantity": 6.672,
+          "rate": 66.0,
+          "amount": 440.35
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "C.P. brass screws for fixing frame with suspend- ers",
+          "unit": "L.S.",
+          "quantity": 13.0,
+          "rate": 2.27,
+          "amount": 29.51
+        },
+        {
+          "resource_code": "0111",
+          "category": "LABOUR",
+          "description": "Carpenter 1st class",
+          "unit": "day",
+          "quantity": 0.64,
+          "rate": 897.0,
+          "amount": 574.08
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.64,
+          "rate": 736.0,
+          "amount": 471.04
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Scaffolding and sundries",
+          "unit": "L.S.",
+          "quantity": 13.0,
+          "rate": 2.27,
+          "amount": 29.51
+        }
+      ],
+      "calculations": {
+        "total_w": 3647.38,
+        "total_x": 3683.85,
+        "total_y": 4467.4,
+        "total_z": 5137.51
+      },
+      "say_rate": 817.15,
+      "page": 885
+    },
+    {
+      "item_code": "21.6",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing 6 mm dia. G.I. level adjusting hangers (upto 1200mm length), fixed to roof slabs by means of ceiling cleats made out of G.I. flat 40x3mm size 60 mm long and stainless steel expandable dash fastener of 12.5 mm dia and 50 mm long, complete as per direction of Engineer-in-charge.",
+      "cost_basis": {
+        "quantity": 23.0,
+        "unit": "nos"
+      },
+      "breakup": [
+        {
+          "resource_code": "7395",
+          "category": "MATERIAL",
+          "description": "6 mm dia. G.I. adjustable hangers including clips (upto 1.2 m length)",
+          "unit": "each",
+          "quantity": 23.0,
+          "rate": 21.0,
+          "amount": 483.0
+        },
+        {
+          "resource_code": "0992",
+          "category": "MATERIAL",
+          "description": "Galvanised steel plain sheets",
+          "unit": "quintal",
+          "quantity": 0.014,
+          "rate": 6800.0,
+          "amount": 95.2
+        },
+        {
+          "resource_code": "7388",
+          "category": "MATERIAL",
+          "description": "Dash hold fastener 12.5 mm dia, 40 mm long with 6 mm dia bolt",
+          "unit": "each",
+          "quantity": 23.0,
+          "rate": 10.0,
+          "amount": 230.0
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of materials",
+          "unit": "L.S.",
+          "quantity": 5.2,
+          "rate": 2.27,
+          "amount": 11.8
+        },
+        {
+          "resource_code": "0111",
+          "category": "LABOUR",
+          "description": "Carpenter 1st class",
+          "unit": "day",
+          "quantity": 0.35,
+          "rate": 897.0,
+          "amount": 313.95
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.27,
+          "rate": 736.0,
+          "amount": 198.72
+        }
+      ],
+      "calculations": {
+        "total_w": 1332.67,
+        "total_x": 1346.0,
+        "total_y": 1632.29,
+        "total_z": 1877.13
+      },
+      "say_rate": 82.45,
+      "page": 886
+    },
+    {
+      "item_code": "21.7",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing machine moulded aluminium covering of approved pattern & design, made out of machine cut aluminium sheet and machine holed for receiving dash fastener, over expansion joints on vertical surfaces/ceiling floors, the fixing on plate in one row on one side of joint only shall be done with stainless steel dash fasteners of 8 mm dia and 75 mm long bolt including providing aluminium washers 2 mm thick & 15 mm dia , at a staggered pitch of 200mm centre to centre including drilling holes in the receiving surface and providing expandable plastic sleeves in holes etc. complete as per direction of Engineer-in-charge.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 887
+    },
+    {
+      "item_code": "21.7.1",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing machine moulded aluminium covering of approved pattern & design, - Anodised aluminium sheet 2.5mm thick (anodised transparent or dyed to required shade according to IS: 1868, Minimum anodic coating of grade AC 15)",
+      "cost_basis": {
+        "quantity": 7.0,
+        "unit": "kg"
+      },
+      "breakup": [
+        {
+          "resource_code": "2704",
+          "category": "MATERIAL",
+          "description": "Aluminium Strip 40 mm wide and 2 mm thick",
+          "unit": "kilogram",
+          "quantity": 7.35,
+          "rate": 243.0,
+          "amount": 1786.05
+        },
+        {
+          "resource_code": "7389",
+          "category": "MATERIAL",
+          "description": "Anodising 15 microns on aluminium sections",
+          "unit": "kilogram",
+          "quantity": 7.35,
+          "rate": 42.0,
+          "amount": 308.7
+        },
+        {
+          "resource_code": "7347",
+          "category": "MATERIAL",
+          "description": "Cadmium plated full threaded steel screws (30x4 mm dia.)",
+          "unit": "100 Nos",
+          "quantity": 0.3,
+          "rate": 29.0,
+          "amount": 8.7
+        },
+        {
+          "resource_code": "7348",
+          "category": "MATERIAL",
+          "description": "Aluminium washer 2 mm thick 15 mm dia",
+          "unit": "100 Nos",
+          "quantity": 0.3,
+          "rate": 11.0,
+          "amount": 3.3
+        },
+        {
+          "resource_code": "8776",
+          "category": "MATERIAL",
+          "description": "Stainless steel dash fastener of 8 mm dia and 75 mm long bolt",
+          "unit": "each",
+          "quantity": 30.0,
+          "rate": 19.0,
+          "amount": 570.0
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of materials",
+          "unit": "L.S.",
+          "quantity": 6.5,
+          "rate": 2.27,
+          "amount": 14.76
+        },
+        {
+          "resource_code": "0112",
+          "category": "LABOUR",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 0.392,
+          "rate": 816.0,
+          "amount": 319.87
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.392,
+          "rate": 736.0,
+          "amount": 288.51
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries including machine work",
+          "unit": "L.S.",
+          "quantity": 21.45,
+          "rate": 2.27,
+          "amount": 48.69
+        }
+      ],
+      "calculations": {
+        "total_w": 3348.58,
+        "total_x": 3382.07,
+        "total_y": 4101.44,
+        "total_z": 4716.66
+      },
+      "say_rate": 680.55,
+      "page": 887
+    },
+    {
+      "item_code": "21.7.2",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing machine moulded aluminium covering of approved pattern & design, - Powder coated aluminium sheet 2.5mm thick (minimum thickness of powder coating 50 micron)",
+      "cost_basis": {
+        "quantity": 7.0,
+        "unit": "kg"
+      },
+      "breakup": [
+        {
+          "resource_code": "2704",
+          "category": "MATERIAL",
+          "description": "Aluminium Strip 40 mm wide and 2 mm thick",
+          "unit": "kilogram",
+          "quantity": 7.35,
+          "rate": 243.0,
+          "amount": 1786.05
+        },
+        {
+          "resource_code": "7392",
+          "category": "MATERIAL",
+          "description": "Powder coating 50 microns on aluminium sec- tions",
+          "unit": "kilogram",
+          "quantity": 7.35,
+          "rate": 66.0,
+          "amount": 485.1
+        },
+        {
+          "resource_code": "7347",
+          "category": "MATERIAL",
+          "description": "Cadmium plated full threaded steel screws (30x4 mm dia.)",
+          "unit": "100 Nos",
+          "quantity": 0.3,
+          "rate": 29.0,
+          "amount": 8.7
+        },
+        {
+          "resource_code": "7348",
+          "category": "MATERIAL",
+          "description": "Aluminium washer 2 mm thick 15 mm dia",
+          "unit": "100 Nos",
+          "quantity": 0.3,
+          "rate": 11.0,
+          "amount": 3.3
+        },
+        {
+          "resource_code": "8776",
+          "category": "MATERIAL",
+          "description": "Stainless steel dash fastener of 8 mm dia and 75 mm long bolt",
+          "unit": "each",
+          "quantity": 30.0,
+          "rate": 19.0,
+          "amount": 570.0
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of materials",
+          "unit": "L.S.",
+          "quantity": 6.5,
+          "rate": 2.27,
+          "amount": 14.76
+        },
+        {
+          "resource_code": "0112",
+          "category": "LABOUR",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 0.392,
+          "rate": 816.0,
+          "amount": 319.87
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.392,
+          "rate": 736.0,
+          "amount": 288.51
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries including machine work",
+          "unit": "L.S.",
+          "quantity": 21.45,
+          "rate": 2.27,
+          "amount": 48.69
+        }
+      ],
+      "calculations": {
+        "total_w": 3524.98,
+        "total_x": 3560.23,
+        "total_y": 4317.49,
+        "total_z": 4965.11
+      },
+      "say_rate": 716.4,
+      "page": 888
+    },
+    {
+      "item_code": "21.8",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Filling the gap in between aluminium frame & adjacent RCC/ Brick/ Stone work by providing weather silicon sealant over backer rod of approved quality as per architectural drawings and direction of Engineer-in-charge complete.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 888
+    },
+    {
+      "item_code": "21.8.1",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Filling the gap in between aluminium frame & adjacent RCC/ Brick/ Stone work by providing - Upto 5mm depth and 5 mm width",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "metre"
+      },
+      "breakup": [
+        {
+          "resource_code": "8654",
+          "category": "MATERIAL",
+          "description": "Masking tape",
+          "unit": "metre",
+          "quantity": 2.0,
+          "rate": 2.0,
+          "amount": 4.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries & profile",
+          "unit": "L.S.",
+          "quantity": 2.6,
+          "rate": 2.27,
+          "amount": 5.9
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "LABOUR",
+          "unit": "L.S.",
+          "quantity": 20.8,
+          "rate": 2.27,
+          "amount": 47.22
+        }
+      ],
+      "calculations": {
+        "total_w": 68.0,
+        "total_x": 68.68,
+        "total_y": 83.29,
+        "total_z": 95.78
+      },
+      "say_rate": 96.75,
+      "page": 888
+    },
+    {
+      "item_code": "21.9",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Extra for applying additional anodic coating AC 25 instead of AC 15 to aluminium extruded sections.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 889
+    },
+    {
+      "item_code": "21.9.1",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Extra for applying additional anodic coating AC 25 instead of AC 15 to aluminium extruded - For fixed portion",
+      "cost_basis": {
+        "quantity": 41.09,
+        "unit": "kg"
+      },
+      "breakup": [
+        {
+          "resource_code": "7391",
+          "category": "MATERIAL",
+          "description": "Anodising 25 microns on aluminium sections",
+          "unit": "kilogram",
+          "quantity": 41.09,
+          "rate": 51.0,
+          "amount": 2095.59
+        },
+        {
+          "resource_code": "7389",
+          "category": "MATERIAL",
+          "description": "Anodising 15 microns on aluminium sections",
+          "unit": "kilogram",
+          "quantity": -41.09,
+          "rate": 42.0,
+          "amount": -1725.78
+        }
+      ],
+      "calculations": {
+        "total_w": 369.81,
+        "total_x": 373.51,
+        "total_y": 452.96,
+        "total_z": 520.9
+      },
+      "say_rate": 12.8,
+      "page": 889
+    },
+    {
+      "item_code": "21.9.2",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Extra for applying additional anodic coating AC 25 instead of AC 15 to aluminium extruded - For shutters of doors, windows & ventilators",
+      "cost_basis": {
+        "quantity": 21.65,
+        "unit": "kg"
+      },
+      "breakup": [
+        {
+          "resource_code": "7391",
+          "category": "MATERIAL",
+          "description": "Anodising 25 microns on aluminium sections",
+          "unit": "kilogram",
+          "quantity": 21.65,
+          "rate": 51.0,
+          "amount": 1104.15
+        },
+        {
+          "resource_code": "7389",
+          "category": "MATERIAL",
+          "description": "Anodising 15 microns on aluminium sections",
+          "unit": "kilogram",
+          "quantity": -21.65,
+          "rate": 42.0,
+          "amount": -909.3
+        }
+      ],
+      "calculations": {
+        "total_w": 194.85,
+        "total_x": 196.8,
+        "total_y": 238.66,
+        "total_z": 274.46
+      },
+      "say_rate": 12.8,
+      "page": 889
+    },
+    {
+      "item_code": "21.10",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing double glazed hermetically sealed glazing in aluminium windows, ventilators and partition etc. with 6 mm thick clear float glass both side, having 12 mm air gap, including providing EPDM gasket, perforated aluminium spacers, desiccants, sealant (Both primary and secondary sealant) etc. as per specifications, drawings and direction of Engineer- in-charge complete.",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "sqm"
+      },
+      "breakup": [
+        {
+          "resource_code": "8648",
+          "category": "MATERIAL",
+          "description": "Hermetically sealed double glazed unit made with 6 mm thick clear float glass both side hav- ing 12 mm air gap",
+          "unit": "sqm",
+          "quantity": 1.1,
+          "rate": 2600.0,
+          "amount": 2860.0
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of glass",
+          "unit": "L.S.",
+          "quantity": 6.66,
+          "rate": 2.27,
+          "amount": 15.12
+        },
+        {
+          "resource_code": "7390",
+          "category": "MATERIAL",
+          "description": "Neoprene/EPDM rubber gasket",
+          "unit": "metre",
+          "quantity": 6.0,
+          "rate": 16.0,
+          "amount": 96.0
+        },
+        {
+          "resource_code": "0112",
+          "category": "LABOUR",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 0.23,
+          "rate": 816.0,
+          "amount": 187.68
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.46,
+          "rate": 736.0,
+          "amount": 338.56
+        },
+        {
+          "resource_code": "9988",
+          "category": "LABOUR",
+          "description": "Sundries and carriage of gasket",
+          "unit": "L.S.",
+          "quantity": 6.89,
+          "rate": 2.27,
+          "amount": 15.64
+        }
+      ],
+      "calculations": {
+        "total_w": 3513.0,
+        "total_x": 3548.13,
+        "total_y": 4302.82,
+        "total_z": 4948.24
+      },
+      "say_rate": 4997.7,
+      "page": 889
+    },
+    {
+      "item_code": "21.11",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing stainless steel (SS 304 grade) adjustable friction windows stays of approved quality with necessary stainless steel screws etc. to the side hung windows as per direction of Engineer-in-charge complete.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 890
+    },
+    {
+      "item_code": "21.11.1",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing stainless steel (SS 304 grade) adjustable friction windows stays of - 205 X 19 mm",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "nos."
+      },
+      "breakup": [
+        {
+          "resource_code": "8649",
+          "category": "MATERIAL",
+          "description": "Stainless steel (SS 304 grade) adjustable fric- tion window stay 205 x 19 mm",
+          "unit": "each",
+          "quantity": 10.0,
+          "rate": 218.0,
+          "amount": 2180.0
+        },
+        {
+          "resource_code": "8647",
+          "category": "MATERIAL",
+          "description": "Stainless steel screws 30 mm x4 mm",
+          "unit": "100 nos",
+          "quantity": 0.4,
+          "rate": 42.0,
+          "amount": 16.8
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "CARRIAGE",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "0112",
+          "category": "LABOUR",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 0.14,
+          "rate": 816.0,
+          "amount": 114.24
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.14,
+          "rate": 736.0,
+          "amount": 103.04
+        }
+      ],
+      "calculations": {
+        "total_w": 2420.28,
+        "total_x": 2444.48,
+        "total_y": 2964.42,
+        "total_z": 3409.08
+      },
+      "say_rate": 344.3,
+      "page": 890
+    },
+    {
+      "item_code": "21.11.2",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing stainless steel (SS 304 grade) adjustable friction windows stays of - 255 X 19 mm",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "nos."
+      },
+      "breakup": [
+        {
+          "resource_code": "8650",
+          "category": "MATERIAL",
+          "description": "Stainless steel (SS 304 grade) adjustable 255 x 19mm",
+          "unit": "each",
+          "quantity": 10.0,
+          "rate": 248.0,
+          "amount": 2480.0
+        },
+        {
+          "resource_code": "8647",
+          "category": "MATERIAL",
+          "description": "Stainless steel screws 30 mm x4 mm",
+          "unit": "100 nos",
+          "quantity": 0.4,
+          "rate": 42.0,
+          "amount": 16.8
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "CARRIAGE",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "0112",
+          "category": "LABOUR",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 0.14,
+          "rate": 816.0,
+          "amount": 114.24
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.14,
+          "rate": 736.0,
+          "amount": 103.04
+        }
+      ],
+      "calculations": {
+        "total_w": 2720.28,
+        "total_x": 2747.48,
+        "total_y": 3331.87,
+        "total_z": 3831.65
+      },
+      "say_rate": 387.0,
+      "page": 891
+    },
+    {
+      "item_code": "21.11.3",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing stainless steel (SS 304 grade) adjustable friction windows stays of - 355 X 19 mm",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "nos."
+      },
+      "breakup": [
+        {
+          "resource_code": "8651",
+          "category": "MATERIAL",
+          "description": "Stainless steel (SS 304 grade) adjustable fric- tion window stay 355 x 19 mm",
+          "unit": "each",
+          "quantity": 10.0,
+          "rate": 205.0,
+          "amount": 2050.0
+        },
+        {
+          "resource_code": "8647",
+          "category": "MATERIAL",
+          "description": "Stainless steel screws 30 mm x4 mm",
+          "unit": "100 nos",
+          "quantity": 0.4,
+          "rate": 42.0,
+          "amount": 16.8
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "CARRIAGE",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "0112",
+          "category": "LABOUR",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 0.14,
+          "rate": 816.0,
+          "amount": 114.24
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.14,
+          "rate": 736.0,
+          "amount": 103.04
+        }
+      ],
+      "calculations": {
+        "total_w": 2290.28,
+        "total_x": 2313.18,
+        "total_y": 2805.19,
+        "total_z": 3225.97
+      },
+      "say_rate": 325.8,
+      "page": 891
+    },
+    {
+      "item_code": "21.11.4",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing stainless steel (SS 304 grade) adjustable friction windows stays of - 510 X 19 mm",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "nos."
+      },
+      "breakup": [
+        {
+          "resource_code": "8652",
+          "category": "MATERIAL",
+          "description": "Stainless steel (SS 304 grade) adjustable fric- tion window stay 510 x 19 mm",
+          "unit": "each",
+          "quantity": 10.0,
+          "rate": 540.0,
+          "amount": 5400.0
+        },
+        {
+          "resource_code": "8647",
+          "category": "MATERIAL",
+          "description": "Stainless steel screws 30 mm x4 mm",
+          "unit": "100 nos",
+          "quantity": 0.4,
+          "rate": 42.0,
+          "amount": 16.8
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "CARRIAGE",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "0112",
+          "category": "LABOUR",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 0.14,
+          "rate": 816.0,
+          "amount": 114.24
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.14,
+          "rate": 736.0,
+          "amount": 103.04
+        }
+      ],
+      "calculations": {
+        "total_w": 5640.28,
+        "total_x": 5696.68,
+        "total_y": 6908.36,
+        "total_z": 7944.61
+      },
+      "say_rate": 802.4,
+      "page": 891
+    },
+    {
+      "item_code": "21.11.5",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing stainless steel (SS 304 grade) adjustable friction windows stays of - 710 X 19 mm",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "nos."
+      },
+      "breakup": [
+        {
+          "resource_code": "8653",
+          "category": "MATERIAL",
+          "description": "Stainless steel (SS 304 grade) adjustable fric- tion window stay 710 x 19 mm",
+          "unit": "each",
+          "quantity": 10.0,
+          "rate": 1015.0,
+          "amount": 10150.0
+        },
+        {
+          "resource_code": "8647",
+          "category": "MATERIAL",
+          "description": "Stainless steel screws 30 mm x4 mm",
+          "unit": "100 nos",
+          "quantity": 0.4,
+          "rate": 42.0,
+          "amount": 16.8
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "CARRIAGE",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "0112",
+          "category": "LABOUR",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 0.14,
+          "rate": 816.0,
+          "amount": 114.24
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.14,
+          "rate": 736.0,
+          "amount": 103.04
+        }
+      ],
+      "calculations": {
+        "total_w": 10390.28,
+        "total_x": 10494.18,
+        "total_y": 12726.29,
+        "total_z": 14635.23
+      },
+      "say_rate": 1478.15,
+      "page": 892
+    },
+    {
+      "item_code": "21.12",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing aluminium tubular handle bar 32 mm outer dia, 3.0 mm thick & 2100 mm long with SS screws etc .complete as per direction of Engineer-in-Charge.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 892
+    },
+    {
+      "item_code": "21.12.1",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing aluminium tubular handle bar 32 mm outer dia, 3.0 mm thick & 2100 mm - Anodized (AC 15 ) aluminium tubular handle bar",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "nos handle bar."
+      },
+      "breakup": [
+        {
+          "resource_code": "7306",
+          "category": "MATERIAL",
+          "description": "Aluminium T or L sections",
+          "unit": "kilogram",
+          "quantity": 16.34,
+          "rate": 198.0,
+          "amount": 3235.32
+        },
+        {
+          "resource_code": "7389",
+          "category": "MATERIAL",
+          "description": "Anodising 15 microns on aluminium sections",
+          "unit": "kilogram",
+          "quantity": 16.34,
+          "rate": 42.0,
+          "amount": 686.28
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of material",
+          "unit": "L.S.",
+          "quantity": 4.42,
+          "rate": 2.27,
+          "amount": 10.03
+        },
+        {
+          "resource_code": "8647",
+          "category": "MATERIAL",
+          "description": "Stainless steel screws 30 mm x4 mm",
+          "unit": "100 nos",
+          "quantity": 0.08,
+          "rate": 42.0,
+          "amount": 3.36
+        },
+        {
+          "resource_code": "0111",
+          "category": "LABOUR",
+          "description": "Carpenter 1st class",
+          "unit": "day",
+          "quantity": 0.125,
+          "rate": 897.0,
+          "amount": 112.13
+        }
+      ],
+      "calculations": {
+        "total_w": 4047.12,
+        "total_x": 4087.59,
+        "total_y": 4957.02,
+        "total_z": 5700.57
+      },
+      "say_rate": 575.75,
+      "page": 892
+    },
+    {
+      "item_code": "21.12.2",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing aluminium tubular handle bar 32 mm outer dia, 3.0 mm thick & 2100 mm - Powder coated minimum thickness 50 micron aluminium tubular handle bar",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "nos handle bar."
+      },
+      "breakup": [
+        {
+          "resource_code": "7392",
+          "category": "MATERIAL",
+          "description": "Powder coating 50 microns on aluminium sec- tions",
+          "unit": "kilogram",
+          "quantity": 16.34,
+          "rate": 66.0,
+          "amount": 1078.44
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of material",
+          "unit": "L.S.",
+          "quantity": 4.42,
+          "rate": 2.27,
+          "amount": 10.03
+        },
+        {
+          "resource_code": "8647",
+          "category": "MATERIAL",
+          "description": "Stainless steel screws 30 mm x4 mm",
+          "unit": "100 nos",
+          "quantity": 0.08,
+          "rate": 42.0,
+          "amount": 3.36
+        },
+        {
+          "resource_code": "0111",
+          "category": "LABOUR",
+          "description": "Carpenter 1st class",
+          "unit": "day",
+          "quantity": 0.125,
+          "rate": 897.0,
+          "amount": 112.13
+        }
+      ],
+      "calculations": {
+        "total_w": 4439.28,
+        "total_x": 4483.67,
+        "total_y": 5437.35,
+        "total_z": 6252.95
+      },
+      "say_rate": 631.55,
+      "page": 893
+    },
+    {
+      "item_code": "21.12.3",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing aluminium tubular handle bar 32 mm outer dia, 3.0 mm thick & 2100 mm - Polyester powder coated minimum thickness 50 micron aluminium tubular handle bar",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "nos handle bar."
+      },
+      "breakup": [
+        {
+          "resource_code": "7306",
+          "category": "MATERIAL",
+          "description": "Aluminium T or L sections",
+          "unit": "kilogram",
+          "quantity": 16.34,
+          "rate": 198.0,
+          "amount": 3235.32
+        },
+        {
+          "resource_code": "7393",
+          "category": "MATERIAL",
+          "description": "Polyester powder coating 50 microns on alumin- ium sections",
+          "unit": "kilogram",
+          "quantity": 16.34,
+          "rate": 72.0,
+          "amount": 1176.48
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of material",
+          "unit": "L.S.",
+          "quantity": 4.42,
+          "rate": 2.27,
+          "amount": 10.03
+        },
+        {
+          "resource_code": "8647",
+          "category": "MATERIAL",
+          "description": "Stainless steel screws 30 mm x4 mm",
+          "unit": "100 nos",
+          "quantity": 0.08,
+          "rate": 42.0,
+          "amount": 3.36
+        },
+        {
+          "resource_code": "0111",
+          "category": "LABOUR",
+          "description": "Carpenter 1st class",
+          "unit": "day",
+          "quantity": 0.125,
+          "rate": 897.0,
+          "amount": 112.13
+        }
+      ],
+      "calculations": {
+        "total_w": 4537.32,
+        "total_x": 4582.69,
+        "total_y": 5557.43,
+        "total_z": 6391.04
+      },
+      "say_rate": 645.5,
+      "page": 893
+    },
+    {
+      "item_code": "21.13",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing Brass 100mm mortice latch and lock with 6 levers without pair of handles (best make of approved quality) for aluminium doors including necessary cutting and making good etc. complete. Detail of cost for 1 nos.",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "7001",
+          "category": "MATERIAL",
+          "description": "Brass 100mm mortice latch and lock with 6 levers without pair of handles",
+          "unit": "each",
+          "quantity": 1.0,
+          "rate": 211.0,
+          "amount": 211.0
+        },
+        {
+          "resource_code": "0111",
+          "category": "LABOUR",
+          "description": "Carpenter 1st class",
+          "unit": "day",
+          "quantity": 0.17,
+          "rate": 897.0,
+          "amount": 152.49
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundry and screws",
+          "unit": "L.S.",
+          "quantity": 3.64,
+          "rate": 2.27,
+          "amount": 8.26
+        }
+      ],
+      "calculations": {
+        "total_w": 371.75,
+        "total_x": 375.47,
+        "total_y": 455.33,
+        "total_z": 523.63
+      },
+      "say_rate": 528.85,
+      "page": 894
+    },
+    {
+      "item_code": "21.14",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing anodised aluminium (anodised transparent or dyed to required shade according to IS: 1868. Minimum anodic coating of grade AC 15) sub frame work for windows and ventilators with extruded built up standard tubular sections of approved make conforming to IS: 733 and IS: 1285, fixed with dash fastener of required dia and size (Dash fastener to be paid for separately). Aluminium Section (i) External member of the frame (Jindal section no TU/ 3644) V = 2x2.00 = 4.00 m H = 2x1.20 = 2.40 m Total= 6.40 m @ 0.607 kg/m = 3.885kg Angle cleat 38x38x4.8 mm 50 mm long 4x0.05 = 0.200 m @ 0.985 kg/m = 0.197 kg sub total = 4.082kg. Add 5% wastage = 0.204kg Total = 4.286kg",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "7306",
+          "category": "MATERIAL",
+          "description": "Aluminium T or L sections",
+          "unit": "kilogram",
+          "quantity": 4.286,
+          "rate": 198.0,
+          "amount": 848.63
+        },
+        {
+          "resource_code": "0589",
+          "category": "MATERIAL",
+          "description": "Chromium plated Brass screws 20 mm",
+          "unit": "100 Nos",
+          "quantity": 0.08,
+          "rate": 152.0,
+          "amount": 12.16
+        },
+        {
+          "resource_code": "7389",
+          "category": "MATERIAL",
+          "description": "Anodising 15 microns on aluminium sections",
+          "unit": "kilogram",
+          "quantity": 4.286,
+          "rate": 42.0,
+          "amount": 180.01
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of material",
+          "unit": "L.S.",
+          "quantity": 5.2,
+          "rate": 2.27,
+          "amount": 11.8
+        },
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 0.04,
+          "rate": 897.0,
+          "amount": 35.88
+        },
+        {
+          "resource_code": "0139",
+          "category": "LABOUR",
+          "description": "Skilled Beldar (for floor rubbing etc.)",
+          "unit": "day",
+          "quantity": 0.04,
+          "rate": 816.0,
+          "amount": 32.64
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.02,
+          "rate": 736.0,
+          "amount": 14.72
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.01,
+          "rate": 816.0,
+          "amount": 8.16
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Labour for drilling holes, hire charges of drill, electricity charges, carriage of dash hold fast- ners & sundries",
+          "unit": "L.S.",
+          "quantity": 5.2,
+          "rate": 2.27,
+          "amount": 11.8
+        }
+      ],
+      "calculations": {
+        "total_w": 1155.8,
+        "total_x": 1167.36,
+        "total_y": 1415.66,
+        "total_z": 1628.01
+      },
+      "say_rate": 402.8,
+      "page": 894
+    },
+    {
+      "item_code": "21.15",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing aluminium casement windows fastener of required length for aluminium windows with necessary screws etc. complete.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 895
+    },
+    {
+      "item_code": "21.15.1",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing aluminium casement windows fastener of required length for - Anodized (AC 15) aluminium Detail of cost for 10 nos.",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "8660",
+          "category": "MATERIAL",
+          "description": "Aluminium casement window fastener (Ano- dised AC 15)",
+          "unit": "each",
+          "quantity": 10.0,
+          "rate": 55.0,
+          "amount": 550.0
+        },
+        {
+          "resource_code": "8666",
+          "category": "MATERIAL",
+          "description": "Stainless steel screws 25 mm x4 mm",
+          "unit": "100 Nos",
+          "quantity": 0.4,
+          "rate": 46.0,
+          "amount": 18.4
+        },
+        {
+          "resource_code": "0111",
+          "category": "LABOUR",
+          "description": "Carpenter 1st class",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 897.0,
+          "amount": 53.82
+        },
+        {
+          "resource_code": "9977",
+          "category": "LABOUR",
+          "description": "Carriage of materials",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        }
+      ],
+      "calculations": {
+        "total_w": 628.42,
+        "total_x": 634.7,
+        "total_y": 769.7,
+        "total_z": 885.16
+      },
+      "say_rate": 89.4,
+      "page": 895
+    },
+    {
+      "item_code": "21.15.2",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing aluminium casement windows fastener of required length for - Powder coated minimum thickness 50 micron aluminium Detail of cost for 10 nos.",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "8661",
+          "category": "MATERIAL",
+          "description": "Aluminium casement window fastener (powder coated )",
+          "unit": "each",
+          "quantity": 10.0,
+          "rate": 61.0,
+          "amount": 610.0
+        },
+        {
+          "resource_code": "8666",
+          "category": "MATERIAL",
+          "description": "Stainless steel screws 25 mm x4 mm",
+          "unit": "100 Nos",
+          "quantity": 0.4,
+          "rate": 46.0,
+          "amount": 18.4
+        },
+        {
+          "resource_code": "0111",
+          "category": "LABOUR",
+          "description": "Carpenter 1st class",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 897.0,
+          "amount": 53.82
+        },
+        {
+          "resource_code": "9977",
+          "category": "LABOUR",
+          "description": "Carriage of materials",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        }
+      ],
+      "calculations": {
+        "total_w": 688.42,
+        "total_x": 695.3,
+        "total_y": 843.19,
+        "total_z": 969.67
+      },
+      "say_rate": 97.95,
+      "page": 896
+    },
+    {
+      "item_code": "21.15.3",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing aluminium casement windows fastener of required length for - Polyester powder coated minimum thickness 50 micron aluminium Detail of cost for 10 nos.",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "8662",
+          "category": "MATERIAL",
+          "description": "Aluminium casement window fastener (polyes- ter powder coated)",
+          "unit": "each",
+          "quantity": 10.0,
+          "rate": 59.0,
+          "amount": 590.0
+        },
+        {
+          "resource_code": "8666",
+          "category": "MATERIAL",
+          "description": "Stainless steel screws 25 mm x4 mm",
+          "unit": "100 Nos",
+          "quantity": 0.4,
+          "rate": 46.0,
+          "amount": 18.4
+        },
+        {
+          "resource_code": "0111",
+          "category": "LABOUR",
+          "description": "Carpenter 1st class",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 897.0,
+          "amount": 53.82
+        },
+        {
+          "resource_code": "9977",
+          "category": "LABOUR",
+          "description": "Carriage of materials",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        }
+      ],
+      "calculations": {
+        "total_w": 668.42,
+        "total_x": 675.1,
+        "total_y": 818.69,
+        "total_z": 941.49
+      },
+      "say_rate": 95.1,
+      "page": 896
+    },
+    {
+      "item_code": "21.16",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing aluminium round shape handle of outer dia 100 mm with SS screws etc. complete as per direction of Engineer-in-charge",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 896
+    },
+    {
+      "item_code": "21.16.1",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing aluminium round shape handle of outer dia 100 mm with SS screws etc. - Anodized (AC 15 ) aluminium Detail of cost for 10 nos.",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "8663",
+          "category": "MATERIAL",
+          "description": "Aluminium round shape handle (anodised AC 15) outer dia 100mm",
+          "unit": "each",
+          "quantity": 10.0,
+          "rate": 68.0,
+          "amount": 680.0
+        },
+        {
+          "resource_code": "8666",
+          "category": "MATERIAL",
+          "description": "Stainless steel screws 25 mm x4 mm",
+          "unit": "100 Nos",
+          "quantity": 0.4,
+          "rate": 46.0,
+          "amount": 18.4
+        },
+        {
+          "resource_code": "0111",
+          "category": "LABOUR",
+          "description": "Carpenter 1st class",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 897.0,
+          "amount": 53.82
+        },
+        {
+          "resource_code": "9977",
+          "category": "LABOUR",
+          "description": "Carriage of materials",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        }
+      ],
+      "calculations": {
+        "total_w": 758.42,
+        "total_x": 766.0,
+        "total_y": 928.93,
+        "total_z": 1068.27
+      },
+      "say_rate": 107.9,
+      "page": 896
+    },
+    {
+      "item_code": "21.16.2",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing aluminium round shape handle of outer dia 100 mm with SS screws etc. - Powder coated minimum thickness 50 micron aluminium Detail of cost for 10 nos.",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "8664",
+          "category": "MATERIAL",
+          "description": "Aluminium round shape handle (powder coated) outer dia 100 mm",
+          "unit": "each",
+          "quantity": 10.0,
+          "rate": 69.0,
+          "amount": 690.0
+        },
+        {
+          "resource_code": "8666",
+          "category": "MATERIAL",
+          "description": "Stainless steel screws 25 mm x4 mm",
+          "unit": "100 Nos",
+          "quantity": 0.4,
+          "rate": 46.0,
+          "amount": 18.4
+        },
+        {
+          "resource_code": "0111",
+          "category": "LABOUR",
+          "description": "Carpenter 1st class",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 897.0,
+          "amount": 53.82
+        },
+        {
+          "resource_code": "9977",
+          "category": "LABOUR",
+          "description": "Carriage of materials",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        }
+      ],
+      "calculations": {
+        "total_w": 768.42,
+        "total_x": 776.1,
+        "total_y": 941.18,
+        "total_z": 1082.36
+      },
+      "say_rate": 109.3,
+      "page": 897
+    },
+    {
+      "item_code": "21.16.3",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing aluminium round shape handle of outer dia 100 mm with SS screws etc. - Polyester powder coated minimum thickness 50 micron aluminium Detail of cost for 10 nos.",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "8665",
+          "category": "MATERIAL",
+          "description": "Aluminium round shape handle (polyester pow- der coated) outer dia 100 mm",
+          "unit": "each",
+          "quantity": 10.0,
+          "rate": 71.0,
+          "amount": 710.0
+        },
+        {
+          "resource_code": "8666",
+          "category": "MATERIAL",
+          "description": "Stainless steel screws 25 mm x4 mm",
+          "unit": "100 Nos",
+          "quantity": 0.4,
+          "rate": 46.0,
+          "amount": 18.4
+        },
+        {
+          "resource_code": "0111",
+          "category": "LABOUR",
+          "description": "Carpenter 1st class",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 897.0,
+          "amount": 53.82
+        },
+        {
+          "resource_code": "9977",
+          "category": "LABOUR",
+          "description": "Carriage of materials",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        }
+      ],
+      "calculations": {
+        "total_w": 788.42,
+        "total_x": 796.3,
+        "total_y": 965.67,
+        "total_z": 1110.52
+      },
+      "say_rate": 112.15,
+      "page": 897
+    },
+    {
+      "item_code": "21.17",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing anodised aluminium grill (anodised transparent or dyed to required shade according to IS: 1868 with minimum anodic coating of grade AC 15) of approved design/ pattern, with approved standard section and fixed to the existing window frame with C.P. brass/ stainless steel screws @ 200 mm centre to centre, including cutting the grill to proper opening size for fixing and operation of handles and fixing approved anodised aluminium standard section around the opening, all complete as per requirement and direction of Engineer-in- charge. (Only weight of grill to be measured for payment).",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "kg"
+      },
+      "breakup": [
+        {
+          "resource_code": "8774",
+          "category": "MATERIAL",
+          "description": "Aluminium Grill",
+          "unit": "kg",
+          "quantity": 12.0,
+          "rate": 294.0,
+          "amount": 3528.0
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of materials",
+          "unit": "L.S.",
+          "quantity": 11.0,
+          "rate": 2.27,
+          "amount": 24.97
+        },
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 897.0,
+          "amount": 448.5
+        },
+        {
+          "resource_code": "0139",
+          "category": "LABOUR",
+          "description": "Skilled Beldar (for floor rubbing etc.)",
+          "unit": "day",
+          "quantity": 0.25,
+          "rate": 816.0,
+          "amount": 204.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.25,
+          "rate": 736.0,
+          "amount": 184.0
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.05,
+          "rate": 816.0,
+          "amount": 40.8
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 25.0,
+          "rate": 2.27,
+          "amount": 56.75
+        }
+      ],
+      "calculations": {
+        "total_w": 4487.02,
+        "total_x": 4531.89,
+        "total_y": 5495.82,
+        "total_z": 6320.19
+      },
+      "say_rate": 638.35,
+      "page": 898
+    },
+    {
+      "item_code": "21.18",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing 12 mm thick frameless toughened glass door shutter of approved brand and manufacture, including providing and fixing top & bottom pivot & double acting hydraulic floor spring type fixing arrangement and making necessary holes etc. for fixing required door fittings, all complete as per direction of Engineer-in-charge (Door handle, lock and stopper etc.to be paid separately).",
+      "cost_basis": {
+        "quantity": 2.1,
+        "unit": "sqm"
+      },
+      "breakup": [
+        {
+          "resource_code": "8778",
+          "category": "MATERIAL",
+          "description": "Toughened glass 12 mm thickness",
+          "unit": "sqm",
+          "quantity": 2.31,
+          "rate": 1925.0,
+          "amount": 4446.75
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of glass panes and other materials",
+          "unit": "L.S.",
+          "quantity": 8.19,
+          "rate": 2.27,
+          "amount": 18.59
+        }
+      ],
+      "calculations": {},
+      "say_rate": null,
+      "page": 898
+    },
+    {
+      "item_code": "21.4.1",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Providing and fixing 12 mm thick frameless toughened glass door shutter of approved brand - Rate as per Item No.21.4.1 of SH:Aluminium Work each 1.00 2823.85 2823.85 A",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0119",
+          "category": "LABOUR",
+          "description": "Glazier",
+          "unit": "day",
+          "quantity": 0.9,
+          "rate": 816.0,
+          "amount": 734.4
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.9,
+          "rate": 736.0,
+          "amount": 662.4
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries,sush rog cotton etc.",
+          "unit": "L.S.",
+          "quantity": 1.13,
+          "rate": 2.27,
+          "amount": 2.57
+        }
+      ],
+      "calculations": {
+        "total_w": 8700.66,
+        "total_x": 8759.43,
+        "total_y": 10021.93,
+        "total_z": 11101.64
+      },
+      "say_rate": 5325.9,
+      "page": 899
+    },
+    {
+      "item_code": "21.19",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Filling the gap in between aluminium/ stone/ wood frame and adjacent RCC/Brick/ Stone/ wood/ Ceramic/ Gypsum work by providing weather/structural non sag elastomeric PU sealant over backer rod of approved quality as per architectural drawings and direction of Engineer- in-charge complete, complying to ASTM C920, DIN 18540-F & ISO 11600",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 899
+    },
+    {
+      "item_code": "21.19.1",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Filling the gap in between aluminium/ stone/ wood frame and adjacent RCC/Brick/ Stone/ - Upto 5 mm depth and 5 mm width depth 5mm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "2604",
+          "category": "MATERIAL",
+          "description": "Weather/structural non sag elastomeric PU sealant (600ml Sausage) for joints in RCC/ Brick/ Stone/ wood/ Ceramic/ Gypsum/Allumini- um work complying to ASTM C920, DIN 18540- F & ISO 11600 incl all taxes",
+          "unit": "each",
+          "quantity": 1.0,
+          "rate": 564.0,
+          "amount": 564.0
+        },
+        {
+          "resource_code": "8654",
+          "category": "MATERIAL",
+          "description": "Masking tape",
+          "unit": "metre",
+          "quantity": 20.0,
+          "rate": 2.0,
+          "amount": 40.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries, including charges of Sealant gun machine, dhoti etc",
+          "unit": "L.S.",
+          "quantity": 26.0,
+          "rate": 2.27,
+          "amount": 59.02
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of material",
+          "unit": "L.S.",
+          "quantity": 8.4,
+          "rate": 2.27,
+          "amount": 19.07
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.4,
+          "rate": 897.0,
+          "amount": 358.8
+        }
+      ],
+      "calculations": {
+        "total_w": 1040.89,
+        "total_x": 1051.3,
+        "total_y": 1274.91,
+        "total_z": 1466.15
+      },
+      "say_rate": 148.1,
+      "page": 899
+    },
+    {
+      "item_code": "21.19.2",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Filling the gap in between aluminium/ stone/ wood frame and adjacent RCC/Brick/ Stone/ - Upto 10 mm depth and 10 mm width depth 10mm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "2604",
+          "category": "MATERIAL",
+          "description": "Weather/structural non sag elastomeric PU sealant (600ml Sausage) for joints in RCC/ Brick/ Stone/ wood/ Ceramic/ Gypsum/Allumini- um work complying to ASTM C920, DIN 18540- F & ISO 11600 incl all taxes",
+          "unit": "each",
+          "quantity": 1.5,
+          "rate": 564.0,
+          "amount": 846.0
+        },
+        {
+          "resource_code": "8654",
+          "category": "MATERIAL",
+          "description": "Masking tape",
+          "unit": "metre",
+          "quantity": 20.0,
+          "rate": 2.0,
+          "amount": 40.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries, including charges of Sealant gun machine, dhoti etc",
+          "unit": "L.S.",
+          "quantity": 26.0,
+          "rate": 2.27,
+          "amount": 59.02
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of material",
+          "unit": "L.S.",
+          "quantity": 8.4,
+          "rate": 2.27,
+          "amount": 19.07
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 897.0,
+          "amount": 448.5
+        }
+      ],
+      "calculations": {
+        "total_w": 1412.59,
+        "total_x": 1426.72,
+        "total_y": 1730.18,
+        "total_z": 1989.71
+      },
+      "say_rate": 200.95,
+      "page": 900
+    },
+    {
+      "item_code": "21.19.3",
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "description": "Filling the gap in between aluminium/ stone/ wood frame and adjacent RCC/Brick/ Stone/ - Upto 20 mm depth and 20 mm width depth 20mm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "2604",
+          "category": "MATERIAL",
+          "description": "Weather/structural non sag elastomeric PU sealant (600ml Sausage) for joints in RCC/ Brick/ Stone/ wood/ Ceramic/ Gypsum/Allumini- um work complying to ASTM C920, DIN 18540- F & ISO 11600 incl all taxes",
+          "unit": "each",
+          "quantity": 3.0,
+          "rate": 564.0,
+          "amount": 1692.0
+        },
+        {
+          "resource_code": "8654",
+          "category": "MATERIAL",
+          "description": "Masking tape",
+          "unit": "metre",
+          "quantity": 20.0,
+          "rate": 2.0,
+          "amount": 40.0
+        },
+        {
+          "resource_code": "2630",
+          "category": "MATERIAL",
+          "description": "Baker rod",
+          "unit": "metre",
+          "quantity": 10.0,
+          "rate": 7.0,
+          "amount": 70.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries, including charges of Sealant gun machine, dhoti etc",
+          "unit": "L.S.",
+          "quantity": 26.0,
+          "rate": 2.27,
+          "amount": 59.02
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of material",
+          "unit": "L.S.",
+          "quantity": 8.4,
+          "rate": 2.27,
+          "amount": 19.07
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.75,
+          "rate": 897.0,
+          "amount": 672.75
+        }
+      ],
+      "calculations": {
+        "total_w": 2552.84,
+        "total_x": 2578.37,
+        "total_y": 3126.79,
+        "total_z": 3595.81
+      },
+      "say_rate": 363.2,
+      "page": 900
+    }
+  ]
+}

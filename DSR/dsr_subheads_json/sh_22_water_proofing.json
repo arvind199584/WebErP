@@ -1,0 +1,2156 @@
+{
+  "sub_head_no": 22,
+  "sub_head_name": "Water Proofing",
+  "volume": 2,
+  "page_range": [
+    902,
+    922
+  ],
+  "total_items": 38,
+  "analyzed_items_with_breakup": 29,
+  "items": [
+    {
+      "item_code": "22.1",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Providing and laying integral cement based treatment for water proofing on horizontal surface at all depth below ground level for under ground structures as directed by Engineer-in-Charge and consisting of : (i) Ist layer of 22 mm to 25 mm thick approved and specified rough stone slab over a 25 mm thick base of cement mortar 1:3 (1 cement : 3 coarse sand) including applying of twice ( at base and top of mortar ) cement slurry @ 2.2kg/m2 (each time) mixed with water proofing compound conforming to IS:2645 in the recommended proportion over the leveling course (leveling course to be paid separately). Joints sealed and grouted with cement slurry mixed with water proofing compound. (ii) 2nd layer of 25 mm thick cement mortar 1:3 (1 cement: 3 coarse sand) mixed with water proofing compound in recommended proportions. (iii) Finishing top with stone aggregate of 10 mm to 12 mm nominal size spreading @ 8 cudm/ sqm thoroughly embedded in the 2nd layer.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 904
+    },
+    {
+      "item_code": "22.1.1",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Providing and laying integral cement based treatment for water proofing on horizontal surface - Using rough kota stone.",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "sqm"
+      },
+      "breakup": [
+        {
+          "resource_code": "1213",
+          "category": "MATERIAL",
+          "description": "Water proofing materials@0.10 kg per 50 kg of cement used",
+          "unit": "kilogram",
+          "quantity": 0.67,
+          "rate": 45.0,
+          "amount": 30.15
+        },
+        {
+          "resource_code": "0296",
+          "category": "MATERIAL",
+          "description": "Stone Aggregate (Single size) : 12.5 mm nomi- nal size",
+          "unit": "cum",
+          "quantity": 0.08,
+          "rate": 1400.0,
+          "amount": 112.0
+        },
+        {
+          "resource_code": "0125",
+          "category": "MATERIAL",
+          "description": "Mason (for plain stone work) 2nd class",
+          "unit": "day",
+          "quantity": 1.2,
+          "rate": 816.0,
+          "amount": 979.2
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "MATERIAL",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class",
+          "unit": "day",
+          "quantity": 1.08,
+          "rate": 816.0,
+          "amount": 881.28
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.08,
+          "rate": 736.0,
+          "amount": 794.88
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.45,
+          "rate": 816.0,
+          "amount": 367.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 6.24,
+          "rate": 2.27,
+          "amount": 14.16
+        }
+      ],
+      "calculations": {
+        "total_w": 10653.45,
+        "total_x": 10759.98,
+        "total_y": 13048.63,
+        "total_z": 15005.92
+      },
+      "say_rate": 1515.6,
+      "page": 904
+    },
+    {
+      "item_code": "22.2",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Providing and laying integral cement based treatment for water proofing on the vertical surface by fixing specified stone slab 22 mm to 25 mm thick with cement slurry mixed with water proofing compound conforming to IS:2645 in recommended proportions with a gap of 20 mm (minimum) between stone slabs and the receiving surfaces and filling the gaps with neat cement slurry mixed with water proofing compound and finishing the exterior of stone slab with cement mortar 1:3 (1 cement : 3 coarse sand) 20 mm thick with neat cement punning mixed with water proofing compound in recommended proportion complete at all levels and as directed by Engineer-in-charge :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 905
+    },
+    {
+      "item_code": "22.2.1",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Providing and laying integral cement based treatment for water proofing on the vertical - Using rough Kota stone",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "sqm"
+      },
+      "breakup": [
+        {
+          "resource_code": "0367",
+          "category": "MATERIAL",
+          "description": "Portland Cement (OPC-43 grade) tonne 0.301 5156.00 1551.96 Cement plaster 1:3 with neat cement punning 13.9.2 Rate as per item no 13.9.2 of SH : Finishing",
+          "unit": "sqm",
+          "quantity": 10.0,
+          "rate": 587.2,
+          "amount": 5872.0
+        },
+        {
+          "resource_code": "1213",
+          "category": "MATERIAL",
+          "description": "Water proofing materials@0.10 kg per 50 kg of cement used",
+          "unit": "kilogram",
+          "quantity": 0.87,
+          "rate": 45.0,
+          "amount": 39.15
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class",
+          "unit": "day",
+          "quantity": 3.0,
+          "rate": 816.0,
+          "amount": 2448.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 3.0,
+          "rate": 736.0,
+          "amount": 2208.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries and scaffolding",
+          "unit": "L.S.",
+          "quantity": 18.2,
+          "rate": 2.27,
+          "amount": 41.31
+        }
+      ],
+      "calculations": {
+        "total_w": 15976.42,
+        "total_x": 16077.46,
+        "total_y": 18248.16,
+        "total_z": 20104.58
+      },
+      "say_rate": 2024.7,
+      "page": 905
+    },
+    {
+      "item_code": "22.3",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Providing and laying water proofing treatment to vertical and horizontal surfaces of depressed portions of W.C., kitchen and the like consisting of: (i) Ist course of applying cement slurry @ 4.4 kg/sqm mixed with water proofing compound conforming to IS 2645 in recommended proportions including rounding off junction of vertical and horizontal surface. (ii) IInd course of 20 mm cement plaster 1:3 (1 cement : 3 coarse sand) mixed with water proofing compound in recommended proportion including rounding off junction of vertical and horizontal surface. (iii) IIIrd course of applying blown or residual bitumen applied hot at 1.7 kg. per sqm of area. (iv) IVth course of 400 micron thick PVC sheet. (Overlaps at joints of PVC sheet should be 100 mm wide and pasted to each other with bitumen @ 1.7 kg/sqm).",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "sqm"
+      },
+      "breakup": [
+        {
+          "resource_code": "0367",
+          "category": "MATERIAL",
+          "description": "Portland Cement (OPC-43 grade) tonne 0.044 5156.00 226.86 3.8 Rate as per Item No.3.8 of SH: MORTARS",
+          "unit": "cum",
+          "quantity": 0.224,
+          "rate": 4881.95,
+          "amount": 1093.56
+        },
+        {
+          "resource_code": "0155",
+          "category": "LABOUR",
+          "description": "Mason (average)",
+          "unit": "day",
+          "quantity": 0.94,
+          "rate": 857.0,
+          "amount": 805.58
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.02,
+          "rate": 736.0,
+          "amount": 750.72
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 1.1,
+          "rate": 816.0,
+          "amount": 897.6
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Scafolding and sundries",
+          "unit": "L.S.",
+          "quantity": 12.61,
+          "rate": 2.27,
+          "amount": 28.62
+        },
+        {
+          "resource_code": "3002",
+          "category": "LABOUR",
+          "description": "Polyvinyle chloride sheet 400 micron thick i/c 5% for overlaps",
+          "unit": "sqm",
+          "quantity": 10.5,
+          "rate": 47.0,
+          "amount": 493.5
+        },
+        {
+          "resource_code": "9977",
+          "category": "LABOUR",
+          "description": "CARRIAGE",
+          "unit": "L.S.",
+          "quantity": 13.0,
+          "rate": 2.27,
+          "amount": 29.51
+        },
+        {
+          "resource_code": "0131",
+          "category": "LABOUR",
+          "description": "Painter",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 816.0,
+          "amount": 163.2
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 736.0,
+          "amount": 147.2
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 897.0,
+          "amount": 53.82
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 7.28,
+          "rate": 2.27,
+          "amount": 16.53
+        }
+      ],
+      "calculations": {
+        "total_w": 5409.6,
+        "total_x": 5463.7,
+        "total_y": 6625.83,
+        "total_z": 7619.7
+      },
+      "say_rate": 769.6,
+      "page": 906
+    },
+    {
+      "item_code": "22.4",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Providing and Placing in position suitable PVC water stops conforming to IS:12200 for construction/ expansion joints between two RCC members and fixed to the reinforcement with binding wire before pouring concrete etc. complete :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 907
+    },
+    {
+      "item_code": "22.4.1",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Providing and Placing in position suitable PVC water stops conforming to IS:12200 for - Serrated with central bulb (225 mm wide, 8-11 mm thick)",
+      "cost_basis": {
+        "quantity": 100.0,
+        "unit": "metres"
+      },
+      "breakup": [
+        {
+          "resource_code": "7427",
+          "category": "MATERIAL",
+          "description": "Water stops Serrated with central bulb (225 mm wide, 8-11 mm thick)",
+          "unit": "metre",
+          "quantity": 100.0,
+          "rate": 215.0,
+          "amount": 21500.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 736.0,
+          "amount": 1472.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries & wire etc.",
+          "unit": "L.S.",
+          "quantity": 26.0,
+          "rate": 2.27,
+          "amount": 59.02
+        }
+      ],
+      "calculations": {
+        "total_w": 23031.02,
+        "total_x": 23261.33,
+        "total_y": 28209.01,
+        "total_z": 32440.36
+      },
+      "say_rate": 327.65,
+      "page": 907
+    },
+    {
+      "item_code": "22.4.2",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Providing and Placing in position suitable PVC water stops conforming to IS:12200 for - Dumb bell with central bulb (180 mm wide, 8 mm thick)",
+      "cost_basis": {
+        "quantity": 100.0,
+        "unit": "metres"
+      },
+      "breakup": [
+        {
+          "resource_code": "7428",
+          "category": "MATERIAL",
+          "description": "Water stops Dumb bell with central bulb",
+          "unit": "metre",
+          "quantity": 100.0,
+          "rate": 173.0,
+          "amount": 17300.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 736.0,
+          "amount": 1472.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries & wire etc.",
+          "unit": "L.S.",
+          "quantity": 26.0,
+          "rate": 2.27,
+          "amount": 59.02
+        }
+      ],
+      "calculations": {
+        "total_w": 18831.02,
+        "total_x": 19019.33,
+        "total_y": 23064.74,
+        "total_z": 26524.45
+      },
+      "say_rate": 267.9,
+      "page": 907
+    },
+    {
+      "item_code": "22.4.3",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Providing and Placing in position suitable PVC water stops conforming to IS:12200 for - Kickers (320 mm wide, 5 mm thick)",
+      "cost_basis": {
+        "quantity": 100.0,
+        "unit": "metres"
+      },
+      "breakup": [
+        {
+          "resource_code": "7429",
+          "category": "MATERIAL",
+          "description": "Kickers",
+          "unit": "metre",
+          "quantity": 100.0,
+          "rate": 170.0,
+          "amount": 17000.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 736.0,
+          "amount": 1472.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries & wire etc.",
+          "unit": "L.S.",
+          "quantity": 26.0,
+          "rate": 2.27,
+          "amount": 59.02
+        }
+      ],
+      "calculations": {
+        "total_w": 18531.02,
+        "total_x": 18716.33,
+        "total_y": 22697.29,
+        "total_z": 26101.88
+      },
+      "say_rate": 263.65,
+      "page": 908
+    },
+    {
+      "item_code": "22.5",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Providing and laying water proofing treatment in sunken portion of WCs, bathroom etc., by applying cement slurry mixed with water proofing cement compound consisting of applying : (a) First layer of slurry of cement @ 0.488 kg/sqm mixed with water proofing cement compound @ 0.253 kg/ sqm. This layer will be allowed to air cure for 4 hours. (b) Second layer of slurry of cement @ 0.242 kg/sqm mixed with water proofing cement compound @ 0.126 kg/sqm. This layer will be allowed to air cure for 4 hours followed with water curing for 48 hours. The rate includes preparation of surface, treatment and sealing of all joints, corners, junctions of pipes and masonry with polymer mixed slurry.",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "sqm"
+      },
+      "breakup": [
+        {
+          "resource_code": "8501",
+          "category": "MATERIAL",
+          "description": "Polymer modified cementation coating",
+          "unit": "kilogram",
+          "quantity": 5.0,
+          "rate": 170.0,
+          "amount": 850.0
+        },
+        {
+          "resource_code": "0155",
+          "category": "LABOUR",
+          "description": "Mason (average)",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 857.0,
+          "amount": 1714.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 736.0,
+          "amount": 1472.0
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.25,
+          "rate": 816.0,
+          "amount": 204.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries, brushes etc",
+          "unit": "L.S.",
+          "quantity": 15.6,
+          "rate": 2.27,
+          "amount": 35.41
+        }
+      ],
+      "calculations": {
+        "total_w": 4337.28,
+        "total_x": 4380.65,
+        "total_y": 5312.41,
+        "total_z": 6109.27
+      },
+      "say_rate": 617.05,
+      "page": 908
+    },
+    {
+      "item_code": "22.6",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Providing and laying water proofing treatment on roofs of slabs by applying cement slurry mixed with water proofing cement compound consisting of applying: (a) after surface preparation, first layer of slurry of cement @ 0.488 kg/sqm mixed with water proofing cement compound @ 0.253 kg/sqm. (b) laying second layer of Fibre glass cloth when the first layer is still green. Overlaps of joints of fibre cloth should not be less than 10 cm. (c) third layer of 1.5 mm thickness consisting of slurry of cement @ 1.289 kg/sqm mixed with water proofing cement compound @ 0.670 kg/sqm and coarse sand @ 1.289 kg/sqm. This will be allowed to air cure for 4 hours followed by water curing for 48 hours. The entire treatment will be taken upto 30 cm on parapet wall and tucked into groove in parapet all around. (d) fourth and final layer of brick tiling with cement mortar (which will be paid for separately. For the purpose of measurement the entire treated surface will be measured.",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "sqm"
+      },
+      "breakup": [
+        {
+          "resource_code": "8502",
+          "category": "MATERIAL",
+          "description": "Fibre glass cloth",
+          "unit": "sqm",
+          "quantity": 11.0,
+          "rate": 35.0,
+          "amount": 385.0
+        },
+        {
+          "resource_code": "0155",
+          "category": "LABOUR",
+          "description": "Mason (average)",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 857.0,
+          "amount": 1714.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.25,
+          "rate": 816.0,
+          "amount": 204.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries, brushes etc",
+          "unit": "L.S.",
+          "quantity": 23.4,
+          "rate": 2.27,
+          "amount": 53.12
+        }
+      ],
+      "calculations": {
+        "total_w": 4842.54,
+        "total_x": 4890.97,
+        "total_y": 5931.28,
+        "total_z": 6820.97
+      },
+      "say_rate": 688.9,
+      "page": 909
+    },
+    {
+      "item_code": "22.7",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Providing and laying integral cement based water proofing treatment including preparation of surface as required for treatment of roofs, balconies, terraces etc consisting of following operations: (a) Applying a slurry coat of neat cement using 2.75 kg/sqm of cement admixed with water proofing compound conforming to IS. 2645 and approved by Engineer-in-charge over the RCC slab including adjoining walls upto 300 mm height including cleaning the surface before treatment. (b) Laying brick bats with mortar using broken bricks/brick bats 25 mm to 115 mm size with 50% of cement mortar 1:5 (1 cement : 5 coarse sand) admixed with water proofing compound conforming to IS : 2645 and approved by Engineer-in-charge over 20 mm thick layer of cement mortar of mix 1:5 (1 cement :5 coarse sand ) admixed with water proofing compound conforming to IS : 2645 and approved by Engineer-in-charge to required slope and treating similarly the adjoining walls upto 300 mm height including rounding of junctions of walls and slabs. (c) After two days of proper curing applying a second coat of cement slurry using 2.75 kg/ sqm of cement admixed with water proofing compound conforming to IS : 2645 and approved by Engineer-in-charge. (d) Finishing the surface with 20 mm thick jointless cement mortar of mix 1:4 (1 cement :4 coarse sand) admixed with water proofing compound conforming to IS : 2645 and approved by Engineer-in-charge including laying glass fibre cloth of approved quality in top layer of plaster and finally finishing the surface with trowel with neat cement slurry and making pattern of 300x300 mm square 3 mm deep. (e) The whole terrace so finished shall be flooded with water for a minimum period of two weeks for curing and for final test.“All above operations to be done in order and as directed and specified by the Engineer-in-Charge :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 910
+    },
+    {
+      "item_code": "22.7.1",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Providing and laying integral cement based water proofing treatment including preparation - With average thickness of 120 mm and minimum thickness at khurra as 65 mm. Detail of cost for 100 sqm i) Cement slury",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0367",
+          "category": "MATERIAL",
+          "description": "Portland Cement (OPC-43 grade) tonne 0.275 5156.00 1417.90 ii) Cement mortar 1:5 (1 cement: 5 coarsesand) 3.10 Rate as per Item No.3.10 of SH:Mortars",
+          "unit": "cum",
+          "quantity": 2.24,
+          "rate": 3850.75,
+          "amount": 8625.68
+        },
+        {
+          "resource_code": "0285",
+          "category": "MATERIAL",
+          "description": "Brick Aggregate (Single size) : 63 mm cum 9.400 700.00 6580.00 3.10 Rate as per Item No.3.10 of SH:Mortars",
+          "unit": "cum",
+          "quantity": 5.0,
+          "rate": 3850.75,
+          "amount": 19253.75
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 17.5,
+          "rate": 736.0,
+          "amount": 12880.0
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 2.8,
+          "rate": 816.0,
+          "amount": 2284.8
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 897.0,
+          "amount": 448.5
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 816.0,
+          "amount": 408.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.5,
+          "rate": 736.0,
+          "amount": 1840.0
+        },
+        {
+          "resource_code": "0367",
+          "category": "LABOUR",
+          "description": "Portland Cement (OPC-43 grade)",
+          "unit": "tonne",
+          "quantity": 0.275,
+          "rate": 5156.0,
+          "amount": 1417.9
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar day 2.000 736.00 1472.00 v) 20 mm cement plaster 1:4 (1 cement : 4 coarse sand) 13.6.1 Rate as per item no 13.6.1 of SH : Finishing",
+          "unit": "sqm",
+          "quantity": 100.0,
+          "rate": 487.4,
+          "amount": 48740.0
+        },
+        {
+          "resource_code": "7233",
+          "category": "LABOUR",
+          "description": "Fibre glass tissue reinforcement Type II Grade I",
+          "unit": "sqm",
+          "quantity": 105.0,
+          "rate": 82.0,
+          "amount": 8610.0
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 3.6,
+          "rate": 816.0,
+          "amount": 2937.6
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 3.6,
+          "rate": 736.0,
+          "amount": 2649.6
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 5.4,
+          "rate": 816.0,
+          "amount": 4406.4
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 5.4,
+          "rate": 736.0,
+          "amount": 3974.4
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 4.5,
+          "rate": 816.0,
+          "amount": 3672.0
+        }
+      ],
+      "calculations": {
+        "total_w": 132893.15,
+        "total_x": 133734.68,
+        "total_y": 151813.05,
+        "total_z": 167274.01
+      },
+      "say_rate": 1684.6,
+      "page": 910
+    },
+    {
+      "item_code": "22.8",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Providing and laying four courses water proofing treatment with bitumen felt over roofs consisting of first and third courses of blown bitumen 85/25 or 90/15 conforming to IS : 702 applied hot @ 1.45 Kg per square metre of area for each course, second course of roofing felt type 3 grade-I (hessian based self finished bitumen felt) and fourth and final course of stone grit 6 mm and down size or pea sized gravel spread at 6 cubic decimeter per square metre, including preparation of surface but excluding grading complete with :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 911
+    },
+    {
+      "item_code": "22.8.1",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Providing and laying four courses water proofing treatment with bitumen felt over roofs - Bitumen felt (hessian base) type 3 grade I conforming to IS : 1322 Detail of cost for 30 sqm Blown or / and residual bitumen applied hot = 2x1.45x30 = 87 kg",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0313",
+          "category": "MATERIAL",
+          "description": "Blown type petroleum bitumen of penetration 85/25 of approved quality",
+          "unit": "tonne",
+          "quantity": 0.087,
+          "rate": 38250.0,
+          "amount": 3327.75
+        },
+        {
+          "resource_code": "0322",
+          "category": "MATERIAL",
+          "description": "Bitumen felt :Type 3 grade 1",
+          "unit": "sqm",
+          "quantity": 33.0,
+          "rate": 80.0,
+          "amount": 2640.0
+        },
+        {
+          "resource_code": "1177",
+          "category": "MATERIAL",
+          "description": "Stone grit 6 mm and down size or pea sized gravel",
+          "unit": "cum",
+          "quantity": 0.18,
+          "rate": 985.0,
+          "amount": 177.3
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Praparing roof surface, sutting groove and mak- ing good etc.",
+          "unit": "L.S.",
+          "quantity": 134.55,
+          "rate": 2.27,
+          "amount": 305.43
+        },
+        {
+          "resource_code": "0131",
+          "category": "LABOUR",
+          "description": "Painter",
+          "unit": "day",
+          "quantity": 2.16,
+          "rate": 816.0,
+          "amount": 1762.56
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 3.24,
+          "rate": 736.0,
+          "amount": 2384.64
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.18,
+          "rate": 897.0,
+          "amount": 161.46
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries, brushes etc.",
+          "unit": "L.S.",
+          "quantity": 6.76,
+          "rate": 2.27,
+          "amount": 15.35
+        }
+      ],
+      "calculations": {
+        "total_w": 10861.49,
+        "total_x": 10970.1,
+        "total_y": 13303.44,
+        "total_z": 15298.96
+      },
+      "say_rate": 515.05,
+      "page": 911
+    },
+    {
+      "item_code": "22.9",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Providing and laying six courses water proofing treatment with bitumen felt over roofs consisting of first, third and fifth course of blown bitumen 85/25 or 90/15 conforming to IS : 702 applied hot @ 1.45, 1.20 and 1.45 Kg per square metre of area respectively, second and fourth courses of roofing felt type 3 grade I conforming to IS : 1322 (Hessian based self finished bitumen felt) , sixth and final course of stone grit 6 mm and down size or pea sized gravel spread at 6 cubic decimeter per sqm including preparation of surface but excluding grading, complete. Detail of cost for 30 sqm Blown or / and residual bitumen applied hot (1.45+1.20+1.45)x30=123kg",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0313",
+          "category": "MATERIAL",
+          "description": "Blown type petroleum bitumen of penetration 85/25 of approved quality",
+          "unit": "tonne",
+          "quantity": 0.123,
+          "rate": 38250.0,
+          "amount": 4704.75
+        },
+        {
+          "resource_code": "0322",
+          "category": "MATERIAL",
+          "description": "Bitumen felt :Type 3 grade 1",
+          "unit": "sqm",
+          "quantity": 66.0,
+          "rate": 80.0,
+          "amount": 5280.0
+        },
+        {
+          "resource_code": "1177",
+          "category": "MATERIAL",
+          "description": "Stone grit 6 mm and down size or pea sized gravel",
+          "unit": "cum",
+          "quantity": 0.18,
+          "rate": 985.0,
+          "amount": 177.3
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Praparing roof surface, sutting groove and mak- ing good etc.",
+          "unit": "L.S.",
+          "quantity": 134.55,
+          "rate": 2.27,
+          "amount": 305.43
+        },
+        {
+          "resource_code": "0131",
+          "category": "LABOUR",
+          "description": "Painter",
+          "unit": "day",
+          "quantity": 3.24,
+          "rate": 816.0,
+          "amount": 2643.84
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 4.86,
+          "rate": 736.0,
+          "amount": 3576.96
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 897.0,
+          "amount": 179.4
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries, brushes etc.",
+          "unit": "L.S.",
+          "quantity": 6.76,
+          "rate": 2.27,
+          "amount": 15.35
+        }
+      ],
+      "calculations": {
+        "total_w": 17006.03,
+        "total_x": 17176.09,
+        "total_y": 20829.44,
+        "total_z": 23953.86
+      },
+      "say_rate": 806.45,
+      "page": 912
+    },
+    {
+      "item_code": "22.10",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Providing and laying six courses water proofing treatment with bitumen felt over roofs consisting of first, third and fifth courses of blown or / and residual bitumen applied hot at 1.45, 1.20 and 1.70 kg per square metre of area respectively, second and fourth courses of roofing felt type 2 grade I (fibre base self finished bitumen felt) six and final courses of stone grit 6 mm and down size or pea sized gravel spread at 6 cubic decimeter per sqm including preparation of surface, excluding grading, compete.",
+      "cost_basis": {
+        "quantity": 30.0,
+        "unit": "sqm"
+      },
+      "breakup": [
+        {
+          "resource_code": "0313",
+          "category": "MATERIAL",
+          "description": "Blown type petroleum bitumen of penetration 85/25 of approved quality",
+          "unit": "tonne",
+          "quantity": 0.131,
+          "rate": 38250.0,
+          "amount": 5010.75
+        },
+        {
+          "resource_code": "0318",
+          "category": "MATERIAL",
+          "description": "Bitumen felt fibre base (vegetable or animal):- Type 2 grade 1",
+          "unit": "sqm",
+          "quantity": 66.0,
+          "rate": 75.0,
+          "amount": 4950.0
+        },
+        {
+          "resource_code": "1177",
+          "category": "MATERIAL",
+          "description": "Stone grit 6 mm and down size or pea sized gravel",
+          "unit": "cum",
+          "quantity": 0.18,
+          "rate": 985.0,
+          "amount": 177.3
+        },
+        {
+          "resource_code": "0370",
+          "category": "MATERIAL",
+          "description": "Coal (steam)",
+          "unit": "quintal",
+          "quantity": 0.262,
+          "rate": 500.0,
+          "amount": 131.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Praparing roof surface, sutting groove and mak- ing good etc.",
+          "unit": "L.S.",
+          "quantity": 134.55,
+          "rate": 2.27,
+          "amount": 305.43
+        },
+        {
+          "resource_code": "0131",
+          "category": "LABOUR",
+          "description": "Painter",
+          "unit": "day",
+          "quantity": 4.32,
+          "rate": 816.0,
+          "amount": 3525.12
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 6.48,
+          "rate": 736.0,
+          "amount": 4769.28
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.36,
+          "rate": 897.0,
+          "amount": 322.92
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries, brushes etc.",
+          "unit": "L.S.",
+          "quantity": 6.76,
+          "rate": 2.27,
+          "amount": 15.35
+        }
+      ],
+      "calculations": {
+        "total_w": 19207.15,
+        "total_x": 19399.22,
+        "total_y": 23525.43,
+        "total_z": 27054.24
+      },
+      "say_rate": 910.85,
+      "page": 913
+    },
+    {
+      "item_code": "22.11",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Providing and laying six courses water proofing treatment with bitumen felt over roofs consisting of first, third and fifth courses of blown or / and residual bitumen applied hot at 1.45, 1.20 and 1.70 kg per square metre of area respectively, second and fourth courses of roofing felt type 2 grade II (glass fibre base self finished bitumen felt) and sixth and final course of stone grit 6 mm and down size or pea sized gravel spread at 6 cubic decimeter per sqm including preparation of surface but excluding grading, complete. Detail of cost for 30 sqm Blown or / and residual bitumen applied hot (1.45+1.20+1.70)x30 =131 kg.",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0313",
+          "category": "MATERIAL",
+          "description": "Blown type petroleum bitumen of penetration 85/25 of approved quality",
+          "unit": "tonne",
+          "quantity": 0.131,
+          "rate": 38250.0,
+          "amount": 5010.75
+        },
+        {
+          "resource_code": "0318",
+          "category": "MATERIAL",
+          "description": "Bitumen felt fibre base (vegetable or animal):As per IS 7193 Grade I",
+          "unit": "sqm",
+          "quantity": 66.0,
+          "rate": 75.0,
+          "amount": 4950.0
+        },
+        {
+          "resource_code": "1177",
+          "category": "MATERIAL",
+          "description": "Stone grit 6 mm and down size or pea sized gravel",
+          "unit": "cum",
+          "quantity": 0.18,
+          "rate": 985.0,
+          "amount": 177.3
+        },
+        {
+          "resource_code": "0370",
+          "category": "MATERIAL",
+          "description": "Coal (steam)",
+          "unit": "quintal",
+          "quantity": 0.262,
+          "rate": 500.0,
+          "amount": 131.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Praparing roof surface, sutting groove and mak- ing good etc.",
+          "unit": "L.S.",
+          "quantity": 134.55,
+          "rate": 2.27,
+          "amount": 305.43
+        },
+        {
+          "resource_code": "0131",
+          "category": "LABOUR",
+          "description": "Painter",
+          "unit": "day",
+          "quantity": 4.32,
+          "rate": 816.0,
+          "amount": 3525.12
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 6.48,
+          "rate": 736.0,
+          "amount": 4769.28
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.36,
+          "rate": 897.0,
+          "amount": 322.92
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries, brushes etc.",
+          "unit": "L.S.",
+          "quantity": 6.76,
+          "rate": 2.27,
+          "amount": 15.35
+        }
+      ],
+      "calculations": {
+        "total_w": 19207.15,
+        "total_x": 19399.22,
+        "total_y": 23525.43,
+        "total_z": 27054.24
+      },
+      "say_rate": 910.85,
+      "page": 914
+    },
+    {
+      "item_code": "22.12",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Supplying and applying bituminous solution primer on roof and / or wall surface at 0.24 litre per sqm.",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "sq. metres"
+      },
+      "breakup": [
+        {
+          "resource_code": "0316",
+          "category": "MATERIAL",
+          "description": "Bitumen solution primer of approved quality",
+          "unit": "litre",
+          "quantity": 2.4,
+          "rate": 50.0,
+          "amount": 120.0
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "CARRIAGE",
+          "unit": "L.S.",
+          "quantity": 1.43,
+          "rate": 2.27,
+          "amount": 3.25
+        },
+        {
+          "resource_code": "0131",
+          "category": "LABOUR",
+          "description": "Painter",
+          "unit": "day",
+          "quantity": 0.17,
+          "rate": 816.0,
+          "amount": 138.72
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.17,
+          "rate": 736.0,
+          "amount": 125.12
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries brushes etc.",
+          "unit": "L.S.",
+          "quantity": 13.52,
+          "rate": 2.27,
+          "amount": 30.69
+        }
+      ],
+      "calculations": {
+        "total_w": 417.78,
+        "total_x": 421.96,
+        "total_y": 511.71,
+        "total_z": 588.47
+      },
+      "say_rate": 59.45,
+      "page": 914
+    },
+    {
+      "item_code": "22.13",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Deduct for omitting in water proofing treatment final course of spreading stone grit 6 mm down size or pea sized gravel :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 915
+    },
+    {
+      "item_code": "22.13.1",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Deduct for omitting in water proofing treatment final course of spreading stone grit 6 mm - at 6 cudm per sqm",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "sqm."
+      },
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Labour for screening and spreading grit",
+          "unit": "L.S.",
+          "quantity": 21.58,
+          "rate": 2.27,
+          "amount": 48.99
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 6.76,
+          "rate": 2.27,
+          "amount": 15.35
+        }
+      ],
+      "calculations": {
+        "total_w": 123.44,
+        "total_x": 124.67,
+        "total_y": 151.19,
+        "total_z": 173.87
+      },
+      "say_rate": 17.55,
+      "page": 915
+    },
+    {
+      "item_code": "22.13.2",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Deduct for omitting in water proofing treatment final course of spreading stone grit 6 mm - at 8 cudm per sqm",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "sqm."
+      },
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Labour for screening and spreading grit",
+          "unit": "L.S.",
+          "quantity": 26.91,
+          "rate": 2.27,
+          "amount": 61.09
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 6.76,
+          "rate": 2.27,
+          "amount": 15.35
+        }
+      ],
+      "calculations": {
+        "total_w": 155.24,
+        "total_x": 156.79,
+        "total_y": 190.14,
+        "total_z": 218.66
+      },
+      "say_rate": 22.1,
+      "page": 915
+    },
+    {
+      "item_code": "22.14",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Grading roof for water proofing treatment with",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 916
+    },
+    {
+      "item_code": "22.14.1",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Grading roof for water proofing treatment with - Cement concrete 1:2:4 (1 cement : 2 coarse sand : 4 graded stone aggregate 20mm nominal size)",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0295",
+          "category": "MATERIAL",
+          "description": "Stone Aggregate (Single size) : 20 mm nominal size",
+          "unit": "cum",
+          "quantity": 0.67,
+          "rate": 1425.0,
+          "amount": 954.75
+        },
+        {
+          "resource_code": "0297",
+          "category": "MATERIAL",
+          "description": "Stone Aggregate (Single size) : 10 mm nominal size",
+          "unit": "cum",
+          "quantity": 0.22,
+          "rate": 1400.0,
+          "amount": 308.0
+        },
+        {
+          "resource_code": "0982",
+          "category": "MATERIAL",
+          "description": "Coarse sand (zone III)",
+          "unit": "cum",
+          "quantity": 0.45,
+          "rate": 1450.0,
+          "amount": 652.5
+        },
+        {
+          "resource_code": "0367",
+          "category": "MATERIAL",
+          "description": "Portland Cement (OPC-43 grade)",
+          "unit": "tonne",
+          "quantity": 0.32,
+          "rate": 5156.0,
+          "amount": 1649.92
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.63,
+          "rate": 736.0,
+          "amount": 1199.68
+        },
+        {
+          "resource_code": "0101",
+          "category": "MATERIAL",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.7,
+          "rate": 816.0,
+          "amount": 571.2
+        },
+        {
+          "resource_code": "0123",
+          "category": "MATERIAL",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.1,
+          "rate": 897.0,
+          "amount": 89.7
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries, brushes etc.",
+          "unit": "L.S.",
+          "quantity": 14.3,
+          "rate": 2.27,
+          "amount": 32.46
+        },
+        {
+          "resource_code": "0002",
+          "category": "MATERIAL",
+          "description": "Hire charges of Concrete Mixer 0.25 to 0.40 cum with hooper",
+          "unit": "day",
+          "quantity": 0.07,
+          "rate": 900.0,
+          "amount": 63.0
+        },
+        {
+          "resource_code": "0012",
+          "category": "MATERIAL",
+          "description": "Vibrator (Needle type 40 mm)",
+          "unit": "day",
+          "quantity": 0.07,
+          "rate": 400.0,
+          "amount": 28.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries for laying in terrace",
+          "unit": "L.S.",
+          "quantity": 45.76,
+          "rate": 2.27,
+          "amount": 103.88
+        }
+      ],
+      "calculations": {
+        "total_w": 5653.09,
+        "total_x": 5709.62,
+        "total_y": 6924.06,
+        "total_z": 7962.67
+      },
+      "say_rate": 8042.3,
+      "page": 916
+    },
+    {
+      "item_code": "22.14.2",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Grading roof for water proofing treatment with - Cement mortar 1:3 (1 cement : 3 coarse sand) Cement mortar 1:3 3.8 Rate as per Item No.3.8 of SH:Mortars cum 1.00 4881.95 4881.95",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0155",
+          "category": "LABOUR",
+          "description": "Mason (average)",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 857.0,
+          "amount": 857.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 736.0,
+          "amount": 1472.0
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 816.0,
+          "amount": 408.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 5.0,
+          "rate": 736.0,
+          "amount": 3680.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 11.7,
+          "rate": 2.27,
+          "amount": 26.56
+        }
+      ],
+      "calculations": {
+        "total_w": 11325.51,
+        "total_x": 11438.77,
+        "total_y": 13871.8,
+        "total_z": 15952.57
+      },
+      "say_rate": 16112.1,
+      "page": 916
+    },
+    {
+      "item_code": "22.14.3",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Grading roof for water proofing treatment with - Cement mortar 1:4 (1cement : 4 coarse sand) Cement mortar 1:4 3.9 Rate as per Item Number 3.9 of SH: Mortars cum 1.00 4211.70 4211.70",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0155",
+          "category": "LABOUR",
+          "description": "Mason (average)",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 857.0,
+          "amount": 857.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 736.0,
+          "amount": 1472.0
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 816.0,
+          "amount": 408.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 5.0,
+          "rate": 736.0,
+          "amount": 3680.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 10.79,
+          "rate": 2.27,
+          "amount": 24.49
+        }
+      ],
+      "calculations": {
+        "total_w": 10653.19,
+        "total_x": 10759.72,
+        "total_y": 13048.31,
+        "total_z": 15005.56
+      },
+      "say_rate": 15155.6,
+      "page": 917
+    },
+    {
+      "item_code": "22.22",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Providing and mixing integral crystalline admixture for water proofing treatment to RCC structures like basement raft, retaining walls, reservior, sewage & water treatment plant, tunnels / subway and bridge deck etc. at the time of transporting of concrete into the drum of the ready-mix truck ,  using integral crystalline admixture @0.80% (minimum) to the weight of cement content per cubic meter of concrete) or higher as recommended by the manufacturer’s specification in reinforced cement concrete at site of work. The material shall meet the requirements as specified in ACI-212-3R-2010 i.e. by reducing permeability of concrete by more than 90%, compared with control concrete as per DIN 1048 and resistant to 16 bar hydrostatic pressure. The crystalline admixture shall be capable of self-healing of cracks up to a width of 0.50mm. The work shall be carried out all complete as per specification and the direction of the Engineer-in-charge. The product performance shall carry guarantee for 10 years against any leakage.",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "kg"
+      },
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "For measuring, making and mixing etc..",
+          "unit": "L.S.",
+          "quantity": 5.8,
+          "rate": 2.27,
+          "amount": 13.17
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 1.15,
+          "rate": 2.27,
+          "amount": 2.61
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Carriage of material and tools cost etc..",
+          "unit": "L.S.",
+          "quantity": 1.75,
+          "rate": 2.27,
+          "amount": 3.97
+        }
+      ],
+      "calculations": {
+        "total_w": 272.75,
+        "total_x": 275.48,
+        "total_y": 334.07,
+        "total_z": 384.18
+      },
+      "say_rate": 388.0,
+      "page": 917
+    },
+    {
+      "item_code": "22.22A",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Providing  and applying fibre reinforced elastomeric liquid water proofing membrane with resilient acrylic polymers having Sun Reflectivity Index (SRI) of 105 on top of concrete roof in three coats @10.76 litre/ 10 sqm. One coat of self-priming of elastomeric waterproofing liquid (dilution with water in the ratio of 3:1) and two coats of undiluted elastomeric waterproofing liquid (dry film thickness of complete application/system not less than 500 microns). The operation shall be carried out after scrapping and properly cleaning the surface to remove loose particles with wire brushes, complete in all respect as per the direction of Engineer-in- Charge.",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "Sqm"
+      },
+      "breakup": [
+        {
+          "resource_code": "8511",
+          "category": "MATERIAL",
+          "description": "Fibre reinforced elastomeric liquid water proof- ing membrane",
+          "unit": "litre",
+          "quantity": 11.3,
+          "rate": 255.0,
+          "amount": 2881.5
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of materials",
+          "unit": "L.S.",
+          "quantity": 1.43,
+          "rate": 2.27,
+          "amount": 3.25
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.67,
+          "rate": 736.0,
+          "amount": 493.12
+        },
+        {
+          "resource_code": "0131",
+          "category": "LABOUR",
+          "description": "Painter",
+          "unit": "day",
+          "quantity": 0.67,
+          "rate": 816.0,
+          "amount": 546.72
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Wire brush brushes, rollers etc.",
+          "unit": "L.S.",
+          "quantity": 6.76,
+          "rate": 2.27,
+          "amount": 15.35
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 8.06,
+          "rate": 2.27,
+          "amount": 18.3
+        }
+      ],
+      "calculations": {
+        "total_w": 3958.24,
+        "total_x": 3997.82,
+        "total_y": 4848.16,
+        "total_z": 5575.38
+      },
+      "say_rate": 563.1,
+      "page": 918
+    },
+    {
+      "item_code": "22.23",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Providing and applying integral crystalline slurry of hydrophilic in nature for waterproofing treatment to the RCC structures like retaining walls of the basement, water tanks, roof slabs, podiums, reservior, sewage & water treatment plant, tunnels / subway and bridge deck etc., prepared by mixing in the ratio of 5 : 2 (5 parts integral crystalline slurry : 2 parts water) for vertical surfaces and 3 : 1 (3 parts integral crystalline slurry : 1 part water) for horizontal surfaces and applying the same from negative (internal) side with the help of synthetic fiber brush. The material shall meet the requirements as specified in ACI-212-3R-2010 i.e by reducing permeability of concrete by more than 90% compared with control concrete as per DIN 1048 and resistant to 16 bar hydrostatic pressure on negative side. The crystalline slurry shall be capable of self-healing of cracks up to a width of 0.50mm. The work shall be carried out all complete as per specification and the direction of the engineer-in-charge. The product performance shall carry guarantee for 10 years against any leakage.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 918
+    },
+    {
+      "item_code": "22.23.1",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Providing and applying integral crystalline slurry of hydrophilic in nature for waterproofing - For vertical surface two coats @ 0.70 kg per sqm per coat",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "sqm"
+      },
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "For application of waterproofing material",
+          "unit": "L.S.",
+          "quantity": 11.55,
+          "rate": 2.27,
+          "amount": 26.22
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 1.15,
+          "rate": 2.27,
+          "amount": 2.61
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Carriage of material and tools cost etc..",
+          "unit": "L.S.",
+          "quantity": 1.75,
+          "rate": 2.27,
+          "amount": 3.97
+        }
+      ],
+      "calculations": {
+        "total_w": 332.4,
+        "total_x": 335.72,
+        "total_y": 407.13,
+        "total_z": 468.2
+      },
+      "say_rate": 472.9,
+      "page": 918
+    },
+    {
+      "item_code": "22.23.2",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Providing and applying integral crystalline slurry of hydrophilic in nature for waterproofing - For horizontal surface one coat @1.10 kg per sqm.",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "sqm"
+      },
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "For application of waterproofing material",
+          "unit": "L.S.",
+          "quantity": 5.75,
+          "rate": 2.27,
+          "amount": 13.05
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 1.15,
+          "rate": 2.27,
+          "amount": 2.61
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Carriage of material and tools cost etc..",
+          "unit": "L.S.",
+          "quantity": 1.75,
+          "rate": 2.27,
+          "amount": 3.97
+        }
+      ],
+      "calculations": {
+        "total_w": 255.03,
+        "total_x": 257.58,
+        "total_y": 312.37,
+        "total_z": 359.23
+      },
+      "say_rate": 362.8,
+      "page": 919
+    },
+    {
+      "item_code": "22.23A",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Providing & Applying polymer modified, flexible cementatious negative side waterproofing coating with elastic waterproofing polymers on interior wall plaster surface in three coats @14.35 kg /10 sqm. one coat of self priming of cementatious waterproofing polymer(dilution with water in the ratio of 1:1) and two coats of cementatious waterproofing polymer  (dilution with water in the ratio of 3:1 ) after scrapping and properly cleaning the surface to remove pre-existing paint film & loose particles till plaster is visible, complete in all respect as per the direction of Engineer-in-Charge.",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "Sqm"
+      },
+      "breakup": [
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of materials",
+          "unit": "L.S.",
+          "quantity": 1.56,
+          "rate": 2.27,
+          "amount": 3.54
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.23,
+          "rate": 736.0,
+          "amount": 169.28
+        },
+        {
+          "resource_code": "0131",
+          "category": "LABOUR",
+          "description": "Painter",
+          "unit": "day",
+          "quantity": 0.46,
+          "rate": 816.0,
+          "amount": 375.36
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Wire brush brushes, rollers etc.",
+          "unit": "L.S.",
+          "quantity": 7.15,
+          "rate": 2.27,
+          "amount": 16.23
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 8.06,
+          "rate": 2.27,
+          "amount": 18.3
+        }
+      ],
+      "calculations": {
+        "total_w": 3144.61,
+        "total_x": 3176.06,
+        "total_y": 3851.61,
+        "total_z": 4429.35
+      },
+      "say_rate": 447.35,
+      "page": 919
+    },
+    {
+      "item_code": "22.24",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Providing and applying integral crystalline (dry shake) of hydrophilic in nature for waterproofing treatment to the RCC structures like basement raft, foundation slab, sewage & water treatment plant slab, warehouses floor, parking structures and water tank base slab etc. sprinkled @0.60kg per sqm or higher as recommended by the manufacturer’s specification over the lean concrete of above cited structures. The material shall meet the requirements as specified in ACI-212- 3R-2010 i.e. by reducing permeability of concrete by more than 85%, compared control concrete as per DIN 1048 and resistant to 16 bar hydrostatic pressure on negative side. The crystalline dry-shake shall be capable of self-healing of cracks up to a width of 0.50mm. The work shall be carried out all complete as per specification and the direction of the Engineer-in-charge. The product performance shall carry guarantee for 10 years against any leakage.",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "sqm"
+      },
+      "breakup": [
+        {
+          "resource_code": "0354",
+          "category": "MATERIAL",
+          "description": "Integral crystalline dry shake",
+          "unit": "kilogram",
+          "quantity": 0.6,
+          "rate": 308.0,
+          "amount": 184.8
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "For measuring and sprinkling of waterproofing material",
+          "unit": "L.S.",
+          "quantity": 11.55,
+          "rate": 2.27,
+          "amount": 26.22
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 1.15,
+          "rate": 2.27,
+          "amount": 2.61
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Carriage of material and tools cost etc..",
+          "unit": "L.S.",
+          "quantity": 1.75,
+          "rate": 2.27,
+          "amount": 3.97
+        }
+      ],
+      "calculations": {
+        "total_w": 217.6,
+        "total_x": 219.78,
+        "total_y": 266.53,
+        "total_z": 306.51
+      },
+      "say_rate": 309.6,
+      "page": 920
+    },
+    {
+      "item_code": "22.24A",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Providing & Applying high quality acrylic modified resin based texture  of Dholpur/Red sand stone  Pattern with anti algae and UV resistance properties to be applied as intermediate finish in desired pattern @ 43.04 kg/10 sqm to form film of 1- 1.5 mm thickness after scrapping and properly cleaning the surface to remove loose particles from the plaster surface, followed by top coating with Premium Acrylic Smooth exterior paint with Silicone additives of required shade by two or more coats @ 1.43 litre/10 sqm, complete as the direction of Engineer -in- Charge.",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "Sqm"
+      },
+      "breakup": [
+        {
+          "resource_code": "8513",
+          "category": "MATERIAL",
+          "description": "Acrylic modified resin based texture kg 45.19 50.00 2259.50 43.04 kg + 2.15 (Add wastage 5%) = 45.19 kg Quantity taken for cost using once = 10 sqm Top coat with premium acrylic exterior paint (two or more coats) 13.112.1 Rate as per Item No.13.112.1 of SH:Finishing",
+          "unit": "sqm",
+          "quantity": 10.0,
+          "rate": 131.3,
+          "amount": 1313.0
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of materials",
+          "unit": "L.S.",
+          "quantity": 3.9,
+          "rate": 2.27,
+          "amount": 8.85
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.56,
+          "rate": 736.0,
+          "amount": 412.16
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.56,
+          "rate": 897.0,
+          "amount": 502.32
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries and scaffolding",
+          "unit": "L.S.",
+          "quantity": 40.0,
+          "rate": 2.27,
+          "amount": 90.8
+        }
+      ],
+      "calculations": {
+        "total_w": 4586.63,
+        "total_x": 4619.37,
+        "total_y": 5322.63,
+        "total_z": 5924.07
+      },
+      "say_rate": 597.0,
+      "page": 920
+    },
+    {
+      "item_code": "22.25",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Providing and applying crystalline mortar by mixing in the ratio of 4.5 : 1 (4.5 parts crystalline mortar : 1 part water) for the treatment of faulty construction joints, cracks, tie rod holes and spalled & honeycombed surface of RCC underground structures like basement, water tanks, bridge deck etc. to ensure water tightness. The crystallie mortar shall conform to the EN 1504-3 having compressive strength Class R4 ≥45 MPa and adhesive bond strength Class R3 ≥1.5 MPa. The work shall be carried out all complete as per specification and the direction of the Engineer- In-Charge. The product performance shall carry guarantee for 10 years against any leakage.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 921
+    },
+    {
+      "item_code": "22.25.1",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Providing and applying crystalline mortar by mixing in the ratio of 4.5 : 1 (4.5 parts crystalline - For sealing cracks and faulty construction joints, routed out/making U-shape groove size 25x25mm and then primed the area with integral crystalline slurry @0.05kg/running metre and while the surface is tacky filled the groove upto surface with crystalline mortar @1.50kg/ running metre. Once crystalline mortar is touch dry then finally applied two coats of integral crystalline slurry @0.05kg/running metre per coat.",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "meter"
+      },
+      "breakup": [
+        {
+          "resource_code": "0353",
+          "category": "MATERIAL",
+          "description": "Crystalline Mortar @1.50 kg per meter",
+          "unit": "kilogram",
+          "quantity": 1.5,
+          "rate": 209.0,
+          "amount": 313.5
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "For making crystalline mortar and repair work etc..",
+          "unit": "L.S.",
+          "quantity": 14.45,
+          "rate": 2.27,
+          "amount": 32.8
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 1.15,
+          "rate": 2.27,
+          "amount": 2.61
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Carriage of material and tools cost etc..",
+          "unit": "L.S.",
+          "quantity": 1.75,
+          "rate": 2.27,
+          "amount": 3.97
+        }
+      ],
+      "calculations": {
+        "total_w": 384.98,
+        "total_x": 388.83,
+        "total_y": 471.53,
+        "total_z": 542.26
+      },
+      "say_rate": 547.7,
+      "page": 921
+    },
+    {
+      "item_code": "22.25.2",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Providing and applying crystalline mortar by mixing in the ratio of 4.5 : 1 (4.5 parts crystalline - For patching of tie rod holes, prepared tie rod hole surface and then primed the area with integral crystalline slurry @0.070kg/sqm and while the surface is tacky repair and then filled the tie rod holes with crystalline mortar@0.040kg per hole. The crystalline mortar should be tightly rodded into tie rod holes or packed tightly (For 25x25x25 mm tie rod hole, use 0.040kg to fill the hole)",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "no. hole"
+      },
+      "breakup": [
+        {
+          "resource_code": "0353",
+          "category": "MATERIAL",
+          "description": "Crystalline mortar@0.040 kg per hole",
+          "unit": "kilogram",
+          "quantity": 0.04,
+          "rate": 209.0,
+          "amount": 8.36
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "For making crystalline mortar and repair work etc..",
+          "unit": "L.S.",
+          "quantity": 2.9,
+          "rate": 2.27,
+          "amount": 6.58
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 0.3,
+          "rate": 2.27,
+          "amount": 0.68
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Carriage of material and tools cost etc..",
+          "unit": "L.S.",
+          "quantity": 0.25,
+          "rate": 2.27,
+          "amount": 0.57
+        }
+      ],
+      "calculations": {
+        "total_w": 16.19,
+        "total_x": 16.35,
+        "total_y": 19.83,
+        "total_z": 22.8
+      },
+      "say_rate": 23.05,
+      "page": 922
+    },
+    {
+      "item_code": "22.26",
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "description": "Providing and applying of swellable type water stop tape, 19 mm x 25 mm thick in linear metre (expansive nature) for construction joints treatment of RCC structure such as raft slab, retain- ing walls, water storage tank and at the junctions of raft slab with the retaining walls etc.. After cleaning the surface, one coat of required primer for swellable water stop tape shall be applied throughout the length of the joint @3.78 litre per 240 running metre. Over the primed surface swellable type water stop tape shall be placed. The work shall be carried out all complete as per specification and the direction of the Engineer-In-Charge. The product performance shall carry guarantee for 10 years against any leakage.",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "meter"
+      },
+      "breakup": [
+        {
+          "resource_code": "0355",
+          "category": "MATERIAL",
+          "description": "Swellable type water stop tape (Crystalline sealing compound)",
+          "unit": "metre",
+          "quantity": 1.0,
+          "rate": 354.0,
+          "amount": 354.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "For application of primer and swellable water stop",
+          "unit": "L.S.",
+          "quantity": 8.65,
+          "rate": 2.27,
+          "amount": 19.64
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 1.15,
+          "rate": 2.27,
+          "amount": 2.61
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Carriage of material and tools cost etc..",
+          "unit": "L.S.",
+          "quantity": 1.75,
+          "rate": 2.27,
+          "amount": 3.97
+        }
+      ],
+      "calculations": {
+        "total_w": 403.1,
+        "total_x": 407.13,
+        "total_y": 493.73,
+        "total_z": 567.79
+      },
+      "say_rate": 573.45,
+      "page": 922
+    }
+  ]
+}

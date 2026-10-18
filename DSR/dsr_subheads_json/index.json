@@ -1,0 +1,321 @@
+{
+  "document_title": "CPWD Delhi Analysis of Rates (DAR) 2023 - Civil",
+  "extracted_at": "2026-10-18T20:18:37",
+  "total_sub_heads": 26,
+  "total_items": 4461,
+  "total_analyzed_items": 3108,
+  "catalog": [
+    {
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "volume": 1,
+      "pdf_pages": [
+        88,
+        99
+      ],
+      "json_file": "sh_01_carriage_of_materials.json",
+      "total_items": 89,
+      "analyzed_items_with_breakup": 5
+    },
+    {
+      "sub_head_no": 2,
+      "sub_head_name": "Earth Work",
+      "volume": 1,
+      "pdf_pages": [
+        100,
+        148
+      ],
+      "json_file": "sh_02_earth_work.json",
+      "total_items": 168,
+      "analyzed_items_with_breakup": 70
+    },
+    {
+      "sub_head_no": 3,
+      "sub_head_name": "Mortars",
+      "volume": 1,
+      "pdf_pages": [
+        150,
+        157
+      ],
+      "json_file": "sh_03_mortars.json",
+      "total_items": 19,
+      "analyzed_items_with_breakup": 19
+    },
+    {
+      "sub_head_no": 4,
+      "sub_head_name": "Concrete Work",
+      "volume": 1,
+      "pdf_pages": [
+        158,
+        211
+      ],
+      "json_file": "sh_04_concrete_work.json",
+      "total_items": 103,
+      "analyzed_items_with_breakup": 72
+    },
+    {
+      "sub_head_no": 5,
+      "sub_head_name": "Reinforced Cement Concrete",
+      "volume": 1,
+      "pdf_pages": [
+        212,
+        312
+      ],
+      "json_file": "sh_05_reinforced_cement_concrete.json",
+      "total_items": 195,
+      "analyzed_items_with_breakup": 135
+    },
+    {
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "volume": 1,
+      "pdf_pages": [
+        314,
+        350
+      ],
+      "json_file": "sh_06_masonry_work.json",
+      "total_items": 77,
+      "analyzed_items_with_breakup": 57
+    },
+    {
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "volume": 1,
+      "pdf_pages": [
+        352,
+        388
+      ],
+      "json_file": "sh_07_stone_work.json",
+      "total_items": 86,
+      "analyzed_items_with_breakup": 52
+    },
+    {
+      "sub_head_no": 8,
+      "sub_head_name": "Cladding Work",
+      "volume": 1,
+      "pdf_pages": [
+        390,
+        441
+      ],
+      "json_file": "sh_08_cladding_work.json",
+      "total_items": 108,
+      "analyzed_items_with_breakup": 79
+    },
+    {
+      "sub_head_no": 9,
+      "sub_head_name": "Wood and PVC Work",
+      "volume": 1,
+      "pdf_pages": [
+        442,
+        719
+      ],
+      "json_file": "sh_09_wood_and_pvc_work.json",
+      "total_items": 541,
+      "analyzed_items_with_breakup": 396
+    },
+    {
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "volume": 1,
+      "pdf_pages": [
+        720,
+        761
+      ],
+      "json_file": "sh_10_steel_work.json",
+      "total_items": 69,
+      "analyzed_items_with_breakup": 53
+    },
+    {
+      "sub_head_no": 11,
+      "sub_head_name": "Flooring",
+      "volume": 1,
+      "pdf_pages": [
+        762,
+        857
+      ],
+      "json_file": "sh_11_flooring.json",
+      "total_items": 185,
+      "analyzed_items_with_breakup": 133
+    },
+    {
+      "sub_head_no": 12,
+      "sub_head_name": "Roofing",
+      "volume": 1,
+      "pdf_pages": [
+        858,
+        959
+      ],
+      "json_file": "sh_12_roofing.json",
+      "total_items": 197,
+      "analyzed_items_with_breakup": 140
+    },
+    {
+      "sub_head_no": 13,
+      "sub_head_name": "Finishing",
+      "volume": 2,
+      "pdf_pages": [
+        10,
+        94
+      ],
+      "json_file": "sh_13_finishing.json",
+      "total_items": 223,
+      "analyzed_items_with_breakup": 155
+    },
+    {
+      "sub_head_no": 14,
+      "sub_head_name": "Repairs to Building",
+      "volume": 2,
+      "pdf_pages": [
+        96,
+        155
+      ],
+      "json_file": "sh_14_repairs_to_building.json",
+      "total_items": 127,
+      "analyzed_items_with_breakup": 96
+    },
+    {
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "volume": 2,
+      "pdf_pages": [
+        156,
+        201
+      ],
+      "json_file": "sh_15_dismantling_and_demolishing.json",
+      "total_items": 117,
+      "analyzed_items_with_breakup": 92
+    },
+    {
+      "sub_head_no": 16,
+      "sub_head_name": "Road Work",
+      "volume": 2,
+      "pdf_pages": [
+        202,
+        337
+      ],
+      "json_file": "sh_16_road_work.json",
+      "total_items": 207,
+      "analyzed_items_with_breakup": 150
+    },
+    {
+      "sub_head_no": 17,
+      "sub_head_name": "Sanitary Installations",
+      "volume": 2,
+      "pdf_pages": [
+        338,
+        450
+      ],
+      "json_file": "sh_17_sanitary_installations.json",
+      "total_items": 337,
+      "analyzed_items_with_breakup": 228
+    },
+    {
+      "sub_head_no": 18,
+      "sub_head_name": "Water Supply",
+      "volume": 2,
+      "pdf_pages": [
+        452,
+        747
+      ],
+      "json_file": "sh_18_water_supply.json",
+      "total_items": 962,
+      "analyzed_items_with_breakup": 703
+    },
+    {
+      "sub_head_no": 19,
+      "sub_head_name": "Drainage",
+      "volume": 2,
+      "pdf_pages": [
+        748,
+        840
+      ],
+      "json_file": "sh_19_drainage.json",
+      "total_items": 178,
+      "analyzed_items_with_breakup": 100
+    },
+    {
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "volume": 2,
+      "pdf_pages": [
+        842,
+        870
+      ],
+      "json_file": "sh_20_pile_work.json",
+      "total_items": 57,
+      "analyzed_items_with_breakup": 43
+    },
+    {
+      "sub_head_no": 21,
+      "sub_head_name": "Aluminium Work",
+      "volume": 2,
+      "pdf_pages": [
+        872,
+        900
+      ],
+      "json_file": "sh_21_aluminium_work.json",
+      "total_items": 57,
+      "analyzed_items_with_breakup": 43
+    },
+    {
+      "sub_head_no": 22,
+      "sub_head_name": "Water Proofing",
+      "volume": 2,
+      "pdf_pages": [
+        902,
+        922
+      ],
+      "json_file": "sh_22_water_proofing.json",
+      "total_items": 38,
+      "analyzed_items_with_breakup": 29
+    },
+    {
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "volume": 2,
+      "pdf_pages": [
+        924,
+        944
+      ],
+      "json_file": "sh_23_rain_water_harvesting_tubewells.json",
+      "total_items": 52,
+      "analyzed_items_with_breakup": 39
+    },
+    {
+      "sub_head_no": 24,
+      "sub_head_name": "Conservation of Heritage Buildings",
+      "volume": 2,
+      "pdf_pages": [
+        946,
+        953
+      ],
+      "json_file": "sh_24_conservation_of_heritage_buildings.json",
+      "total_items": 8,
+      "analyzed_items_with_breakup": 8
+    },
+    {
+      "sub_head_no": 25,
+      "sub_head_name": "Structural Glazing Aluminium Composite Panel",
+      "volume": 2,
+      "pdf_pages": [
+        954,
+        963
+      ],
+      "json_file": "sh_25_structural_glazing_acp.json",
+      "total_items": 7,
+      "analyzed_items_with_breakup": 7
+    },
+    {
+      "sub_head_no": 26,
+      "sub_head_name": "New Technologies and Materials",
+      "volume": 2,
+      "pdf_pages": [
+        964,
+        1113
+      ],
+      "json_file": "sh_26_new_technologies_and_materials.json",
+      "total_items": 254,
+      "analyzed_items_with_breakup": 204
+    }
+  ]
+}

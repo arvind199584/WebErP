@@ -40,7 +40,8 @@ class AA_ES_Model
     public function create(AA_ES_DTO $dto): int
     {
         $sql = "INSERT INTO aa_es (officeid, budgetid, sub_head, alias, type, boq, status)
-                VALUES (:officeid, :budgetid, :sub_head, :alias, :type, :boq, :status)";
+                VALUES (:officeid, :budgetid, :sub_head, :alias, :type, :boq, :status)
+                RETURNING id";
 
         $stmt = $this->db->prepare($sql);
 
@@ -54,7 +55,7 @@ class AA_ES_Model
 
         $stmt->execute();
 
-        return (int)$this->db->lastInsertId();
+        return (int)$stmt->fetchColumn();
     }
 
     public function update(AA_ES_DTO $dto): bool

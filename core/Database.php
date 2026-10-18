@@ -41,7 +41,7 @@ class Database
         $port     = $getEnv('DB_PORT')    ?: '5432';
         $db_name  = $getEnv('DB_NAME')    ?: 'modpyphp';
         $username = $getEnv('DB_USER')    ?: 'postgres';
-        $password = $getEnv('DB_PASS')    ?: 'daredevil';
+        $password = $getEnv('DB_PASS')    ?? '';
         $sslmode  = $getEnv('DB_SSLMODE') ?: 'disable';
 
         // Override database if running in demo sandbox mode

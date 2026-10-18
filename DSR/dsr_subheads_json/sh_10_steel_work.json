@@ -1,0 +1,4120 @@
+{
+  "sub_head_no": 10,
+  "sub_head_name": "Steel Work",
+  "volume": 1,
+  "page_range": [
+    720,
+    761
+  ],
+  "total_items": 69,
+  "analyzed_items_with_breakup": 53,
+  "items": [
+    {
+      "item_code": "10.1",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Structural steel work in single section, fixed with or without connecting plate, including cutting, hoisting, fixing in position and applying a priming coat of approved steel primer all complete. Steel = 1.00q Add wastage @ 5% = 0.05q Total = 1.05q",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "1007",
+          "category": "MATERIAL",
+          "description": "Structurals such as tees,angles channels and R.S. joists",
+          "unit": "quintal",
+          "quantity": 1.05,
+          "rate": 5965.0,
+          "amount": 6263.25
+        },
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 897.0,
+          "amount": 448.5
+        },
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 0.75,
+          "rate": 816.0,
+          "amount": 612.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar day 1.00 736.00 736.00 Priming Coat 13.50.3 Rate as per Item Number 13.50.3 of SH:Finishing",
+          "unit": "sqm",
+          "quantity": 3.0,
+          "rate": 67.4,
+          "amount": 202.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 20.67,
+          "rate": 2.27,
+          "amount": 46.92
+        }
+      ],
+      "calculations": {
+        "total_w": 8308.87,
+        "total_x": 8389.94,
+        "total_y": 10131.47,
+        "total_z": 11620.86
+      },
+      "say_rate": 117.35,
+      "page": 722
+    },
+    {
+      "item_code": "10.2",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Structural steel work riveted, bolted or welded in built up sections, trusses and framed work, including cutting, hoisting, fixing in position and applying a priming coat of approved steel primer all complete. (weight = 3.95 quintal)",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "1007",
+          "category": "MATERIAL",
+          "description": "Structurals such as tees,angles channels and R.S. joists",
+          "unit": "quintal",
+          "quantity": 1.6,
+          "rate": 5965.0,
+          "amount": 9544.0
+        },
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 2.7,
+          "rate": 897.0,
+          "amount": 2421.9
+        },
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 3.6,
+          "rate": 816.0,
+          "amount": 2937.6
+        },
+        {
+          "resource_code": "0139",
+          "category": "LABOUR",
+          "description": "Skilled Beldar (for floor rubbing etc.)",
+          "unit": "day",
+          "quantity": 5.4,
+          "rate": 816.0,
+          "amount": 4406.4
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 3.6,
+          "rate": 736.0,
+          "amount": 2649.6
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 80.73,
+          "rate": 2.27,
+          "amount": 183.26
+        }
+      ],
+      "calculations": {
+        "total_w": 37235.91,
+        "total_x": 37604.49,
+        "total_y": 45522.54,
+        "total_z": 52294.2
+      },
+      "say_rate": 133.7,
+      "page": 722
+    },
+    {
+      "item_code": "10.3",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing in position collapsible steel shutters with vertical channels 20x10x2 mm and braced with flat iron diagonals 20x5 mm size, with top and bottom rail of T-iron 40x40x6 mm, with 40 mm dia steel pulleys, complete with bolts, nuts, locking arrangement, stoppers, handles, including applying a priming coat of approved steel primer. 3.6sqm. M.S. channels 18 Nos. on both sides 20x10x2mm @ 0.56kg/m 2x18x2.4 = 86.40m+ Add wastage @ 10% = 8.64m Total = 95.04m 95.04m@0.56kg/m =53.22kg=0.53q",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "1007",
+          "category": "MATERIAL",
+          "description": "Structurals such as tees,angles channels and R.S. joists",
+          "unit": "quintal",
+          "quantity": 0.53,
+          "rate": 5965.0,
+          "amount": 3161.45
+        },
+        {
+          "resource_code": "1007",
+          "category": "MATERIAL",
+          "description": "Structurals such as tees,angles channels and R.S. joists",
+          "unit": "quintal",
+          "quantity": 0.13,
+          "rate": 5965.0,
+          "amount": 775.45
+        },
+        {
+          "resource_code": "1008",
+          "category": "MATERIAL",
+          "description": "Flats upto 10 mm in thickness",
+          "unit": "quintal",
+          "quantity": 0.6,
+          "rate": 5450.0,
+          "amount": 3270.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Cost of rivets fixing hooks and washers",
+          "unit": "L.S.",
+          "quantity": 269.1,
+          "rate": 2.27,
+          "amount": 610.86
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Cost of locking arrangements and handles",
+          "unit": "L.S.",
+          "quantity": 67.34,
+          "rate": 2.27,
+          "amount": 152.86
+        },
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 3.0,
+          "rate": 897.0,
+          "amount": 2691.0
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 6.0,
+          "rate": 897.0,
+          "amount": 5382.0
+        },
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 6.0,
+          "rate": 816.0,
+          "amount": 4896.0
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 897.0,
+          "amount": 448.5
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 816.0,
+          "amount": 408.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 8.0,
+          "rate": 736.0,
+          "amount": 5888.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 161.46,
+          "rate": 2.27,
+          "amount": 366.51
+        }
+      ],
+      "calculations": {
+        "total_w": 29158.33,
+        "total_x": 29442.84,
+        "total_y": 35554.8,
+        "total_z": 40781.87
+      },
+      "say_rate": 11439.6,
+      "page": 724
+    },
+    {
+      "item_code": "10.4",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing 1 mm thick M.S. sheet sliding-shutters, with frame and diagonal braces of 40x40x6 mm angle iron, 3 mm M.S. gusset plates at the junctions and corners, 25 mm dia pulley, 40x40x6 mm angle and T- iron guide at the top and bottom respectively, including applying a priming coat of approved steel primer 2.4x2.4m = 5.76sqm. (i) M.S. sheet 1mm thick 5.76sqm. @ 7.85kg/sqm. = 45.216kg.+ Add wastage @ 10% = 4.522kg. Total = 49.738kg = 0.497 q Total = 0.0562sqm.+ 8x0.0562 = 0.4496sqm.+ 2x22/7x1/4x0.3x0.3=0.1414sqm. Total = 0.5910sqm. 0.5910sqm.@23.55kg/sqm.=13.92kg.+ Add wastage @ 10% = 1.39kg Total = 15.31kg. or 0.153q Total = 36.0m 36m @3.5kg. per m. = 126kg.+ Add wastage @ 10% = 12.6kg. Total = 138.6kg. or 1.39q",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "1007",
+          "category": "MATERIAL",
+          "description": "Structurals such as tees,angles channels and R.S. joists",
+          "unit": "quintal",
+          "quantity": 1.39,
+          "rate": 5965.0,
+          "amount": 8291.35
+        },
+        {
+          "resource_code": "1007",
+          "category": "MATERIAL",
+          "description": "Structurals such as tees,angles channels and R.S. joists",
+          "unit": "quintal",
+          "quantity": 0.11,
+          "rate": 5965.0,
+          "amount": 656.15
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "(iv) Pully guide blocks including drilling holes",
+          "unit": "L.S.",
+          "quantity": 269.1,
+          "rate": 2.27,
+          "amount": 610.86
+        },
+        {
+          "resource_code": "0969",
+          "category": "MATERIAL",
+          "description": "Pully 25 mm dia",
+          "unit": "each",
+          "quantity": 8.0,
+          "rate": 48.0,
+          "amount": 384.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "(vi) Handles and locking arrangements",
+          "unit": "L.S.",
+          "quantity": 167.75,
+          "rate": 2.27,
+          "amount": 380.79
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "(vii) Bolts and rivets",
+          "unit": "L.S.",
+          "quantity": 269.1,
+          "rate": 2.27,
+          "amount": 610.86
+        },
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 897.0,
+          "amount": 1794.0
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 3.0,
+          "rate": 897.0,
+          "amount": 2691.0
+        },
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 4.0,
+          "rate": 816.0,
+          "amount": 3264.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 4.0,
+          "rate": 736.0,
+          "amount": 2944.0
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 897.0,
+          "amount": 53.82
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 816.0,
+          "amount": 48.96
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 161.46,
+          "rate": 2.27,
+          "amount": 366.51
+        }
+      ],
+      "calculations": {
+        "total_w": 26945.79,
+        "total_x": 27203.12,
+        "total_y": 32731.18,
+        "total_z": 37458.88
+      },
+      "say_rate": 6566.2,
+      "page": 725
+    },
+    {
+      "item_code": "10.5",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing 1mm thick M.S. sheet door with frame of 40x40x6 mm angle iron and 3 mm M.S. gusset plates at the junctions and corners, all necessary fittings complete, including applying a priming coat of approved steel primer.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 726
+    },
+    {
+      "item_code": "10.5.1",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing 1mm thick M.S. sheet door with frame of 40x40x6 mm angle iron and 3 - Using M.S. angels 40x40x6 mm for diagonal braces 2.4mx2.4m=5.76sqm. (i) M.S. sheet 1mm thick 5.76sqm. @ 7.85kg/sqm. = 45.216kg.+ Add wastage @ 10% = 4.522kg. Total = 49.738kg = 0.497 q Total = 0.0562sqm.+ 8x0.0562 = 0.4496sqm.+ 2x22/7x1/4x0.3x0.3=0.1414sqm. Total = 0.5910sqm. 0.5910sqm.@23.55kg/sqm.=13.92kg.+ Add wastage @ 10% = 1.39kg Total = 15.31kg. or 0.153q Total = 24.30m+ Add wastage @ 10% = 2.43m Total =26.73m 26.73m @ 3.5kg. per m. = 93.56kg=0.936q",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "1007",
+          "category": "MATERIAL",
+          "description": "Structurals such as tees,angles channels and R.S. joists",
+          "unit": "quintal",
+          "quantity": 0.936,
+          "rate": 5965.0,
+          "amount": 5583.24
+        },
+        {
+          "resource_code": "1036",
+          "category": "MATERIAL",
+          "description": "Iron pintels including welded pin",
+          "unit": "each",
+          "quantity": 4.0,
+          "rate": 37.0,
+          "amount": 148.0
+        },
+        {
+          "resource_code": "1222",
+          "category": "MATERIAL",
+          "description": "Mild steel sheets with bolts and nuts to rest on pintels",
+          "unit": "each",
+          "quantity": 4.0,
+          "rate": 120.0,
+          "amount": 480.0
+        },
+        {
+          "resource_code": "1019",
+          "category": "MATERIAL",
+          "description": "Mild steel hooks",
+          "unit": "each",
+          "quantity": 2.0,
+          "rate": 32.0,
+          "amount": 64.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Locking arrangements and handles",
+          "unit": "L.S.",
+          "quantity": 167.7,
+          "rate": 2.27,
+          "amount": 380.68
+        },
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 897.0,
+          "amount": 1794.0
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 3.0,
+          "rate": 897.0,
+          "amount": 2691.0
+        },
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 4.0,
+          "rate": 816.0,
+          "amount": 3264.0
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 897.0,
+          "amount": 53.82
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 816.0,
+          "amount": 48.96
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 5.0,
+          "rate": 736.0,
+          "amount": 3680.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 161.46,
+          "rate": 2.27,
+          "amount": 366.51
+        }
+      ],
+      "calculations": {
+        "total_w": 23809.3,
+        "total_x": 24037.01,
+        "total_y": 28928.77,
+        "total_z": 33112.29
+      },
+      "say_rate": 5804.35,
+      "page": 727
+    },
+    {
+      "item_code": "10.5.2",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing 1mm thick M.S. sheet door with frame of 40x40x6 mm angle iron and 3 - Using flats 30x6mm for diagonal braces and central cross piece 2.4x2.4m = 5.76sqm. (i) M.S. sheet 1mm thick 5.76sqm. @ 7.85kg/sqm. = 45.216kg.+ Add wastage @ 10% = 4.522kg. Total = 49.738kg = 0.497 q Total = 0.8022sqm.+ Add wastage @ 10% = 0.0802sqm. Total =0.8824sqm.@ 23.55 kg/sqm =20.78 kg Grand Total=0.2078 qtl say 0.208 qtl Total = 14.40m+ Add wastage @ 10% = 1.44m Total = 15.84m 15.84m @ 3.5kg. per m. = 55.44kg = 0.554qtl",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "1007",
+          "category": "MATERIAL",
+          "description": "Structurals such as tees,angles channels and R.S. joists",
+          "unit": "quintal",
+          "quantity": 0.554,
+          "rate": 5965.0,
+          "amount": 3304.61
+        },
+        {
+          "resource_code": "1036",
+          "category": "MATERIAL",
+          "description": "Iron pintels including welded pin",
+          "unit": "each",
+          "quantity": 4.0,
+          "rate": 37.0,
+          "amount": 148.0
+        },
+        {
+          "resource_code": "1222",
+          "category": "MATERIAL",
+          "description": "Mild steel sheets with bolts and nuts to rest on pintels",
+          "unit": "each",
+          "quantity": 4.0,
+          "rate": 120.0,
+          "amount": 480.0
+        },
+        {
+          "resource_code": "1019",
+          "category": "MATERIAL",
+          "description": "Mild steel hooks",
+          "unit": "each",
+          "quantity": 2.0,
+          "rate": 32.0,
+          "amount": 64.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Locking arrangements and handles",
+          "unit": "L.S.",
+          "quantity": 167.7,
+          "rate": 2.27,
+          "amount": 380.68
+        },
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 897.0,
+          "amount": 1794.0
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 3.0,
+          "rate": 897.0,
+          "amount": 2691.0
+        },
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 4.0,
+          "rate": 816.0,
+          "amount": 3264.0
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 897.0,
+          "amount": 53.82
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 816.0,
+          "amount": 48.96
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 5.0,
+          "rate": 736.0,
+          "amount": 3680.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 161.46,
+          "rate": 2.27,
+          "amount": 366.51
+        }
+      ],
+      "calculations": {
+        "total_w": 22820.92,
+        "total_x": 23039.22,
+        "total_y": 27728.92,
+        "total_z": 31739.64
+      },
+      "say_rate": 5563.75,
+      "page": 728
+    },
+    {
+      "item_code": "10.6",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Supplying and fixing rolling shutters of approved make, made of required size M.S. laths, interlocked together through their entire length and jointed together at the end by end locks, mounted on specially designed pipe shaft with brackets, side guides and arrangements for inside and outside locking with push and pull operation complete, including the cost of providing and fixing necessary 27.5 cm long wire springs manufactured from high tensile steel wire of adequate strength conforming to IS: 4454 - part 1 and M.S. top cover of required thickness for rolling shutters.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 729
+    },
+    {
+      "item_code": "10.6.1",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Supplying and fixing rolling shutters of approved make, made of required size M.S. laths, - 80x1.25 mm M.S. laths with 1.25 mm thick top cover 2.5m = 7.5sqm.",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0973",
+          "category": "MATERIAL",
+          "description": "Rolling shutter made of 80x1.25 mm ma- chine rolled laths",
+          "unit": "sqm",
+          "quantity": 7.5,
+          "rate": 1600.0,
+          "amount": 12000.0
+        },
+        {
+          "resource_code": "0974",
+          "category": "MATERIAL",
+          "description": "Top cover for rolling shutters 1.25 mm thick",
+          "unit": "metre",
+          "quantity": 2.5,
+          "rate": 920.0,
+          "amount": 2300.0
+        },
+        {
+          "resource_code": "0975",
+          "category": "MATERIAL",
+          "description": "27.5 cm long wire spring grade no 2 for rolling shutters",
+          "unit": "each",
+          "quantity": 1.0,
+          "rate": 330.0,
+          "amount": 330.0
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "CARRIAGE",
+          "unit": "L.S.",
+          "quantity": 53.82,
+          "rate": 2.27,
+          "amount": 122.17
+        },
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 2.55,
+          "rate": 897.0,
+          "amount": 2287.35
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.55,
+          "rate": 736.0,
+          "amount": 1876.8
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.12,
+          "rate": 897.0,
+          "amount": 107.64
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.12,
+          "rate": 816.0,
+          "amount": 97.92
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 60.58,
+          "rate": 2.27,
+          "amount": 137.52
+        }
+      ],
+      "calculations": {
+        "total_w": 19259.4,
+        "total_x": 19451.99,
+        "total_y": 23589.43,
+        "total_z": 27127.84
+      },
+      "say_rate": 3653.2,
+      "page": 729
+    },
+    {
+      "item_code": "10.6.2",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Supplying and fixing rolling shutters of approved make, made of required size M.S. laths, - 80x1.20 mm M.S. laths with 1.20 mm thick top cover 2.5m = 7.5sqm.",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "7045",
+          "category": "MATERIAL",
+          "description": "Rolling shutters of 80x1.2 mm laths",
+          "unit": "sqm",
+          "quantity": 7.5,
+          "rate": 1458.0,
+          "amount": 10935.0
+        },
+        {
+          "resource_code": "7047",
+          "category": "MATERIAL",
+          "description": "Top cover of Rolling shutters 1.20 mm thick",
+          "unit": "metre",
+          "quantity": 2.5,
+          "rate": 616.0,
+          "amount": 1540.0
+        },
+        {
+          "resource_code": "0975",
+          "category": "MATERIAL",
+          "description": "27.5 cm long wire spring grade no 2 for rolling shutters",
+          "unit": "each",
+          "quantity": 1.0,
+          "rate": 330.0,
+          "amount": 330.0
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "CARRIAGE",
+          "unit": "L.S.",
+          "quantity": 53.82,
+          "rate": 2.27,
+          "amount": 122.17
+        },
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 2.55,
+          "rate": 897.0,
+          "amount": 2287.35
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.55,
+          "rate": 736.0,
+          "amount": 1876.8
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.12,
+          "rate": 897.0,
+          "amount": 107.64
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.12,
+          "rate": 816.0,
+          "amount": 97.92
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 60.58,
+          "rate": 2.27,
+          "amount": 137.52
+        }
+      ],
+      "calculations": {
+        "total_w": 17434.4,
+        "total_x": 17608.74,
+        "total_y": 21354.12,
+        "total_z": 24557.24
+      },
+      "say_rate": 3307.05,
+      "page": 730
+    },
+    {
+      "item_code": "10.6.3",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Supplying and fixing rolling shutters of approved make, made of required size M.S. laths, - 80x0.90 mm M.S. laths with 0.90 mm thick top cover 2.5m = 7.5sqm.",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "7044",
+          "category": "MATERIAL",
+          "description": "Rolling shutters of 80x0.90 mm laths",
+          "unit": "sqm",
+          "quantity": 7.5,
+          "rate": 1417.0,
+          "amount": 10627.5
+        },
+        {
+          "resource_code": "7046",
+          "category": "MATERIAL",
+          "description": "Top cover of Rolling shutters 0.90 mm thick",
+          "unit": "metre",
+          "quantity": 2.5,
+          "rate": 495.0,
+          "amount": 1237.5
+        },
+        {
+          "resource_code": "0975",
+          "category": "MATERIAL",
+          "description": "27.5 cm long wire spring grade no 2 for rolling shutters",
+          "unit": "each",
+          "quantity": 1.0,
+          "rate": 330.0,
+          "amount": 330.0
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "CARRIAGE",
+          "unit": "L.S.",
+          "quantity": 53.82,
+          "rate": 2.27,
+          "amount": 122.17
+        },
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 2.55,
+          "rate": 897.0,
+          "amount": 2287.35
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.55,
+          "rate": 736.0,
+          "amount": 1876.8
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.12,
+          "rate": 897.0,
+          "amount": 107.64
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.12,
+          "rate": 816.0,
+          "amount": 97.92
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 60.58,
+          "rate": 2.27,
+          "amount": 137.52
+        }
+      ],
+      "calculations": {
+        "total_w": 16824.4,
+        "total_x": 16992.64,
+        "total_y": 20606.97,
+        "total_z": 23698.02
+      },
+      "say_rate": 3191.35,
+      "page": 731
+    },
+    {
+      "item_code": "10.7",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing ball bearing for rolling shutters.",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "No."
+      },
+      "breakup": [
+        {
+          "resource_code": "0976",
+          "category": "MATERIAL",
+          "description": "Ball bearing for rolling shutters",
+          "unit": "each",
+          "quantity": 1.0,
+          "rate": 285.0,
+          "amount": 285.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 26.91,
+          "rate": 2.27,
+          "amount": 61.09
+        }
+      ],
+      "calculations": {
+        "total_w": 346.09,
+        "total_x": 349.55,
+        "total_y": 423.9,
+        "total_z": 487.49
+      },
+      "say_rate": 492.35,
+      "page": 731
+    },
+    {
+      "item_code": "10.8",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Extra for providing mechanical device chain and crank operation for operating rolling shutters.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 732
+    },
+    {
+      "item_code": "10.8.1",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Extra for providing mechanical device chain and crank operation for operating rolling shutters. - Exceeding 10.00 sqm and upto 16.80 sqm in the area",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0977",
+          "category": "MATERIAL",
+          "description": "Extra for mechanical devices chain and cranked operation for operatingrolling shut- ters : exceeding 10.00 sq.m and upto 16.80 sq.m area of door",
+          "unit": "sqm",
+          "quantity": 1.0,
+          "rate": 870.0,
+          "amount": 870.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 13.52,
+          "rate": 2.27,
+          "amount": 30.69
+        }
+      ],
+      "calculations": {
+        "total_w": 900.69,
+        "total_x": 909.7,
+        "total_y": 1103.19,
+        "total_z": 1268.67
+      },
+      "say_rate": 1281.35,
+      "page": 732
+    },
+    {
+      "item_code": "10.8.2",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Extra for providing mechanical device chain and crank operation for operating rolling shutters. - Exceeding 16.80 sqm in area",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0978",
+          "category": "MATERIAL",
+          "description": "Extra for mechanical devices chain and cranked operation for operating rolling shut- ters : exceeding 16.80 sq.m area of door",
+          "unit": "sqm",
+          "quantity": 1.0,
+          "rate": 800.0,
+          "amount": 800.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 13.52,
+          "rate": 2.27,
+          "amount": 30.69
+        }
+      ],
+      "calculations": {
+        "total_w": 830.69,
+        "total_x": 839.0,
+        "total_y": 1017.46,
+        "total_z": 1170.08
+      },
+      "say_rate": 1181.8,
+      "page": 732
+    },
+    {
+      "item_code": "10.9",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Extra for providing grilled rolling shutters manufactured out of 8 mm dia M.S. bar instead of laths as per design approved by Engineer-in- charge, (area of grill to be measured). and grill height 0.6m Grill Area = 1.50sqm.",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "7068",
+          "category": "MATERIAL",
+          "description": "Extra for providing grilled rolling shutters with 8 mm dia M.S. rod",
+          "unit": "sqm",
+          "quantity": 1.5,
+          "rate": 540.0,
+          "amount": 810.0
+        }
+      ],
+      "calculations": {
+        "total_w": 810.0,
+        "total_x": 818.1,
+        "total_y": 992.11,
+        "total_z": 1140.93
+      },
+      "say_rate": 768.25,
+      "page": 732
+    },
+    {
+      "item_code": "10.10",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Fixing standard steel glazed doors, windows and ventilators in walls, including fixing of float glass panes with glazing clips and special metal-sash putty of approved make, or metal beading with screws, (only steel windows, glass panes cut to size and glazing clips or metal beading with screws, shall be supplied by department free of cost.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 733
+    },
+    {
+      "item_code": "10.10.1",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Fixing standard steel glazed doors, windows and ventilators in walls, including fixing of - Fixing with 15x3 mm lugs 10 cm long embedded in cement concrete block 15x10x10 cm of C.C. 1:3:6 (1 Cement : 3 coarse sand : 6 graded stone aggregate 20 mm nominal size) 1.52sqm.(weight 15 kg) Cement concrete blocks 15x10x10cm =6x0.15x0.10x0.10= 0.009 cum 4.2.5 Rate as per item no 4.2.5 of SH : Concrete work cum 0.009 9311.40 83.80 A",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.17,
+          "rate": 897.0,
+          "amount": 152.49
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.08,
+          "rate": 897.0,
+          "amount": 71.76
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.08,
+          "rate": 816.0,
+          "amount": 65.28
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "9977",
+          "category": "LABOUR",
+          "description": "Sundries for carriage of material",
+          "unit": "L.S.",
+          "quantity": 67.28,
+          "rate": 2.27,
+          "amount": 152.73
+        }
+      ],
+      "calculations": {
+        "total_w": 894.06,
+        "total_x": 902.16,
+        "total_y": 1076.23,
+        "total_z": 1225.09
+      },
+      "say_rate": 82.45,
+      "page": 733
+    },
+    {
+      "item_code": "10.10.2",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Fixing standard steel glazed doors, windows and ventilators in walls, including fixing of - Fixing with carbon steel galvanised dash fastener of required dia and size (to be paid for separately) 1.52sqm.(weight 15 kg)",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.17,
+          "rate": 897.0,
+          "amount": 152.49
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.17,
+          "rate": 736.0,
+          "amount": 125.12
+        },
+        {
+          "resource_code": "9977",
+          "category": "LABOUR",
+          "description": "Sundries for Carriage of material",
+          "unit": "L.S.",
+          "quantity": 67.28,
+          "rate": 2.27,
+          "amount": 152.73
+        }
+      ],
+      "calculations": {
+        "total_w": 430.34,
+        "total_x": 434.64,
+        "total_y": 527.09,
+        "total_z": 606.15
+      },
+      "say_rate": 40.8,
+      "page": 733
+    },
+    {
+      "item_code": "10.11",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing factory made ISI marked steel glazed doors, windows and ventilators, side /top /centre hung, with beading and all members such as F7D,F4B, K11 B and K12 B etc. complete of standard rolled steel sections, joints mitred and flash butt welded and sash bars tenoned and riveted, including providing and fixing of hinges, pivots, priming coat of approved steel primer, but excluding the cost of other fittings,glass panes  complete all as per approved design, (sectional weight of only steel members shall be measured for payment).",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 734
+    },
+    {
+      "item_code": "10.11.1",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing factory made ISI marked steel glazed doors, windows and ventilators, - Fixing with 15x3 mm lugs 10 cm long embedded in cement concrete block 15x10x10 cm of C.C. 1:3:6 (1 Cement : 3 coarse sand : 6 graded stone aggregate 20 mm nominal size)",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "Nos. double leaf"
+      },
+      "breakup": [
+        {
+          "resource_code": "1011",
+          "category": "MATERIAL",
+          "description": "Steel glazed door,window/ ventilator, all members like as F7D, F4B, K11 and K12B etc.",
+          "unit": "kg",
+          "quantity": 300.0,
+          "rate": 59.0,
+          "amount": 17700.0
+        },
+        {
+          "resource_code": "0103",
+          "category": "MATERIAL",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 1.7,
+          "rate": 816.0,
+          "amount": 1387.2
+        },
+        {
+          "resource_code": "0116",
+          "category": "MATERIAL",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 2.6,
+          "rate": 897.0,
+          "amount": 2332.2
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 3.4,
+          "rate": 736.0,
+          "amount": 2502.4
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.27,
+          "rate": 736.0,
+          "amount": 198.72
+        },
+        {
+          "resource_code": "0115",
+          "category": "MATERIAL",
+          "description": "Collie",
+          "unit": "day",
+          "quantity": 0.195,
+          "rate": 736.0,
+          "amount": 143.52
+        },
+        {
+          "resource_code": "0130",
+          "category": "MATERIAL",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.084,
+          "rate": 897.0,
+          "amount": 75.35
+        },
+        {
+          "resource_code": "0128",
+          "category": "MATERIAL",
+          "description": "Mate",
+          "unit": "day",
+          "quantity": 0.012,
+          "rate": 816.0,
+          "amount": 9.79
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Hire charges of machine, scaffolding and sundries",
+          "unit": "L.S.",
+          "quantity": 122.2,
+          "rate": 2.27,
+          "amount": 277.39
+        }
+      ],
+      "calculations": {
+        "total_w": 28374.46,
+        "total_x": 28633.38,
+        "total_y": 34195.65,
+        "total_z": 38952.61
+      },
+      "say_rate": 131.05,
+      "page": 734
+    },
+    {
+      "item_code": "10.11.2",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing factory made ISI marked steel glazed doors, windows and ventilators, - Fixing with carbon steel galvanised dash fastener of required dia and size (to be paid for separately)",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "Nos. double leaf door"
+      },
+      "breakup": [
+        {
+          "resource_code": "1011",
+          "category": "MATERIAL",
+          "description": "Steel glazed door,window/ ventilator, all members like as F7D, F4B, K11 and K12B etc.",
+          "unit": "kg",
+          "quantity": 300.0,
+          "rate": 59.0,
+          "amount": 17700.0
+        },
+        {
+          "resource_code": "0103",
+          "category": "MATERIAL",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 1.7,
+          "rate": 816.0,
+          "amount": 1387.2
+        },
+        {
+          "resource_code": "0116",
+          "category": "MATERIAL",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 2.6,
+          "rate": 897.0,
+          "amount": 2332.2
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 3.4,
+          "rate": 736.0,
+          "amount": 2502.4
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.27,
+          "rate": 736.0,
+          "amount": 198.72
+        },
+        {
+          "resource_code": "0115",
+          "category": "MATERIAL",
+          "description": "Collie",
+          "unit": "day",
+          "quantity": 0.195,
+          "rate": 736.0,
+          "amount": 143.52
+        },
+        {
+          "resource_code": "0130",
+          "category": "MATERIAL",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.084,
+          "rate": 897.0,
+          "amount": 75.35
+        },
+        {
+          "resource_code": "0128",
+          "category": "MATERIAL",
+          "description": "Mate",
+          "unit": "day",
+          "quantity": 0.012,
+          "rate": 816.0,
+          "amount": 9.79
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Hire charges of drill machine, scaffolding and sundries",
+          "unit": "L.S.",
+          "quantity": 122.2,
+          "rate": 2.27,
+          "amount": 277.39
+        }
+      ],
+      "calculations": {
+        "total_w": 27536.43,
+        "total_x": 27795.35,
+        "total_y": 33357.62,
+        "total_z": 38114.58
+      },
+      "say_rate": 128.25,
+      "page": 735
+    },
+    {
+      "item_code": "10.12",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Extra for providing and fixing steel beading of size 10 x 10 x 1.6 mm (box type), approved shape and section with screws instead of glazing clips and metal sash putty, in steel doors, windows, ventilators and composite units. Detail of cost for 1 metre beading for doors, windows, Ventilators and composit units",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "1143",
+          "category": "MATERIAL",
+          "description": "Steel beading size 10 x 10 x 1.6 mm (box type)",
+          "unit": "metre",
+          "quantity": 1.0,
+          "rate": 27.0,
+          "amount": 27.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Applying priming coat",
+          "unit": "L.S.",
+          "quantity": 0.46,
+          "rate": 2.27,
+          "amount": 1.04
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Fixing charges",
+          "unit": "L.S.",
+          "quantity": 3.01,
+          "rate": 2.27,
+          "amount": 6.83
+        }
+      ],
+      "calculations": {
+        "total_w": 34.87,
+        "total_x": 35.22,
+        "total_y": 42.71,
+        "total_z": 49.12
+      },
+      "say_rate": 49.6,
+      "page": 736
+    },
+    {
+      "item_code": "10.13",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing T-iron frames for doors, windows and ventilators of mild steel Tee- sections, joints mitred and welded, including fixing of necessary butt hinges and screws and applying a priming coat of approved steel primer. Fixing with 15x3 mm lugs 10 cm long embedded in cement concrete block 15x10x10 cm of C.C. 1:3:6 (1 Cement : 3 coarse sand : 6 graded stone aggregate 20 mm nominal size).",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 736
+    },
+    {
+      "item_code": "10.13.1",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing T-iron frames for doors, windows and ventilators of mild steel Tee- Tee iron 40x40x6mm = 2m+2m+1m = 5 metres 5 metres @3.5Kg/m = 17.5kg.+ Add wastage @ 5% = 0.87Kg. Total = 18.37 kg. Say 0.18 qunital",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "1007",
+          "category": "MATERIAL",
+          "description": "Structurals such as tees,angles channels and R.S. joists",
+          "unit": "quintal",
+          "quantity": 0.18,
+          "rate": 5965.0,
+          "amount": 1073.7
+        },
+        {
+          "resource_code": "1008",
+          "category": "MATERIAL",
+          "description": "Flats upto 10 mm in thickness quintal 0.002 5450.00 10.90 Cement concrete block 1:3:6- 6x15x10x- 10cm= 0.009 cum 4.2.5 Rate as per item no 4.2.5 of SH : Concrete work",
+          "unit": "cum",
+          "quantity": 0.009,
+          "rate": 9311.4,
+          "amount": 83.8
+        },
+        {
+          "resource_code": "0595",
+          "category": "MATERIAL",
+          "description": "Bright finished or black enamelled mild steel butt hinges 100x58x1.90 mm",
+          "unit": "10 Nos",
+          "quantity": 0.6,
+          "rate": 80.0,
+          "amount": 48.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "For screws and nuts and bolts",
+          "unit": "L.S.",
+          "quantity": 35.88,
+          "rate": 2.27,
+          "amount": 81.45
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "For applying steel primer",
+          "unit": "L.S.",
+          "quantity": 17.94,
+          "rate": 2.27,
+          "amount": 40.72
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of material",
+          "unit": "L.S.",
+          "quantity": 5.33,
+          "rate": 2.27,
+          "amount": 12.1
+        },
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 0.1,
+          "rate": 816.0,
+          "amount": 81.6
+        },
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 0.15,
+          "rate": 897.0,
+          "amount": 134.55
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 736.0,
+          "amount": 147.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 8.97,
+          "rate": 2.27,
+          "amount": 20.36
+        }
+      ],
+      "calculations": {
+        "total_w": 1767.68,
+        "total_x": 1784.52,
+        "total_y": 2146.26,
+        "total_z": 2455.63
+      },
+      "say_rate": 141.7,
+      "page": 736
+    },
+    {
+      "item_code": "10.13.2",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing T-iron frames for doors, windows and ventilators of mild steel Tee- - Fixing with carbon steel galvanised dash fastener of required dia and size (to be paid for separately) Tee iron 40x40x6mm = 2m+2m+1m = 5 metres 5 metres @3.5Kg/m = 17.5kg.+ Add wastage @ 5% = 0.87Kg. Total = 18.37 kg. Say 0.18 qunital",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "1007",
+          "category": "MATERIAL",
+          "description": "Structurals such as tees,angles channels and R.S. joists",
+          "unit": "quintal",
+          "quantity": 0.18,
+          "rate": 5965.0,
+          "amount": 1073.7
+        },
+        {
+          "resource_code": "1002",
+          "category": "MATERIAL",
+          "description": "Mild steel round bar 12 mm dia and below",
+          "unit": "quintal",
+          "quantity": 0.006,
+          "rate": 5550.0,
+          "amount": 33.3
+        },
+        {
+          "resource_code": "0595",
+          "category": "MATERIAL",
+          "description": "Bright finished or black enamelled mild steel butt hinges 100x58x1.90 mm",
+          "unit": "10 Nos",
+          "quantity": 0.6,
+          "rate": 80.0,
+          "amount": 48.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "For screws and nuts and bolts",
+          "unit": "L.S.",
+          "quantity": 35.88,
+          "rate": 2.27,
+          "amount": 81.45
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "For applying steel primer",
+          "unit": "L.S.",
+          "quantity": 17.94,
+          "rate": 2.27,
+          "amount": 40.72
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of material",
+          "unit": "L.S.",
+          "quantity": 5.33,
+          "rate": 2.27,
+          "amount": 12.1
+        },
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 0.1,
+          "rate": 816.0,
+          "amount": 81.6
+        },
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 0.15,
+          "rate": 897.0,
+          "amount": 134.55
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 736.0,
+          "amount": 147.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 8.97,
+          "rate": 2.27,
+          "amount": 20.36
+        }
+      ],
+      "calculations": {
+        "total_w": 1672.98,
+        "total_x": 1689.71,
+        "total_y": 2049.11,
+        "total_z": 2356.48
+      },
+      "say_rate": 136.0,
+      "page": 737
+    },
+    {
+      "item_code": "10.14",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing pressed steel door frames conforming to IS: 4351, manufactured from commercial mild steel sheet of 1.60 mm thickness, including hinges, jamb, lock jamb, bead and if required angle threshold of mild steel angle of section 50x25 mm, or base ties of 1.60 mm, pressed mild steel welded or rigidly fixed together by mechanical means, including M.S. pressed butt hinges 2.5 mm thick with mortar guards, lock strike-plate and shock absorbers as specified and applying a coat of approved steel primer after pre-treatment of the surface as directed by Engineer-in-charge:",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 738
+    },
+    {
+      "item_code": "10.14.1",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing pressed steel door frames conforming to IS: 4351, manufactured from - Profile B",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 738
+    },
+    {
+      "item_code": "10.14.1.1",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing pressed steel door frames conforming to IS: 4351, manufactured from - Fixing with adjustable lugs with split end tail to each jamb",
+      "cost_basis": {
+        "quantity": 5.0,
+        "unit": "metre"
+      },
+      "breakup": [
+        {
+          "resource_code": "4006",
+          "category": "MATERIAL",
+          "description": "Pressed steel door frames (mild steel sheet 1.60mm) Profile “B” frame",
+          "unit": "metre",
+          "quantity": 5.0,
+          "rate": 260.0,
+          "amount": 1300.0
+        },
+        {
+          "resource_code": "0595",
+          "category": "MATERIAL",
+          "description": "Bright finished or black enamelled mild steel butt hinges 100x58x1.90 mm",
+          "unit": "10 Nos",
+          "quantity": 0.6,
+          "rate": 80.0,
+          "amount": 48.0
+        },
+        {
+          "resource_code": "1007",
+          "category": "MATERIAL",
+          "description": "Structurals such as tees,angles channels and R.S. joists",
+          "unit": "quintal",
+          "quantity": 0.03,
+          "rate": 5965.0,
+          "amount": 178.95
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of material",
+          "unit": "L.S.",
+          "quantity": 5.33,
+          "rate": 2.27,
+          "amount": 12.1
+        },
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 0.15,
+          "rate": 897.0,
+          "amount": 134.55
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 736.0,
+          "amount": 147.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries L.S. 8.97 2.27 20.36 Steel primer 500x2(2x1.2+2x6.0+1x12.50cm)=2.69sqm 13.50.3 Rate as per item no 13.50.3 of SH : Finish- ing",
+          "unit": "sqm",
+          "quantity": 2.69,
+          "rate": 67.4,
+          "amount": 181.31
+        }
+      ],
+      "calculations": {
+        "total_w": 2103.92,
+        "total_x": 2123.15,
+        "total_y": 2536.18,
+        "total_z": 2889.41
+      },
+      "say_rate": 583.3,
+      "page": 738
+    },
+    {
+      "item_code": "10.14.1.2",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing pressed steel door frames conforming to IS: 4351, manufactured from - Fixing with carbon steel galvanised dash fastener of required dia and size (to be paid for separately)",
+      "cost_basis": {
+        "quantity": 5.0,
+        "unit": "metre"
+      },
+      "breakup": [
+        {
+          "resource_code": "4006",
+          "category": "MATERIAL",
+          "description": "Pressed steel door frames (mild steel sheet 1.60mm) Profile “B” frame",
+          "unit": "metre",
+          "quantity": 5.0,
+          "rate": 260.0,
+          "amount": 1300.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Deduct sundries for not providing adjust- able lugs",
+          "unit": "L.S.",
+          "quantity": -20.0,
+          "rate": 2.27,
+          "amount": -45.4
+        },
+        {
+          "resource_code": "0595",
+          "category": "MATERIAL",
+          "description": "Bright finished or black enamelled mild steel butt hinges 100x58x1.90 mm",
+          "unit": "10 Nos",
+          "quantity": 0.6,
+          "rate": 80.0,
+          "amount": 48.0
+        },
+        {
+          "resource_code": "1007",
+          "category": "MATERIAL",
+          "description": "Structurals such as tees,angles channels and R.S. joists",
+          "unit": "quintal",
+          "quantity": 0.03,
+          "rate": 5965.0,
+          "amount": 178.95
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of material",
+          "unit": "L.S.",
+          "quantity": 5.33,
+          "rate": 2.27,
+          "amount": 12.1
+        },
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 0.15,
+          "rate": 897.0,
+          "amount": 134.55
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 736.0,
+          "amount": 147.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries L.S. 8.97 2.27 20.36 Steel primer 500x2(2x1.2+2x6.0+1x12.50cm)=2.69sqm 13.50.3 Rate as per item no 13.50.3 of SH : Finish- ing",
+          "unit": "sqm",
+          "quantity": 2.69,
+          "rate": 67.4,
+          "amount": 181.31
+        }
+      ],
+      "calculations": {
+        "total_w": 2058.52,
+        "total_x": 2077.29,
+        "total_y": 2480.56,
+        "total_z": 2825.45
+      },
+      "say_rate": 570.4,
+      "page": 739
+    },
+    {
+      "item_code": "10.14.2",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing pressed steel door frames conforming to IS: 4351, manufactured from - Profile C",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 739
+    },
+    {
+      "item_code": "10.14.2.1",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing pressed steel door frames conforming to IS: 4351, manufactured from - Fixing with adjustable lugs with split end tail to each jamb",
+      "cost_basis": {
+        "quantity": 5.0,
+        "unit": "metre"
+      },
+      "breakup": [
+        {
+          "resource_code": "4007",
+          "category": "MATERIAL",
+          "description": "Pressed steel door frames (mild steel sheet 1.60mm) Profile “C”",
+          "unit": "metre",
+          "quantity": 5.0,
+          "rate": 280.0,
+          "amount": 1400.0
+        },
+        {
+          "resource_code": "0595",
+          "category": "MATERIAL",
+          "description": "Bright finished or black enamelled mild steel butt hinges 100x58x1.90 mm",
+          "unit": "10 Nos",
+          "quantity": 0.6,
+          "rate": 80.0,
+          "amount": 48.0
+        },
+        {
+          "resource_code": "1007",
+          "category": "MATERIAL",
+          "description": "Structurals such as tees,angles channels and R.S. joists",
+          "unit": "quintal",
+          "quantity": 0.03,
+          "rate": 5965.0,
+          "amount": 178.95
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of material",
+          "unit": "L.S.",
+          "quantity": 5.33,
+          "rate": 2.27,
+          "amount": 12.1
+        },
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 0.15,
+          "rate": 897.0,
+          "amount": 134.55
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 736.0,
+          "amount": 147.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries L.S. 8.97 2.27 20.36 Steel primer 500x2(2x1.2+2x6.0+1x12.50cm)=2.69sqm 13.50.3 Rate as per item no 13.50.3 of SH : Finish- ing",
+          "unit": "sqm",
+          "quantity": 2.69,
+          "rate": 67.4,
+          "amount": 181.31
+        }
+      ],
+      "calculations": {
+        "total_w": 2203.92,
+        "total_x": 2224.15,
+        "total_y": 2658.66,
+        "total_z": 3030.26
+      },
+      "say_rate": 611.75,
+      "page": 739
+    },
+    {
+      "item_code": "10.14.2.2",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing pressed steel door frames conforming to IS: 4351, manufactured from - Fixing with carbon steel galvanised dash fastener of required dia and size (to be paid for separately)",
+      "cost_basis": {
+        "quantity": 5.0,
+        "unit": "metre"
+      },
+      "breakup": [
+        {
+          "resource_code": "4007",
+          "category": "MATERIAL",
+          "description": "Pressed steel door frames (mild steel sheet 1.60mm) Profile “C”",
+          "unit": "metre",
+          "quantity": 5.0,
+          "rate": 280.0,
+          "amount": 1400.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries for not providing adjustable lugs(-)",
+          "unit": "L.S.",
+          "quantity": -20.0,
+          "rate": 2.27,
+          "amount": -45.4
+        },
+        {
+          "resource_code": "0595",
+          "category": "MATERIAL",
+          "description": "Bright finished or black enamelled mild steel butt hinges 100x58x1.90 mm",
+          "unit": "10 Nos",
+          "quantity": 0.6,
+          "rate": 80.0,
+          "amount": 48.0
+        },
+        {
+          "resource_code": "1007",
+          "category": "MATERIAL",
+          "description": "Structurals such as tees,angles channels and R.S. joists",
+          "unit": "quintal",
+          "quantity": 0.03,
+          "rate": 5965.0,
+          "amount": 178.95
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of material",
+          "unit": "L.S.",
+          "quantity": 5.33,
+          "rate": 2.27,
+          "amount": 12.1
+        },
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 0.15,
+          "rate": 897.0,
+          "amount": 134.55
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 736.0,
+          "amount": 147.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries L.S. 8.97 2.27 20.36 Steel primer 500x2(2x1.2+2x6.0+1x12.50cm)=2.69sqm 13.50.3 Rate as per item no 13.50.3 of SH : Finish- ing",
+          "unit": "sqm",
+          "quantity": 2.69,
+          "rate": 67.4,
+          "amount": 181.31
+        }
+      ],
+      "calculations": {
+        "total_w": 2158.52,
+        "total_x": 2178.29,
+        "total_y": 2603.05,
+        "total_z": 2966.31
+      },
+      "say_rate": 598.85,
+      "page": 740
+    },
+    {
+      "item_code": "10.14.3",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing pressed steel door frames conforming to IS: 4351, manufactured from - Profile E",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 741
+    },
+    {
+      "item_code": "10.14.3.1",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing pressed steel door frames conforming to IS: 4351, manufactured from - Fixing with adjustable lugs with split end tail to each jamb",
+      "cost_basis": {
+        "quantity": 5.0,
+        "unit": "metre"
+      },
+      "breakup": [
+        {
+          "resource_code": "4008",
+          "category": "MATERIAL",
+          "description": "Pressed steel door frames (mild steel sheet 1.60mm) Profile “E”",
+          "unit": "metre",
+          "quantity": 5.0,
+          "rate": 300.0,
+          "amount": 1500.0
+        },
+        {
+          "resource_code": "0595",
+          "category": "MATERIAL",
+          "description": "Bright finished or black enamelled mild steel butt hinges 100x58x1.90 mm",
+          "unit": "10 Nos",
+          "quantity": 0.6,
+          "rate": 80.0,
+          "amount": 48.0
+        },
+        {
+          "resource_code": "1007",
+          "category": "MATERIAL",
+          "description": "Structurals such as tees,angles channels and R.S. joists",
+          "unit": "quintal",
+          "quantity": 0.03,
+          "rate": 5965.0,
+          "amount": 178.95
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of material",
+          "unit": "L.S.",
+          "quantity": 5.33,
+          "rate": 2.27,
+          "amount": 12.1
+        },
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 0.15,
+          "rate": 897.0,
+          "amount": 134.55
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 736.0,
+          "amount": 147.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries L.S. 8.97 2.27 20.36 Steel primer 500x2(2x1.2+2x6.0+1x12.50cm)=2.69sqm 13.50.3 Rate as per item no 13.50.3 of SH : Finish- ing",
+          "unit": "sqm",
+          "quantity": 2.69,
+          "rate": 67.4,
+          "amount": 181.31
+        }
+      ],
+      "calculations": {
+        "total_w": 2303.92,
+        "total_x": 2325.15,
+        "total_y": 2781.14,
+        "total_z": 3171.11
+      },
+      "say_rate": 640.2,
+      "page": 741
+    },
+    {
+      "item_code": "10.14.3.2",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing pressed steel door frames conforming to IS: 4351, manufactured from - Fixing with carbon steel galvanised dash fastener of required dia and size (to be paid for separately)",
+      "cost_basis": {
+        "quantity": 5.0,
+        "unit": "metre"
+      },
+      "breakup": [
+        {
+          "resource_code": "4008",
+          "category": "MATERIAL",
+          "description": "Pressed steel door frames (mild steel sheet 1.60mm) Profile “E”",
+          "unit": "metre",
+          "quantity": 5.0,
+          "rate": 300.0,
+          "amount": 1500.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries for not providing adjustable lugs (-)",
+          "unit": "L.S.",
+          "quantity": -20.0,
+          "rate": 2.27,
+          "amount": -45.4
+        },
+        {
+          "resource_code": "0595",
+          "category": "MATERIAL",
+          "description": "Bright finished or black enamelled mild steel butt hinges 100x58x1.90 mm",
+          "unit": "10 Nos",
+          "quantity": 0.6,
+          "rate": 80.0,
+          "amount": 48.0
+        },
+        {
+          "resource_code": "1007",
+          "category": "MATERIAL",
+          "description": "Structurals such as tees,angles channels and R.S. joists",
+          "unit": "quintal",
+          "quantity": 0.03,
+          "rate": 5965.0,
+          "amount": 178.95
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of material",
+          "unit": "L.S.",
+          "quantity": 5.33,
+          "rate": 2.27,
+          "amount": 12.1
+        },
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 0.15,
+          "rate": 897.0,
+          "amount": 134.55
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 736.0,
+          "amount": 147.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries L.S. 8.97 2.27 20.36 Steel primer 500x2(2x1.2+2x6.0+1x12.50cm)=2.69sqm 13.50.3 Rate as per item no 13.50.3 of SH : Finish- ing",
+          "unit": "sqm",
+          "quantity": 2.69,
+          "rate": 67.4,
+          "amount": 181.31
+        }
+      ],
+      "calculations": {
+        "total_w": 2258.52,
+        "total_x": 2279.29,
+        "total_y": 2725.53,
+        "total_z": 3107.16
+      },
+      "say_rate": 627.3,
+      "page": 742
+    },
+    {
+      "item_code": "10.15",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing M.S. Tubular frames for doors, windows, ventilators and cupboard with rectangular/ L-Type sections, made of 1.60 mm thick M.S. Sheet, joints mitred, welded and grinded finish, with profiles of required size, including fixing of necessary butt hinges and screws and applying a priming coat of approved steel primer. Fixing with 15x3 mm lugs 10 cm long embedded in cement concrete block 15x10x10 cm of C.C. 1:3:6 (1 Cement : 3 coarse sand : 6 graded stone aggregate 20 mm nominal size)",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 743
+    },
+    {
+      "item_code": "10.15.1",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing M.S. Tubular frames for doors, windows, ventilators and cupboard with L- section - 32x22x28mm 1.60mm thick 2.00+2.00+1.00 = 5.00 m Width of MS sheet = 32+24.80+22+ 24.80+10mm = 113.60mm = 0.1136 m Area of MS sheet = 0.1136x5.00x0.0016 = 0.0009088 sqm Weight of Sheet = 0.0009088x7850 =7.134 kg Add wastage @ 5% = 0.357Kg. Total = 7.491 kg Say 7.49 kg",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "4011",
+          "category": "MATERIAL",
+          "description": "Mild steel tubes electric resistant or induc- tion butt welded kilo-",
+          "unit": "gram",
+          "quantity": 7.49,
+          "rate": 72.0,
+          "amount": 539.28
+        },
+        {
+          "resource_code": "1008",
+          "category": "MATERIAL",
+          "description": "Flats upto 10 mm in thickness quintal 0.002 5450.00 10.90 Cement concrete block 1:3:6- 6x15x10x- 10cm= 0.009 cum 4.2.5 Rate as per item no 4.2.5 of SH : Concrete work",
+          "unit": "cum",
+          "quantity": 0.009,
+          "rate": 9311.4,
+          "amount": 83.8
+        },
+        {
+          "resource_code": "0595",
+          "category": "MATERIAL",
+          "description": "Bright finished or black enamelled mild steel butt hinges 100x58x1.90 mm",
+          "unit": "10 Nos",
+          "quantity": 0.6,
+          "rate": 80.0,
+          "amount": 48.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "For screws and nuts and bolts",
+          "unit": "L.S.",
+          "quantity": 35.88,
+          "rate": 2.27,
+          "amount": 81.45
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "For applying steel primer",
+          "unit": "L.S.",
+          "quantity": 17.94,
+          "rate": 2.27,
+          "amount": 40.72
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of material",
+          "unit": "L.S.",
+          "quantity": 5.33,
+          "rate": 2.27,
+          "amount": 12.1
+        },
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 0.04,
+          "rate": 816.0,
+          "amount": 32.64
+        },
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 897.0,
+          "amount": 53.82
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.08,
+          "rate": 736.0,
+          "amount": 58.88
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 3.64,
+          "rate": 2.27,
+          "amount": 8.26
+        }
+      ],
+      "calculations": {
+        "total_w": 1003.15,
+        "total_x": 1012.34,
+        "total_y": 1209.84,
+        "total_z": 1378.75
+      },
+      "say_rate": 195.2,
+      "page": 743
+    },
+    {
+      "item_code": "10.15.2",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing M.S. Tubular frames for doors, windows, ventilators and cupboard with - Fixing with carbon steel galvanised dash fastener of required dia and size (to be paid for separately) L- section - 32x22x28mm 1.60mm thick 2.00+2.00+1.00 = 5.00 m Width of MS sheet = 32+24.80+22+24.80+ 10mm = 113.60mm = 0.1136 m Area of MS sheet = 0.1136x5.00x0.0016 = 0.0009088 sqm Weight of Sheet = 0.0009088x7850 =7.134 kg Add wastage @ 5% = 0.357Kg. Total = 7.491 kg Say 7.49 kg",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "4011",
+          "category": "MATERIAL",
+          "description": "Mild steel tubes electric resistant or induc- tion butt welded kilo-",
+          "unit": "gram",
+          "quantity": 7.49,
+          "rate": 72.0,
+          "amount": 539.28
+        },
+        {
+          "resource_code": "1002",
+          "category": "MATERIAL",
+          "description": "Mild steel round bar 12 mm dia and below",
+          "unit": "quintal",
+          "quantity": 0.006,
+          "rate": 5550.0,
+          "amount": 33.3
+        },
+        {
+          "resource_code": "0595",
+          "category": "MATERIAL",
+          "description": "Bright finished or black enamelled mild steel butt hinges 100x58x1.90 mm",
+          "unit": "10 Nos",
+          "quantity": 0.6,
+          "rate": 80.0,
+          "amount": 48.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "For screws and nuts and bolts",
+          "unit": "L.S.",
+          "quantity": 35.88,
+          "rate": 2.27,
+          "amount": 81.45
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "For applying steel primer",
+          "unit": "L.S.",
+          "quantity": 17.94,
+          "rate": 2.27,
+          "amount": 40.72
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of material",
+          "unit": "L.S.",
+          "quantity": 5.33,
+          "rate": 2.27,
+          "amount": 12.1
+        },
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 0.04,
+          "rate": 816.0,
+          "amount": 32.64
+        },
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 897.0,
+          "amount": 53.82
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.08,
+          "rate": 736.0,
+          "amount": 58.88
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 3.64,
+          "rate": 2.27,
+          "amount": 8.26
+        }
+      ],
+      "calculations": {
+        "total_w": 908.45,
+        "total_x": 917.53,
+        "total_y": 1112.69,
+        "total_z": 1279.59
+      },
+      "say_rate": 181.25,
+      "page": 744
+    },
+    {
+      "item_code": "10.16",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Steel work in built up tubular (round, square or rectangular hollow tubes etc.) trusses etc., including cutting, hoisting, fixing in position and applying a priming coat of approved steel primer, including welding and bolted with special shaped washers etc. complete.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 745
+    },
+    {
+      "item_code": "10.16.1",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Steel work in built up tubular (round, square or rectangular hollow tubes etc.) trusses etc., - Hot finished welded type tubes weight = 119 kg. 50mm dia. tube Tie beam-1x8.0m = 8.00m+ Principal rafter 2x4.30m = 8.60m Total = 16.60m 16.60m @ 5.10kg./m = 84.66kg. 40mm dia. tube Members = 2(0.45+1.25+0.90+2.15) Total = 2x4.75=9.50m 9.50m @ 3.61kg/m = 34.60Kg. Total = 118.96kg. Add wastage @ 5% = 5.94Kg. Total = 124.90Kg. Say 125 kg",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "4009",
+          "category": "MATERIAL",
+          "description": "Mild steel tubes hot finished welded type kilo-",
+          "unit": "gram",
+          "quantity": 125.0,
+          "rate": 72.0,
+          "amount": 9000.0
+        },
+        {
+          "resource_code": "1215",
+          "category": "MATERIAL",
+          "description": "Welding by electric plant",
+          "unit": "cm",
+          "quantity": 357.0,
+          "rate": 2.5,
+          "amount": 892.5
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 1.5,
+          "rate": 897.0,
+          "amount": 1345.5
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.75,
+          "rate": 816.0,
+          "amount": 612.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 5.5,
+          "rate": 736.0,
+          "amount": 4048.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 80.73,
+          "rate": 2.27,
+          "amount": 183.26
+        }
+      ],
+      "calculations": {
+        "total_w": 16337.38,
+        "total_x": 16498.19,
+        "total_y": 19952.88,
+        "total_z": 22907.39
+      },
+      "say_rate": 194.4,
+      "page": 745
+    },
+    {
+      "item_code": "10.16.2",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Steel work in built up tubular (round, square or rectangular hollow tubes etc.) trusses etc., - Hot finished seamless type tubes weight = 119 kg. 50mm dia. tube Tie beam- 1 x 8.0m = 8.00m + Principal rafter 2x4.30m = 8.60m = 16.60m 16.60m @ 5.10kg./ m = 84.66 kg. 40mm dia. tube Members = 2(0.45+1.25+0.90+2.15) Total= 2x 4.75 = 9.50m 9.50m @ 3.61kg/m = 34.60kg. Total = 118.96kg. Add wastage @ 5% = 5.94kg. Total=124.90kg. say 125 kg",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "4010",
+          "category": "MATERIAL",
+          "description": "Mild steel tubes hot finished seamless type kilo-",
+          "unit": "gram",
+          "quantity": 125.0,
+          "rate": 80.0,
+          "amount": 10000.0
+        },
+        {
+          "resource_code": "1215",
+          "category": "MATERIAL",
+          "description": "Welding by electric plant",
+          "unit": "cm",
+          "quantity": 357.0,
+          "rate": 2.5,
+          "amount": 892.5
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 1.5,
+          "rate": 897.0,
+          "amount": 1345.5
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.75,
+          "rate": 816.0,
+          "amount": 612.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 5.5,
+          "rate": 736.0,
+          "amount": 4048.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 80.73,
+          "rate": 2.27,
+          "amount": 183.26
+        }
+      ],
+      "calculations": {
+        "total_w": 17337.38,
+        "total_x": 17508.19,
+        "total_y": 21177.71,
+        "total_z": 24315.95
+      },
+      "say_rate": 206.35,
+      "page": 746
+    },
+    {
+      "item_code": "10.16.3",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Steel work in built up tubular (round, square or rectangular hollow tubes etc.) trusses etc., - Electric resistance or induction butt welded tubes weight = 119 kg. 50mm dia. tube Tie beam-1x8.0m = 8.00m+ Principal rafter 2x4.30m = 8.60m Total = 16.60m 16.60m @ 5.10kg./m = 84.66kg. 40mm dia. tube Members = 2(0.45+1.25+0.90+2.15) Total = 2x4.75=9.50m 9.50m @ 3.61kg/m = 34.60Kg. Total = 118.96kg. Add wastage @ 5% = 5.94Kg. Total = 124.90Kg. say 125 kg",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "4011",
+          "category": "MATERIAL",
+          "description": "Mild steel tubes electric resistant or induc- tion butt welded kilo-",
+          "unit": "gram",
+          "quantity": 125.0,
+          "rate": 72.0,
+          "amount": 9000.0
+        },
+        {
+          "resource_code": "1215",
+          "category": "MATERIAL",
+          "description": "Welding by electric plant",
+          "unit": "cm",
+          "quantity": 357.0,
+          "rate": 2.5,
+          "amount": 892.5
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 1.5,
+          "rate": 897.0,
+          "amount": 1345.5
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.75,
+          "rate": 816.0,
+          "amount": 612.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 5.5,
+          "rate": 736.0,
+          "amount": 4048.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 80.73,
+          "rate": 2.27,
+          "amount": 183.26
+        }
+      ],
+      "calculations": {
+        "total_w": 16337.38,
+        "total_x": 16498.19,
+        "total_y": 19952.88,
+        "total_z": 22907.39
+      },
+      "say_rate": 194.4,
+      "page": 746
+    },
+    {
+      "item_code": "10.17",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing M.S. fan clamp type I or II of 16 mm dia M.S. bar, bent to shape with hooked ends in R.C.C. slabs or beams during laying, including painting the exposed portion of loop, all as per standard design complete.",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "clamp"
+      },
+      "breakup": [
+        {
+          "resource_code": "1003",
+          "category": "MATERIAL",
+          "description": "Mild steel round bar above 12 mm dia",
+          "unit": "quintal",
+          "quantity": 0.017,
+          "rate": 5450.0,
+          "amount": 92.65
+        },
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 0.04,
+          "rate": 816.0,
+          "amount": 32.64
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.04,
+          "rate": 736.0,
+          "amount": 29.44
+        },
+        {
+          "resource_code": "9988",
+          "category": "LABOUR",
+          "description": "Sundries (Carriage, fixing and painting etc.)",
+          "unit": "L.S.",
+          "quantity": 1.82,
+          "rate": 2.27,
+          "amount": 4.13
+        }
+      ],
+      "calculations": {
+        "total_w": 158.86,
+        "total_x": 160.45,
+        "total_y": 194.58,
+        "total_z": 223.77
+      },
+      "say_rate": 226.0,
+      "page": 747
+    },
+    {
+      "item_code": "10.18",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing circular/ Hexagonal cast iron or M.S. sheet box for ceiling fan clamp, of internal dia 140 mm, 73 mm height, top lid of 1.5 mm thick M.S. sheet with its top surface hacked for proper bonding, top lid shall be screwed into the cast iron/ M.S. sheet box by means of 3.3 mm dia round headed screws, one lock at the corners. Clamp shall be made of 12 mm dia M.S. bar bent to shape as per standard drawing. Total = 0.756 kg. Say 0.008 q",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "1002",
+          "category": "MATERIAL",
+          "description": "Mild steel round bar 12 mm dia and below",
+          "unit": "quintal",
+          "quantity": 0.008,
+          "rate": 5550.0,
+          "amount": 44.4
+        },
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 0.03,
+          "rate": 816.0,
+          "amount": 24.48
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.03,
+          "rate": 736.0,
+          "amount": 22.08
+        },
+        {
+          "resource_code": "9988",
+          "category": "LABOUR",
+          "description": "Sundries (Carriage, fixing and painting etc.)",
+          "unit": "L.S.",
+          "quantity": 1.82,
+          "rate": 2.27,
+          "amount": 4.13
+        }
+      ],
+      "calculations": {
+        "total_w": 155.09,
+        "total_x": 156.64,
+        "total_y": 189.96,
+        "total_z": 218.45
+      },
+      "say_rate": 220.65,
+      "page": 748
+    },
+    {
+      "item_code": "10.19",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing mild steel round holding down bolts with nuts and washer plates complete. 1200mm long (0.024 quital) l .2m @ 1.58kg/m = 1.895 kg = 0.019q",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "1010",
+          "category": "MATERIAL",
+          "description": "Mild steel plates",
+          "unit": "quintal",
+          "quantity": 0.005,
+          "rate": 5700.0,
+          "amount": 28.5
+        },
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 0.03,
+          "rate": 816.0,
+          "amount": 24.48
+        },
+        {
+          "resource_code": "9988",
+          "category": "LABOUR",
+          "description": "Carriage and labour for fixing",
+          "unit": "L.S.",
+          "quantity": 4.55,
+          "rate": 2.27,
+          "amount": 10.33
+        }
+      ],
+      "calculations": {
+        "total_w": 164.01,
+        "total_x": 165.65,
+        "total_y": 200.88,
+        "total_z": 231.01
+      },
+      "say_rate": 97.2,
+      "page": 749
+    },
+    {
+      "item_code": "10.20",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing bolts including nuts and washers complete.",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "1034",
+          "category": "MATERIAL",
+          "description": "Bolts and nuts upto 300 mm in length",
+          "unit": "quintal",
+          "quantity": 0.1,
+          "rate": 5200.0,
+          "amount": 520.0
+        },
+        {
+          "resource_code": "0103",
+          "category": "MATERIAL",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 0.38,
+          "rate": 816.0,
+          "amount": 310.08
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.38,
+          "rate": 736.0,
+          "amount": 279.68
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 4.55,
+          "rate": 2.27,
+          "amount": 10.33
+        }
+      ],
+      "calculations": {
+        "total_w": 1120.09,
+        "total_x": 1131.29,
+        "total_y": 1371.92,
+        "total_z": 1577.71
+      },
+      "say_rate": 159.35,
+      "page": 749
+    },
+    {
+      "item_code": "10.21",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing M.S. rivets of sizes in position.",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "1020",
+          "category": "MATERIAL",
+          "description": "Mild steel rivets",
+          "unit": "quintal",
+          "quantity": 0.1,
+          "rate": 5100.0,
+          "amount": 510.0
+        },
+        {
+          "resource_code": "0116",
+          "category": "MATERIAL",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 0.83,
+          "rate": 897.0,
+          "amount": 744.51
+        },
+        {
+          "resource_code": "0139",
+          "category": "MATERIAL",
+          "description": "Skilled Beldar (for floor rubbing etc.)",
+          "unit": "day",
+          "quantity": 0.83,
+          "rate": 816.0,
+          "amount": 677.28
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 10.79,
+          "rate": 2.27,
+          "amount": 24.49
+        }
+      ],
+      "calculations": {
+        "total_w": 1956.28,
+        "total_x": 1975.84,
+        "total_y": 2396.1,
+        "total_z": 2755.52
+      },
+      "say_rate": 278.3,
+      "page": 749
+    },
+    {
+      "item_code": "10.22",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Welding by gas or electric plant including transportation of plant at site etc. complete.",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 0.26,
+          "rate": 2.27,
+          "amount": 0.59
+        }
+      ],
+      "calculations": {
+        "total_w": 2.59,
+        "total_x": 2.62,
+        "total_y": 3.18,
+        "total_z": 3.66
+      },
+      "say_rate": 3.7,
+      "page": 750
+    },
+    {
+      "item_code": "10.25",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Steel work welded in built up sections/ framed work, including cutting, hoisting, fixing in position and applying a priming coat of approved steel primer using structural steel etc. as required. In stringers, treads, landings etc. of stair cases, including use of chequered plate wherever required, all complete",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 750
+    },
+    {
+      "item_code": "10.25.1",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Steel work welded in built up sections/ framed work, including cutting, hoisting, fixing in Detail of cost for 5.331 quintal Consider a flight of staircase of 2.8m height with tread and riser of 200mm & 0.60m wide. (i) Unequal angles as stringers-75x50x6mm 4x12.69x5.6 = 284.25 Kg. Add wastage @ 5% = 14.21 Kg. Total = 298.46kg. Say 2.985q (ii) unequal angles at sides -50x30x5mm 2x14x0.2x3.00=16.8kg. Add wastage @ 5% = 0.84kg. Total = 17.64 kg. Say 0.176q Total = 3.161q",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "1007",
+          "category": "MATERIAL",
+          "description": "Structurals such as tees,angles channels and R.S. joists",
+          "unit": "quintal",
+          "quantity": 3.161,
+          "rate": 5965.0,
+          "amount": 18855.37
+        },
+        {
+          "resource_code": "1003",
+          "category": "MATERIAL",
+          "description": "Mild steel round bar above 12 mm dia",
+          "unit": "quintal",
+          "quantity": 0.373,
+          "rate": 5450.0,
+          "amount": 2032.85
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 1.85,
+          "rate": 897.0,
+          "amount": 1659.45
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.25,
+          "rate": 736.0,
+          "amount": 920.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 110.89,
+          "rate": 2.27,
+          "amount": 251.72
+        }
+      ],
+      "calculations": {
+        "total_w": 47279.34,
+        "total_x": 47719.59,
+        "total_y": 57177.26,
+        "total_z": 65265.64
+      },
+      "say_rate": 123.6,
+      "page": 750
+    },
+    {
+      "item_code": "10.25.2",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Steel work welded in built up sections/ framed work, including cutting, hoisting, fixing in - In gratings, frames, guard bar, ladder, railings, brackets, gates and similar works (0.218 quintal). (i) M.S. flat 50x6mm 2.4kg/per metre 5.75x2.40 = 13.8kg.+ Add wastage @ 5% = 0.69kg. Total = 14.49kg. Say 14.5 kg. Total = 8.41 kg. Say 0.084q",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "1002",
+          "category": "MATERIAL",
+          "description": "Mild steel round bar 12 mm dia and below",
+          "unit": "quintal",
+          "quantity": 0.084,
+          "rate": 5550.0,
+          "amount": 466.2
+        },
+        {
+          "resource_code": "1215",
+          "category": "MATERIAL",
+          "description": "Welding by electric plant 60 cm",
+          "unit": "cm",
+          "quantity": 60.0,
+          "rate": 2.5,
+          "amount": 150.0
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.7,
+          "rate": 897.0,
+          "amount": 627.9
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani day 0.250 816.00 204.00 Applying priming coat 0.6 sqm. 13.50.3 Rate as per item no 13.50.3 of SH : Finish- ing",
+          "unit": "sqm",
+          "quantity": 0.6,
+          "rate": 67.4,
+          "amount": 40.44
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 4.55,
+          "rate": 2.27,
+          "amount": 10.33
+        }
+      ],
+      "calculations": {
+        "total_w": 2657.12,
+        "total_x": 2683.29,
+        "total_y": 3245.42,
+        "total_z": 3726.17
+      },
+      "say_rate": 172.6,
+      "page": 752
+    },
+    {
+      "item_code": "10.26",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing hand rail of approved size by welding etc. to steel ladder railing, balcony railing, staircase railing and similar works, including applying priming coat of approved steel primer.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 752
+    },
+    {
+      "item_code": "10.26.1",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing hand rail of approved size by welding etc. to steel ladder railing, balcony - M.S. tube Detail of cost for 19.49 kg flights of staircase, length of hand rail = 5.40m M.S. tube 40mm nominal bore (medium) = 5.40m @ 3.6lkg/m= 19.49kg Add wastage @ 5% = 0.97 kg Total = 20.46 kg",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "4009",
+          "category": "MATERIAL",
+          "description": "Mild steel tubes hot finished welded type kilo-",
+          "unit": "gram",
+          "quantity": 20.46,
+          "rate": 72.0,
+          "amount": 1473.12
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.24,
+          "rate": 897.0,
+          "amount": 215.28
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.9,
+          "rate": 736.0,
+          "amount": 662.4
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.12,
+          "rate": 816.0,
+          "amount": 97.92
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 12.48,
+          "rate": 2.27,
+          "amount": 28.33
+        }
+      ],
+      "calculations": {
+        "total_w": 2712.32,
+        "total_x": 2738.89,
+        "total_y": 3309.7,
+        "total_z": 3797.86
+      },
+      "say_rate": 196.8,
+      "page": 752
+    },
+    {
+      "item_code": "10.26.2",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing hand rail of approved size by welding etc. to steel ladder railing, balcony - E.R.W. tubes Detail of cost for 17.71 kg two flights of staircase, length of hand rail =5.40m E.R.W. tube 40mm nominal bore = 5.40m @ 3.28kg/m= 17.71kg Add wastage @ 5% = 0.88 kg Total = 18.59 kg",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "4011",
+          "category": "MATERIAL",
+          "description": "Mild steel tubes electric resistant or induc- tion butt welded kilo-",
+          "unit": "gram",
+          "quantity": 18.59,
+          "rate": 72.0,
+          "amount": 1338.48
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.24,
+          "rate": 897.0,
+          "amount": 215.28
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.9,
+          "rate": 736.0,
+          "amount": 662.4
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.12,
+          "rate": 816.0,
+          "amount": 97.92
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 12.48,
+          "rate": 2.27,
+          "amount": 28.33
+        }
+      ],
+      "calculations": {
+        "total_w": 2577.68,
+        "total_x": 2602.9,
+        "total_y": 3144.78,
+        "total_z": 3608.21
+      },
+      "say_rate": 205.75,
+      "page": 753
+    },
+    {
+      "item_code": "10.26.3",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing hand rail of approved size by welding etc. to steel ladder railing, balcony - G.I. pipes flights of staircase, length of hand rail = 5.40m i.e. 20.09 kg G.I. pipe 40mm nominal bore = 5.40m Add wastage @ 5% = 0.27m Total = 5.67m",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "1549",
+          "category": "MATERIAL",
+          "description": "G.I. pipes 40 mm dia metre 5.670 290.00 1644.30 Priming coat 40mm dia.Tube 5.4x22/7x0.0483 = 0.82 sqm 13.50.3 Rate as per item no 13.50.3 of SH : Finish- ing",
+          "unit": "sqm",
+          "quantity": 0.82,
+          "rate": 67.4,
+          "amount": 55.27
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.24,
+          "rate": 897.0,
+          "amount": 215.28
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.9,
+          "rate": 736.0,
+          "amount": 662.4
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.12,
+          "rate": 816.0,
+          "amount": 97.92
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 12.48,
+          "rate": 2.27,
+          "amount": 28.33
+        }
+      ],
+      "calculations": {
+        "total_w": 2883.5,
+        "total_x": 2911.78,
+        "total_y": 3519.36,
+        "total_z": 4038.97
+      },
+      "say_rate": 203.05,
+      "page": 754
+    },
+    {
+      "item_code": "10.27",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing carbon steel galvanised ( minimum coating 5 micron) dash fastener of 10 mm dia double threaded 6.8 grade (yield strength 480 N/mm2), counter sunk head, comprising of 10 mm dia polyamide PA 6 grade sleeve, including drilling of hole in frame , concrete/ masonry, etc. as per direction of Engineer-in-charge.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 755
+    },
+    {
+      "item_code": "10.27.1",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing carbon steel galvanised ( minimum coating 5 micron) dash fastener of 10 - 10 x 60 mm",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "nos."
+      },
+      "breakup": [
+        {
+          "resource_code": "2506",
+          "category": "MATERIAL",
+          "description": "Carben Steel galvanised dash fastner (min 5 micron) of 10 mm dia double threaded 6.8 grade counter sunk head screw comprising of 10 mm dia polyamide PA 6 grade sleave. Size 10mm x 60mm",
+          "unit": "10 nos",
+          "quantity": 1.0,
+          "rate": 278.0,
+          "amount": 278.0
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.4,
+          "rate": 816.0,
+          "amount": 326.4
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.4,
+          "rate": 736.0,
+          "amount": 294.4
+        },
+        {
+          "resource_code": "9977",
+          "category": "LABOUR",
+          "description": "Sundries for carriage of material",
+          "unit": "L.S.",
+          "quantity": 10.0,
+          "rate": 2.27,
+          "amount": 22.7
+        }
+      ],
+      "calculations": {
+        "total_w": 921.5,
+        "total_x": 930.72,
+        "total_y": 1128.68,
+        "total_z": 1297.98
+      },
+      "say_rate": 131.1,
+      "page": 755
+    },
+    {
+      "item_code": "10.27.2",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing carbon steel galvanised ( minimum coating 5 micron) dash fastener of 10 - 10 x 80 mm",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "nos."
+      },
+      "breakup": [
+        {
+          "resource_code": "2507",
+          "category": "MATERIAL",
+          "description": "Carben Steel galvanised dash fastner (min5 micron) of 10 mm dia double thread- ed 6.8 grade counter sunk head screw comprising of 10 mm dia polyamide PA 6 grade sleave. Size 10mm x 80mm",
+          "unit": "10 nos",
+          "quantity": 1.0,
+          "rate": 324.0,
+          "amount": 324.0
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.4,
+          "rate": 816.0,
+          "amount": 326.4
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.4,
+          "rate": 736.0,
+          "amount": 294.4
+        },
+        {
+          "resource_code": "9977",
+          "category": "LABOUR",
+          "description": "Sundries for carriage of material",
+          "unit": "L.S.",
+          "quantity": 10.0,
+          "rate": 2.27,
+          "amount": 22.7
+        }
+      ],
+      "calculations": {
+        "total_w": 967.5,
+        "total_x": 977.18,
+        "total_y": 1185.03,
+        "total_z": 1362.78
+      },
+      "say_rate": 137.65,
+      "page": 755
+    },
+    {
+      "item_code": "10.27.3",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing carbon steel galvanised ( minimum coating 5 micron) dash fastener of 10 - 10 x 120 mm",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "nos."
+      },
+      "breakup": [
+        {
+          "resource_code": "2508",
+          "category": "MATERIAL",
+          "description": "Carben Steel galvanised dash fastner (min 5 micron) of 10 mm dia double threaded 6.8 grade counter sunk head screw comprising of 10 mm dia polyamide PA 6 grade sleave. Size 10mm x 120mm",
+          "unit": "10 nos",
+          "quantity": 1.0,
+          "rate": 403.0,
+          "amount": 403.0
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 816.0,
+          "amount": 408.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "9977",
+          "category": "LABOUR",
+          "description": "Sundries for carriage of material",
+          "unit": "L.S.",
+          "quantity": 10.0,
+          "rate": 2.27,
+          "amount": 22.7
+        }
+      ],
+      "calculations": {
+        "total_w": 1201.7,
+        "total_x": 1213.72,
+        "total_y": 1471.88,
+        "total_z": 1692.66
+      },
+      "say_rate": 170.95,
+      "page": 756
+    },
+    {
+      "item_code": "10.27.4",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing carbon steel galvanised ( minimum coating 5 micron) dash fastener of 10 - 10 x 140 mm",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "nos."
+      },
+      "breakup": [
+        {
+          "resource_code": "2509",
+          "category": "MATERIAL",
+          "description": "Carben Steel galvanised dash fastner (min 5 micron) of 10 mm dia double threaded 6.8 grade counter sunk head screw comprising of 10 mm dia polyamide PA 6 grade sleave. Size 10mm x 140mm",
+          "unit": "10 nos",
+          "quantity": 1.0,
+          "rate": 482.0,
+          "amount": 482.0
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 816.0,
+          "amount": 408.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "9977",
+          "category": "LABOUR",
+          "description": "Sundries for carriage of material",
+          "unit": "L.S.",
+          "quantity": 10.0,
+          "rate": 2.27,
+          "amount": 22.7
+        }
+      ],
+      "calculations": {
+        "total_w": 1280.7,
+        "total_x": 1293.51,
+        "total_y": 1568.64,
+        "total_z": 1803.94
+      },
+      "say_rate": 182.2,
+      "page": 756
+    },
+    {
+      "item_code": "10.27.5",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing carbon steel galvanised ( minimum coating 5 micron) dash fastener of 10 - 10 x 160 mm",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "nos."
+      },
+      "breakup": [
+        {
+          "resource_code": "2510",
+          "category": "MATERIAL",
+          "description": "Carben Steel galvanised dash fastner (min 5 micron) of 10 mm dia double threaded 6.8 grade counter sunk head screw comprising of 10 mm dia polyamide PA 6 grade sleave. Size 10mm x 160mm",
+          "unit": "10 nos",
+          "quantity": 1.0,
+          "rate": 624.0,
+          "amount": 624.0
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.6,
+          "rate": 816.0,
+          "amount": 489.6
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.6,
+          "rate": 736.0,
+          "amount": 441.6
+        },
+        {
+          "resource_code": "9977",
+          "category": "LABOUR",
+          "description": "Sundries for Carriage of material",
+          "unit": "L.S.",
+          "quantity": 10.0,
+          "rate": 2.27,
+          "amount": 22.7
+        }
+      ],
+      "calculations": {
+        "total_w": 1577.9,
+        "total_x": 1593.68,
+        "total_y": 1932.66,
+        "total_z": 2222.56
+      },
+      "say_rate": 224.5,
+      "page": 757
+    },
+    {
+      "item_code": "10.28",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing stainless steel ( Grade 304) railing made of Hollow tubes, channels, plates etc., including welding, grinding, buffing, polishing and making curvature (wherever required) and fitting the same with necessary stainless steel nuts and bolts complete, i/c fixing the railing with necessary accessories & stainless steel dash fasteners , stainless steel bolts etc., of required size, on the top of the floor or the side of waist slab with suitable arrangement as per approval of Engineer-in-charge, (for payment purpose only weight of stainless steel members shall be considered excluding fixing accessories such as nuts, bolts, fasteners etc.). Qty= 2kg + Add wastage @ 5% = 0.10 Total = 2.1 kg",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "4001",
+          "category": "MATERIAL",
+          "description": "Stainless steel (Grade-304)hollow section round/square tubes",
+          "unit": "kg",
+          "quantity": 2.1,
+          "rate": 280.0,
+          "amount": 588.0
+        },
+        {
+          "resource_code": "4002",
+          "category": "MATERIAL",
+          "description": "Stainless steel bolts/square bar and plates",
+          "unit": "kg",
+          "quantity": 1.0,
+          "rate": 150.0,
+          "amount": 150.0
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 897.0,
+          "amount": 53.82
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 736.0,
+          "amount": 147.2
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.02,
+          "rate": 816.0,
+          "amount": 16.32
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Welding of stainless steel section",
+          "unit": "L.S.",
+          "quantity": 30.0,
+          "rate": 2.27,
+          "amount": 68.1
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Curvaturing, grinding, finishing, buffing",
+          "unit": "L.S.",
+          "quantity": 20.0,
+          "rate": 2.27,
+          "amount": 45.4
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries for making good wall and floors",
+          "unit": "L.S.",
+          "quantity": 7.5,
+          "rate": 2.27,
+          "amount": 17.03
+        }
+      ],
+      "calculations": {
+        "total_w": 1085.87,
+        "total_x": 1096.73,
+        "total_y": 1330.0,
+        "total_z": 1529.5
+      },
+      "say_rate": 772.4,
+      "page": 757
+    },
+    {
+      "item_code": "10.29",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing & fixing fly proof wire gauze to windows, clerestory windows & doors with M.S. Flat 15x3 mm and nuts & bolts complete. Galvanised M.S. Wire gauze with 0.63 mm dia wire and 1.4 mm aperture on both sides10.29.1",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "Nos. window shutter"
+      },
+      "breakup": [
+        {
+          "resource_code": "7029",
+          "category": "MATERIAL",
+          "description": "Galvanised wire mesh of average width of aperture 1.4 mm and nominal dia. of wire 0.63 mm",
+          "unit": "sqm",
+          "quantity": 16.9,
+          "rate": 260.0,
+          "amount": 4394.0
+        },
+        {
+          "resource_code": "1008",
+          "category": "MATERIAL",
+          "description": "Flats upto 10 mm in thickness",
+          "unit": "quintal",
+          "quantity": 0.184,
+          "rate": 5450.0,
+          "amount": 1002.8
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage",
+          "unit": "L.S.",
+          "quantity": 18.2,
+          "rate": 2.27,
+          "amount": 41.31
+        },
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 1.7,
+          "rate": 816.0,
+          "amount": 1387.2
+        },
+        {
+          "resource_code": "0112",
+          "category": "LABOUR",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 1.7,
+          "rate": 816.0,
+          "amount": 1387.2
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.6,
+          "rate": 736.0,
+          "amount": 441.6
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 197.6,
+          "rate": 2.27,
+          "amount": 448.55
+        }
+      ],
+      "calculations": {
+        "total_w": 9143.97,
+        "total_x": 9235.41,
+        "total_y": 11199.78,
+        "total_z": 12879.75
+      },
+      "say_rate": 844.7,
+      "page": 758
+    },
+    {
+      "item_code": "10.29.2",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing & fixing fly proof wire gauze to windows, clerestory windows & doors with M.S. Flat - Stainless steel (grade 304) wire gauze of 0.5 mm dia wire and 1.4 mm aperture on both sides",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "Nos. window shutter"
+      },
+      "breakup": [
+        {
+          "resource_code": "8737",
+          "category": "MATERIAL",
+          "description": "Stainless steel wire guage (Grade-304) aperture 1.4mm and 0.50 mm dia wire",
+          "unit": "sqm",
+          "quantity": 16.9,
+          "rate": 445.0,
+          "amount": 7520.5
+        },
+        {
+          "resource_code": "1008",
+          "category": "MATERIAL",
+          "description": "Flats upto 10 mm in thickness",
+          "unit": "quintal",
+          "quantity": 0.184,
+          "rate": 5450.0,
+          "amount": 1002.8
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage",
+          "unit": "L.S.",
+          "quantity": 18.2,
+          "rate": 2.27,
+          "amount": 41.31
+        },
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 1.7,
+          "rate": 816.0,
+          "amount": 1387.2
+        },
+        {
+          "resource_code": "0112",
+          "category": "LABOUR",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 1.7,
+          "rate": 816.0,
+          "amount": 1387.2
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.6,
+          "rate": 736.0,
+          "amount": 441.6
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 197.6,
+          "rate": 2.27,
+          "amount": 448.55
+        }
+      ],
+      "calculations": {
+        "total_w": 12270.47,
+        "total_x": 12393.17,
+        "total_y": 15029.2,
+        "total_z": 17283.58
+      },
+      "say_rate": 1133.55,
+      "page": 759
+    },
+    {
+      "item_code": "10.30",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing & fixing glass panes with putty and glazing clips in steel doors, windows, clerestory windows, all complete with :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 759
+    },
+    {
+      "item_code": "10.30.1",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing & fixing glass panes with putty and glazing clips in steel doors, windows, clerestory - 4.0 mm thick glass panes",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "glass panes"
+      },
+      "breakup": [
+        {
+          "resource_code": "2406",
+          "category": "MATERIAL",
+          "description": "Float glass sheet of nominal thickness 4 mm (weight not less than 10kg/sqm).",
+          "unit": "sqm",
+          "quantity": 1.1,
+          "rate": 321.0,
+          "amount": 353.1
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage",
+          "unit": "L.S.",
+          "quantity": 1.82,
+          "rate": 2.27,
+          "amount": 4.13
+        },
+        {
+          "resource_code": "0119",
+          "category": "LABOUR",
+          "description": "Glazier",
+          "unit": "day",
+          "quantity": 0.13,
+          "rate": 816.0,
+          "amount": 106.08
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries, putty, glazing clips, scaffolding etc.",
+          "unit": "L.S.",
+          "quantity": 125.58,
+          "rate": 2.27,
+          "amount": 285.07
+        }
+      ],
+      "calculations": {
+        "total_w": 748.38,
+        "total_x": 755.86,
+        "total_y": 916.63,
+        "total_z": 1054.12
+      },
+      "say_rate": 1064.65,
+      "page": 759
+    },
+    {
+      "item_code": "10.30.2",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing & fixing glass panes with putty and glazing clips in steel doors, windows, clerestory - 5.5 mm thick glass panes",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "glass panes"
+      },
+      "breakup": [
+        {
+          "resource_code": "2407",
+          "category": "MATERIAL",
+          "description": "Float glass sheet of nominal thickness 5.5 mm.(weight not less than 13.50 kg/sqm).",
+          "unit": "sqm",
+          "quantity": 1.1,
+          "rate": 529.0,
+          "amount": 581.9
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage",
+          "unit": "L.S.",
+          "quantity": 1.82,
+          "rate": 2.27,
+          "amount": 4.13
+        },
+        {
+          "resource_code": "0119",
+          "category": "LABOUR",
+          "description": "Glazier",
+          "unit": "day",
+          "quantity": 0.13,
+          "rate": 816.0,
+          "amount": 106.08
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries, putty, glazing clips, scaffolding etc.",
+          "unit": "L.S.",
+          "quantity": 125.58,
+          "rate": 2.27,
+          "amount": 285.07
+        }
+      ],
+      "calculations": {
+        "total_w": 977.18,
+        "total_x": 986.95,
+        "total_y": 1196.87,
+        "total_z": 1376.4
+      },
+      "say_rate": 1390.15,
+      "page": 760
+    },
+    {
+      "item_code": "10.31",
+      "sub_head_no": 10,
+      "sub_head_name": "Steel Work",
+      "description": "Providing and fixing angle iron frames for doors, windows and ventilators of mild steel Angle sections of size 35x35x5 mm, joints mitred and welded by angle iron 35x35x5 mm or 35x 5 mm flat pieces to the existing T-iron frame or to the wall with dash fastener,  including fixing of necessary butt hinges and screws and applying a priming coat of approved steel primer, all complete as per the direction of Engineer-In-charge.",
+      "cost_basis": {
+        "quantity": 17.5,
+        "unit": "kg"
+      },
+      "breakup": [
+        {
+          "resource_code": "1007",
+          "category": "MATERIAL",
+          "description": "Structural steel such as tees, angles, chan- nels and R.S. Joists",
+          "unit": "quintal",
+          "quantity": 0.18,
+          "rate": 5965.0,
+          "amount": 1073.7
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "For applying steel primer",
+          "unit": "L.S.",
+          "quantity": 17.94,
+          "rate": 2.27,
+          "amount": 40.72
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Carriage of material",
+          "unit": "L.S.",
+          "quantity": 5.33,
+          "rate": 2.27,
+          "amount": 12.1
+        },
+        {
+          "resource_code": "1215",
+          "category": "MATERIAL",
+          "description": "Welding by electric plant",
+          "unit": "cm",
+          "quantity": 16.0,
+          "rate": 2.5,
+          "amount": 40.0
+        },
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd Class",
+          "unit": "day",
+          "quantity": 0.1,
+          "rate": 816.0,
+          "amount": 81.6
+        },
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (Grade-I)",
+          "unit": "day",
+          "quantity": 0.15,
+          "rate": 897.0,
+          "amount": 134.55
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 736.0,
+          "amount": 147.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 8.97,
+          "rate": 2.27,
+          "amount": 20.36
+        }
+      ],
+      "calculations": {
+        "total_w": 1605.33,
+        "total_x": 1621.38,
+        "total_y": 1966.25,
+        "total_z": 2261.19
+      },
+      "say_rate": 130.5,
+      "page": 760
+    }
+  ]
+}

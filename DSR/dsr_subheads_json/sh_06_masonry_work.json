@@ -1,0 +1,4289 @@
+{
+  "sub_head_no": 6,
+  "sub_head_name": "Masonry Work",
+  "volume": 1,
+  "page_range": [
+    314,
+    350
+  ],
+  "total_items": 77,
+  "analyzed_items_with_breakup": 57,
+  "items": [
+    {
+      "item_code": "6.1",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with common burnt clay F.P.S. (non modular) bricks of class designation 7.5 in foundation and plinth in:",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 316
+    },
+    {
+      "item_code": "6.1.1",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with common burnt clay F.P.S. (non modular) bricks of class designation 7.5 in - Cement mortar 1:4 (1 cement : 4 coarse sand)",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum"
+      },
+      "breakup": [
+        {
+          "resource_code": "2602",
+          "category": "MATERIAL",
+          "description": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
+          "unit": "1000 Nos",
+          "quantity": 0.494,
+          "rate": 4724.0,
+          "amount": 2333.66
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.36,
+          "rate": 897.0,
+          "amount": 322.92
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.36,
+          "rate": 816.0,
+          "amount": 293.76
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.37,
+          "rate": 736.0,
+          "amount": 1008.32
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 816.0,
+          "amount": 163.2
+        }
+      ],
+      "calculations": {
+        "total_w": 5180.99,
+        "total_x": 5232.8,
+        "total_y": 6345.82,
+        "total_z": 7297.69
+      },
+      "say_rate": 7370.65,
+      "page": 316
+    },
+    {
+      "item_code": "6.1.2",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with common burnt clay F.P.S. (non modular) bricks of class designation 7.5 in - Cement mortar 1:6 (1 cement : 6 coarse sand)",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum"
+      },
+      "breakup": [
+        {
+          "resource_code": "2602",
+          "category": "MATERIAL",
+          "description": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
+          "unit": "1000 Nos",
+          "quantity": 0.494,
+          "rate": 4724.0,
+          "amount": 2333.66
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.36,
+          "rate": 897.0,
+          "amount": 322.92
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.36,
+          "rate": 816.0,
+          "amount": 293.76
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.37,
+          "rate": 736.0,
+          "amount": 1008.32
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 816.0,
+          "amount": 163.2
+        }
+      ],
+      "calculations": {
+        "total_w": 5013.41,
+        "total_x": 5063.54,
+        "total_y": 6140.55,
+        "total_z": 7061.63
+      },
+      "say_rate": 7132.25,
+      "page": 316
+    },
+    {
+      "item_code": "6.2",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with common burnt clay modular bricks of class designation 7.5 in foundation and plinth in:",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 317
+    },
+    {
+      "item_code": "6.2.1",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with common burnt clay modular bricks of class designation 7.5 in foundation and - Cement mortar 1:4 (1 cement : 4 coarse sand)",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum"
+      },
+      "breakup": [
+        {
+          "resource_code": "7900",
+          "category": "MATERIAL",
+          "description": "Modular common burnt clay bricks of class designation 7.5",
+          "unit": "1000 Nos",
+          "quantity": 0.487,
+          "rate": 4500.0,
+          "amount": 2191.5
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.33,
+          "rate": 897.0,
+          "amount": 296.01
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.33,
+          "rate": 816.0,
+          "amount": 269.28
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.18,
+          "rate": 816.0,
+          "amount": 146.88
+        }
+      ],
+      "calculations": {
+        "total_w": 4572.44,
+        "total_x": 4618.16,
+        "total_y": 5600.44,
+        "total_z": 6440.51
+      },
+      "say_rate": 6504.9,
+      "page": 317
+    },
+    {
+      "item_code": "6.2.2",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with common burnt clay modular bricks of class designation 7.5 in foundation and - Cement Mortar 1:6 (1 cement : 6 coarse sand).",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum"
+      },
+      "breakup": [
+        {
+          "resource_code": "7900",
+          "category": "MATERIAL",
+          "description": "Modular common burnt clay bricks of class designation 7.5",
+          "unit": "1000 Nos",
+          "quantity": 0.487,
+          "rate": 4500.0,
+          "amount": 2191.5
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.33,
+          "rate": 897.0,
+          "amount": 296.01
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.33,
+          "rate": 816.0,
+          "amount": 269.28
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.18,
+          "rate": 816.0,
+          "amount": 146.88
+        }
+      ],
+      "calculations": {
+        "total_w": 4424.98,
+        "total_x": 4469.23,
+        "total_y": 5419.84,
+        "total_z": 6232.82
+      },
+      "say_rate": 6295.15,
+      "page": 317
+    },
+    {
+      "item_code": "6.3",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with common burnt clay machine moulded perforated bricks of class designation 12.5 conforming to IS: 2222 in superstructure above plinth level up to floor five level in cement mortar 1:6 (1 cement : 6 coarse sand) :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 318
+    },
+    {
+      "item_code": "6.3.1",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with common burnt clay machine moulded perforated bricks of class designation - With F.P.S.(non modular) bricks",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum"
+      },
+      "breakup": [
+        {
+          "resource_code": "7901",
+          "category": "MATERIAL",
+          "description": "Machine moulded perforated common burnt clay FPS (non modular) bricks of class designation 12.5",
+          "unit": "1000 Nos",
+          "quantity": 0.494,
+          "rate": 5000.0,
+          "amount": 2470.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.47,
+          "rate": 897.0,
+          "amount": 421.59
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.47,
+          "rate": 816.0,
+          "amount": 383.52
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.8,
+          "rate": 736.0,
+          "amount": 1324.8
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 816.0,
+          "amount": 163.2
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.13,
+          "rate": 736.0,
+          "amount": 831.68
+        }
+      ],
+      "calculations": {
+        "total_w": 6537.1,
+        "total_x": 6602.47,
+        "total_y": 8006.82,
+        "total_z": 9207.84
+      },
+      "say_rate": 9299.9,
+      "page": 318
+    },
+    {
+      "item_code": "6.3.2",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with common burnt clay machine moulded perforated bricks of class designation - With Modular bricks",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum"
+      },
+      "breakup": [
+        {
+          "resource_code": "7902",
+          "category": "MATERIAL",
+          "description": "Machine moulded common burnt clay modular perforated bricks of class desig- nation 12.5",
+          "unit": "1000 Nos",
+          "quantity": 0.487,
+          "rate": 5500.0,
+          "amount": 2678.5
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.44,
+          "rate": 897.0,
+          "amount": 394.68
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.44,
+          "rate": 816.0,
+          "amount": 359.04
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.43,
+          "rate": 736.0,
+          "amount": 1052.48
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.18,
+          "rate": 816.0,
+          "amount": 146.88
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.13,
+          "rate": 736.0,
+          "amount": 831.68
+        }
+      ],
+      "calculations": {
+        "total_w": 6285.75,
+        "total_x": 6348.61,
+        "total_y": 7698.96,
+        "total_z": 8853.8
+      },
+      "say_rate": 8942.35,
+      "page": 318
+    },
+    {
+      "item_code": "6.4",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with common burnt clay F.P.S. (non modular) bricks of class designation 7.5 in superstructure above plinth level up to floor V level in all shapes and sizes in :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 319
+    },
+    {
+      "item_code": "6.4.1",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with common burnt clay F.P.S. (non modular) bricks of class designation 7.5 in - Cement mortar 1:4 (1 cement : 4 coarse sand)",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum"
+      },
+      "breakup": [
+        {
+          "resource_code": "2602",
+          "category": "MATERIAL",
+          "description": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
+          "unit": "1000 Nos",
+          "quantity": 0.494,
+          "rate": 4724.0,
+          "amount": 2333.66
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.47,
+          "rate": 897.0,
+          "amount": 421.59
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.8,
+          "rate": 736.0,
+          "amount": 1324.8
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 816.0,
+          "amount": 163.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Scaffolding",
+          "unit": "L.S.",
+          "quantity": 22.36,
+          "rate": 2.27,
+          "amount": 50.76
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.13,
+          "rate": 736.0,
+          "amount": 831.68
+        }
+      ],
+      "calculations": {
+        "total_w": 6568.34,
+        "total_x": 6634.02,
+        "total_y": 8045.08,
+        "total_z": 9251.84
+      },
+      "say_rate": 9344.35,
+      "page": 319
+    },
+    {
+      "item_code": "6.4.2",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with common burnt clay F.P.S. (non modular) bricks of class designation 7.5 in - Cement mortar 1:6 (1 cement : 6 coarse sand)",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum"
+      },
+      "breakup": [
+        {
+          "resource_code": "2602",
+          "category": "MATERIAL",
+          "description": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
+          "unit": "1000 Nos",
+          "quantity": 0.494,
+          "rate": 4724.0,
+          "amount": 2333.66
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.47,
+          "rate": 897.0,
+          "amount": 421.59
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.47,
+          "rate": 816.0,
+          "amount": 383.52
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.8,
+          "rate": 736.0,
+          "amount": 1324.8
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 816.0,
+          "amount": 163.2
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.13,
+          "rate": 736.0,
+          "amount": 831.68
+        }
+      ],
+      "calculations": {
+        "total_w": 6400.76,
+        "total_x": 6464.77,
+        "total_y": 7839.83,
+        "total_z": 9015.8
+      },
+      "say_rate": 9105.95,
+      "page": 319
+    },
+    {
+      "item_code": "6.5",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Extra for brick work / AAC block masonry / Tile brick masonry  in superstructure above floor V level, for each four floors or part thereof by mechanical means.",
+      "cost_basis": {
+        "quantity": 5.3,
+        "unit": "cum per four floors ."
+      },
+      "breakup": [
+        {
+          "resource_code": "0037",
+          "category": "MATERIAL",
+          "description": "Mobile crane",
+          "unit": "day",
+          "quantity": 0.125,
+          "rate": 5050.0,
+          "amount": 631.25
+        }
+      ],
+      "calculations": {
+        "total_w": 631.25,
+        "total_x": 637.56,
+        "total_y": 773.17,
+        "total_z": 889.15
+      },
+      "say_rate": 169.45,
+      "page": 320
+    },
+    {
+      "item_code": "6.6",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Extra for forming cavity 5 cm to 11.5 cm wide in cavity walls with necessary weep and vent holes including use of cores and cost of providing and fixing bitumastic coated M .S. ties 300 mm long of 25x3 mm section at not less than 3 ties per sqm as per approved design. Mild steel 25mmx3mm section 30cm long 30 No. = 9 metres @ 0.6kg/m = 5.40 kg",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "1008",
+          "category": "MATERIAL",
+          "description": "Flats upto 10 mm in thickness",
+          "unit": "quintal",
+          "quantity": 0.054,
+          "rate": 5450.0,
+          "amount": 294.3
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Painting the steel Bitumen",
+          "unit": "L.S.",
+          "quantity": 13.52,
+          "rate": 2.27,
+          "amount": 30.69
+        },
+        {
+          "resource_code": "0123",
+          "category": "MATERIAL",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.37,
+          "rate": 897.0,
+          "amount": 331.89
+        },
+        {
+          "resource_code": "0124",
+          "category": "MATERIAL",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.37,
+          "rate": 816.0,
+          "amount": 301.92
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.92,
+          "rate": 736.0,
+          "amount": 677.12
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Add for use of Core",
+          "unit": "L.S.",
+          "quantity": 4.55,
+          "rate": 2.27,
+          "amount": 10.33
+        }
+      ],
+      "calculations": {
+        "total_w": 1646.25,
+        "total_x": 1662.71,
+        "total_y": 2016.37,
+        "total_z": 2318.83
+      },
+      "say_rate": 234.2,
+      "page": 320
+    },
+    {
+      "item_code": "6.7",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Providing half brick masonry with common burnt clay F.P.S. (non modular) bricks of class designation 7.5 in cement mortar 1:3 (1 Cement : 3 coarse sand) in superstructure for closing cavity 5 to 7.5 cm wide in cavity wall complete with 10cm / 11.4 cm wide bitumen felt type 3 grade 1. Half brick masonry 1:3 (Average) 1x10x0.27 = 2.7",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 321
+    },
+    {
+      "item_code": "6.12.1",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Providing half brick masonry with common burnt clay F.P.S. (non modular) bricks of class - Rate as per item No. 6.12.1 of SH: Brick Work sqm 2.70 931.75 2515.73 A Bitumen felt type- 3 grade 1 1x10mx11.4m = 1.14 sqm. Add for wastage and overlapping @ 5% = 0.06 sqm. Total = 1.20 sqm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0322",
+          "category": "MATERIAL",
+          "description": "Bitumen felt :Type 3 grade 1",
+          "unit": "sqm",
+          "quantity": 1.2,
+          "rate": 80.0,
+          "amount": 96.0
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.12,
+          "rate": 897.0,
+          "amount": 107.64
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.12,
+          "rate": 816.0,
+          "amount": 97.92
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 736.0,
+          "amount": 44.16
+        }
+      ],
+      "calculations": {
+        "total_w": 2861.45,
+        "total_x": 2864.91,
+        "total_y": 2939.18,
+        "total_z": 3002.7
+      },
+      "say_rate": 300.75,
+      "page": 321
+    },
+    {
+      "item_code": "6.8",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work 7 cm thick with common burnt clay F.P.S. (non modular) brick of class designation 7.5 in cement mortar 1:3 (1 cement : 3 coarse sand) in superstructure above plinth level and upto floor five level.",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "2602",
+          "category": "MATERIAL",
+          "description": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
+          "unit": "1000 Nos",
+          "quantity": 0.377,
+          "rate": 4724.0,
+          "amount": 1780.95
+        },
+        {
+          "resource_code": "0123",
+          "category": "MATERIAL",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.72,
+          "rate": 897.0,
+          "amount": 645.84
+        },
+        {
+          "resource_code": "0124",
+          "category": "MATERIAL",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.72,
+          "rate": 816.0,
+          "amount": 587.52
+        },
+        {
+          "resource_code": "0115",
+          "category": "MATERIAL",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.76,
+          "rate": 736.0,
+          "amount": 1295.36
+        },
+        {
+          "resource_code": "0101",
+          "category": "MATERIAL",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.36,
+          "rate": 816.0,
+          "amount": 293.76
+        }
+      ],
+      "calculations": {
+        "total_w": 6084.73
+      },
+      "say_rate": 865.65,
+      "page": 322
+    },
+    {
+      "item_code": "6.9",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work in plain arches in superstructure above plinth level and upto floor five level including centering and shuttering complete for span up to 6 metres with common burnt clay F.P.S. (non modular) bricks of class designation 7.5 in cement mortar 1:3 (1 cement : 3 coarse sand).",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "2602",
+          "category": "MATERIAL",
+          "description": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
+          "unit": "1000 Nos",
+          "quantity": 0.494,
+          "rate": 4724.0,
+          "amount": 2333.66
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries L.S. 2.73 2.27 6.20 Centring and shuttering Taking a semi circular arch 3.6m span, 3.6m long and 0.40m thick Area of centering = 3.142 x 1.8 x 3.6 = 20.37 sqm. Brick work in Arch = 3.142x2.00x0.4x3.6 = 9.05cum. Area per cum = 20.37/9.05 = 2.25 sqm 5.9.9 Rate as per item no 5.9.9 of SH : Rein- forced cement concrete work",
+          "unit": "sqm",
+          "quantity": 2.25,
+          "rate": 2154.35,
+          "amount": 4847.29
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Scaffolding",
+          "unit": "L.S.",
+          "quantity": 18.85,
+          "rate": 2.27,
+          "amount": 42.79
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.53,
+          "rate": 897.0,
+          "amount": 475.41
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.53,
+          "rate": 816.0,
+          "amount": 432.48
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 2.29,
+          "rate": 736.0,
+          "amount": 1685.44
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.13,
+          "rate": 736.0,
+          "amount": 831.68
+        }
+      ],
+      "calculations": {
+        "total_w": 12038.64,
+        "total_x": 12110.55,
+        "total_y": 13655.45,
+        "total_z": 14976.67
+      },
+      "say_rate": 15077.95,
+      "page": 322
+    },
+    {
+      "item_code": "6.10",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work in gauged arches in superstructure above plinth level and upto floor five level in cement mortar 1:3 (1 cement : 3 coarse sand) including centering and shuttering complete, for span up to 6 meters with common burnt clay F.P.S. (non modular) bricks of class designation 7.5.",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "2602",
+          "category": "MATERIAL",
+          "description": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
+          "unit": "1000 Nos",
+          "quantity": 0.538,
+          "rate": 4724.0,
+          "amount": 2541.51
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries L.S. 2.73 2.27 6.20 Centring and shuttering (Area same as in item No. 6.9) 5.9.9 Rate as per item no 5.9.9 of SH : Rein- forced cement concrete work",
+          "unit": "sqm",
+          "quantity": 2.25,
+          "rate": 2154.35,
+          "amount": 4847.29
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Scaffolding",
+          "unit": "L.S.",
+          "quantity": 18.85,
+          "rate": 2.27,
+          "amount": 42.79
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 1.13,
+          "rate": 897.0,
+          "amount": 1013.61
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 1.13,
+          "rate": 816.0,
+          "amount": 922.08
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 4.42,
+          "rate": 736.0,
+          "amount": 3253.12
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.13,
+          "rate": 736.0,
+          "amount": 831.68
+        }
+      ],
+      "calculations": {
+        "total_w": 14841.97,
+        "total_x": 14941.92,
+        "total_y": 17089.05,
+        "total_z": 18925.31
+      },
+      "say_rate": 19066.1,
+      "page": 323
+    },
+    {
+      "item_code": "6.11",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Extra for additional cost of centering for arches exceeding 6m span including all shuttering, bolting, wedging and removal (Area of the soffit to be measured).",
+      "cost_basis": {
+        "quantity": 333.1,
+        "unit": "sqm"
+      },
+      "breakup": [
+        {
+          "resource_code": "1197",
+          "category": "MATERIAL",
+          "description": "Second class kail wood in scantling",
+          "unit": "10 cudm",
+          "quantity": 887.9,
+          "rate": 260.0,
+          "amount": 230854.0
+        },
+        {
+          "resource_code": "0112",
+          "category": "MATERIAL",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 280.0,
+          "rate": 816.0,
+          "amount": 228480.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 240.0,
+          "rate": 736.0,
+          "amount": 176640.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 1345.5,
+          "rate": 2.27,
+          "amount": 3054.29
+        }
+      ],
+      "calculations": {
+        "total_y": 74623.77,
+        "total_z": 193459.43
+      },
+      "say_rate": 608.15,
+      "page": 324
+    },
+    {
+      "item_code": "6.12",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Half brick masonry with common burnt clay F.P.S. (non modular) bricks of class designation 7.5 in foundations and plinth in :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 325
+    },
+    {
+      "item_code": "6.12.1",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Half brick masonry with common burnt clay F.P.S. (non modular) bricks of class designation 7.5 - Cement mortar 1:3 (1 cement : 3 coarse sand)",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "sqm."
+      },
+      "breakup": [
+        {
+          "resource_code": "2602",
+          "category": "MATERIAL",
+          "description": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
+          "unit": "1000 Nos",
+          "quantity": 0.565,
+          "rate": 4724.0,
+          "amount": 2669.06
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries & Scaffolding",
+          "unit": "L.S.",
+          "quantity": 13.52,
+          "rate": 2.27,
+          "amount": 30.69
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.45,
+          "rate": 897.0,
+          "amount": 403.65
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.45,
+          "rate": 816.0,
+          "amount": 367.2
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.55,
+          "rate": 736.0,
+          "amount": 1140.8
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.7,
+          "rate": 816.0,
+          "amount": 571.2
+        }
+      ],
+      "calculations": {
+        "total_w": 6549.55,
+        "total_x": 6615.05,
+        "total_y": 8022.07,
+        "total_z": 9225.38
+      },
+      "say_rate": 931.75,
+      "page": 325
+    },
+    {
+      "item_code": "6.12.2",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Half brick masonry with common burnt clay F.P.S. (non modular) bricks of class designation 7.5 - cement mortar 1:4 (1 cement : 4 coarse sand)",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "sqm."
+      },
+      "breakup": [
+        {
+          "resource_code": "2602",
+          "category": "MATERIAL",
+          "description": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
+          "unit": "1000 Nos",
+          "quantity": 0.565,
+          "rate": 4724.0,
+          "amount": 2669.06
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries & Scaffolding",
+          "unit": "L.S.",
+          "quantity": 13.52,
+          "rate": 2.27,
+          "amount": 30.69
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.45,
+          "rate": 897.0,
+          "amount": 403.65
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.45,
+          "rate": 816.0,
+          "amount": 367.2
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.55,
+          "rate": 736.0,
+          "amount": 1140.8
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.7,
+          "rate": 816.0,
+          "amount": 571.2
+        }
+      ],
+      "calculations": {
+        "total_w": 6361.88,
+        "total_x": 6425.5,
+        "total_y": 7792.2,
+        "total_z": 8961.03
+      },
+      "say_rate": 905.05,
+      "page": 326
+    },
+    {
+      "item_code": "6.13",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Half brick masonry with common burnt clay F.P.S. (non modular) bricks of class designation 7.5 in superstructure above plinth level up to floor V level.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 326
+    },
+    {
+      "item_code": "6.13.1",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Half brick masonry with common burnt clay F.P.S. (non modular) bricks of class designation 7.5 - Cement mortar 1:3 (1 cement :3 coarse sand)",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "sqm."
+      },
+      "breakup": [
+        {
+          "resource_code": "2602",
+          "category": "MATERIAL",
+          "description": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
+          "unit": "1000 Nos",
+          "quantity": 0.565,
+          "rate": 4724.0,
+          "amount": 2669.06
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries & Scaffolding",
+          "unit": "L.S.",
+          "quantity": 13.52,
+          "rate": 2.27,
+          "amount": 30.69
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.6,
+          "rate": 897.0,
+          "amount": 538.2
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.6,
+          "rate": 816.0,
+          "amount": 489.6
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 736.0,
+          "amount": 1472.0
+        }
+      ],
+      "calculations": {
+        "total_w": 8087.14,
+        "total_x": 8168.01,
+        "total_y": 9905.35,
+        "total_z": 11391.15
+      },
+      "say_rate": 1150.5,
+      "page": 326
+    },
+    {
+      "item_code": "6.13.2",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Half brick masonry with common burnt clay F.P.S. (non modular) bricks of class designation 7.5 - Cement mortar 1:4 (1 cement :4 coarse sand)",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "sqm."
+      },
+      "breakup": [
+        {
+          "resource_code": "2602",
+          "category": "MATERIAL",
+          "description": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
+          "unit": "1000 Nos",
+          "quantity": 0.565,
+          "rate": 4724.0,
+          "amount": 2669.06
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries & Scaffolding",
+          "unit": "L.S.",
+          "quantity": 13.52,
+          "rate": 2.27,
+          "amount": 30.69
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.6,
+          "rate": 897.0,
+          "amount": 538.2
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.6,
+          "rate": 816.0,
+          "amount": 489.6
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 736.0,
+          "amount": 1472.0
+        }
+      ],
+      "calculations": {
+        "total_w": 7899.47,
+        "total_x": 7978.46,
+        "total_y": 9675.48,
+        "total_z": 11126.8
+      },
+      "say_rate": 1123.8,
+      "page": 327
+    },
+    {
+      "item_code": "6.14",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Extra for half brick masonry in superstructure, above floor V level for every four floors or part thereof by mechanical means.",
+      "cost_basis": {
+        "quantity": 59.83,
+        "unit": "sqm per four"
+      },
+      "breakup": [
+        {
+          "resource_code": "0037",
+          "category": "MATERIAL",
+          "description": "Mobile crane",
+          "unit": "day",
+          "quantity": 0.125,
+          "rate": 5050.0,
+          "amount": 631.25
+        }
+      ],
+      "calculations": {
+        "total_w": 631.25,
+        "total_x": 637.56,
+        "total_y": 773.17,
+        "total_z": 889.15
+      },
+      "say_rate": 15.0,
+      "page": 327
+    },
+    {
+      "item_code": "6.15",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Extra for providing and placing in position 2 Nos 6mm dia. M.S. bars at every third course of half brick masonry. 6mm dia. M.S. bars (round) 2 Nos. @ 30 meter/10sqm. = 10x60 metre @ 0.22kg/m = 132 kg",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "1002",
+          "category": "MATERIAL",
+          "description": "Mild steel round bar 6 mm dia",
+          "unit": "quintal",
+          "quantity": 1.32,
+          "rate": 5550.0,
+          "amount": 7326.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 18.2,
+          "rate": 2.27,
+          "amount": 41.31
+        }
+      ],
+      "calculations": {
+        "total_w": 7367.31,
+        "total_x": 7440.98,
+        "total_y": 9023.68,
+        "total_z": 10377.23
+      },
+      "say_rate": 104.8,
+      "page": 328
+    },
+    {
+      "item_code": "6.16",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Tile brick masonry with common burnt clay F.P.S. (non modular) tile bricks of class designation 10 in foundation and plinth in:",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 328
+    },
+    {
+      "item_code": "6.16.1",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Tile brick masonry with common burnt clay F.P.S. (non modular) tile bricks of class designation - Cement mortar 1:4 (1 cement : 4 coarse sand)",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "1984",
+          "category": "MATERIAL",
+          "description": "Common burnt clay F.P.S. (non modular) bricks tile class designation 10",
+          "unit": "1000 Nos",
+          "quantity": 0.777,
+          "rate": 4750.0,
+          "amount": 3690.75
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 4.55,
+          "rate": 2.27,
+          "amount": 10.33
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.7,
+          "rate": 897.0,
+          "amount": 627.9
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.7,
+          "rate": 816.0,
+          "amount": 571.2
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.54,
+          "rate": 736.0,
+          "amount": 1133.44
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 816.0,
+          "amount": 163.2
+        }
+      ],
+      "calculations": {
+        "total_w": 7881.5,
+        "total_x": 7960.32,
+        "total_y": 9653.48,
+        "total_z": 11101.5
+      },
+      "say_rate": 11212.5,
+      "page": 328
+    },
+    {
+      "item_code": "6.16.2",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Tile brick masonry with common burnt clay F.P.S. (non modular) tile bricks of class designation - Cement mortar 1:6 (1 cement : 6 coarse sand)",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "1984",
+          "category": "MATERIAL",
+          "description": "Common burnt clay F.P.S. (non modular) bricks tile class designation 10",
+          "unit": "1000 Nos",
+          "quantity": 0.777,
+          "rate": 4750.0,
+          "amount": 3690.75
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 4.55,
+          "rate": 2.27,
+          "amount": 10.33
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.7,
+          "rate": 897.0,
+          "amount": 627.9
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.7,
+          "rate": 816.0,
+          "amount": 571.2
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.54,
+          "rate": 736.0,
+          "amount": 1133.44
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 816.0,
+          "amount": 163.2
+        }
+      ],
+      "calculations": {
+        "total_w": 7613.38,
+        "total_x": 7689.51,
+        "total_y": 9325.07,
+        "total_z": 10723.83
+      },
+      "say_rate": 10831.05,
+      "page": 329
+    },
+    {
+      "item_code": "6.17",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Tile brick masonry with common burnt clay machine moulded tile bricks of class designation 12.5 conforming to IS : 2690 (Part I) in foundation and plinth in cement mortar 1:6 (1 cement : 6 coarse sand).",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "7904",
+          "category": "MATERIAL",
+          "description": "Machine moulded common burnt clay tile bricks of class designation 12.5",
+          "unit": "1000 Nos",
+          "quantity": 0.777,
+          "rate": 5200.0,
+          "amount": 4040.4
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 4.55,
+          "rate": 2.27,
+          "amount": 10.33
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.7,
+          "rate": 897.0,
+          "amount": 627.9
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.7,
+          "rate": 816.0,
+          "amount": 571.2
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.54,
+          "rate": 736.0,
+          "amount": 1133.44
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 816.0,
+          "amount": 163.2
+        }
+      ],
+      "calculations": {
+        "total_w": 7963.03,
+        "total_x": 8042.66,
+        "total_y": 9753.33,
+        "total_z": 11216.33
+      },
+      "say_rate": 11328.5,
+      "page": 329
+    },
+    {
+      "item_code": "6.18",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Tile brick masonry with common burnt clay F.P.S. (non modular) tile bricks of class designation 10 in superstructure above plinth level up to floor V level in cement mortar 1:6 (1 cement : 6 coarse sand).",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "1984",
+          "category": "MATERIAL",
+          "description": "Common burnt clay F.P.S. (non modular) bricks tile class designation 10",
+          "unit": "1000 Nos",
+          "quantity": 0.777,
+          "rate": 4750.0,
+          "amount": 3690.75
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 4.55,
+          "rate": 2.27,
+          "amount": 10.33
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.9,
+          "rate": 897.0,
+          "amount": 807.3
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.9,
+          "rate": 816.0,
+          "amount": 734.4
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.8,
+          "rate": 736.0,
+          "amount": 1324.8
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.13,
+          "rate": 736.0,
+          "amount": 831.68
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Scaffolding",
+          "unit": "L.S.",
+          "quantity": 33.8,
+          "rate": 2.27,
+          "amount": 76.73
+        }
+      ],
+      "calculations": {
+        "total_w": 9055.75,
+        "total_x": 9146.31,
+        "total_y": 11091.73,
+        "total_z": 12755.49
+      },
+      "say_rate": 12883.05,
+      "page": 330
+    },
+    {
+      "item_code": "6.20",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Tile brick masonry with common burnt clay F.P.S. (non modular) tile bricks of class designation 10 in plain arch work in superstructure above plinth and upto floor five level in cement mortar 1:4 (1 cement : 4 coarse sand) including centering and shuttering complete.",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "1984",
+          "category": "MATERIAL",
+          "description": "Common burnt clay F.P.S. (non modular) bricks tile class designation 10",
+          "unit": "1000 Nos",
+          "quantity": 0.777,
+          "rate": 4750.0,
+          "amount": 3690.75
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries L.S. 5.46 2.27 12.39 Centering and shuttering, area same as in item no. 6.9 5.9.9 Rate as per item no 5.9.9 of SH : Rein- forced cement concrete work",
+          "unit": "sqm",
+          "quantity": 2.25,
+          "rate": 2154.35,
+          "amount": 4847.29
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Scaffolding",
+          "unit": "L.S.",
+          "quantity": 18.85,
+          "rate": 2.27,
+          "amount": 42.79
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.79,
+          "rate": 897.0,
+          "amount": 708.63
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.79,
+          "rate": 816.0,
+          "amount": 644.64
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 3.21,
+          "rate": 736.0,
+          "amount": 2362.56
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.13,
+          "rate": 736.0,
+          "amount": 831.68
+        }
+      ],
+      "calculations": {
+        "total_w": 14778.03,
+        "total_x": 14877.34,
+        "total_y": 17010.73,
+        "total_z": 18835.25
+      },
+      "say_rate": 18975.15,
+      "page": 330
+    },
+    {
+      "item_code": "6.21",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Tile brick masonry with common burnt clay F.P.S. (non modular) tile bricks of class designation 10 in gauged arch work in superstructure above plinth and upto floor five level in cement mortar 1:4 (1 cement : 4 coarse sand) including centering and shuttering complete.",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "1984",
+          "category": "MATERIAL",
+          "description": "Common burnt clay F.P.S. (non modular) bricks tile class designation 10",
+          "unit": "1000 Nos",
+          "quantity": 0.791,
+          "rate": 4750.0,
+          "amount": 3757.25
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries and shuttering L.S. 5.46 2.27 12.39 Centering and shuttering, area same as in item no. 6.9 5.9.9 Rate as per item no 5.9.9 of SH : Rein- forced cement concrete work",
+          "unit": "sqm",
+          "quantity": 2.25,
+          "rate": 2154.35,
+          "amount": 4847.29
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Scaffolding",
+          "unit": "L.S.",
+          "quantity": 18.85,
+          "rate": 2.27,
+          "amount": 42.79
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 1.5,
+          "rate": 897.0,
+          "amount": 1345.5
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 1.5,
+          "rate": 816.0,
+          "amount": 1224.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 5.33,
+          "rate": 736.0,
+          "amount": 3922.88
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.13,
+          "rate": 736.0,
+          "amount": 831.68
+        }
+      ],
+      "calculations": {
+        "total_w": 17621.08,
+        "total_x": 17748.82,
+        "total_y": 20492.98,
+        "total_z": 22839.83
+      },
+      "say_rate": 23019.75,
+      "page": 331
+    },
+    {
+      "item_code": "6.22",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Tile brick masonry work 5 cm thick with common burnt clay F.P.S. (non modular) tile bricks of class designation 10 in cement mortar 1:3 (1 cement : 3 coarse sand) in superstructure above plinth and upto floor five level.",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "sqm."
+      },
+      "breakup": [
+        {
+          "resource_code": "1984",
+          "category": "MATERIAL",
+          "description": "Common burnt clay F.P.S. (non modular) bricks tile class designation 10",
+          "unit": "1000 Nos",
+          "quantity": 0.377,
+          "rate": 4750.0,
+          "amount": 1790.75
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries and scaffolding",
+          "unit": "L.S.",
+          "quantity": 8.06,
+          "rate": 2.27,
+          "amount": 18.3
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.94,
+          "rate": 897.0,
+          "amount": 843.18
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.94,
+          "rate": 816.0,
+          "amount": 767.04
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.88,
+          "rate": 736.0,
+          "amount": 1383.68
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.57,
+          "rate": 736.0,
+          "amount": 419.52
+        }
+      ],
+      "calculations": {
+        "total_w": 6224.04,
+        "total_x": 6286.28,
+        "total_y": 7623.37,
+        "total_z": 8766.88
+      },
+      "say_rate": 885.45,
+      "page": 332
+    },
+    {
+      "item_code": "6.23",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Honey-comb brick work 10 / 11.4 cm thick with common burnt clay bricks of class designation 7.5 in super structure above plinth level upto floor V level with cement mortar 1:4 (1 cement : 4 coarse sand). brick works- Brick work, with bricks of class designa- tion 75, in cement mortar 1:4 (1 Cement : 4 Coarse sand) in superstructure 1 m x 1 x 0.143 m x 4.5/7.5 = 0.069 cum",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 332
+    },
+    {
+      "item_code": "6.4.1",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Honey-comb brick work 10 / 11.4 cm thick with common burnt clay bricks of class designation - Rate as per item No 6.4.1 of SH :- Brick work. cum 0.069 9344.35 644.76 A",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Extra for delay due to fine work",
+          "unit": "L.S.",
+          "quantity": 20.67,
+          "rate": 2.27,
+          "amount": 46.92
+        }
+      ],
+      "calculations": {
+        "total_w": 691.68,
+        "total_x": 692.15,
+        "total_y": 702.23,
+        "total_z": 710.85
+      },
+      "say_rate": 711.5,
+      "page": 333
+    },
+    {
+      "item_code": "6.24",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Extra for laying brick work in or under water and/or liquid mud including cost of pumping or bailing out water and removing slush etc. complete. water level up to the centre of gravity of brick work under sub - soil water with the quantity of brick work in cum. executed under the sub - soil water. The depth of centre of gravity shall be reckoned correct to 0.1 m, (0.05 m or more shall be taken as 0.1 m and less than 0.05 m ignored).",
+      "cost_basis": {
+        "quantity": 4.2,
+        "unit": "cum per"
+      },
+      "breakup": [
+        {
+          "resource_code": "0011",
+          "category": "MATERIAL",
+          "description": "Hire charges of Pumpset of capacity 4000 litres/hour.",
+          "unit": "day",
+          "quantity": 0.375,
+          "rate": 800.0,
+          "amount": 300.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 4.0,
+          "rate": 736.0,
+          "amount": 2944.0
+        }
+      ],
+      "calculations": {
+        "total_w": 3244.0,
+        "total_x": 3276.44,
+        "total_y": 3973.34,
+        "total_z": 4569.34
+      },
+      "say_rate": 1098.8,
+      "page": 333
+    },
+    {
+      "item_code": "6.25",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Extra for laying brick work in or under foul position.",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "0123",
+          "category": "MATERIAL",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.02,
+          "rate": 897.0,
+          "amount": 17.94
+        },
+        {
+          "resource_code": "0124",
+          "category": "MATERIAL",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.02,
+          "rate": 816.0,
+          "amount": 16.32
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.25,
+          "rate": 736.0,
+          "amount": 184.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "MATERIAL",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.15,
+          "rate": 736.0,
+          "amount": 110.4
+        }
+      ],
+      "calculations": {
+        "total_w": 328.66,
+        "total_x": 331.95,
+        "total_y": 402.56,
+        "total_z": 462.94
+      },
+      "say_rate": 467.55,
+      "page": 333
+    },
+    {
+      "item_code": "6.26",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with common burnt clay selected F.P.S. (non modular) bricks of class designation 7.5 in exposed brick work including making horizontal and vertical grooves 10 mm wide 12 mm deep complete in cement mortar 1:6 (1 cement : 6 coarse sand)",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 334
+    },
+    {
+      "item_code": "6.26.1",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with common burnt clay selected F.P.S. (non modular) bricks of class designation - From ground level upto plinth level",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "2602",
+          "category": "MATERIAL",
+          "description": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
+          "unit": "1000 Nos",
+          "quantity": 0.494,
+          "rate": 4724.0,
+          "amount": 2333.66
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries including steel/wooden strips for making grooves.",
+          "unit": "L.S.",
+          "quantity": 16.38,
+          "rate": 2.27,
+          "amount": 37.18
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.35,
+          "rate": 897.0,
+          "amount": 313.95
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.35,
+          "rate": 816.0,
+          "amount": 285.6
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.07,
+          "rate": 736.0,
+          "amount": 787.52
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 816.0,
+          "amount": 163.2
+        }
+      ],
+      "calculations": {
+        "total_w": 5174.46,
+        "total_x": 5226.2,
+        "total_y": 6337.81,
+        "total_z": 7288.48
+      },
+      "say_rate": 7361.35,
+      "page": 334
+    },
+    {
+      "item_code": "6.26.2",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with common burnt clay selected F.P.S. (non modular) bricks of class designation - Above plinth level upto floor V level",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "2602",
+          "category": "MATERIAL",
+          "description": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
+          "unit": "1000 Nos",
+          "quantity": 0.494,
+          "rate": 4724.0,
+          "amount": 2333.66
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries including steel/wooden strips for making grooves.",
+          "unit": "L.S.",
+          "quantity": 16.38,
+          "rate": 2.27,
+          "amount": 37.18
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.46,
+          "rate": 897.0,
+          "amount": 412.62
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.46,
+          "rate": 816.0,
+          "amount": 375.36
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.6,
+          "rate": 736.0,
+          "amount": 1177.6
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.13,
+          "rate": 736.0,
+          "amount": 831.68
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 22.36,
+          "rate": 2.27,
+          "amount": 50.76
+        }
+      ],
+      "calculations": {
+        "total_w": 6635.41,
+        "total_x": 6701.76,
+        "total_y": 8127.22,
+        "total_z": 9346.3
+      },
+      "say_rate": 9439.75,
+      "page": 334
+    },
+    {
+      "item_code": "6.27",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with common burnt clay modular bricks of class designation 7.5 in exposed brick work including making horizontal and vertical grooves 10mm wide 12 mm deep complete in cement mortar 1:6 (1 cement : 6 coarse sand). From ground level upto plinth level6.27.1",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "7900",
+          "category": "MATERIAL",
+          "description": "Modular common burnt clay bricks of class designation 7.5",
+          "unit": "1000 Nos",
+          "quantity": 0.487,
+          "rate": 4500.0,
+          "amount": 2191.5
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries i/c steel / wooden strips for mak- ing grooves",
+          "unit": "L.S.",
+          "quantity": 16.38,
+          "rate": 2.27,
+          "amount": 37.18
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.33,
+          "rate": 897.0,
+          "amount": 296.01
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.33,
+          "rate": 816.0,
+          "amount": 269.28
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.18,
+          "rate": 816.0,
+          "amount": 146.88
+        }
+      ],
+      "calculations": {
+        "total_w": 4455.96,
+        "total_x": 4500.52,
+        "total_y": 5457.78,
+        "total_z": 6276.45
+      },
+      "say_rate": 6339.2,
+      "page": 335
+    },
+    {
+      "item_code": "6.27.2",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with common burnt clay modular bricks of class designation 7.5 in exposed brick - Above plinth level upto floor V level",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "7900",
+          "category": "MATERIAL",
+          "description": "Modular common burnt clay bricks of class designation 7.5",
+          "unit": "1000 Nos",
+          "quantity": 0.487,
+          "rate": 4500.0,
+          "amount": 2191.5
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries i/c steel / wooden strips for mak- ing grooves",
+          "unit": "L.S.",
+          "quantity": 16.38,
+          "rate": 2.27,
+          "amount": 37.18
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.44,
+          "rate": 897.0,
+          "amount": 394.68
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.44,
+          "rate": 816.0,
+          "amount": 359.04
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.43,
+          "rate": 736.0,
+          "amount": 1052.48
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.13,
+          "rate": 736.0,
+          "amount": 831.68
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 22.36,
+          "rate": 2.27,
+          "amount": 50.76
+        }
+      ],
+      "calculations": {
+        "total_w": 5843.31,
+        "total_x": 5901.74,
+        "total_y": 7157.04,
+        "total_z": 8230.6
+      },
+      "say_rate": 8312.9,
+      "page": 336
+    },
+    {
+      "item_code": "6.28",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with common burnt clay machine moulded modular bricks of class designation 12.5 in exposed brick work including making horizontal and vertical grooves 10 mm wide 12 mm deep complete in cement mortar 1:6 (1 cement : 6 coarse sand).",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 336
+    },
+    {
+      "item_code": "6.28.1",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with common burnt clay machine moulded modular bricks of class designation 12.5 - From ground level upto plinth level",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "1986",
+          "category": "MATERIAL",
+          "description": "Common burnt clay modular bricks class designation 12.5",
+          "unit": "1000 Nos",
+          "quantity": 0.487,
+          "rate": 5450.0,
+          "amount": 2654.15
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries including steel/wooden strips for making grooves.",
+          "unit": "L.S.",
+          "quantity": 16.38,
+          "rate": 2.27,
+          "amount": 37.18
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.33,
+          "rate": 897.0,
+          "amount": 296.01
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.33,
+          "rate": 816.0,
+          "amount": 269.28
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.18,
+          "rate": 816.0,
+          "amount": 146.88
+        }
+      ],
+      "calculations": {
+        "total_w": 4918.61,
+        "total_x": 4967.8,
+        "total_y": 6024.45,
+        "total_z": 6928.12
+      },
+      "say_rate": 6997.4,
+      "page": 336
+    },
+    {
+      "item_code": "6.28.2",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with common burnt clay machine moulded modular bricks of class designation 12.5 - Above plinth level upto floor V level",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "1986",
+          "category": "MATERIAL",
+          "description": "Common burnt clay modular bricks class designation 12.5",
+          "unit": "1000 Nos",
+          "quantity": 0.487,
+          "rate": 5450.0,
+          "amount": 2654.15
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries including steel/wooden strips for making grooves.",
+          "unit": "L.S.",
+          "quantity": 16.38,
+          "rate": 2.27,
+          "amount": 37.18
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.44,
+          "rate": 897.0,
+          "amount": 394.68
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.44,
+          "rate": 816.0,
+          "amount": 359.04
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.43,
+          "rate": 736.0,
+          "amount": 1052.48
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.13,
+          "rate": 736.0,
+          "amount": 831.68
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 22.36,
+          "rate": 2.27,
+          "amount": 50.76
+        }
+      ],
+      "calculations": {
+        "total_w": 6305.96,
+        "total_x": 6369.02,
+        "total_y": 7723.71,
+        "total_z": 8882.27
+      },
+      "say_rate": 8971.1,
+      "page": 337
+    },
+    {
+      "item_code": "6.29",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with common burnt clay machine moulded F.P.S. (non modular) bricks of class designation 12.5 in exposed brick work including making horizontal and vertical grooves 10 mm wide 12 mm deep complete in cement mortar 1:6 (1 cement : 6 coarse sand).",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 337
+    },
+    {
+      "item_code": "6.29.1",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with common burnt clay machine moulded F.P.S. (non modular) bricks of class - From ground level upto plinth level",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "7903",
+          "category": "MATERIAL",
+          "description": "Machine moulded common burnt clay FPS (non modular) bricks of class desig- nation 12.5",
+          "unit": "1000 Nos",
+          "quantity": 0.494,
+          "rate": 5300.0,
+          "amount": 2618.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries i/c steel / wooden strips for mak- ing grooves",
+          "unit": "L.S.",
+          "quantity": 16.38,
+          "rate": 2.27,
+          "amount": 37.18
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.36,
+          "rate": 897.0,
+          "amount": 322.92
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.36,
+          "rate": 816.0,
+          "amount": 293.76
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.37,
+          "rate": 736.0,
+          "amount": 1008.32
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 816.0,
+          "amount": 163.2
+        }
+      ],
+      "calculations": {
+        "total_w": 5328.93,
+        "total_x": 5382.22,
+        "total_y": 6527.02,
+        "total_z": 7506.07
+      },
+      "say_rate": 7581.15,
+      "page": 337
+    },
+    {
+      "item_code": "6.29.2",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with common burnt clay machine moulded F.P.S. (non modular) bricks of class - Above plinth level upto floor V level",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "7903",
+          "category": "MATERIAL",
+          "description": "Machine moulded common burnt clay FPS (non modular) bricks of class desig- nation 12.5",
+          "unit": "1000 Nos",
+          "quantity": 0.494,
+          "rate": 5300.0,
+          "amount": 2618.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries i/c steel / wooden strips for mak- ing grooves",
+          "unit": "L.S.",
+          "quantity": 16.38,
+          "rate": 2.27,
+          "amount": 37.18
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.44,
+          "rate": 897.0,
+          "amount": 394.68
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.44,
+          "rate": 816.0,
+          "amount": 359.04
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.8,
+          "rate": 736.0,
+          "amount": 1324.8
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.13,
+          "rate": 736.0,
+          "amount": 831.68
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 22.36,
+          "rate": 2.27,
+          "amount": 50.76
+        }
+      ],
+      "calculations": {
+        "total_w": 6664.89,
+        "total_x": 6731.54,
+        "total_y": 8163.34,
+        "total_z": 9387.84
+      },
+      "say_rate": 9481.7,
+      "page": 338
+    },
+    {
+      "item_code": "6.30",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with common burnt clay machine moulded perforated F.P.S. (non modular) bricks of class designation 12.5 conforming IS : 2222 in exposed brick work including making horizontal and vertical grooves 10mm wide 12 mm deep complete in cement mortar 1:6 (1 cement : 6 coarse sand).",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 339
+    },
+    {
+      "item_code": "6.30.1",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with common burnt clay machine moulded perforated F.P.S. (non modular) bricks of - From ground level upto plinth level",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "7901",
+          "category": "MATERIAL",
+          "description": "Machine moulded perforated common burnt clay FPS (non modular) bricks of class designation 12.5",
+          "unit": "1000 Nos",
+          "quantity": 0.494,
+          "rate": 5000.0,
+          "amount": 2470.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries i/c steel / wooden strips for mak- ing grooves",
+          "unit": "L.S.",
+          "quantity": 16.38,
+          "rate": 2.27,
+          "amount": 37.18
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.36,
+          "rate": 897.0,
+          "amount": 322.92
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.36,
+          "rate": 816.0,
+          "amount": 293.76
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.37,
+          "rate": 736.0,
+          "amount": 1008.32
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 816.0,
+          "amount": 163.2
+        }
+      ],
+      "calculations": {
+        "total_w": 5180.73,
+        "total_x": 5232.54,
+        "total_y": 6345.5,
+        "total_z": 7297.33
+      },
+      "say_rate": 7370.3,
+      "page": 339
+    },
+    {
+      "item_code": "6.30.2",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with common burnt clay machine moulded perforated F.P.S. (non modular) bricks of - Above plinth level upto floor V level",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "7901",
+          "category": "MATERIAL",
+          "description": "Machine moulded perforated common burnt clay FPS (non modular) bricks of class designation 12.5",
+          "unit": "1000 Nos",
+          "quantity": 0.494,
+          "rate": 5000.0,
+          "amount": 2470.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries i/c steel / wooden strips for mak- ing grooves",
+          "unit": "L.S.",
+          "quantity": 16.38,
+          "rate": 2.27,
+          "amount": 37.18
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.47,
+          "rate": 897.0,
+          "amount": 421.59
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.47,
+          "rate": 816.0,
+          "amount": 383.52
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.8,
+          "rate": 736.0,
+          "amount": 1324.8
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.13,
+          "rate": 736.0,
+          "amount": 831.68
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 22.36,
+          "rate": 2.27,
+          "amount": 50.76
+        }
+      ],
+      "calculations": {
+        "total_w": 6568.08,
+        "total_x": 6633.76,
+        "total_y": 8044.76,
+        "total_z": 9251.47
+      },
+      "say_rate": 9344.0,
+      "page": 339
+    },
+    {
+      "item_code": "6.31",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with common burnt clay machine moulded perforated modular bricks of class designation 12.5 conforming to IS : 2222 in exposed brick work including making horizontal and vertical grooves 10 mm wide 12mm deep complete in cement mortar 1:6 (1 cement : 6 coarse sand).",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 340
+    },
+    {
+      "item_code": "6.31.1",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with common burnt clay machine moulded perforated modular bricks of class - From ground level upto plinth level",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "7902",
+          "category": "MATERIAL",
+          "description": "Machine moulded common burnt clay modular perforated bricks of class desig- nation 12.5",
+          "unit": "1000 Nos",
+          "quantity": 0.487,
+          "rate": 5500.0,
+          "amount": 2678.5
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries i/c steel / wooden strips for mak- ing grooves",
+          "unit": "L.S.",
+          "quantity": 16.38,
+          "rate": 2.27,
+          "amount": 37.18
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.33,
+          "rate": 897.0,
+          "amount": 296.01
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.33,
+          "rate": 816.0,
+          "amount": 269.28
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.18,
+          "rate": 816.0,
+          "amount": 146.88
+        }
+      ],
+      "calculations": {
+        "total_w": 4942.96,
+        "total_x": 4992.39,
+        "total_y": 6054.27,
+        "total_z": 6962.41
+      },
+      "say_rate": 7032.05,
+      "page": 340
+    },
+    {
+      "item_code": "6.31.2",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with common burnt clay machine moulded perforated modular bricks of class - Above plinth level upto floor V level",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "7902",
+          "category": "MATERIAL",
+          "description": "Machine moulded common burnt clay modular perforated bricks of class desig- nation 12.5",
+          "unit": "1000 Nos",
+          "quantity": 0.487,
+          "rate": 5500.0,
+          "amount": 2678.5
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries i/c steel / wooden strips for mak- ing grooves",
+          "unit": "L.S.",
+          "quantity": 16.38,
+          "rate": 2.27,
+          "amount": 37.18
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.44,
+          "rate": 897.0,
+          "amount": 394.68
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.44,
+          "rate": 816.0,
+          "amount": 359.04
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.43,
+          "rate": 736.0,
+          "amount": 1052.48
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.13,
+          "rate": 736.0,
+          "amount": 831.68
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 22.36,
+          "rate": 2.27,
+          "amount": 50.76
+        }
+      ],
+      "calculations": {
+        "total_w": 6330.31,
+        "total_x": 6393.61,
+        "total_y": 7753.53,
+        "total_z": 8916.56
+      },
+      "say_rate": 9005.75,
+      "page": 340
+    },
+    {
+      "item_code": "6.32",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with clay flyash F.P.S. (non modular) brick of class designation 7.5 in superstructure above plinth level up to floor five level in :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 341
+    },
+    {
+      "item_code": "6.32.1",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with clay flyash F.P.S. (non modular) brick of class designation 7.5 in - Cement mortar 1:4 (1 cement : 4 coarse sand)",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "7008",
+          "category": "MATERIAL",
+          "description": "F.P.S.(non modular) clay fly ash bricks class designation 7.5",
+          "unit": "1000 Nos",
+          "quantity": 0.494,
+          "rate": 4770.0,
+          "amount": 2356.38
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.47,
+          "rate": 897.0,
+          "amount": 421.59
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.47,
+          "rate": 816.0,
+          "amount": 383.52
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.8,
+          "rate": 736.0,
+          "amount": 1324.8
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 816.0,
+          "amount": 163.2
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.13,
+          "rate": 736.0,
+          "amount": 831.68
+        }
+      ],
+      "calculations": {
+        "total_w": 6560.66,
+        "total_x": 6626.27,
+        "total_y": 8035.68,
+        "total_z": 9241.03
+      },
+      "say_rate": 9333.45,
+      "page": 341
+    },
+    {
+      "item_code": "6.32.2",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with clay flyash F.P.S. (non modular) brick of class designation 7.5 in - Cement mortar 1:6 (1 cement : 6 coarse sand)",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "7008",
+          "category": "MATERIAL",
+          "description": "F.P.S.(non modular) clay fly ash bricks class designation 7.5",
+          "unit": "1000 Nos",
+          "quantity": 0.494,
+          "rate": 4770.0,
+          "amount": 2356.38
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.47,
+          "rate": 897.0,
+          "amount": 421.59
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.47,
+          "rate": 816.0,
+          "amount": 383.52
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.8,
+          "rate": 736.0,
+          "amount": 1324.8
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 816.0,
+          "amount": 163.2
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.13,
+          "rate": 736.0,
+          "amount": 831.68
+        }
+      ],
+      "calculations": {
+        "total_w": 6393.08,
+        "total_x": 6457.01,
+        "total_y": 7830.42,
+        "total_z": 9004.98
+      },
+      "say_rate": 9095.05,
+      "page": 342
+    },
+    {
+      "item_code": "6.34",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with non modular fly ash bricks conforming to IS:12894, class designation 10 average compressive strength in super structure above plinth level up to floor V level in :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 342
+    },
+    {
+      "item_code": "6.34.1",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with non modular fly ash bricks conforming to IS:12894, class designation 10 - Cement mortar 1:4 (1 cement : 4 coarse sand)",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum.      MATERIAL"
+      },
+      "breakup": [],
+      "calculations": {
+        "total_w": 6299.82
+      },
+      "say_rate": 8962.35,
+      "page": 342
+    },
+    {
+      "item_code": "6.34.2",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with non modular fly ash bricks conforming to IS:12894, class designation 10 - Cement mortar 1:6 (1 cement : 6 Coarse sand)",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "7737",
+          "category": "MATERIAL",
+          "description": "Fly ash bricks conforming to I.S. 12894 1000 Nos 0.487 4500.00 2191.50 Cement mortar 1 : 6 (1 cement : 6 coarse sand) 3.11 Rate as per Item Number 3.11 of SH: Mortars",
+          "unit": "cum",
+          "quantity": 0.22,
+          "rate": 3541.4,
+          "amount": 779.11
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.47,
+          "rate": 897.0,
+          "amount": 421.59
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.47,
+          "rate": 816.0,
+          "amount": 383.52
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.8,
+          "rate": 736.0,
+          "amount": 1324.8
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 816.0,
+          "amount": 163.2
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.13,
+          "rate": 736.0,
+          "amount": 831.68
+        }
+      ],
+      "calculations": {
+        "total_w": 6152.36,
+        "total_x": 6213.88,
+        "total_y": 7535.57,
+        "total_z": 8665.91
+      },
+      "say_rate": 8752.55,
+      "page": 343
+    },
+    {
+      "item_code": "6.35",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with modular calcium silicate bricks machine moulded conforming to IS:4139, class designation 10 average compressive strength in super structure above plinth level up to floor V level in :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 344
+    },
+    {
+      "item_code": "6.35.1",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with modular calcium silicate bricks machine moulded conforming to IS:4139, class - Cement mortar 1:4 (1 cement : 4 coarse sand)",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "7738",
+          "category": "MATERIAL",
+          "description": "Calcium Silicate Bricks machine moulded conforming to I.S. 4139 - 1989",
+          "unit": "1000 Nos",
+          "quantity": 0.487,
+          "rate": 5700.0,
+          "amount": 2775.9
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.47,
+          "rate": 897.0,
+          "amount": 421.59
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.47,
+          "rate": 816.0,
+          "amount": 383.52
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.8,
+          "rate": 736.0,
+          "amount": 1324.8
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 816.0,
+          "amount": 163.2
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.13,
+          "rate": 736.0,
+          "amount": 831.68
+        }
+      ],
+      "calculations": {
+        "total_w": 6884.22,
+        "total_x": 6953.06,
+        "total_y": 8431.98,
+        "total_z": 9696.78
+      },
+      "say_rate": 9793.75,
+      "page": 344
+    },
+    {
+      "item_code": "6.35.2",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with modular calcium silicate bricks machine moulded conforming to IS:4139, class - Cement mortar 1:6 (1 cement : 6 Coarse sand)",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "7738",
+          "category": "MATERIAL",
+          "description": "Calcium Silicate Bricks machine moulded conforming to I.S. 4139 - 1989",
+          "unit": "1000 Nos",
+          "quantity": 0.487,
+          "rate": 5700.0,
+          "amount": 2775.9
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.47,
+          "rate": 897.0,
+          "amount": 421.59
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.47,
+          "rate": 816.0,
+          "amount": 383.52
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.8,
+          "rate": 736.0,
+          "amount": 1324.8
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 816.0,
+          "amount": 163.2
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.13,
+          "rate": 736.0,
+          "amount": 831.68
+        }
+      ],
+      "calculations": {
+        "total_w": 6736.76,
+        "total_x": 6804.13,
+        "total_y": 8251.37,
+        "total_z": 9489.08
+      },
+      "say_rate": 9583.95,
+      "page": 344
+    },
+    {
+      "item_code": "6.36",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with modular extruded brunt fly ash clay sewer bricks (Conforming to IS: 4885) in cement mortar 1:4 (1 cement : 4 coarse sand) in foundation and plinth :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 345
+    },
+    {
+      "item_code": "6.36.1",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with modular extruded brunt fly ash clay sewer bricks (Conforming to IS: 4885) in - Cement Mortar 1:4 ( 1 cement : 4 coarse sand)",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "7736",
+          "category": "MATERIAL",
+          "description": "Extruded burnt flyash clay sewer bricks conforming to I.S 4885 - 1988",
+          "unit": "1000 Nos",
+          "quantity": 0.487,
+          "rate": 5500.0,
+          "amount": 2678.5
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.33,
+          "rate": 897.0,
+          "amount": 296.01
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.33,
+          "rate": 816.0,
+          "amount": 269.28
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.18,
+          "rate": 816.0,
+          "amount": 146.88
+        }
+      ],
+      "calculations": {
+        "total_w": 5059.44,
+        "total_x": 5110.03,
+        "total_y": 6196.93,
+        "total_z": 7126.47
+      },
+      "say_rate": 7197.75,
+      "page": 345
+    },
+    {
+      "item_code": "6.37",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick work with modular extruded brunt fly ash clay sewer bricks (conforming to IS : 4885) in arches in foundation and plinth in cement mortar 1:3 ( 1 cement : 3 fine sand).",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "7736",
+          "category": "MATERIAL",
+          "description": "Extruded burnt flyash clay sewer bricks conforming to I.S 4885 - 1988",
+          "unit": "1000 Nos",
+          "quantity": 0.487,
+          "rate": 5500.0,
+          "amount": 2678.5
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries L.S. 2.73 2.27 6.20 Centering and shuttering 5.9.9 Rate as per item no 5.9.9 of SH : Rein- forced cement concrete work",
+          "unit": "sqm",
+          "quantity": 2.25,
+          "rate": 2154.35,
+          "amount": 4847.29
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.42,
+          "rate": 897.0,
+          "amount": 376.74
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.42,
+          "rate": 816.0,
+          "amount": 342.72
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.86,
+          "rate": 736.0,
+          "amount": 1368.96
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 816.0,
+          "amount": 163.2
+        }
+      ],
+      "calculations": {
+        "total_w": 10878.37,
+        "total_x": 10938.68,
+        "total_y": 12234.32,
+        "total_z": 13342.37
+      },
+      "say_rate": 13427.3,
+      "page": 345
+    },
+    {
+      "item_code": "6.38",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Providing and laying Autoclaved Aerated concrete(AAC) blocks masonry 100 mm/ 125 mm thick with Grade-1 AAC blocks of density 551 to 650 kg/cum conforming to IS:2185 (Part 3) in super structure above plinth level up to floor V level in cement mortar 1:4 (1 cement : 4 coarse sand). The rate includes providing and placing in position 2 Nos 6 mm dia M.S. bars at every third course of masonry work.",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "8655",
+          "category": "MATERIAL",
+          "description": "Autoclaved aerated concrete (AAC) blocks (grade 1 of density 551 to 650 kg/cum)",
+          "unit": "cum",
+          "quantity": 1.0,
+          "rate": 2915.0,
+          "amount": 2915.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.36,
+          "rate": 897.0,
+          "amount": 322.92
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.36,
+          "rate": 816.0,
+          "amount": 293.76
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.37,
+          "rate": 736.0,
+          "amount": 1008.32
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti day 0.20 816.00 163.20 Reinforcement bars 5.22.1 Rate as per item no. 5.22.1 of SH : Rein- forced cement concrete work",
+          "unit": "kg",
+          "quantity": 13.2,
+          "rate": 107.1,
+          "amount": 1413.72
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.13,
+          "rate": 736.0,
+          "amount": 831.68
+        }
+      ],
+      "calculations": {
+        "total_w": 7586.56,
+        "total_x": 7648.29,
+        "total_y": 8974.38,
+        "total_z": 10108.48
+      },
+      "say_rate": 10195.45,
+      "page": 346
+    },
+    {
+      "item_code": "6.40",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Providing and laying Gypsum panel partitions 100 mm thick with water proof Gypsum panels of size 666x500x100 mm, made of calcite phosphor Gypsum fixed with tongue and groove edges and jointed with bonding plaster as per manufacturer’s specifications in superstructure above plinth level up to floor V level. Gypsum blocks will have a minimum compressive strength of 9.3 kg/cm2",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "sqm"
+      },
+      "breakup": [
+        {
+          "resource_code": "8656",
+          "category": "MATERIAL",
+          "description": "Gypsum panel 666 X 500 X 100 mm size.",
+          "unit": "sqm",
+          "quantity": 10.0,
+          "rate": 528.0,
+          "amount": 5280.0
+        },
+        {
+          "resource_code": "8657",
+          "category": "MATERIAL",
+          "description": "Bonding plaster for Gypsum panel.",
+          "unit": "kg",
+          "quantity": 25.0,
+          "rate": 28.0,
+          "amount": 700.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries & scaffolding",
+          "unit": "L.S.",
+          "quantity": 13.52,
+          "rate": 2.27,
+          "amount": 30.69
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 897.0,
+          "amount": 448.5
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        }
+      ],
+      "calculations": {
+        "total_w": 7195.19,
+        "total_x": 7267.14,
+        "total_y": 8812.86,
+        "total_z": 10134.79
+      },
+      "say_rate": 1023.6,
+      "page": 347
+    },
+    {
+      "item_code": "6.41",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Extra for Gypsum panel Partitions in superstructure above floor V level for every four floors or part thereof.",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "sqm. per four floor"
+      },
+      "breakup": [
+        {
+          "resource_code": "0115",
+          "category": "MATERIAL",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.73,
+          "rate": 736.0,
+          "amount": 1273.28
+        }
+      ],
+      "calculations": {
+        "total_w": 1273.28,
+        "total_x": 1286.01,
+        "total_y": 1559.54,
+        "total_z": 1793.47
+      },
+      "say_rate": 181.15,
+      "page": 347
+    },
+    {
+      "item_code": "6.44",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Brick edging 7cm wide 11.4 cm deep to plinth protection with common burnt clay F.P.S. (non modular) bricks of class designation 7.5 including grouting with cement mortar 1:4 (1 cement : 4 fine sand). Total for 10 Nos. = 10x46.2 nos. = 462 Nos.",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "2602",
+          "category": "MATERIAL",
+          "description": "Common burnt clay F.P.S. (non modular) bricks class designation 7.5",
+          "unit": "1000 Nos",
+          "quantity": 0.462,
+          "rate": 4724.0,
+          "amount": 2182.49
+        },
+        {
+          "resource_code": "0155",
+          "category": "LABOUR",
+          "description": "Mason (average)",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 857.0,
+          "amount": 857.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.3,
+          "rate": 816.0,
+          "amount": 244.8
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 27.3,
+          "rate": 2.27,
+          "amount": 61.97
+        }
+      ],
+      "calculations": {
+        "total_w": 4277.75,
+        "total_x": 4320.53,
+        "total_y": 5239.51,
+        "total_z": 6025.44
+      },
+      "say_rate": 60.85,
+      "page": 348
+    },
+    {
+      "item_code": "6.45",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Half brick masonry with non modular fly ash bricks of class designation 10, conformingio IS :12894, in super structure above plinth upto floor V level.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 348
+    },
+    {
+      "item_code": "6.45.1",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Half brick masonry with non modular fly ash bricks of class designation 10, conformingio IS - Cement mortar 1 : 3 (1 cement : 3 coarse sand)",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "sqm."
+      },
+      "breakup": [
+        {
+          "resource_code": "7737",
+          "category": "MATERIAL",
+          "description": "Fly ash bricks conforming to I.S. 12894 1000 Nos 0.565 4500.00 2542.50 Cement mortar 1:3 (1 cement : 3 coarse sand) 3.8 Rate as per Item Number 3.8 of SH: Mortars",
+          "unit": "cum",
+          "quantity": 0.28,
+          "rate": 4881.95,
+          "amount": 1366.95
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries & Scaffolding",
+          "unit": "L.S.",
+          "quantity": 13.52,
+          "rate": 2.27,
+          "amount": 30.69
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.6,
+          "rate": 897.0,
+          "amount": 538.2
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.6,
+          "rate": 816.0,
+          "amount": 489.6
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 736.0,
+          "amount": 1472.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.29,
+          "rate": 736.0,
+          "amount": 949.44
+        }
+      ],
+      "calculations": {
+        "total_w": 7960.58,
+        "total_x": 8040.19,
+        "total_y": 9750.34,
+        "total_z": 11212.89
+      },
+      "say_rate": 1132.5,
+      "page": 348
+    },
+    {
+      "item_code": "6.45.2",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Half brick masonry with non modular fly ash bricks of class designation 10, conformingio IS - Cement mortar 1 : 4 (1 cement : 4 coarse sand)",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "sqm."
+      },
+      "breakup": [
+        {
+          "resource_code": "7737",
+          "category": "MATERIAL",
+          "description": "Fly ash bricks conforming to I.S. 12894 1000 Nos 0.565 4500.00 2542.50 Cement mortar 1 : 4 (1 cement : 4 coarse sand) 3.9 Rate as per Item Number 3.9 of SH: Mortars",
+          "unit": "cum",
+          "quantity": 0.28,
+          "rate": 4211.7,
+          "amount": 1179.28
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries & Scaffolding",
+          "unit": "L.S.",
+          "quantity": 13.52,
+          "rate": 2.27,
+          "amount": 30.69
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.6,
+          "rate": 897.0,
+          "amount": 538.2
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.6,
+          "rate": 816.0,
+          "amount": 489.6
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 736.0,
+          "amount": 1472.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.29,
+          "rate": 736.0,
+          "amount": 949.44
+        }
+      ],
+      "calculations": {
+        "total_w": 7772.91,
+        "total_x": 7850.64,
+        "total_y": 9520.47,
+        "total_z": 10948.54
+      },
+      "say_rate": 1105.8,
+      "page": 349
+    },
+    {
+      "item_code": "6.47",
+      "sub_head_no": 6,
+      "sub_head_name": "Masonry Work",
+      "description": "Providing and laying Autoclaved Aerated concrete(AAC) blocks  masonry with 150mm to 300 mm thick  with Grade-1 AAC blocks of density 551 to 650 kg/cum conforming to IS:2185 (Part 3)  in super structure above plinth level up to floor V level with RCC band at sill level and lintel level with approved block laying polymer modified adhesive mortar all complete as per direction of Engineer-in-Charge. (The payment of RCC band and reinforcement shall be made for seperately).",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "8655",
+          "category": "MATERIAL",
+          "description": "Autoclaved aerated concrete (AAC) blocks (grade 1 of density 551 to 650 kg/ cum)",
+          "unit": "cum",
+          "quantity": 1.0,
+          "rate": 2915.0,
+          "amount": 2915.0
+        },
+        {
+          "resource_code": "0357",
+          "category": "MATERIAL",
+          "description": "Polymer modified adhesive mortar",
+          "unit": "Kg",
+          "quantity": 30.0,
+          "rate": 16.0,
+          "amount": 480.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason (brick layer) 1 st class",
+          "unit": "day",
+          "quantity": 0.36,
+          "rate": 897.0,
+          "amount": 322.92
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.36,
+          "rate": 816.0,
+          "amount": 293.76
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.13,
+          "rate": 736.0,
+          "amount": 831.68
+        }
+      ],
+      "calculations": {
+        "total_w": 5857.88,
+        "total_x": 5916.46,
+        "total_y": 7174.89,
+        "total_z": 8251.12
+      },
+      "say_rate": 8333.65,
+      "page": 350
+    }
+  ]
+}

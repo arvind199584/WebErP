@@ -1,0 +1,5104 @@
+{
+  "sub_head_no": 15,
+  "sub_head_name": "Dismantling and Demolishing",
+  "volume": 2,
+  "page_range": [
+    156,
+    201
+  ],
+  "total_items": 117,
+  "analyzed_items_with_breakup": 92,
+  "items": [
+    {
+      "item_code": "15.1",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Demolishing lime concrete manually/ by mechanical means and disposal of material within 50 metres lead as per direction of Engineer- in-charge. Detail of cost for 1 cum",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.44,
+          "rate": 736.0,
+          "amount": 323.84
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.37,
+          "rate": 736.0,
+          "amount": 272.32
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 1.04,
+          "rate": 2.27,
+          "amount": 2.36
+        }
+      ],
+      "calculations": {
+        "total_w": 598.52,
+        "total_x": 604.51,
+        "total_y": 733.09,
+        "total_z": 843.05
+      },
+      "say_rate": 851.5,
+      "page": 158
+    },
+    {
+      "item_code": "15.2",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Demolishing cement concrete manually/ by mechanical means including disposal of material within 50 metres lead as per direction of Engineer - in - charge.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 158
+    },
+    {
+      "item_code": "15.2.1",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Demolishing cement concrete manually/ by mechanical means including disposal of material - Nominal concrete 1:3:6 or richer mix (i/c equivalent design mix) Detail of cost for 1 cum",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.59,
+          "rate": 736.0,
+          "amount": 1170.24
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.72,
+          "rate": 736.0,
+          "amount": 529.92
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 4.81,
+          "rate": 2.27,
+          "amount": 10.92
+        }
+      ],
+      "calculations": {
+        "total_w": 1711.08,
+        "total_x": 1728.19,
+        "total_y": 2095.78,
+        "total_z": 2410.15
+      },
+      "say_rate": 2434.25,
+      "page": 158
+    },
+    {
+      "item_code": "15.2.2",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Demolishing cement concrete manually/ by mechanical means including disposal of material - Nominal concrete 1:4:8 or leaner mix (i/c equivalent design mix) Detail of cost for 1 cum",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.88,
+          "rate": 736.0,
+          "amount": 647.68
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.55,
+          "rate": 736.0,
+          "amount": 404.8
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 1.95,
+          "rate": 2.27,
+          "amount": 4.43
+        }
+      ],
+      "calculations": {
+        "total_w": 1056.91,
+        "total_x": 1067.48,
+        "total_y": 1294.53,
+        "total_z": 1488.71
+      },
+      "say_rate": 1503.6,
+      "page": 158
+    },
+    {
+      "item_code": "15.3",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Demolishing R.C.C. work manually/ by mechanical means including stacking of steel bars and disposal of unserviceable material within 50 metres lead as per direction of Engineer - in- charge. Detail of cost for 1 cum",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.65,
+          "rate": 736.0,
+          "amount": 1950.4
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.72,
+          "rate": 736.0,
+          "amount": 529.92
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 7.02,
+          "rate": 2.27,
+          "amount": 15.94
+        }
+      ],
+      "calculations": {
+        "total_w": 2496.26,
+        "total_x": 2521.22,
+        "total_y": 3057.48,
+        "total_z": 3516.1
+      },
+      "say_rate": 3551.25,
+      "page": 159
+    },
+    {
+      "item_code": "15.4",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Demolishing R.B. work manually/ by mechanical means including stacking of steel bars and disposal of unserviceable material within 50 metres lead as per direction of Engineer-in- charge. Detail of cost for 1 cum",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.12,
+          "rate": 736.0,
+          "amount": 1560.32
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.9,
+          "rate": 736.0,
+          "amount": 662.4
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 4.68,
+          "rate": 2.27,
+          "amount": 10.62
+        }
+      ],
+      "calculations": {
+        "total_w": 2233.34,
+        "total_x": 2255.67,
+        "total_y": 2735.45,
+        "total_z": 3145.77
+      },
+      "say_rate": 3177.25,
+      "page": 159
+    },
+    {
+      "item_code": "15.5",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Extra for cutting reinforcement bars manually/ by mechanical means in R.C.C. or R.B. work (Payment shall be made on the cross sectional area of R.C.C. or R.B. work) as per direction of Engineer-in-charge. Detail of cost for 1 sqm R.C.C. or R.B. workReinforced area consider- ing 1% reinforcement = 0.01sqm For cutting 0.01 sqm reinforcement",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 816.0,
+          "amount": 408.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 13.39,
+          "rate": 2.27,
+          "amount": 30.4
+        }
+      ],
+      "calculations": {
+        "total_w": 806.4,
+        "total_x": 814.46,
+        "total_y": 987.7,
+        "total_z": 1135.86
+      },
+      "say_rate": 1147.2,
+      "page": 160
+    },
+    {
+      "item_code": "15.6",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Extra for scrapping, cleaning and straightening reinforcement from R.C.C. or R.B. work. Detail of cost for 10 Nos 6 metres long 16 mm dia bars @ 1.58 kg/metre Total weight = 94.80 kg = 0.948 quintal",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 0.25,
+          "rate": 816.0,
+          "amount": 204.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 13.39,
+          "rate": 2.27,
+          "amount": 30.4
+        }
+      ],
+      "calculations": {
+        "total_w": 602.4,
+        "total_x": 608.42,
+        "total_y": 737.83,
+        "total_z": 848.5
+      },
+      "say_rate": 9.05,
+      "page": 160
+    },
+    {
+      "item_code": "15.7",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Demolishing brick work manually/ by mechanical means including stacking of serviceable Engineer-in-charge.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 161
+    },
+    {
+      "item_code": "15.7.1",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Demolishing brick work manually/ by mechanical means including stacking of serviceable - In mud mortar Detail of cost for 1 cum",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.3,
+          "rate": 736.0,
+          "amount": 220.8
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.37,
+          "rate": 736.0,
+          "amount": 272.32
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 1.04,
+          "rate": 2.27,
+          "amount": 2.36
+        }
+      ],
+      "calculations": {
+        "total_w": 495.48,
+        "total_x": 500.43,
+        "total_y": 606.87,
+        "total_z": 697.9
+      },
+      "say_rate": 704.9,
+      "page": 161
+    },
+    {
+      "item_code": "15.7.2",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Demolishing brick work manually/ by mechanical means including stacking of serviceable - In lime mortar with old mughal bricks Detail of cost for 1 cum",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.24,
+          "rate": 736.0,
+          "amount": 912.64
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.46,
+          "rate": 736.0,
+          "amount": 338.56
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 1.04,
+          "rate": 2.27,
+          "amount": 2.36
+        }
+      ],
+      "calculations": {
+        "total_w": 1253.56,
+        "total_x": 1266.1,
+        "total_y": 1535.4,
+        "total_z": 1765.71
+      },
+      "say_rate": 1783.35,
+      "page": 161
+    },
+    {
+      "item_code": "15.7.3",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Demolishing brick work manually/ by mechanical means including stacking of serviceable - In lime mortar Detail of cost for 1 cum",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.44,
+          "rate": 736.0,
+          "amount": 323.84
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.37,
+          "rate": 736.0,
+          "amount": 272.32
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 1.04,
+          "rate": 2.27,
+          "amount": 2.36
+        }
+      ],
+      "calculations": {
+        "total_w": 598.52,
+        "total_x": 604.51,
+        "total_y": 733.09,
+        "total_z": 843.05
+      },
+      "say_rate": 851.5,
+      "page": 161
+    },
+    {
+      "item_code": "15.7.4",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Demolishing brick work manually/ by mechanical means including stacking of serviceable - In cement mortar Detail of cost for 1 cum",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.06,
+          "rate": 736.0,
+          "amount": 780.16
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.9,
+          "rate": 736.0,
+          "amount": 662.4
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.47,
+          "rate": 2.27,
+          "amount": 5.61
+        }
+      ],
+      "calculations": {
+        "total_w": 1448.17,
+        "total_x": 1462.65,
+        "total_y": 1773.76,
+        "total_z": 2039.82
+      },
+      "say_rate": 2060.2,
+      "page": 162
+    },
+    {
+      "item_code": "15.8",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Removing mortar from bricks and cleaning bricks including stacking within a lead of 50 m (stacks of cleaned bricks shall be measured):",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 162
+    },
+    {
+      "item_code": "15.8.1",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Removing mortar from bricks and cleaning bricks including stacking within a lead of 50 m - From brick work in mud mortar Detail of cost for 1000 Nos",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.4,
+          "rate": 736.0,
+          "amount": 1766.4
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.6,
+          "rate": 736.0,
+          "amount": 1177.6
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.4,
+          "rate": 816.0,
+          "amount": 326.4
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 1.82,
+          "rate": 2.27,
+          "amount": 4.13
+        }
+      ],
+      "calculations": {
+        "total_w": 3274.53,
+        "total_x": 3307.28,
+        "total_y": 4010.74,
+        "total_z": 4612.35
+      },
+      "say_rate": 4658.45,
+      "page": 162
+    },
+    {
+      "item_code": "15.8.2",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Removing mortar from bricks and cleaning bricks including stacking within a lead of 50 m - From brick work in lime mortar Detail of cost for 1000 Nos",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.8,
+          "rate": 736.0,
+          "amount": 2060.8
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.4,
+          "rate": 736.0,
+          "amount": 1030.4
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.8,
+          "rate": 816.0,
+          "amount": 652.8
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 8.97,
+          "rate": 2.27,
+          "amount": 20.36
+        }
+      ],
+      "calculations": {
+        "total_w": 3764.36,
+        "total_x": 3802.0,
+        "total_y": 4610.69,
+        "total_z": 5302.29
+      },
+      "say_rate": 5355.3,
+      "page": 163
+    },
+    {
+      "item_code": "15.8.3",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Removing mortar from bricks and cleaning bricks including stacking within a lead of 50 m - From brick work in cement mortar Detail of cost for 1000 Nos",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 3.5,
+          "rate": 736.0,
+          "amount": 2576.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.5,
+          "rate": 736.0,
+          "amount": 1104.0
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 1.24,
+          "rate": 816.0,
+          "amount": 1011.84
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 8.06,
+          "rate": 2.27,
+          "amount": 18.3
+        }
+      ],
+      "calculations": {
+        "total_w": 4710.14,
+        "total_x": 4757.24,
+        "total_y": 5769.1,
+        "total_z": 6634.47
+      },
+      "say_rate": 6700.8,
+      "page": 163
+    },
+    {
+      "item_code": "15.9",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Demolishing stone rubble masonry manually/ by mechanical means including stacking of serviceable material and disposal of unserviceable material within 50 metres lead as per direction of Engineer-in-charge :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 163
+    },
+    {
+      "item_code": "15.9.1",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Demolishing stone rubble masonry manually/ by mechanical means including stacking of - In lime mortar Detail of cost for 1 cum",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.61,
+          "rate": 736.0,
+          "amount": 448.96
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.49,
+          "rate": 736.0,
+          "amount": 360.64
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 1.95,
+          "rate": 2.27,
+          "amount": 4.43
+        }
+      ],
+      "calculations": {
+        "total_w": 814.03,
+        "total_x": 822.17,
+        "total_y": 997.05,
+        "total_z": 1146.61
+      },
+      "say_rate": 1158.1,
+      "page": 163
+    },
+    {
+      "item_code": "15.9.2",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Demolishing stone rubble masonry manually/ by mechanical means including stacking of - In cement mortar Detail of cost for 1 cum",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.3,
+          "rate": 736.0,
+          "amount": 956.8
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.04,
+          "rate": 736.0,
+          "amount": 765.44
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        }
+      ],
+      "calculations": {
+        "total_w": 1728.44,
+        "total_x": 1745.72,
+        "total_y": 2117.03,
+        "total_z": 2434.58
+      },
+      "say_rate": 2458.95,
+      "page": 164
+    },
+    {
+      "item_code": "15.10",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling dressed stone work ashlar face stone work, marble work or precast concrete work manually/ by mechanical means including stacking of serviceable and disposal of unserviceable material within 50 metres lead as per direction of Engineer-in-charge :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 164
+    },
+    {
+      "item_code": "15.10.1",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling dressed stone work ashlar face stone work, marble work or precast concrete - In lime mortar Detail of cost for 1 cum",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.78,
+          "rate": 736.0,
+          "amount": 574.08
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.61,
+          "rate": 736.0,
+          "amount": 448.96
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        }
+      ],
+      "calculations": {
+        "total_w": 1029.24,
+        "total_x": 1039.53,
+        "total_y": 1260.64,
+        "total_z": 1449.74
+      },
+      "say_rate": 1464.25,
+      "page": 164
+    },
+    {
+      "item_code": "15.10.2",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling dressed stone work ashlar face stone work, marble work or precast concrete - In cement mortar Detail of cost for 1 cum",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.55,
+          "rate": 736.0,
+          "amount": 1140.8
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.19,
+          "rate": 736.0,
+          "amount": 875.84
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        }
+      ],
+      "calculations": {
+        "total_w": 2022.84,
+        "total_x": 2043.07,
+        "total_y": 2477.63,
+        "total_z": 2849.27
+      },
+      "say_rate": 2877.75,
+      "page": 165
+    },
+    {
+      "item_code": "15.11",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Removing mortar from and cleaning stones and concrete articles (net quantity of stacks of cleaned materials will be measured):",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 165
+    },
+    {
+      "item_code": "15.11.1",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Removing mortar from and cleaning stones and concrete articles (net quantity of stacks of - In lime mortar Detail of cost for 1 cum",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.05,
+          "rate": 816.0,
+          "amount": 40.8
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 736.0,
+          "amount": 147.2
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 736.0,
+          "amount": 147.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 0.52,
+          "rate": 2.27,
+          "amount": 1.18
+        }
+      ],
+      "calculations": {
+        "total_w": 336.38,
+        "total_x": 339.74,
+        "total_y": 412.0,
+        "total_z": 473.8
+      },
+      "say_rate": 478.55,
+      "page": 165
+    },
+    {
+      "item_code": "15.11.2",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Removing mortar from and cleaning stones and concrete articles (net quantity of stacks of - In cement mortar Detail of cost for 1 cum",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.05,
+          "rate": 816.0,
+          "amount": 40.8
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.4,
+          "rate": 736.0,
+          "amount": 294.4
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 736.0,
+          "amount": 147.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 0.91,
+          "rate": 2.27,
+          "amount": 2.07
+        }
+      ],
+      "calculations": {
+        "total_w": 484.47,
+        "total_x": 489.31,
+        "total_y": 593.39,
+        "total_z": 682.4
+      },
+      "say_rate": 689.2,
+      "page": 166
+    },
+    {
+      "item_code": "15.12",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling doors, windows and clerestory windows (steel or wood) shutter including chowkhats, architrave, holdfasts etc. complete and stacking within 50 metres lead :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 166
+    },
+    {
+      "item_code": "15.12.1",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling doors, windows and clerestory windows (steel or wood) shutter including - Of area 3 sq. metres and below Detail of cost for each",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.1,
+          "rate": 816.0,
+          "amount": 81.6
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.18,
+          "rate": 736.0,
+          "amount": 132.48
+        },
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 0.05,
+          "rate": 816.0,
+          "amount": 40.8
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 1.43,
+          "rate": 2.27,
+          "amount": 3.25
+        }
+      ],
+      "calculations": {
+        "total_w": 258.13,
+        "total_x": 260.71,
+        "total_y": 316.16,
+        "total_z": 363.58
+      },
+      "say_rate": 367.2,
+      "page": 166
+    },
+    {
+      "item_code": "15.12.2",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling doors, windows and clerestory windows (steel or wood) shutter including - Of area beyond 3 sq. metres Detail of cost for each",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.13,
+          "rate": 816.0,
+          "amount": 106.08
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.25,
+          "rate": 736.0,
+          "amount": 184.0
+        },
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 0.07,
+          "rate": 816.0,
+          "amount": 57.12
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        }
+      ],
+      "calculations": {
+        "total_w": 353.4,
+        "total_x": 356.93,
+        "total_y": 432.85,
+        "total_z": 497.78
+      },
+      "say_rate": 502.75,
+      "page": 166
+    },
+    {
+      "item_code": "15.13",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Taking out doors, windows and clerestory window shutters (steel or wood) including stacking within 50 metres lead :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 167
+    },
+    {
+      "item_code": "15.13.1",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Taking out doors, windows and clerestory window shutters (steel or wood) including stacking - Of area 3 sq. metres and below Detail of cost for each",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0112",
+          "category": "LABOUR",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 0.05,
+          "rate": 816.0,
+          "amount": 40.8
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.08,
+          "rate": 736.0,
+          "amount": 58.88
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 0.52,
+          "rate": 2.27,
+          "amount": 1.18
+        }
+      ],
+      "calculations": {
+        "total_w": 100.86,
+        "total_x": 101.87,
+        "total_y": 123.54,
+        "total_z": 142.07
+      },
+      "say_rate": 143.5,
+      "page": 167
+    },
+    {
+      "item_code": "15.13.2",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Taking out doors, windows and clerestory window shutters (steel or wood) including stacking - Of area beyond 3 sq. metres Detail of cost for each",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0112",
+          "category": "LABOUR",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 0.07,
+          "rate": 816.0,
+          "amount": 57.12
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.1,
+          "rate": 736.0,
+          "amount": 73.6
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 0.91,
+          "rate": 2.27,
+          "amount": 2.07
+        }
+      ],
+      "calculations": {
+        "total_w": 132.79,
+        "total_x": 134.12,
+        "total_y": 162.65,
+        "total_z": 187.05
+      },
+      "say_rate": 188.9,
+      "page": 167
+    },
+    {
+      "item_code": "15.14",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling wood work in frames, trusses, purlins and rafters up to 10 metres span and 5 metres height including stacking the material within 50 metres lead :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 168
+    },
+    {
+      "item_code": "15.14.1",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling wood work in frames, trusses, purlins and rafters up to 10 metres span and 5 - Of sectional area 40 square centimetres and above Detail of cost for 1 cum",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0112",
+          "category": "LABOUR",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 816.0,
+          "amount": 1632.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 736.0,
+          "amount": 1472.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 13.39,
+          "rate": 2.27,
+          "amount": 30.4
+        }
+      ],
+      "calculations": {
+        "total_w": 3134.4,
+        "total_x": 3165.74,
+        "total_y": 3839.09,
+        "total_z": 4414.95
+      },
+      "say_rate": 4459.1,
+      "page": 168
+    },
+    {
+      "item_code": "15.14.2",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling wood work in frames, trusses, purlins and rafters up to 10 metres span and 5 - Of sectional area below 40 square centimetres Detail of cost for 10 metre",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0112",
+          "category": "LABOUR",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 0.08,
+          "rate": 816.0,
+          "amount": 65.28
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.08,
+          "rate": 736.0,
+          "amount": 58.88
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 0.52,
+          "rate": 2.27,
+          "amount": 1.18
+        }
+      ],
+      "calculations": {
+        "total_w": 125.34,
+        "total_x": 126.59,
+        "total_y": 153.52,
+        "total_z": 176.55
+      },
+      "say_rate": 17.85,
+      "page": 168
+    },
+    {
+      "item_code": "15.15",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Extra for dismantling trusses, rafters, purlins etc. of wood work for every additional span of one metre or part thereof beyond 10 metres :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 168
+    },
+    {
+      "item_code": "15.15.1",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Extra for dismantling trusses, rafters, purlins etc. of wood work for every additional span of - Of sectional area 40 square centimetres and above Detail of cost for 1cum for every additional span of 1 metre",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 816.0,
+          "amount": 163.2
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.3,
+          "rate": 736.0,
+          "amount": 220.8
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 13.39,
+          "rate": 2.27,
+          "amount": 30.4
+        }
+      ],
+      "calculations": {
+        "total_w": 414.4,
+        "total_x": 418.54,
+        "total_y": 507.56,
+        "total_z": 583.69
+      },
+      "say_rate": 589.55,
+      "page": 168
+    },
+    {
+      "item_code": "15.15.2",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Extra for dismantling trusses, rafters, purlins etc. of wood work for every additional span of - Of sectional area below 40 square centimetres Detail of cost for 10 metre for every additional span of 1 metre",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 0.006,
+          "rate": 816.0,
+          "amount": 4.9
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.008,
+          "rate": 736.0,
+          "amount": 5.89
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 0.39,
+          "rate": 2.27,
+          "amount": 0.89
+        }
+      ],
+      "calculations": {
+        "total_w": 11.68,
+        "total_x": 11.8,
+        "total_y": 14.31,
+        "total_z": 16.46
+      },
+      "say_rate": 1.65,
+      "page": 169
+    },
+    {
+      "item_code": "15.16",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Extra for dismantling trusses, rafters, purlins etc. of wood work for every additional height of one metre or part thereof beyond 5 metres :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 169
+    },
+    {
+      "item_code": "15.16.1",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Extra for dismantling trusses, rafters, purlins etc. of wood work for every additional height of - Of sectional area 40 square centimetres and above Detail of cost for 1 cum for every additional height of 1 metre",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 0.25,
+          "rate": 816.0,
+          "amount": 204.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 13.39,
+          "rate": 2.27,
+          "amount": 30.4
+        }
+      ],
+      "calculations": {
+        "total_w": 602.4,
+        "total_x": 608.42,
+        "total_y": 737.83,
+        "total_z": 848.5
+      },
+      "say_rate": 857.0,
+      "page": 169
+    },
+    {
+      "item_code": "15.16.2",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Extra for dismantling trusses, rafters, purlins etc. of wood work for every additional height of - Of sectional area below 40 square centimetres Detail of cost for 10 metre for every additional height of 1 metre",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 0.01,
+          "rate": 816.0,
+          "amount": 8.16
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.02,
+          "rate": 736.0,
+          "amount": 14.72
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 0.39,
+          "rate": 2.27,
+          "amount": 0.89
+        }
+      ],
+      "calculations": {
+        "total_w": 23.77,
+        "total_x": 24.01,
+        "total_y": 29.12,
+        "total_z": 33.49
+      },
+      "say_rate": 3.4,
+      "page": 170
+    },
+    {
+      "item_code": "15.17",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling steel work in single sections including dismembering and stacking within 50 metres lead in:",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 170
+    },
+    {
+      "item_code": "15.17.1",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling steel work in single sections including dismembering and stacking within 50 - R.S. Joists Detail of cost for 1 quintal",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 0.05,
+          "rate": 816.0,
+          "amount": 40.8
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.1,
+          "rate": 816.0,
+          "amount": 81.6
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.15,
+          "rate": 736.0,
+          "amount": 110.4
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        }
+      ],
+      "calculations": {
+        "total_w": 239.0,
+        "total_x": 241.39,
+        "total_y": 292.73,
+        "total_z": 336.64
+      },
+      "say_rate": 3.4,
+      "page": 170
+    },
+    {
+      "item_code": "15.17.2",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling steel work in single sections including dismembering and stacking within 50 - Channels, angles, tees and flats Detail of cost for 1 quintal",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 0.05,
+          "rate": 816.0,
+          "amount": 40.8
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.05,
+          "rate": 816.0,
+          "amount": 40.8
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.1,
+          "rate": 736.0,
+          "amount": 73.6
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        }
+      ],
+      "calculations": {
+        "total_w": 161.4,
+        "total_x": 163.01,
+        "total_y": 197.68,
+        "total_z": 227.33
+      },
+      "say_rate": 2.3,
+      "page": 171
+    },
+    {
+      "item_code": "15.18",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling steel work in built up sections in angles, tees, flats and channels including all gusset plates, bolts, nuts, cutting rivets, welding etc. including dismembering and stacking within 50 metres lead. Detail of cost for 1 quintal",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 0.15,
+          "rate": 816.0,
+          "amount": 122.4
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.1,
+          "rate": 816.0,
+          "amount": 81.6
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.25,
+          "rate": 736.0,
+          "amount": 184.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 4.16,
+          "rate": 2.27,
+          "amount": 9.44
+        }
+      ],
+      "calculations": {
+        "total_w": 397.44,
+        "total_x": 401.41,
+        "total_y": 486.79,
+        "total_z": 559.81
+      },
+      "say_rate": 5.65,
+      "page": 171
+    },
+    {
+      "item_code": "15.19",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling steel work manually/ by mechanical means in built up sections without dismembering and stacking within 50 metres lead as per direction of Engineer-in-charge. Detail of cost for 1 quintal",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.1,
+          "rate": 816.0,
+          "amount": 81.6
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.25,
+          "rate": 736.0,
+          "amount": 184.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        }
+      ],
+      "calculations": {
+        "total_w": 271.8,
+        "total_x": 274.52,
+        "total_y": 332.91,
+        "total_z": 382.85
+      },
+      "say_rate": 3.85,
+      "page": 171
+    },
+    {
+      "item_code": "15.20",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Extra for dismantling trusses, rafters, purlins etc. of steel work for every additional span of one metre or part thereof beyond 10 metres Detail of cost for 1 quintal for every additional span of 1 metre beyond 10 metre",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.02,
+          "rate": 816.0,
+          "amount": 16.32
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 736.0,
+          "amount": 44.16
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 0.39,
+          "rate": 2.27,
+          "amount": 0.89
+        }
+      ],
+      "calculations": {
+        "total_w": 61.37,
+        "total_x": 61.98,
+        "total_y": 75.16,
+        "total_z": 86.43
+      },
+      "say_rate": 0.85,
+      "page": 172
+    },
+    {
+      "item_code": "15.21",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Extra for dismantling trusses, rafters, purlins etc. of steel work for every additional height of one metre or part thereof beyond 5 metres. Detail of cost for 1 quintal for every additional height of 1 metre beyond 5 metre",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.02,
+          "rate": 816.0,
+          "amount": 16.32
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 736.0,
+          "amount": 44.16
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 0.39,
+          "rate": 2.27,
+          "amount": 0.89
+        }
+      ],
+      "calculations": {
+        "total_w": 61.37,
+        "total_x": 61.98,
+        "total_y": 75.16,
+        "total_z": 86.43
+      },
+      "say_rate": 0.85,
+      "page": 172
+    },
+    {
+      "item_code": "15.22",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Extra for marking of structural steel work required to be re-erected. Detail of cost for 1 quintal",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 897.0,
+          "amount": 179.4
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 736.0,
+          "amount": 147.2
+        }
+      ],
+      "calculations": {
+        "total_w": 326.6,
+        "total_x": 329.87,
+        "total_y": 400.03,
+        "total_z": 460.03
+      },
+      "say_rate": 4.65,
+      "page": 173
+    },
+    {
+      "item_code": "15.23",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling tile work in floors and roofs laid in cement mortar including stacking material within 50 metres lead.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 173
+    },
+    {
+      "item_code": "15.23.1",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling tile work in floors and roofs laid in cement mortar including stacking material - For thickness of tiles 10 mm to 25 mm Detail of cost for 10 sqm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.3,
+          "rate": 816.0,
+          "amount": 244.8
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.12,
+          "rate": 736.0,
+          "amount": 88.32
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.24,
+          "rate": 736.0,
+          "amount": 176.64
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        }
+      ],
+      "calculations": {
+        "total_w": 515.96,
+        "total_x": 521.12,
+        "total_y": 631.96,
+        "total_z": 726.75
+      },
+      "say_rate": 73.4,
+      "page": 173
+    },
+    {
+      "item_code": "15.23.2",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling tile work in floors and roofs laid in cement mortar including stacking material - For thickness of tiles above 25 mm and up to 40 mm Detail of cost for 10 sqm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.59,
+          "rate": 816.0,
+          "amount": 481.44
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.18,
+          "rate": 736.0,
+          "amount": 132.48
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.24,
+          "rate": 736.0,
+          "amount": 176.64
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        }
+      ],
+      "calculations": {
+        "total_w": 796.76,
+        "total_x": 804.73,
+        "total_y": 975.9,
+        "total_z": 1122.29
+      },
+      "say_rate": 113.35,
+      "page": 174
+    },
+    {
+      "item_code": "15.24",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Demolishing dry brick pitching in floors, drains etc. including stacking of serviceable material and disposal of unserviceable material within 50 metres lead : Detail of cost for 1 cum",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.25,
+          "rate": 736.0,
+          "amount": 184.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        }
+      ],
+      "calculations": {
+        "total_w": 926.2,
+        "total_x": 935.46,
+        "total_y": 1134.43,
+        "total_z": 1304.59
+      },
+      "say_rate": 1317.65,
+      "page": 174
+    },
+    {
+      "item_code": "15.25",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling stone slab flooring laid in cement mortar including stacking of serviceable Detail of cost for 10 sqm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.77,
+          "rate": 736.0,
+          "amount": 1302.72
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.75,
+          "rate": 736.0,
+          "amount": 552.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 8.06,
+          "rate": 2.27,
+          "amount": 18.3
+        }
+      ],
+      "calculations": {
+        "total_w": 1873.02,
+        "total_x": 1891.75,
+        "total_y": 2294.13,
+        "total_z": 2638.25
+      },
+      "say_rate": 266.45,
+      "page": 174
+    },
+    {
+      "item_code": "15.26",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Demolishing brick tile covering in terracing including stacking of serviceable material and disposal of unserviceable material within 50 metres lead. Detail of cost for 10 sqm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.54,
+          "rate": 816.0,
+          "amount": 440.64
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.16,
+          "rate": 736.0,
+          "amount": 117.76
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.24,
+          "rate": 736.0,
+          "amount": 176.64
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.47,
+          "rate": 2.27,
+          "amount": 5.61
+        }
+      ],
+      "calculations": {
+        "total_w": 740.65,
+        "total_x": 748.06,
+        "total_y": 907.17,
+        "total_z": 1043.25
+      },
+      "say_rate": 105.35,
+      "page": 175
+    },
+    {
+      "item_code": "15.27",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Demolishing mud phaska in terracing and disposal of material within 50 metres lead. Detail of cost for 1 cum",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.25,
+          "rate": 736.0,
+          "amount": 184.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.62,
+          "rate": 736.0,
+          "amount": 456.32
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 1.04,
+          "rate": 2.27,
+          "amount": 2.36
+        }
+      ],
+      "calculations": {
+        "total_w": 642.68,
+        "total_x": 649.11,
+        "total_y": 787.18,
+        "total_z": 905.26
+      },
+      "say_rate": 914.3,
+      "page": 175
+    },
+    {
+      "item_code": "15.28",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling roofing including ridges, hips, valleys and gutters etc., and stacking the material within 50 metres lead of:",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 176
+    },
+    {
+      "item_code": "15.28.1",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling roofing including ridges, hips, valleys and gutters etc., and stacking the material - G.S. Sheet Detail of cost for 10 sqm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0112",
+          "category": "LABOUR",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 816.0,
+          "amount": 408.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 6.76,
+          "rate": 2.27,
+          "amount": 15.35
+        }
+      ],
+      "calculations": {
+        "total_w": 1159.35,
+        "total_x": 1170.94,
+        "total_y": 1420.0,
+        "total_z": 1633.0
+      },
+      "say_rate": 164.95,
+      "page": 176
+    },
+    {
+      "item_code": "15.28.2",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling roofing including ridges, hips, valleys and gutters etc., and stacking the material - Asbestos Cement sheet Detail of cost for 10 sqm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0112",
+          "category": "LABOUR",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 816.0,
+          "amount": 163.2
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 5.33,
+          "rate": 2.27,
+          "amount": 12.1
+        }
+      ],
+      "calculations": {
+        "total_w": 543.3,
+        "total_x": 548.73,
+        "total_y": 665.44,
+        "total_z": 765.26
+      },
+      "say_rate": 77.3,
+      "page": 176
+    },
+    {
+      "item_code": "15.29",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling stone slab roofing over wooden karries or R.C.C. battens (dismantling karries and battens to be paid for separately), including stacking of serviceable material and disposal of unserviceable material within 50 metres lead. Detail of cost for 1 cum",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.77,
+          "rate": 736.0,
+          "amount": 1302.72
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.75,
+          "rate": 736.0,
+          "amount": 552.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 8.06,
+          "rate": 2.27,
+          "amount": 18.3
+        }
+      ],
+      "calculations": {
+        "total_w": 1873.02,
+        "total_x": 1891.75,
+        "total_y": 2294.13,
+        "total_z": 2638.25
+      },
+      "say_rate": 2664.65,
+      "page": 176
+    },
+    {
+      "item_code": "15.30",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling jack arch roofing and floors including stacking of serviceable material and disposal of unserviceable material within 50 metres lead. Detail of cost for 10 sqm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.19,
+          "rate": 736.0,
+          "amount": 875.84
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.21,
+          "rate": 736.0,
+          "amount": 890.56
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 8.06,
+          "rate": 2.27,
+          "amount": 18.3
+        }
+      ],
+      "calculations": {
+        "total_w": 1784.7,
+        "total_x": 1802.55,
+        "total_y": 2185.95,
+        "total_z": 2513.84
+      },
+      "say_rate": 253.9,
+      "page": 177
+    },
+    {
+      "item_code": "15.31",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling tiled roofing with battens, boarding etc. complete including stacking of serviceable Detail of cost for 10 sqm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.73,
+          "rate": 736.0,
+          "amount": 1273.28
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.25,
+          "rate": 736.0,
+          "amount": 184.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 8.06,
+          "rate": 2.27,
+          "amount": 18.3
+        }
+      ],
+      "calculations": {
+        "total_w": 1475.58,
+        "total_x": 1490.34,
+        "total_y": 1807.34,
+        "total_z": 2078.44
+      },
+      "say_rate": 209.9,
+      "page": 177
+    },
+    {
+      "item_code": "15.32",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Demolishing thatch roofing including mats, bamboo, jaffari etc. complete including stacking of serviceable material and disposal of unserviceable material within 50 metres lead. Detail of cost for 10 sqm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.54,
+          "rate": 736.0,
+          "amount": 397.44
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 3.64,
+          "rate": 2.27,
+          "amount": 8.26
+        }
+      ],
+      "calculations": {
+        "total_w": 405.7,
+        "total_x": 409.76,
+        "total_y": 496.92,
+        "total_z": 571.46
+      },
+      "say_rate": 57.7,
+      "page": 178
+    },
+    {
+      "item_code": "15.33",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling wooden ballies in posts and struts including stacking within 50metres lead. Detail of cost for 50 metre",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 0.52,
+          "rate": 2.27,
+          "amount": 1.18
+        }
+      ],
+      "calculations": {
+        "total_w": 737.18,
+        "total_x": 744.55,
+        "total_y": 902.92,
+        "total_z": 1038.36
+      },
+      "say_rate": 20.95,
+      "page": 178
+    },
+    {
+      "item_code": "15.34",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling and stacking within 50 metres lead, fencing posts or struts including all earth work and dismantling of concrete etc. in base of:",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 179
+    },
+    {
+      "item_code": "15.34.1",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling and stacking within 50 metres lead, fencing posts or struts including all earth - T’ or ‘L’ iron or pipe Detail of cost for each",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.107,
+          "rate": 736.0,
+          "amount": 78.75
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.067,
+          "rate": 736.0,
+          "amount": 49.31
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Excavation, transporting and stacking the posts to the required place within 50 metres lead, refilling the pit and dressing the same",
+          "unit": "L.S.",
+          "quantity": 0.26,
+          "rate": 2.27,
+          "amount": 0.59
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Extra for lifting of R.C.C. posts being heavier than L iron and cleaning the posts of stacking concrete",
+          "unit": "L.S.",
+          "quantity": 13.39,
+          "rate": 2.27,
+          "amount": 30.4
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 1.43,
+          "rate": 2.27,
+          "amount": 3.25
+        }
+      ],
+      "calculations": {
+        "total_w": 162.3,
+        "total_x": 163.92,
+        "total_y": 198.79,
+        "total_z": 228.61
+      },
+      "say_rate": 230.9,
+      "page": 179
+    },
+    {
+      "item_code": "15.34.2",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling and stacking within 50 metres lead, fencing posts or struts including all earth - R.C.C. Detail of cost for each",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.097,
+          "rate": 736.0,
+          "amount": 71.39
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 736.0,
+          "amount": 44.16
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 0.26,
+          "rate": 2.27,
+          "amount": 0.59
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Excavation, transporting and stacking the posts to the required place within 50 metres lead, refilling the pit and dressing the same",
+          "unit": "L.S.",
+          "quantity": 13.39,
+          "rate": 2.27,
+          "amount": 30.4
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Extra for lifting of R.C.C. posts being heavier than L iron and cleaning the posts of stacking concrete",
+          "unit": "L.S.",
+          "quantity": 8.06,
+          "rate": 2.27,
+          "amount": 18.3
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        }
+      ],
+      "calculations": {
+        "total_w": 171.04,
+        "total_x": 172.75,
+        "total_y": 209.49,
+        "total_z": 240.91
+      },
+      "say_rate": 243.3,
+      "page": 179
+    },
+    {
+      "item_code": "15.35",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Cutting ballies or wooden posts of fencing at the point of projection above the concrete or ground and stacking the same within 50 metres lead. Detail of cost for 1 ballie (post)",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Cutting",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Transporting and stacking",
+          "unit": "L.S.",
+          "quantity": 1.43,
+          "rate": 2.27,
+          "amount": 3.25
+        }
+      ],
+      "calculations": {
+        "total_w": 9.45,
+        "total_x": 9.54,
+        "total_y": 11.57,
+        "total_z": 13.31
+      },
+      "say_rate": 13.45,
+      "page": 180
+    },
+    {
+      "item_code": "15.36",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling barbed wire or flexible wire rope in fencing including making rolls and stacking within 50 metres lead. Detail of cost for 1 quintal",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 3.5,
+          "rate": 736.0,
+          "amount": 2576.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 5.33,
+          "rate": 2.27,
+          "amount": 12.1
+        }
+      ],
+      "calculations": {
+        "total_w": 2588.1,
+        "total_x": 2613.98,
+        "total_y": 3169.97,
+        "total_z": 3645.47
+      },
+      "say_rate": 36.8,
+      "page": 180
+    },
+    {
+      "item_code": "15.37",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling wooden trellis work excluding frames but including stacking the  serviceable Detail of cost for 10 sqm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.1,
+          "rate": 816.0,
+          "amount": 81.6
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.25,
+          "rate": 736.0,
+          "amount": 184.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.25,
+          "rate": 736.0,
+          "amount": 184.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        }
+      ],
+      "calculations": {
+        "total_w": 455.8,
+        "total_x": 460.36,
+        "total_y": 558.28,
+        "total_z": 642.02
+      },
+      "say_rate": 64.85,
+      "page": 180
+    },
+    {
+      "item_code": "15.38",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling expanded metal or I.R.C. fabrics with necessary battens and beading including stacking the serviceable material within 50 metres lead. Detail of cost for 10 sqm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0112",
+          "category": "LABOUR",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 0.1,
+          "rate": 816.0,
+          "amount": 81.6
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.4,
+          "rate": 736.0,
+          "amount": 294.4
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 736.0,
+          "amount": 147.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 4.16,
+          "rate": 2.27,
+          "amount": 9.44
+        }
+      ],
+      "calculations": {
+        "total_w": 532.64,
+        "total_x": 537.97,
+        "total_y": 652.4,
+        "total_z": 750.26
+      },
+      "say_rate": 75.8,
+      "page": 181
+    },
+    {
+      "item_code": "15.39",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling wooden boardings in lining of walls and partitions, excluding supporting members but including stacking within 50 metres lead :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 181
+    },
+    {
+      "item_code": "15.39.1",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling wooden boardings in lining of walls and partitions, excluding supporting members - Up to 10 mm thick Detail of cost for 10 sqm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0112",
+          "category": "LABOUR",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 0.15,
+          "rate": 816.0,
+          "amount": 122.4
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 736.0,
+          "amount": 147.2
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 736.0,
+          "amount": 147.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 5.33,
+          "rate": 2.27,
+          "amount": 12.1
+        }
+      ],
+      "calculations": {
+        "total_w": 428.9,
+        "total_x": 433.19,
+        "total_y": 525.33,
+        "total_z": 604.13
+      },
+      "say_rate": 61.0,
+      "page": 181
+    },
+    {
+      "item_code": "15.39.2",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling wooden boardings in lining of walls and partitions, excluding supporting members - Thickness above 10 mm up to 25 mm Detail of cost for 10 sqm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0112",
+          "category": "LABOUR",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 816.0,
+          "amount": 163.2
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.25,
+          "rate": 736.0,
+          "amount": 184.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.25,
+          "rate": 736.0,
+          "amount": 184.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 6.76,
+          "rate": 2.27,
+          "amount": 15.35
+        }
+      ],
+      "calculations": {
+        "total_w": 546.55,
+        "total_x": 552.02,
+        "total_y": 669.43,
+        "total_z": 769.84
+      },
+      "say_rate": 77.75,
+      "page": 182
+    },
+    {
+      "item_code": "15.39.3",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling wooden boardings in lining of walls and partitions, excluding supporting members - Thickness above 25 mm up to 40 mm Detail of cost for 10 sqm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0112",
+          "category": "LABOUR",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 816.0,
+          "amount": 163.2
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.3,
+          "rate": 736.0,
+          "amount": 220.8
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.3,
+          "rate": 736.0,
+          "amount": 220.8
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 13.39,
+          "rate": 2.27,
+          "amount": 30.4
+        }
+      ],
+      "calculations": {
+        "total_w": 635.2,
+        "total_x": 641.55,
+        "total_y": 778.01,
+        "total_z": 894.71
+      },
+      "say_rate": 90.35,
+      "page": 182
+    },
+    {
+      "item_code": "15.40",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling precast concrete or stone slabs in walls, partition walls etc. including stacking within 50 metres lead :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 183
+    },
+    {
+      "item_code": "15.40.1",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling precast concrete or stone slabs in walls, partition walls etc. including stacking - Thickness up to 40 mm Detail of cost for 10 sqm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 816.0,
+          "amount": 163.2
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 736.0,
+          "amount": 1472.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 13.39,
+          "rate": 2.27,
+          "amount": 30.4
+        }
+      ],
+      "calculations": {
+        "total_w": 2033.6,
+        "total_x": 2053.94,
+        "total_y": 2490.81,
+        "total_z": 2864.43
+      },
+      "say_rate": 289.3,
+      "page": 183
+    },
+    {
+      "item_code": "15.40.2",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling precast concrete or stone slabs in walls, partition walls etc. including stacking - Thickness above 40 mm up to 75 mm Detail of cost for 10 sqm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.3,
+          "rate": 816.0,
+          "amount": 244.8
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 3.0,
+          "rate": 736.0,
+          "amount": 2208.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.75,
+          "rate": 736.0,
+          "amount": 552.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 18.85,
+          "rate": 2.27,
+          "amount": 42.79
+        }
+      ],
+      "calculations": {
+        "total_w": 3047.59,
+        "total_x": 3078.07,
+        "total_y": 3732.78,
+        "total_z": 4292.7
+      },
+      "say_rate": 433.55,
+      "page": 183
+    },
+    {
+      "item_code": "15.41",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling cement asbestos or other hard board ceiling or partition walls including stacking of serviceable materials and disposal of unserviceable materials within 50 metres lead. Detail of cost for 10 sqm.",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0112",
+          "category": "LABOUR",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 816.0,
+          "amount": 163.2
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.3,
+          "rate": 736.0,
+          "amount": 220.8
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 5.33,
+          "rate": 2.27,
+          "amount": 12.1
+        }
+      ],
+      "calculations": {
+        "total_w": 396.1,
+        "total_x": 400.06,
+        "total_y": 485.15,
+        "total_z": 557.92
+      },
+      "say_rate": 56.35,
+      "page": 183
+    },
+    {
+      "item_code": "15.42",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling C.I. or asbestos rain water pipe with fittings and clamps including stacking the",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 184
+    },
+    {
+      "item_code": "15.42.1",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling C.I. or asbestos rain water pipe with fittings and clamps including stacking the - 75 to 80 mm dia pipe Detail of cost for 10 metre",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.36,
+          "rate": 736.0,
+          "amount": 264.96
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.36,
+          "rate": 736.0,
+          "amount": 264.96
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 0.91,
+          "rate": 2.27,
+          "amount": 2.07
+        }
+      ],
+      "calculations": {
+        "total_w": 531.99,
+        "total_x": 537.31,
+        "total_y": 651.6,
+        "total_z": 749.34
+      },
+      "say_rate": 75.7,
+      "page": 184
+    },
+    {
+      "item_code": "15.42.2",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling C.I. or asbestos rain water pipe with fittings and clamps including stacking the - 100 mm dia pipe Detail of cost for 10 metre",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.36,
+          "rate": 736.0,
+          "amount": 264.96
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.38,
+          "rate": 736.0,
+          "amount": 279.68
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 1.56,
+          "rate": 2.27,
+          "amount": 3.54
+        }
+      ],
+      "calculations": {
+        "total_w": 548.18,
+        "total_x": 553.66,
+        "total_y": 671.42,
+        "total_z": 772.13
+      },
+      "say_rate": 78.0,
+      "page": 184
+    },
+    {
+      "item_code": "15.42.3",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling C.I. or asbestos rain water pipe with fittings and clamps including stacking the - 150 mm dia pipe Detail of cost for 10 metre",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.36,
+          "rate": 736.0,
+          "amount": 264.96
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.4,
+          "rate": 736.0,
+          "amount": 294.4
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 2.08,
+          "rate": 2.27,
+          "amount": 4.72
+        }
+      ],
+      "calculations": {
+        "total_w": 564.08,
+        "total_x": 569.72,
+        "total_y": 690.9,
+        "total_z": 794.54
+      },
+      "say_rate": 80.25,
+      "page": 185
+    },
+    {
+      "item_code": "15.43",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling manually/ by mechanical means including stacking of serviceable material and disposal of unserviceable material within 50 metres lead as per direction of Engineer-in-charge :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 185
+    },
+    {
+      "item_code": "15.43.1",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling manually/ by mechanical means including stacking of serviceable material and - Water bound macadam road Detail of cost for 36 sqm Consider a road 6 metres wide and 6 metres length wise 25 cm average depth = 9.00 cubic metre For cutting road taking out soiling and metalling including sorting and screening",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 4.8,
+          "rate": 736.0,
+          "amount": 3532.8
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 2.4,
+          "rate": 736.0,
+          "amount": 1766.4
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Labour for stacking of serviceable material and disposal of unserviceable material within 50 metres lead",
+          "unit": "L.S.",
+          "quantity": 89.7,
+          "rate": 2.27,
+          "amount": 203.62
+        }
+      ],
+      "calculations": {
+        "total_w": 5502.82,
+        "total_x": 5557.85,
+        "total_y": 6740.0,
+        "total_z": 7751.0
+      },
+      "say_rate": 217.45,
+      "page": 185
+    },
+    {
+      "item_code": "15.43.2",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling manually/ by mechanical means including stacking of serviceable material and - bituminous road Detail of cost for 36 sqm Consider a road 6 metres wide and 6 metres length wise 30 cm average depth =10.80 cubic metre For cutting road taking out soiling and metalling including sorting and screening",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 9.6,
+          "rate": 736.0,
+          "amount": 7065.6
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 4.8,
+          "rate": 736.0,
+          "amount": 3532.8
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Labour for stacking of serviceable material and disposal of unserviceable material within 50 metres lead",
+          "unit": "L.S.",
+          "quantity": 107.64,
+          "rate": 2.27,
+          "amount": 244.34
+        }
+      ],
+      "calculations": {
+        "total_w": 10842.74,
+        "total_x": 10951.17,
+        "total_y": 13280.48,
+        "total_z": 15272.55
+      },
+      "say_rate": 428.5,
+      "page": 186
+    },
+    {
+      "item_code": "15.44",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling G.I. pipes (external work) including excavation and refilling trenches after taking out the pipes, manually/ by mechanical means including stacking of pipes within 50 metres lead as per direction of Engineer-in-charge :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 186
+    },
+    {
+      "item_code": "15.44.1",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling G.I. pipes (external work) including excavation and refilling trenches after taking - 15 mm to 40 mm nominal bore Detail of cost for 10 metre Trenching and refilling etc",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.66,
+          "rate": 736.0,
+          "amount": 485.76
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.66,
+          "rate": 736.0,
+          "amount": 485.76
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Dismantling G.I. pipe and stacking etc",
+          "unit": "L.S.",
+          "quantity": 35.88,
+          "rate": 2.27,
+          "amount": 81.45
+        }
+      ],
+      "calculations": {
+        "total_w": 1052.97,
+        "total_x": 1063.5,
+        "total_y": 1289.71,
+        "total_z": 1483.17
+      },
+      "say_rate": 149.8,
+      "page": 186
+    },
+    {
+      "item_code": "15.44.2",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling G.I. pipes (external work) including excavation and refilling trenches after taking - Above 40 mm nominal bore Detail of cost for 10 metre Trenching and refilling etc",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.66,
+          "rate": 736.0,
+          "amount": 485.76
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.66,
+          "rate": 736.0,
+          "amount": 485.76
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Dismantling G.I. pipe and stacking etc",
+          "unit": "L.S.",
+          "quantity": 71.76,
+          "rate": 2.27,
+          "amount": 162.9
+        }
+      ],
+      "calculations": {
+        "total_w": 1134.42,
+        "total_x": 1145.76,
+        "total_y": 1389.46,
+        "total_z": 1597.88
+      },
+      "say_rate": 161.4,
+      "page": 187
+    },
+    {
+      "item_code": "15.45",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling C.I. pipes including excavation and refilling trenches after taking out the pipes, manually/ by mechanical means breaking lead caulked joints, melting of lead and making into blocks including stacking of pipes & lead at site within 50 metre lead as per direction of Engineer-in-charge:",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 187
+    },
+    {
+      "item_code": "15.45.1",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling C.I. pipes including excavation and refilling trenches after taking out the pipes, - Up to 150 mm diameter Detail of cost for 40.26 metre or 11 nos joints Earth work in excavation for dismantling pipes including refilling of excavated earth 1x40.26x0.55x0.75 m =16.61cum Deduct for pipes of average 100 mm dia =1x40.26x(22/7)/4x(0.118)x(0.118) =0.44cum Total =16.17cum 2.8.1 Rate as per Item No.2.8.1 of SH: EARTH WORK cum 16.17 260.30 4209.05 A 2.25 Rate as per Item No.2.25 of SH: EARTH WORK cum 16.17 196.00 3169.32 A",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0761",
+          "category": "LABOUR",
+          "description": "Fuel wood",
+          "unit": "quintal",
+          "quantity": 0.46,
+          "rate": 550.0,
+          "amount": 253.0
+        },
+        {
+          "resource_code": "0771",
+          "category": "LABOUR",
+          "description": "Kerosene oil",
+          "unit": "litre",
+          "quantity": 0.38,
+          "rate": 50.0,
+          "amount": 19.0
+        },
+        {
+          "resource_code": "0117",
+          "category": "LABOUR",
+          "description": "Assistant Fitter or 2nd class Fitter",
+          "unit": "day",
+          "quantity": 0.63,
+          "rate": 816.0,
+          "amount": 514.08
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 4.5,
+          "rate": 736.0,
+          "amount": 3312.0
+        },
+        {
+          "resource_code": "9977",
+          "category": "LABOUR",
+          "description": "Carriage",
+          "unit": "L.S.",
+          "quantity": 53.82,
+          "rate": 2.27,
+          "amount": 122.17
+        }
+      ],
+      "calculations": {
+        "total_w": 11598.62,
+        "total_x": 11640.82,
+        "total_y": 12547.44,
+        "total_z": 13322.8
+      },
+      "say_rate": 332.4,
+      "page": 187
+    },
+    {
+      "item_code": "15.45.2",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling C.I. pipes including excavation and refilling trenches after taking out the pipes, - Above 150 mm dia up to 300 mm dia Detail of cost for 40.26 metre or 11 nos joints Earth work in excavation for dismantling pipes including refilling of excavated earth 1x40.26x0.65x0.75 m =19.63cum Deduct for pipes of average 250 mm dia =1x40.26x(22/7)/4x(0.274)x(0.274) =2.37cum Total =17.26cum 2.8.1 Rate as per Item No.2.8.1 of SH: EARTH WORK cum 17.26 260.30 4492.78 A 2.25 Rate as per Item No.2.25 of SH: EARTH WORK cum 17.26 196.00 3382.96 A",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0761",
+          "category": "LABOUR",
+          "description": "Fuel wood",
+          "unit": "quintal",
+          "quantity": 1.03,
+          "rate": 550.0,
+          "amount": 566.5
+        },
+        {
+          "resource_code": "0771",
+          "category": "LABOUR",
+          "description": "Kerosene oil",
+          "unit": "litre",
+          "quantity": 1.14,
+          "rate": 50.0,
+          "amount": 57.0
+        },
+        {
+          "resource_code": "0117",
+          "category": "LABOUR",
+          "description": "Assistant Fitter or 2nd class Fitter",
+          "unit": "day",
+          "quantity": 1.3,
+          "rate": 816.0,
+          "amount": 1060.8
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 7.5,
+          "rate": 736.0,
+          "amount": 5520.0
+        },
+        {
+          "resource_code": "9977",
+          "category": "LABOUR",
+          "description": "Carriage",
+          "unit": "L.S.",
+          "quantity": 80.73,
+          "rate": 2.27,
+          "amount": 183.26
+        }
+      ],
+      "calculations": {
+        "total_w": 15263.3,
+        "total_x": 15337.18,
+        "total_y": 16924.23,
+        "total_z": 18281.5
+      },
+      "say_rate": 456.65,
+      "page": 188
+    },
+    {
+      "item_code": "15.45.3",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling C.I. pipes including excavation and refilling trenches after taking out the pipes, - Above 300 mm diameter Detail of cost for 40.26 metre or 11 nos joints Earth work in excavation for dismantling pipes including refilling of excavated earth 1x40.26x0.85x0.75 m =25.67cum Deduct for pipes of average 450 mm dia =1x40.26x(22/7)/4x(0.48)x(0.48) =7.29cum Total =18.38cum 2.8.1 Rate as per Item No.2.8.1 of SH: EARTH WORK cum 18.38 260.30 4784.31 A 2.25 Rate as per Item No.2.25 of SH: EARTH WORK cum 18.38 196.00 3602.48 A",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0761",
+          "category": "LABOUR",
+          "description": "Fuel wood",
+          "unit": "quintal",
+          "quantity": 1.4,
+          "rate": 550.0,
+          "amount": 770.0
+        },
+        {
+          "resource_code": "0771",
+          "category": "LABOUR",
+          "description": "Kerosene oil",
+          "unit": "litre",
+          "quantity": 2.27,
+          "rate": 50.0,
+          "amount": 113.5
+        },
+        {
+          "resource_code": "0117",
+          "category": "LABOUR",
+          "description": "Assistant Fitter or 2nd class Fitter",
+          "unit": "day",
+          "quantity": 2.25,
+          "rate": 816.0,
+          "amount": 1836.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 11.5,
+          "rate": 736.0,
+          "amount": 8464.0
+        },
+        {
+          "resource_code": "9988",
+          "category": "LABOUR",
+          "description": "Carriage and sundries",
+          "unit": "L.S.",
+          "quantity": 134.55,
+          "rate": 2.27,
+          "amount": 305.43
+        }
+      ],
+      "calculations": {
+        "total_w": 19875.72,
+        "total_x": 19990.61,
+        "total_y": 22458.74,
+        "total_z": 24569.53
+      },
+      "say_rate": 614.3,
+      "page": 189
+    },
+    {
+      "item_code": "15.46",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling steel cylinder R.C. pipes including excavation and refilling trenches after taking out the pipes, manually/ by mechanical means breaking lead caulked joints, melting of lead and making into blocks including stacking of pipes & lead at site within 50 metres lead as per direction of Engineer-in-charge :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 189
+    },
+    {
+      "item_code": "15.46.1",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling steel cylinder R.C. pipes including excavation and refilling trenches after taking - Up to 600 mm diameter Detail of cost for 40.26 metre or 11 nos joints Earth work in excavation for dismantling pipes including refilling of excavated earth 1x40.26x1.30x1.65 m =86.36cum Deduct for pipes of average 450 mm dia =1x40.26x(22/7)/4x(0.48)x(0.48) =7.29cum Total=79.07cum",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 5.32,
+          "rate": 736.0,
+          "amount": 3915.52
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 5.46,
+          "rate": 736.0,
+          "amount": 4018.56
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.31,
+          "rate": 816.0,
+          "amount": 252.96
+        },
+        {
+          "resource_code": "0761",
+          "category": "LABOUR",
+          "description": "Fuel wood",
+          "unit": "quintal",
+          "quantity": 1.4,
+          "rate": 550.0,
+          "amount": 770.0
+        },
+        {
+          "resource_code": "0771",
+          "category": "LABOUR",
+          "description": "Kerosene oil",
+          "unit": "litre",
+          "quantity": 2.27,
+          "rate": 50.0,
+          "amount": 113.5
+        },
+        {
+          "resource_code": "0117",
+          "category": "LABOUR",
+          "description": "Assistant Fitter or 2nd class Fitter",
+          "unit": "day",
+          "quantity": 2.25,
+          "rate": 816.0,
+          "amount": 1836.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 11.5,
+          "rate": 736.0,
+          "amount": 8464.0
+        },
+        {
+          "resource_code": "9988",
+          "category": "LABOUR",
+          "description": "Carriage and sundries",
+          "unit": "L.S.",
+          "quantity": 134.55,
+          "rate": 2.27,
+          "amount": 305.43
+        }
+      ],
+      "calculations": {
+        "total_w": 19675.97,
+        "total_x": 19872.73,
+        "total_y": 24099.66,
+        "total_z": 27714.61
+      },
+      "say_rate": 695.25,
+      "page": 189
+    },
+    {
+      "item_code": "15.46.2",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling steel cylinder R.C. pipes including excavation and refilling trenches after taking - Above 600 mm diameter Detail of cost for 40.26 metre or 11 nos joints Earth work in excavation for dismantling pipes including refilling of excavated earth 1x40.26x1.30x1.65 m =86.36cum Deduct for pipes of average 900 mm dia =1x40.26x(22/7)/4x(1.00)x(1.00) =31.63cum Total=54.73cum",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 15.82,
+          "rate": 736.0,
+          "amount": 11643.52
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 16.25,
+          "rate": 736.0,
+          "amount": 11960.0
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.93,
+          "rate": 816.0,
+          "amount": 758.88
+        },
+        {
+          "resource_code": "0761",
+          "category": "LABOUR",
+          "description": "Fuel wood",
+          "unit": "quintal",
+          "quantity": 3.08,
+          "rate": 550.0,
+          "amount": 1694.0
+        },
+        {
+          "resource_code": "0771",
+          "category": "LABOUR",
+          "description": "Kerosene oil",
+          "unit": "litre",
+          "quantity": 5.0,
+          "rate": 50.0,
+          "amount": 250.0
+        },
+        {
+          "resource_code": "0117",
+          "category": "LABOUR",
+          "description": "Assistant Fitter or 2nd class Fitter",
+          "unit": "day",
+          "quantity": 10.0,
+          "rate": 816.0,
+          "amount": 8160.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 20.0,
+          "rate": 736.0,
+          "amount": 14720.0
+        },
+        {
+          "resource_code": "9988",
+          "category": "LABOUR",
+          "description": "Carriage and sundries",
+          "unit": "L.S.",
+          "quantity": 179.4,
+          "rate": 2.27,
+          "amount": 407.24
+        }
+      ],
+      "calculations": {
+        "total_w": 49593.64,
+        "total_x": 50089.58,
+        "total_y": 60743.63,
+        "total_z": 69855.17
+      },
+      "say_rate": 1752.45,
+      "page": 190
+    },
+    {
+      "item_code": "15.47",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling asbestos cement pressure pipes including excavation and refilling trenches after taking out the pipes manually/ by mechanical means and stacking the pipes within 50 metres lead as per direction of Engineer-in-charge :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 191
+    },
+    {
+      "item_code": "15.47.1",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling asbestos cement pressure pipes including excavation and refilling trenches after - Up to 150 mm diameter Detail of cost for 10 metre or 11 nos joints Earth work in excavation for dismantling pipes including refilling of excavated earth 10.00x0.55x0.75 m =4.125cum Deduct for pipes of average 100 mm dia =1x10x(22/7)/4x(0.118)x(0.118) =0.109cum Total=4.016cum",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.16,
+          "rate": 736.0,
+          "amount": 853.76
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.19,
+          "rate": 736.0,
+          "amount": 875.84
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.07,
+          "rate": 816.0,
+          "amount": 57.12
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.36,
+          "rate": 736.0,
+          "amount": 264.96
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.38,
+          "rate": 736.0,
+          "amount": 279.68
+        },
+        {
+          "resource_code": "9988",
+          "category": "LABOUR",
+          "description": "Carriage and sundries",
+          "unit": "L.S.",
+          "quantity": 1.56,
+          "rate": 2.27,
+          "amount": 3.54
+        }
+      ],
+      "calculations": {
+        "total_w": 2334.9,
+        "total_x": 2358.25,
+        "total_y": 2859.85,
+        "total_z": 3288.83
+      },
+      "say_rate": 332.15,
+      "page": 191
+    },
+    {
+      "item_code": "15.47.2",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling asbestos cement pressure pipes including excavation and refilling trenches after - Above 150 mm diameter Detail of cost for 10 metre or 11 nos joints Earth work in excavation for dismantling pipes including refilling of excavated earth 10.00x0.65x0.75 m =4.88cum Deduct for pipes of average 250 mm dia =1x10x(22/7)/4x(0.274)x(0.274) =0.590cum Total=4.29cum",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.24,
+          "rate": 736.0,
+          "amount": 912.64
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.28,
+          "rate": 736.0,
+          "amount": 942.08
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.07,
+          "rate": 816.0,
+          "amount": 57.12
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.36,
+          "rate": 736.0,
+          "amount": 264.96
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.88,
+          "rate": 736.0,
+          "amount": 647.68
+        },
+        {
+          "resource_code": "9988",
+          "category": "LABOUR",
+          "description": "Carriage and sundries",
+          "unit": "L.S.",
+          "quantity": 3.77,
+          "rate": 2.27,
+          "amount": 8.56
+        }
+      ],
+      "calculations": {
+        "total_w": 2833.04,
+        "total_x": 2861.37,
+        "total_y": 3469.98,
+        "total_z": 3990.48
+      },
+      "say_rate": 403.05,
+      "page": 191
+    },
+    {
+      "item_code": "15.48",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Taking out C.I. cover with frame from R.C.C. top slab of manholes of various sizes including demolishing of R.C.C. work manually/ by mechanical means and stacking of useful materials near the site and disposal of unserviceable materials within 50 metres lead as per direction of Engineer-in-charge.",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "man hole"
+      },
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.14,
+          "rate": 736.0,
+          "amount": 103.04
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Removel of C.I. Cover with frame including stacking",
+          "unit": "L.S.",
+          "quantity": 1.3,
+          "rate": 2.27,
+          "amount": 2.95
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 7.15,
+          "rate": 2.27,
+          "amount": 16.23
+        }
+      ],
+      "calculations": {
+        "total_w": 490.22,
+        "total_x": 495.12,
+        "total_y": 600.43,
+        "total_z": 690.49
+      },
+      "say_rate": 697.4,
+      "page": 192
+    },
+    {
+      "item_code": "15.49",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Taking out C.I. cover with frame from R.C.C. top slab of inspection chambers of various sizes including demolishing of R.C.C. work manually/ by mechanical means and stacking of useful direction of Engineer-in-charge. Detail of cost for 1 man hole Demolition of R.C.C. slab 1.1x0.9x0.15 m =0.148cum Less cover 0.61x0.455x0.15 m =0.042cum =0.106cum Say 0.11cum",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.29,
+          "rate": 736.0,
+          "amount": 213.44
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.08,
+          "rate": 736.0,
+          "amount": 58.88
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Removel of C.I. Cover with frame including stacking",
+          "unit": "L.S.",
+          "quantity": 0.65,
+          "rate": 2.27,
+          "amount": 1.48
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 5.33,
+          "rate": 2.27,
+          "amount": 12.1
+        }
+      ],
+      "calculations": {
+        "total_w": 285.9,
+        "total_x": 288.76,
+        "total_y": 350.18,
+        "total_z": 402.71
+      },
+      "say_rate": 406.75,
+      "page": 192
+    },
+    {
+      "item_code": "15.50",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling of R.C.C. spun vent shaft including excavating the cement concrete pit completely, taking out the shaft, refilling the excavated gap, stacking the useful materials near the site and disposal of unserviceable materials within 50 metres lead. Detail of cost for each Dismantling cement concrete 1:4:8 0.90x0.90x1.35m =1.094cum Less shaft 1/4x22/7x(0.450)x(0.450)x 1.10 m =0.175cum =0.919cum Say 0.92cum Dismantling cement concrete 1:2:4 0.90x0.90x0.15m =0.122cum Less shaft 1/4x22/7x0.15x0.45 m=0.024cum =0.098cum Say 0.10cum",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.81,
+          "rate": 736.0,
+          "amount": 596.16
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.51,
+          "rate": 736.0,
+          "amount": 375.36
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 1.82,
+          "rate": 2.27,
+          "amount": 4.13
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.16,
+          "rate": 736.0,
+          "amount": 117.76
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.07,
+          "rate": 736.0,
+          "amount": 51.52
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 0.52,
+          "rate": 2.27,
+          "amount": 1.18
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.25,
+          "rate": 897.0,
+          "amount": 224.25
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.12,
+          "rate": 897.0,
+          "amount": 107.64
+        },
+        {
+          "resource_code": "0124",
+          "category": "LABOUR",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.12,
+          "rate": 816.0,
+          "amount": 97.92
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 816.0,
+          "amount": 816.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries for scaffolding etc",
+          "unit": "L.S.",
+          "quantity": 53.82,
+          "rate": 2.27,
+          "amount": 122.17
+        }
+      ],
+      "calculations": {
+        "total_w": 3250.09,
+        "total_x": 3282.59,
+        "total_y": 3980.8,
+        "total_z": 4577.92
+      },
+      "say_rate": 4623.7,
+      "page": 193
+    },
+    {
+      "item_code": "15.51",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling of road gully chamber of various sizes including C.I. grating with frame including stacking of useful materials near the site and disposal of unserviceable materials within 50 metres lead including refilling the excavated gap. Detail of cost for one chamber Dismantling cement concrete a) 1:5:10 1.05x1.00x0.15m =0.16cum Dismantling brick work in cement mortar 2.70x0.20x0.45m =0.24cum Dismantling cement concrete b) 1:2:4 2.70x0.20x0.15m =0.08cum",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.14,
+          "rate": 736.0,
+          "amount": 103.04
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.09,
+          "rate": 736.0,
+          "amount": 66.24
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 0.26,
+          "rate": 2.27,
+          "amount": 0.59
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.25,
+          "rate": 736.0,
+          "amount": 184.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.22,
+          "rate": 736.0,
+          "amount": 161.92
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 0.52,
+          "rate": 2.27,
+          "amount": 1.18
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.13,
+          "rate": 736.0,
+          "amount": 95.68
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 736.0,
+          "amount": 44.16
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries for scaffolding etc",
+          "unit": "L.S.",
+          "quantity": 0.39,
+          "rate": 2.27,
+          "amount": 0.89
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Dismantling C.I. Grating",
+          "unit": "L.S.",
+          "quantity": 7.15,
+          "rate": 2.27,
+          "amount": 16.23
+        }
+      ],
+      "calculations": {
+        "total_w": 673.93,
+        "total_x": 680.67,
+        "total_y": 825.45,
+        "total_z": 949.27
+      },
+      "say_rate": 958.75,
+      "page": 194
+    },
+    {
+      "item_code": "15.52",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling of flushing cistern of all types (C.I./PVC/Vitrious China) including stacking of useful materials near the site and disposal of unserviceable materials within 50 metres lead. Detail of cost for each",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0117",
+          "category": "LABOUR",
+          "description": "Fitter (grade 2)",
+          "unit": "day",
+          "quantity": 0.05,
+          "rate": 816.0,
+          "amount": 40.8
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.05,
+          "rate": 736.0,
+          "amount": 36.8
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 0.52,
+          "rate": 2.27,
+          "amount": 1.18
+        }
+      ],
+      "calculations": {
+        "total_w": 78.78,
+        "total_x": 79.57,
+        "total_y": 96.49,
+        "total_z": 110.96
+      },
+      "say_rate": 112.05,
+      "page": 194
+    },
+    {
+      "item_code": "15.53",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling of C.I. sluice valve including stacking of useful materials within a lead of 50 metres",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 195
+    },
+    {
+      "item_code": "15.53.1",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling of C.I. sluice valve including stacking of useful materials within a lead of 50 metres - Up to 150 mm diameter Detail of cost for dismantling 10 sluice valves (ave.) 100mm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 0.6,
+          "rate": 897.0,
+          "amount": 538.2
+        },
+        {
+          "resource_code": "0117",
+          "category": "LABOUR",
+          "description": "Assistant Fitter or 2nd class Fitter",
+          "unit": "day",
+          "quantity": 0.4,
+          "rate": 816.0,
+          "amount": 326.4
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.6,
+          "rate": 736.0,
+          "amount": 1177.6
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries for removing the R.C.C. cover etc for dismantling sluice valve",
+          "unit": "L.S.",
+          "quantity": 89.7,
+          "rate": 2.27,
+          "amount": 203.62
+        }
+      ],
+      "calculations": {
+        "total_w": 2245.82,
+        "total_x": 2268.28,
+        "total_y": 2750.74,
+        "total_z": 3163.35
+      },
+      "say_rate": 319.5,
+      "page": 195
+    },
+    {
+      "item_code": "15.53.2",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling of C.I. sluice valve including stacking of useful materials within a lead of 50 metres - Above 150 mm diameter Detail of cost for dismantling 10 sluice valves (ave.) 250mm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 2.4,
+          "rate": 897.0,
+          "amount": 2152.8
+        },
+        {
+          "resource_code": "0117",
+          "category": "LABOUR",
+          "description": "Assistant Fitter or 2nd class Fitter",
+          "unit": "day",
+          "quantity": 1.54,
+          "rate": 816.0,
+          "amount": 1256.64
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 6.4,
+          "rate": 736.0,
+          "amount": 4710.4
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries for removing the R.C.C. cover etc for dismantling sluice valve",
+          "unit": "L.S.",
+          "quantity": 89.7,
+          "rate": 2.27,
+          "amount": 203.62
+        }
+      ],
+      "calculations": {
+        "total_w": 8323.46,
+        "total_x": 8406.69,
+        "total_y": 10194.79,
+        "total_z": 11724.01
+      },
+      "say_rate": 1184.15,
+      "page": 195
+    },
+    {
+      "item_code": "15.54",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling of spindle fire hydrant including stacking of useful materials within 50 metres lead. Detail of cost for 10 Nos",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0116",
+          "category": "LABOUR",
+          "description": "Fitter (grade 1)",
+          "unit": "day",
+          "quantity": 1.5,
+          "rate": 897.0,
+          "amount": 1345.5
+        },
+        {
+          "resource_code": "0117",
+          "category": "LABOUR",
+          "description": "Assistant Fitter or 2nd class Fitter",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 816.0,
+          "amount": 816.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 4.0,
+          "rate": 736.0,
+          "amount": 2944.0
+        }
+      ],
+      "calculations": {
+        "total_w": 5105.5,
+        "total_x": 5156.56,
+        "total_y": 6253.36,
+        "total_z": 7191.36
+      },
+      "say_rate": 726.35,
+      "page": 196
+    },
+    {
+      "item_code": "15.55",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling of cement concrete platform along with curtain walls and base concrete etc. including stacking of useful materials near the site and disposal of unserviceable materials within 50 metres lead :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 196
+    },
+    {
+      "item_code": "15.55.1",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling of cement concrete platform along with curtain walls and base concrete etc. - 120 x 120 cm (outside to outside) Detail of cost for one platform Dismantling cement concrete 1:5:10 4.00x0.35x0.12m =0.168cum 0.80x0.80x0.075m =0.048cum =0.216cum Say 0.22cum Dismantling brick work in cement mortar 4.00x0.20x0.30m =0.24cum 4.00x0.10x0.20m =0.088cum =0.328cum Say 0.33cum Dismantling 40 mm C.C. flooring 1:2:4 1.00x1.00x0.04m =0.04cum",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.19,
+          "rate": 736.0,
+          "amount": 139.84
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.12,
+          "rate": 736.0,
+          "amount": 88.32
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 0.39,
+          "rate": 2.27,
+          "amount": 0.89
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.35,
+          "rate": 736.0,
+          "amount": 257.6
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.3,
+          "rate": 736.0,
+          "amount": 220.8
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 0.91,
+          "rate": 2.27,
+          "amount": 2.07
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 736.0,
+          "amount": 44.16
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.03,
+          "rate": 736.0,
+          "amount": 22.08
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries for scaffolding etc",
+          "unit": "L.S.",
+          "quantity": 0.13,
+          "rate": 2.27,
+          "amount": 0.3
+        }
+      ],
+      "calculations": {
+        "total_w": 776.06,
+        "total_x": 783.82,
+        "total_y": 950.54,
+        "total_z": 1093.12
+      },
+      "say_rate": 1104.05,
+      "page": 196
+    },
+    {
+      "item_code": "15.55.2",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling of cement concrete platform along with curtain walls and base concrete etc. - 210 x 120 cm (outside to outside) Detail of cost for one platform Dismantling cement concrete 1:5:10 5.80x0.35x0.12m =0.243cum 0.80x1.70x0.075m =0.102cum =0.345cum Say 0.35cum Dismantling brick work in cement mortar 5.80x0.20x0.30m =0.348cum 6.20x0.10x0.20m =0.124cum =0.472cum Say 0.47cum Dismantling 40 mm C.C. flooring 1:2:4 1.90x1.00x0.04m =0.08cum",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.31,
+          "rate": 736.0,
+          "amount": 228.16
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.19,
+          "rate": 736.0,
+          "amount": 139.84
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 0.65,
+          "rate": 2.27,
+          "amount": 1.48
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.42,
+          "rate": 736.0,
+          "amount": 309.12
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 1.3,
+          "rate": 2.27,
+          "amount": 2.95
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.13,
+          "rate": 736.0,
+          "amount": 95.68
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 736.0,
+          "amount": 44.16
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries for scaffolding etc",
+          "unit": "L.S.",
+          "quantity": 0.39,
+          "rate": 2.27,
+          "amount": 0.89
+        }
+      ],
+      "calculations": {
+        "total_w": 1190.28,
+        "total_x": 1202.18,
+        "total_y": 1457.88,
+        "total_z": 1676.56
+      },
+      "say_rate": 1693.35,
+      "page": 197
+    },
+    {
+      "item_code": "15.55.3",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling of cement concrete platform along with curtain walls and base concrete etc. - 320 x 120 cm (outside to outside) Detail of cost for one platform Dismantling cement concrete 1:5:10 8.00x0.35x0.12m =0.336cum 2.80x0.80x0.075m =0.168cum =0.504cum Say 0.50cum Dismantling brick work in cement mortar 8.00x0.20x0.30m =0.48cum 8.40x0.10x0.20m =0.168cum =0.648cum Say 0.65cum Dismantling 40 mm C.C. flooring 1:2:4 3.00x1.00x0.04m =0.12cum",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.44,
+          "rate": 736.0,
+          "amount": 323.84
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.28,
+          "rate": 736.0,
+          "amount": 206.08
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 0.91,
+          "rate": 2.27,
+          "amount": 2.07
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.69,
+          "rate": 736.0,
+          "amount": 507.84
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.59,
+          "rate": 736.0,
+          "amount": 434.24
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 1.56,
+          "rate": 2.27,
+          "amount": 3.54
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.19,
+          "rate": 736.0,
+          "amount": 139.84
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.09,
+          "rate": 736.0,
+          "amount": 66.24
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries for scaffolding etc",
+          "unit": "L.S.",
+          "quantity": 0.52,
+          "rate": 2.27,
+          "amount": 1.18
+        }
+      ],
+      "calculations": {
+        "total_w": 1684.87,
+        "total_x": 1701.72,
+        "total_y": 2063.68,
+        "total_z": 2373.23
+      },
+      "say_rate": 2396.95,
+      "page": 198
+    },
+    {
+      "item_code": "15.56",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling old plaster or skirting raking out joints and cleaning the surface for plaster including disposal of rubbish to the dumping ground within 50 metres lead. Detail of cost for 10 sqm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.36,
+          "rate": 736.0,
+          "amount": 264.96
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.08,
+          "rate": 736.0,
+          "amount": 58.88
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.07,
+          "rate": 816.0,
+          "amount": 57.12
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries for scaffolding etc",
+          "unit": "L.S.",
+          "quantity": 1.43,
+          "rate": 2.27,
+          "amount": 3.25
+        }
+      ],
+      "calculations": {
+        "total_w": 384.21,
+        "total_x": 388.05,
+        "total_y": 470.59,
+        "total_z": 541.18
+      },
+      "say_rate": 54.65,
+      "page": 199
+    },
+    {
+      "item_code": "15.57",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling aluminium/ Gypsum partitions, doors, windows, fixed glazing and false ceiling including disposal of unserviceable material and stacking of serviceable material with in 50 meters lead as directed by Engineer-in-charge. Detail of cost for 10 sqm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0112",
+          "category": "LABOUR",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 816.0,
+          "amount": 163.2
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.3,
+          "rate": 736.0,
+          "amount": 220.8
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 5.38,
+          "rate": 2.27,
+          "amount": 12.21
+        }
+      ],
+      "calculations": {
+        "total_w": 396.21,
+        "total_x": 400.17,
+        "total_y": 485.29,
+        "total_z": 558.08
+      },
+      "say_rate": 56.35,
+      "page": 199
+    },
+    {
+      "item_code": "15.58",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Demolishing R.C.C. work by mechanical means and stockpiling at designated locations and disposal of dismantled materials up to a lead of 1 kilometre, stacking serviceable and unserviceable material separately including cutting reinforcement bars.",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum"
+      },
+      "breakup": [
+        {
+          "resource_code": "0139",
+          "category": "LABOUR",
+          "description": "Skilled Beldar (for floor rubbing etc.)",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 816.0,
+          "amount": 408.0
+        },
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 816.0,
+          "amount": 408.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "0040",
+          "category": "MACHINERY",
+          "description": "Air compressor 250 cfm with two leads for pneumatic cutters/ hammers.",
+          "unit": "day",
+          "quantity": 0.125,
+          "rate": 1800.0,
+          "amount": 225.0
+        },
+        {
+          "resource_code": "0039",
+          "category": "MACHINERY",
+          "description": "Tractor with trolley .",
+          "unit": "day",
+          "quantity": 0.05,
+          "rate": 1350.0,
+          "amount": 67.5
+        },
+        {
+          "resource_code": "0041",
+          "category": "MACHINERY",
+          "description": "Joint cutting machine with 2-3 blades",
+          "unit": "day",
+          "quantity": 0.125,
+          "rate": 900.0,
+          "amount": 112.5
+        }
+      ],
+      "calculations": {
+        "total_w": 1981.48,
+        "total_x": 2001.29,
+        "total_y": 2426.96,
+        "total_z": 2791.0
+      },
+      "say_rate": 2818.9,
+      "page": 199
+    },
+    {
+      "item_code": "15.59",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Dismantling of flexible pavement (bituminous courses) by mechanical means and disposal of dismantled material up to a lead of 1 kilometre, as per direction of Engineer-in-charge.",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cum"
+      },
+      "breakup": [
+        {
+          "resource_code": "0128",
+          "category": "LABOUR",
+          "description": "Mate",
+          "unit": "day",
+          "quantity": 0.1,
+          "rate": 816.0,
+          "amount": 81.6
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 3.0,
+          "rate": 736.0,
+          "amount": 2208.0
+        },
+        {
+          "resource_code": "0039",
+          "category": "MACHINERY",
+          "description": "Tractor with trolley .",
+          "unit": "day",
+          "quantity": 0.475,
+          "rate": 1350.0,
+          "amount": 641.25
+        },
+        {
+          "resource_code": "0038",
+          "category": "MACHINERY",
+          "description": "Tractor with ripper attachment.",
+          "unit": "day",
+          "quantity": 0.02,
+          "rate": 1350.0,
+          "amount": 27.0
+        }
+      ],
+      "calculations": {
+        "total_w": 2957.85,
+        "total_x": 2987.43,
+        "total_y": 3622.86,
+        "total_z": 4166.29
+      },
+      "say_rate": 420.8,
+      "page": 200
+    },
+    {
+      "item_code": "15.60",
+      "sub_head_no": 15,
+      "sub_head_name": "Dismantling and Demolishing",
+      "description": "Disposal of building rubbish / malba / similar unserviceable, dismantled or waste materials by mechanical means, including loading, transporting, unloading to approved municipal dumping ground or as approved by Engineer-in-charge, beyond 50 m initial lead, for all leads including all lifts involved.",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum"
+      },
+      "breakup": [
+        {
+          "resource_code": "2264",
+          "category": "MATERIAL",
+          "description": "Carriage of Rubbish",
+          "unit": "cum",
+          "quantity": 1.0,
+          "rate": 185.55,
+          "amount": 185.55
+        }
+      ],
+      "calculations": {
+        "total_w": 185.55,
+        "total_x": 187.41,
+        "total_y": 227.27,
+        "total_z": 261.36
+      },
+      "say_rate": 263.95,
+      "page": 201
+    }
+  ]
+}

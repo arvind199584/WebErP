@@ -31,24 +31,24 @@ class CloudSyncDiffService
         $neonUrl = getenv('NEON_DATABASE_URL') ?: getenv('DATABASE_URL');
         if (!empty($neonUrl)) {
             $parsed = parse_url($neonUrl);
-            $host = $parsed['host'] ?? 'ep-withered-wave-axase6mw-pooler.c-4.us-east-2.aws.neon.tech';
+            $host = $parsed['host'] ?? '';
             $port = $parsed['port'] ?? '5432';
             $dbname = isset($parsed['path']) ? ltrim($parsed['path'], '/') : 'neondb';
-            $user = $parsed['user'] ?? 'neondb_owner';
-            $pass = $parsed['pass'] ?? '';
+            $user = isset($parsed['user']) ? urldecode($parsed['user']) : 'neondb_owner';
+            $pass = isset($parsed['pass']) ? urldecode($parsed['pass']) : '';
             $sslmode = 'require';
             if (isset($parsed['query'])) {
                 parse_str($parsed['query'], $q);
                 if (isset($q['sslmode'])) $sslmode = $q['sslmode'];
             }
-            $this->neonDsn = "pgsql:host={$host};port={$port};dbname={$dbname};sslmode={$sslmode}";
+            $this->neonDsn = !empty($host) ? "pgsql:host={$host};port={$port};dbname={$dbname};sslmode={$sslmode}" : '';
             $this->neonUser = $user;
             $this->neonPass = $pass;
         } else {
-            $neonHost = getenv('NEON_HOST') ?: 'ep-withered-wave-axase6mw-pooler.c-4.us-east-2.aws.neon.tech';
+            $neonHost = getenv('NEON_HOST') ?: '';
             $neonPort = getenv('NEON_PORT') ?: '5432';
             $neonDb   = getenv('NEON_DB') ?: 'neondb';
-            $this->neonDsn = "pgsql:host={$neonHost};port={$neonPort};dbname={$neonDb};sslmode=require";
+            $this->neonDsn = !empty($neonHost) ? "pgsql:host={$neonHost};port={$neonPort};dbname={$neonDb};sslmode=require" : '';
             $this->neonUser = getenv('NEON_USER') ?: 'neondb_owner';
             $this->neonPass = getenv('NEON_PASS') ?: '';
         }
@@ -56,9 +56,26 @@ class CloudSyncDiffService
 
     private function getNeonConnection(): PDO
     {
+        if (empty($this->neonDsn)) {
+            throw new \RuntimeException("Neon Cloud DB is not configured. Please set NEON_DATABASE_URL in .env.");
+        }
         $pdo = new PDO($this->neonDsn, $this->neonUser, $this->neonPass);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $pdo;
+    }
+
+    private function getLocalConnectionUri(): string
+    {
+        $dbUrl = getenv('DATABASE_URL');
+        if (!empty($dbUrl)) {
+            return $dbUrl;
+        }
+        $host = getenv('DB_HOST') ?: 'localhost';
+        $port = getenv('DB_PORT') ?: '5432';
+        $dbname = getenv('DB_NAME') ?: 'modpyphp';
+        $user = getenv('DB_USER') ?: 'postgres';
+        $pass = getenv('DB_PASS') ?: '';
+        return sprintf('postgresql://%s:%s@%s:%s/%s', urlencode($user), urlencode($pass), $host, $port, $dbname);
     }
 
     /**
@@ -265,7 +282,7 @@ class CloudSyncDiffService
             $pgDumpBin = 'pg_dump'; // fallback to PATH
         }
 
-        $connUri = 'postgresql://postgres:daredevil@localhost:5432/modpyphp';
+        $connUri = $this->getLocalConnectionUri();
         $cmd = sprintf('"%s" "%s" --clean --if-exists --no-owner --no-acl -F p -f "%s"', $pgDumpBin, $connUri, $filepath);
 
         exec($cmd . ' 2>&1', $output, $returnCode);
@@ -323,7 +340,7 @@ class CloudSyncDiffService
             $psqlBin = 'psql';
         }
 
-        $connUri = 'postgresql://postgres:daredevil@localhost:5432/modpyphp';
+        $connUri = $this->getLocalConnectionUri();
         $cmd = sprintf('"%s" "%s" -f "%s"', $psqlBin, $connUri, $filepath);
 
         exec($cmd . ' 2>&1', $output, $returnCode);

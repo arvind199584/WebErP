@@ -71,7 +71,7 @@ def format_schema(schema_path):
 def get_kb_messages():
     # Load .env if present
     env_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".env"))
-    db_config = {"host": "localhost", "port": 5432, "database": "modpyphp", "user": "postgres", "password": "daredevil"}
+    db_config = {"host": "localhost", "port": 5432, "database": "modpyphp", "user": "postgres", "password": ""}
     if os.path.exists(env_path):
         with open(env_path) as f:
             for line in f:

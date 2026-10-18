@@ -1,0 +1,4902 @@
+{
+  "sub_head_no": 7,
+  "sub_head_name": "Stone Work",
+  "volume": 1,
+  "page_range": [
+    352,
+    388
+  ],
+  "total_items": 86,
+  "analyzed_items_with_breakup": 52,
+  "items": [
+    {
+      "item_code": "7.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Random rubble masonry with hard stone in foundation and plinth including levelling up with cement concrete 1:6:12 (1 cement : 6 coarse sand : 12 graded stone aggregate 20 mm nominal size) upto plinth level with :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 354
+    },
+    {
+      "item_code": "7.1.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Random rubble masonry with hard stone in foundation and plinth including levelling up with - Cement mortar 1:6 (1 cement : 6 coarse sand)",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum"
+      },
+      "breakup": [
+        {
+          "resource_code": "1157",
+          "category": "MATERIAL",
+          "description": "Stone for masonry work",
+          "unit": "cum",
+          "quantity": 1.0,
+          "rate": 1250.0,
+          "amount": 1250.0
+        },
+        {
+          "resource_code": "1154",
+          "category": "MATERIAL",
+          "description": "Through and bond stone size 24 x24 x39 cm",
+          "unit": "100 Nos",
+          "quantity": 0.07,
+          "rate": 5000.0,
+          "amount": 350.0
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 1.07,
+          "rate": 816.0,
+          "amount": 873.12
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.07,
+          "rate": 736.0,
+          "amount": 787.52
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.71,
+          "rate": 736.0,
+          "amount": 522.56
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.09,
+          "rate": 816.0,
+          "amount": 73.44
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Cement concrete 1:6:12",
+          "unit": "L.S.",
+          "quantity": 45.76,
+          "rate": 2.27,
+          "amount": 103.88
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 4.42,
+          "rate": 2.27,
+          "amount": 10.03
+        }
+      ],
+      "calculations": {
+        "total_w": 5139.21,
+        "total_x": 5190.6,
+        "total_y": 6294.64,
+        "total_z": 7238.84
+      },
+      "say_rate": 7311.25,
+      "page": 354
+    },
+    {
+      "item_code": "7.2",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Random rubble masonry with hard stone in superstructure above plinth level and upto floor five level, including leveling up with cement concrete 1:6:12 (1 cement : 6 coarse sand : 12 graded stone aggregate 20 mm nominal size) at window sills, ceiling level and the like.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 354
+    },
+    {
+      "item_code": "7.2.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Random rubble masonry with hard stone in superstructure above plinth level and upto floor - Cement mortar 1:6 (1 cement : 6 coarse sand)",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum"
+      },
+      "breakup": [
+        {
+          "resource_code": "1157",
+          "category": "MATERIAL",
+          "description": "Stone for masonry work",
+          "unit": "cum",
+          "quantity": 1.0,
+          "rate": 1250.0,
+          "amount": 1250.0
+        },
+        {
+          "resource_code": "1154",
+          "category": "MATERIAL",
+          "description": "Through and bond stone size 24 x 24 x39 cm",
+          "unit": "100 Nos",
+          "quantity": 0.07,
+          "rate": 5000.0,
+          "amount": 350.0
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 1.34,
+          "rate": 816.0,
+          "amount": 1093.44
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.45,
+          "rate": 736.0,
+          "amount": 1067.2
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.71,
+          "rate": 736.0,
+          "amount": 522.56
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.09,
+          "rate": 816.0,
+          "amount": 73.44
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.13,
+          "rate": 736.0,
+          "amount": 831.68
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 15.21,
+          "rate": 2.27,
+          "amount": 34.53
+        }
+      ],
+      "calculations": {
+        "total_w": 6519.88,
+        "total_x": 6585.08,
+        "total_y": 7985.73,
+        "total_z": 9183.59
+      },
+      "say_rate": 9275.45,
+      "page": 354
+    },
+    {
+      "item_code": "7.4",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Extra for random rubble masonry with hard stone in :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 355
+    },
+    {
+      "item_code": "7.4.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Extra for random rubble masonry with hard stone in : - Square or rectangular pillars",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum"
+      },
+      "breakup": [
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.58,
+          "rate": 816.0,
+          "amount": 473.28
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.27,
+          "rate": 736.0,
+          "amount": 198.72
+        }
+      ],
+      "calculations": {
+        "total_w": 672.0,
+        "total_x": 678.72,
+        "total_y": 823.08,
+        "total_z": 946.54
+      },
+      "say_rate": 956.0,
+      "page": 355
+    },
+    {
+      "item_code": "7.4.2",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Extra for random rubble masonry with hard stone in : - Circular pillars",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum"
+      },
+      "breakup": [
+        {
+          "resource_code": "0125",
+          "category": "MATERIAL",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 1.42,
+          "rate": 816.0,
+          "amount": 1158.72
+        },
+        {
+          "resource_code": "0115",
+          "category": "MATERIAL",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.35,
+          "rate": 736.0,
+          "amount": 257.6
+        }
+      ],
+      "calculations": {
+        "total_w": 1778.82,
+        "total_x": 1796.61,
+        "total_y": 2178.75,
+        "total_z": 2505.56
+      },
+      "say_rate": 2530.6,
+      "page": 355
+    },
+    {
+      "item_code": "7.5",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Extra for random rubble masonry with hard stone curved on plan for a mean radius not exceeding 6 m.",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum"
+      },
+      "breakup": [
+        {
+          "resource_code": "1157",
+          "category": "MATERIAL",
+          "description": "Stone for masonry work",
+          "unit": "cum",
+          "quantity": 0.1,
+          "rate": 1250.0,
+          "amount": 125.0
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.27,
+          "rate": 816.0,
+          "amount": 220.32
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.53,
+          "rate": 736.0,
+          "amount": 390.08
+        }
+      ],
+      "calculations": {
+        "total_w": 735.4,
+        "total_x": 742.75,
+        "total_y": 900.73,
+        "total_z": 1035.84
+      },
+      "say_rate": 1046.2,
+      "page": 356
+    },
+    {
+      "item_code": "7.6",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Coursed rubble masonry (first sort) with hard stone in foundation and plinth with :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 356
+    },
+    {
+      "item_code": "7.6.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Coursed rubble masonry (first sort) with hard stone in foundation and plinth with : - Cement mortar 1:6 (1 cement : 6 coarse sand)",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum"
+      },
+      "breakup": [
+        {
+          "resource_code": "1157",
+          "category": "MATERIAL",
+          "description": "Stone for masonry work",
+          "unit": "cum",
+          "quantity": 1.21,
+          "rate": 1250.0,
+          "amount": 1512.5
+        },
+        {
+          "resource_code": "1154",
+          "category": "MATERIAL",
+          "description": "Through and bond stone size 24 x24 x39 cm",
+          "unit": "100 Nos",
+          "quantity": 0.07,
+          "rate": 5000.0,
+          "amount": 350.0
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 2.12,
+          "rate": 816.0,
+          "amount": 1729.92
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.24,
+          "rate": 736.0,
+          "amount": 912.64
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.71,
+          "rate": 736.0,
+          "amount": 522.56
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.09,
+          "rate": 816.0,
+          "amount": 73.44
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 13.52,
+          "rate": 2.27,
+          "amount": 30.69
+        }
+      ],
+      "calculations": {
+        "total_w": 6194.17,
+        "total_x": 6256.11,
+        "total_y": 7586.78,
+        "total_z": 8724.8
+      },
+      "say_rate": 8812.05,
+      "page": 356
+    },
+    {
+      "item_code": "7.7",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Coursed rubble masonry (second sort) with hard stone in foundation & plinth with :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 357
+    },
+    {
+      "item_code": "7.7.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Coursed rubble masonry (second sort) with hard stone in foundation & plinth with : - Cement mortar 1:6 (1 cement : 6 coarse sand)",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum"
+      },
+      "breakup": [
+        {
+          "resource_code": "1157",
+          "category": "MATERIAL",
+          "description": "Stone for masonry work",
+          "unit": "cum",
+          "quantity": 1.1,
+          "rate": 1250.0,
+          "amount": 1375.0
+        },
+        {
+          "resource_code": "1154",
+          "category": "MATERIAL",
+          "description": "Through and bond stone size 24 x 24 x39 cm",
+          "unit": "100 Nos",
+          "quantity": 0.07,
+          "rate": 5000.0,
+          "amount": 350.0
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 1.76,
+          "rate": 816.0,
+          "amount": 1436.16
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.24,
+          "rate": 736.0,
+          "amount": 912.64
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.71,
+          "rate": 736.0,
+          "amount": 522.56
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.09,
+          "rate": 816.0,
+          "amount": 73.44
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 13.52,
+          "rate": 2.27,
+          "amount": 30.69
+        }
+      ],
+      "calculations": {
+        "total_w": 5762.91,
+        "total_x": 5820.54,
+        "total_y": 7058.57,
+        "total_z": 8117.36
+      },
+      "say_rate": 8198.55,
+      "page": 357
+    },
+    {
+      "item_code": "7.8",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Coursed rubble masonry with hard stone (first or second sort) in superstructure above plinth level and upto floor five level.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 357
+    },
+    {
+      "item_code": "7.8.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Coursed rubble masonry with hard stone (first or second sort) in superstructure above plinth - Masonry work (first sort), in cement mortar 1:6 (1 cement : 6 coarse sand)",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum"
+      },
+      "breakup": [
+        {
+          "resource_code": "1157",
+          "category": "MATERIAL",
+          "description": "Stone for masonry work",
+          "unit": "cum",
+          "quantity": 1.21,
+          "rate": 1250.0,
+          "amount": 1512.5
+        },
+        {
+          "resource_code": "1154",
+          "category": "MATERIAL",
+          "description": "Through and bond stone size 24 x 24 x39 cm",
+          "unit": "100 Nos",
+          "quantity": 0.07,
+          "rate": 5000.0,
+          "amount": 350.0
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 2.38,
+          "rate": 816.0,
+          "amount": 1942.08
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.59,
+          "rate": 736.0,
+          "amount": 1170.24
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.71,
+          "rate": 736.0,
+          "amount": 522.56
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.13,
+          "rate": 736.0,
+          "amount": 831.68
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries, scaffolding etc.",
+          "unit": "L.S.",
+          "quantity": 37.7,
+          "rate": 2.27,
+          "amount": 85.58
+        }
+      ],
+      "calculations": {
+        "total_w": 7550.5,
+        "total_x": 7626.01,
+        "total_y": 9248.06,
+        "total_z": 10635.27
+      },
+      "say_rate": 10741.6,
+      "page": 357
+    },
+    {
+      "item_code": "7.8.2",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Coursed rubble masonry with hard stone (first or second sort) in superstructure above plinth - Masonry work (second sort), in cement mortar 1:6 (1 cement: 6 coarse sand)",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum"
+      },
+      "breakup": [
+        {
+          "resource_code": "1157",
+          "category": "MATERIAL",
+          "description": "Stone for masonry work",
+          "unit": "cum",
+          "quantity": 1.1,
+          "rate": 1250.0,
+          "amount": 1375.0
+        },
+        {
+          "resource_code": "1154",
+          "category": "MATERIAL",
+          "description": "Through and bond stone size 24 x24 x39 cm",
+          "unit": "100 Nos",
+          "quantity": 0.07,
+          "rate": 5000.0,
+          "amount": 350.0
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 2.02,
+          "rate": 816.0,
+          "amount": 1648.32
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.59,
+          "rate": 736.0,
+          "amount": 1170.24
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.71,
+          "rate": 736.0,
+          "amount": 522.56
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.13,
+          "rate": 736.0,
+          "amount": 831.68
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries, scaffolding etc.",
+          "unit": "L.S.",
+          "quantity": 37.7,
+          "rate": 2.27,
+          "amount": 85.58
+        }
+      ],
+      "calculations": {
+        "total_w": 7119.24,
+        "total_x": 7190.43,
+        "total_y": 8719.83,
+        "total_z": 10027.8
+      },
+      "say_rate": 10128.1,
+      "page": 358
+    },
+    {
+      "item_code": "7.10",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Extra for coursed rubble masonry with hard stone (first or second sort) in:",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 358
+    },
+    {
+      "item_code": "7.10.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Extra for coursed rubble masonry with hard stone (first or second sort) in: - Square or rectangular pillars",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum"
+      },
+      "breakup": [
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.67,
+          "rate": 816.0,
+          "amount": 546.72
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.27,
+          "rate": 736.0,
+          "amount": 198.72
+        }
+      ],
+      "calculations": {
+        "total_w": 745.44,
+        "total_x": 752.89,
+        "total_y": 913.03,
+        "total_z": 1049.98
+      },
+      "say_rate": 1060.5,
+      "page": 358
+    },
+    {
+      "item_code": "7.10.2",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Extra for coursed rubble masonry with hard stone (first or second sort) in: - Circular pillars",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum"
+      },
+      "breakup": [
+        {
+          "resource_code": "1157",
+          "category": "MATERIAL",
+          "description": "Stone for masonry work",
+          "unit": "cum",
+          "quantity": 0.32,
+          "rate": 1250.0,
+          "amount": 400.0
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 1.67,
+          "rate": 816.0,
+          "amount": 1362.72
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.35,
+          "rate": 736.0,
+          "amount": 257.6
+        }
+      ],
+      "calculations": {
+        "total_w": 2020.32,
+        "total_x": 2040.52,
+        "total_y": 2474.54,
+        "total_z": 2845.72
+      },
+      "say_rate": 2874.2,
+      "page": 359
+    },
+    {
+      "item_code": "7.11",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Extra for coursed rubble masonry with hard stone (first or second sort) curved on plan for a mean radius not exceeding 6 m.",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum"
+      },
+      "breakup": [
+        {
+          "resource_code": "0125",
+          "category": "MATERIAL",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.33,
+          "rate": 816.0,
+          "amount": 269.28
+        },
+        {
+          "resource_code": "0115",
+          "category": "MATERIAL",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.53,
+          "rate": 736.0,
+          "amount": 390.08
+        }
+      ],
+      "calculations": {
+        "total_w": 796.86,
+        "total_x": 804.83,
+        "total_y": 976.02,
+        "total_z": 1122.42
+      },
+      "say_rate": 1133.65,
+      "page": 359
+    },
+    {
+      "item_code": "7.12",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work in plain ashlar in super structure upto floor five level in cement mortar 1:6 (1 cement : 6 coarse sand) including pointing with cement mortar 1:2 (1 white cement : 2 stone dust) with an admixture of pigment matching the stone shade :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 360
+    },
+    {
+      "item_code": "7.12.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work in plain ashlar in super structure upto floor five level in cement mortar 1:6 (1 - One face dressed",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 360
+    },
+    {
+      "item_code": "7.12.1.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work in plain ashlar in super structure upto floor five level in cement mortar 1:6 (1 - Red sand stone",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cudm."
+      },
+      "breakup": [
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.088,
+          "rate": 816.0,
+          "amount": 71.81
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.006,
+          "rate": 897.0,
+          "amount": 5.38
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 736.0,
+          "amount": 32.38
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 816.0,
+          "amount": 35.9
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.006,
+          "rate": 897.0,
+          "amount": 5.38
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Scafolding",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Mortar for laying and pointing",
+          "unit": "L.S.",
+          "quantity": 8.06,
+          "rate": 2.27,
+          "amount": 18.3
+        }
+      ],
+      "calculations": {
+        "total_w": 480.05,
+        "total_x": 484.85,
+        "total_y": 587.98,
+        "total_z": 676.18
+      },
+      "say_rate": 68294.0,
+      "page": 360
+    },
+    {
+      "item_code": "7.12.1.2",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work in plain ashlar in super structure upto floor five level in cement mortar 1:6 (1 - White sand stone",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cudm."
+      },
+      "breakup": [
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.088,
+          "rate": 816.0,
+          "amount": 71.81
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.006,
+          "rate": 897.0,
+          "amount": 5.38
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 736.0,
+          "amount": 32.38
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 816.0,
+          "amount": 35.9
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.006,
+          "rate": 897.0,
+          "amount": 5.38
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Scaffolding",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Mortar for laying and pointing",
+          "unit": "L.S.",
+          "quantity": 8.06,
+          "rate": 2.27,
+          "amount": 18.3
+        }
+      ],
+      "calculations": {
+        "total_w": 580.03,
+        "total_x": 585.83,
+        "total_y": 710.44,
+        "total_z": 817.01
+      },
+      "say_rate": 82518.0,
+      "page": 360
+    },
+    {
+      "item_code": "7.12.2",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work in plain ashlar in super structure upto floor five level in cement mortar 1:6 (1 - Both face dressed",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 361
+    },
+    {
+      "item_code": "7.12.2.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work in plain ashlar in super structure upto floor five level in cement mortar 1:6 (1 - Red sand stone",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cudm."
+      },
+      "breakup": [
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.176,
+          "rate": 816.0,
+          "amount": 143.62
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.012,
+          "rate": 897.0,
+          "amount": 10.76
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.088,
+          "rate": 736.0,
+          "amount": 64.77
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 736.0,
+          "amount": 32.38
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 816.0,
+          "amount": 35.9
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.006,
+          "rate": 897.0,
+          "amount": 5.38
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Scafolding",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Mortar for laying and pointing",
+          "unit": "L.S.",
+          "quantity": 8.06,
+          "rate": 2.27,
+          "amount": 18.3
+        }
+      ],
+      "calculations": {
+        "total_w": 641.73,
+        "total_x": 648.15,
+        "total_y": 786.01,
+        "total_z": 903.91
+      },
+      "say_rate": 91295.0,
+      "page": 361
+    },
+    {
+      "item_code": "7.12.2.2",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work in plain ashlar in super structure upto floor five level in cement mortar 1:6 (1 - White sand stone",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cudm or"
+      },
+      "breakup": [
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.176,
+          "rate": 816.0,
+          "amount": 143.62
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.012,
+          "rate": 897.0,
+          "amount": 10.76
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.088,
+          "rate": 736.0,
+          "amount": 64.77
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 736.0,
+          "amount": 32.38
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 816.0,
+          "amount": 35.9
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.006,
+          "rate": 897.0,
+          "amount": 5.38
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Scaffolding",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Mortar for laying and pointing",
+          "unit": "L.S.",
+          "quantity": 8.06,
+          "rate": 2.27,
+          "amount": 18.3
+        }
+      ],
+      "calculations": {
+        "total_w": 741.71,
+        "total_x": 749.13,
+        "total_y": 908.47,
+        "total_z": 1044.74
+      },
+      "say_rate": 105519.0,
+      "page": 362
+    },
+    {
+      "item_code": "7.13",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work plain ashlar in arches in super structure upto floor V level in cement mortar 1:3 (1 cement : 3 coarse sand) including centering, shuttering and pointing with white cement mortar 1:2 (1 white cement : 2 stone dust) with an admixture of pigment matching the stone shade.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 363
+    },
+    {
+      "item_code": "7.13.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work plain ashlar in arches in super structure upto floor V level in cement mortar 1:3 (1 - One face dressed",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 363
+    },
+    {
+      "item_code": "7.13.1.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work plain ashlar in arches in super structure upto floor V level in cement mortar 1:3 (1 - Red sand stone",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cudm or"
+      },
+      "breakup": [
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.088,
+          "rate": 816.0,
+          "amount": 71.81
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.006,
+          "rate": 897.0,
+          "amount": 5.38
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 736.0,
+          "amount": 32.38
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 816.0,
+          "amount": 35.9
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.006,
+          "rate": 897.0,
+          "amount": 5.38
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Scaffolding",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Mortar for laying and pointing",
+          "unit": "L.S.",
+          "quantity": 8.06,
+          "rate": 2.27,
+          "amount": 18.3
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Centering and shuttering",
+          "unit": "L.S.",
+          "quantity": 13.52,
+          "rate": 2.27,
+          "amount": 30.69
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.015,
+          "rate": 736.0,
+          "amount": 11.04
+        }
+      ],
+      "calculations": {
+        "total_w": 529.04,
+        "total_x": 534.33,
+        "total_y": 647.98,
+        "total_z": 745.18
+      },
+      "say_rate": 75263.0,
+      "page": 363
+    },
+    {
+      "item_code": "7.13.1.2",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work plain ashlar in arches in super structure upto floor V level in cement mortar 1:3 (1 - White sand stone",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cudm or"
+      },
+      "breakup": [
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.088,
+          "rate": 816.0,
+          "amount": 71.81
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.006,
+          "rate": 897.0,
+          "amount": 5.38
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 736.0,
+          "amount": 32.38
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 816.0,
+          "amount": 35.9
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.006,
+          "rate": 897.0,
+          "amount": 5.38
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Scaffolding",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Mortar for laying and pointing",
+          "unit": "L.S.",
+          "quantity": 8.06,
+          "rate": 2.27,
+          "amount": 18.3
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Centering and shuttering",
+          "unit": "L.S.",
+          "quantity": 13.52,
+          "rate": 2.27,
+          "amount": 30.69
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.015,
+          "rate": 736.0,
+          "amount": 11.04
+        }
+      ],
+      "calculations": {
+        "total_w": 629.02,
+        "total_x": 635.31,
+        "total_y": 770.44,
+        "total_z": 886.01
+      },
+      "say_rate": 89487.0,
+      "page": 364
+    },
+    {
+      "item_code": "7.13.2",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work plain ashlar in arches in super structure upto floor V level in cement mortar 1:3 (1 - Both face dressed",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 365
+    },
+    {
+      "item_code": "7.13.2.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work plain ashlar in arches in super structure upto floor V level in cement mortar 1:3 (1 - Red sand stone",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cudm or"
+      },
+      "breakup": [
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.176,
+          "rate": 816.0,
+          "amount": 143.62
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.012,
+          "rate": 897.0,
+          "amount": 10.76
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.088,
+          "rate": 736.0,
+          "amount": 64.77
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 736.0,
+          "amount": 32.38
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 816.0,
+          "amount": 35.9
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.006,
+          "rate": 897.0,
+          "amount": 5.38
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Scaffolding",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Mortar for laying and pointing",
+          "unit": "L.S.",
+          "quantity": 8.06,
+          "rate": 2.27,
+          "amount": 18.3
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Centering and shuttering",
+          "unit": "L.S.",
+          "quantity": 13.52,
+          "rate": 2.27,
+          "amount": 30.69
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.015,
+          "rate": 736.0,
+          "amount": 11.04
+        }
+      ],
+      "calculations": {
+        "total_w": 690.72,
+        "total_x": 697.63,
+        "total_y": 846.02,
+        "total_z": 972.92
+      },
+      "say_rate": 98265.0,
+      "page": 365
+    },
+    {
+      "item_code": "7.13.2.2",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work plain ashlar in arches in super structure upto floor V level in cement mortar 1:3 (1 - White sand stone",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cudm or"
+      },
+      "breakup": [
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.176,
+          "rate": 816.0,
+          "amount": 143.62
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.012,
+          "rate": 897.0,
+          "amount": 10.76
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.088,
+          "rate": 736.0,
+          "amount": 64.77
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 736.0,
+          "amount": 32.38
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 816.0,
+          "amount": 35.9
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.006,
+          "rate": 897.0,
+          "amount": 5.38
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Scaffolding",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Mortar for laying and pointing",
+          "unit": "L.S.",
+          "quantity": 8.06,
+          "rate": 2.27,
+          "amount": 18.3
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Centering and shuttering",
+          "unit": "L.S.",
+          "quantity": 13.52,
+          "rate": 2.27,
+          "amount": 30.69
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.015,
+          "rate": 736.0,
+          "amount": 11.04
+        }
+      ],
+      "calculations": {
+        "total_w": 790.7,
+        "total_x": 798.61,
+        "total_y": 968.47,
+        "total_z": 1113.74
+      },
+      "say_rate": 112488.0,
+      "page": 366
+    },
+    {
+      "item_code": "7.14",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work plain ashlar in domes , in super structure upto floor V level in cement mortar 1:3 (1 cement : 3 coarse sand) including centering, shuttering and pointing with white cement mortar 1:2 (1 white cement : 2 stone dust) with an admixture of pigment matching the stone shade.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 366
+    },
+    {
+      "item_code": "7.14.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work plain ashlar in domes , in super structure upto floor V level in cement mortar 1:3 - One face dressed",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 366
+    },
+    {
+      "item_code": "7.14.1.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work plain ashlar in domes , in super structure upto floor V level in cement mortar 1:3 - Red sand stone",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cudm or"
+      },
+      "breakup": [
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.176,
+          "rate": 816.0,
+          "amount": 143.62
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.006,
+          "rate": 897.0,
+          "amount": 5.38
+        },
+        {
+          "resource_code": "0126",
+          "category": "LABOUR",
+          "description": "Mason (for ornamental stone work) 1st class",
+          "unit": "day",
+          "quantity": 0.176,
+          "rate": 897.0,
+          "amount": 157.87
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 736.0,
+          "amount": 32.38
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 816.0,
+          "amount": 35.9
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.006,
+          "rate": 897.0,
+          "amount": 5.38
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Scaffolding",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Mortar for laying and pointing",
+          "unit": "L.S.",
+          "quantity": 8.06,
+          "rate": 2.27,
+          "amount": 18.3
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Centring and shuttering",
+          "unit": "L.S.",
+          "quantity": 33.15,
+          "rate": 2.27,
+          "amount": 75.25
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.015,
+          "rate": 736.0,
+          "amount": 11.04
+        }
+      ],
+      "calculations": {
+        "total_w": 803.28,
+        "total_x": 811.31,
+        "total_y": 983.88,
+        "total_z": 1131.46
+      },
+      "say_rate": 114277.0,
+      "page": 366
+    },
+    {
+      "item_code": "7.14.1.2",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work plain ashlar in domes , in super structure upto floor V level in cement mortar 1:3 - White sand stone",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cudm or"
+      },
+      "breakup": [
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.176,
+          "rate": 816.0,
+          "amount": 143.62
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.006,
+          "rate": 897.0,
+          "amount": 5.38
+        },
+        {
+          "resource_code": "0126",
+          "category": "LABOUR",
+          "description": "Mason (for ornamental stone work) 1st class",
+          "unit": "day",
+          "quantity": 0.176,
+          "rate": 897.0,
+          "amount": 157.87
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 736.0,
+          "amount": 32.38
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 816.0,
+          "amount": 35.9
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.006,
+          "rate": 897.0,
+          "amount": 5.38
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Scaffolding",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Mortar for laying and pointing",
+          "unit": "L.S.",
+          "quantity": 8.06,
+          "rate": 2.27,
+          "amount": 18.3
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Centring and shuttering",
+          "unit": "L.S.",
+          "quantity": 33.15,
+          "rate": 2.27,
+          "amount": 75.25
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.015,
+          "rate": 736.0,
+          "amount": 11.04
+        }
+      ],
+      "calculations": {
+        "total_w": 903.26,
+        "total_x": 912.29,
+        "total_y": 1106.33,
+        "total_z": 1272.28
+      },
+      "say_rate": 128500.0,
+      "page": 367
+    },
+    {
+      "item_code": "7.14.2",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work plain ashlar in domes , in super structure upto floor V level in cement mortar 1:3 - Both face dressed",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 368
+    },
+    {
+      "item_code": "7.14.2.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work plain ashlar in domes , in super structure upto floor V level in cement mortar 1:3 - Red sand stone",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cudm."
+      },
+      "breakup": [
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.352,
+          "rate": 816.0,
+          "amount": 287.23
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.012,
+          "rate": 897.0,
+          "amount": 10.76
+        },
+        {
+          "resource_code": "0126",
+          "category": "LABOUR",
+          "description": "Mason (for ornamental stone work) 1st class",
+          "unit": "day",
+          "quantity": 0.352,
+          "rate": 897.0,
+          "amount": 315.74
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.088,
+          "rate": 736.0,
+          "amount": 64.77
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 736.0,
+          "amount": 32.38
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 816.0,
+          "amount": 35.9
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.006,
+          "rate": 897.0,
+          "amount": 5.38
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Scaffolding",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Mortar for laying and pointing",
+          "unit": "L.S.",
+          "quantity": 8.06,
+          "rate": 2.27,
+          "amount": 18.3
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Centring and shuttering",
+          "unit": "L.S.",
+          "quantity": 33.15,
+          "rate": 2.27,
+          "amount": 75.25
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.015,
+          "rate": 736.0,
+          "amount": 11.04
+        }
+      ],
+      "calculations": {
+        "total_w": 1194.63,
+        "total_x": 1206.58,
+        "total_y": 1463.22,
+        "total_z": 1682.7
+      },
+      "say_rate": 169953.0,
+      "page": 368
+    },
+    {
+      "item_code": "7.14.2.2",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work plain ashlar in domes , in super structure upto floor V level in cement mortar 1:3 - White sand stone",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cudm or"
+      },
+      "breakup": [
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.352,
+          "rate": 816.0,
+          "amount": 287.23
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.012,
+          "rate": 897.0,
+          "amount": 10.76
+        },
+        {
+          "resource_code": "0126",
+          "category": "LABOUR",
+          "description": "Mason (for ornamental stone work) 1st class",
+          "unit": "day",
+          "quantity": 0.352,
+          "rate": 897.0,
+          "amount": 315.74
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.088,
+          "rate": 736.0,
+          "amount": 64.77
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 736.0,
+          "amount": 32.38
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 816.0,
+          "amount": 35.9
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.006,
+          "rate": 897.0,
+          "amount": 5.38
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Scaffolding",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Mortar for laying and pointing",
+          "unit": "L.S.",
+          "quantity": 8.06,
+          "rate": 2.27,
+          "amount": 18.3
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Centring and shuttering",
+          "unit": "L.S.",
+          "quantity": 33.15,
+          "rate": 2.27,
+          "amount": 75.25
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.015,
+          "rate": 736.0,
+          "amount": 11.04
+        }
+      ],
+      "calculations": {
+        "total_w": 1294.61,
+        "total_x": 1307.56,
+        "total_y": 1585.68,
+        "total_z": 1823.53
+      },
+      "say_rate": 184177.0,
+      "page": 369
+    },
+    {
+      "item_code": "7.15",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work ashlar punched (ordinary) in superstructure upto floor five level in cement mortar 1:6 (1 white cement : 6 coarse sand) including pointing with white cement mortar 1:2 (1 white cement : 2 stone dust) with an admixture of pigment matching the stone shade.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 370
+    },
+    {
+      "item_code": "7.15.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work ashlar punched (ordinary) in superstructure upto floor five level in cement mortar - One face dressed",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 370
+    },
+    {
+      "item_code": "7.15.1.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work ashlar punched (ordinary) in superstructure upto floor five level in cement mortar - Red sand stone",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cudm or"
+      },
+      "breakup": [
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.059,
+          "rate": 816.0,
+          "amount": 48.14
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.006,
+          "rate": 897.0,
+          "amount": 5.38
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 736.0,
+          "amount": 32.38
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 816.0,
+          "amount": 35.9
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.006,
+          "rate": 897.0,
+          "amount": 5.38
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Scaffolding",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.015,
+          "rate": 736.0,
+          "amount": 11.04
+        }
+      ],
+      "calculations": {
+        "total_w": 456.38,
+        "total_x": 460.94,
+        "total_y": 558.98,
+        "total_z": 642.83
+      },
+      "say_rate": 64926.0,
+      "page": 370
+    },
+    {
+      "item_code": "7.15.1.2",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work ashlar punched (ordinary) in superstructure upto floor five level in cement mortar - White sand stone",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cudm or"
+      },
+      "breakup": [
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.059,
+          "rate": 816.0,
+          "amount": 48.14
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.006,
+          "rate": 897.0,
+          "amount": 5.38
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 736.0,
+          "amount": 32.38
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 816.0,
+          "amount": 35.9
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.006,
+          "rate": 897.0,
+          "amount": 5.38
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Scaffolding",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.015,
+          "rate": 736.0,
+          "amount": 11.04
+        }
+      ],
+      "calculations": {
+        "total_w": 556.36,
+        "total_x": 561.92,
+        "total_y": 681.44,
+        "total_z": 783.66
+      },
+      "say_rate": 79150.0,
+      "page": 371
+    },
+    {
+      "item_code": "7.15.2",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work ashlar punched (ordinary) in superstructure upto floor five level in cement mortar - Both faced punched",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 372
+    },
+    {
+      "item_code": "7.15.2.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work ashlar punched (ordinary) in superstructure upto floor five level in cement mortar - Red sand stone",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cudm or"
+      },
+      "breakup": [
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.118,
+          "rate": 816.0,
+          "amount": 96.29
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.012,
+          "rate": 897.0,
+          "amount": 10.76
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.088,
+          "rate": 736.0,
+          "amount": 64.77
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 736.0,
+          "amount": 32.38
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 816.0,
+          "amount": 35.9
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.006,
+          "rate": 897.0,
+          "amount": 5.38
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Scafolding",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Mortar for laying and pointing",
+          "unit": "L.S.",
+          "quantity": 8.06,
+          "rate": 2.27,
+          "amount": 18.3
+        }
+      ],
+      "calculations": {
+        "total_w": 594.4,
+        "total_x": 600.34,
+        "total_y": 728.03,
+        "total_z": 837.23
+      },
+      "say_rate": 84560.0,
+      "page": 372
+    },
+    {
+      "item_code": "7.15.2.2",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work ashlar punched (ordinary) in superstructure upto floor five level in cement mortar - White sand stone",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cudm or"
+      },
+      "breakup": [
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.118,
+          "rate": 816.0,
+          "amount": 96.29
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.012,
+          "rate": 897.0,
+          "amount": 10.76
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.088,
+          "rate": 736.0,
+          "amount": 64.77
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 736.0,
+          "amount": 32.38
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 816.0,
+          "amount": 35.9
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.006,
+          "rate": 897.0,
+          "amount": 5.38
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Scaffolding",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Mortar for laying and pointing",
+          "unit": "L.S.",
+          "quantity": 8.06,
+          "rate": 2.27,
+          "amount": 18.3
+        }
+      ],
+      "calculations": {
+        "total_w": 694.38,
+        "total_x": 701.32,
+        "total_y": 850.49,
+        "total_z": 978.06
+      },
+      "say_rate": 98784.0,
+      "page": 372
+    },
+    {
+      "item_code": "7.16",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Extra for stone work, random rubble / coursed rubble masonry / ashlar masonry above floor V level for every four floors or part thereof by mechnical means.",
+      "cost_basis": {
+        "quantity": 5.3,
+        "unit": "cum per four floors ."
+      },
+      "breakup": [
+        {
+          "resource_code": "0037",
+          "category": "MATERIAL",
+          "description": "Mobile crane",
+          "unit": "day",
+          "quantity": 0.125,
+          "rate": 5050.0,
+          "amount": 631.25
+        }
+      ],
+      "calculations": {
+        "total_w": 631.25,
+        "total_x": 637.56,
+        "total_y": 773.17,
+        "total_z": 889.15
+      },
+      "say_rate": 169.45,
+      "page": 373
+    },
+    {
+      "item_code": "7.17",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Extra for plain ashlar or ashlar punched in :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 374
+    },
+    {
+      "item_code": "7.17.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Extra for plain ashlar or ashlar punched in : - Square or rectangular pillars",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cudm or"
+      },
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Labour and materials",
+          "unit": "L.S.",
+          "quantity": 8.97,
+          "rate": 2.27,
+          "amount": 20.36
+        }
+      ],
+      "calculations": {
+        "total_w": 20.36,
+        "total_x": 20.56,
+        "total_y": 24.93,
+        "total_z": 28.67
+      },
+      "say_rate": 2896.0,
+      "page": 374
+    },
+    {
+      "item_code": "7.18",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Extra for stone work; plain ashlar or ashlar punched curved on plan with a mean radius not exceeding 6 m.",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cudm or"
+      },
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Labour and materials",
+          "unit": "L.S.",
+          "quantity": 6.24,
+          "rate": 2.27,
+          "amount": 14.16
+        }
+      ],
+      "calculations": {
+        "total_w": 14.16,
+        "total_x": 14.3,
+        "total_y": 17.34,
+        "total_z": 19.94
+      },
+      "say_rate": 2014.0,
+      "page": 374
+    },
+    {
+      "item_code": "7.19",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Extra for additional cost of centering for arches exceeding 6m span including all strutting, bolting, wedging etc. and removal (area of soffit to be measured).",
+      "cost_basis": {
+        "quantity": 333.1,
+        "unit": "sqm"
+      },
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 374
+    },
+    {
+      "item_code": "7.103x10",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "= 71.03 cum Qty taken as 1/8th of qty for cost of using once = 71.03/8 = 8.879 cum (8879 cudm)",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "1197",
+          "category": "MATERIAL",
+          "description": "Second class kail wood in scantling",
+          "unit": "10 cudm",
+          "quantity": 887.9,
+          "rate": 260.0,
+          "amount": 230854.0
+        },
+        {
+          "resource_code": "0112",
+          "category": "MATERIAL",
+          "description": "Carpenter 2nd class",
+          "unit": "day",
+          "quantity": 280.0,
+          "rate": 816.0,
+          "amount": 228480.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 240.0,
+          "rate": 736.0,
+          "amount": 176640.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 1345.5,
+          "rate": 2.27,
+          "amount": 3054.29
+        }
+      ],
+      "calculations": {
+        "total_y": 74623.77,
+        "total_z": 193459.43
+      },
+      "say_rate": 608.15,
+      "page": 375
+    },
+    {
+      "item_code": "7.20",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work ashlar sunk or moulded or sunk and moulded upto floor five level in cement mortar 1:6 (1 cement : 6 coarse sand) including pointing with white cement mortar 1:2 (1 white cement : 2 stone dust) with an admixture of pigment matching the stone shade :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 376
+    },
+    {
+      "item_code": "7.20.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work ashlar sunk or moulded or sunk and moulded upto floor five level in cement mortar - Red sand stone",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cudm or"
+      },
+      "breakup": [
+        {
+          "resource_code": "1160",
+          "category": "MATERIAL",
+          "description": "Red sand stone block",
+          "unit": "10 cudm",
+          "quantity": 1.333,
+          "rate": 130.0,
+          "amount": 173.29
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.291,
+          "rate": 816.0,
+          "amount": 237.46
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.006,
+          "rate": 897.0,
+          "amount": 5.38
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 736.0,
+          "amount": 32.38
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 816.0,
+          "amount": 35.9
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.006,
+          "rate": 897.0,
+          "amount": 5.38
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Scaffolding",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.015,
+          "rate": 736.0,
+          "amount": 11.04
+        }
+      ],
+      "calculations": {
+        "total_w": 664.0,
+        "total_x": 670.64,
+        "total_y": 813.29,
+        "total_z": 935.28
+      },
+      "say_rate": 94463.0,
+      "page": 376
+    },
+    {
+      "item_code": "7.20.2",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work ashlar sunk or moulded or sunk and moulded upto floor five level in cement mortar - White sand stone",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cudm or"
+      },
+      "breakup": [
+        {
+          "resource_code": "1161",
+          "category": "MATERIAL",
+          "description": "White sand stone block",
+          "unit": "10 cudm",
+          "quantity": 1.333,
+          "rate": 205.0,
+          "amount": 273.27
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.291,
+          "rate": 816.0,
+          "amount": 237.46
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.006,
+          "rate": 897.0,
+          "amount": 5.38
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 736.0,
+          "amount": 32.38
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.044,
+          "rate": 816.0,
+          "amount": 35.9
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.006,
+          "rate": 897.0,
+          "amount": 5.38
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 736.0,
+          "amount": 16.19
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 0.022,
+          "rate": 816.0,
+          "amount": 17.95
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Scaffolding",
+          "unit": "L.S.",
+          "quantity": 2.73,
+          "rate": 2.27,
+          "amount": 6.2
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.015,
+          "rate": 736.0,
+          "amount": 11.04
+        }
+      ],
+      "calculations": {
+        "total_w": 763.98,
+        "total_x": 771.62,
+        "total_y": 935.74,
+        "total_z": 1076.1
+      },
+      "say_rate": 108686.0,
+      "page": 376
+    },
+    {
+      "item_code": "7.21",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Extra for stone work ashlar sunk or moulded or sunk and moulded or carved in :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 377
+    },
+    {
+      "item_code": "7.21.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Extra for stone work ashlar sunk or moulded or sunk and moulded or carved in : - Triangular or Square or rectangular pillars",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cudm or"
+      },
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "LABOUR",
+          "unit": "L.S.",
+          "quantity": 11.7,
+          "rate": 2.27,
+          "amount": 26.56
+        }
+      ],
+      "calculations": {
+        "total_w": 26.56,
+        "total_x": 26.83,
+        "total_y": 32.54,
+        "total_z": 37.42
+      },
+      "say_rate": 3779.0,
+      "page": 377
+    },
+    {
+      "item_code": "7.21.2",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Extra for stone work ashlar sunk or moulded or sunk and moulded or carved in : - Circular or polygonal pillars",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cudm or"
+      },
+      "breakup": [],
+      "calculations": {},
+      "say_rate": 10706.0,
+      "page": 378
+    },
+    {
+      "item_code": "7.22",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Extra for stone work ashlar sunk or moulded in cornices. 60cm deep and 15cm projection Extra labour :",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0125",
+          "category": "MATERIAL",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 816.0,
+          "amount": 408.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.75,
+          "rate": 736.0,
+          "amount": 552.0
+        }
+      ],
+      "calculations": {
+        "total_w": 960.0,
+        "total_x": 969.6,
+        "total_y": 1175.83,
+        "total_z": 1352.2
+      },
+      "say_rate": 303.5,
+      "page": 378
+    },
+    {
+      "item_code": "7.24",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Extra for stone work (veneer work) curved on plan with a mean radius not exceeding 6 m.",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "cudm."
+      },
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Labour and materials",
+          "unit": "L.S.",
+          "quantity": 8.97,
+          "rate": 2.27,
+          "amount": 20.36
+        }
+      ],
+      "calculations": {
+        "total_w": 20.36,
+        "total_x": 20.56,
+        "total_y": 24.93,
+        "total_z": 28.67
+      },
+      "say_rate": 2896.0,
+      "page": 378
+    },
+    {
+      "item_code": "7.26",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Providing and fixing stone dowels 10x5x2.50 cm cut to double wedge shape as per design in cement mortar 1:2 (1 cement : 2 coarse sand), including making the necessary chases.",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Cost of stone including carriage",
+          "unit": "L.S.",
+          "quantity": 9.1,
+          "rate": 2.27,
+          "amount": 20.66
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Labour for dressing dowel cutting chase and fixing etc.",
+          "unit": "L.S.",
+          "quantity": 5.33,
+          "rate": 2.27,
+          "amount": 12.1
+        }
+      ],
+      "calculations": {
+        "total_w": 38.34,
+        "total_x": 38.72,
+        "total_y": 46.96,
+        "total_z": 54.0
+      },
+      "say_rate": 54.55,
+      "page": 379
+    },
+    {
+      "item_code": "7.28",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Providing and fixing sloping chajja of stone 40 mm thick and upto 80 cm wide beyond the wall as measured along the slope in cement mortar 1:4 (1 cement : 4 coarse sand) with 12 mm diameter anchoring steel bar, 45 cm long, fixed in each stone and supported on and including with bricks cove in cement mortar 1:4 (1 cement : 4 coarse sand), including pointing in cement mortar 1:2 (1 white cement : 2 stone dust) with an admixture of pigment matching the stone shade :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 379
+    },
+    {
+      "item_code": "7.28.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Providing and fixing sloping chajja of stone 40 mm thick and upto 80 cm wide beyond the - Red sand stone :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 379
+    },
+    {
+      "item_code": "7.28.1.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Providing and fixing sloping chajja of stone 40 mm thick and upto 80 cm wide beyond the - With common burnt clay F.P.S.(non modular) bricks of class designation 7.5 (finished work) Chisel dressed 80cm sloping length plus 20cm bearing Area = 2.5xl.00=2.50sqm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "1164",
+          "category": "MATERIAL",
+          "description": "Red sand stone slab 40 mmthick (un- dressed)",
+          "unit": "sqm",
+          "quantity": 2.75,
+          "rate": 330.0,
+          "amount": 907.5
+        },
+        {
+          "resource_code": "0125",
+          "category": "MATERIAL",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 816.0,
+          "amount": 408.0
+        },
+        {
+          "resource_code": "1002",
+          "category": "MATERIAL",
+          "description": "Mild steel round bar 12 mm dia and below",
+          "unit": "quintal",
+          "quantity": 0.02,
+          "rate": 5550.0,
+          "amount": 111.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Cutting threads and cost of nuts, wash- ers, etc.",
+          "unit": "L.S.",
+          "quantity": 67.34,
+          "rate": 2.27,
+          "amount": 152.86
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Pigment",
+          "unit": "L.S.",
+          "quantity": 6.24,
+          "rate": 2.27,
+          "amount": 14.16
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Extra cost of white cement",
+          "unit": "L.S.",
+          "quantity": 26.91,
+          "rate": 2.27,
+          "amount": 61.09
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 816.0,
+          "amount": 816.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.5,
+          "rate": 736.0,
+          "amount": 1104.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Cost of Brick cover support. L.S. 104.00 2.27 236.08 Brick work in triangular gap above cover with bricks of class designation 7.5 in cement mortar 1:4 1/2x2.5x0.2x0.07=0.018cum. 6.4.1 Rate as per item No 6.4.1 of SH :- Brick work.",
+          "unit": "cum",
+          "quantity": 0.018,
+          "rate": 9344.35,
+          "amount": 168.2
+        }
+      ],
+      "calculations": {
+        "total_w": 4062.75,
+        "total_x": 4101.7,
+        "total_y": 4938.36,
+        "total_z": 5653.88
+      },
+      "say_rate": 2854.35,
+      "page": 379
+    },
+    {
+      "item_code": "7.28.2",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Providing and fixing sloping chajja of stone 40 mm thick and upto 80 cm wide beyond the - White sand stone :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 380
+    },
+    {
+      "item_code": "7.28.2.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Providing and fixing sloping chajja of stone 40 mm thick and upto 80 cm wide beyond the - With common burnt clay F.P.S.(non modular) bricks of class designation 7.5 (finished work) Chisel dressed 80cm sloping length plus 20cm bearing Area = 2.5x1.00=2.50sqm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "1165",
+          "category": "MATERIAL",
+          "description": "White sand stone slab 40 mm thick (un- dressed)",
+          "unit": "sqm",
+          "quantity": 2.75,
+          "rate": 370.0,
+          "amount": 1017.5
+        },
+        {
+          "resource_code": "1002",
+          "category": "MATERIAL",
+          "description": "Mild steel round bar 12 mm dia and below",
+          "unit": "quintal",
+          "quantity": 0.02,
+          "rate": 5550.0,
+          "amount": 111.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Cutting threads and cost of nuts, wash- ers, etc.",
+          "unit": "L.S.",
+          "quantity": 67.34,
+          "rate": 2.27,
+          "amount": 152.86
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Pigment",
+          "unit": "L.S.",
+          "quantity": 6.24,
+          "rate": 2.27,
+          "amount": 14.16
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Extra cost of white cement",
+          "unit": "L.S.",
+          "quantity": 26.91,
+          "rate": 2.27,
+          "amount": 61.09
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 816.0,
+          "amount": 816.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.5,
+          "rate": 736.0,
+          "amount": 1104.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Cost for Brick cover support . L.S. 104.00 2.27 236.08 Brick work in triangular gap above cover with bricks of class designation 5 in ce- ment mortar 1:4 1/2x2.5x0.2x0.07=0.018cum. 6.4.1 Rate as per item No 6.4.1 of SH :- Brick work.",
+          "unit": "cum",
+          "quantity": 0.018,
+          "rate": 9344.35,
+          "amount": 168.2
+        }
+      ],
+      "calculations": {
+        "total_w": 4172.75,
+        "total_x": 4212.8,
+        "total_y": 5073.09,
+        "total_z": 5808.82
+      },
+      "say_rate": 2932.6,
+      "page": 380
+    },
+    {
+      "item_code": "7.29",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Providing and fixing horizontal chajja of stone 40 mm thick and upto 80 cm projection in cement mortar 1:4 (1 cement : 4 coarse sand), including pointing in white cement mortar 1:2 (1 white cement : 2 stone dust) with an admixture of pigment matching the stone shade :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 381
+    },
+    {
+      "item_code": "7.29.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Providing and fixing horizontal chajja of stone 40 mm thick and upto 80 cm projection in - Red sand stone sqm. Taking 2.5mx75cm projection + 15cm bearing = 2.5x0.9 = 2.25 sqm.",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "1164",
+          "category": "MATERIAL",
+          "description": "Red sand stone slab 40 mmthick (un- dressed)",
+          "unit": "sqm",
+          "quantity": 2.25,
+          "rate": 330.0,
+          "amount": 742.5
+        },
+        {
+          "resource_code": "0125",
+          "category": "MATERIAL",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.45,
+          "rate": 816.0,
+          "amount": 367.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Mortar for pointing 1:2",
+          "unit": "L.S.",
+          "quantity": 53.82,
+          "rate": 2.27,
+          "amount": 122.17
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Pigment",
+          "unit": "L.S.",
+          "quantity": 6.24,
+          "rate": 2.27,
+          "amount": 14.16
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Extra cost of white cement",
+          "unit": "L.S.",
+          "quantity": 26.91,
+          "rate": 2.27,
+          "amount": 61.09
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.6,
+          "rate": 816.0,
+          "amount": 489.6
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.8,
+          "rate": 736.0,
+          "amount": 588.8
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Scaffolding and sundries etc.",
+          "unit": "L.S.",
+          "quantity": 13.52,
+          "rate": 2.27,
+          "amount": 30.69
+        }
+      ],
+      "calculations": {
+        "total_w": 2416.21,
+        "total_x": 2440.37,
+        "total_y": 2959.44,
+        "total_z": 3403.36
+      },
+      "say_rate": 1833.25,
+      "page": 381
+    },
+    {
+      "item_code": "7.29.2",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Providing and fixing horizontal chajja of stone 40 mm thick and upto 80 cm projection in - White sand stone sqm. Taking 2.5mx75cm projection + 15cm bearing = 2.5x0.9 = 2.25 sqm.",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "1165",
+          "category": "MATERIAL",
+          "description": "White sand stone slab 40 mm thick (un- dressed)",
+          "unit": "sqm",
+          "quantity": 2.25,
+          "rate": 370.0,
+          "amount": 832.5
+        },
+        {
+          "resource_code": "0125",
+          "category": "MATERIAL",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.45,
+          "rate": 816.0,
+          "amount": 367.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Mortar for pointing 1:2",
+          "unit": "L.S.",
+          "quantity": 53.82,
+          "rate": 2.27,
+          "amount": 122.17
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Pigment",
+          "unit": "L.S.",
+          "quantity": 6.24,
+          "rate": 2.27,
+          "amount": 14.16
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Extra cost of white cement",
+          "unit": "L.S.",
+          "quantity": 26.91,
+          "rate": 2.27,
+          "amount": 61.09
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.6,
+          "rate": 816.0,
+          "amount": 489.6
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.8,
+          "rate": 736.0,
+          "amount": 588.8
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Scaffolding and sundries etc.",
+          "unit": "L.S.",
+          "quantity": 13.52,
+          "rate": 2.27,
+          "amount": 30.69
+        }
+      ],
+      "calculations": {
+        "total_w": 2506.21,
+        "total_x": 2531.27,
+        "total_y": 3069.67,
+        "total_z": 3530.12
+      },
+      "say_rate": 1901.55,
+      "page": 382
+    },
+    {
+      "item_code": "7.30",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "30 mm red sand stone sun-shade (chisel-dressed) supported on red sand stone brackets, fixed in walls with cement mortar 1:4 (1 cement : 4 coarse sand), including finishing complete. Detail of cost for window 1.6m length and 0.70m width = 1.12 sqm. over all width 0.70+0.15=0.85 metres Total area = 1.6x0.85=1.36sqm. Red stone brackets (chisel dressed) 30mm average thickness over all width of brackets 0.53+0.23=0.76m 2x0.3x0.76=0.46 Total 1.36+0.46 =1.82sqm.+ Add wastage @10% = 0.18sqm. Total = 2.00 sqm.",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "1166",
+          "category": "MATERIAL",
+          "description": "Red sand stone slab 30 mmthick (un- dressed)",
+          "unit": "sqm",
+          "quantity": 2.0,
+          "rate": 300.0,
+          "amount": 600.0
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 0.86,
+          "rate": 816.0,
+          "amount": 701.76
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        }
+      ],
+      "calculations": {
+        "total_w": 1700.45,
+        "total_x": 1717.45,
+        "total_y": 2082.75,
+        "total_z": 2395.16
+      },
+      "say_rate": 2159.9,
+      "page": 382
+    },
+    {
+      "item_code": "7.31",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Providing and fixing red sand stone brackets 55x22.5x45 cm sunk and moulded including providing and fixing with 4 Nos gun metal cramp 25x6 mm 30 cm long",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "brackets"
+      },
+      "breakup": [
+        {
+          "resource_code": "1160",
+          "category": "MATERIAL",
+          "description": "Red sand stone block",
+          "unit": "10 cudm",
+          "quantity": 61.6,
+          "rate": 130.0,
+          "amount": 8008.0
+        },
+        {
+          "resource_code": "0125",
+          "category": "MATERIAL",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 17.926,
+          "rate": 816.0,
+          "amount": 14627.62
+        },
+        {
+          "resource_code": "0102",
+          "category": "MATERIAL",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.37,
+          "rate": 897.0,
+          "amount": 331.89
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.71,
+          "rate": 736.0,
+          "amount": 1994.56
+        },
+        {
+          "resource_code": "0115",
+          "category": "MATERIAL",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1.355,
+          "rate": 736.0,
+          "amount": 997.28
+        },
+        {
+          "resource_code": "0100",
+          "category": "MATERIAL",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 2.71,
+          "rate": 816.0,
+          "amount": 2211.36
+        },
+        {
+          "resource_code": "0125",
+          "category": "LABOUR",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 2.464,
+          "rate": 816.0,
+          "amount": 2010.62
+        },
+        {
+          "resource_code": "0102",
+          "category": "LABOUR",
+          "description": "Blacksmith 1st class",
+          "unit": "day",
+          "quantity": 0.336,
+          "rate": 897.0,
+          "amount": 301.39
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1232.0,
+          "rate": 736.0,
+          "amount": 906.75
+        },
+        {
+          "resource_code": "0115",
+          "category": "LABOUR",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 1232.0,
+          "rate": 736.0,
+          "amount": 906.75
+        },
+        {
+          "resource_code": "0100",
+          "category": "LABOUR",
+          "description": "Bandhani",
+          "unit": "day",
+          "quantity": 1232.0,
+          "rate": 816.0,
+          "amount": 1005.31
+        },
+        {
+          "resource_code": "0101",
+          "category": "LABOUR",
+          "description": "Bhisti",
+          "unit": "day",
+          "quantity": 1232.0,
+          "rate": 816.0,
+          "amount": 1005.31
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Scaffolding",
+          "unit": "L.S.",
+          "quantity": 152.9,
+          "rate": 2.27,
+          "amount": 347.08
+        },
+        {
+          "resource_code": "0126",
+          "category": "LABOUR",
+          "description": "Mason (for ornamental stone work) 1st class",
+          "unit": "day",
+          "quantity": 9.5,
+          "rate": 897.0,
+          "amount": 8521.5
+        }
+      ],
+      "calculations": {
+        "total_w": 47720.1,
+        "total_x": 48197.3,
+        "total_y": 58448.87,
+        "total_z": 67216.2
+      },
+      "say_rate": 6788.85,
+      "page": 383
+    },
+    {
+      "item_code": "7.32",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work, plain in copings, cornices, string courses and plinth courses, upto 75 mm thick in Cement mortar 1:6 (1 cement : 6 coarse sand), including pointing with white cement mortar 1:2 (1 white cement : 2 stone dust) with an admixture of pigment matching the stone shade.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 384
+    },
+    {
+      "item_code": "7.32.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work, plain in copings, cornices, string courses and plinth courses, upto 75 mm thick - Red sand stone",
+      "cost_basis": {
+        "quantity": 100.0,
+        "unit": "cornices"
+      },
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 384
+    },
+    {
+      "item_code": "7.12.1.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work, plain in copings, cornices, string courses and plinth courses, upto 75 mm thick - Rate as per item no 7.12.1.1 of SH : Stone Work cum 0.675 68294.00 46098.45 A",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0125",
+          "category": "MATERIAL",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 7.0,
+          "rate": 816.0,
+          "amount": 5712.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 7.0,
+          "rate": 736.0,
+          "amount": 5152.0
+        }
+      ],
+      "calculations": {
+        "total_w": 58172.36,
+        "total_x": 58293.1,
+        "total_y": 60886.9,
+        "total_z": 63105.17
+      },
+      "say_rate": 93741.1,
+      "page": 384
+    },
+    {
+      "item_code": "7.32.2",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work, plain in copings, cornices, string courses and plinth courses, upto 75 mm thick - White sand stone",
+      "cost_basis": {
+        "quantity": 100.0,
+        "unit": "cornices"
+      },
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 384
+    },
+    {
+      "item_code": "7.12.1.2",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone work, plain in copings, cornices, string courses and plinth courses, upto 75 mm thick - Rate as per item no 7.12.1.2 of SH : Stone Work cum 0.675 82518.00 55699.65 A",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0125",
+          "category": "MATERIAL",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 7.0,
+          "rate": 816.0,
+          "amount": 5712.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 7.0,
+          "rate": 736.0,
+          "amount": 5152.0
+        }
+      ],
+      "calculations": {
+        "total_w": 67773.56,
+        "total_x": 67894.3,
+        "total_y": 70488.1,
+        "total_z": 72706.37
+      },
+      "say_rate": 107965.1,
+      "page": 385
+    },
+    {
+      "item_code": "7.33",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Providing and fixing stone jali 40 mm thick throughout in cement mortar 1:3 (1 cement : 3 coarse sand), including pointing in white cement mortar 1:2 (1 white cement : 2 stone dust) with an admixture of pigment, matching the stone shade, jali slab without any chamfers etc.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 385
+    },
+    {
+      "item_code": "7.33.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Providing and fixing stone jali 40 mm thick throughout in cement mortar 1:3 (1 cement : 3 - Red sand stone",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "sqm"
+      },
+      "breakup": [
+        {
+          "resource_code": "1164",
+          "category": "MATERIAL",
+          "description": "Red sand stone slab 40 mm thick (un- dressed)",
+          "unit": "sqm",
+          "quantity": 1.1,
+          "rate": 330.0,
+          "amount": 363.0
+        },
+        {
+          "resource_code": "0125",
+          "category": "MATERIAL",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 7.62,
+          "rate": 816.0,
+          "amount": 6217.92
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 5.07,
+          "rate": 736.0,
+          "amount": 3731.52
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Mortar and Sundries",
+          "unit": "L.S.",
+          "quantity": 80.73,
+          "rate": 2.27,
+          "amount": 183.26
+        }
+      ],
+      "calculations": {
+        "total_w": 10495.7,
+        "total_x": 10600.66,
+        "total_y": 12855.42,
+        "total_z": 14783.73
+      },
+      "say_rate": 14931.55,
+      "page": 385
+    },
+    {
+      "item_code": "7.33.2",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Providing and fixing stone jali 40 mm thick throughout in cement mortar 1:3 (1 cement : 3 - White sand stone",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "sqm"
+      },
+      "breakup": [
+        {
+          "resource_code": "1165",
+          "category": "MATERIAL",
+          "description": "White sand stone slab 40 mm thick (un- dressed)",
+          "unit": "sqm",
+          "quantity": 1.1,
+          "rate": 370.0,
+          "amount": 407.0
+        },
+        {
+          "resource_code": "0125",
+          "category": "MATERIAL",
+          "description": "Mason (for plain stone work) 2nd class)",
+          "unit": "day",
+          "quantity": 7.62,
+          "rate": 816.0,
+          "amount": 6217.92
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 5.07,
+          "rate": 736.0,
+          "amount": 3731.52
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Mortar and Sundries",
+          "unit": "L.S.",
+          "quantity": 80.73,
+          "rate": 2.27,
+          "amount": 183.26
+        }
+      ],
+      "calculations": {
+        "total_w": 10539.7,
+        "total_x": 10645.1,
+        "total_y": 12909.31,
+        "total_z": 14845.71
+      },
+      "say_rate": 14994.15,
+      "page": 385
+    },
+    {
+      "item_code": "7.34",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Extra for laying stone work in or under water and/or liquid mud including cost of pumping or bailing out water and removing slush etc. complete. level up to the centre of gravity of stone work under sub - water with the quantity of stone work in cum  executed under the sub-soil water. The depth of centre of gravity shall be reckoned correct to 0.1 m, (0.05 m or more shall be taken as 0.1 m and less than 0.05 m ignored).",
+      "cost_basis": {
+        "quantity": 4.2,
+        "unit": "cum per"
+      },
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 4.0,
+          "rate": 736.0,
+          "amount": 2944.0
+        }
+      ],
+      "calculations": {
+        "total_w": 3244.0,
+        "total_x": 3276.44,
+        "total_y": 3973.34,
+        "total_z": 4569.34
+      },
+      "say_rate": 1098.8,
+      "page": 386
+    },
+    {
+      "item_code": "7.35",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Extra for laying stone work in or under foul condition.",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "0123",
+          "category": "MATERIAL",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 0.02,
+          "rate": 897.0,
+          "amount": 17.94
+        },
+        {
+          "resource_code": "0124",
+          "category": "MATERIAL",
+          "description": "Mason 2nd class",
+          "unit": "day",
+          "quantity": 0.02,
+          "rate": 816.0,
+          "amount": 16.32
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.25,
+          "rate": 736.0,
+          "amount": 184.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "MATERIAL",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.15,
+          "rate": 736.0,
+          "amount": 110.4
+        }
+      ],
+      "calculations": {
+        "total_w": 328.66,
+        "total_x": 331.95,
+        "total_y": 402.56,
+        "total_z": 462.94
+      },
+      "say_rate": 467.55,
+      "page": 386
+    },
+    {
+      "item_code": "7.38",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone tile work for wall lining upto 10 m height with special adhesive over 12 mm thick bed of cement mortar 1:3 (1 cement : 3 coarse sand), including pointing in white cement with an admixture of pigment to match the stone shade.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 387
+    },
+    {
+      "item_code": "7.38.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone tile work for wall lining upto 10 m height with special adhesive over 12 mm thick bed - 8mm thick (mirror polished and machine cut edge)",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 387
+    },
+    {
+      "item_code": "7.38.1.1",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone tile work for wall lining upto 10 m height with special adhesive over 12 mm thick bed - Granite stone of any colour and shade Granite stone tile = 10.00sqm. Add 2.5% wastage = 0.25sqm. Total =10.25 sqm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "2750",
+          "category": "MATERIAL",
+          "description": "8 mm thick granite stone tiles (mirror polished of all shades)",
+          "unit": "sqm",
+          "quantity": 10.25,
+          "rate": 702.0,
+          "amount": 7195.5
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of granite tiles L.S. 40.04 2.27 90.89 Cement mortar 1:3 (1 cement : 3 coarse sand) 3.8 Rate as per Item Number 3.8 of SH: Mortars",
+          "unit": "cum",
+          "quantity": 0.14,
+          "rate": 4881.95,
+          "amount": 683.47
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Mortar for pointing in white cement",
+          "unit": "L.S.",
+          "quantity": 25.74,
+          "rate": 2.27,
+          "amount": 58.43
+        },
+        {
+          "resource_code": "0123",
+          "category": "LABOUR",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 7.7,
+          "rate": 897.0,
+          "amount": 6906.9
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 7.7,
+          "rate": 736.0,
+          "amount": 5667.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Granular sand particles mixed with ar- aldite to be pasted on each side to form interlocking arrangement with cement plaster",
+          "unit": "L.S.",
+          "quantity": 260.0,
+          "rate": 2.27,
+          "amount": 590.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 171.6,
+          "rate": 2.27,
+          "amount": 389.53
+        }
+      ],
+      "calculations": {
+        "total_w": 21752.27,
+        "total_x": 21969.79,
+        "total_y": 26642.76,
+        "total_z": 30639.17
+      },
+      "say_rate": 3094.55,
+      "page": 387
+    },
+    {
+      "item_code": "7.38.1.2",
+      "sub_head_no": 7,
+      "sub_head_name": "Stone Work",
+      "description": "Stone tile work for wall lining upto 10 m height with special adhesive over 12 mm thick bed - Raj Nagar plain white marble/ Udaipur green marble/ Zebra black marble 8mm thick Raj Nagar white stone tile = 10.00sqm.+ Add 2.5% wastage = 0.25sqm. Total = 10.25sqm",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "7439",
+          "category": "MATERIAL",
+          "description": "8mm thick (mirror polished tiles machine cut edge) Raj Nagar white",
+          "unit": "sqm",
+          "quantity": 10.25,
+          "rate": 477.0,
+          "amount": 4889.25
+        },
+        {
+          "resource_code": "9977",
+          "category": "MATERIAL",
+          "description": "Carriage of Raj Nagar white stone tiles L.S. 40.04 2.27 90.89 Cement mortar 1:3 (1 cement : 3 coarse sand) 3.8 Rate as per Item Number 3.8 of SH: Mortars",
+          "unit": "cum",
+          "quantity": 0.14,
+          "rate": 4881.95,
+          "amount": 683.47
+        },
+        {
+          "resource_code": "0123",
+          "category": "MATERIAL",
+          "description": "Mason 1st class",
+          "unit": "day",
+          "quantity": 7.7,
+          "rate": 897.0,
+          "amount": 6906.9
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 7.7,
+          "rate": 736.0,
+          "amount": 5667.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Granular sand particles mixed with ar- aldite to be pasted on each side to form interlocking arrangement with cement plaster",
+          "unit": "L.S.",
+          "quantity": 260.0,
+          "rate": 2.27,
+          "amount": 590.2
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 171.6,
+          "rate": 2.27,
+          "amount": 389.53
+        }
+      ],
+      "calculations": {
+        "total_w": 19446.02,
+        "total_x": 19640.48,
+        "total_y": 23818.01,
+        "total_z": 27390.71
+      },
+      "say_rate": 2766.45,
+      "page": 388
+    }
+  ]
+}

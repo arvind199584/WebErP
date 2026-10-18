@@ -116,7 +116,7 @@ if "%PG_EXE%"=="" (
     echo [!] PostgreSQL is not installed.
     echo Launching PostgreSQL 18 offline installer...
     echo PLEASE NOTE: When prompted by the PostgreSQL installer:
-    echo   - Set password for superuser 'postgres' to: daredevil
+    echo   - Remember the password you set for superuser 'postgres'
     echo   - Keep port as 5432
     echo.
     start /wait "" "%SETUP_DIR%Installers\postgresql-18-installer.exe"
@@ -133,8 +133,11 @@ if "%PG_EXE%"=="" (
 echo [OK] PostgreSQL binaries found at: %PG_EXE%
 echo.
 
+set "DB_PASS=postgres"
+set /p DB_PASS="Enter password for PostgreSQL superuser 'postgres' [default: postgres]: "
+set "PGPASSWORD=%DB_PASS%"
+
 echo Restoring modpyphp database...
-set "PGPASSWORD=daredevil"
 "%PG_EXE%\createdb.exe" -U postgres modpyphp >nul 2>nul
 "%PG_EXE%\psql.exe" -U postgres -d modpyphp -f "%SETUP_DIR%Database\modpyphp_dump.sql" >nul 2>nul
 
@@ -147,7 +150,7 @@ if not exist ".env" (
     echo DB_PORT=5432 >> .env
     echo DB_NAME=modpyphp >> .env
     echo DB_USER=postgres >> .env
-    echo DB_PASS=daredevil >> .env
+    echo DB_PASS=%DB_PASS% >> .env
     echo DB_SSLMODE=disable >> .env
     echo [OK] Created .env configuration file.
 ) else (

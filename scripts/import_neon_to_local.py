@@ -22,19 +22,28 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DUMPS_DIR = os.path.join(BASE_DIR, "database", "dumps")
 os.makedirs(DUMPS_DIR, exist_ok=True)
 
+def _load_env_file(filepath):
+    """Load key-value pairs from an env file into os.environ if not already set."""
+    if os.path.exists(filepath):
+        with open(filepath, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    key, val = line.split("=", 1)
+                    key = key.strip()
+                    val = val.strip().strip('"').strip("'")
+                    if key not in os.environ:
+                        os.environ[key] = val
+
+_load_env_file(os.path.join(BASE_DIR, ".env"))
+_load_env_file(os.path.join(BASE_DIR, ".env.neon"))
+
 # 1. Neon Cloud Connection
 NEON_URL = os.getenv("NEON_DATABASE_URL") or os.getenv("DATABASE_URL")
 if not NEON_URL:
-    env_neon_path = os.path.join(BASE_DIR, ".env.neon")
-    if os.path.exists(env_neon_path):
-        with open(env_neon_path, "r", encoding="utf-8") as f:
-            for line in f:
-                line = line.strip()
-                if line.startswith("DATABASE_URL="):
-                    NEON_URL = line.split("=", 1)[1]
-                    break
-if not NEON_URL:
-    NEON_URL = "postgresql://neondb_owner:npg_YoD4CLZ2TQpw@ep-withered-wave-axase6mw-pooler.c-4.us-east-2.aws.neon.tech/neondb?sslmode=require"
+    print("[-] ERROR: NEON_DATABASE_URL or DATABASE_URL is not set.")
+    print("[-] Please specify your connection string in .env or .env.neon.")
+    sys.exit(1)
 
 # 2. Local PostgreSQL Configuration
 LOCAL_CONFIG = {
@@ -42,7 +51,7 @@ LOCAL_CONFIG = {
     "port": int(os.getenv("DB_PORT", 5432)),
     "dbname": os.getenv("DB_NAME", "modpyphp"),
     "user": os.getenv("DB_USER", "postgres"),
-    "password": os.getenv("DB_PASS", "daredevil")
+    "password": os.getenv("DB_PASS", "")
 }
 
 timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")

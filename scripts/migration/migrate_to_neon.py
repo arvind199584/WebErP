@@ -9,12 +9,32 @@ import io
 import sys
 
 import os
+import sys
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+def _load_env_file(filepath):
+    if os.path.exists(filepath):
+        with open(filepath, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    key, val = line.split("=", 1)
+                    key = key.strip()
+                    val = val.strip().strip('"').strip("'")
+                    if key not in os.environ:
+                        os.environ[key] = val
+
+_load_env_file(os.path.join(BASE_DIR, ".env"))
+_load_env_file(os.path.join(BASE_DIR, ".env.neon"))
 
 # ── Connection strings ──────────────────────────────────────────────────────
-LOCAL_DSN = os.getenv("LOCAL_DATABASE_URL", "host=localhost port=5432 dbname=modpyphp user=postgres password=daredevil")
-NEON_DSN  = os.getenv("NEON_DATABASE_URL") or os.getenv("DATABASE_URL") or (
-    "postgresql://neondb_owner@ep-withered-wave-axase6mw-pooler.c-4.us-east-2.aws.neon.tech/neondb?sslmode=require"
-)
+LOCAL_DSN = os.getenv("LOCAL_DATABASE_URL") or f"host={os.getenv('DB_HOST', 'localhost')} port={os.getenv('DB_PORT', '5432')} dbname={os.getenv('DB_NAME', 'modpyphp')} user={os.getenv('DB_USER', 'postgres')} password={os.getenv('DB_PASS', '')}"
+NEON_DSN  = os.getenv("NEON_DATABASE_URL") or os.getenv("DATABASE_URL")
+if not NEON_DSN:
+    print("[-] ERROR: NEON_DATABASE_URL or DATABASE_URL is not set.")
+    print("[-] Please specify your connection string in .env or .env.neon.")
+    sys.exit(1)
 
 # ── Table population order (user-specified + full dependency chain) ──────────
 TABLE_ORDER = [

@@ -3,13 +3,39 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/../core/Database.php';
 
-$neonUrl = getenv('DATABASE_URL') ?: 'postgresql://neondb_owner:npg_YoD4CLZ2TQpw@ep-withered-wave-axase6mw-pooler.c-4.us-east-2.aws.neon.tech/neondb?sslmode=require';
+function loadEnvFile(string $filepath): void {
+    if (file_exists($filepath)) {
+        $lines = file($filepath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+        foreach ($lines as $line) {
+            $line = trim($line);
+            if ($line === '' || str_starts_with($line, '#') || !str_contains($line, '=')) continue;
+            list($key, $val) = explode('=', $line, 2);
+            $key = trim($key);
+            $val = trim($val, " \t\n\r\0\x0B\"'");
+            if (getenv($key) === false) {
+                putenv("{$key}={$val}");
+                $_ENV[$key] = $val;
+            }
+        }
+    }
+}
+
+loadEnvFile(__DIR__ . '/../.env');
+loadEnvFile(__DIR__ . '/../.env.neon');
+
+$neonUrl = getenv('NEON_DATABASE_URL') ?: getenv('DATABASE_URL');
+if (!$neonUrl) {
+    echo "[-] ERROR: NEON_DATABASE_URL or DATABASE_URL is not set.\n";
+    echo "[-] Please configure it in your .env or .env.neon file.\n";
+    exit(1);
+}
+
 $parsed = parse_url($neonUrl);
 $host = $parsed['host'] ?? 'localhost';
 $port = $parsed['port'] ?? 5432;
 $dbname = isset($parsed['path']) ? ltrim($parsed['path'], '/') : 'neondb';
-$user = $parsed['user'] ?? 'neondb_owner';
-$pass = $parsed['pass'] ?? 'npg_YoD4CLZ2TQpw';
+$user = isset($parsed['user']) ? urldecode($parsed['user']) : 'neondb_owner';
+$pass = isset($parsed['pass']) ? urldecode($parsed['pass']) : '';
 
 $dsn = "pgsql:host={$host};port={$port};dbname={$dbname};sslmode=require";
 

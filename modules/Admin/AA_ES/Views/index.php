@@ -102,6 +102,9 @@ $isSuperuser = \App\Modules\Superadmin\Users\Services\UserService::isSuperuser()
                         </td>
                         <td class="actions">
                             <a href="?action=view&id=<?= $row['id'] ?>" class="btn btn-view">View</a>
+                            <?php if ($row['type'] === 'DSR'): ?>
+                                <a href="?action=showJustification&id=<?= $row['id'] ?>" class="btn" style="background-color: #0d6efd; color: white;">Justify</a>
+                            <?php endif; ?>
 
                             <?php if ($row['status'] === 'Draft'): ?>
                                 <a href="?action=showEditForm&id=<?= $row['id'] ?>" class="btn btn-edit">Edit</a>

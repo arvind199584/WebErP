@@ -9,7 +9,7 @@ def get_db_connection():
         port=int(os.getenv("DB_PORT", "5432")),
         database=os.getenv("DB_NAME", "modpyphp"),
         user=os.getenv("DB_USER", "postgres"),
-        password=os.getenv("DB_PASS", "daredevil")
+        password=os.getenv("DB_PASS", "")
     )
 
 def extract_schema():

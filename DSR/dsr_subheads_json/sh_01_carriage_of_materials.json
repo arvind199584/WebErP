@@ -1,0 +1,1110 @@
+{
+  "sub_head_no": 1,
+  "sub_head_name": "Carriage of Materials",
+  "volume": 1,
+  "page_range": [
+    88,
+    99
+  ],
+  "total_items": 89,
+  "analyzed_items_with_breakup": 5,
+  "items": [
+    {
+      "item_code": "1.1",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Mechanical Transport including loading, unloading and stacking: Code Name Unit Rate Cost of Diesel (-1235) @  Rs. Per Litre Cost of 6 Beldars (0114) @ Rs. Per Day Hire charges of truck (0084) @ Rs. Per Day Total Cost including entry tax= 6+7+8 in Rs. Cost per Trip = col. 9/ col. 3 in Rs. Increase of cost per km over previous km in Rs. Average cost per additional km af- ter first 5,10 and 20 km in  Rs. 1 2 3 4 5 6 7 8 9 10 11 12 1 km 16.00 km 7.11 20.22 4.04 362.06 4416.00 2250.00 7028.06 988.48 2 km 17.00 km 6.48 31.92 6.38 571.78 4416.00 2250.00 7237.78 1116.94 3 km 17.50 km 5.96 41.76 8.35 748.33 4416.00 2250.00 7414.33 1244.02 4 km 18.00 km 5.54 50.32 10.06 901.58 4416.00 2250.00 7567.58 1365.99 5 km 18.50 km 5.19 57.90 11.58 1037.80 4416.00 2250.00 7703.80 1484.35 6 km 19.00 km 4.90 64.80 12.96 1161.48 4416.00 2250.00 7827.48 1597.44 113.09 105.24 7 km 19.50 km 4.66 71.24 14.25 1277.09 4416.00 2250.00 7943.09 1704.53 107.09 8 km 20.00 km 4.44 77.04 15.41 1381.04 4416.00 2250.00 8047.04 1812.40 107.87 9 km 20.50 km 4.26 82.68 16.54 1482.31 4416.00 2250.00 8148.31 1912.75 100.35 10 km 21.00 km 4.10 88.00 17.60 1577.31 4416.00 2250.00 8243.31 2010.56 97.81 11 km 21.50 km 3.95 92.90 18.58 1665.14 4416.00 2250.00 8331.14 2109.15 98.59 85.67 12 km 22.00 km 3.83 97.92 19.58 1754.76 4416.00 2250.00 8420.76 2198.63 89.48 13 km 22.50 km 3.71 102.46 20.49 1836.31 4416.00 2250.00 8502.31 2291.73 93.10 14 km 23.00 km 3.61 107.08 21.42 1919.66 4416.00 2250.00 8585.66 2378.30 86.57 15 km 23.50 km 3.51 111.30 22.26 1994.94 4416.00 2250.00 8660.94 2467.50 89.20 16 km 24.00 km 3.43 115.76 23.15 2074.70 4416.00 2250.00 8740.70 2548.31 80.81 Lead in km (L) Average speed (S) N=8/(2L/S)+1 (2NL+6) Nos of Trips Nos of km Done in one Day Litres of Diesel consumed @ 5 km. per Litre Cost of Diesel (-1235) @  Rs. Per Litre Cost of 6 Beldars (0114) @ Rs. Per Day Hire charges of truck (0084) @ Rs. Per Day Total Cost including entry tax= 6+7+8 in Rs. Cost per Trip = col. 9/ col. 3 in Rs. Increase of cost per km over previous km in Rs. Average cost per additional km af- ter first 5,10 and 20 km in  Rs. 17 km 24.50 km 3.35 119.90 23.98 2149.09 4416.00 2250.00 8815.09 2631.37 83.06 18 km 25.00 km 3.28 124.08 24.82 2224.37 4416.00 2250.00 8890.37 2710.48 79.11 19 km 25.50 km 3.21 127.98 25.60 2294.27 4416.00 2250.00 8960.27 2791.36 80.88 20 km 26.00 km 3.15 132.00 26.40 2365.97 4416.00 2250.00 9031.97 2867.29 75.93 21 km 26.50 km 3.09 135.78 27.16 2434.08 4416.00 2250.00 9100.08 2945.01 77.72 68.93 22 km 27.00 km 3.04 139.76 27.95 2504.88 4416.00 2250.00 9170.88 3016.74 71.73 23 km 27.50 km 2.99 143.54 28.71 2572.99 4416.00 2250.00 9238.99 3089.96 73.22 24 km 28.00 km 2.95 147.60 29.52 2645.58 4416.00 2250.00 9311.58 3156.47 66.51 25 km 28.50 km 2.90 151.00 30.20 2706.52 4416.00 2250.00 9372.52 3231.90 75.43 26 km 29.00 km 2.86 154.72 30.94 2772.84 4416.00 2250.00 9438.84 3300.29 68.39 27 km 29.50 km 2.83 158.82 31.76 2846.33 4416.00 2250.00 9512.33 3361.25 60.96 28 km 30.00 km 2.79 162.24 32.45 2908.17 4416.00 2250.00 9574.17 3431.60 70.35 29 km 30.50 km 2.76 166.08 33.22 2977.18 4416.00 2250.00 9643.18 3493.91 62.31 30 km 31.00 km 2.73 169.80 33.96 3043.50 4416.00 2250.00 9709.50 3556.59 62.68 Notes 1 Number of trips in working day of 8 hours N=8/{(2L/S)+1)}. Where L=Lead in Km., S=Speed in Km. per hour, 1 hour is allowed for load- ing /unloading. 2 Consumption of diesel taken at 5.00 Km. per litre. 3 In column 4 of ‘km done’ an allowance of 6.0 km has been made for movement of truck from parking place to duty & back. 4 (i) Cost of diesel @ (1235) per litre (ii) Hire charges of truck (without POL) @ (0084) for a day of 8 hours. 83SUB HEAD : 1 CARRIAGE OF MATERIALS",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 90
+    },
+    {
+      "item_code": "1.0",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "CARRIAGE OF MATERIALS",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 92
+    },
+    {
+      "item_code": "1.1",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING Code Material ca- pacity per Trip Net Qty Pay- able after de- duc- tion for loose- ness Unit of rates GST on work con- tract @ 18% (multi- plying factor 0.2127) C.P. & Over heads @ 15% Cess @ 1% Cost per Trip per unit i/c GST on Work Con- tract @ 18%, 15% CP & OH and 1% Cess Be- yond 5 km upto 10 km per km Be- yond 10 km upto 20 km per km Be- yond 20 km per addl. km Remarks 1km 2km 3km 4km 5km As per Col. 12 of Data Sheet Cost per Trip as per Col. 10 of Data sheet no. A B C Net Qty Payable Net Qty Payable 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 92
+    },
+    {
+      "item_code": "1.1.1",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - Lime, moorum, building rubbish 8 8 cum 0.2127 0.15 0.01 174.04 196.66 219.03 240.51 261.35 18.53 15.08 12.14",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 92
+    },
+    {
+      "item_code": "1.1.2",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - Earth 8 6.4 cum 0.2127 0.15 0.01 217.55 245.82 273.79 300.64 326.68 23.16 18.85 15.17",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 92
+    },
+    {
+      "item_code": "1.1.3",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - Manure or sludge 8 7.36 cum 0.2127 0.15 0.01 189.17 213.76 238.08 261.42 284.07 20.14 16.40 13.19",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 92
+    },
+    {
+      "item_code": "1.1.4",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - Excavated rock 8 4 cum 0.2127 0.15 0.01 348.08 393.32 438.07 481.02 522.70 37.06 30.17 24.27",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 92
+    },
+    {
+      "item_code": "1.1.5",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - Sand, stone aggregate below 40 mm nominal size 8 8 cum 0.2127 0.15 0.01 174.04 196.66 219.03 240.51 261.35 18.53 15.08 12.14",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 92
+    },
+    {
+      "item_code": "1.1.6",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - Stone aggregate 40 mm nominal size and above 8 7.36 cum 0.2127 0.15 0.01 189.17 213.76 238.08 261.42 284.07 20.14 16.40 13.19",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 92
+    },
+    {
+      "item_code": "1.1.7",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - Soling stone 8 6.8 cum 0.2127 0.15 0.01 204.75 231.36 257.69 282.95 307.47 21.80 17.75 14.28",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 92
+    },
+    {
+      "item_code": "1.1.8",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - Bricks 3000 3000 1000 Nos 0.2127 0.15 0.01 464.11 524.42 584.09 641.36 696.93 49.41 40.22 32.36",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 92
+    },
+    {
+      "item_code": "1.1.9",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - Brick Tiles 5000 5000 1000 Nos 0.2127 0.15 0.01 278.46 314.65 350.45 384.81 418.16 29.65 24.13 19.42",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 92
+    },
+    {
+      "item_code": "1.1.10",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - Cement, stone blocks, G.I.. C.I., A.C., & C.C.pipes below 100 mm dia  and other heavy materials 9 9 tonne 0.2127 0.15 0.01 154.70 174.81 194.70 213.79 232.31 16.47 13.41 10.79",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 92
+    },
+    {
+      "item_code": "1.1.11",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - Steel 9 9 tonne 0.2127 0.15 0.01 154.70 174.81 194.70 213.79 232.31 16.47 13.41 10.79 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 92
+    },
+    {
+      "item_code": "1.1.12",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - Timber 7 7 cum 0.2127 0.15 0.01 198.90 224.75 250.32 274.87 298.68 21.18 17.24 13.87",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 93
+    },
+    {
+      "item_code": "1.1.13",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - Tar Bitumen 8 8 tonne 0.2127 0.15 0.01 174.04 196.66 219.03 240.51 261.35 18.53 15.08 12.14",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 93
+    },
+    {
+      "item_code": "1.1.14",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - Solvent, diesel 80 80 qtl 0.2127 0.15 0.01 17.40 19.67 21.90 24.05 26.13 1.85 1.51 1.21",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 93
+    },
+    {
+      "item_code": "1.1.15",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - Steam coal 7 7 tonne 0.2127 0.15 0.01 198.90 224.75 250.32 274.87 298.68 21.18 17.24 13.87",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 93
+    },
+    {
+      "item_code": "1.1.16",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - S.W. pipe",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 93
+    },
+    {
+      "item_code": "1.1.16.1",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - 100 mm dia 600 600 100 m 0.2127 0.15 0.01 232.05 262.21 292.04 320.68 348.46 24.71 20.11 16.18",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 93
+    },
+    {
+      "item_code": "1.1.16.2",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - 150 mm dia 300 300 100 m 0.2127 0.15 0.01 464.11 524.42 584.09 641.36 696.93 49.41 40.22 32.36",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 93
+    },
+    {
+      "item_code": "1.1.16.3",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - 200 mm dia 180 180 100 m 0.2127 0.15 0.01 773.51 874.04 973.48 1068.93 1161.55 82.35 67.04 53.94",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 93
+    },
+    {
+      "item_code": "1.1.16.5",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - 250 mm dia 105 105 100 m 0.2127 0.15 0.01 1326.02 1498.35 1668.82 1832.44 1991.22 141.18 114.92 92.47",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 93
+    },
+    {
+      "item_code": "1.1.16.6",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - 300 mm dia 84 84 100 m 0.2127 0.15 0.01 1657.53 1872.94 2086.03 2290.56 2489.03 176.47 143.66 115.59",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 93
+    },
+    {
+      "item_code": "1.1.16.7",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - 350 mm dia 60 60 100 m 0.2127 0.15 0.01 2320.54 2622.11 2920.44 3206.78 3484.64 247.06 201.12 161.82",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 93
+    },
+    {
+      "item_code": "1.1.16.8",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - 400 mm dia 42 42 100 m 0.2127 0.15 0.01 3315.06 3745.87 4172.06 4581.11 4978.05 352.94 287.31 231.17",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 93
+    },
+    {
+      "item_code": "1.1.16.9",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - 450 mm dia 33 33 100 m 0.2127 0.15 0.01 4219.17 4767.48 5309.90 5830.50 6335.71 449.20 365.67 294.22",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 93
+    },
+    {
+      "item_code": "1.1.16.10",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - 500 mm dia 30 30 100 m 0.2127 0.15 0.01 4641.08 5244.22 5840.89 6413.56 6969.28 494.12 402.24 323.64",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 93
+    },
+    {
+      "item_code": "1.1.16.11",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - 600 mm dia 24 24 100 m 0.2127 0.15 0.01 5801.35 6555.28 7301.11 8016.94 8711.59 617.65 502.79 404.55",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 93
+    },
+    {
+      "item_code": "1.1.17",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - R.C.C. pipe, A.C. pipes, steel cylinder, R.C. pipes, S.C.I. pipes, C.I. pipes and unreinforced cement pipes",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 93
+    },
+    {
+      "item_code": "1.1.17.1",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - 100 mm dia 366 366 100 m 0.2127 0.15 0.01 380.42 429.85 478.76 525.70 571.25 40.50 32.97 26.53",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 93
+    },
+    {
+      "item_code": "1.1.17.2",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - 125 mm dia 274 274 100 m 0.2127 0.15 0.01 508.15 574.19 639.51 702.21 763.06 54.10 44.04 35.43",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 93
+    },
+    {
+      "item_code": "1.1.17.3",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - 150 mm dia 219.6 219.6 100 m 0.2127 0.15 0.01 634.03 716.42 797.94 876.17 952.09 67.50 54.95 44.21",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 93
+    },
+    {
+      "item_code": "1.1.17.4",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - 200 mm dia 135 135 100 m 0.2127 0.15 0.01 1031.35 1165.38 1297.97 1425.23 1548.73 109.80 89.39 71.92",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 93
+    },
+    {
+      "item_code": "1.1.17.5",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - 250 mm dia 95 95 100 m 0.2127 0.15 0.01 1465.60 1656.07 1844.49 2025.33 2200.82 156.04 127.02 102.20",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 93
+    },
+    {
+      "item_code": "1.1.17.6",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - 300 mm dia 76.86 76.86 100 m 0.2127 0.15 0.01 1811.51 2046.93 2279.81 2503.34 2720.25 192.86 157.00 126.32",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 93
+    },
+    {
+      "item_code": "1.1.17.7",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - 350 mm dia 54.9 54.9 100 m 0.2127 0.15 0.01 2536.11 2865.70 3191.74 3504.68 3808.35 270.01 219.80 176.85",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 93
+    },
+    {
+      "item_code": "1.1.17.8",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - 400 mm dia 40.26 40.26 100 m 0.2127 0.15 0.01 3458.33 3907.77 4352.37 4779.10 5193.20 368.20 299.73 241.16",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 93
+    },
+    {
+      "item_code": "1.1.17.9",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - 450 mm & 500 mm dia 32.94 32.94 100 m 0.2127 0.15 0.01 4226.85 4776.16 5319.57 5841.13 6347.25 450.02 366.33 294.75",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 93
+    },
+    {
+      "item_code": "1.1.17.10",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - 600, 700, 750 & 800 mm  dia 21.96 21.96 100 m 0.2127 0.15 0.01 6340.28 7164.24 7979.35 8761.69 9520.87 675.03 549.50 442.13",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 93
+    },
+    {
+      "item_code": "1.1.17.11",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - 900 mm dia 14.64 14.64 100 m 0.2127 0.15 0.01 9510.41 10746.36 11969.03 13142.53 14281.30 1012.54 824.25 663.19",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 93
+    },
+    {
+      "item_code": "1.1.17.12",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - 1000, 1100 & 1200 mm dia 10.98 10.98 100 m 0.2127 0.15 0.01 12680.55 14328.48 15958.70 17523.38 19041.74 1350.05 1099.00 884.26",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 93
+    },
+    {
+      "item_code": "1.1.18",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "BY MECHANICAL TRANSPORT INCLUDING LOADING,UNLOADING AND STACKING - Disposal of moorum/building rubbish/ malba/ similar unserviceable, dismantled or waste material by mechanical transport including loading, transporting, unloading to approved municipal dumping ground for lead upto 10 km for all lifts, complete as per directions of Engineer-in-charge. Note - item to be applicable in urban areas having directions for restricted hours for movement/ plying of load carrying motor vehicle of 3.5 cum or more.",
+      "cost_basis": {
+        "quantity": 3.0,
+        "unit": "tirps of"
+      },
+      "breakup": [
+        {
+          "resource_code": "0084",
+          "category": "LABOUR",
+          "description": "Hire charges of Diesel Truck - 9 tonne excluding diesel & mobile oil",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 2250.0,
+          "amount": 2250.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 6.0,
+          "rate": 736.0,
+          "amount": 4416.0
+        },
+        {
+          "resource_code": "1235",
+          "category": "LABOUR",
+          "description": "Diesel oil",
+          "unit": "litre",
+          "quantity": 19.56,
+          "rate": 89.62,
+          "amount": 1752.97
+        }
+      ],
+      "calculations": {
+        "total_x": 8418.97,
+        "total_y": 10209.68,
+        "total_z": 11741.13
+      },
+      "say_rate": 494.1,
+      "page": 94
+    },
+    {
+      "item_code": "1.0",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "CARRIAGE OF MATERIALS",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 95
+    },
+    {
+      "item_code": "1.2",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM Data Sheet for Analysis of Rates Code Name Unit Rate Rs. Lead in Metre Cost per 8 hour day cost for addl. 50m or part thereof beyond1st 50 m upto 0.50 km. (X) (Y) 50 metre 5645.12 1229.12 Code No. per Trip Net Qty Payable after deduction for loose- ness Unit of Rate ` GST on work contract @ 18% (multiply- ing factor 0.2127) C.P. & Over heads @ 15% Cess @ 1% Cost per 8 hours day Cost per unit cost for 1st 50 metre cost for addl. 50m or part thereof beyond1st 50 m upto 0.50 km. 1 2 3 4 5 6 7 8 9 10 11",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 95
+    },
+    {
+      "item_code": "1.2.1",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - Lime, moorum, building rubbish 35 35 cum 0.2127 0.15 0.01 7951.44 227.18 49.47",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 95
+    },
+    {
+      "item_code": "1.2.2",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - Earth 35 28 cum 0.2127 0.15 0.01 7951.44 283.98 61.83",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 95
+    },
+    {
+      "item_code": "1.2.3",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - Manure or sludge 35 32.2 cum 0.2127 0.15 0.01 7951.44 246.94 53.77",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 95
+    },
+    {
+      "item_code": "1.2.4",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - Excavated rock 35 17.5 cum 0.2127 0.15 0.01 7951.44 454.37 98.93",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 95
+    },
+    {
+      "item_code": "1.2.5",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - Sand, stone aggre- gate below 40 mm nominal size 28 28 cum 0.2127 0.15 0.01 7951.44 283.98 61.83",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 95
+    },
+    {
+      "item_code": "1.2.6",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - Stone aggregate 40 mm nominal size and above 28 25.9 cum 0.2127 0.15 0.01 7951.44 307.01 66.84",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 95
+    },
+    {
+      "item_code": "1.2.7",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - Soling stone 28 23.8 cum 0.2127 0.15 0.01 7951.44 334.09 72.74",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 95
+    },
+    {
+      "item_code": "1.2.8",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - Bricks 15000 Nos 15000 Nos Nos 0.2127 0.15 0.01 7951.44 530.10 115.42",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 95
+    },
+    {
+      "item_code": "1.2.9",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - Brick Tiles 24000 Nos 24000 Nos Nos 0.2127 0.15 0.01 7951.44 331.31 72.14",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 95
+    },
+    {
+      "item_code": "1.2.10",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - Steam Coal 30 tonne 30 tonne tonne 0.2127 0.15 0.01 7951.44 265.05 57.71",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 95
+    },
+    {
+      "item_code": "1.0",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "CARRIAGE OF MATERIALS",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 96
+    },
+    {
+      "item_code": "1.2",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM Data Sheet for Analysis of Rates Code Name Unit Rate Rs. Cost per 8 hours day ` Cost per unit ` Cost for 1st 50 metre Cost for addl. 50 m or part thereof be- yond 1st 50 m upto 0.50km 1 2 3 4 5 6 7 8 9 10 11",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 96
+    },
+    {
+      "item_code": "1.2.11",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - Stone blocks,G.I.,C.I. Stainless Steel pipes below 100 mm dia and other heavy material 46 t 46 tonne 0.2127 0.15 0.01 9537.58 207.34 30.42",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 96
+    },
+    {
+      "item_code": "1.2.12",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - Cement 57.99 t 57.99 tonne 0.2127 0.15 0.01 9537.58 164.47 24.13",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 96
+    },
+    {
+      "item_code": "1.2.13",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - Steel 27 t 27 tonne 0.2127 0.15 0.01 9537.58 353.24 51.83",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 96
+    },
+    {
+      "item_code": "1.2.14",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - Timber 42 cum 42 cum 0.2127 0.15 0.01 9537.58 227.09 33.32",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 96
+    },
+    {
+      "item_code": "1.2.15",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - Tar, bitumen etc. 46 t 46 tonne 0.2127 0.15 0.01 9537.58 207.34 30.42",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 96
+    },
+    {
+      "item_code": "1.2.16",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - S.W. pipe",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 96
+    },
+    {
+      "item_code": "1.2.16.1",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - 100 mm dia 2298 m 2298 100 m 0.2127 0.15 0.01 9537.58 415.04 60.90",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 96
+    },
+    {
+      "item_code": "1.2.16.2",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - 150 mm dia 1398 m 1398 100 m 0.2127 0.15 0.01 9537.58 682.23 100.11",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 96
+    },
+    {
+      "item_code": "1.2.16.3",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - 200 mm dia 999 m 999 100 m 0.2127 0.15 0.01 9537.58 954.71 140.09",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 96
+    },
+    {
+      "item_code": "1.2.16.5",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - 250 mm dia 600 m 600 100 m 0.2127 0.15 0.01 9537.58 1589.60 233.26",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 96
+    },
+    {
+      "item_code": "1.2.16.6",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - 300 mm dia 420 m 420 100 m 0.2127 0.15 0.01 9537.58 2270.85 333.22",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 96
+    },
+    {
+      "item_code": "1.2.16.7",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - 350 mm dia 300 m 300 100 m 0.2127 0.15 0.01 9537.58 3179.19 466.51",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 96
+    },
+    {
+      "item_code": "1.2.16.8",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - 400 mm dia 240 m 240 100 m 0.2127 0.15 0.01 9537.58 3973.99 583.14",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 96
+    },
+    {
+      "item_code": "1.2.16.9",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - 450 mm dia 198 m 198 100 m 0.2127 0.15 0.01 9537.58 4816.96 706.84",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 96
+    },
+    {
+      "item_code": "1.2.16.10",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - 500 mm dia 162 m 162 100 m 0.2127 0.15 0.01 9537.58 5887.40 863.91",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 96
+    },
+    {
+      "item_code": "1.2.16.11",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - 600 mm dia 132 m 132 100 m 0.2127 0.15 0.01 9537.58 7225.44 1060.25",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 96
+    },
+    {
+      "item_code": "1.2.17",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - R.C.C. pipes, Steel cyl- inder, R.C. pipes, C.I. pipes and unreinforced cement pipes 1 2 3 4 5 6 7 8 9 10 11",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 96
+    },
+    {
+      "item_code": "1.2.17.1",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - 100 mm dia 1702 m 1702 100 m 0.2127 0.15 0.01 9537.58 560.37 82.23",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 97
+    },
+    {
+      "item_code": "1.2.17.2",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - 125 mm dia 1391 m 1391 100 m 0.2127 0.15 0.01 9537.58 685.66 100.61",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 97
+    },
+    {
+      "item_code": "1.2.17.3",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - 150 mm dia 1208 m 1208 100 m 0.2127 0.15 0.01 9537.58 789.53 115.86",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 97
+    },
+    {
+      "item_code": "1.2.17.4",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - 200 mm dia 805 m 805 100 m 0.2127 0.15 0.01 9537.58 1184.79 173.86",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 97
+    },
+    {
+      "item_code": "1.2.17.5",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - 250 mm dia 458 m 458 100 m 0.2127 0.15 0.01 9537.58 2082.44 305.58",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 97
+    },
+    {
+      "item_code": "1.2.17.6",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - 300 mm dia 366 m 366 100 m 0.2127 0.15 0.01 9537.58 2605.90 382.39",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 97
+    },
+    {
+      "item_code": "1.2.17.7",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - 350 mm dia 256 m 256 100 m 0.2127 0.15 0.01 9537.58 3725.62 546.69",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 97
+    },
+    {
+      "item_code": "1.2.17.8",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - 400 mm dia 220 m 220 100 m 0.2127 0.15 0.01 9537.58 4335.26 636.15",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 97
+    },
+    {
+      "item_code": "1.2.17.9",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - 450 mm & 500 mm dia 165 m 165 100 m 0.2127 0.15 0.01 9537.58 5780.35 848.20",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 97
+    },
+    {
+      "item_code": "1.2.17.10",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "By Manual Labour including loading, unloading and stacking for lead less than 0.50 KM - 600, 700, 750 & 800 mm dia 150 m 150 100 m 0.2127 0.15 0.01 9537.58 6358.39 933.02",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 97
+    },
+    {
+      "item_code": "1.3",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "Loading in or unloading cement from the railway wagons at siding and carrying the same from or into godowns adjacent to the siding, including stacking the same properly in rows upto any height as per direction of Engineer-in-charge, sweeping the wagons and screening the swept cement and filling in bags complete.",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar day 3.75 736.00 2760.00 Sundries Add for sweeping the wagon, screening the swept cement and filling the same in bags",
+          "unit": "L.S.",
+          "quantity": 2.62,
+          "rate": 2.27,
+          "amount": 5.95
+        }
+      ],
+      "calculations": {
+        "total_x": 2765.95,
+        "total_y": 3354.27,
+        "total_z": 3857.41
+      },
+      "say_rate": 169.4,
+      "page": 97
+    },
+    {
+      "item_code": "1.4",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "Loading in or unloading from the railway wagons as per direction of Engineer-in-charge :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 97
+    },
+    {
+      "item_code": "1.4.1",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "Loading in or unloading from the railway wagons as per direction of Engineer-in-charge : - Steel",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 10.66,
+          "rate": 736.0,
+          "amount": 7845.76
+        }
+      ],
+      "calculations": {
+        "total_x": 7845.76,
+        "total_y": 9514.55,
+        "total_z": 10941.73
+      },
+      "say_rate": 251.15,
+      "page": 97
+    },
+    {
+      "item_code": "1.4.2",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "Loading in or unloading from the railway wagons as per direction of Engineer-in-charge : - G.I., C.I., R.C.C. or C.C. pipes upto 500 mm dia and similar heavy materials tonnes",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 736.0,
+          "amount": 1472.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 3.1,
+          "rate": 2.27,
+          "amount": 7.04
+        }
+      ],
+      "calculations": {
+        "total_x": 1479.04,
+        "total_y": 1793.63,
+        "total_z": 2062.67
+      },
+      "say_rate": 148.8,
+      "page": 98
+    },
+    {
+      "item_code": "1.4.3",
+      "sub_head_no": 1,
+      "sub_head_name": "Carriage of Materials",
+      "description": "Loading in or unloading from the railway wagons as per direction of Engineer-in-charge : - Heavy materials where each piece or bundle, crate or case weighs more than one tonne and R.C.C., C.I. and   concrete pipes above 500 mm dia.",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 3.25,
+          "rate": 736.0,
+          "amount": 2392.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Extra for fixing crane including labour involved",
+          "unit": "L.S.",
+          "quantity": 91.15,
+          "rate": 2.27,
+          "amount": 206.91
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 7.4,
+          "rate": 2.27,
+          "amount": 16.8
+        }
+      ],
+      "calculations": {
+        "total_x": 2615.71,
+        "total_y": 3172.07,
+        "total_z": 3647.88
+      },
+      "say_rate": 263.15,
+      "page": 98
+    }
+  ]
+}

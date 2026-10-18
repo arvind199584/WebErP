@@ -14,6 +14,10 @@ class PermissionManager {
             'approve' => ['superuser', 'manager'],
             'revert' => ['superuser'],
             'delete' => ['superuser'],
+            'searchDsr' => ['superuser', 'manager', 'staff'],
+            'getDarAnalysis' => ['superuser', 'manager', 'staff'],
+            'showJustification' => ['superuser', 'manager', 'staff'],
+            'saveJustification' => ['superuser', 'manager', 'staff'],
         ];
     }
 }

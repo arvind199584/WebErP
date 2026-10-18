@@ -1,0 +1,2259 @@
+{
+  "sub_head_no": 23,
+  "sub_head_name": "Rain Water Harvesting & Tubewells",
+  "volume": 2,
+  "page_range": [
+    924,
+    944
+  ],
+  "total_items": 52,
+  "analyzed_items_with_breakup": 39,
+  "items": [
+    {
+      "item_code": "23.1",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Boring/drilling bore well of required dia for casing/ strainer pipe, by suitable method prescribed in IS: 2800 (part I), including collecting samples from different strata, preparing and submitting strata chart/ bore log, including hire & running charges of all equipments, tools, plants & machineries required for the job, all complete as per direction of Engineer-in-charge, upto 90 metre depth below ground level.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 926
+    },
+    {
+      "item_code": "23.1.1",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Boring/drilling bore well of required dia for casing/ strainer pipe, by suitable method prescribed - All types of soil",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 926
+    },
+    {
+      "item_code": "23.1.1.1",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Boring/drilling bore well of required dia for casing/ strainer pipe, by suitable method prescribed - 300 mm dia",
+      "cost_basis": {
+        "quantity": 35.0,
+        "unit": "metre"
+      },
+      "breakup": [
+        {
+          "resource_code": "0020",
+          "category": "MATERIAL",
+          "description": "Hydraulic Excavator (3D) with driver and fuel.",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 7850.0,
+          "amount": 7850.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 4.0,
+          "rate": 736.0,
+          "amount": 2944.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 897.0,
+          "amount": 897.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 736.0,
+          "amount": 1472.0
+        },
+        {
+          "resource_code": "0113",
+          "category": "LABOUR",
+          "description": "Chowkidar",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        }
+      ],
+      "calculations": {
+        "total_w": 17411.6,
+        "total_x": 17585.72,
+        "total_y": 21326.2,
+        "total_z": 24525.13
+      },
+      "say_rate": 707.75,
+      "page": 926
+    },
+    {
+      "item_code": "23.1.1.2",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Boring/drilling bore well of required dia for casing/ strainer pipe, by suitable method prescribed - 350 mm dia",
+      "cost_basis": {
+        "quantity": 32.0,
+        "unit": "metre"
+      },
+      "breakup": [
+        {
+          "resource_code": "0020",
+          "category": "MATERIAL",
+          "description": "Hydraulic Excavator (3D) with driver and fuel.",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 7850.0,
+          "amount": 7850.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 4.0,
+          "rate": 736.0,
+          "amount": 2944.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 897.0,
+          "amount": 897.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 736.0,
+          "amount": 1472.0
+        },
+        {
+          "resource_code": "0113",
+          "category": "LABOUR",
+          "description": "Chowkidar",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        }
+      ],
+      "calculations": {
+        "total_w": 17411.6,
+        "total_x": 17585.72,
+        "total_y": 21326.2,
+        "total_z": 24525.13
+      },
+      "say_rate": 774.05,
+      "page": 926
+    },
+    {
+      "item_code": "23.1.1.3",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Boring/drilling bore well of required dia for casing/ strainer pipe, by suitable method prescribed - 400 mm dia",
+      "cost_basis": {
+        "quantity": 25.0,
+        "unit": "metre"
+      },
+      "breakup": [
+        {
+          "resource_code": "0020",
+          "category": "MATERIAL",
+          "description": "Hydraulic Excavator (3D) with driver and fuel.",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 7850.0,
+          "amount": 7850.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 4.0,
+          "rate": 736.0,
+          "amount": 2944.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 897.0,
+          "amount": 897.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 736.0,
+          "amount": 1472.0
+        },
+        {
+          "resource_code": "0113",
+          "category": "LABOUR",
+          "description": "Chowkidar",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        }
+      ],
+      "calculations": {
+        "total_w": 17411.6,
+        "total_x": 17585.72,
+        "total_y": 21326.2,
+        "total_z": 24525.13
+      },
+      "say_rate": 990.8,
+      "page": 927
+    },
+    {
+      "item_code": "23.1.2",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Boring/drilling bore well of required dia for casing/ strainer pipe, by suitable method prescribed - Rocky strata including Boulders",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 927
+    },
+    {
+      "item_code": "23.1.2.1",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Boring/drilling bore well of required dia for casing/ strainer pipe, by suitable method prescribed - 300 mm dia",
+      "cost_basis": {
+        "quantity": 16.0,
+        "unit": "metre"
+      },
+      "breakup": [
+        {
+          "resource_code": "0020",
+          "category": "MATERIAL",
+          "description": "Hydraulic Excavator (3D) with driver and fuel.",
+          "unit": "day",
+          "quantity": 0.9,
+          "rate": 7850.0,
+          "amount": 7065.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 4.0,
+          "rate": 736.0,
+          "amount": 2944.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 897.0,
+          "amount": 897.0
+        },
+        {
+          "resource_code": "0134",
+          "category": "LABOUR",
+          "description": "Rock Hole Driller",
+          "unit": "day",
+          "quantity": 0.75,
+          "rate": 736.0,
+          "amount": 552.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 3.0,
+          "rate": 736.0,
+          "amount": 2208.0
+        },
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 0.75,
+          "rate": 816.0,
+          "amount": 612.0
+        },
+        {
+          "resource_code": "0113",
+          "category": "LABOUR",
+          "description": "Chowkidar",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        }
+      ],
+      "calculations": {
+        "total_w": 19064.32,
+        "total_x": 19254.96,
+        "total_y": 23350.49,
+        "total_z": 26853.06
+      },
+      "say_rate": 1695.1,
+      "page": 927
+    },
+    {
+      "item_code": "23.1.2.2",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Boring/drilling bore well of required dia for casing/ strainer pipe, by suitable method prescribed - 350 mm dia",
+      "cost_basis": {
+        "quantity": 16.0,
+        "unit": "metre"
+      },
+      "breakup": [
+        {
+          "resource_code": "0020",
+          "category": "MATERIAL",
+          "description": "Hydraulic Excavator (3D) with driver and fuel.",
+          "unit": "day",
+          "quantity": 0.9,
+          "rate": 7850.0,
+          "amount": 7065.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 4.0,
+          "rate": 736.0,
+          "amount": 2944.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 897.0,
+          "amount": 897.0
+        },
+        {
+          "resource_code": "0134",
+          "category": "LABOUR",
+          "description": "Rock Hole Driller",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 4.0,
+          "rate": 736.0,
+          "amount": 2944.0
+        },
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 0.75,
+          "rate": 816.0,
+          "amount": 612.0
+        },
+        {
+          "resource_code": "0113",
+          "category": "LABOUR",
+          "description": "Chowkidar",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        }
+      ],
+      "calculations": {
+        "total_w": 20163.56,
+        "total_x": 20365.2,
+        "total_y": 24696.88,
+        "total_z": 28401.41
+      },
+      "say_rate": 1792.85,
+      "page": 928
+    },
+    {
+      "item_code": "23.1.2.3",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Boring/drilling bore well of required dia for casing/ strainer pipe, by suitable method prescribed - 400 mm dia",
+      "cost_basis": {
+        "quantity": 16.0,
+        "unit": "metre"
+      },
+      "breakup": [
+        {
+          "resource_code": "0020",
+          "category": "MATERIAL",
+          "description": "Hydraulic Excavator (3D) with driver and fuel.",
+          "unit": "day",
+          "quantity": 0.9,
+          "rate": 7850.0,
+          "amount": 7065.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 4.0,
+          "rate": 736.0,
+          "amount": 2944.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 897.0,
+          "amount": 897.0
+        },
+        {
+          "resource_code": "0134",
+          "category": "LABOUR",
+          "description": "Rock Hole Driller",
+          "unit": "day",
+          "quantity": 1.2,
+          "rate": 736.0,
+          "amount": 883.2
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 8.0,
+          "rate": 736.0,
+          "amount": 5888.0
+        },
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 0.75,
+          "rate": 816.0,
+          "amount": 612.0
+        },
+        {
+          "resource_code": "0113",
+          "category": "LABOUR",
+          "description": "Chowkidar",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        }
+      ],
+      "calculations": {
+        "total_w": 23971.72,
+        "total_x": 24211.44,
+        "total_y": 29361.21,
+        "total_z": 33765.39
+      },
+      "say_rate": 2131.45,
+      "page": 929
+    },
+    {
+      "item_code": "23.2",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Boring/drilling bore well of required dia for casing/ strainer pipe, by suitable method prescribed in IS: 2800 (part I), including collecting samples from different strata, preparing and submitting strata chart/ bore log, including hire & running charges of all equipments, tools, plants & machineries required for the job, all complete as per direction of Engineer -in-charge, beyond 90 metre & upto 150 metre depth below ground level.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 929
+    },
+    {
+      "item_code": "23.2.1",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Boring/drilling bore well of required dia for casing/ strainer pipe, by suitable method prescribed - All types of soil",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 929
+    },
+    {
+      "item_code": "23.2.1.1",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Boring/drilling bore well of required dia for casing/ strainer pipe, by suitable method prescribed - 300 mm dia",
+      "cost_basis": {
+        "quantity": 30.0,
+        "unit": "metre"
+      },
+      "breakup": [
+        {
+          "resource_code": "0020",
+          "category": "MATERIAL",
+          "description": "Hydraulic Excavator (3D) with driver and fuel.",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 7850.0,
+          "amount": 7850.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 4.0,
+          "rate": 736.0,
+          "amount": 2944.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 897.0,
+          "amount": 897.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 736.0,
+          "amount": 1472.0
+        },
+        {
+          "resource_code": "0113",
+          "category": "LABOUR",
+          "description": "Chowkidar",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        }
+      ],
+      "calculations": {
+        "total_w": 17411.6,
+        "total_x": 17585.72,
+        "total_y": 21326.2,
+        "total_z": 24525.13
+      },
+      "say_rate": 825.7,
+      "page": 929
+    },
+    {
+      "item_code": "23.2.1.2",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Boring/drilling bore well of required dia for casing/ strainer pipe, by suitable method prescribed - 350 mm dia",
+      "cost_basis": {
+        "quantity": 27.0,
+        "unit": "metre"
+      },
+      "breakup": [
+        {
+          "resource_code": "0020",
+          "category": "MATERIAL",
+          "description": "Hydraulic Excavator (3D) with driver and fuel.",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 7850.0,
+          "amount": 7850.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 4.0,
+          "rate": 736.0,
+          "amount": 2944.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 897.0,
+          "amount": 897.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 736.0,
+          "amount": 1472.0
+        },
+        {
+          "resource_code": "0113",
+          "category": "LABOUR",
+          "description": "Chowkidar",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        }
+      ],
+      "calculations": {
+        "total_w": 17411.6,
+        "total_x": 17585.72,
+        "total_y": 21326.2,
+        "total_z": 24525.13
+      },
+      "say_rate": 917.4,
+      "page": 930
+    },
+    {
+      "item_code": "23.2.1.3",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Boring/drilling bore well of required dia for casing/ strainer pipe, by suitable method prescribed - 400 mm dia",
+      "cost_basis": {
+        "quantity": 20.0,
+        "unit": "metre"
+      },
+      "breakup": [
+        {
+          "resource_code": "0020",
+          "category": "MATERIAL",
+          "description": "Hydraulic Excavator (3D) with driver and fuel.",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 7850.0,
+          "amount": 7850.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 4.0,
+          "rate": 736.0,
+          "amount": 2944.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 897.0,
+          "amount": 897.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 736.0,
+          "amount": 1472.0
+        },
+        {
+          "resource_code": "0113",
+          "category": "LABOUR",
+          "description": "Chowkidar",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        }
+      ],
+      "calculations": {
+        "total_w": 17411.6,
+        "total_x": 17585.72,
+        "total_y": 21326.2,
+        "total_z": 24525.13
+      },
+      "say_rate": 1238.5,
+      "page": 931
+    },
+    {
+      "item_code": "23.2.2",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Boring/drilling bore well of required dia for casing/ strainer pipe, by suitable method prescribed - Rocky strata including Boulders",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 931
+    },
+    {
+      "item_code": "23.2.2.1",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Boring/drilling bore well of required dia for casing/ strainer pipe, by suitable method prescribed - 300 mm dia",
+      "cost_basis": {
+        "quantity": 16.0,
+        "unit": "metre"
+      },
+      "breakup": [
+        {
+          "resource_code": "0020",
+          "category": "MATERIAL",
+          "description": "Hydraulic Excavator (3D) with driver and fuel.",
+          "unit": "day",
+          "quantity": 0.9,
+          "rate": 7850.0,
+          "amount": 7065.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 4.0,
+          "rate": 736.0,
+          "amount": 2944.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 897.0,
+          "amount": 897.0
+        },
+        {
+          "resource_code": "0134",
+          "category": "LABOUR",
+          "description": "Rock Hole Driller",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 5.0,
+          "rate": 736.0,
+          "amount": 3680.0
+        },
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 0.7,
+          "rate": 816.0,
+          "amount": 571.2
+        },
+        {
+          "resource_code": "0113",
+          "category": "LABOUR",
+          "description": "Chowkidar",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        }
+      ],
+      "calculations": {
+        "total_w": 21038.0,
+        "total_x": 21248.38,
+        "total_y": 25767.91,
+        "total_z": 29633.1
+      },
+      "say_rate": 1870.6,
+      "page": 931
+    },
+    {
+      "item_code": "23.2.2.2",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Boring/drilling bore well of required dia for casing/ strainer pipe, by suitable method prescribed - 350 mm dia",
+      "cost_basis": {
+        "quantity": 16.0,
+        "unit": "metre"
+      },
+      "breakup": [
+        {
+          "resource_code": "0020",
+          "category": "MATERIAL",
+          "description": "Hydraulic Excavator (3D) with driver and fuel.",
+          "unit": "day",
+          "quantity": 0.9,
+          "rate": 7850.0,
+          "amount": 7065.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 4.0,
+          "rate": 736.0,
+          "amount": 2944.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 897.0,
+          "amount": 897.0
+        },
+        {
+          "resource_code": "0134",
+          "category": "LABOUR",
+          "description": "Rock Hole Driller",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 6.0,
+          "rate": 736.0,
+          "amount": 4416.0
+        },
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 0.75,
+          "rate": 816.0,
+          "amount": 612.0
+        },
+        {
+          "resource_code": "0113",
+          "category": "LABOUR",
+          "description": "Chowkidar",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        }
+      ],
+      "calculations": {
+        "total_w": 21994.04,
+        "total_x": 22213.98,
+        "total_y": 26938.89,
+        "total_z": 30979.72
+      },
+      "say_rate": 1955.6,
+      "page": 932
+    },
+    {
+      "item_code": "23.2.2.3",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Boring/drilling bore well of required dia for casing/ strainer pipe, by suitable method prescribed - 400 mm dia",
+      "cost_basis": {
+        "quantity": 14.0,
+        "unit": "metre"
+      },
+      "breakup": [
+        {
+          "resource_code": "0020",
+          "category": "MATERIAL",
+          "description": "Hydraulic Excavator (3D) with driver and fuel.",
+          "unit": "day",
+          "quantity": 0.95,
+          "rate": 7850.0,
+          "amount": 7457.5
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 4.0,
+          "rate": 736.0,
+          "amount": 2944.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 897.0,
+          "amount": 897.0
+        },
+        {
+          "resource_code": "0134",
+          "category": "LABOUR",
+          "description": "Rock Hole Driller",
+          "unit": "day",
+          "quantity": 1.2,
+          "rate": 736.0,
+          "amount": 883.2
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 8.0,
+          "rate": 736.0,
+          "amount": 5888.0
+        },
+        {
+          "resource_code": "0103",
+          "category": "LABOUR",
+          "description": "Blacksmith 2nd class",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 816.0,
+          "amount": 816.0
+        },
+        {
+          "resource_code": "0113",
+          "category": "LABOUR",
+          "description": "Chowkidar",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        }
+      ],
+      "calculations": {
+        "total_w": 24568.22,
+        "total_x": 24813.9,
+        "total_y": 30091.82,
+        "total_z": 34605.59
+      },
+      "say_rate": 2496.55,
+      "page": 932
+    },
+    {
+      "item_code": "23.3",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Supplying, assembling, lowering and fixing in vertical position in bore well, unplasticized PVC medium well casing (CM) pipe of required dia, conforming to IS: 12818, including required hire and labour charges, fittings & accessories etc. all complete, for all depths, as per direction of Engineer -in-charge.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 933
+    },
+    {
+      "item_code": "23.3.1",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Supplying, assembling, lowering and fixing in vertical position in bore well, unplasticized PVC - 100 mm nominal size dia",
+      "cost_basis": {
+        "quantity": 100.0,
+        "unit": "metres"
+      },
+      "breakup": [
+        {
+          "resource_code": "7758",
+          "category": "MATERIAL",
+          "description": "uPVC blind pipe 100 mm dia as per IS: 12818",
+          "unit": "metre",
+          "quantity": 100.0,
+          "rate": 465.0,
+          "amount": 46500.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "MATERIAL",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 10.07,
+          "rate": 2.27,
+          "amount": 22.86
+        }
+      ],
+      "calculations": {
+        "total_w": 47258.86,
+        "total_x": 47731.45,
+        "total_y": 57883.93,
+        "total_z": 66566.52
+      },
+      "say_rate": 672.3,
+      "page": 933
+    },
+    {
+      "item_code": "23.3.2",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Supplying, assembling, lowering and fixing in vertical position in bore well, unplasticized PVC - 150 mm nominal size dia",
+      "cost_basis": {
+        "quantity": 100.0,
+        "unit": "metres"
+      },
+      "breakup": [
+        {
+          "resource_code": "7745",
+          "category": "MATERIAL",
+          "description": "uPVC blind pipe 150 mm dia as per IS: 12818",
+          "unit": "metre",
+          "quantity": 100.0,
+          "rate": 550.0,
+          "amount": 55000.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "MATERIAL",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries (Adhesive etc.)",
+          "unit": "L.S.",
+          "quantity": 10.07,
+          "rate": 2.27,
+          "amount": 22.86
+        }
+      ],
+      "calculations": {
+        "total_w": 55758.86,
+        "total_x": 56316.45,
+        "total_y": 68294.96,
+        "total_z": 78539.2
+      },
+      "say_rate": 793.25,
+      "page": 934
+    },
+    {
+      "item_code": "23.3.3",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Supplying, assembling, lowering and fixing in vertical position in bore well, unplasticized PVC - 200 mm nominal size dia",
+      "cost_basis": {
+        "quantity": 100.0,
+        "unit": "metres"
+      },
+      "breakup": [
+        {
+          "resource_code": "7746",
+          "category": "MATERIAL",
+          "description": "uPVC blind pipe 200 mm dia as per IS: 12818",
+          "unit": "metre",
+          "quantity": 100.0,
+          "rate": 775.0,
+          "amount": 77500.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "MATERIAL",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 10.07,
+          "rate": 2.27,
+          "amount": 22.86
+        }
+      ],
+      "calculations": {
+        "total_w": 78258.86,
+        "total_x": 79041.45,
+        "total_y": 95853.57,
+        "total_z": 110231.61
+      },
+      "say_rate": 1113.35,
+      "page": 934
+    },
+    {
+      "item_code": "23.4",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Supplying, assembling, lowering and fixing in vertical position in bore well unplasticized PVC medium well screen (RMS) pipes with ribs, conforming to IS: 12818, including hire & labour charges, fittings & accessories etc. all complete, for all depths, as per direction of Engineer- in-charge.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 934
+    },
+    {
+      "item_code": "23.4.1",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Supplying, assembling, lowering and fixing in vertical position in bore well unplasticized PVC - 100 mm nominal size dia",
+      "cost_basis": {
+        "quantity": 100.0,
+        "unit": "metres"
+      },
+      "breakup": [
+        {
+          "resource_code": "7759",
+          "category": "MATERIAL",
+          "description": "uPVC slotted pipe 100 mm dia as per IS: 12818",
+          "unit": "metre",
+          "quantity": 100.0,
+          "rate": 475.0,
+          "amount": 47500.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "MATERIAL",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries (Adhesive etc.)",
+          "unit": "L.S.",
+          "quantity": 10.07,
+          "rate": 2.27,
+          "amount": 22.86
+        }
+      ],
+      "calculations": {
+        "total_w": 48258.86,
+        "total_x": 48741.45,
+        "total_y": 59108.76,
+        "total_z": 67975.07
+      },
+      "say_rate": 686.55,
+      "page": 934
+    },
+    {
+      "item_code": "23.4.2",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Supplying, assembling, lowering and fixing in vertical position in bore well unplasticized PVC - 150 mm nominal size dia",
+      "cost_basis": {
+        "quantity": 100.0,
+        "unit": "metres"
+      },
+      "breakup": [
+        {
+          "resource_code": "7751",
+          "category": "MATERIAL",
+          "description": "uPVC slotted pipe 150 mm dia as per IS: 12818",
+          "unit": "metre",
+          "quantity": 100.0,
+          "rate": 560.0,
+          "amount": 56000.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "MATERIAL",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries (Adhesive etc.)",
+          "unit": "L.S.",
+          "quantity": 10.07,
+          "rate": 2.27,
+          "amount": 22.86
+        }
+      ],
+      "calculations": {
+        "total_w": 56758.86,
+        "total_x": 57326.45,
+        "total_y": 69519.79,
+        "total_z": 79947.76
+      },
+      "say_rate": 807.45,
+      "page": 935
+    },
+    {
+      "item_code": "23.4.3",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Supplying, assembling, lowering and fixing in vertical position in bore well unplasticized PVC - 200 mm nominal size dia",
+      "cost_basis": {
+        "quantity": 100.0,
+        "unit": "metres"
+      },
+      "breakup": [
+        {
+          "resource_code": "7752",
+          "category": "MATERIAL",
+          "description": "uPVC slotted pipe 200 mm dia as per IS: 12818",
+          "unit": "metre",
+          "quantity": 100.0,
+          "rate": 875.0,
+          "amount": 87500.0
+        },
+        {
+          "resource_code": "0114",
+          "category": "MATERIAL",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "0115",
+          "category": "MATERIAL",
+          "description": "Coolie",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 736.0,
+          "amount": 368.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries (Adhesive etc.)",
+          "unit": "L.S.",
+          "quantity": 13.42,
+          "rate": 2.27,
+          "amount": 30.46
+        }
+      ],
+      "calculations": {
+        "total_w": 88266.46,
+        "total_x": 89149.12,
+        "total_y": 108111.14,
+        "total_z": 124327.81
+      },
+      "say_rate": 1255.7,
+      "page": 935
+    },
+    {
+      "item_code": "23.5",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Supplying, filling, spreading & leveling stone boulders of size range 5 cm to 20 cm, in recharge pit, in the required thickness, for all leads & lifts, all complete as per direction of Engineer-in- charge.",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.25,
+          "rate": 736.0,
+          "amount": 184.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 1.0,
+          "rate": 2.27,
+          "amount": 2.27
+        }
+      ],
+      "calculations": {
+        "total_w": 1061.27,
+        "total_x": 1071.88,
+        "total_y": 1299.87,
+        "total_z": 1494.85
+      },
+      "say_rate": 1509.8,
+      "page": 936
+    },
+    {
+      "item_code": "23.6",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Supplying, filling, spreading & leveling gravels of size range 5 mm to 10 mm, in the recharge pit, over the existing layer of boulders, in required thickness, for all leads & lifts, all complete as per direction of Engineer-in-charge.",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.25,
+          "rate": 736.0,
+          "amount": 184.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 1.0,
+          "rate": 2.27,
+          "amount": 2.27
+        }
+      ],
+      "calculations": {
+        "total_w": 1081.27,
+        "total_x": 1092.08,
+        "total_y": 1324.37,
+        "total_z": 1523.03
+      },
+      "say_rate": 1538.25,
+      "page": 936
+    },
+    {
+      "item_code": "23.7",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Supplying, filling, spreading & leveling coarse sand of size range 1.5 mm to 2 mm in recharge pit, in required thickness over gravel layer, for all leads & lifts, all complete as per direction of Engineer -in-charge.",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.25,
+          "rate": 736.0,
+          "amount": 184.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 1.0,
+          "rate": 2.27,
+          "amount": 2.27
+        }
+      ],
+      "calculations": {
+        "total_w": 1081.27,
+        "total_x": 1092.08,
+        "total_y": 1324.37,
+        "total_z": 1523.03
+      },
+      "say_rate": 1538.25,
+      "page": 936
+    },
+    {
+      "item_code": "23.8",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Gravel packing in tubewell construction in accordance with IS: 4097, including providing gravel fine/ medium/ coarse, in required grading & sizes as per actual requirement, all complete as per direction of Engineer-in-charge.",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "cum."
+      },
+      "breakup": [
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 0.3,
+          "rate": 736.0,
+          "amount": 220.8
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 1.0,
+          "rate": 2.27,
+          "amount": 2.27
+        }
+      ],
+      "calculations": {
+        "total_w": 1423.07,
+        "total_x": 1437.3,
+        "total_y": 1743.01,
+        "total_z": 2004.46
+      },
+      "say_rate": 2024.5,
+      "page": 937
+    },
+    {
+      "item_code": "23.9",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Providing and fixing factory made precast RCC perforated drain covers, having concrete of strength not less than M-25, of size 1000 x 450x50 mm, reinforced with 8 mm dia four nos longitudinal & 9 nos cross sectional T.M.T. hoop bars, including providing 50 mm dia perforations @ 100 to 125 mm c/c, including providing edge binding with M.S. flats of size 50 mm x 1.6 mm complete, all as per direction of Engineer-in-charge.",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "No. RCC drain cover"
+      },
+      "breakup": [
+        {
+          "resource_code": "7762",
+          "category": "MATERIAL",
+          "description": "Precast R.C.C. perforated slab",
+          "unit": "each",
+          "quantity": 1.0,
+          "rate": 950.0,
+          "amount": 950.0
+        },
+        {
+          "resource_code": "9988",
+          "category": "LABOUR",
+          "description": "Carriage and fixing charges",
+          "unit": "L.S.",
+          "quantity": 15.0,
+          "rate": 2.27,
+          "amount": 34.05
+        }
+      ],
+      "calculations": {
+        "total_w": 984.05,
+        "total_x": 993.89,
+        "total_y": 1205.29,
+        "total_z": 1386.08
+      },
+      "say_rate": 1399.95,
+      "page": 937
+    },
+    {
+      "item_code": "23.10",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Supplying, assembling, lowering and fixing in vertical position in bore well, ERW (Electric Resistance Welded) FE 410 mild steel screwed and socketed/plain ended casing pipes of required dia, conforming to IS: 4270, of reputed & approved make, including painted with outside surface with two coats of anticorrosive paint of approved brand and manufacture, including required hire & labour charges, fittings & accessories, all complete, for all depths, as per direction of Engineer-in-charge.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 938
+    },
+    {
+      "item_code": "23.10.1",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Supplying, assembling, lowering and fixing in vertical position in bore well, ERW (Electric - 100 mm nominal size dia having minimum wall thickness 5.00 mm",
+      "cost_basis": {
+        "quantity": 30.0,
+        "unit": "metre"
+      },
+      "breakup": [
+        {
+          "resource_code": "7757",
+          "category": "MATERIAL",
+          "description": "M.S. pipe 100 mm dia casing pipe",
+          "unit": "metre",
+          "quantity": 30.0,
+          "rate": 850.0,
+          "amount": 25500.0
+        },
+        {
+          "resource_code": "7764",
+          "category": "MATERIAL",
+          "description": "M.S. socket 100 mm dia each 5.00 140.00 700.00 including loading and unloading Painting with anticorrosive Paint 3.14 x.0110x30.00=10.36 sqm. 13.65.1 Rate as per Item No.13.65.1 of SH: Finishing",
+          "unit": "sqm",
+          "quantity": 10.36,
+          "rate": 140.25,
+          "amount": 1452.99
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.35,
+          "rate": 736.0,
+          "amount": 993.6
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 897.0,
+          "amount": 448.5
+        }
+      ],
+      "calculations": {
+        "total_w": 29095.09,
+        "total_x": 29371.51,
+        "total_y": 35309.78,
+        "total_z": 40388.3
+      },
+      "say_rate": 1359.25,
+      "page": 938
+    },
+    {
+      "item_code": "23.10.2",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Supplying, assembling, lowering and fixing in vertical position in bore well, ERW (Electric - 150 mm nominal size dia having minimum wall thickness 5.00 mm",
+      "cost_basis": {
+        "quantity": 30.0,
+        "unit": "metre"
+      },
+      "breakup": [
+        {
+          "resource_code": "7743",
+          "category": "MATERIAL",
+          "description": "M.S. pipe 150 mm dia casing pipe",
+          "unit": "metre",
+          "quantity": 30.0,
+          "rate": 1250.0,
+          "amount": 37500.0
+        },
+        {
+          "resource_code": "7765",
+          "category": "MATERIAL",
+          "description": "M.S. socket 150 mm dia each 5.00 225.00 1125.00 including loading and unloading Painting with Anticorrosive Paint 3.14 x0.160x30.00=15.07 sqm. 13.65.1 Rate as per Item No.13.65.1 of SH:Finishing",
+          "unit": "sqm",
+          "quantity": 15.07,
+          "rate": 140.25,
+          "amount": 2113.57
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.4,
+          "rate": 736.0,
+          "amount": 1030.4
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 897.0,
+          "amount": 448.5
+        }
+      ],
+      "calculations": {
+        "total_w": 42217.47,
+        "total_x": 42618.51,
+        "total_y": 51233.91,
+        "total_z": 58601.96
+      },
+      "say_rate": 1972.25,
+      "page": 938
+    },
+    {
+      "item_code": "23.10.3",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Supplying, assembling, lowering and fixing in vertical position in bore well, ERW (Electric - 200 mm nominal size dia having minimum wall thickness 5.40 mm",
+      "cost_basis": {
+        "quantity": 30.0,
+        "unit": "metre"
+      },
+      "breakup": [
+        {
+          "resource_code": "7744",
+          "category": "MATERIAL",
+          "description": "M.S. pipe 200 mm dia casing pipe",
+          "unit": "metre",
+          "quantity": 30.0,
+          "rate": 1550.0,
+          "amount": 46500.0
+        },
+        {
+          "resource_code": "7766",
+          "category": "MATERIAL",
+          "description": "M.S. socket 200 mm dia each 5.00 300.00 1500.00 including loading and unloading Painting with anticorrosive Paint 3.14 x0.210x30.00=20.25 sqm. 13.65.1 Rate as per Item No.13.65.1 of SH:Finishing",
+          "unit": "sqm",
+          "quantity": 20.25,
+          "rate": 140.25,
+          "amount": 2840.06
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.45,
+          "rate": 736.0,
+          "amount": 1067.2
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 897.0,
+          "amount": 448.5
+        }
+      ],
+      "calculations": {
+        "total_w": 52355.76,
+        "total_x": 52850.92,
+        "total_y": 63488.23,
+        "total_z": 72585.46
+      },
+      "say_rate": 2442.75,
+      "page": 939
+    },
+    {
+      "item_code": "23.11",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Supplying, assembling, lowering and fixing in vertical position in bore well, ERW (Electric Resistance Welded) FE 410 plain slotted (having slot of size 1.6/3.2 mm) mild steel threaded and socketed/ plain bevel ended pipe (type A) of required dia, conforming to IS: 8110, of reputed and approved make, having wall thickness not less than 5.40 mm, including painted with outside surface with two coats of anticorrosive bitumestic paint of approved brand and manufacture, including hire & labour charges, fittings & accessories, all complete, for all depths, as per direction of Engineer -in-charge.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 939
+    },
+    {
+      "item_code": "23.11.1",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Supplying, assembling, lowering and fixing in vertical position in bore well, ERW (Electric - 100 mm nominal size dia",
+      "cost_basis": {
+        "quantity": 30.0,
+        "unit": "metre"
+      },
+      "breakup": [
+        {
+          "resource_code": "7757",
+          "category": "MATERIAL",
+          "description": "M.S. pipe 100 mm dia casing pipe",
+          "unit": "metre",
+          "quantity": 30.0,
+          "rate": 850.0,
+          "amount": 25500.0
+        },
+        {
+          "resource_code": "7764",
+          "category": "MATERIAL",
+          "description": "M.S. socket 100 mm dia",
+          "unit": "each",
+          "quantity": 5.0,
+          "rate": 140.0,
+          "amount": 700.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries L.S. 906.04 2.27 2056.71 13.65.1 Rate as per Item No.13.65.1 of SH:Finishing",
+          "unit": "sqm",
+          "quantity": 10.36,
+          "rate": 140.25,
+          "amount": 1452.99
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.35,
+          "rate": 736.0,
+          "amount": 993.6
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 897.0,
+          "amount": 448.5
+        }
+      ],
+      "calculations": {
+        "total_w": 31151.8,
+        "total_x": 31448.79,
+        "total_y": 37828.9,
+        "total_z": 43285.29
+      },
+      "say_rate": 1456.8,
+      "page": 939
+    },
+    {
+      "item_code": "23.11.2",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Supplying, assembling, lowering and fixing in vertical position in bore well, ERW (Electric - 150 mm nominal size dia",
+      "cost_basis": {
+        "quantity": 30.0,
+        "unit": "metre"
+      },
+      "breakup": [
+        {
+          "resource_code": "7743",
+          "category": "MATERIAL",
+          "description": "M.S. pipe 150 mm dia casing pipe",
+          "unit": "metre",
+          "quantity": 30.0,
+          "rate": 1250.0,
+          "amount": 37500.0
+        },
+        {
+          "resource_code": "7765",
+          "category": "MATERIAL",
+          "description": "M.S. socket 150 mm dia",
+          "unit": "each",
+          "quantity": 5.0,
+          "rate": 225.0,
+          "amount": 1125.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Extra for making slots L.S. 1208.05 2.27 2742.27 including loading and unloading Painting with anticorrosive Paint 3.14 x.11x30.00=10.36 sqm including loading and unloading Painting with anticorrosive Paint 3.14 x.160x30.00=15.07 sqm. 13.65.1 Rate as per Item No.13.65.1 of SH:Finishing",
+          "unit": "sqm",
+          "quantity": 15.07,
+          "rate": 140.25,
+          "amount": 2113.57
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.4,
+          "rate": 736.0,
+          "amount": 1030.4
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 897.0,
+          "amount": 448.5
+        }
+      ],
+      "calculations": {
+        "total_w": 44959.74,
+        "total_x": 45388.2,
+        "total_y": 54592.71,
+        "total_z": 62464.58
+      },
+      "say_rate": 2102.25,
+      "page": 940
+    },
+    {
+      "item_code": "23.11.3",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Supplying, assembling, lowering and fixing in vertical position in bore well, ERW (Electric - 200 mm nominal size dia",
+      "cost_basis": {
+        "quantity": 30.0,
+        "unit": "metre"
+      },
+      "breakup": [
+        {
+          "resource_code": "7744",
+          "category": "MATERIAL",
+          "description": "M.S. pipe 200 mm dia casing pipe",
+          "unit": "metre",
+          "quantity": 30.0,
+          "rate": 1550.0,
+          "amount": 46500.0
+        },
+        {
+          "resource_code": "7766",
+          "category": "MATERIAL",
+          "description": "M.S. socket 200 mm dia",
+          "unit": "each",
+          "quantity": 5.0,
+          "rate": 300.0,
+          "amount": 1500.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Extra for making slots L.S. 1208.05 2.27 2742.27 including loading and unloading Painting with anticorrosive Paint 3.14 x 0.210x30.00=20.25 sqm. 13.65.1 Rate as per Item No.13.65.1 of SH:Finishing",
+          "unit": "sqm",
+          "quantity": 20.25,
+          "rate": 140.25,
+          "amount": 2840.06
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.4,
+          "rate": 736.0,
+          "amount": 1030.4
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 897.0,
+          "amount": 448.5
+        }
+      ],
+      "calculations": {
+        "total_w": 55061.23,
+        "total_x": 55583.44,
+        "total_y": 66801.96,
+        "total_z": 76396.25
+      },
+      "say_rate": 2571.05,
+      "page": 940
+    },
+    {
+      "item_code": "23.12",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Development of tube well in accordance with IS : 2800 (part I) and IS: 11189, to establish maximum rate of useable water yield without sand content (beyond permissible limit), with required capacity air compressor, running the compressor for required time till well is fully developed, measuring yield of well by “V” notch method or any other approved method, measuring static level & draw down etc. by step draw down method, collecting water samples & getting tested in approved laboratory, including disinfection of tubewell, all complete, including hire & labour charges of air compressor, tools & accessories etc., all as per requirement and direction of Engineer-in-charge.",
+      "cost_basis": {
+        "quantity": 8.0,
+        "unit": "Hours"
+      },
+      "breakup": [
+        {
+          "resource_code": "0040",
+          "category": "MATERIAL",
+          "description": "Air compressor 250 cfm with two leads for pneu- matic cutters/ hammers.",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 1800.0,
+          "amount": 1800.0
+        },
+        {
+          "resource_code": "1235",
+          "category": "MATERIAL",
+          "description": "Diesel oil",
+          "unit": "litre",
+          "quantity": 48.0,
+          "rate": 89.62,
+          "amount": 4301.76
+        }
+      ],
+      "calculations": {
+        "total_w": 6101.76,
+        "total_x": 6162.78,
+        "total_y": 7473.6,
+        "total_z": 8594.64
+      },
+      "say_rate": 1085.05,
+      "page": 941
+    },
+    {
+      "item_code": "23.13",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Providing and fixing suitable size threaded mild steel cap or spot welded plate to the top of bore well housing/ casing pipe, removable as per requirement, all complete for borewell of:",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 941
+    },
+    {
+      "item_code": "23.13.1",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Providing and fixing suitable size threaded mild steel cap or spot welded plate to the top of - 100 mm dia",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "No"
+      },
+      "breakup": [
+        {
+          "resource_code": "7760",
+          "category": "MATERIAL",
+          "description": "M.S. cap 100 mm dia",
+          "unit": "each",
+          "quantity": 1.0,
+          "rate": 150.0,
+          "amount": 150.0
+        }
+      ],
+      "calculations": {
+        "total_w": 157.5,
+        "total_x": 159.08,
+        "total_y": 192.92,
+        "total_z": 221.86
+      },
+      "say_rate": 224.1,
+      "page": 941
+    },
+    {
+      "item_code": "23.13.2",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Providing and fixing suitable size threaded mild steel cap or spot welded plate to the top of - 150 mm dia",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "No"
+      },
+      "breakup": [
+        {
+          "resource_code": "7747",
+          "category": "MATERIAL",
+          "description": "M.S. cap 150 mm dia",
+          "unit": "each",
+          "quantity": 1.0,
+          "rate": 165.0,
+          "amount": 165.0
+        }
+      ],
+      "calculations": {
+        "total_w": 173.25,
+        "total_x": 174.98,
+        "total_y": 212.2,
+        "total_z": 244.03
+      },
+      "say_rate": 246.45,
+      "page": 941
+    },
+    {
+      "item_code": "23.13.3",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Providing and fixing suitable size threaded mild steel cap or spot welded plate to the top of - 200 mm dia",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "No"
+      },
+      "breakup": [
+        {
+          "resource_code": "7748",
+          "category": "MATERIAL",
+          "description": "M.S. cap 200 mm dia",
+          "unit": "each",
+          "quantity": 1.0,
+          "rate": 215.0,
+          "amount": 215.0
+        }
+      ],
+      "calculations": {
+        "total_w": 225.75,
+        "total_x": 228.01,
+        "total_y": 276.51,
+        "total_z": 317.99
+      },
+      "say_rate": 321.15,
+      "page": 942
+    },
+    {
+      "item_code": "23.14",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Providing and fixing M.S. clamp of required dia to the top of casing/ housing pipe of tubewell as per IS: 2800 (part I), including necessary bolts & nuts of required size complete.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 942
+    },
+    {
+      "item_code": "23.14.1",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Providing and fixing M.S. clamp of required dia to the top of casing/ housing pipe of tubewell - 100 mm clamp",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "No"
+      },
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries, nuts and bolts etc.",
+          "unit": "L.S.",
+          "quantity": 25.0,
+          "rate": 2.27,
+          "amount": 56.75
+        }
+      ],
+      "calculations": {
+        "total_w": 1887.41,
+        "total_x": 1887.98,
+        "total_y": 1900.17,
+        "total_z": 1910.6
+      },
+      "say_rate": 1911.4,
+      "page": 942
+    },
+    {
+      "item_code": "23.14.2",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Providing and fixing M.S. clamp of required dia to the top of casing/ housing pipe of tubewell - 150 mm clamp",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "No"
+      },
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries, nuts and bolts etc.",
+          "unit": "L.S.",
+          "quantity": 30.0,
+          "rate": 2.27,
+          "amount": 68.1
+        }
+      ],
+      "calculations": {
+        "total_w": 1990.29,
+        "total_x": 1990.97,
+        "total_y": 2005.6,
+        "total_z": 2018.11
+      },
+      "say_rate": 2019.05,
+      "page": 942
+    },
+    {
+      "item_code": "23.14.3",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Providing and fixing M.S. clamp of required dia to the top of casing/ housing pipe of tubewell - 200 mm clamp",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "No"
+      },
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries, nuts and bolts etc.",
+          "unit": "L.S.",
+          "quantity": 30.0,
+          "rate": 2.27,
+          "amount": 68.1
+        }
+      ],
+      "calculations": {
+        "total_w": 2264.89,
+        "total_x": 2265.57,
+        "total_y": 2280.2,
+        "total_z": 2292.71
+      },
+      "say_rate": 2293.65,
+      "page": 943
+    },
+    {
+      "item_code": "23.15",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Providing and fixing Bail plug/ Bottom plug of required dia to the bottom of pipe assembly of tubewell as per IS:2800 (part I).",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 943
+    },
+    {
+      "item_code": "23.15.1",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Providing and fixing Bail plug/ Bottom plug of required dia to the bottom of pipe assembly of - 100 mm dia",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "No"
+      },
+      "breakup": [
+        {
+          "resource_code": "7761",
+          "category": "MATERIAL",
+          "description": "M.S. bail plug 100 mm dia",
+          "unit": "each",
+          "quantity": 1.0,
+          "rate": 175.0,
+          "amount": 175.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 5.0,
+          "rate": 2.27,
+          "amount": 11.35
+        }
+      ],
+      "calculations": {
+        "total_w": 186.35,
+        "total_x": 188.21,
+        "total_y": 228.24,
+        "total_z": 262.48
+      },
+      "say_rate": 265.1,
+      "page": 943
+    },
+    {
+      "item_code": "23.15.2",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Providing and fixing Bail plug/ Bottom plug of required dia to the bottom of pipe assembly of - 150 mm dia",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "No"
+      },
+      "breakup": [
+        {
+          "resource_code": "7749",
+          "category": "MATERIAL",
+          "description": "M.S bail plug 150 mm dia",
+          "unit": "each",
+          "quantity": 1.0,
+          "rate": 215.0,
+          "amount": 215.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 5.0,
+          "rate": 2.27,
+          "amount": 11.35
+        }
+      ],
+      "calculations": {
+        "total_w": 226.35,
+        "total_x": 228.61,
+        "total_y": 277.24,
+        "total_z": 318.83
+      },
+      "say_rate": 322.0,
+      "page": 944
+    },
+    {
+      "item_code": "23.15.3",
+      "sub_head_no": 23,
+      "sub_head_name": "Rain Water Harvesting & Tubewells",
+      "description": "Providing and fixing Bail plug/ Bottom plug of required dia to the bottom of pipe assembly of - 200 mm dia",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "No"
+      },
+      "breakup": [
+        {
+          "resource_code": "7750",
+          "category": "MATERIAL",
+          "description": "M.S bail plug 200 mm dia",
+          "unit": "each",
+          "quantity": 1.0,
+          "rate": 240.0,
+          "amount": 240.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 5.0,
+          "rate": 2.27,
+          "amount": 11.35
+        }
+      ],
+      "calculations": {
+        "total_w": 251.35,
+        "total_x": 253.86,
+        "total_y": 307.86,
+        "total_z": 354.04
+      },
+      "say_rate": 357.6,
+      "page": 944
+    }
+  ]
+}

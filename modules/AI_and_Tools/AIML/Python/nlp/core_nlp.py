@@ -94,7 +94,7 @@ MAX_LLM_RETRIES = 2
 DB_CONFIG = {
     "dbname":   os.getenv("DB_NAME", "modpyphp"),
     "user":     os.getenv("DB_USER", "postgres"),
-    "password": os.getenv("DB_PASS", "daredevil"),
+    "password": os.getenv("DB_PASS", ""),
     "host":     os.getenv("DB_HOST", "localhost"),
     "port":     os.getenv("DB_PORT", "5432"),
     "sslmode":  os.getenv("DB_SSLMODE", "disable"),

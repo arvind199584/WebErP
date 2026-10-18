@@ -97,7 +97,69 @@ $isBudgetSufficient = $availableBudget >= $calculatedAmount;
 
         <div class="review-card">
             <span class="review-label" style="display:block; margin-bottom:10px;">BOQ Summary:</span>
-            <pre class="review-value"><?= htmlspecialchars(json_encode($data['boq'], JSON_PRETTY_PRINT)) ?></pre>
+            <?php if (($data['type'] ?? '') === 'DSR' && is_array($data['boq'])): ?>
+                <table style="width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 0.9em; background: #fff;">
+                    <thead>
+                        <tr style="background: #e9ecef; border-bottom: 2px solid #ccc;">
+                            <th style="padding: 8px; border: 1px solid #ddd; width: 40px; text-align: center;">#</th>
+                            <th style="padding: 8px; border: 1px solid #ddd; width: 100px;">DSR Code</th>
+                            <th style="padding: 8px; border: 1px solid #ddd;">Description</th>
+                            <th style="padding: 8px; border: 1px solid #ddd; text-align: right; width: 80px;">Qty</th>
+                            <th style="padding: 8px; border: 1px solid #ddd; text-align: center; width: 70px;">Unit</th>
+                            <th style="padding: 8px; border: 1px solid #ddd; text-align: right; width: 100px;">Rate (₹)</th>
+                            <th style="padding: 8px; border: 1px solid #ddd; text-align: right; width: 120px;">Amount (₹)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach ($data['boq'] as $i => $item): 
+                            $code = $item['item_code'] ?? '';
+                            $isMR = !empty($item['is_market_item']) || str_starts_with($code, 'MR');
+                            $hasAnalysis = !empty($item['analysis_breakup']) || !empty($item['estimate_analysis_breakup']);
+                            $isAnalyzed = $hasAnalysis && str_contains($code, 'Analyzed');
+                            $amt = (float)($item['amount'] ?? (($item['qty'] ?? 0) * ($item['rate'] ?? 0)));
+                        ?>
+                            <tr>
+                                <td style="padding: 6px; border: 1px solid #ddd; text-align: center; color: #777;"><?= $i + 1 ?></td>
+                                <td style="padding: 6px; border: 1px solid #ddd; font-family: monospace; font-weight: bold;">
+                                    <?= htmlspecialchars($code) ?>
+                                    <div style="margin-top: 3px;">
+                                        <?php if ($isMR): ?>
+                                            <span style="background: #fff3cd; color: #664d03; padding: 2px 5px; border-radius: 3px; font-size: 0.7em; font-weight: bold;">Market Item</span>
+                                        <?php elseif ($isAnalyzed): ?>
+                                            <span style="background: #cfe2ff; color: #084298; padding: 2px 5px; border-radius: 3px; font-size: 0.7em; font-weight: bold;">Analyzed DAR</span>
+                                        <?php else: ?>
+                                            <span style="background: #e2e3e5; color: #41464b; padding: 2px 5px; border-radius: 3px; font-size: 0.7em;">DSR 2023</span>
+                                        <?php endif; ?>
+                                    </div>
+                                </td>
+                                <td style="padding: 6px; border: 1px solid #ddd;">
+                                    <?= htmlspecialchars($item['description'] ?? '') ?>
+                                    <?php if ($hasAnalysis): 
+                                        $breakup = $item['analysis_breakup'] ?? $item['estimate_analysis_breakup'];
+                                        $compCount = count($breakup['components'] ?? []);
+                                    ?>
+                                        <div style="margin-top: 4px; font-size: 0.75em; color: #0f5132;">
+                                            🔒 <em>DAR Rate Analysis Snapshot Attached (<?= $compCount ?> constituent resources hardcoded)</em>
+                                        </div>
+                                    <?php endif; ?>
+                                </td>
+                                <td style="padding: 6px; border: 1px solid #ddd; text-align: right; font-family: monospace;"><?= number_format((float)($item['qty'] ?? 0), 2) ?></td>
+                                <td style="padding: 6px; border: 1px solid #ddd; text-align: center;"><?= htmlspecialchars($item['unit'] ?? '') ?></td>
+                                <td style="padding: 6px; border: 1px solid #ddd; text-align: right; font-family: monospace;"><?= number_format((float)($item['rate'] ?? 0), 2) ?></td>
+                                <td style="padding: 6px; border: 1px solid #ddd; text-align: right; font-family: monospace; font-weight: bold;">₹<?= number_format($amt, 2) ?></td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                    <tfoot>
+                        <tr style="background: #f8f9fa; font-weight: bold;">
+                            <td colspan="6" style="padding: 8px; text-align: right; border: 1px solid #ddd;">Grand Total:</td>
+                            <td style="padding: 8px; text-align: right; border: 1px solid #ddd; color: #28a745; font-family: monospace;">₹<?= number_format($calculatedAmount, 2) ?></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            <?php else: ?>
+                <pre class="review-value"><?= htmlspecialchars(json_encode($data['boq'], JSON_PRETTY_PRINT)) ?></pre>
+            <?php endif; ?>
         </div>
 
         <div class="form-actions">

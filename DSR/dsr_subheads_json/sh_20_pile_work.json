@@ -1,0 +1,3238 @@
+{
+  "sub_head_no": 20,
+  "sub_head_name": "Pile Work",
+  "volume": 2,
+  "page_range": [
+    842,
+    870
+  ],
+  "total_items": 57,
+  "analyzed_items_with_breakup": 43,
+  "items": [
+    {
+      "item_code": "20.1",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Providing, driving with hydraulic piling rigs with power units and installing driven cast-in- situ reinforced cement concrete piles of grade M-25 of specified diameter and length below the pile cap, to carry safe working load not less than specified, excluding the cost of steel reinforcement but including the cost of shoe and the length of pile to be embedded in the pile cap etc. all complete. (Length of pile for payment shall be measured from top of shoe to the bottom of pile cap) :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 844
+    },
+    {
+      "item_code": "20.1.1",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Providing, driving with hydraulic piling rigs with power units and installing driven cast-in- - 400 mm dia piles",
+      "cost_basis": {
+        "quantity": 20.0,
+        "unit": "m length of pile"
+      },
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 175.0,
+          "rate": 2.27,
+          "amount": 397.25
+        },
+        {
+          "resource_code": "7181",
+          "category": "MATERIAL",
+          "description": "C.I. pile shoe of 80 kg per pile @ 80 kg per pile",
+          "unit": "kilogram",
+          "quantity": 80.0,
+          "rate": 52.0,
+          "amount": 4160.0
+        },
+        {
+          "resource_code": "7182",
+          "category": "MATERIAL",
+          "description": "M.S. clamps for pile shoe of 35 kg per pile",
+          "unit": "kilogram",
+          "quantity": 35.0,
+          "rate": 45.0,
+          "amount": 1575.0
+        },
+        {
+          "resource_code": "0024",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+          "unit": "day",
+          "quantity": 0.36,
+          "rate": 39500.0,
+          "amount": 14220.0
+        },
+        {
+          "resource_code": "0025",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of light crane.",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 3900.0,
+          "amount": 234.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.08,
+          "rate": 897.0,
+          "amount": 71.76
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 736.0,
+          "amount": 1472.0
+        }
+      ],
+      "calculations": {
+        "total_w": 45986.93,
+        "total_x": 46208.23,
+        "total_y": 50962.35,
+        "total_z": 55028.16
+      },
+      "say_rate": 2767.0,
+      "page": 844
+    },
+    {
+      "item_code": "20.1.2",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Providing, driving with hydraulic piling rigs with power units and installing driven cast-in- - 450 mm dia piles",
+      "cost_basis": {
+        "quantity": 20.0,
+        "unit": "m length of pile"
+      },
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 225.0,
+          "rate": 2.27,
+          "amount": 510.75
+        },
+        {
+          "resource_code": "7181",
+          "category": "MATERIAL",
+          "description": "C.I. pile shoe of 80 kg per pile @ 80 kg per pile",
+          "unit": "kilogram",
+          "quantity": 80.0,
+          "rate": 52.0,
+          "amount": 4160.0
+        },
+        {
+          "resource_code": "7182",
+          "category": "MATERIAL",
+          "description": "M.S. clamps for pile shoe of 35 kg per pile",
+          "unit": "kilogram",
+          "quantity": 35.0,
+          "rate": 45.0,
+          "amount": 1575.0
+        },
+        {
+          "resource_code": "0024",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+          "unit": "day",
+          "quantity": 0.48,
+          "rate": 39500.0,
+          "amount": 18960.0
+        },
+        {
+          "resource_code": "0025",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of light crane.",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 3900.0,
+          "amount": 234.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.08,
+          "rate": 897.0,
+          "amount": 71.76
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 736.0,
+          "amount": 1472.0
+        }
+      ],
+      "calculations": {
+        "total_w": 57208.62,
+        "total_x": 57478.46,
+        "total_y": 63275.25,
+        "total_z": 68232.77
+      },
+      "say_rate": 3430.65,
+      "page": 844
+    },
+    {
+      "item_code": "20.1.3",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Providing, driving with hydraulic piling rigs with power units and installing driven cast-in- - 500 mm dia piles",
+      "cost_basis": {
+        "quantity": 20.0,
+        "unit": "m length of pile"
+      },
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 275.0,
+          "rate": 2.27,
+          "amount": 624.25
+        },
+        {
+          "resource_code": "7181",
+          "category": "MATERIAL",
+          "description": "C.I. pile shoe of 80 kg per pile @ 80 kg per pile",
+          "unit": "kilogram",
+          "quantity": 80.0,
+          "rate": 52.0,
+          "amount": 4160.0
+        },
+        {
+          "resource_code": "7182",
+          "category": "MATERIAL",
+          "description": "M.S. clamps for pile shoe of 35 kg per pile",
+          "unit": "kilogram",
+          "quantity": 35.0,
+          "rate": 45.0,
+          "amount": 1575.0
+        },
+        {
+          "resource_code": "0024",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+          "unit": "day",
+          "quantity": 0.6,
+          "rate": 39500.0,
+          "amount": 23700.0
+        },
+        {
+          "resource_code": "0025",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of light crane.",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 3900.0,
+          "amount": 234.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.08,
+          "rate": 897.0,
+          "amount": 71.76
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 736.0,
+          "amount": 1472.0
+        }
+      ],
+      "calculations": {
+        "total_w": 69143.15,
+        "total_x": 69461.52,
+        "total_y": 76300.97,
+        "total_z": 82150.19
+      },
+      "say_rate": 4129.95,
+      "page": 845
+    },
+    {
+      "item_code": "20.1.4",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Providing, driving with hydraulic piling rigs with power units and installing driven cast-in- - 550 mm dia piles",
+      "cost_basis": {
+        "quantity": 20.0,
+        "unit": "m length of pile"
+      },
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 330.0,
+          "rate": 2.27,
+          "amount": 749.1
+        },
+        {
+          "resource_code": "7181",
+          "category": "MATERIAL",
+          "description": "C.I. pile shoe of 80 kg per pile @ 80 kg per pile",
+          "unit": "kilogram",
+          "quantity": 80.0,
+          "rate": 52.0,
+          "amount": 4160.0
+        },
+        {
+          "resource_code": "7182",
+          "category": "MATERIAL",
+          "description": "M.S. clamps for pile shoe of 35 kg per pile",
+          "unit": "kilogram",
+          "quantity": 35.0,
+          "rate": 45.0,
+          "amount": 1575.0
+        },
+        {
+          "resource_code": "0024",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+          "unit": "day",
+          "quantity": 0.6,
+          "rate": 39500.0,
+          "amount": 23700.0
+        },
+        {
+          "resource_code": "0025",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of light crane.",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 3900.0,
+          "amount": 234.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.08,
+          "rate": 897.0,
+          "amount": 71.76
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 736.0,
+          "amount": 1472.0
+        }
+      ],
+      "calculations": {
+        "total_w": 77109.42,
+        "total_x": 77429.04,
+        "total_y": 84295.31,
+        "total_z": 90167.47
+      },
+      "say_rate": 4530.9,
+      "page": 846
+    },
+    {
+      "item_code": "20.1.5",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Providing, driving with hydraulic piling rigs with power units and installing driven cast-in- - 750 mm dia piles",
+      "cost_basis": {
+        "quantity": 15.0,
+        "unit": "m length of pile"
+      },
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 460.0,
+          "rate": 2.27,
+          "amount": 1044.2
+        },
+        {
+          "resource_code": "7181",
+          "category": "MATERIAL",
+          "description": "C.I. pile shoe of 80 kg per pile @ 80 kg per pile",
+          "unit": "kilogram",
+          "quantity": 80.0,
+          "rate": 52.0,
+          "amount": 4160.0
+        },
+        {
+          "resource_code": "7182",
+          "category": "MATERIAL",
+          "description": "M.S. clamps for pile shoe of 35 kg per pile",
+          "unit": "kilogram",
+          "quantity": 35.0,
+          "rate": 45.0,
+          "amount": 1575.0
+        },
+        {
+          "resource_code": "0024",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+          "unit": "day",
+          "quantity": 0.7,
+          "rate": 39500.0,
+          "amount": 27650.0
+        },
+        {
+          "resource_code": "0025",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of light crane.",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 3900.0,
+          "amount": 234.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.14,
+          "rate": 897.0,
+          "amount": 125.58
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 3.5,
+          "rate": 736.0,
+          "amount": 2576.0
+        }
+      ],
+      "calculations": {
+        "total_w": 100286.23,
+        "total_x": 100659.88,
+        "total_y": 108686.84,
+        "total_z": 115551.65
+      },
+      "say_rate": 7738.55,
+      "page": 846
+    },
+    {
+      "item_code": "20.1.6",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Providing, driving with hydraulic piling rigs with power units and installing driven cast-in- - 1000 mm dia piles",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "m length of pile"
+      },
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 550.0,
+          "rate": 2.27,
+          "amount": 1248.5
+        },
+        {
+          "resource_code": "7181",
+          "category": "MATERIAL",
+          "description": "C.I. pile shoe of 80 kg per pile @ 80 kg per pile",
+          "unit": "kilogram",
+          "quantity": 80.0,
+          "rate": 52.0,
+          "amount": 4160.0
+        },
+        {
+          "resource_code": "7182",
+          "category": "MATERIAL",
+          "description": "M.S. clamps for pile shoe of 35 kg per pile",
+          "unit": "kilogram",
+          "quantity": 35.0,
+          "rate": 45.0,
+          "amount": 1575.0
+        },
+        {
+          "resource_code": "0024",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+          "unit": "day",
+          "quantity": 0.68,
+          "rate": 39500.0,
+          "amount": 26860.0
+        },
+        {
+          "resource_code": "0025",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of light crane.",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 3900.0,
+          "amount": 234.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.16,
+          "rate": 897.0,
+          "amount": 143.52
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 4.0,
+          "rate": 736.0,
+          "amount": 2944.0
+        }
+      ],
+      "calculations": {
+        "total_w": 111777.31,
+        "total_x": 112148.96,
+        "total_y": 120133.01,
+        "total_z": 126961.12
+      },
+      "say_rate": 12748.45,
+      "page": 847
+    },
+    {
+      "item_code": "20.1.7",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Providing, driving with hydraulic piling rigs with power units and installing driven cast-in- - 1200 mm dia piles",
+      "cost_basis": {
+        "quantity": 9.0,
+        "unit": "m length of pile"
+      },
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 710.0,
+          "rate": 2.27,
+          "amount": 1611.7
+        },
+        {
+          "resource_code": "7181",
+          "category": "MATERIAL",
+          "description": "C.I. pile shoe of 80 kg per pile @ 80 kg per pile",
+          "unit": "kilogram",
+          "quantity": 80.0,
+          "rate": 52.0,
+          "amount": 4160.0
+        },
+        {
+          "resource_code": "7182",
+          "category": "MATERIAL",
+          "description": "M.S. clamps for pile shoe of 35 kg per pile",
+          "unit": "kilogram",
+          "quantity": 35.0,
+          "rate": 45.0,
+          "amount": 1575.0
+        },
+        {
+          "resource_code": "0024",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+          "unit": "day",
+          "quantity": 0.67,
+          "rate": 39500.0,
+          "amount": 26465.0
+        },
+        {
+          "resource_code": "0025",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of light crane.",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 3900.0,
+          "amount": 234.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.18,
+          "rate": 897.0,
+          "amount": 161.46
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 4.5,
+          "rate": 736.0,
+          "amount": 3312.0
+        }
+      ],
+      "calculations": {
+        "total_w": 134182.47,
+        "total_x": 134557.66,
+        "total_y": 142617.79,
+        "total_z": 149510.96
+      },
+      "say_rate": 16671.05,
+      "page": 847
+    },
+    {
+      "item_code": "20.1.8",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Providing, driving with hydraulic piling rigs with power units and installing driven cast-in- - 1500 mm dia piles",
+      "cost_basis": {
+        "quantity": 9.0,
+        "unit": "m length of pile"
+      },
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 1115.0,
+          "rate": 2.27,
+          "amount": 2531.05
+        },
+        {
+          "resource_code": "7181",
+          "category": "MATERIAL",
+          "description": "C.I. pile shoe of 80 kg per pile @ 80 kg per pile",
+          "unit": "kilogram",
+          "quantity": 80.0,
+          "rate": 52.0,
+          "amount": 4160.0
+        },
+        {
+          "resource_code": "7182",
+          "category": "MATERIAL",
+          "description": "M.S. clamps for pile shoe of 35 kg per pile",
+          "unit": "kilogram",
+          "quantity": 35.0,
+          "rate": 45.0,
+          "amount": 1575.0
+        },
+        {
+          "resource_code": "0024",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+          "unit": "day",
+          "quantity": 0.77,
+          "rate": 39500.0,
+          "amount": 30415.0
+        },
+        {
+          "resource_code": "0025",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of light crane.",
+          "unit": "day",
+          "quantity": 0.1,
+          "rate": 3900.0,
+          "amount": 390.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.2,
+          "rate": 897.0,
+          "amount": 179.4
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 5.0,
+          "rate": 736.0,
+          "amount": 3680.0
+        }
+      ],
+      "calculations": {
+        "total_w": 194055.98,
+        "total_x": 194485.28,
+        "total_y": 203707.9,
+        "total_z": 211595.26
+      },
+      "say_rate": 23577.75,
+      "page": 848
+    },
+    {
+      "item_code": "20.2",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Boring, providing and installation bored cast-in-situ reinforced cement concrete piles of grade M-25 of specified diameter and length below the pile cap, to carry a safe working load not less than specified, excluding the cost of steel reinforcement but including the cost of boring with bentonite solution and temporary casing of appropriate length for setting out and removal of same and the length of the pile to be embedded in the pile cap etc. by percussion drilling using Direct mud circulation (DMC) or Bailer and chisel technique by tripod and mechanical Winch Machine all complete, including removal of excavated earth with all its lifts and leads (length of pile for payment shall be measured up to bottom of pile cap).",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 849
+    },
+    {
+      "item_code": "20.2.1",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Boring, providing and installation bored cast-in-situ reinforced cement concrete piles of grade - 450 mm dia piles",
+      "cost_basis": {
+        "quantity": 20.0,
+        "unit": "m length of pile"
+      },
+      "breakup": [
+        {
+          "resource_code": "7183",
+          "category": "MATERIAL",
+          "description": "Bentonite",
+          "unit": "tonne",
+          "quantity": 0.25,
+          "rate": 3050.0,
+          "amount": 762.5
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 65.0,
+          "rate": 2.27,
+          "amount": 147.55
+        },
+        {
+          "resource_code": "0015",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of Tripod and Mechanical Winch machine complete with power unit and accessories",
+          "unit": "day",
+          "quantity": 0.94,
+          "rate": 3350.0,
+          "amount": 3149.0
+        },
+        {
+          "resource_code": "0025",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of light crane.",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 3900.0,
+          "amount": 234.0
+        },
+        {
+          "resource_code": "0026",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of bentonite pump.",
+          "unit": "day",
+          "quantity": 0.38,
+          "rate": 3350.0,
+          "amount": 1273.0
+        },
+        {
+          "resource_code": "0018",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of loader",
+          "unit": "day",
+          "quantity": 0.3,
+          "rate": 6700.0,
+          "amount": 2010.0
+        },
+        {
+          "resource_code": "0017",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of tipper",
+          "unit": "day",
+          "quantity": 0.3,
+          "rate": 4200.0,
+          "amount": 1260.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.12,
+          "rate": 897.0,
+          "amount": 107.64
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.5,
+          "rate": 736.0,
+          "amount": 1840.0
+        }
+      ],
+      "calculations": {
+        "total_w": 41008.8,
+        "total_x": 41116.64,
+        "total_y": 43433.27,
+        "total_z": 45414.49
+      },
+      "say_rate": 2278.3,
+      "page": 849
+    },
+    {
+      "item_code": "20.2.2",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Boring, providing and installation bored cast-in-situ reinforced cement concrete piles of grade - 500 mm dia piles",
+      "cost_basis": {
+        "quantity": 20.0,
+        "unit": "m length of pile"
+      },
+      "breakup": [
+        {
+          "resource_code": "7183",
+          "category": "MATERIAL",
+          "description": "Bentonite",
+          "unit": "tonne",
+          "quantity": 0.28,
+          "rate": 3050.0,
+          "amount": 854.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 80.0,
+          "rate": 2.27,
+          "amount": 181.6
+        },
+        {
+          "resource_code": "0015",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of Tripod and Mechanical Winch machine complete with power unit and accessories",
+          "unit": "day",
+          "quantity": 1.2,
+          "rate": 3350.0,
+          "amount": 4020.0
+        },
+        {
+          "resource_code": "0025",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of light crane.",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 3900.0,
+          "amount": 234.0
+        },
+        {
+          "resource_code": "0026",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of bentonite pump.",
+          "unit": "day",
+          "quantity": 0.38,
+          "rate": 3350.0,
+          "amount": 1273.0
+        },
+        {
+          "resource_code": "0018",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of loader",
+          "unit": "day",
+          "quantity": 0.3,
+          "rate": 6700.0,
+          "amount": 2010.0
+        },
+        {
+          "resource_code": "0017",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of tipper",
+          "unit": "day",
+          "quantity": 0.3,
+          "rate": 4200.0,
+          "amount": 1260.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.12,
+          "rate": 897.0,
+          "amount": 107.64
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.5,
+          "rate": 736.0,
+          "amount": 1840.0
+        }
+      ],
+      "calculations": {
+        "total_w": 49086.38,
+        "total_x": 49204.18,
+        "total_y": 51734.89,
+        "total_z": 53899.2
+      },
+      "say_rate": 2703.25,
+      "page": 850
+    },
+    {
+      "item_code": "20.2.3",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Boring, providing and installation bored cast-in-situ reinforced cement concrete piles of grade - 600 mm dia piles",
+      "cost_basis": {
+        "quantity": 20.0,
+        "unit": "m length of pile"
+      },
+      "breakup": [
+        {
+          "resource_code": "7183",
+          "category": "MATERIAL",
+          "description": "Bentonite",
+          "unit": "tonne",
+          "quantity": 0.33,
+          "rate": 3050.0,
+          "amount": 1006.5
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 115.0,
+          "rate": 2.27,
+          "amount": 261.05
+        },
+        {
+          "resource_code": "0015",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of Tripod and Mechanical Winch machine complete with power unit and accessories",
+          "unit": "day",
+          "quantity": 1.5,
+          "rate": 3350.0,
+          "amount": 5025.0
+        },
+        {
+          "resource_code": "0025",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of light crane.",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 3900.0,
+          "amount": 234.0
+        },
+        {
+          "resource_code": "0026",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of bentonite pump.",
+          "unit": "day",
+          "quantity": 0.38,
+          "rate": 3350.0,
+          "amount": 1273.0
+        },
+        {
+          "resource_code": "0018",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of loader",
+          "unit": "day",
+          "quantity": 0.3,
+          "rate": 6700.0,
+          "amount": 2010.0
+        },
+        {
+          "resource_code": "0017",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of tipper",
+          "unit": "day",
+          "quantity": 0.3,
+          "rate": 4200.0,
+          "amount": 1260.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.12,
+          "rate": 897.0,
+          "amount": 107.64
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 3.0,
+          "rate": 736.0,
+          "amount": 2208.0
+        }
+      ],
+      "calculations": {
+        "total_w": 67087.03,
+        "total_x": 67220.88,
+        "total_y": 70096.38,
+        "total_z": 72555.56
+      },
+      "say_rate": 3637.2,
+      "page": 850
+    },
+    {
+      "item_code": "20.2.4",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Boring, providing and installation bored cast-in-situ reinforced cement concrete piles of grade - 750 mm dia piles",
+      "cost_basis": {
+        "quantity": 15.0,
+        "unit": "m length of pile"
+      },
+      "breakup": [
+        {
+          "resource_code": "7183",
+          "category": "MATERIAL",
+          "description": "Bentonite",
+          "unit": "tonne",
+          "quantity": 0.3,
+          "rate": 3050.0,
+          "amount": 915.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 130.0,
+          "rate": 2.27,
+          "amount": 295.1
+        },
+        {
+          "resource_code": "0015",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of Tripod and Mechanical Winch machine complete with power unit and accessories",
+          "unit": "day",
+          "quantity": 1.4,
+          "rate": 3350.0,
+          "amount": 4690.0
+        },
+        {
+          "resource_code": "0025",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of light crane.",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 3900.0,
+          "amount": 234.0
+        },
+        {
+          "resource_code": "0026",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of bentonite pump.",
+          "unit": "day",
+          "quantity": 0.75,
+          "rate": 3350.0,
+          "amount": 2512.5
+        },
+        {
+          "resource_code": "0018",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of loader",
+          "unit": "day",
+          "quantity": 0.3,
+          "rate": 6700.0,
+          "amount": 2010.0
+        },
+        {
+          "resource_code": "0017",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of tipper",
+          "unit": "day",
+          "quantity": 0.3,
+          "rate": 4200.0,
+          "amount": 1260.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.14,
+          "rate": 897.0,
+          "amount": 125.58
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 3.5,
+          "rate": 736.0,
+          "amount": 2576.0
+        }
+      ],
+      "calculations": {
+        "total_w": 77539.63,
+        "total_x": 77685.81,
+        "total_y": 80826.19,
+        "total_z": 83511.9
+      },
+      "say_rate": 5581.2,
+      "page": 851
+    },
+    {
+      "item_code": "20.2A",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Boring, providing and installation bored cast-in-situ reinforced cement concrete piles of garde M-25 of specified diameter and length below pile cap, to carry a safe working load not less than specified, excluding the cost of steel reinforcement but including the cost of boring with bentonite solution and temporary casing of appropriate length for setting out and removal of same and the length of the pile to be embedded in the pile cap etc. by Crawler mounted, telescopic boom hydraulic pilling Rig all complete, including removal of excavated earth with all its lifts and leads (length of pile for payment shall be measured up to bottom of pile cap).",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 852
+    },
+    {
+      "item_code": "20.2A.1",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Boring, providing and installation bored cast-in-situ reinforced cement concrete piles of garde - 600 mm dia piles",
+      "cost_basis": {
+        "quantity": 20.0,
+        "unit": "m length of pile"
+      },
+      "breakup": [
+        {
+          "resource_code": "7183",
+          "category": "MATERIAL",
+          "description": "Bentonite",
+          "unit": "tonne",
+          "quantity": 0.33,
+          "rate": 3050.0,
+          "amount": 1006.5
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 110.0,
+          "rate": 2.27,
+          "amount": 249.7
+        },
+        {
+          "resource_code": "0024",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+          "unit": "day",
+          "quantity": 0.75,
+          "rate": 39500.0,
+          "amount": 29625.0
+        },
+        {
+          "resource_code": "0025",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of light crane.",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 3900.0,
+          "amount": 234.0
+        },
+        {
+          "resource_code": "0026",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of bentonite pump.",
+          "unit": "day",
+          "quantity": 0.38,
+          "rate": 3350.0,
+          "amount": 1273.0
+        },
+        {
+          "resource_code": "0018",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of loader",
+          "unit": "day",
+          "quantity": 0.3,
+          "rate": 6700.0,
+          "amount": 2010.0
+        },
+        {
+          "resource_code": "0017",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of tipper",
+          "unit": "day",
+          "quantity": 0.3,
+          "rate": 4200.0,
+          "amount": 1260.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.12,
+          "rate": 897.0,
+          "amount": 107.64
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 3.0,
+          "rate": 736.0,
+          "amount": 2208.0
+        }
+      ],
+      "calculations": {
+        "total_w": 91675.68,
+        "total_x": 92055.42,
+        "total_y": 100213.23,
+        "total_z": 107189.94
+      },
+      "say_rate": 5386.25,
+      "page": 852
+    },
+    {
+      "item_code": "20.2A.2",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Boring, providing and installation bored cast-in-situ reinforced cement concrete piles of garde - 750 mm dia piles",
+      "cost_basis": {
+        "quantity": 15.0,
+        "unit": "m length of pile"
+      },
+      "breakup": [
+        {
+          "resource_code": "7183",
+          "category": "MATERIAL",
+          "description": "Bentonite",
+          "unit": "tonne",
+          "quantity": 0.3,
+          "rate": 3050.0,
+          "amount": 915.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 130.0,
+          "rate": 2.27,
+          "amount": 295.1
+        },
+        {
+          "resource_code": "0024",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+          "unit": "day",
+          "quantity": 0.7,
+          "rate": 39500.0,
+          "amount": 27650.0
+        },
+        {
+          "resource_code": "0025",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of light crane.",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 3900.0,
+          "amount": 234.0
+        },
+        {
+          "resource_code": "0026",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of bentonite pump.",
+          "unit": "day",
+          "quantity": 0.75,
+          "rate": 3350.0,
+          "amount": 2512.5
+        },
+        {
+          "resource_code": "0018",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of loader",
+          "unit": "day",
+          "quantity": 0.3,
+          "rate": 6700.0,
+          "amount": 2010.0
+        },
+        {
+          "resource_code": "0017",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of tipper",
+          "unit": "day",
+          "quantity": 0.3,
+          "rate": 4200.0,
+          "amount": 1260.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.14,
+          "rate": 897.0,
+          "amount": 125.58
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 3.5,
+          "rate": 736.0,
+          "amount": 2576.0
+        }
+      ],
+      "calculations": {
+        "total_w": 100499.63,
+        "total_x": 100875.41,
+        "total_y": 108948.22,
+        "total_z": 115852.24
+      },
+      "say_rate": 7758.75,
+      "page": 853
+    },
+    {
+      "item_code": "20.2A.3",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Boring, providing and installation bored cast-in-situ reinforced cement concrete piles of garde - 1000 mm dia piles",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "m length of pile"
+      },
+      "breakup": [
+        {
+          "resource_code": "7183",
+          "category": "MATERIAL",
+          "description": "Bentonite",
+          "unit": "tonne",
+          "quantity": 0.35,
+          "rate": 3050.0,
+          "amount": 1067.5
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 155.0,
+          "rate": 2.27,
+          "amount": 351.85
+        },
+        {
+          "resource_code": "0024",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+          "unit": "day",
+          "quantity": 0.69,
+          "rate": 39500.0,
+          "amount": 27255.0
+        },
+        {
+          "resource_code": "0025",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of light crane.",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 3900.0,
+          "amount": 234.0
+        },
+        {
+          "resource_code": "0026",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of bentonite pump.",
+          "unit": "day",
+          "quantity": 0.75,
+          "rate": 3350.0,
+          "amount": 2512.5
+        },
+        {
+          "resource_code": "0018",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of loader",
+          "unit": "day",
+          "quantity": 0.4,
+          "rate": 6700.0,
+          "amount": 2680.0
+        },
+        {
+          "resource_code": "0017",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of tipper",
+          "unit": "day",
+          "quantity": 0.4,
+          "rate": 4200.0,
+          "amount": 1680.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.16,
+          "rate": 897.0,
+          "amount": 143.52
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 4.0,
+          "rate": 736.0,
+          "amount": 2944.0
+        }
+      ],
+      "calculations": {
+        "total_w": 113480.66,
+        "total_x": 113869.34,
+        "total_y": 122219.31,
+        "total_z": 129360.36
+      },
+      "say_rate": 12990.8,
+      "page": 853
+    },
+    {
+      "item_code": "20.2A.4",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Boring, providing and installation bored cast-in-situ reinforced cement concrete piles of garde - 1200 mm dia piles",
+      "cost_basis": {
+        "quantity": 9.0,
+        "unit": "m length of pile"
+      },
+      "breakup": [
+        {
+          "resource_code": "7183",
+          "category": "MATERIAL",
+          "description": "Bentonite",
+          "unit": "tonne",
+          "quantity": 0.385,
+          "rate": 3050.0,
+          "amount": 1174.25
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 200.0,
+          "rate": 2.27,
+          "amount": 454.0
+        },
+        {
+          "resource_code": "0024",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+          "unit": "day",
+          "quantity": 0.67,
+          "rate": 39500.0,
+          "amount": 26465.0
+        },
+        {
+          "resource_code": "0025",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of light crane.",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 3900.0,
+          "amount": 234.0
+        },
+        {
+          "resource_code": "0026",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of bentonite pump.",
+          "unit": "day",
+          "quantity": 0.75,
+          "rate": 3350.0,
+          "amount": 2512.5
+        },
+        {
+          "resource_code": "0018",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of loader",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 6700.0,
+          "amount": 3350.0
+        },
+        {
+          "resource_code": "0017",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of tipper",
+          "unit": "day",
+          "quantity": 0.5,
+          "rate": 4200.0,
+          "amount": 2100.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.18,
+          "rate": 897.0,
+          "amount": 161.46
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 4.5,
+          "rate": 736.0,
+          "amount": 3312.0
+        }
+      ],
+      "calculations": {
+        "total_w": 136426.52,
+        "total_x": 136824.15,
+        "total_y": 145366.36,
+        "total_z": 152671.82
+      },
+      "say_rate": 17025.75,
+      "page": 854
+    },
+    {
+      "item_code": "20.2A.5",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Boring, providing and installation bored cast-in-situ reinforced cement concrete piles of garde - 1500 mm dia piles",
+      "cost_basis": {
+        "quantity": 9.0,
+        "unit": "m length of pile"
+      },
+      "breakup": [
+        {
+          "resource_code": "7183",
+          "category": "MATERIAL",
+          "description": "Bentonite",
+          "unit": "tonne",
+          "quantity": 0.45,
+          "rate": 3050.0,
+          "amount": 1372.5
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 315.0,
+          "rate": 2.27,
+          "amount": 715.05
+        },
+        {
+          "resource_code": "0024",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+          "unit": "day",
+          "quantity": 0.77,
+          "rate": 39500.0,
+          "amount": 30415.0
+        },
+        {
+          "resource_code": "0025",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of light crane.",
+          "unit": "day",
+          "quantity": 0.1,
+          "rate": 3900.0,
+          "amount": 390.0
+        },
+        {
+          "resource_code": "0026",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of bentonite pump.",
+          "unit": "day",
+          "quantity": 0.96,
+          "rate": 3350.0,
+          "amount": 3216.0
+        },
+        {
+          "resource_code": "0018",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of loader",
+          "unit": "day",
+          "quantity": 0.75,
+          "rate": 6700.0,
+          "amount": 5025.0
+        },
+        {
+          "resource_code": "0017",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of tipper",
+          "unit": "day",
+          "quantity": 0.75,
+          "rate": 4200.0,
+          "amount": 3150.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.25,
+          "rate": 897.0,
+          "amount": 224.25
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 5.0,
+          "rate": 736.0,
+          "amount": 3680.0
+        }
+      ],
+      "calculations": {
+        "total_w": 199313.33,
+        "total_x": 199795.21,
+        "total_y": 210147.25,
+        "total_z": 219000.51
+      },
+      "say_rate": 24408.8,
+      "page": 855
+    },
+    {
+      "item_code": "20.3",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Boring with hydraulic piling rigs with power units, providing and installing cast in situ single under reamed piles of specified diameter and length below pile cap in M-25 cement concrete, to carry a safe working load not less than specified, excluding the cost of steel reinforcement but including the cost of boring with bentonite solution and the length of the pile to be embedded in pile cap etc. all complete. (Length of pile for payment shall be measured upto to the bottom of pile cap) :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 855
+    },
+    {
+      "item_code": "20.3.1",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Boring with hydraulic piling rigs with power units, providing and installing cast in situ single - 300 mm dia piles",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "metres"
+      },
+      "breakup": [
+        {
+          "resource_code": "7183",
+          "category": "MATERIAL",
+          "description": "Bentonite",
+          "unit": "tonne",
+          "quantity": 0.08,
+          "rate": 3050.0,
+          "amount": 244.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 70.0,
+          "rate": 2.27,
+          "amount": 158.9
+        },
+        {
+          "resource_code": "0024",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+          "unit": "day",
+          "quantity": 0.36,
+          "rate": 39500.0,
+          "amount": 14220.0
+        },
+        {
+          "resource_code": "0025",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of light crane.",
+          "unit": "day",
+          "quantity": 0.03,
+          "rate": 3900.0,
+          "amount": 117.0
+        },
+        {
+          "resource_code": "0026",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of bentonite pump.",
+          "unit": "day",
+          "quantity": 0.02,
+          "rate": 3350.0,
+          "amount": 67.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.08,
+          "rate": 897.0,
+          "amount": 71.76
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 736.0,
+          "amount": 1472.0
+        }
+      ],
+      "calculations": {
+        "total_w": 23745.36,
+        "total_x": 23908.87,
+        "total_y": 27421.43,
+        "total_z": 30425.44
+      },
+      "say_rate": 3065.6,
+      "page": 855
+    },
+    {
+      "item_code": "20.3.2",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Boring with hydraulic piling rigs with power units, providing and installing cast in situ single - 400 mm dia piles",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "metres"
+      },
+      "breakup": [
+        {
+          "resource_code": "7183",
+          "category": "MATERIAL",
+          "description": "Bentonite",
+          "unit": "tonne",
+          "quantity": 0.15,
+          "rate": 3050.0,
+          "amount": 457.5
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 130.0,
+          "rate": 2.27,
+          "amount": 295.1
+        },
+        {
+          "resource_code": "0024",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+          "unit": "day",
+          "quantity": 0.36,
+          "rate": 39500.0,
+          "amount": 14220.0
+        },
+        {
+          "resource_code": "0025",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of light crane.",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 3900.0,
+          "amount": 234.0
+        },
+        {
+          "resource_code": "0026",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of bentonite pump.",
+          "unit": "day",
+          "quantity": 0.02,
+          "rate": 3350.0,
+          "amount": 67.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.08,
+          "rate": 897.0,
+          "amount": 71.76
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 736.0,
+          "amount": 1472.0
+        }
+      ],
+      "calculations": {
+        "total_w": 30865.38,
+        "total_x": 31033.55,
+        "total_y": 34646.37,
+        "total_z": 37736.12
+      },
+      "say_rate": 3797.3,
+      "page": 856
+    },
+    {
+      "item_code": "20.3.3",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Boring with hydraulic piling rigs with power units, providing and installing cast in situ single - 450 mm dia piles",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "metres"
+      },
+      "breakup": [
+        {
+          "resource_code": "7183",
+          "category": "MATERIAL",
+          "description": "Bentonite",
+          "unit": "tonne",
+          "quantity": 0.19,
+          "rate": 3050.0,
+          "amount": 579.5
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 165.0,
+          "rate": 2.27,
+          "amount": 374.55
+        },
+        {
+          "resource_code": "0024",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+          "unit": "day",
+          "quantity": 0.36,
+          "rate": 39500.0,
+          "amount": 14220.0
+        },
+        {
+          "resource_code": "0025",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of light crane.",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 3900.0,
+          "amount": 234.0
+        },
+        {
+          "resource_code": "0026",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of bentonite pump.",
+          "unit": "day",
+          "quantity": 0.02,
+          "rate": 3350.0,
+          "amount": 67.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.08,
+          "rate": 897.0,
+          "amount": 71.76
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 736.0,
+          "amount": 1472.0
+        }
+      ],
+      "calculations": {
+        "total_w": 35134.86,
+        "total_x": 35305.05,
+        "total_y": 38961.15,
+        "total_z": 42087.92
+      },
+      "say_rate": 4232.75,
+      "page": 857
+    },
+    {
+      "item_code": "20.3.4",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Boring with hydraulic piling rigs with power units, providing and installing cast in situ single - 550 mm dia piles",
+      "cost_basis": {
+        "quantity": 10.0,
+        "unit": "metres"
+      },
+      "breakup": [
+        {
+          "resource_code": "7183",
+          "category": "MATERIAL",
+          "description": "Bentonite",
+          "unit": "tonne",
+          "quantity": 0.2,
+          "rate": 3050.0,
+          "amount": 610.0
+        },
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 210.0,
+          "rate": 2.27,
+          "amount": 476.7
+        },
+        {
+          "resource_code": "0024",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+          "unit": "day",
+          "quantity": 0.36,
+          "rate": 39500.0,
+          "amount": 14220.0
+        },
+        {
+          "resource_code": "0025",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of light crane.",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 3900.0,
+          "amount": 234.0
+        },
+        {
+          "resource_code": "0026",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of bentonite pump.",
+          "unit": "day",
+          "quantity": 0.02,
+          "rate": 3350.0,
+          "amount": 67.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.08,
+          "rate": 897.0,
+          "amount": 71.76
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 2.0,
+          "rate": 736.0,
+          "amount": 1472.0
+        }
+      ],
+      "calculations": {
+        "total_w": 39962.86,
+        "total_x": 40134.37,
+        "total_y": 43818.97,
+        "total_z": 46970.11
+      },
+      "say_rate": 4721.15,
+      "page": 858
+    },
+    {
+      "item_code": "20.4",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Extra over single under ream for providing additional bulbs in under reamed piles, under specified diameter(only the nos. of extra bulbs are to be paid)",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 858
+    },
+    {
+      "item_code": "20.4.1",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Extra over single under ream for providing additional bulbs in under reamed piles, under - 300 mm dia piles",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "bulb."
+      },
+      "breakup": [
+        {
+          "resource_code": "7183",
+          "category": "MATERIAL",
+          "description": "Bentonite",
+          "unit": "tonne",
+          "quantity": 0.003,
+          "rate": 3050.0,
+          "amount": 9.15
+        },
+        {
+          "resource_code": "0024",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+          "unit": "day",
+          "quantity": 0.02,
+          "rate": 39500.0,
+          "amount": 790.0
+        },
+        {
+          "resource_code": "0025",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of light crane.",
+          "unit": "day",
+          "quantity": 0.01,
+          "rate": 3900.0,
+          "amount": 39.0
+        },
+        {
+          "resource_code": "0026",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of bentonite pump.",
+          "unit": "day",
+          "quantity": 0.01,
+          "rate": 3350.0,
+          "amount": 33.5
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.02,
+          "rate": 897.0,
+          "amount": 17.94
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        }
+      ],
+      "calculations": {
+        "total_w": 1939.25,
+        "total_x": 1955.51,
+        "total_y": 2304.73,
+        "total_z": 2603.39
+      },
+      "say_rate": 2626.3,
+      "page": 858
+    },
+    {
+      "item_code": "20.4.2",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Extra over single under ream for providing additional bulbs in under reamed piles, under - 400 mm dia piles",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "bulb."
+      },
+      "breakup": [
+        {
+          "resource_code": "7183",
+          "category": "MATERIAL",
+          "description": "Bentonite",
+          "unit": "tonne",
+          "quantity": 0.006,
+          "rate": 3050.0,
+          "amount": 18.3
+        },
+        {
+          "resource_code": "0024",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+          "unit": "day",
+          "quantity": 0.02,
+          "rate": 39500.0,
+          "amount": 790.0
+        },
+        {
+          "resource_code": "0025",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of light crane.",
+          "unit": "day",
+          "quantity": 0.01,
+          "rate": 3900.0,
+          "amount": 39.0
+        },
+        {
+          "resource_code": "0026",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of bentonite pump.",
+          "unit": "day",
+          "quantity": 0.01,
+          "rate": 3350.0,
+          "amount": 33.5
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.02,
+          "rate": 897.0,
+          "amount": 17.94
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        }
+      ],
+      "calculations": {
+        "total_w": 2233.54,
+        "total_x": 2249.89,
+        "total_y": 2601.08,
+        "total_z": 2901.42
+      },
+      "say_rate": 2924.45,
+      "page": 859
+    },
+    {
+      "item_code": "20.4.3",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Extra over single under ream for providing additional bulbs in under reamed piles, under - 450 mm dia piles",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "bulb."
+      },
+      "breakup": [
+        {
+          "resource_code": "7183",
+          "category": "MATERIAL",
+          "description": "Bentonite",
+          "unit": "tonne",
+          "quantity": 0.008,
+          "rate": 3050.0,
+          "amount": 24.4
+        },
+        {
+          "resource_code": "0024",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+          "unit": "day",
+          "quantity": 0.02,
+          "rate": 39500.0,
+          "amount": 790.0
+        },
+        {
+          "resource_code": "0025",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of light crane.",
+          "unit": "day",
+          "quantity": 0.01,
+          "rate": 3900.0,
+          "amount": 39.0
+        },
+        {
+          "resource_code": "0026",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of bentonite pump.",
+          "unit": "day",
+          "quantity": 0.01,
+          "rate": 3350.0,
+          "amount": 33.5
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.02,
+          "rate": 897.0,
+          "amount": 17.94
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        }
+      ],
+      "calculations": {
+        "total_w": 2410.72,
+        "total_x": 2427.13,
+        "total_y": 2779.63,
+        "total_z": 3081.09
+      },
+      "say_rate": 3104.2,
+      "page": 860
+    },
+    {
+      "item_code": "20.4.4",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Extra over single under ream for providing additional bulbs in under reamed piles, under - 550 mm dia piles",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "bulb."
+      },
+      "breakup": [
+        {
+          "resource_code": "7183",
+          "category": "MATERIAL",
+          "description": "Bentonite",
+          "unit": "tonne",
+          "quantity": 0.01,
+          "rate": 3050.0,
+          "amount": 30.5
+        },
+        {
+          "resource_code": "0024",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of hydraulic piling rig with power unit etc. including complete accessories and shifting at site.",
+          "unit": "day",
+          "quantity": 0.02,
+          "rate": 39500.0,
+          "amount": 790.0
+        },
+        {
+          "resource_code": "0025",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of light crane.",
+          "unit": "day",
+          "quantity": 0.01,
+          "rate": 3900.0,
+          "amount": 39.0
+        },
+        {
+          "resource_code": "0026",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of bentonite pump.",
+          "unit": "day",
+          "quantity": 0.02,
+          "rate": 3350.0,
+          "amount": 67.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.02,
+          "rate": 897.0,
+          "amount": 17.94
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 1.0,
+          "rate": 736.0,
+          "amount": 736.0
+        }
+      ],
+      "calculations": {
+        "total_w": 2649.92,
+        "total_x": 2666.72,
+        "total_y": 3027.72,
+        "total_z": 3336.46
+      },
+      "say_rate": 3360.15,
+      "page": 860
+    },
+    {
+      "item_code": "20.5",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Providing, driving (with vibrating pile driving hammer complete with power units & accessories) and installing driven Pre-cast reinforced cement concrete piles of specified diameter and length below the pile cap in M-25 cement concrete to carry safe working load not less than specified with a central through preformed hole with M.S. black pipe of dia, 40 mm for grouting with cement sand grouting of mix 1:2 (1cement : 2 coarse sand) under sufficient positive pressure to ensure complete filling including centring, shuttering, driving and removing the steel casing pipe and lifting casing etc. complete but excluding the cost of steel reinforcement. (Length of pile for payment shall be measured from top of the shoe to the bottom of pile cap).",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 861
+    },
+    {
+      "item_code": "20.5.1",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Providing, driving (with vibrating pile driving hammer complete with power units & accessories) - 400 mm dia piles",
+      "cost_basis": {
+        "quantity": 20.0,
+        "unit": "m length of pile"
+      },
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 442.0,
+          "rate": 2.27,
+          "amount": 1003.34
+        },
+        {
+          "resource_code": "7181",
+          "category": "MATERIAL",
+          "description": "C.I. pile shoe of 80 kg per pile",
+          "unit": "kilogram",
+          "quantity": 80.0,
+          "rate": 52.0,
+          "amount": 4160.0
+        },
+        {
+          "resource_code": "7182",
+          "category": "MATERIAL",
+          "description": "M.S. clamps for pile shoe of 35 kg per pile",
+          "unit": "kilogram",
+          "quantity": 35.0,
+          "rate": 45.0,
+          "amount": 1575.0
+        },
+        {
+          "resource_code": "0027",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of vibrating pile driving hammer complete with power unit and accessories",
+          "unit": "day",
+          "quantity": 0.38,
+          "rate": 33500.0,
+          "amount": 12730.0
+        },
+        {
+          "resource_code": "0028",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of crane 20 tonne capacity.",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 7850.0,
+          "amount": 471.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.12,
+          "rate": 897.0,
+          "amount": 107.64
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 3.0,
+          "rate": 736.0,
+          "amount": 2208.0
+        }
+      ],
+      "calculations": {
+        "total_w": 65091.57,
+        "total_x": 65315.52,
+        "total_y": 70126.48,
+        "total_z": 74240.91
+      },
+      "say_rate": 3727.8,
+      "page": 861
+    },
+    {
+      "item_code": "20.5.2",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Providing, driving (with vibrating pile driving hammer complete with power units & accessories) - 450 mm dia piles",
+      "cost_basis": {
+        "quantity": 20.0,
+        "unit": "m length of pile"
+      },
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 442.0,
+          "rate": 2.27,
+          "amount": 1003.34
+        },
+        {
+          "resource_code": "7181",
+          "category": "MATERIAL",
+          "description": "C.I. pile shoe of 80 kg per pile",
+          "unit": "kilogram",
+          "quantity": 80.0,
+          "rate": 52.0,
+          "amount": 4160.0
+        },
+        {
+          "resource_code": "7182",
+          "category": "MATERIAL",
+          "description": "M.S. clamps for pile shoe of 35 kg per pile",
+          "unit": "kilogram",
+          "quantity": 35.0,
+          "rate": 45.0,
+          "amount": 1575.0
+        },
+        {
+          "resource_code": "0027",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of vibrating pile driving hammer complete with power unit and accessories",
+          "unit": "day",
+          "quantity": 0.38,
+          "rate": 33500.0,
+          "amount": 12730.0
+        },
+        {
+          "resource_code": "0028",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of crane 20 tonne capacity.",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 7850.0,
+          "amount": 471.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 1.08,
+          "rate": 897.0,
+          "amount": 968.76
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 10.78,
+          "rate": 736.0,
+          "amount": 7934.08
+        }
+      ],
+      "calculations": {
+        "total_w": 83075.98,
+        "total_x": 83365.8,
+        "total_y": 89591.87,
+        "total_z": 94916.52
+      },
+      "say_rate": 4766.25,
+      "page": 862
+    },
+    {
+      "item_code": "20.5.3",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Providing, driving (with vibrating pile driving hammer complete with power units & accessories) - 500 mm dia piles",
+      "cost_basis": {
+        "quantity": 20.0,
+        "unit": "m length of pile"
+      },
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 442.0,
+          "rate": 2.27,
+          "amount": 1003.34
+        },
+        {
+          "resource_code": "7181",
+          "category": "MATERIAL",
+          "description": "C.I. pile shoe of 80 kg per pile",
+          "unit": "kilogram",
+          "quantity": 80.0,
+          "rate": 52.0,
+          "amount": 4160.0
+        },
+        {
+          "resource_code": "7182",
+          "category": "MATERIAL",
+          "description": "M.S. clamps for pile shoe of 35 kg per pile",
+          "unit": "kilogram",
+          "quantity": 35.0,
+          "rate": 45.0,
+          "amount": 1575.0
+        },
+        {
+          "resource_code": "0027",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of vibrating pile driving hammer complete with power unit and accessories",
+          "unit": "day",
+          "quantity": 0.38,
+          "rate": 33500.0,
+          "amount": 12730.0
+        },
+        {
+          "resource_code": "0028",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of crane 20 tonne capacity.",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 7850.0,
+          "amount": 471.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.12,
+          "rate": 897.0,
+          "amount": 107.64
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 3.0,
+          "rate": 736.0,
+          "amount": 2208.0
+        }
+      ],
+      "calculations": {
+        "total_w": 89161.78,
+        "total_x": 89385.73,
+        "total_y": 94196.69,
+        "total_z": 98311.12
+      },
+      "say_rate": 4931.35,
+      "page": 862
+    },
+    {
+      "item_code": "20.5.4",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Providing, driving (with vibrating pile driving hammer complete with power units & accessories) - 550 mm dia piles",
+      "cost_basis": {
+        "quantity": 20.0,
+        "unit": "m length of pile"
+      },
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 442.0,
+          "rate": 2.27,
+          "amount": 1003.34
+        },
+        {
+          "resource_code": "7181",
+          "category": "MATERIAL",
+          "description": "C.I. pile shoe of 80 kg per pile",
+          "unit": "kilogram",
+          "quantity": 80.0,
+          "rate": 52.0,
+          "amount": 4160.0
+        },
+        {
+          "resource_code": "7182",
+          "category": "MATERIAL",
+          "description": "M.S. clamps for pile shoe of 35 kg per pile",
+          "unit": "kilogram",
+          "quantity": 35.0,
+          "rate": 45.0,
+          "amount": 1575.0
+        },
+        {
+          "resource_code": "0027",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of vibrating pile driving hammer complete with power unit and accessories",
+          "unit": "day",
+          "quantity": 0.38,
+          "rate": 33500.0,
+          "amount": 12730.0
+        },
+        {
+          "resource_code": "0028",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of crane 20 tonne capacity.",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 7850.0,
+          "amount": 471.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.12,
+          "rate": 897.0,
+          "amount": 107.64
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 3.0,
+          "rate": 736.0,
+          "amount": 2208.0
+        }
+      ],
+      "calculations": {
+        "total_w": 103195.65,
+        "total_x": 103419.6,
+        "total_y": 108230.56,
+        "total_z": 112344.99
+      },
+      "say_rate": 5633.0,
+      "page": 863
+    },
+    {
+      "item_code": "20.5.5",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Providing, driving (with vibrating pile driving hammer complete with power units & accessories) - 750 mm dia piles",
+      "cost_basis": {
+        "quantity": 20.0,
+        "unit": "m length of pile"
+      },
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 442.0,
+          "rate": 2.27,
+          "amount": 1003.34
+        },
+        {
+          "resource_code": "7181",
+          "category": "MATERIAL",
+          "description": "C.I. pile shoe of 80 kg per pile",
+          "unit": "kilogram",
+          "quantity": 80.0,
+          "rate": 52.0,
+          "amount": 4160.0
+        },
+        {
+          "resource_code": "7182",
+          "category": "MATERIAL",
+          "description": "M.S. clamps for pile shoe of 35 kg per pile",
+          "unit": "kilogram",
+          "quantity": 35.0,
+          "rate": 45.0,
+          "amount": 1575.0
+        },
+        {
+          "resource_code": "0027",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of vibrating pile driving hammer complete with power unit and accessories",
+          "unit": "day",
+          "quantity": 0.38,
+          "rate": 33500.0,
+          "amount": 12730.0
+        },
+        {
+          "resource_code": "0028",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of crane 20 tonne capacity.",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 7850.0,
+          "amount": 471.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.12,
+          "rate": 897.0,
+          "amount": 107.64
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 3.0,
+          "rate": 736.0,
+          "amount": 2208.0
+        }
+      ],
+      "calculations": {
+        "total_w": 207471.55,
+        "total_x": 207695.5,
+        "total_y": 212506.46,
+        "total_z": 216620.88
+      },
+      "say_rate": 10846.8,
+      "page": 864
+    },
+    {
+      "item_code": "20.5.6",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Providing, driving (with vibrating pile driving hammer complete with power units & accessories) - 1000 mm dia piles",
+      "cost_basis": {
+        "quantity": 20.0,
+        "unit": "m length of pile"
+      },
+      "breakup": [
+        {
+          "resource_code": "9999",
+          "category": "MATERIAL",
+          "description": "Sundries",
+          "unit": "L.S.",
+          "quantity": 442.0,
+          "rate": 2.27,
+          "amount": 1003.34
+        },
+        {
+          "resource_code": "7181",
+          "category": "MATERIAL",
+          "description": "C.I. pile shoe of 80 kg per pile",
+          "unit": "kilogram",
+          "quantity": 80.0,
+          "rate": 52.0,
+          "amount": 4160.0
+        },
+        {
+          "resource_code": "7182",
+          "category": "MATERIAL",
+          "description": "M.S. clamps for pile shoe of 35 kg per pile",
+          "unit": "kilogram",
+          "quantity": 35.0,
+          "rate": 45.0,
+          "amount": 1575.0
+        },
+        {
+          "resource_code": "0027",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of vibrating pile driving hammer complete with power unit and accessories",
+          "unit": "day",
+          "quantity": 0.38,
+          "rate": 33500.0,
+          "amount": 12730.0
+        },
+        {
+          "resource_code": "0028",
+          "category": "MACHINERY",
+          "description": "Hire and running charges of crane 20 tonne capacity.",
+          "unit": "day",
+          "quantity": 0.06,
+          "rate": 7850.0,
+          "amount": 471.0
+        },
+        {
+          "resource_code": "0130",
+          "category": "LABOUR",
+          "description": "Mistry",
+          "unit": "day",
+          "quantity": 0.12,
+          "rate": 897.0,
+          "amount": 107.64
+        },
+        {
+          "resource_code": "0114",
+          "category": "LABOUR",
+          "description": "Beldar",
+          "unit": "day",
+          "quantity": 3.0,
+          "rate": 736.0,
+          "amount": 2208.0
+        }
+      ],
+      "calculations": {
+        "total_w": 289463.37,
+        "total_x": 289687.32,
+        "total_y": 294498.28,
+        "total_z": 298612.71
+      },
+      "say_rate": 14946.4,
+      "page": 865
+    },
+    {
+      "item_code": "20.6",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Vertical load testing of piles in accordance with IS 2911 (Part IV) including installation of loading platform by Kentledge/Anchor piles method and preparation of pile head or construction of test cap and dismantling of test cap after test etc. complete as per specification & the direction of Engineer in-charge.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 865
+    },
+    {
+      "item_code": "20.6.1",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Vertical load testing of piles in accordance with IS 2911 (Part IV) including installation of loading - Single pile upto 50 tonne Safe capacity",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 865
+    },
+    {
+      "item_code": "20.6.1.1",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Vertical load testing of piles in accordance with IS 2911 (Part IV) including installation of loading - Initial test (Test Load 2.5 times the Safe capacity)",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "test"
+      },
+      "breakup": [
+        {
+          "resource_code": "7246",
+          "category": "MATERIAL",
+          "description": "Verticle load testing (INITIAL) of piles in accordance with IS : 2911 (Part-IV) including installation of loading platform and prepration of pile head or construction of test cap and dismantling of test cap after test etc. complete as per specification and upto 50MT capacity pile. per",
+          "unit": "test",
+          "quantity": 1.0,
+          "rate": 38500.0,
+          "amount": 38500.0
+        }
+      ],
+      "calculations": {
+        "total_w": 38500.0,
+        "total_x": 38885.0,
+        "total_y": 47155.84,
+        "total_z": 54229.22
+      },
+      "say_rate": 54771.5,
+      "page": 865
+    },
+    {
+      "item_code": "20.6.1.2",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Vertical load testing of piles in accordance with IS 2911 (Part IV) including installation of loading - Routine test (Test Load 1.5 times the Safe capacity)",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "test"
+      },
+      "breakup": [
+        {
+          "resource_code": "7249",
+          "category": "MATERIAL",
+          "description": "Cyclic verticle load testing of piles in accordance with IS : 2911 (Part-IV) including prepration of pile head etc. for Single pile upto 50 tonne capacity per",
+          "unit": "test",
+          "quantity": 1.0,
+          "rate": 13800.0,
+          "amount": 13800.0
+        }
+      ],
+      "calculations": {
+        "total_w": 13800.0,
+        "total_x": 13938.0,
+        "total_y": 16902.61,
+        "total_z": 19438.0
+      },
+      "say_rate": 19632.4,
+      "page": 866
+    },
+    {
+      "item_code": "20.6.2",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Vertical load testing of piles in accordance with IS 2911 (Part IV) including installation of loading - Single pile above 50 tonne and upto 100 tonne Safe capacity",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 866
+    },
+    {
+      "item_code": "20.6.2.1",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Vertical load testing of piles in accordance with IS 2911 (Part IV) including installation of loading - Initial test (Test Load 2.5 times the Safe capacity)",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "test"
+      },
+      "breakup": [
+        {
+          "resource_code": "7247",
+          "category": "MATERIAL",
+          "description": "Verticle load testing (INITIAL) of piles in accordance with IS : 2911 (Part-IV) including installation of loading platform and prepration of pile head or construction of test cap and dismantling of test cap after test etc. complete as per specification & above 50MT and upto 100MT. per",
+          "unit": "test",
+          "quantity": 1.0,
+          "rate": 43000.0,
+          "amount": 43000.0
+        }
+      ],
+      "calculations": {
+        "total_w": 43000.0,
+        "total_x": 43430.0,
+        "total_y": 52667.56,
+        "total_z": 60567.69
+      },
+      "say_rate": 61173.35,
+      "page": 866
+    },
+    {
+      "item_code": "20.6.2.2",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Vertical load testing of piles in accordance with IS 2911 (Part IV) including installation of loading - Routine test (Test Load 1.5 times the Safe capacity)",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "test"
+      },
+      "breakup": [
+        {
+          "resource_code": "7250",
+          "category": "MATERIAL",
+          "description": "Cyclic verticle load testing of piles in accordance with IS : 2911 (Part-IV) including prepration of pile head etc. for Single pile above 50 tonne capacity pile and upto 100 tonne capacity pile per",
+          "unit": "test",
+          "quantity": 1.0,
+          "rate": 22800.0,
+          "amount": 22800.0
+        }
+      ],
+      "calculations": {
+        "total_w": 22800.0,
+        "total_x": 23028.0,
+        "total_y": 27926.06,
+        "total_z": 32114.97
+      },
+      "say_rate": 32436.1,
+      "page": 867
+    },
+    {
+      "item_code": "20.6.3",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Vertical load testing of piles in accordance with IS 2911 (Part IV) including installation of loading - Group of two or more piles upto 50 tonne Safe capacity",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 867
+    },
+    {
+      "item_code": "20.6.3.1",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Vertical load testing of piles in accordance with IS 2911 (Part IV) including installation of loading - Initial test (Test Load 2.5 times the Safe capacity)",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "test"
+      },
+      "breakup": [
+        {
+          "resource_code": "7248",
+          "category": "MATERIAL",
+          "description": "Verticle load testing (INITIAL) of piles in accordance with IS : 2911 (Part-IV) including installation of loading platform and prepration of pile head or construction of test cap and dismantling of test cap after test etc. complete as per specification & group of two or more upto 50MT. per",
+          "unit": "test",
+          "quantity": 1.0,
+          "rate": 49500.0,
+          "amount": 49500.0
+        }
+      ],
+      "calculations": {
+        "total_w": 49500.0,
+        "total_x": 49995.0,
+        "total_y": 60628.94,
+        "total_z": 69723.28
+      },
+      "say_rate": 70420.5,
+      "page": 867
+    },
+    {
+      "item_code": "20.6.3.2",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Vertical load testing of piles in accordance with IS 2911 (Part IV) including installation of loading - Routine test (Test Load 1.5 times the Safe capacity)",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "test"
+      },
+      "breakup": [
+        {
+          "resource_code": "7251",
+          "category": "MATERIAL",
+          "description": "Cyclic verticle load testing of piles in accordance with IS : 2911 (Part-IV) including prepration of pile head etc. for Group of two piles upto 50 tonne capacity each per",
+          "unit": "test",
+          "quantity": 1.0,
+          "rate": 28500.0,
+          "amount": 28500.0
+        }
+      ],
+      "calculations": {
+        "total_w": 28500.0,
+        "total_x": 28785.0,
+        "total_y": 34907.57,
+        "total_z": 40143.71
+      },
+      "say_rate": 40545.15,
+      "page": 867
+    },
+    {
+      "item_code": "20.7",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Cyclic vertical load testing of pile in accordance with IS Code of practice IS:2911 (part IV) by Kentledge method including preparation of pile head etc for.",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 868
+    },
+    {
+      "item_code": "20.7.1",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Cyclic vertical load testing of pile in accordance with IS Code of practice IS:2911 (part IV) by - Single pile",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 868
+    },
+    {
+      "item_code": "20.7.1.1",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Cyclic vertical load testing of pile in accordance with IS Code of practice IS:2911 (part IV) by - Upto 50 tonne Safe capacity pile",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "test"
+      },
+      "breakup": [
+        {
+          "resource_code": "7249",
+          "category": "MATERIAL",
+          "description": "Cyclic verticle load testing of piles in accordance with IS : 2911 (Part-IV) including prepration of pile head etc. for Single pile upto 50 tonne capacity per",
+          "unit": "test",
+          "quantity": 1.0,
+          "rate": 13800.0,
+          "amount": 13800.0
+        }
+      ],
+      "calculations": {
+        "total_w": 13800.0,
+        "total_x": 13938.0,
+        "total_y": 16902.61,
+        "total_z": 19438.0
+      },
+      "say_rate": 19632.4,
+      "page": 868
+    },
+    {
+      "item_code": "20.7.1.2",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Cyclic vertical load testing of pile in accordance with IS Code of practice IS:2911 (part IV) by - Above 50 tonne and upto 100 tonne Safe capacity pile",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "test"
+      },
+      "breakup": [
+        {
+          "resource_code": "7250",
+          "category": "MATERIAL",
+          "description": "Cyclic verticle load testing of piles in accordance with IS : 2911 (Part-IV) including prepration of pile head etc. for Single pile above 50 tonne capacity pile and upto 100 tonne capacity pile per",
+          "unit": "test",
+          "quantity": 1.0,
+          "rate": 22800.0,
+          "amount": 22800.0
+        }
+      ],
+      "calculations": {
+        "total_w": 22800.0,
+        "total_x": 23028.0,
+        "total_y": 27926.06,
+        "total_z": 32114.97
+      },
+      "say_rate": 32436.1,
+      "page": 868
+    },
+    {
+      "item_code": "20.7.2",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Cyclic vertical load testing of pile in accordance with IS Code of practice IS:2911 (part IV) by - Group of two or more piles",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 869
+    },
+    {
+      "item_code": "20.7.2.1",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Cyclic vertical load testing of pile in accordance with IS Code of practice IS:2911 (part IV) by - Upto 400 tonne Safe capacity of group",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "test"
+      },
+      "breakup": [
+        {
+          "resource_code": "7251",
+          "category": "MATERIAL",
+          "description": "Cyclic verticle load testing of piles in accordance with IS : 2911 (Part-IV) including prepration of pile head etc. for Group of two piles upto 50 tonne capacity each per",
+          "unit": "test",
+          "quantity": 1.0,
+          "rate": 28500.0,
+          "amount": 28500.0
+        }
+      ],
+      "calculations": {
+        "total_w": 28500.0,
+        "total_x": 28785.0,
+        "total_y": 34907.57,
+        "total_z": 40143.71
+      },
+      "say_rate": 40545.15,
+      "page": 869
+    },
+    {
+      "item_code": "20.8",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Lateral load testing of single pile in accordance with IS Code of practice IS : 2911 (Part IV) for determining safe allowable lateral load on pile :",
+      "cost_basis": {},
+      "breakup": [],
+      "calculations": {},
+      "say_rate": null,
+      "page": 869
+    },
+    {
+      "item_code": "20.8.1",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Lateral load testing of single pile in accordance with IS Code of practice IS : 2911 (Part IV) for - Upto 50 tonne capacity pile",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "test"
+      },
+      "breakup": [
+        {
+          "resource_code": "7252",
+          "category": "MATERIAL",
+          "description": "Lateral load testing of single pile in accordance with IS : 2911 part -IV for determining safe allowable lateral load on pile. Upto 50 tonne capacity per",
+          "unit": "test",
+          "quantity": 1.0,
+          "rate": 13800.0,
+          "amount": 13800.0
+        }
+      ],
+      "calculations": {
+        "total_w": 13800.0,
+        "total_x": 13938.0,
+        "total_y": 16902.61,
+        "total_z": 19438.0
+      },
+      "say_rate": 19632.4,
+      "page": 869
+    },
+    {
+      "item_code": "20.8.2",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Lateral load testing of single pile in accordance with IS Code of practice IS : 2911 (Part IV) for - Above 50 tonne and upto 100 tonne capacity pile",
+      "cost_basis": {
+        "quantity": 1.0,
+        "unit": "test"
+      },
+      "breakup": [
+        {
+          "resource_code": "7253",
+          "category": "MATERIAL",
+          "description": "Lateral load testing of single pile in accordance with IS : 2911 part -IV for determining safe allowable lateral load on pile. Above 50 tonne capacity per",
+          "unit": "test",
+          "quantity": 1.0,
+          "rate": 23100.0,
+          "amount": 23100.0
+        }
+      ],
+      "calculations": {
+        "total_w": 23100.0,
+        "total_x": 23331.0,
+        "total_y": 28293.5,
+        "total_z": 32537.53
+      },
+      "say_rate": 32862.9,
+      "page": 869
+    },
+    {
+      "item_code": "20.9",
+      "sub_head_no": 20,
+      "sub_head_name": "Pile Work",
+      "description": "Integrity testing of Pile using Low Strain/ Sonic Integrity Test/ Sonic Echo Test method in accordance with IS 14893 including surface preparation of pile top by removing soil, mud, dust & chipping lean concrete lumps etc. and use of computerised equipment and high skill trained personal for conducting the test & submission of results, all complete as per direction of Engineer-in-charge. Detail of cost for one pit test (Ten pits in one day)",
+      "cost_basis": {},
+      "breakup": [
+        {
+          "resource_code": "0081",
+          "category": "MATERIAL",
+          "description": "Pile Integrity testing equipment",
+          "unit": "day",
+          "quantity": 0.1,
+          "rate": 3350.0,
+          "amount": 335.0
+        },
+        {
+          "resource_code": "0160",
+          "category": "LABOUR",
+          "description": "Technician",
+          "unit": "day",
+          "quantity": 0.1,
+          "rate": 973.0,
+          "amount": 97.3
+        },
+        {
+          "resource_code": "9999",
+          "category": "LABOUR",
+          "description": "Reporting charges",
+          "unit": "L.S.",
+          "quantity": 100.67,
+          "rate": 2.27,
+          "amount": 228.52
+        },
+        {
+          "resource_code": "9977",
+          "category": "LABOUR",
+          "description": "Transportation and consumables etc.",
+          "unit": "L.S.",
+          "quantity": 33.56,
+          "rate": 2.27,
+          "amount": 76.18
+        }
+      ],
+      "calculations": {
+        "total_w": 810.6,
+        "total_x": 818.71,
+        "total_y": 992.85,
+        "total_z": 1141.78
+      },
+      "say_rate": 1153.2,
+      "page": 870
+    }
+  ]
+}

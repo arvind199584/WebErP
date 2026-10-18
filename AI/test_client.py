@@ -39,7 +39,7 @@ def ask_custom_model(prompt: str) -> str:
 def execute_on_db(sql: str):
     # Load connection credentials from .env
     env_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".env"))
-    db_config = {"host": "localhost", "port": 5432, "database": "modpyphp", "user": "postgres", "password": "daredevil"}
+    db_config = {"host": "localhost", "port": 5432, "database": "modpyphp", "user": "postgres", "password": ""}
     if os.path.exists(env_path):
         with open(env_path) as f:
             for line in f:

@@ -15,9 +15,9 @@ services:
       - DB_HOST=postgres
       - DB_PORT=5432
       - DB_NAME=modpyphp
-      - DB_USER=postgres
-      - DB_PASS=daredevil
-      - DB_SSLMODE=disable
+      - DB_USER=${DB_USER:-postgres}
+      - DB_PASS=${DB_PASS:-postgres}
+      - DB_SSLMODE=${DB_SSLMODE:-disable}
     depends_on:
       postgres:
         condition: service_healthy
@@ -30,9 +30,9 @@ services:
     container_name: modpyphp_postgres
     restart: unless-stopped
     environment:
-      POSTGRES_DB: modpyphp
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: daredevil
+      POSTGRES_DB: ${DB_NAME:-modpyphp}
+      POSTGRES_USER: ${DB_USER:-postgres}
+      POSTGRES_PASSWORD: ${DB_PASS:-postgres}
     ports:
       - "5432:5432"
     volumes:
